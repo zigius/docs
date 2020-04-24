@@ -15,26 +15,26 @@ Manages a Function App.
 
 
 ## Create a FunctionApp Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/appservice/#FunctionApp">FunctionApp</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/appservice/#FunctionAppArgs">FunctionAppArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">FunctionApp</span><span class="p">(resource_name, opts=None, </span>app_service_plan_id=None<span class="p">, </span>app_settings=None<span class="p">, </span>auth_settings=None<span class="p">, </span>client_affinity_enabled=None<span class="p">, </span>connection_strings=None<span class="p">, </span>daily_memory_time_quota=None<span class="p">, </span>enable_builtin_logging=None<span class="p">, </span>enabled=None<span class="p">, </span>https_only=None<span class="p">, </span>identity=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>os_type=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>site_config=None<span class="p">, </span>storage_connection_string=None<span class="p">, </span>tags=None<span class="p">, </span>version=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewFunctionApp<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppArgs">FunctionAppArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionApp">FunctionApp</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.AppService.FunctionApp.html">FunctionApp</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.AppService.FunctionAppArgs.html">FunctionAppArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -71,9 +71,9 @@ Manages a Function App.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -91,9 +91,9 @@ Manages a Function App.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -140,9 +140,9 @@ Manages a Function App.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -179,7 +179,7 @@ Manages a Function App.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## FunctionApp Resource Properties {#properties}
 
@@ -192,7 +192,7 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -201,8 +201,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the App Service Plan within which to create this Function App.
-{{% /md %}}</dd>
+    <dd>The ID of the App Service Plan within which to create this Function App.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -210,8 +210,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Function App.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Function App.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -219,8 +219,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string of the backend storage account which will be used by this Function App (such as the dashboard, logs).
-{{% /md %}}</dd>
+    <dd>The connection string of the backend storage account which will be used by this Function App (such as the dashboard, logs).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -228,8 +228,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A key-value pair of App Settings.
-{{% /md %}}</dd>
+    <dd>A key-value pair of App Settings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -237,8 +237,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettings">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `auth_settings` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `auth_settings` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -246,8 +246,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Function App send session affinity cookies, which route client requests in the same session to the same instance?
-{{% /md %}}</dd>
+    <dd>Should the Function App send session affinity cookies, which route client requests in the same session to the same instance?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -255,8 +255,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappconnectionstring">List&lt;Function<wbr>App<wbr>Connection<wbr>String<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An `connection_string` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `connection_string` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -264,8 +264,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of memory in gigabyte-seconds that your application is allowed to consume per day. Setting this value only affects function apps under the consumption plan. Defaults to `0`.
-{{% /md %}}</dd>
+    <dd>The amount of memory in gigabyte-seconds that your application is allowed to consume per day. Setting this value only affects function apps under the consumption plan. Defaults to `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -273,8 +273,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the built-in logging of this Function App be enabled? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should the built-in logging of this Function App be enabled? Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -282,8 +282,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the Function App enabled?
-{{% /md %}}</dd>
+    <dd>Is the Function App enabled?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -291,8 +291,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Can the Function App only be accessed via HTTPS? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Can the Function App only be accessed via HTTPS? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -300,8 +300,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappidentity">Function<wbr>App<wbr>Identity<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}An `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -309,8 +309,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -318,8 +318,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Function App. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Function App. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -327,8 +327,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A string indicating the Operating System type for this function app. 
-{{% /md %}}</dd>
+    <dd>A string indicating the Operating System type for this function app. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -336,8 +336,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsiteconfig">Function<wbr>App<wbr>Site<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `site_config` object as defined below.
-{{% /md %}}</dd>
+    <dd>A `site_config` object as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -345,8 +345,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -354,14 +354,14 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The runtime version associated with the Function App. Defaults to `~1`.
-{{% /md %}}</dd>
+    <dd>The runtime version associated with the Function App. Defaults to `~1`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -370,8 +370,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the App Service Plan within which to create this Function App.
-{{% /md %}}</dd>
+    <dd>The ID of the App Service Plan within which to create this Function App.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -379,8 +379,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Function App.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Function App.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -388,8 +388,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string of the backend storage account which will be used by this Function App (such as the dashboard, logs).
-{{% /md %}}</dd>
+    <dd>The connection string of the backend storage account which will be used by this Function App (such as the dashboard, logs).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -397,8 +397,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A key-value pair of App Settings.
-{{% /md %}}</dd>
+    <dd>A key-value pair of App Settings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -406,8 +406,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettings">Function<wbr>App<wbr>Auth<wbr>Settings</a></span>
     </dt>
-    <dd>{{% md %}}A `auth_settings` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `auth_settings` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -415,8 +415,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Function App send session affinity cookies, which route client requests in the same session to the same instance?
-{{% /md %}}</dd>
+    <dd>Should the Function App send session affinity cookies, which route client requests in the same session to the same instance?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -424,8 +424,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappconnectionstring">[]Function<wbr>App<wbr>Connection<wbr>String</a></span>
     </dt>
-    <dd>{{% md %}}An `connection_string` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `connection_string` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -433,8 +433,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of memory in gigabyte-seconds that your application is allowed to consume per day. Setting this value only affects function apps under the consumption plan. Defaults to `0`.
-{{% /md %}}</dd>
+    <dd>The amount of memory in gigabyte-seconds that your application is allowed to consume per day. Setting this value only affects function apps under the consumption plan. Defaults to `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -442,8 +442,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the built-in logging of this Function App be enabled? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should the built-in logging of this Function App be enabled? Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -451,8 +451,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the Function App enabled?
-{{% /md %}}</dd>
+    <dd>Is the Function App enabled?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -460,8 +460,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Can the Function App only be accessed via HTTPS? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Can the Function App only be accessed via HTTPS? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -469,8 +469,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappidentity">Function<wbr>App<wbr>Identity</a></span>
     </dt>
-    <dd>{{% md %}}An `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -478,8 +478,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -487,8 +487,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Function App. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Function App. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -496,8 +496,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A string indicating the Operating System type for this function app. 
-{{% /md %}}</dd>
+    <dd>A string indicating the Operating System type for this function app. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -505,8 +505,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsiteconfig">Function<wbr>App<wbr>Site<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A `site_config` object as defined below.
-{{% /md %}}</dd>
+    <dd>A `site_config` object as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -514,8 +514,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -523,14 +523,14 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The runtime version associated with the Function App. Defaults to `~1`.
-{{% /md %}}</dd>
+    <dd>The runtime version associated with the Function App. Defaults to `~1`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -539,8 +539,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the App Service Plan within which to create this Function App.
-{{% /md %}}</dd>
+    <dd>The ID of the App Service Plan within which to create this Function App.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -548,8 +548,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Function App.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Function App.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -557,8 +557,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string of the backend storage account which will be used by this Function App (such as the dashboard, logs).
-{{% /md %}}</dd>
+    <dd>The connection string of the backend storage account which will be used by this Function App (such as the dashboard, logs).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -566,8 +566,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A key-value pair of App Settings.
-{{% /md %}}</dd>
+    <dd>A key-value pair of App Settings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -575,8 +575,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettings">Function<wbr>App<wbr>Auth<wbr>Settings</a></span>
     </dt>
-    <dd>{{% md %}}A `auth_settings` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `auth_settings` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -584,8 +584,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the Function App send session affinity cookies, which route client requests in the same session to the same instance?
-{{% /md %}}</dd>
+    <dd>Should the Function App send session affinity cookies, which route client requests in the same session to the same instance?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -593,8 +593,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappconnectionstring">Function<wbr>App<wbr>Connection<wbr>String[]</a></span>
     </dt>
-    <dd>{{% md %}}An `connection_string` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `connection_string` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -602,8 +602,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of memory in gigabyte-seconds that your application is allowed to consume per day. Setting this value only affects function apps under the consumption plan. Defaults to `0`.
-{{% /md %}}</dd>
+    <dd>The amount of memory in gigabyte-seconds that your application is allowed to consume per day. Setting this value only affects function apps under the consumption plan. Defaults to `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -611,8 +611,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the built-in logging of this Function App be enabled? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should the built-in logging of this Function App be enabled? Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -620,8 +620,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is the Function App enabled?
-{{% /md %}}</dd>
+    <dd>Is the Function App enabled?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -629,8 +629,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Can the Function App only be accessed via HTTPS? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Can the Function App only be accessed via HTTPS? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -638,8 +638,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappidentity">Function<wbr>App<wbr>Identity</a></span>
     </dt>
-    <dd>{{% md %}}An `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -647,8 +647,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -656,8 +656,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Function App. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Function App. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -665,8 +665,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A string indicating the Operating System type for this function app. 
-{{% /md %}}</dd>
+    <dd>A string indicating the Operating System type for this function app. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -674,8 +674,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsiteconfig">Function<wbr>App<wbr>Site<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A `site_config` object as defined below.
-{{% /md %}}</dd>
+    <dd>A `site_config` object as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -683,8 +683,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -692,14 +692,14 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The runtime version associated with the Function App. Defaults to `~1`.
-{{% /md %}}</dd>
+    <dd>The runtime version associated with the Function App. Defaults to `~1`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -708,8 +708,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the App Service Plan within which to create this Function App.
-{{% /md %}}</dd>
+    <dd>The ID of the App Service Plan within which to create this Function App.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -717,8 +717,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Function App.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Function App.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -726,8 +726,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection string of the backend storage account which will be used by this Function App (such as the dashboard, logs).
-{{% /md %}}</dd>
+    <dd>The connection string of the backend storage account which will be used by this Function App (such as the dashboard, logs).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -735,8 +735,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A key-value pair of App Settings.
-{{% /md %}}</dd>
+    <dd>A key-value pair of App Settings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -744,8 +744,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettings">Dict[Function<wbr>App<wbr>Auth<wbr>Settings]</a></span>
     </dt>
-    <dd>{{% md %}}A `auth_settings` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `auth_settings` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -753,8 +753,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Function App send session affinity cookies, which route client requests in the same session to the same instance?
-{{% /md %}}</dd>
+    <dd>Should the Function App send session affinity cookies, which route client requests in the same session to the same instance?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -762,8 +762,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappconnectionstring">List[Function<wbr>App<wbr>Connection<wbr>String]</a></span>
     </dt>
-    <dd>{{% md %}}An `connection_string` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `connection_string` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -771,8 +771,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of memory in gigabyte-seconds that your application is allowed to consume per day. Setting this value only affects function apps under the consumption plan. Defaults to `0`.
-{{% /md %}}</dd>
+    <dd>The amount of memory in gigabyte-seconds that your application is allowed to consume per day. Setting this value only affects function apps under the consumption plan. Defaults to `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -780,8 +780,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the built-in logging of this Function App be enabled? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should the built-in logging of this Function App be enabled? Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -789,8 +789,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the Function App enabled?
-{{% /md %}}</dd>
+    <dd>Is the Function App enabled?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -798,8 +798,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Can the Function App only be accessed via HTTPS? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Can the Function App only be accessed via HTTPS? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -807,8 +807,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappidentity">Dict[Function<wbr>App<wbr>Identity]</a></span>
     </dt>
-    <dd>{{% md %}}An `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -816,8 +816,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -825,8 +825,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Function App. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Function App. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -834,8 +834,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A string indicating the Operating System type for this function app. 
-{{% /md %}}</dd>
+    <dd>A string indicating the Operating System type for this function app. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -843,8 +843,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsiteconfig">Dict[Function<wbr>App<wbr>Site<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}A `site_config` object as defined below.
-{{% /md %}}</dd>
+    <dd>A `site_config` object as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -852,8 +852,8 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -861,11 +861,11 @@ The FunctionApp resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The runtime version associated with the Function App. Defaults to `~1`.
-{{% /md %}}</dd>
+    <dd>The runtime version associated with the Function App. Defaults to `~1`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -879,7 +879,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -888,8 +888,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The default hostname associated with the Function App - such as `mysite.azurewebsites.net`
-{{% /md %}}</dd>
+    <dd>The default hostname associated with the Function App - such as `mysite.azurewebsites.net`
+</dd>
 
     <dt class="property-"
             title="">
@@ -897,7 +897,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -905,8 +905,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Function App kind - such as `functionapp,linux,container`
-{{% /md %}}</dd>
+    <dd>The Function App kind - such as `functionapp,linux,container`
+</dd>
 
     <dt class="property-"
             title="">
@@ -914,8 +914,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
+</dd>
 
     <dt class="property-"
             title="">
@@ -923,8 +923,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -932,14 +932,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsitecredential">List&lt;Function<wbr>App<wbr>Site<wbr>Credential&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `site_credential` block as defined below, which contains the site-level credentials used to publish to this App Service.
-{{% /md %}}</dd>
+    <dd>A `site_credential` block as defined below, which contains the site-level credentials used to publish to this App Service.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -948,8 +948,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default hostname associated with the Function App - such as `mysite.azurewebsites.net`
-{{% /md %}}</dd>
+    <dd>The default hostname associated with the Function App - such as `mysite.azurewebsites.net`
+</dd>
 
     <dt class="property-"
             title="">
@@ -957,7 +957,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -965,8 +965,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Function App kind - such as `functionapp,linux,container`
-{{% /md %}}</dd>
+    <dd>The Function App kind - such as `functionapp,linux,container`
+</dd>
 
     <dt class="property-"
             title="">
@@ -974,8 +974,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
+</dd>
 
     <dt class="property-"
             title="">
@@ -983,8 +983,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -992,14 +992,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsitecredential">[]Function<wbr>App<wbr>Site<wbr>Credential</a></span>
     </dt>
-    <dd>{{% md %}}A `site_credential` block as defined below, which contains the site-level credentials used to publish to this App Service.
-{{% /md %}}</dd>
+    <dd>A `site_credential` block as defined below, which contains the site-level credentials used to publish to this App Service.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1008,8 +1008,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default hostname associated with the Function App - such as `mysite.azurewebsites.net`
-{{% /md %}}</dd>
+    <dd>The default hostname associated with the Function App - such as `mysite.azurewebsites.net`
+</dd>
 
     <dt class="property-"
             title="">
@@ -1017,7 +1017,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1025,8 +1025,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Function App kind - such as `functionapp,linux,container`
-{{% /md %}}</dd>
+    <dd>The Function App kind - such as `functionapp,linux,container`
+</dd>
 
     <dt class="property-"
             title="">
@@ -1034,8 +1034,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
+</dd>
 
     <dt class="property-"
             title="">
@@ -1043,8 +1043,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1052,14 +1052,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsitecredential">Function<wbr>App<wbr>Site<wbr>Credential[]</a></span>
     </dt>
-    <dd>{{% md %}}A `site_credential` block as defined below, which contains the site-level credentials used to publish to this App Service.
-{{% /md %}}</dd>
+    <dd>A `site_credential` block as defined below, which contains the site-level credentials used to publish to this App Service.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1068,8 +1068,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The default hostname associated with the Function App - such as `mysite.azurewebsites.net`
-{{% /md %}}</dd>
+    <dd>The default hostname associated with the Function App - such as `mysite.azurewebsites.net`
+</dd>
 
     <dt class="property-"
             title="">
@@ -1077,7 +1077,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1085,8 +1085,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Function App kind - such as `functionapp,linux,container`
-{{% /md %}}</dd>
+    <dd>The Function App kind - such as `functionapp,linux,container`
+</dd>
 
     <dt class="property-"
             title="">
@@ -1094,8 +1094,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
+</dd>
 
     <dt class="property-"
             title="">
@@ -1103,8 +1103,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1112,11 +1112,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsitecredential">List[Function<wbr>App<wbr>Site<wbr>Credential]</a></span>
     </dt>
-    <dd>{{% md %}}A `site_credential` block as defined below, which contains the site-level credentials used to publish to this App Service.
-{{% /md %}}</dd>
+    <dd>A `site_credential` block as defined below, which contains the site-level credentials used to publish to this App Service.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1127,25 +1127,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing FunctionApp Resource {#look-up}
 
 Get an existing FunctionApp resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/appservice/#FunctionAppState">FunctionAppState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/appservice/#FunctionApp">FunctionApp</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>app_service_plan_id=None<span class="p">, </span>app_settings=None<span class="p">, </span>auth_settings=None<span class="p">, </span>client_affinity_enabled=None<span class="p">, </span>connection_strings=None<span class="p">, </span>daily_memory_time_quota=None<span class="p">, </span>default_hostname=None<span class="p">, </span>enable_builtin_logging=None<span class="p">, </span>enabled=None<span class="p">, </span>https_only=None<span class="p">, </span>identity=None<span class="p">, </span>kind=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>os_type=None<span class="p">, </span>outbound_ip_addresses=None<span class="p">, </span>possible_outbound_ip_addresses=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>site_config=None<span class="p">, </span>site_credentials=None<span class="p">, </span>storage_connection_string=None<span class="p">, </span>tags=None<span class="p">, </span>version=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetFunctionApp<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppState">FunctionAppState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionApp">FunctionApp</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.AppService.FunctionApp.html">FunctionApp</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.AppService.FunctionAppState.html">FunctionAppState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1170,9 +1170,9 @@ Get an existing FunctionApp resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1185,36 +1185,9 @@ Get an existing FunctionApp resource's state with the given name, ID, and option
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1239,13 +1212,40 @@ Get an existing FunctionApp resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1254,8 +1254,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the App Service Plan within which to create this Function App.
-{{% /md %}}</dd>
+    <dd>The ID of the App Service Plan within which to create this Function App.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1263,8 +1263,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A key-value pair of App Settings.
-{{% /md %}}</dd>
+    <dd>A key-value pair of App Settings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1272,8 +1272,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettings">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `auth_settings` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `auth_settings` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1281,8 +1281,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Function App send session affinity cookies, which route client requests in the same session to the same instance?
-{{% /md %}}</dd>
+    <dd>Should the Function App send session affinity cookies, which route client requests in the same session to the same instance?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1290,8 +1290,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappconnectionstring">List&lt;Function<wbr>App<wbr>Connection<wbr>String<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An `connection_string` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `connection_string` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1299,8 +1299,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of memory in gigabyte-seconds that your application is allowed to consume per day. Setting this value only affects function apps under the consumption plan. Defaults to `0`.
-{{% /md %}}</dd>
+    <dd>The amount of memory in gigabyte-seconds that your application is allowed to consume per day. Setting this value only affects function apps under the consumption plan. Defaults to `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1308,8 +1308,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The default hostname associated with the Function App - such as `mysite.azurewebsites.net`
-{{% /md %}}</dd>
+    <dd>The default hostname associated with the Function App - such as `mysite.azurewebsites.net`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1317,8 +1317,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the built-in logging of this Function App be enabled? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should the built-in logging of this Function App be enabled? Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1326,8 +1326,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the Function App enabled?
-{{% /md %}}</dd>
+    <dd>Is the Function App enabled?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1335,8 +1335,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Can the Function App only be accessed via HTTPS? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Can the Function App only be accessed via HTTPS? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1344,8 +1344,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappidentity">Function<wbr>App<wbr>Identity<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}An `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1353,8 +1353,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Function App kind - such as `functionapp,linux,container`
-{{% /md %}}</dd>
+    <dd>The Function App kind - such as `functionapp,linux,container`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1362,8 +1362,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1371,8 +1371,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Function App. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Function App. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1380,8 +1380,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A string indicating the Operating System type for this function app. 
-{{% /md %}}</dd>
+    <dd>A string indicating the Operating System type for this function app. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1389,8 +1389,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1398,8 +1398,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1407,8 +1407,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Function App.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Function App.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1416,8 +1416,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsiteconfig">Function<wbr>App<wbr>Site<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `site_config` object as defined below.
-{{% /md %}}</dd>
+    <dd>A `site_config` object as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1425,8 +1425,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsitecredential">List&lt;Function<wbr>App<wbr>Site<wbr>Credential<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `site_credential` block as defined below, which contains the site-level credentials used to publish to this App Service.
-{{% /md %}}</dd>
+    <dd>A `site_credential` block as defined below, which contains the site-level credentials used to publish to this App Service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1434,8 +1434,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string of the backend storage account which will be used by this Function App (such as the dashboard, logs).
-{{% /md %}}</dd>
+    <dd>The connection string of the backend storage account which will be used by this Function App (such as the dashboard, logs).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1443,8 +1443,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1452,14 +1452,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The runtime version associated with the Function App. Defaults to `~1`.
-{{% /md %}}</dd>
+    <dd>The runtime version associated with the Function App. Defaults to `~1`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1468,8 +1468,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the App Service Plan within which to create this Function App.
-{{% /md %}}</dd>
+    <dd>The ID of the App Service Plan within which to create this Function App.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1477,8 +1477,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A key-value pair of App Settings.
-{{% /md %}}</dd>
+    <dd>A key-value pair of App Settings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1486,8 +1486,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettings">Function<wbr>App<wbr>Auth<wbr>Settings</a></span>
     </dt>
-    <dd>{{% md %}}A `auth_settings` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `auth_settings` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1495,8 +1495,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Function App send session affinity cookies, which route client requests in the same session to the same instance?
-{{% /md %}}</dd>
+    <dd>Should the Function App send session affinity cookies, which route client requests in the same session to the same instance?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1504,8 +1504,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappconnectionstring">[]Function<wbr>App<wbr>Connection<wbr>String</a></span>
     </dt>
-    <dd>{{% md %}}An `connection_string` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `connection_string` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1513,8 +1513,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of memory in gigabyte-seconds that your application is allowed to consume per day. Setting this value only affects function apps under the consumption plan. Defaults to `0`.
-{{% /md %}}</dd>
+    <dd>The amount of memory in gigabyte-seconds that your application is allowed to consume per day. Setting this value only affects function apps under the consumption plan. Defaults to `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1522,8 +1522,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default hostname associated with the Function App - such as `mysite.azurewebsites.net`
-{{% /md %}}</dd>
+    <dd>The default hostname associated with the Function App - such as `mysite.azurewebsites.net`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1531,8 +1531,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the built-in logging of this Function App be enabled? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should the built-in logging of this Function App be enabled? Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1540,8 +1540,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the Function App enabled?
-{{% /md %}}</dd>
+    <dd>Is the Function App enabled?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1549,8 +1549,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Can the Function App only be accessed via HTTPS? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Can the Function App only be accessed via HTTPS? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1558,8 +1558,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappidentity">Function<wbr>App<wbr>Identity</a></span>
     </dt>
-    <dd>{{% md %}}An `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1567,8 +1567,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Function App kind - such as `functionapp,linux,container`
-{{% /md %}}</dd>
+    <dd>The Function App kind - such as `functionapp,linux,container`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1576,8 +1576,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1585,8 +1585,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Function App. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Function App. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1594,8 +1594,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A string indicating the Operating System type for this function app. 
-{{% /md %}}</dd>
+    <dd>A string indicating the Operating System type for this function app. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1603,8 +1603,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1612,8 +1612,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1621,8 +1621,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Function App.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Function App.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1630,8 +1630,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsiteconfig">Function<wbr>App<wbr>Site<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A `site_config` object as defined below.
-{{% /md %}}</dd>
+    <dd>A `site_config` object as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1639,8 +1639,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsitecredential">[]Function<wbr>App<wbr>Site<wbr>Credential</a></span>
     </dt>
-    <dd>{{% md %}}A `site_credential` block as defined below, which contains the site-level credentials used to publish to this App Service.
-{{% /md %}}</dd>
+    <dd>A `site_credential` block as defined below, which contains the site-level credentials used to publish to this App Service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1648,8 +1648,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string of the backend storage account which will be used by this Function App (such as the dashboard, logs).
-{{% /md %}}</dd>
+    <dd>The connection string of the backend storage account which will be used by this Function App (such as the dashboard, logs).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1657,8 +1657,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1666,14 +1666,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The runtime version associated with the Function App. Defaults to `~1`.
-{{% /md %}}</dd>
+    <dd>The runtime version associated with the Function App. Defaults to `~1`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1682,8 +1682,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the App Service Plan within which to create this Function App.
-{{% /md %}}</dd>
+    <dd>The ID of the App Service Plan within which to create this Function App.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1691,8 +1691,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A key-value pair of App Settings.
-{{% /md %}}</dd>
+    <dd>A key-value pair of App Settings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1700,8 +1700,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettings">Function<wbr>App<wbr>Auth<wbr>Settings</a></span>
     </dt>
-    <dd>{{% md %}}A `auth_settings` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `auth_settings` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1709,8 +1709,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the Function App send session affinity cookies, which route client requests in the same session to the same instance?
-{{% /md %}}</dd>
+    <dd>Should the Function App send session affinity cookies, which route client requests in the same session to the same instance?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1718,8 +1718,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappconnectionstring">Function<wbr>App<wbr>Connection<wbr>String[]</a></span>
     </dt>
-    <dd>{{% md %}}An `connection_string` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `connection_string` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1727,8 +1727,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of memory in gigabyte-seconds that your application is allowed to consume per day. Setting this value only affects function apps under the consumption plan. Defaults to `0`.
-{{% /md %}}</dd>
+    <dd>The amount of memory in gigabyte-seconds that your application is allowed to consume per day. Setting this value only affects function apps under the consumption plan. Defaults to `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1736,8 +1736,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default hostname associated with the Function App - such as `mysite.azurewebsites.net`
-{{% /md %}}</dd>
+    <dd>The default hostname associated with the Function App - such as `mysite.azurewebsites.net`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1745,8 +1745,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the built-in logging of this Function App be enabled? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should the built-in logging of this Function App be enabled? Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1754,8 +1754,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is the Function App enabled?
-{{% /md %}}</dd>
+    <dd>Is the Function App enabled?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1763,8 +1763,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Can the Function App only be accessed via HTTPS? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Can the Function App only be accessed via HTTPS? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1772,8 +1772,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappidentity">Function<wbr>App<wbr>Identity</a></span>
     </dt>
-    <dd>{{% md %}}An `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1781,8 +1781,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Function App kind - such as `functionapp,linux,container`
-{{% /md %}}</dd>
+    <dd>The Function App kind - such as `functionapp,linux,container`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1790,8 +1790,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1799,8 +1799,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Function App. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Function App. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1808,8 +1808,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A string indicating the Operating System type for this function app. 
-{{% /md %}}</dd>
+    <dd>A string indicating the Operating System type for this function app. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1817,8 +1817,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1826,8 +1826,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1835,8 +1835,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Function App.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Function App.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1844,8 +1844,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsiteconfig">Function<wbr>App<wbr>Site<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A `site_config` object as defined below.
-{{% /md %}}</dd>
+    <dd>A `site_config` object as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1853,8 +1853,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsitecredential">Function<wbr>App<wbr>Site<wbr>Credential[]</a></span>
     </dt>
-    <dd>{{% md %}}A `site_credential` block as defined below, which contains the site-level credentials used to publish to this App Service.
-{{% /md %}}</dd>
+    <dd>A `site_credential` block as defined below, which contains the site-level credentials used to publish to this App Service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1862,8 +1862,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string of the backend storage account which will be used by this Function App (such as the dashboard, logs).
-{{% /md %}}</dd>
+    <dd>The connection string of the backend storage account which will be used by this Function App (such as the dashboard, logs).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1871,8 +1871,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1880,14 +1880,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The runtime version associated with the Function App. Defaults to `~1`.
-{{% /md %}}</dd>
+    <dd>The runtime version associated with the Function App. Defaults to `~1`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1896,8 +1896,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the App Service Plan within which to create this Function App.
-{{% /md %}}</dd>
+    <dd>The ID of the App Service Plan within which to create this Function App.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1905,8 +1905,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A key-value pair of App Settings.
-{{% /md %}}</dd>
+    <dd>A key-value pair of App Settings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1914,8 +1914,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettings">Dict[Function<wbr>App<wbr>Auth<wbr>Settings]</a></span>
     </dt>
-    <dd>{{% md %}}A `auth_settings` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `auth_settings` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1923,8 +1923,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Function App send session affinity cookies, which route client requests in the same session to the same instance?
-{{% /md %}}</dd>
+    <dd>Should the Function App send session affinity cookies, which route client requests in the same session to the same instance?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1932,8 +1932,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappconnectionstring">List[Function<wbr>App<wbr>Connection<wbr>String]</a></span>
     </dt>
-    <dd>{{% md %}}An `connection_string` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `connection_string` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1941,8 +1941,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of memory in gigabyte-seconds that your application is allowed to consume per day. Setting this value only affects function apps under the consumption plan. Defaults to `0`.
-{{% /md %}}</dd>
+    <dd>The amount of memory in gigabyte-seconds that your application is allowed to consume per day. Setting this value only affects function apps under the consumption plan. Defaults to `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1950,8 +1950,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The default hostname associated with the Function App - such as `mysite.azurewebsites.net`
-{{% /md %}}</dd>
+    <dd>The default hostname associated with the Function App - such as `mysite.azurewebsites.net`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1959,8 +1959,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the built-in logging of this Function App be enabled? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should the built-in logging of this Function App be enabled? Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1968,8 +1968,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the Function App enabled?
-{{% /md %}}</dd>
+    <dd>Is the Function App enabled?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1977,8 +1977,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Can the Function App only be accessed via HTTPS? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Can the Function App only be accessed via HTTPS? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1986,8 +1986,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappidentity">Dict[Function<wbr>App<wbr>Identity]</a></span>
     </dt>
-    <dd>{{% md %}}An `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1995,8 +1995,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Function App kind - such as `functionapp,linux,container`
-{{% /md %}}</dd>
+    <dd>The Function App kind - such as `functionapp,linux,container`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2004,8 +2004,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2013,8 +2013,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Function App. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Function App. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2022,8 +2022,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A string indicating the Operating System type for this function app. 
-{{% /md %}}</dd>
+    <dd>A string indicating the Operating System type for this function app. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2031,8 +2031,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2040,8 +2040,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of outbound IP addresses - such as `52.23.25.3,52.143.43.12,52.143.43.17` - not all of which are necessarily in use. Superset of `outbound_ip_addresses`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2049,8 +2049,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the Function App.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the Function App.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2058,8 +2058,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsiteconfig">Dict[Function<wbr>App<wbr>Site<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}A `site_config` object as defined below.
-{{% /md %}}</dd>
+    <dd>A `site_config` object as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2067,8 +2067,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsitecredential">List[Function<wbr>App<wbr>Site<wbr>Credential]</a></span>
     </dt>
-    <dd>{{% md %}}A `site_credential` block as defined below, which contains the site-level credentials used to publish to this App Service.
-{{% /md %}}</dd>
+    <dd>A `site_credential` block as defined below, which contains the site-level credentials used to publish to this App Service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2076,8 +2076,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection string of the backend storage account which will be used by this Function App (such as the dashboard, logs).
-{{% /md %}}</dd>
+    <dd>The connection string of the backend storage account which will be used by this Function App (such as the dashboard, logs).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2085,8 +2085,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2094,11 +2094,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The runtime version associated with the Function App. Defaults to `~1`.
-{{% /md %}}</dd>
+    <dd>The runtime version associated with the Function App. Defaults to `~1`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2113,18 +2113,18 @@ The following state arguments are supported:
 
 
 <h4 id="functionappauthsettings">Function<wbr>App<wbr>Auth<wbr>Settings</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#FunctionAppAuthSettings">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#FunctionAppAuthSettings">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppAuthSettingsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppAuthSettingsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2133,8 +2133,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Authentication enabled?
-{{% /md %}}</dd>
+    <dd>Is Authentication enabled?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2142,8 +2142,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettingsactivedirectory">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Active<wbr>Directory<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `active_directory` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `active_directory` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2151,8 +2151,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Login parameters to send to the OpenID Connect authorization endpoint when a user logs in. Each parameter must be in the form "key=value".
-{{% /md %}}</dd>
+    <dd>Login parameters to send to the OpenID Connect authorization endpoint when a user logs in. Each parameter must be in the form "key=value".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2160,8 +2160,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}External URLs that can be redirected to as part of logging in or logging out of the app.
-{{% /md %}}</dd>
+    <dd>External URLs that can be redirected to as part of logging in or logging out of the app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2169,8 +2169,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The default provider to use when multiple providers have been set up. Possible values are `AzureActiveDirectory`, `Facebook`, `Google`, `MicrosoftAccount` and `Twitter`.
-{{% /md %}}</dd>
+    <dd>The default provider to use when multiple providers have been set up. Possible values are `AzureActiveDirectory`, `Facebook`, `Google`, `MicrosoftAccount` and `Twitter`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2178,8 +2178,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettingsfacebook">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Facebook<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `facebook` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `facebook` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2187,8 +2187,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettingsgoogle">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Google<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `google` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `google` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2196,8 +2196,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Issuer URI. When using Azure Active Directory, this value is the URI of the directory tenant, e.g. https://sts.windows.net/{tenant-guid}/.
-{{% /md %}}</dd>
+    <dd>Issuer URI. When using Azure Active Directory, this value is the URI of the directory tenant, e.g. https://sts.windows.net/{tenant-guid}/.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2205,8 +2205,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettingsmicrosoft">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Microsoft<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `microsoft` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `microsoft` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2214,8 +2214,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The runtime version of the Authentication/Authorization module.
-{{% /md %}}</dd>
+    <dd>The runtime version of the Authentication/Authorization module.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2223,8 +2223,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}The number of hours after session token expiration that a session token can be used to call the token refresh API. Defaults to 72.
-{{% /md %}}</dd>
+    <dd>The number of hours after session token expiration that a session token can be used to call the token refresh API. Defaults to 72.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2232,8 +2232,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If enabled the module will durably store platform-specific security tokens that are obtained during login flows. Defaults to false.
-{{% /md %}}</dd>
+    <dd>If enabled the module will durably store platform-specific security tokens that are obtained during login flows. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2241,8 +2241,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettingstwitter">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Twitter<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `twitter` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `twitter` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2250,14 +2250,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The action to take when an unauthenticated client attempts to access the app. Possible values are `AllowAnonymous` and `RedirectToLoginPage`.
-{{% /md %}}</dd>
+    <dd>The action to take when an unauthenticated client attempts to access the app. Possible values are `AllowAnonymous` and `RedirectToLoginPage`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2266,8 +2266,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Authentication enabled?
-{{% /md %}}</dd>
+    <dd>Is Authentication enabled?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2275,8 +2275,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettingsactivedirectory">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Active<wbr>Directory</a></span>
     </dt>
-    <dd>{{% md %}}A `active_directory` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `active_directory` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2284,8 +2284,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Login parameters to send to the OpenID Connect authorization endpoint when a user logs in. Each parameter must be in the form "key=value".
-{{% /md %}}</dd>
+    <dd>Login parameters to send to the OpenID Connect authorization endpoint when a user logs in. Each parameter must be in the form "key=value".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2293,8 +2293,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}External URLs that can be redirected to as part of logging in or logging out of the app.
-{{% /md %}}</dd>
+    <dd>External URLs that can be redirected to as part of logging in or logging out of the app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2302,8 +2302,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default provider to use when multiple providers have been set up. Possible values are `AzureActiveDirectory`, `Facebook`, `Google`, `MicrosoftAccount` and `Twitter`.
-{{% /md %}}</dd>
+    <dd>The default provider to use when multiple providers have been set up. Possible values are `AzureActiveDirectory`, `Facebook`, `Google`, `MicrosoftAccount` and `Twitter`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2311,8 +2311,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettingsfacebook">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Facebook</a></span>
     </dt>
-    <dd>{{% md %}}A `facebook` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `facebook` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2320,8 +2320,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettingsgoogle">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Google</a></span>
     </dt>
-    <dd>{{% md %}}A `google` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `google` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2329,8 +2329,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Issuer URI. When using Azure Active Directory, this value is the URI of the directory tenant, e.g. https://sts.windows.net/{tenant-guid}/.
-{{% /md %}}</dd>
+    <dd>Issuer URI. When using Azure Active Directory, this value is the URI of the directory tenant, e.g. https://sts.windows.net/{tenant-guid}/.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2338,8 +2338,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettingsmicrosoft">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Microsoft</a></span>
     </dt>
-    <dd>{{% md %}}A `microsoft` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `microsoft` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2347,8 +2347,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The runtime version of the Authentication/Authorization module.
-{{% /md %}}</dd>
+    <dd>The runtime version of the Authentication/Authorization module.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2356,8 +2356,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}The number of hours after session token expiration that a session token can be used to call the token refresh API. Defaults to 72.
-{{% /md %}}</dd>
+    <dd>The number of hours after session token expiration that a session token can be used to call the token refresh API. Defaults to 72.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2365,8 +2365,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If enabled the module will durably store platform-specific security tokens that are obtained during login flows. Defaults to false.
-{{% /md %}}</dd>
+    <dd>If enabled the module will durably store platform-specific security tokens that are obtained during login flows. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2374,8 +2374,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettingstwitter">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Twitter</a></span>
     </dt>
-    <dd>{{% md %}}A `twitter` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `twitter` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2383,14 +2383,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The action to take when an unauthenticated client attempts to access the app. Possible values are `AllowAnonymous` and `RedirectToLoginPage`.
-{{% /md %}}</dd>
+    <dd>The action to take when an unauthenticated client attempts to access the app. Possible values are `AllowAnonymous` and `RedirectToLoginPage`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2399,8 +2399,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is Authentication enabled?
-{{% /md %}}</dd>
+    <dd>Is Authentication enabled?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2408,8 +2408,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettingsactivedirectory">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Active<wbr>Directory</a></span>
     </dt>
-    <dd>{{% md %}}A `active_directory` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `active_directory` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2417,8 +2417,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Login parameters to send to the OpenID Connect authorization endpoint when a user logs in. Each parameter must be in the form "key=value".
-{{% /md %}}</dd>
+    <dd>Login parameters to send to the OpenID Connect authorization endpoint when a user logs in. Each parameter must be in the form "key=value".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2426,8 +2426,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}External URLs that can be redirected to as part of logging in or logging out of the app.
-{{% /md %}}</dd>
+    <dd>External URLs that can be redirected to as part of logging in or logging out of the app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2435,8 +2435,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default provider to use when multiple providers have been set up. Possible values are `AzureActiveDirectory`, `Facebook`, `Google`, `MicrosoftAccount` and `Twitter`.
-{{% /md %}}</dd>
+    <dd>The default provider to use when multiple providers have been set up. Possible values are `AzureActiveDirectory`, `Facebook`, `Google`, `MicrosoftAccount` and `Twitter`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2444,8 +2444,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettingsfacebook">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Facebook</a></span>
     </dt>
-    <dd>{{% md %}}A `facebook` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `facebook` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2453,8 +2453,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettingsgoogle">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Google</a></span>
     </dt>
-    <dd>{{% md %}}A `google` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `google` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2462,8 +2462,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Issuer URI. When using Azure Active Directory, this value is the URI of the directory tenant, e.g. https://sts.windows.net/{tenant-guid}/.
-{{% /md %}}</dd>
+    <dd>Issuer URI. When using Azure Active Directory, this value is the URI of the directory tenant, e.g. https://sts.windows.net/{tenant-guid}/.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2471,8 +2471,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettingsmicrosoft">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Microsoft</a></span>
     </dt>
-    <dd>{{% md %}}A `microsoft` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `microsoft` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2480,8 +2480,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The runtime version of the Authentication/Authorization module.
-{{% /md %}}</dd>
+    <dd>The runtime version of the Authentication/Authorization module.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2489,8 +2489,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of hours after session token expiration that a session token can be used to call the token refresh API. Defaults to 72.
-{{% /md %}}</dd>
+    <dd>The number of hours after session token expiration that a session token can be used to call the token refresh API. Defaults to 72.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2498,8 +2498,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If enabled the module will durably store platform-specific security tokens that are obtained during login flows. Defaults to false.
-{{% /md %}}</dd>
+    <dd>If enabled the module will durably store platform-specific security tokens that are obtained during login flows. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2507,8 +2507,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettingstwitter">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Twitter</a></span>
     </dt>
-    <dd>{{% md %}}A `twitter` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `twitter` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2516,14 +2516,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The action to take when an unauthenticated client attempts to access the app. Possible values are `AllowAnonymous` and `RedirectToLoginPage`.
-{{% /md %}}</dd>
+    <dd>The action to take when an unauthenticated client attempts to access the app. Possible values are `AllowAnonymous` and `RedirectToLoginPage`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2532,8 +2532,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Authentication enabled?
-{{% /md %}}</dd>
+    <dd>Is Authentication enabled?
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2541,8 +2541,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettingsactivedirectory">Dict[Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Active<wbr>Directory]</a></span>
     </dt>
-    <dd>{{% md %}}A `active_directory` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `active_directory` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2550,8 +2550,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Login parameters to send to the OpenID Connect authorization endpoint when a user logs in. Each parameter must be in the form "key=value".
-{{% /md %}}</dd>
+    <dd>Login parameters to send to the OpenID Connect authorization endpoint when a user logs in. Each parameter must be in the form "key=value".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2559,8 +2559,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}External URLs that can be redirected to as part of logging in or logging out of the app.
-{{% /md %}}</dd>
+    <dd>External URLs that can be redirected to as part of logging in or logging out of the app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2568,8 +2568,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The default provider to use when multiple providers have been set up. Possible values are `AzureActiveDirectory`, `Facebook`, `Google`, `MicrosoftAccount` and `Twitter`.
-{{% /md %}}</dd>
+    <dd>The default provider to use when multiple providers have been set up. Possible values are `AzureActiveDirectory`, `Facebook`, `Google`, `MicrosoftAccount` and `Twitter`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2577,8 +2577,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettingsfacebook">Dict[Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Facebook]</a></span>
     </dt>
-    <dd>{{% md %}}A `facebook` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `facebook` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2586,8 +2586,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettingsgoogle">Dict[Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Google]</a></span>
     </dt>
-    <dd>{{% md %}}A `google` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `google` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2595,8 +2595,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Issuer URI. When using Azure Active Directory, this value is the URI of the directory tenant, e.g. https://sts.windows.net/{tenant-guid}/.
-{{% /md %}}</dd>
+    <dd>Issuer URI. When using Azure Active Directory, this value is the URI of the directory tenant, e.g. https://sts.windows.net/{tenant-guid}/.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2604,8 +2604,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettingsmicrosoft">Dict[Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Microsoft]</a></span>
     </dt>
-    <dd>{{% md %}}A `microsoft` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `microsoft` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2613,8 +2613,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The runtime version of the Authentication/Authorization module.
-{{% /md %}}</dd>
+    <dd>The runtime version of the Authentication/Authorization module.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2622,8 +2622,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of hours after session token expiration that a session token can be used to call the token refresh API. Defaults to 72.
-{{% /md %}}</dd>
+    <dd>The number of hours after session token expiration that a session token can be used to call the token refresh API. Defaults to 72.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2631,8 +2631,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If enabled the module will durably store platform-specific security tokens that are obtained during login flows. Defaults to false.
-{{% /md %}}</dd>
+    <dd>If enabled the module will durably store platform-specific security tokens that are obtained during login flows. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2640,8 +2640,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappauthsettingstwitter">Dict[Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Twitter]</a></span>
     </dt>
-    <dd>{{% md %}}A `twitter` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `twitter` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2649,29 +2649,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The action to take when an unauthenticated client attempts to access the app. Possible values are `AllowAnonymous` and `RedirectToLoginPage`.
-{{% /md %}}</dd>
+    <dd>The action to take when an unauthenticated client attempts to access the app. Possible values are `AllowAnonymous` and `RedirectToLoginPage`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="functionappauthsettingsactivedirectory">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Active<wbr>Directory</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#FunctionAppAuthSettingsActiveDirectory">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#FunctionAppAuthSettingsActiveDirectory">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppAuthSettingsActiveDirectoryArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppAuthSettingsActiveDirectoryOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2680,8 +2680,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Client ID of this relying party application. Enables OpenIDConnection authentication with Azure Active Directory.
-{{% /md %}}</dd>
+    <dd>The Client ID of this relying party application. Enables OpenIDConnection authentication with Azure Active Directory.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2689,8 +2689,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
-{{% /md %}}</dd>
+    <dd>Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2698,14 +2698,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Client Secret of this relying party application. If no secret is provided, implicit flow will be used.
-{{% /md %}}</dd>
+    <dd>The Client Secret of this relying party application. If no secret is provided, implicit flow will be used.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2714,8 +2714,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Client ID of this relying party application. Enables OpenIDConnection authentication with Azure Active Directory.
-{{% /md %}}</dd>
+    <dd>The Client ID of this relying party application. Enables OpenIDConnection authentication with Azure Active Directory.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2723,8 +2723,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
-{{% /md %}}</dd>
+    <dd>Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2732,14 +2732,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Client Secret of this relying party application. If no secret is provided, implicit flow will be used.
-{{% /md %}}</dd>
+    <dd>The Client Secret of this relying party application. If no secret is provided, implicit flow will be used.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2748,8 +2748,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Client ID of this relying party application. Enables OpenIDConnection authentication with Azure Active Directory.
-{{% /md %}}</dd>
+    <dd>The Client ID of this relying party application. Enables OpenIDConnection authentication with Azure Active Directory.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2757,8 +2757,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
-{{% /md %}}</dd>
+    <dd>Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2766,14 +2766,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Client Secret of this relying party application. If no secret is provided, implicit flow will be used.
-{{% /md %}}</dd>
+    <dd>The Client Secret of this relying party application. If no secret is provided, implicit flow will be used.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2782,8 +2782,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Client ID of this relying party application. Enables OpenIDConnection authentication with Azure Active Directory.
-{{% /md %}}</dd>
+    <dd>The Client ID of this relying party application. Enables OpenIDConnection authentication with Azure Active Directory.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2791,8 +2791,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
-{{% /md %}}</dd>
+    <dd>Allowed audience values to consider when validating JWTs issued by Azure Active Directory.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2800,29 +2800,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Client Secret of this relying party application. If no secret is provided, implicit flow will be used.
-{{% /md %}}</dd>
+    <dd>The Client Secret of this relying party application. If no secret is provided, implicit flow will be used.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="functionappauthsettingsfacebook">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Facebook</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#FunctionAppAuthSettingsFacebook">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#FunctionAppAuthSettingsFacebook">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppAuthSettingsFacebookArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppAuthSettingsFacebookOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2831,8 +2831,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The App ID of the Facebook app used for login
-{{% /md %}}</dd>
+    <dd>The App ID of the Facebook app used for login
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2840,8 +2840,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The App Secret of the Facebook app used for Facebook Login.
-{{% /md %}}</dd>
+    <dd>The App Secret of the Facebook app used for Facebook Login.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2849,14 +2849,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 scopes that will be requested as part of Facebook Login authentication. https://developers.facebook.com/docs/facebook-login
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 scopes that will be requested as part of Facebook Login authentication. https://developers.facebook.com/docs/facebook-login
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2865,8 +2865,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The App ID of the Facebook app used for login
-{{% /md %}}</dd>
+    <dd>The App ID of the Facebook app used for login
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2874,8 +2874,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The App Secret of the Facebook app used for Facebook Login.
-{{% /md %}}</dd>
+    <dd>The App Secret of the Facebook app used for Facebook Login.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2883,14 +2883,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 scopes that will be requested as part of Facebook Login authentication. https://developers.facebook.com/docs/facebook-login
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 scopes that will be requested as part of Facebook Login authentication. https://developers.facebook.com/docs/facebook-login
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2899,8 +2899,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The App ID of the Facebook app used for login
-{{% /md %}}</dd>
+    <dd>The App ID of the Facebook app used for login
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2908,8 +2908,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The App Secret of the Facebook app used for Facebook Login.
-{{% /md %}}</dd>
+    <dd>The App Secret of the Facebook app used for Facebook Login.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2917,14 +2917,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 scopes that will be requested as part of Facebook Login authentication. https://developers.facebook.com/docs/facebook-login
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 scopes that will be requested as part of Facebook Login authentication. https://developers.facebook.com/docs/facebook-login
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2933,8 +2933,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The App ID of the Facebook app used for login
-{{% /md %}}</dd>
+    <dd>The App ID of the Facebook app used for login
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2942,8 +2942,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The App Secret of the Facebook app used for Facebook Login.
-{{% /md %}}</dd>
+    <dd>The App Secret of the Facebook app used for Facebook Login.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2951,29 +2951,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 scopes that will be requested as part of Facebook Login authentication. https://developers.facebook.com/docs/facebook-login
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 scopes that will be requested as part of Facebook Login authentication. https://developers.facebook.com/docs/facebook-login
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="functionappauthsettingsgoogle">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Google</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#FunctionAppAuthSettingsGoogle">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#FunctionAppAuthSettingsGoogle">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppAuthSettingsGoogleArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppAuthSettingsGoogleOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2982,8 +2982,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The OpenID Connect Client ID for the Google web application.
-{{% /md %}}</dd>
+    <dd>The OpenID Connect Client ID for the Google web application.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2991,8 +2991,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The client secret associated with the Google web application.
-{{% /md %}}</dd>
+    <dd>The client secret associated with the Google web application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3000,14 +3000,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. https://developers.google.com/identity/sign-in/web/
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. https://developers.google.com/identity/sign-in/web/
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3016,8 +3016,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The OpenID Connect Client ID for the Google web application.
-{{% /md %}}</dd>
+    <dd>The OpenID Connect Client ID for the Google web application.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3025,8 +3025,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client secret associated with the Google web application.
-{{% /md %}}</dd>
+    <dd>The client secret associated with the Google web application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3034,14 +3034,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. https://developers.google.com/identity/sign-in/web/
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. https://developers.google.com/identity/sign-in/web/
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3050,8 +3050,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The OpenID Connect Client ID for the Google web application.
-{{% /md %}}</dd>
+    <dd>The OpenID Connect Client ID for the Google web application.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3059,8 +3059,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client secret associated with the Google web application.
-{{% /md %}}</dd>
+    <dd>The client secret associated with the Google web application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3068,14 +3068,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. https://developers.google.com/identity/sign-in/web/
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. https://developers.google.com/identity/sign-in/web/
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3084,8 +3084,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The OpenID Connect Client ID for the Google web application.
-{{% /md %}}</dd>
+    <dd>The OpenID Connect Client ID for the Google web application.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3093,8 +3093,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The client secret associated with the Google web application.
-{{% /md %}}</dd>
+    <dd>The client secret associated with the Google web application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3102,29 +3102,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. https://developers.google.com/identity/sign-in/web/
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 scopes that will be requested as part of Google Sign-In authentication. https://developers.google.com/identity/sign-in/web/
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="functionappauthsettingsmicrosoft">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Microsoft</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#FunctionAppAuthSettingsMicrosoft">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#FunctionAppAuthSettingsMicrosoft">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppAuthSettingsMicrosoftArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppAuthSettingsMicrosoftOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3133,8 +3133,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 client ID that was created for the app used for authentication.
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 client ID that was created for the app used for authentication.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3142,8 +3142,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 client secret that was created for the app used for authentication.
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 client secret that was created for the app used for authentication.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3151,14 +3151,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. https://msdn.microsoft.com/en-us/library/dn631845.aspx
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. https://msdn.microsoft.com/en-us/library/dn631845.aspx
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3167,8 +3167,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 client ID that was created for the app used for authentication.
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 client ID that was created for the app used for authentication.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3176,8 +3176,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 client secret that was created for the app used for authentication.
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 client secret that was created for the app used for authentication.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3185,14 +3185,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. https://msdn.microsoft.com/en-us/library/dn631845.aspx
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. https://msdn.microsoft.com/en-us/library/dn631845.aspx
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3201,8 +3201,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 client ID that was created for the app used for authentication.
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 client ID that was created for the app used for authentication.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3210,8 +3210,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 client secret that was created for the app used for authentication.
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 client secret that was created for the app used for authentication.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3219,14 +3219,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. https://msdn.microsoft.com/en-us/library/dn631845.aspx
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. https://msdn.microsoft.com/en-us/library/dn631845.aspx
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3235,8 +3235,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 client ID that was created for the app used for authentication.
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 client ID that was created for the app used for authentication.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3244,8 +3244,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 client secret that was created for the app used for authentication.
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 client secret that was created for the app used for authentication.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3253,29 +3253,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. https://msdn.microsoft.com/en-us/library/dn631845.aspx
-{{% /md %}}</dd>
+    <dd>The OAuth 2.0 scopes that will be requested as part of Microsoft Account authentication. https://msdn.microsoft.com/en-us/library/dn631845.aspx
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="functionappauthsettingstwitter">Function<wbr>App<wbr>Auth<wbr>Settings<wbr>Twitter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#FunctionAppAuthSettingsTwitter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#FunctionAppAuthSettingsTwitter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppAuthSettingsTwitterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppAuthSettingsTwitterOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3284,7 +3284,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3292,13 +3292,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3307,7 +3307,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3315,13 +3315,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3330,7 +3330,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3338,13 +3338,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3353,7 +3353,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3361,28 +3361,28 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="functionappconnectionstring">Function<wbr>App<wbr>Connection<wbr>String</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#FunctionAppConnectionString">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#FunctionAppConnectionString">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppConnectionStringArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppConnectionStringOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3391,8 +3391,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Connection String.
-{{% /md %}}</dd>
+    <dd>The name of the Connection String.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3400,8 +3400,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the Connection String. Possible values are `APIHub`, `Custom`, `DocDb`, `EventHub`, `MySQL`, `NotificationHub`, `PostgreSQL`, `RedisCache`, `ServiceBus`, `SQLAzure` and  `SQLServer`.
-{{% /md %}}</dd>
+    <dd>The type of the Connection String. Possible values are `APIHub`, `Custom`, `DocDb`, `EventHub`, `MySQL`, `NotificationHub`, `PostgreSQL`, `RedisCache`, `ServiceBus`, `SQLAzure` and  `SQLServer`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3409,14 +3409,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The value for the Connection String.
-{{% /md %}}</dd>
+    <dd>The value for the Connection String.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3425,8 +3425,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Connection String.
-{{% /md %}}</dd>
+    <dd>The name of the Connection String.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3434,8 +3434,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the Connection String. Possible values are `APIHub`, `Custom`, `DocDb`, `EventHub`, `MySQL`, `NotificationHub`, `PostgreSQL`, `RedisCache`, `ServiceBus`, `SQLAzure` and  `SQLServer`.
-{{% /md %}}</dd>
+    <dd>The type of the Connection String. Possible values are `APIHub`, `Custom`, `DocDb`, `EventHub`, `MySQL`, `NotificationHub`, `PostgreSQL`, `RedisCache`, `ServiceBus`, `SQLAzure` and  `SQLServer`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3443,14 +3443,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value for the Connection String.
-{{% /md %}}</dd>
+    <dd>The value for the Connection String.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3459,8 +3459,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Connection String.
-{{% /md %}}</dd>
+    <dd>The name of the Connection String.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3468,8 +3468,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the Connection String. Possible values are `APIHub`, `Custom`, `DocDb`, `EventHub`, `MySQL`, `NotificationHub`, `PostgreSQL`, `RedisCache`, `ServiceBus`, `SQLAzure` and  `SQLServer`.
-{{% /md %}}</dd>
+    <dd>The type of the Connection String. Possible values are `APIHub`, `Custom`, `DocDb`, `EventHub`, `MySQL`, `NotificationHub`, `PostgreSQL`, `RedisCache`, `ServiceBus`, `SQLAzure` and  `SQLServer`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3477,14 +3477,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value for the Connection String.
-{{% /md %}}</dd>
+    <dd>The value for the Connection String.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3493,8 +3493,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Connection String.
-{{% /md %}}</dd>
+    <dd>The name of the Connection String.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3502,8 +3502,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the Connection String. Possible values are `APIHub`, `Custom`, `DocDb`, `EventHub`, `MySQL`, `NotificationHub`, `PostgreSQL`, `RedisCache`, `ServiceBus`, `SQLAzure` and  `SQLServer`.
-{{% /md %}}</dd>
+    <dd>The type of the Connection String. Possible values are `APIHub`, `Custom`, `DocDb`, `EventHub`, `MySQL`, `NotificationHub`, `PostgreSQL`, `RedisCache`, `ServiceBus`, `SQLAzure` and  `SQLServer`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3511,29 +3511,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The value for the Connection String.
-{{% /md %}}</dd>
+    <dd>The value for the Connection String.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="functionappidentity">Function<wbr>App<wbr>Identity</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#FunctionAppIdentity">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#FunctionAppIdentity">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppIdentityArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppIdentityOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3542,8 +3542,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the identity type of the Function App. Possible values are `SystemAssigned` (where Azure will generate a Service Principal for you), `UserAssigned` where you can specify the Service Principal IDs in the `identity_ids` field, and `SystemAssigned, UserAssigned` which assigns both a system managed identity as well as the specified user assigned identities.
-{{% /md %}}</dd>
+    <dd>Specifies the identity type of the Function App. Possible values are `SystemAssigned` (where Azure will generate a Service Principal for you), `UserAssigned` where you can specify the Service Principal IDs in the `identity_ids` field, and `SystemAssigned, UserAssigned` which assigns both a system managed identity as well as the specified user assigned identities.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3551,8 +3551,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a list of user managed identity ids to be assigned. Required if `type` is `UserAssigned`.
-{{% /md %}}</dd>
+    <dd>Specifies a list of user managed identity ids to be assigned. Required if `type` is `UserAssigned`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3560,8 +3560,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Principal ID for the Service Principal associated with the Managed Service Identity of this App Service.
-{{% /md %}}</dd>
+    <dd>The Principal ID for the Service Principal associated with the Managed Service Identity of this App Service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3569,14 +3569,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Tenant ID for the Service Principal associated with the Managed Service Identity of this App Service.
-{{% /md %}}</dd>
+    <dd>The Tenant ID for the Service Principal associated with the Managed Service Identity of this App Service.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3585,8 +3585,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the identity type of the Function App. Possible values are `SystemAssigned` (where Azure will generate a Service Principal for you), `UserAssigned` where you can specify the Service Principal IDs in the `identity_ids` field, and `SystemAssigned, UserAssigned` which assigns both a system managed identity as well as the specified user assigned identities.
-{{% /md %}}</dd>
+    <dd>Specifies the identity type of the Function App. Possible values are `SystemAssigned` (where Azure will generate a Service Principal for you), `UserAssigned` where you can specify the Service Principal IDs in the `identity_ids` field, and `SystemAssigned, UserAssigned` which assigns both a system managed identity as well as the specified user assigned identities.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3594,8 +3594,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a list of user managed identity ids to be assigned. Required if `type` is `UserAssigned`.
-{{% /md %}}</dd>
+    <dd>Specifies a list of user managed identity ids to be assigned. Required if `type` is `UserAssigned`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3603,8 +3603,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Principal ID for the Service Principal associated with the Managed Service Identity of this App Service.
-{{% /md %}}</dd>
+    <dd>The Principal ID for the Service Principal associated with the Managed Service Identity of this App Service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3612,14 +3612,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Tenant ID for the Service Principal associated with the Managed Service Identity of this App Service.
-{{% /md %}}</dd>
+    <dd>The Tenant ID for the Service Principal associated with the Managed Service Identity of this App Service.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3628,8 +3628,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the identity type of the Function App. Possible values are `SystemAssigned` (where Azure will generate a Service Principal for you), `UserAssigned` where you can specify the Service Principal IDs in the `identity_ids` field, and `SystemAssigned, UserAssigned` which assigns both a system managed identity as well as the specified user assigned identities.
-{{% /md %}}</dd>
+    <dd>Specifies the identity type of the Function App. Possible values are `SystemAssigned` (where Azure will generate a Service Principal for you), `UserAssigned` where you can specify the Service Principal IDs in the `identity_ids` field, and `SystemAssigned, UserAssigned` which assigns both a system managed identity as well as the specified user assigned identities.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3637,8 +3637,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a list of user managed identity ids to be assigned. Required if `type` is `UserAssigned`.
-{{% /md %}}</dd>
+    <dd>Specifies a list of user managed identity ids to be assigned. Required if `type` is `UserAssigned`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3646,8 +3646,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Principal ID for the Service Principal associated with the Managed Service Identity of this App Service.
-{{% /md %}}</dd>
+    <dd>The Principal ID for the Service Principal associated with the Managed Service Identity of this App Service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3655,14 +3655,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Tenant ID for the Service Principal associated with the Managed Service Identity of this App Service.
-{{% /md %}}</dd>
+    <dd>The Tenant ID for the Service Principal associated with the Managed Service Identity of this App Service.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3671,8 +3671,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the identity type of the Function App. Possible values are `SystemAssigned` (where Azure will generate a Service Principal for you), `UserAssigned` where you can specify the Service Principal IDs in the `identity_ids` field, and `SystemAssigned, UserAssigned` which assigns both a system managed identity as well as the specified user assigned identities.
-{{% /md %}}</dd>
+    <dd>Specifies the identity type of the Function App. Possible values are `SystemAssigned` (where Azure will generate a Service Principal for you), `UserAssigned` where you can specify the Service Principal IDs in the `identity_ids` field, and `SystemAssigned, UserAssigned` which assigns both a system managed identity as well as the specified user assigned identities.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3680,8 +3680,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies a list of user managed identity ids to be assigned. Required if `type` is `UserAssigned`.
-{{% /md %}}</dd>
+    <dd>Specifies a list of user managed identity ids to be assigned. Required if `type` is `UserAssigned`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3689,8 +3689,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Principal ID for the Service Principal associated with the Managed Service Identity of this App Service.
-{{% /md %}}</dd>
+    <dd>The Principal ID for the Service Principal associated with the Managed Service Identity of this App Service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3698,29 +3698,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Tenant ID for the Service Principal associated with the Managed Service Identity of this App Service.
-{{% /md %}}</dd>
+    <dd>The Tenant ID for the Service Principal associated with the Managed Service Identity of this App Service.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="functionappsiteconfig">Function<wbr>App<wbr>Site<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#FunctionAppSiteConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#FunctionAppSiteConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppSiteConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppSiteConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3729,8 +3729,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Function App be loaded at all times? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the Function App be loaded at all times? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3738,8 +3738,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsiteconfigcors">Function<wbr>App<wbr>Site<wbr>Config<wbr>Cors<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `cors` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `cors` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3747,8 +3747,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}State of FTP / FTPS service for this function app. Possible values include: `AllAllowed`, `FtpsOnly` and `Disabled`.
-{{% /md %}}</dd>
+    <dd>State of FTP / FTPS service for this function app. Possible values include: `AllAllowed`, `FtpsOnly` and `Disabled`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3756,8 +3756,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether or not the http2 protocol should be enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether or not the http2 protocol should be enabled. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3765,8 +3765,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsiteconfigiprestriction">List&lt;Function<wbr>App<wbr>Site<wbr>Config<wbr>Ip<wbr>Restriction<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of objects representing ip restrictions as defined below.
-{{% /md %}}</dd>
+    <dd>A list of objects representing ip restrictions as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3774,8 +3774,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Linux App Framework and version for the AppService, e.g. `DOCKER|(golang:latest)`.
-{{% /md %}}</dd>
+    <dd>Linux App Framework and version for the AppService, e.g. `DOCKER|(golang:latest)`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3783,8 +3783,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum supported TLS version for the function app. Possible values are `1.0`, `1.1`, and `1.2`. Defaults to `1.2` for new function apps.
-{{% /md %}}</dd>
+    <dd>The minimum supported TLS version for the function app. Possible values are `1.0`, `1.1`, and `1.2`. Defaults to `1.2` for new function apps.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3792,8 +3792,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of pre-warmed instances for this function app. Only affects apps on the Premium plan.
-{{% /md %}}</dd>
+    <dd>The number of pre-warmed instances for this function app. Only affects apps on the Premium plan.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3801,8 +3801,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Function App run in 32 bit mode, rather than 64 bit mode? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should the Function App run in 32 bit mode, rather than 64 bit mode? Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3810,14 +3810,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should WebSockets be enabled?
-{{% /md %}}</dd>
+    <dd>Should WebSockets be enabled?
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3826,8 +3826,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Function App be loaded at all times? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the Function App be loaded at all times? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3835,8 +3835,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsiteconfigcors">Function<wbr>App<wbr>Site<wbr>Config<wbr>Cors</a></span>
     </dt>
-    <dd>{{% md %}}A `cors` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `cors` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3844,8 +3844,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}State of FTP / FTPS service for this function app. Possible values include: `AllAllowed`, `FtpsOnly` and `Disabled`.
-{{% /md %}}</dd>
+    <dd>State of FTP / FTPS service for this function app. Possible values include: `AllAllowed`, `FtpsOnly` and `Disabled`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3853,8 +3853,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether or not the http2 protocol should be enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether or not the http2 protocol should be enabled. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3862,8 +3862,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsiteconfigiprestriction">[]Function<wbr>App<wbr>Site<wbr>Config<wbr>Ip<wbr>Restriction</a></span>
     </dt>
-    <dd>{{% md %}}A list of objects representing ip restrictions as defined below.
-{{% /md %}}</dd>
+    <dd>A list of objects representing ip restrictions as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3871,8 +3871,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Linux App Framework and version for the AppService, e.g. `DOCKER|(golang:latest)`.
-{{% /md %}}</dd>
+    <dd>Linux App Framework and version for the AppService, e.g. `DOCKER|(golang:latest)`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3880,8 +3880,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum supported TLS version for the function app. Possible values are `1.0`, `1.1`, and `1.2`. Defaults to `1.2` for new function apps.
-{{% /md %}}</dd>
+    <dd>The minimum supported TLS version for the function app. Possible values are `1.0`, `1.1`, and `1.2`. Defaults to `1.2` for new function apps.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3889,8 +3889,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of pre-warmed instances for this function app. Only affects apps on the Premium plan.
-{{% /md %}}</dd>
+    <dd>The number of pre-warmed instances for this function app. Only affects apps on the Premium plan.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3898,8 +3898,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Function App run in 32 bit mode, rather than 64 bit mode? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should the Function App run in 32 bit mode, rather than 64 bit mode? Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3907,14 +3907,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should WebSockets be enabled?
-{{% /md %}}</dd>
+    <dd>Should WebSockets be enabled?
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3923,8 +3923,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the Function App be loaded at all times? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the Function App be loaded at all times? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3932,8 +3932,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsiteconfigcors">Function<wbr>App<wbr>Site<wbr>Config<wbr>Cors</a></span>
     </dt>
-    <dd>{{% md %}}A `cors` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `cors` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3941,8 +3941,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}State of FTP / FTPS service for this function app. Possible values include: `AllAllowed`, `FtpsOnly` and `Disabled`.
-{{% /md %}}</dd>
+    <dd>State of FTP / FTPS service for this function app. Possible values include: `AllAllowed`, `FtpsOnly` and `Disabled`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3950,8 +3950,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether or not the http2 protocol should be enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether or not the http2 protocol should be enabled. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3959,8 +3959,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsiteconfigiprestriction">Function<wbr>App<wbr>Site<wbr>Config<wbr>Ip<wbr>Restriction[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of objects representing ip restrictions as defined below.
-{{% /md %}}</dd>
+    <dd>A list of objects representing ip restrictions as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3968,8 +3968,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Linux App Framework and version for the AppService, e.g. `DOCKER|(golang:latest)`.
-{{% /md %}}</dd>
+    <dd>Linux App Framework and version for the AppService, e.g. `DOCKER|(golang:latest)`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3977,8 +3977,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum supported TLS version for the function app. Possible values are `1.0`, `1.1`, and `1.2`. Defaults to `1.2` for new function apps.
-{{% /md %}}</dd>
+    <dd>The minimum supported TLS version for the function app. Possible values are `1.0`, `1.1`, and `1.2`. Defaults to `1.2` for new function apps.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3986,8 +3986,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of pre-warmed instances for this function app. Only affects apps on the Premium plan.
-{{% /md %}}</dd>
+    <dd>The number of pre-warmed instances for this function app. Only affects apps on the Premium plan.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3995,8 +3995,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the Function App run in 32 bit mode, rather than 64 bit mode? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should the Function App run in 32 bit mode, rather than 64 bit mode? Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4004,14 +4004,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should WebSockets be enabled?
-{{% /md %}}</dd>
+    <dd>Should WebSockets be enabled?
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4020,8 +4020,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Function App be loaded at all times? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the Function App be loaded at all times? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4029,8 +4029,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsiteconfigcors">Dict[Function<wbr>App<wbr>Site<wbr>Config<wbr>Cors]</a></span>
     </dt>
-    <dd>{{% md %}}A `cors` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `cors` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4038,8 +4038,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}State of FTP / FTPS service for this function app. Possible values include: `AllAllowed`, `FtpsOnly` and `Disabled`.
-{{% /md %}}</dd>
+    <dd>State of FTP / FTPS service for this function app. Possible values include: `AllAllowed`, `FtpsOnly` and `Disabled`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4047,8 +4047,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether or not the http2 protocol should be enabled. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether or not the http2 protocol should be enabled. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4056,8 +4056,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#functionappsiteconfigiprestriction">List[Function<wbr>App<wbr>Site<wbr>Config<wbr>Ip<wbr>Restriction]</a></span>
     </dt>
-    <dd>{{% md %}}A list of objects representing ip restrictions as defined below.
-{{% /md %}}</dd>
+    <dd>A list of objects representing ip restrictions as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4065,8 +4065,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Linux App Framework and version for the AppService, e.g. `DOCKER|(golang:latest)`.
-{{% /md %}}</dd>
+    <dd>Linux App Framework and version for the AppService, e.g. `DOCKER|(golang:latest)`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4074,8 +4074,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The minimum supported TLS version for the function app. Possible values are `1.0`, `1.1`, and `1.2`. Defaults to `1.2` for new function apps.
-{{% /md %}}</dd>
+    <dd>The minimum supported TLS version for the function app. Possible values are `1.0`, `1.1`, and `1.2`. Defaults to `1.2` for new function apps.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4083,8 +4083,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of pre-warmed instances for this function app. Only affects apps on the Premium plan.
-{{% /md %}}</dd>
+    <dd>The number of pre-warmed instances for this function app. Only affects apps on the Premium plan.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4092,8 +4092,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Function App run in 32 bit mode, rather than 64 bit mode? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should the Function App run in 32 bit mode, rather than 64 bit mode? Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4101,29 +4101,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should WebSockets be enabled?
-{{% /md %}}</dd>
+    <dd>Should WebSockets be enabled?
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="functionappsiteconfigcors">Function<wbr>App<wbr>Site<wbr>Config<wbr>Cors</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#FunctionAppSiteConfigCors">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#FunctionAppSiteConfigCors">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppSiteConfigCorsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppSiteConfigCorsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4132,8 +4132,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of origins which should be able to make cross-origin calls. `*` can be used to allow all calls.
-{{% /md %}}</dd>
+    <dd>A list of origins which should be able to make cross-origin calls. `*` can be used to allow all calls.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4141,14 +4141,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Are credentials supported?
-{{% /md %}}</dd>
+    <dd>Are credentials supported?
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4157,8 +4157,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of origins which should be able to make cross-origin calls. `*` can be used to allow all calls.
-{{% /md %}}</dd>
+    <dd>A list of origins which should be able to make cross-origin calls. `*` can be used to allow all calls.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4166,14 +4166,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Are credentials supported?
-{{% /md %}}</dd>
+    <dd>Are credentials supported?
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4182,8 +4182,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of origins which should be able to make cross-origin calls. `*` can be used to allow all calls.
-{{% /md %}}</dd>
+    <dd>A list of origins which should be able to make cross-origin calls. `*` can be used to allow all calls.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4191,14 +4191,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Are credentials supported?
-{{% /md %}}</dd>
+    <dd>Are credentials supported?
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4207,8 +4207,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of origins which should be able to make cross-origin calls. `*` can be used to allow all calls.
-{{% /md %}}</dd>
+    <dd>A list of origins which should be able to make cross-origin calls. `*` can be used to allow all calls.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4216,29 +4216,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Are credentials supported?
-{{% /md %}}</dd>
+    <dd>Are credentials supported?
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="functionappsiteconfigiprestriction">Function<wbr>App<wbr>Site<wbr>Config<wbr>Ip<wbr>Restriction</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#FunctionAppSiteConfigIpRestriction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#FunctionAppSiteConfigIpRestriction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppSiteConfigIpRestrictionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppSiteConfigIpRestrictionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4247,8 +4247,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP Address CIDR notation used for this IP Restriction.
-{{% /md %}}</dd>
+    <dd>The IP Address CIDR notation used for this IP Restriction.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4256,14 +4256,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Subnet ID used for this IP Restriction.
-{{% /md %}}</dd>
+    <dd>The Subnet ID used for this IP Restriction.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4272,8 +4272,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP Address CIDR notation used for this IP Restriction.
-{{% /md %}}</dd>
+    <dd>The IP Address CIDR notation used for this IP Restriction.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4281,14 +4281,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Subnet ID used for this IP Restriction.
-{{% /md %}}</dd>
+    <dd>The Subnet ID used for this IP Restriction.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4297,8 +4297,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP Address CIDR notation used for this IP Restriction.
-{{% /md %}}</dd>
+    <dd>The IP Address CIDR notation used for this IP Restriction.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4306,14 +4306,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Subnet ID used for this IP Restriction.
-{{% /md %}}</dd>
+    <dd>The Subnet ID used for this IP Restriction.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4322,8 +4322,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IP Address CIDR notation used for this IP Restriction.
-{{% /md %}}</dd>
+    <dd>The IP Address CIDR notation used for this IP Restriction.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4331,29 +4331,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Subnet ID used for this IP Restriction.
-{{% /md %}}</dd>
+    <dd>The Subnet ID used for this IP Restriction.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="functionappsitecredential">Function<wbr>App<wbr>Site<wbr>Credential</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#FunctionAppSiteCredential">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appservice?tab=doc#FunctionAppSiteCredentialOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4362,8 +4362,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The password associated with the username, which can be used to publish to this App Service.
-{{% /md %}}</dd>
+    <dd>The password associated with the username, which can be used to publish to this App Service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4371,14 +4371,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The username which can be used to publish to this App Service
-{{% /md %}}</dd>
+    <dd>The username which can be used to publish to this App Service
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4387,8 +4387,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password associated with the username, which can be used to publish to this App Service.
-{{% /md %}}</dd>
+    <dd>The password associated with the username, which can be used to publish to this App Service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4396,14 +4396,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username which can be used to publish to this App Service
-{{% /md %}}</dd>
+    <dd>The username which can be used to publish to this App Service
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4412,8 +4412,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password associated with the username, which can be used to publish to this App Service.
-{{% /md %}}</dd>
+    <dd>The password associated with the username, which can be used to publish to this App Service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4421,14 +4421,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username which can be used to publish to this App Service
-{{% /md %}}</dd>
+    <dd>The username which can be used to publish to this App Service
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4437,8 +4437,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The password associated with the username, which can be used to publish to this App Service.
-{{% /md %}}</dd>
+    <dd>The password associated with the username, which can be used to publish to this App Service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4446,11 +4446,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The username which can be used to publish to this App Service
-{{% /md %}}</dd>
+    <dd>The username which can be used to publish to this App Service
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

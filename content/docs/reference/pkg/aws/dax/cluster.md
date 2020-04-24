@@ -34,26 +34,26 @@ const bar = new aws.dax.Cluster("bar", {
 
 
 ## Create a Cluster Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/dax/#Cluster">Cluster</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/dax/#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Cluster</span><span class="p">(resource_name, opts=None, </span>availability_zones=None<span class="p">, </span>cluster_name=None<span class="p">, </span>description=None<span class="p">, </span>iam_role_arn=None<span class="p">, </span>maintenance_window=None<span class="p">, </span>node_type=None<span class="p">, </span>notification_topic_arn=None<span class="p">, </span>parameter_group_name=None<span class="p">, </span>replication_factor=None<span class="p">, </span>security_group_ids=None<span class="p">, </span>server_side_encryption=None<span class="p">, </span>subnet_group_name=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dax?tab=doc#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dax?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Dax.Cluster.html">Cluster</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Dax.ClusterArgs.html">ClusterArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -90,9 +90,9 @@ const bar = new aws.dax.Cluster("bar", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -110,9 +110,9 @@ const bar = new aws.dax.Cluster("bar", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -159,9 +159,9 @@ const bar = new aws.dax.Cluster("bar", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -198,7 +198,7 @@ const bar = new aws.dax.Cluster("bar", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Cluster Resource Properties {#properties}
 
@@ -211,7 +211,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -220,9 +220,9 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Group identifier. DAX converts this name to
+    <dd>Group identifier. DAX converts this name to
 lowercase
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -230,10 +230,10 @@ lowercase
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid Amazon Resource Name (ARN) that identifies
+    <dd>A valid Amazon Resource Name (ARN) that identifies
 an IAM role. At runtime, DAX will assume this role and use the role's
 permissions to access DynamoDB on your behalf
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -241,9 +241,9 @@ permissions to access DynamoDB on your behalf
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the nodes. See
+    <dd>The compute and memory capacity of the nodes. See
 [Nodes][1] for supported node types
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -251,10 +251,10 @@ permissions to access DynamoDB on your behalf
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of nodes in the DAX cluster. A
+    <dd>The number of nodes in the DAX cluster. A
 replication factor of 1 will create a single-node cluster, without any read
 replicas
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -262,9 +262,9 @@ replicas
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of Availability Zones in which the
+    <dd>List of Availability Zones in which the
 nodes will be created
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -272,8 +272,8 @@ nodes will be created
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the cluster
-{{% /md %}}</dd>
+    <dd>Description for the cluster
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -281,11 +281,11 @@ nodes will be created
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the weekly time range for when
+    <dd>Specifies the weekly time range for when
 maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 (24H Clock UTC). The minimum maintenance window is a 60 minute period. Example:
 `sun:05:00-sun:09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,10 +293,10 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) of an
+    <dd>An Amazon Resource Name (ARN) of an
 SNS topic to send DAX notifications to. Example:
 `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -304,9 +304,9 @@ SNS topic to send DAX notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parameter group to associate
+    <dd>Name of the parameter group to associate
 with this DAX cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -314,9 +314,9 @@ with this DAX cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more VPC security groups associated
+    <dd>One or more VPC security groups associated
 with the cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -324,8 +324,8 @@ with the cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterserversideencryption">Cluster<wbr>Server<wbr>Side<wbr>Encryption<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Encrypt at rest options
-{{% /md %}}</dd>
+    <dd>Encrypt at rest options
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -333,9 +333,9 @@ with the cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the subnet group to be used for the
+    <dd>Name of the subnet group to be used for the
 cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -343,14 +343,14 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -359,9 +359,9 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group identifier. DAX converts this name to
+    <dd>Group identifier. DAX converts this name to
 lowercase
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -369,10 +369,10 @@ lowercase
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid Amazon Resource Name (ARN) that identifies
+    <dd>A valid Amazon Resource Name (ARN) that identifies
 an IAM role. At runtime, DAX will assume this role and use the role's
 permissions to access DynamoDB on your behalf
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -380,9 +380,9 @@ permissions to access DynamoDB on your behalf
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the nodes. See
+    <dd>The compute and memory capacity of the nodes. See
 [Nodes][1] for supported node types
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -390,10 +390,10 @@ permissions to access DynamoDB on your behalf
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of nodes in the DAX cluster. A
+    <dd>The number of nodes in the DAX cluster. A
 replication factor of 1 will create a single-node cluster, without any read
 replicas
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -401,9 +401,9 @@ replicas
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of Availability Zones in which the
+    <dd>List of Availability Zones in which the
 nodes will be created
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -411,8 +411,8 @@ nodes will be created
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the cluster
-{{% /md %}}</dd>
+    <dd>Description for the cluster
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -420,11 +420,11 @@ nodes will be created
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the weekly time range for when
+    <dd>Specifies the weekly time range for when
 maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 (24H Clock UTC). The minimum maintenance window is a 60 minute period. Example:
 `sun:05:00-sun:09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -432,10 +432,10 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) of an
+    <dd>An Amazon Resource Name (ARN) of an
 SNS topic to send DAX notifications to. Example:
 `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -443,9 +443,9 @@ SNS topic to send DAX notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parameter group to associate
+    <dd>Name of the parameter group to associate
 with this DAX cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -453,9 +453,9 @@ with this DAX cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}One or more VPC security groups associated
+    <dd>One or more VPC security groups associated
 with the cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -463,8 +463,8 @@ with the cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterserversideencryption">Cluster<wbr>Server<wbr>Side<wbr>Encryption</a></span>
     </dt>
-    <dd>{{% md %}}Encrypt at rest options
-{{% /md %}}</dd>
+    <dd>Encrypt at rest options
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -472,9 +472,9 @@ with the cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the subnet group to be used for the
+    <dd>Name of the subnet group to be used for the
 cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -482,14 +482,14 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -498,9 +498,9 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group identifier. DAX converts this name to
+    <dd>Group identifier. DAX converts this name to
 lowercase
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -508,10 +508,10 @@ lowercase
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid Amazon Resource Name (ARN) that identifies
+    <dd>A valid Amazon Resource Name (ARN) that identifies
 an IAM role. At runtime, DAX will assume this role and use the role's
 permissions to access DynamoDB on your behalf
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -519,9 +519,9 @@ permissions to access DynamoDB on your behalf
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the nodes. See
+    <dd>The compute and memory capacity of the nodes. See
 [Nodes][1] for supported node types
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -529,10 +529,10 @@ permissions to access DynamoDB on your behalf
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of nodes in the DAX cluster. A
+    <dd>The number of nodes in the DAX cluster. A
 replication factor of 1 will create a single-node cluster, without any read
 replicas
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -540,9 +540,9 @@ replicas
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of Availability Zones in which the
+    <dd>List of Availability Zones in which the
 nodes will be created
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -550,8 +550,8 @@ nodes will be created
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the cluster
-{{% /md %}}</dd>
+    <dd>Description for the cluster
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -559,11 +559,11 @@ nodes will be created
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the weekly time range for when
+    <dd>Specifies the weekly time range for when
 maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 (24H Clock UTC). The minimum maintenance window is a 60 minute period. Example:
 `sun:05:00-sun:09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -571,10 +571,10 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) of an
+    <dd>An Amazon Resource Name (ARN) of an
 SNS topic to send DAX notifications to. Example:
 `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -582,9 +582,9 @@ SNS topic to send DAX notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parameter group to associate
+    <dd>Name of the parameter group to associate
 with this DAX cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -592,9 +592,9 @@ with this DAX cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more VPC security groups associated
+    <dd>One or more VPC security groups associated
 with the cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -602,8 +602,8 @@ with the cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterserversideencryption">Cluster<wbr>Server<wbr>Side<wbr>Encryption</a></span>
     </dt>
-    <dd>{{% md %}}Encrypt at rest options
-{{% /md %}}</dd>
+    <dd>Encrypt at rest options
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -611,9 +611,9 @@ with the cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the subnet group to be used for the
+    <dd>Name of the subnet group to be used for the
 cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -621,14 +621,14 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -637,9 +637,9 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Group identifier. DAX converts this name to
+    <dd>Group identifier. DAX converts this name to
 lowercase
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -647,10 +647,10 @@ lowercase
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A valid Amazon Resource Name (ARN) that identifies
+    <dd>A valid Amazon Resource Name (ARN) that identifies
 an IAM role. At runtime, DAX will assume this role and use the role's
 permissions to access DynamoDB on your behalf
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -658,9 +658,9 @@ permissions to access DynamoDB on your behalf
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the nodes. See
+    <dd>The compute and memory capacity of the nodes. See
 [Nodes][1] for supported node types
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -668,10 +668,10 @@ permissions to access DynamoDB on your behalf
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of nodes in the DAX cluster. A
+    <dd>The number of nodes in the DAX cluster. A
 replication factor of 1 will create a single-node cluster, without any read
 replicas
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -679,9 +679,9 @@ replicas
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of Availability Zones in which the
+    <dd>List of Availability Zones in which the
 nodes will be created
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -689,8 +689,8 @@ nodes will be created
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description for the cluster
-{{% /md %}}</dd>
+    <dd>Description for the cluster
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -698,11 +698,11 @@ nodes will be created
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the weekly time range for when
+    <dd>Specifies the weekly time range for when
 maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 (24H Clock UTC). The minimum maintenance window is a 60 minute period. Example:
 `sun:05:00-sun:09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -710,10 +710,10 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) of an
+    <dd>An Amazon Resource Name (ARN) of an
 SNS topic to send DAX notifications to. Example:
 `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -721,9 +721,9 @@ SNS topic to send DAX notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parameter group to associate
+    <dd>Name of the parameter group to associate
 with this DAX cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -731,9 +731,9 @@ with this DAX cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}One or more VPC security groups associated
+    <dd>One or more VPC security groups associated
 with the cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -741,8 +741,8 @@ with the cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterserversideencryption">Dict[Cluster<wbr>Server<wbr>Side<wbr>Encryption]</a></span>
     </dt>
-    <dd>{{% md %}}Encrypt at rest options
-{{% /md %}}</dd>
+    <dd>Encrypt at rest options
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -750,9 +750,9 @@ with the cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the subnet group to be used for the
+    <dd>Name of the subnet group to be used for the
 cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -760,11 +760,11 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -778,7 +778,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -787,8 +787,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the DAX cluster
-{{% /md %}}</dd>
+    <dd>The ARN of the DAX cluster
+</dd>
 
     <dt class="property-"
             title="">
@@ -796,8 +796,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of the DAX cluster without the port appended
-{{% /md %}}</dd>
+    <dd>The DNS name of the DAX cluster without the port appended
+</dd>
 
     <dt class="property-"
             title="">
@@ -805,9 +805,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The configuration endpoint for this DAX cluster,
+    <dd>The configuration endpoint for this DAX cluster,
 consisting of a DNS name and a port number
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -815,7 +815,7 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -823,10 +823,10 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusternode">List&lt;Cluster<wbr>Node&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of node objects including `id`, `address`, `port` and
+    <dd>List of node objects including `id`, `address`, `port` and
 `availability_zone`. Referenceable e.g. as
 `${aws_dax_cluster.test.nodes.0.address}`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -834,14 +834,14 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port used by the configuration endpoint
-{{% /md %}}</dd>
+    <dd>The port used by the configuration endpoint
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -850,8 +850,8 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the DAX cluster
-{{% /md %}}</dd>
+    <dd>The ARN of the DAX cluster
+</dd>
 
     <dt class="property-"
             title="">
@@ -859,8 +859,8 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of the DAX cluster without the port appended
-{{% /md %}}</dd>
+    <dd>The DNS name of the DAX cluster without the port appended
+</dd>
 
     <dt class="property-"
             title="">
@@ -868,9 +868,9 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The configuration endpoint for this DAX cluster,
+    <dd>The configuration endpoint for this DAX cluster,
 consisting of a DNS name and a port number
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -878,7 +878,7 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -886,10 +886,10 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusternode">[]Cluster<wbr>Node</a></span>
     </dt>
-    <dd>{{% md %}}List of node objects including `id`, `address`, `port` and
+    <dd>List of node objects including `id`, `address`, `port` and
 `availability_zone`. Referenceable e.g. as
 `${aws_dax_cluster.test.nodes.0.address}`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -897,14 +897,14 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port used by the configuration endpoint
-{{% /md %}}</dd>
+    <dd>The port used by the configuration endpoint
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -913,8 +913,8 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the DAX cluster
-{{% /md %}}</dd>
+    <dd>The ARN of the DAX cluster
+</dd>
 
     <dt class="property-"
             title="">
@@ -922,8 +922,8 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of the DAX cluster without the port appended
-{{% /md %}}</dd>
+    <dd>The DNS name of the DAX cluster without the port appended
+</dd>
 
     <dt class="property-"
             title="">
@@ -931,9 +931,9 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The configuration endpoint for this DAX cluster,
+    <dd>The configuration endpoint for this DAX cluster,
 consisting of a DNS name and a port number
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -941,7 +941,7 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -949,10 +949,10 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusternode">Cluster<wbr>Node[]</a></span>
     </dt>
-    <dd>{{% md %}}List of node objects including `id`, `address`, `port` and
+    <dd>List of node objects including `id`, `address`, `port` and
 `availability_zone`. Referenceable e.g. as
 `${aws_dax_cluster.test.nodes.0.address}`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -960,14 +960,14 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port used by the configuration endpoint
-{{% /md %}}</dd>
+    <dd>The port used by the configuration endpoint
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -976,8 +976,8 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the DAX cluster
-{{% /md %}}</dd>
+    <dd>The ARN of the DAX cluster
+</dd>
 
     <dt class="property-"
             title="">
@@ -985,8 +985,8 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of the DAX cluster without the port appended
-{{% /md %}}</dd>
+    <dd>The DNS name of the DAX cluster without the port appended
+</dd>
 
     <dt class="property-"
             title="">
@@ -994,9 +994,9 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The configuration endpoint for this DAX cluster,
+    <dd>The configuration endpoint for this DAX cluster,
 consisting of a DNS name and a port number
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1004,7 +1004,7 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1012,10 +1012,10 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusternode">List[Cluster<wbr>Node]</a></span>
     </dt>
-    <dd>{{% md %}}List of node objects including `id`, `address`, `port` and
+    <dd>List of node objects including `id`, `address`, `port` and
 `availability_zone`. Referenceable e.g. as
 `${aws_dax_cluster.test.nodes.0.address}`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1023,11 +1023,11 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port used by the configuration endpoint
-{{% /md %}}</dd>
+    <dd>The port used by the configuration endpoint
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1038,25 +1038,25 @@ consisting of a DNS name and a port number
 ## Look up an Existing Cluster Resource {#look-up}
 
 Get an existing Cluster resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/dax/#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/dax/#Cluster">Cluster</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>availability_zones=None<span class="p">, </span>cluster_address=None<span class="p">, </span>cluster_name=None<span class="p">, </span>configuration_endpoint=None<span class="p">, </span>description=None<span class="p">, </span>iam_role_arn=None<span class="p">, </span>maintenance_window=None<span class="p">, </span>node_type=None<span class="p">, </span>nodes=None<span class="p">, </span>notification_topic_arn=None<span class="p">, </span>parameter_group_name=None<span class="p">, </span>port=None<span class="p">, </span>replication_factor=None<span class="p">, </span>security_group_ids=None<span class="p">, </span>server_side_encryption=None<span class="p">, </span>subnet_group_name=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dax?tab=doc#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dax?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Dax.Cluster.html">Cluster</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Dax.ClusterState.html">ClusterState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1081,9 +1081,9 @@ Get an existing Cluster resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1096,36 +1096,9 @@ Get an existing Cluster resource's state with the given name, ID, and optional e
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1150,13 +1123,40 @@ Get an existing Cluster resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1165,8 +1165,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the DAX cluster
-{{% /md %}}</dd>
+    <dd>The ARN of the DAX cluster
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1174,9 +1174,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of Availability Zones in which the
+    <dd>List of Availability Zones in which the
 nodes will be created
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1184,8 +1184,8 @@ nodes will be created
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of the DAX cluster without the port appended
-{{% /md %}}</dd>
+    <dd>The DNS name of the DAX cluster without the port appended
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1193,9 +1193,9 @@ nodes will be created
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Group identifier. DAX converts this name to
+    <dd>Group identifier. DAX converts this name to
 lowercase
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1203,9 +1203,9 @@ lowercase
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The configuration endpoint for this DAX cluster,
+    <dd>The configuration endpoint for this DAX cluster,
 consisting of a DNS name and a port number
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1213,8 +1213,8 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the cluster
-{{% /md %}}</dd>
+    <dd>Description for the cluster
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1222,10 +1222,10 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid Amazon Resource Name (ARN) that identifies
+    <dd>A valid Amazon Resource Name (ARN) that identifies
 an IAM role. At runtime, DAX will assume this role and use the role's
 permissions to access DynamoDB on your behalf
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1233,11 +1233,11 @@ permissions to access DynamoDB on your behalf
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the weekly time range for when
+    <dd>Specifies the weekly time range for when
 maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 (24H Clock UTC). The minimum maintenance window is a 60 minute period. Example:
 `sun:05:00-sun:09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1245,9 +1245,9 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the nodes. See
+    <dd>The compute and memory capacity of the nodes. See
 [Nodes][1] for supported node types
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1255,10 +1255,10 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusternode">List&lt;Cluster<wbr>Node<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of node objects including `id`, `address`, `port` and
+    <dd>List of node objects including `id`, `address`, `port` and
 `availability_zone`. Referenceable e.g. as
 `${aws_dax_cluster.test.nodes.0.address}`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1266,10 +1266,10 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) of an
+    <dd>An Amazon Resource Name (ARN) of an
 SNS topic to send DAX notifications to. Example:
 `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1277,9 +1277,9 @@ SNS topic to send DAX notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parameter group to associate
+    <dd>Name of the parameter group to associate
 with this DAX cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,8 +1287,8 @@ with this DAX cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port used by the configuration endpoint
-{{% /md %}}</dd>
+    <dd>The port used by the configuration endpoint
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1296,10 +1296,10 @@ with this DAX cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of nodes in the DAX cluster. A
+    <dd>The number of nodes in the DAX cluster. A
 replication factor of 1 will create a single-node cluster, without any read
 replicas
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1307,9 +1307,9 @@ replicas
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more VPC security groups associated
+    <dd>One or more VPC security groups associated
 with the cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1317,8 +1317,8 @@ with the cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterserversideencryption">Cluster<wbr>Server<wbr>Side<wbr>Encryption<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Encrypt at rest options
-{{% /md %}}</dd>
+    <dd>Encrypt at rest options
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1326,9 +1326,9 @@ with the cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the subnet group to be used for the
+    <dd>Name of the subnet group to be used for the
 cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1336,14 +1336,14 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1352,8 +1352,8 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the DAX cluster
-{{% /md %}}</dd>
+    <dd>The ARN of the DAX cluster
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1361,9 +1361,9 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of Availability Zones in which the
+    <dd>List of Availability Zones in which the
 nodes will be created
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1371,8 +1371,8 @@ nodes will be created
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of the DAX cluster without the port appended
-{{% /md %}}</dd>
+    <dd>The DNS name of the DAX cluster without the port appended
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1380,9 +1380,9 @@ nodes will be created
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group identifier. DAX converts this name to
+    <dd>Group identifier. DAX converts this name to
 lowercase
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1390,9 +1390,9 @@ lowercase
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The configuration endpoint for this DAX cluster,
+    <dd>The configuration endpoint for this DAX cluster,
 consisting of a DNS name and a port number
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1400,8 +1400,8 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the cluster
-{{% /md %}}</dd>
+    <dd>Description for the cluster
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1409,10 +1409,10 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid Amazon Resource Name (ARN) that identifies
+    <dd>A valid Amazon Resource Name (ARN) that identifies
 an IAM role. At runtime, DAX will assume this role and use the role's
 permissions to access DynamoDB on your behalf
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1420,11 +1420,11 @@ permissions to access DynamoDB on your behalf
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the weekly time range for when
+    <dd>Specifies the weekly time range for when
 maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 (24H Clock UTC). The minimum maintenance window is a 60 minute period. Example:
 `sun:05:00-sun:09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1432,9 +1432,9 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the nodes. See
+    <dd>The compute and memory capacity of the nodes. See
 [Nodes][1] for supported node types
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1442,10 +1442,10 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusternode">[]Cluster<wbr>Node</a></span>
     </dt>
-    <dd>{{% md %}}List of node objects including `id`, `address`, `port` and
+    <dd>List of node objects including `id`, `address`, `port` and
 `availability_zone`. Referenceable e.g. as
 `${aws_dax_cluster.test.nodes.0.address}`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1453,10 +1453,10 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) of an
+    <dd>An Amazon Resource Name (ARN) of an
 SNS topic to send DAX notifications to. Example:
 `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1464,9 +1464,9 @@ SNS topic to send DAX notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parameter group to associate
+    <dd>Name of the parameter group to associate
 with this DAX cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1474,8 +1474,8 @@ with this DAX cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port used by the configuration endpoint
-{{% /md %}}</dd>
+    <dd>The port used by the configuration endpoint
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1483,10 +1483,10 @@ with this DAX cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of nodes in the DAX cluster. A
+    <dd>The number of nodes in the DAX cluster. A
 replication factor of 1 will create a single-node cluster, without any read
 replicas
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1494,9 +1494,9 @@ replicas
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}One or more VPC security groups associated
+    <dd>One or more VPC security groups associated
 with the cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1504,8 +1504,8 @@ with the cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterserversideencryption">Cluster<wbr>Server<wbr>Side<wbr>Encryption</a></span>
     </dt>
-    <dd>{{% md %}}Encrypt at rest options
-{{% /md %}}</dd>
+    <dd>Encrypt at rest options
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1513,9 +1513,9 @@ with the cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the subnet group to be used for the
+    <dd>Name of the subnet group to be used for the
 cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1523,14 +1523,14 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1539,8 +1539,8 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the DAX cluster
-{{% /md %}}</dd>
+    <dd>The ARN of the DAX cluster
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1548,9 +1548,9 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of Availability Zones in which the
+    <dd>List of Availability Zones in which the
 nodes will be created
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1558,8 +1558,8 @@ nodes will be created
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of the DAX cluster without the port appended
-{{% /md %}}</dd>
+    <dd>The DNS name of the DAX cluster without the port appended
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1567,9 +1567,9 @@ nodes will be created
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Group identifier. DAX converts this name to
+    <dd>Group identifier. DAX converts this name to
 lowercase
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1577,9 +1577,9 @@ lowercase
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The configuration endpoint for this DAX cluster,
+    <dd>The configuration endpoint for this DAX cluster,
 consisting of a DNS name and a port number
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1587,8 +1587,8 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description for the cluster
-{{% /md %}}</dd>
+    <dd>Description for the cluster
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1596,10 +1596,10 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid Amazon Resource Name (ARN) that identifies
+    <dd>A valid Amazon Resource Name (ARN) that identifies
 an IAM role. At runtime, DAX will assume this role and use the role's
 permissions to access DynamoDB on your behalf
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1607,11 +1607,11 @@ permissions to access DynamoDB on your behalf
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the weekly time range for when
+    <dd>Specifies the weekly time range for when
 maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 (24H Clock UTC). The minimum maintenance window is a 60 minute period. Example:
 `sun:05:00-sun:09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1619,9 +1619,9 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the nodes. See
+    <dd>The compute and memory capacity of the nodes. See
 [Nodes][1] for supported node types
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1629,10 +1629,10 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusternode">Cluster<wbr>Node[]</a></span>
     </dt>
-    <dd>{{% md %}}List of node objects including `id`, `address`, `port` and
+    <dd>List of node objects including `id`, `address`, `port` and
 `availability_zone`. Referenceable e.g. as
 `${aws_dax_cluster.test.nodes.0.address}`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1640,10 +1640,10 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) of an
+    <dd>An Amazon Resource Name (ARN) of an
 SNS topic to send DAX notifications to. Example:
 `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1651,9 +1651,9 @@ SNS topic to send DAX notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parameter group to associate
+    <dd>Name of the parameter group to associate
 with this DAX cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1661,8 +1661,8 @@ with this DAX cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port used by the configuration endpoint
-{{% /md %}}</dd>
+    <dd>The port used by the configuration endpoint
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1670,10 +1670,10 @@ with this DAX cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of nodes in the DAX cluster. A
+    <dd>The number of nodes in the DAX cluster. A
 replication factor of 1 will create a single-node cluster, without any read
 replicas
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1681,9 +1681,9 @@ replicas
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more VPC security groups associated
+    <dd>One or more VPC security groups associated
 with the cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1691,8 +1691,8 @@ with the cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterserversideencryption">Cluster<wbr>Server<wbr>Side<wbr>Encryption</a></span>
     </dt>
-    <dd>{{% md %}}Encrypt at rest options
-{{% /md %}}</dd>
+    <dd>Encrypt at rest options
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1700,9 +1700,9 @@ with the cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the subnet group to be used for the
+    <dd>Name of the subnet group to be used for the
 cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1710,14 +1710,14 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1726,8 +1726,8 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the DAX cluster
-{{% /md %}}</dd>
+    <dd>The ARN of the DAX cluster
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1735,9 +1735,9 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of Availability Zones in which the
+    <dd>List of Availability Zones in which the
 nodes will be created
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1745,8 +1745,8 @@ nodes will be created
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The DNS name of the DAX cluster without the port appended
-{{% /md %}}</dd>
+    <dd>The DNS name of the DAX cluster without the port appended
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1754,9 +1754,9 @@ nodes will be created
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Group identifier. DAX converts this name to
+    <dd>Group identifier. DAX converts this name to
 lowercase
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1764,9 +1764,9 @@ lowercase
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The configuration endpoint for this DAX cluster,
+    <dd>The configuration endpoint for this DAX cluster,
 consisting of a DNS name and a port number
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1774,8 +1774,8 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description for the cluster
-{{% /md %}}</dd>
+    <dd>Description for the cluster
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1783,10 +1783,10 @@ consisting of a DNS name and a port number
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A valid Amazon Resource Name (ARN) that identifies
+    <dd>A valid Amazon Resource Name (ARN) that identifies
 an IAM role. At runtime, DAX will assume this role and use the role's
 permissions to access DynamoDB on your behalf
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1794,11 +1794,11 @@ permissions to access DynamoDB on your behalf
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the weekly time range for when
+    <dd>Specifies the weekly time range for when
 maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
 (24H Clock UTC). The minimum maintenance window is a 60 minute period. Example:
 `sun:05:00-sun:09:00`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1806,9 +1806,9 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The compute and memory capacity of the nodes. See
+    <dd>The compute and memory capacity of the nodes. See
 [Nodes][1] for supported node types
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1816,10 +1816,10 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusternode">List[Cluster<wbr>Node]</a></span>
     </dt>
-    <dd>{{% md %}}List of node objects including `id`, `address`, `port` and
+    <dd>List of node objects including `id`, `address`, `port` and
 `availability_zone`. Referenceable e.g. as
 `${aws_dax_cluster.test.nodes.0.address}`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1827,10 +1827,10 @@ maintenance on the cluster is performed. The format is `ddd:hh24:mi-ddd:hh24:mi`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An Amazon Resource Name (ARN) of an
+    <dd>An Amazon Resource Name (ARN) of an
 SNS topic to send DAX notifications to. Example:
 `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1838,9 +1838,9 @@ SNS topic to send DAX notifications to. Example:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the parameter group to associate
+    <dd>Name of the parameter group to associate
 with this DAX cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1848,8 +1848,8 @@ with this DAX cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port used by the configuration endpoint
-{{% /md %}}</dd>
+    <dd>The port used by the configuration endpoint
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1857,10 +1857,10 @@ with this DAX cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of nodes in the DAX cluster. A
+    <dd>The number of nodes in the DAX cluster. A
 replication factor of 1 will create a single-node cluster, without any read
 replicas
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1868,9 +1868,9 @@ replicas
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}One or more VPC security groups associated
+    <dd>One or more VPC security groups associated
 with the cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1878,8 +1878,8 @@ with the cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterserversideencryption">Dict[Cluster<wbr>Server<wbr>Side<wbr>Encryption]</a></span>
     </dt>
-    <dd>{{% md %}}Encrypt at rest options
-{{% /md %}}</dd>
+    <dd>Encrypt at rest options
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1887,9 +1887,9 @@ with the cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the subnet group to be used for the
+    <dd>Name of the subnet group to be used for the
 cluster
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1897,11 +1897,11 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1916,18 +1916,18 @@ cluster
 
 
 <h4 id="clusternode">Cluster<wbr>Node</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ClusterNode">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dax?tab=doc#ClusterNodeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1936,7 +1936,7 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1944,7 +1944,7 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1952,7 +1952,7 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1960,14 +1960,14 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port used by the configuration endpoint
-{{% /md %}}</dd>
+    <dd>The port used by the configuration endpoint
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1976,7 +1976,7 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1984,7 +1984,7 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1992,7 +1992,7 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2000,14 +2000,14 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port used by the configuration endpoint
-{{% /md %}}</dd>
+    <dd>The port used by the configuration endpoint
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2016,7 +2016,7 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2024,7 +2024,7 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2032,7 +2032,7 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2040,14 +2040,14 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port used by the configuration endpoint
-{{% /md %}}</dd>
+    <dd>The port used by the configuration endpoint
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2056,7 +2056,7 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2064,7 +2064,7 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2072,7 +2072,7 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2080,29 +2080,29 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port used by the configuration endpoint
-{{% /md %}}</dd>
+    <dd>The port used by the configuration endpoint
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="clusterserversideencryption">Cluster<wbr>Server<wbr>Side<wbr>Encryption</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ClusterServerSideEncryption">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ClusterServerSideEncryption">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dax?tab=doc#ClusterServerSideEncryptionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dax?tab=doc#ClusterServerSideEncryptionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2111,14 +2111,14 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable encryption at rest. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to enable encryption at rest. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2127,14 +2127,14 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable encryption at rest. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to enable encryption at rest. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2143,14 +2143,14 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable encryption at rest. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to enable encryption at rest. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2159,11 +2159,11 @@ cluster
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable encryption at rest. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to enable encryption at rest. Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -169,26 +169,26 @@ Fastly documentation on [Amazon S3][fastly-s3].
 
 
 ## Create a Servicev1 Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/fastly/#Servicev1">Servicev1</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/fastly/#Servicev1Args">Servicev1Args</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Servicev1</span><span class="p">(resource_name, opts=None, </span>acls=None<span class="p">, </span>activate=None<span class="p">, </span>backends=None<span class="p">, </span>bigqueryloggings=None<span class="p">, </span>blobstorageloggings=None<span class="p">, </span>cache_settings=None<span class="p">, </span>comment=None<span class="p">, </span>conditions=None<span class="p">, </span>default_host=None<span class="p">, </span>default_ttl=None<span class="p">, </span>dictionaries=None<span class="p">, </span>directors=None<span class="p">, </span>domains=None<span class="p">, </span>dynamicsnippets=None<span class="p">, </span>force_destroy=None<span class="p">, </span>gcsloggings=None<span class="p">, </span>gzips=None<span class="p">, </span>headers=None<span class="p">, </span>healthchecks=None<span class="p">, </span>logentries=None<span class="p">, </span>name=None<span class="p">, </span>papertrails=None<span class="p">, </span>request_settings=None<span class="p">, </span>response_objects=None<span class="p">, </span>s3loggings=None<span class="p">, </span>snippets=None<span class="p">, </span>splunks=None<span class="p">, </span>sumologics=None<span class="p">, </span>syslogs=None<span class="p">, </span>vcls=None<span class="p">, </span>version_comment=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewServicev1<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1Args">Servicev1Args</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1">Servicev1</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Fastly/Pulumi.Fastly.Servicev1.html">Servicev1</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Fastly/Pulumi.Fastly.Servicev1Args.html">Servicev1Args</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -225,9 +225,9 @@ Fastly documentation on [Amazon S3][fastly-s3].
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -245,9 +245,9 @@ Fastly documentation on [Amazon S3][fastly-s3].
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -294,9 +294,9 @@ Fastly documentation on [Amazon S3][fastly-s3].
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -333,7 +333,7 @@ Fastly documentation on [Amazon S3][fastly-s3].
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Servicev1 Resource Properties {#properties}
 
@@ -346,7 +346,7 @@ The Servicev1 resource accepts the following [input]({{< relref "/docs/intro/con
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -355,9 +355,9 @@ The Servicev1 resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1domain">List&lt;Servicev1Domain<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}If you created the S3 bucket outside of `us-east-1`,
+    <dd>If you created the S3 bucket outside of `us-east-1`,
 then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws.com`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -365,8 +365,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1acl">List&lt;Servicev1Acl<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of ACL configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of ACL configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -374,8 +374,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Conditionally prevents the Service from being activated. The apply step will continue to create a new draft version but will not activate it if this is set to false. Default true.
-{{% /md %}}</dd>
+    <dd>Conditionally prevents the Service from being activated. The apply step will continue to create a new draft version but will not activate it if this is set to false. Default true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -383,10 +383,10 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1backend">List&lt;Servicev1Backend<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of Backends to service requests from your Domains.
+    <dd>A set of Backends to service requests from your Domains.
 Defined below. Backends must be defined in this argument, or defined in the
 `vcl` argument below
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -394,9 +394,9 @@ Defined below. Backends must be defined in this argument, or defined in the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1bigquerylogging">List&lt;Servicev1Bigquerylogging<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A BigQuery endpoint to send streaming logs too.
+    <dd>A BigQuery endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -404,9 +404,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1blobstoragelogging">List&lt;Servicev1Blobstoragelogging<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An Azure Blob Storage endpoint to send streaming logs too.
+    <dd>An Azure Blob Storage endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,8 +414,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1cachesetting">List&lt;Servicev1Cache<wbr>Setting<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of Cache Settings, allowing you to override
-{{% /md %}}</dd>
+    <dd>A set of Cache Settings, allowing you to override
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -423,8 +423,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment about the Director.
-{{% /md %}}</dd>
+    <dd>An optional comment about the Director.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -432,9 +432,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1condition">List&lt;Servicev1Condition<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of conditions to add logic to any basic
+    <dd>A set of conditions to add logic to any basic
 configuration object in this service. Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -442,8 +442,8 @@ configuration object in this service. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets the host header.
-{{% /md %}}</dd>
+    <dd>Sets the host header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -451,9 +451,9 @@ configuration object in this service. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The default Time-to-live (TTL) for
+    <dd>The default Time-to-live (TTL) for
 requests.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -461,8 +461,8 @@ requests.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1dictionary">List&lt;Servicev1Dictionary<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of dictionaries that allow the storing of key values pair for use within VCL functions. Defined below.
-{{% /md %}}</dd>
+    <dd>A set of dictionaries that allow the storing of key values pair for use within VCL functions. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -470,9 +470,9 @@ requests.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1director">List&lt;Servicev1Director<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A director to allow more control over balancing traffic over backends.
+    <dd>A director to allow more control over balancing traffic over backends.
 when an item is not to be cached based on an above `condition`. Defined below
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -480,8 +480,8 @@ when an item is not to be cached based on an above `condition`. Defined below
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1dynamicsnippet">List&lt;Servicev1Dynamicsnippet<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom, "dynamic" VCL Snippet configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of custom, "dynamic" VCL Snippet configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -489,9 +489,9 @@ when an item is not to be cached based on an above `condition`. Defined below
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Services that are active cannot be destroyed. In
+    <dd>Services that are active cannot be destroyed. In
 order to destroy the Service, set `force_destroy` to `true`. Default `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -499,9 +499,9 @@ order to destroy the Service, set `force_destroy` to `true`. Default `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1gcslogging">List&lt;Servicev1Gcslogging<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A gcs endpoint to send streaming logs too.
+    <dd>A gcs endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -509,9 +509,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1gzip">List&lt;Servicev1Gzip<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of gzip rules to control automatic gzipping of
+    <dd>A set of gzip rules to control automatic gzipping of
 content. Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -519,9 +519,9 @@ content. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1header">List&lt;Servicev1Header<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of Headers to manipulate for each request. Defined
+    <dd>A set of Headers to manipulate for each request. Defined
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -529,8 +529,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1healthcheck">List&lt;Servicev1Healthcheck<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Name of a defined `healthcheck` to assign to this backend.
-{{% /md %}}</dd>
+    <dd>Name of a defined `healthcheck` to assign to this backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -538,9 +538,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1logentry">List&lt;Servicev1Logentry<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A logentries endpoint to send streaming logs too.
+    <dd>A logentries endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -548,8 +548,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -557,9 +557,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1papertrail">List&lt;Servicev1Papertrail<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A Papertrail endpoint to send streaming logs too.
+    <dd>A Papertrail endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -567,8 +567,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1requestsetting">List&lt;Servicev1Request<wbr>Setting<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of Request modifiers. Defined below
-{{% /md %}}</dd>
+    <dd>A set of Request modifiers. Defined below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -576,8 +576,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1responseobject">List&lt;Servicev1Response<wbr>Object<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Allows you to create synthetic responses that exist entirely on the varnish machine. Useful for creating error or maintenance pages that exists outside the scope of your datacenter. Best when used with Condition objects.
-{{% /md %}}</dd>
+    <dd>Allows you to create synthetic responses that exist entirely on the varnish machine. Useful for creating error or maintenance pages that exists outside the scope of your datacenter. Best when used with Condition objects.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -585,9 +585,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1s3logging">List&lt;Servicev1S3logging<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of S3 Buckets to send streaming logs too.
+    <dd>A set of S3 Buckets to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -595,8 +595,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1snippet">List&lt;Servicev1Snippet<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom, "regular" (non-dynamic) VCL Snippet configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of custom, "regular" (non-dynamic) VCL Snippet configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -604,9 +604,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1splunk">List&lt;Servicev1Splunk<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A Splunk endpoint to send streaming logs too.
+    <dd>A Splunk endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -614,9 +614,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1sumologic">List&lt;Servicev1Sumologic<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A Sumologic endpoint to send streaming logs too.
+    <dd>A Sumologic endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -624,9 +624,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1syslog">List&lt;Servicev1Syslog<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A syslog endpoint to send streaming logs too.
+    <dd>A syslog endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -634,10 +634,10 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1vcl">List&lt;Servicev1Vcl<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom VCL configuration blocks. The
+    <dd>A set of custom VCL configuration blocks. The
 ability to upload custom VCL code is not enabled by default for new Fastly
 accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uploading-custom-vcl) for details).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -645,14 +645,14 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description field for the version.
-{{% /md %}}</dd>
+    <dd>Description field for the version.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -661,9 +661,9 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1domain">[]Servicev1Domain</a></span>
     </dt>
-    <dd>{{% md %}}If you created the S3 bucket outside of `us-east-1`,
+    <dd>If you created the S3 bucket outside of `us-east-1`,
 then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws.com`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -671,8 +671,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1acl">[]Servicev1Acl</a></span>
     </dt>
-    <dd>{{% md %}}A set of ACL configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of ACL configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -680,8 +680,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Conditionally prevents the Service from being activated. The apply step will continue to create a new draft version but will not activate it if this is set to false. Default true.
-{{% /md %}}</dd>
+    <dd>Conditionally prevents the Service from being activated. The apply step will continue to create a new draft version but will not activate it if this is set to false. Default true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -689,10 +689,10 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1backend">[]Servicev1Backend</a></span>
     </dt>
-    <dd>{{% md %}}A set of Backends to service requests from your Domains.
+    <dd>A set of Backends to service requests from your Domains.
 Defined below. Backends must be defined in this argument, or defined in the
 `vcl` argument below
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -700,9 +700,9 @@ Defined below. Backends must be defined in this argument, or defined in the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1bigquerylogging">[]Servicev1Bigquerylogging</a></span>
     </dt>
-    <dd>{{% md %}}A BigQuery endpoint to send streaming logs too.
+    <dd>A BigQuery endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -710,9 +710,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1blobstoragelogging">[]Servicev1Blobstoragelogging</a></span>
     </dt>
-    <dd>{{% md %}}An Azure Blob Storage endpoint to send streaming logs too.
+    <dd>An Azure Blob Storage endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -720,8 +720,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1cachesetting">[]Servicev1Cache<wbr>Setting</a></span>
     </dt>
-    <dd>{{% md %}}A set of Cache Settings, allowing you to override
-{{% /md %}}</dd>
+    <dd>A set of Cache Settings, allowing you to override
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -729,8 +729,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment about the Director.
-{{% /md %}}</dd>
+    <dd>An optional comment about the Director.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -738,9 +738,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1condition">[]Servicev1Condition</a></span>
     </dt>
-    <dd>{{% md %}}A set of conditions to add logic to any basic
+    <dd>A set of conditions to add logic to any basic
 configuration object in this service. Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -748,8 +748,8 @@ configuration object in this service. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets the host header.
-{{% /md %}}</dd>
+    <dd>Sets the host header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -757,9 +757,9 @@ configuration object in this service. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The default Time-to-live (TTL) for
+    <dd>The default Time-to-live (TTL) for
 requests.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -767,8 +767,8 @@ requests.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1dictionary">[]Servicev1Dictionary</a></span>
     </dt>
-    <dd>{{% md %}}A set of dictionaries that allow the storing of key values pair for use within VCL functions. Defined below.
-{{% /md %}}</dd>
+    <dd>A set of dictionaries that allow the storing of key values pair for use within VCL functions. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -776,9 +776,9 @@ requests.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1director">[]Servicev1Director</a></span>
     </dt>
-    <dd>{{% md %}}A director to allow more control over balancing traffic over backends.
+    <dd>A director to allow more control over balancing traffic over backends.
 when an item is not to be cached based on an above `condition`. Defined below
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -786,8 +786,8 @@ when an item is not to be cached based on an above `condition`. Defined below
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1dynamicsnippet">[]Servicev1Dynamicsnippet</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom, "dynamic" VCL Snippet configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of custom, "dynamic" VCL Snippet configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -795,9 +795,9 @@ when an item is not to be cached based on an above `condition`. Defined below
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Services that are active cannot be destroyed. In
+    <dd>Services that are active cannot be destroyed. In
 order to destroy the Service, set `force_destroy` to `true`. Default `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -805,9 +805,9 @@ order to destroy the Service, set `force_destroy` to `true`. Default `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1gcslogging">[]Servicev1Gcslogging</a></span>
     </dt>
-    <dd>{{% md %}}A gcs endpoint to send streaming logs too.
+    <dd>A gcs endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -815,9 +815,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1gzip">[]Servicev1Gzip</a></span>
     </dt>
-    <dd>{{% md %}}A set of gzip rules to control automatic gzipping of
+    <dd>A set of gzip rules to control automatic gzipping of
 content. Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -825,9 +825,9 @@ content. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1header">[]Servicev1Header</a></span>
     </dt>
-    <dd>{{% md %}}A set of Headers to manipulate for each request. Defined
+    <dd>A set of Headers to manipulate for each request. Defined
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -835,8 +835,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1healthcheck">[]Servicev1Healthcheck</a></span>
     </dt>
-    <dd>{{% md %}}Name of a defined `healthcheck` to assign to this backend.
-{{% /md %}}</dd>
+    <dd>Name of a defined `healthcheck` to assign to this backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -844,9 +844,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1logentry">[]Servicev1Logentry</a></span>
     </dt>
-    <dd>{{% md %}}A logentries endpoint to send streaming logs too.
+    <dd>A logentries endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -854,8 +854,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -863,9 +863,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1papertrail">[]Servicev1Papertrail</a></span>
     </dt>
-    <dd>{{% md %}}A Papertrail endpoint to send streaming logs too.
+    <dd>A Papertrail endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -873,8 +873,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1requestsetting">[]Servicev1Request<wbr>Setting</a></span>
     </dt>
-    <dd>{{% md %}}A set of Request modifiers. Defined below
-{{% /md %}}</dd>
+    <dd>A set of Request modifiers. Defined below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -882,8 +882,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1responseobject">[]Servicev1Response<wbr>Object</a></span>
     </dt>
-    <dd>{{% md %}}Allows you to create synthetic responses that exist entirely on the varnish machine. Useful for creating error or maintenance pages that exists outside the scope of your datacenter. Best when used with Condition objects.
-{{% /md %}}</dd>
+    <dd>Allows you to create synthetic responses that exist entirely on the varnish machine. Useful for creating error or maintenance pages that exists outside the scope of your datacenter. Best when used with Condition objects.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -891,9 +891,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1s3logging">[]Servicev1S3logging</a></span>
     </dt>
-    <dd>{{% md %}}A set of S3 Buckets to send streaming logs too.
+    <dd>A set of S3 Buckets to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -901,8 +901,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1snippet">[]Servicev1Snippet</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom, "regular" (non-dynamic) VCL Snippet configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of custom, "regular" (non-dynamic) VCL Snippet configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -910,9 +910,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1splunk">[]Servicev1Splunk</a></span>
     </dt>
-    <dd>{{% md %}}A Splunk endpoint to send streaming logs too.
+    <dd>A Splunk endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -920,9 +920,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1sumologic">[]Servicev1Sumologic</a></span>
     </dt>
-    <dd>{{% md %}}A Sumologic endpoint to send streaming logs too.
+    <dd>A Sumologic endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -930,9 +930,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1syslog">[]Servicev1Syslog</a></span>
     </dt>
-    <dd>{{% md %}}A syslog endpoint to send streaming logs too.
+    <dd>A syslog endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -940,10 +940,10 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1vcl">[]Servicev1Vcl</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom VCL configuration blocks. The
+    <dd>A set of custom VCL configuration blocks. The
 ability to upload custom VCL code is not enabled by default for new Fastly
 accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uploading-custom-vcl) for details).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -951,14 +951,14 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description field for the version.
-{{% /md %}}</dd>
+    <dd>Description field for the version.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -967,9 +967,9 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1domain">Servicev1Domain[]</a></span>
     </dt>
-    <dd>{{% md %}}If you created the S3 bucket outside of `us-east-1`,
+    <dd>If you created the S3 bucket outside of `us-east-1`,
 then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws.com`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -977,8 +977,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1acl">Servicev1Acl[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of ACL configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of ACL configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -986,8 +986,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Conditionally prevents the Service from being activated. The apply step will continue to create a new draft version but will not activate it if this is set to false. Default true.
-{{% /md %}}</dd>
+    <dd>Conditionally prevents the Service from being activated. The apply step will continue to create a new draft version but will not activate it if this is set to false. Default true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -995,10 +995,10 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1backend">Servicev1Backend[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of Backends to service requests from your Domains.
+    <dd>A set of Backends to service requests from your Domains.
 Defined below. Backends must be defined in this argument, or defined in the
 `vcl` argument below
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1006,9 +1006,9 @@ Defined below. Backends must be defined in this argument, or defined in the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1bigquerylogging">Servicev1Bigquerylogging[]</a></span>
     </dt>
-    <dd>{{% md %}}A BigQuery endpoint to send streaming logs too.
+    <dd>A BigQuery endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1016,9 +1016,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1blobstoragelogging">Servicev1Blobstoragelogging[]</a></span>
     </dt>
-    <dd>{{% md %}}An Azure Blob Storage endpoint to send streaming logs too.
+    <dd>An Azure Blob Storage endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1026,8 +1026,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1cachesetting">Servicev1Cache<wbr>Setting[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of Cache Settings, allowing you to override
-{{% /md %}}</dd>
+    <dd>A set of Cache Settings, allowing you to override
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1035,8 +1035,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment about the Director.
-{{% /md %}}</dd>
+    <dd>An optional comment about the Director.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1044,9 +1044,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1condition">Servicev1Condition[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of conditions to add logic to any basic
+    <dd>A set of conditions to add logic to any basic
 configuration object in this service. Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1054,8 +1054,8 @@ configuration object in this service. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets the host header.
-{{% /md %}}</dd>
+    <dd>Sets the host header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1063,9 +1063,9 @@ configuration object in this service. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The default Time-to-live (TTL) for
+    <dd>The default Time-to-live (TTL) for
 requests.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1073,8 +1073,8 @@ requests.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1dictionary">Servicev1Dictionary[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of dictionaries that allow the storing of key values pair for use within VCL functions. Defined below.
-{{% /md %}}</dd>
+    <dd>A set of dictionaries that allow the storing of key values pair for use within VCL functions. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1082,9 +1082,9 @@ requests.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1director">Servicev1Director[]</a></span>
     </dt>
-    <dd>{{% md %}}A director to allow more control over balancing traffic over backends.
+    <dd>A director to allow more control over balancing traffic over backends.
 when an item is not to be cached based on an above `condition`. Defined below
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1092,8 +1092,8 @@ when an item is not to be cached based on an above `condition`. Defined below
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1dynamicsnippet">Servicev1Dynamicsnippet[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom, "dynamic" VCL Snippet configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of custom, "dynamic" VCL Snippet configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1101,9 +1101,9 @@ when an item is not to be cached based on an above `condition`. Defined below
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Services that are active cannot be destroyed. In
+    <dd>Services that are active cannot be destroyed. In
 order to destroy the Service, set `force_destroy` to `true`. Default `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1111,9 +1111,9 @@ order to destroy the Service, set `force_destroy` to `true`. Default `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1gcslogging">Servicev1Gcslogging[]</a></span>
     </dt>
-    <dd>{{% md %}}A gcs endpoint to send streaming logs too.
+    <dd>A gcs endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1121,9 +1121,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1gzip">Servicev1Gzip[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of gzip rules to control automatic gzipping of
+    <dd>A set of gzip rules to control automatic gzipping of
 content. Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1131,9 +1131,9 @@ content. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1header">Servicev1Header[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of Headers to manipulate for each request. Defined
+    <dd>A set of Headers to manipulate for each request. Defined
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1141,8 +1141,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1healthcheck">Servicev1Healthcheck[]</a></span>
     </dt>
-    <dd>{{% md %}}Name of a defined `healthcheck` to assign to this backend.
-{{% /md %}}</dd>
+    <dd>Name of a defined `healthcheck` to assign to this backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1150,9 +1150,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1logentry">Servicev1Logentry[]</a></span>
     </dt>
-    <dd>{{% md %}}A logentries endpoint to send streaming logs too.
+    <dd>A logentries endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1160,8 +1160,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1169,9 +1169,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1papertrail">Servicev1Papertrail[]</a></span>
     </dt>
-    <dd>{{% md %}}A Papertrail endpoint to send streaming logs too.
+    <dd>A Papertrail endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1179,8 +1179,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1requestsetting">Servicev1Request<wbr>Setting[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of Request modifiers. Defined below
-{{% /md %}}</dd>
+    <dd>A set of Request modifiers. Defined below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1188,8 +1188,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1responseobject">Servicev1Response<wbr>Object[]</a></span>
     </dt>
-    <dd>{{% md %}}Allows you to create synthetic responses that exist entirely on the varnish machine. Useful for creating error or maintenance pages that exists outside the scope of your datacenter. Best when used with Condition objects.
-{{% /md %}}</dd>
+    <dd>Allows you to create synthetic responses that exist entirely on the varnish machine. Useful for creating error or maintenance pages that exists outside the scope of your datacenter. Best when used with Condition objects.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1197,9 +1197,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1s3logging">Servicev1S3logging[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of S3 Buckets to send streaming logs too.
+    <dd>A set of S3 Buckets to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1207,8 +1207,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1snippet">Servicev1Snippet[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom, "regular" (non-dynamic) VCL Snippet configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of custom, "regular" (non-dynamic) VCL Snippet configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1216,9 +1216,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1splunk">Servicev1Splunk[]</a></span>
     </dt>
-    <dd>{{% md %}}A Splunk endpoint to send streaming logs too.
+    <dd>A Splunk endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1226,9 +1226,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1sumologic">Servicev1Sumologic[]</a></span>
     </dt>
-    <dd>{{% md %}}A Sumologic endpoint to send streaming logs too.
+    <dd>A Sumologic endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1236,9 +1236,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1syslog">Servicev1Syslog[]</a></span>
     </dt>
-    <dd>{{% md %}}A syslog endpoint to send streaming logs too.
+    <dd>A syslog endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1246,10 +1246,10 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1vcl">Servicev1Vcl[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom VCL configuration blocks. The
+    <dd>A set of custom VCL configuration blocks. The
 ability to upload custom VCL code is not enabled by default for new Fastly
 accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uploading-custom-vcl) for details).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1257,14 +1257,14 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description field for the version.
-{{% /md %}}</dd>
+    <dd>Description field for the version.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1273,9 +1273,9 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1domain">List[Servicev1Domain]</a></span>
     </dt>
-    <dd>{{% md %}}If you created the S3 bucket outside of `us-east-1`,
+    <dd>If you created the S3 bucket outside of `us-east-1`,
 then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws.com`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1283,8 +1283,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1acl">List[Servicev1Acl]</a></span>
     </dt>
-    <dd>{{% md %}}A set of ACL configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of ACL configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1292,8 +1292,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Conditionally prevents the Service from being activated. The apply step will continue to create a new draft version but will not activate it if this is set to false. Default true.
-{{% /md %}}</dd>
+    <dd>Conditionally prevents the Service from being activated. The apply step will continue to create a new draft version but will not activate it if this is set to false. Default true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1301,10 +1301,10 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1backend">List[Servicev1Backend]</a></span>
     </dt>
-    <dd>{{% md %}}A set of Backends to service requests from your Domains.
+    <dd>A set of Backends to service requests from your Domains.
 Defined below. Backends must be defined in this argument, or defined in the
 `vcl` argument below
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1312,9 +1312,9 @@ Defined below. Backends must be defined in this argument, or defined in the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1bigquerylogging">List[Servicev1Bigquerylogging]</a></span>
     </dt>
-    <dd>{{% md %}}A BigQuery endpoint to send streaming logs too.
+    <dd>A BigQuery endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1322,9 +1322,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1blobstoragelogging">List[Servicev1Blobstoragelogging]</a></span>
     </dt>
-    <dd>{{% md %}}An Azure Blob Storage endpoint to send streaming logs too.
+    <dd>An Azure Blob Storage endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1332,8 +1332,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1cachesetting">List[Servicev1Cache<wbr>Setting]</a></span>
     </dt>
-    <dd>{{% md %}}A set of Cache Settings, allowing you to override
-{{% /md %}}</dd>
+    <dd>A set of Cache Settings, allowing you to override
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1341,8 +1341,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment about the Director.
-{{% /md %}}</dd>
+    <dd>An optional comment about the Director.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1350,9 +1350,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1condition">List[Servicev1Condition]</a></span>
     </dt>
-    <dd>{{% md %}}A set of conditions to add logic to any basic
+    <dd>A set of conditions to add logic to any basic
 configuration object in this service. Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1360,8 +1360,8 @@ configuration object in this service. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sets the host header.
-{{% /md %}}</dd>
+    <dd>Sets the host header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1369,9 +1369,9 @@ configuration object in this service. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The default Time-to-live (TTL) for
+    <dd>The default Time-to-live (TTL) for
 requests.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1379,8 +1379,8 @@ requests.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1dictionary">List[Servicev1Dictionary]</a></span>
     </dt>
-    <dd>{{% md %}}A set of dictionaries that allow the storing of key values pair for use within VCL functions. Defined below.
-{{% /md %}}</dd>
+    <dd>A set of dictionaries that allow the storing of key values pair for use within VCL functions. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1388,9 +1388,9 @@ requests.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1director">List[Servicev1Director]</a></span>
     </dt>
-    <dd>{{% md %}}A director to allow more control over balancing traffic over backends.
+    <dd>A director to allow more control over balancing traffic over backends.
 when an item is not to be cached based on an above `condition`. Defined below
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1398,8 +1398,8 @@ when an item is not to be cached based on an above `condition`. Defined below
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1dynamicsnippet">List[Servicev1Dynamicsnippet]</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom, "dynamic" VCL Snippet configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of custom, "dynamic" VCL Snippet configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1407,9 +1407,9 @@ when an item is not to be cached based on an above `condition`. Defined below
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Services that are active cannot be destroyed. In
+    <dd>Services that are active cannot be destroyed. In
 order to destroy the Service, set `force_destroy` to `true`. Default `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1417,9 +1417,9 @@ order to destroy the Service, set `force_destroy` to `true`. Default `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1gcslogging">List[Servicev1Gcslogging]</a></span>
     </dt>
-    <dd>{{% md %}}A gcs endpoint to send streaming logs too.
+    <dd>A gcs endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1427,9 +1427,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1gzip">List[Servicev1Gzip]</a></span>
     </dt>
-    <dd>{{% md %}}A set of gzip rules to control automatic gzipping of
+    <dd>A set of gzip rules to control automatic gzipping of
 content. Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1437,9 +1437,9 @@ content. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1header">List[Servicev1Header]</a></span>
     </dt>
-    <dd>{{% md %}}A set of Headers to manipulate for each request. Defined
+    <dd>A set of Headers to manipulate for each request. Defined
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1447,8 +1447,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1healthcheck">List[Servicev1Healthcheck]</a></span>
     </dt>
-    <dd>{{% md %}}Name of a defined `healthcheck` to assign to this backend.
-{{% /md %}}</dd>
+    <dd>Name of a defined `healthcheck` to assign to this backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1456,9 +1456,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1logentry">List[Servicev1Logentry]</a></span>
     </dt>
-    <dd>{{% md %}}A logentries endpoint to send streaming logs too.
+    <dd>A logentries endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1466,8 +1466,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1475,9 +1475,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1papertrail">List[Servicev1Papertrail]</a></span>
     </dt>
-    <dd>{{% md %}}A Papertrail endpoint to send streaming logs too.
+    <dd>A Papertrail endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1485,8 +1485,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1requestsetting">List[Servicev1Request<wbr>Setting]</a></span>
     </dt>
-    <dd>{{% md %}}A set of Request modifiers. Defined below
-{{% /md %}}</dd>
+    <dd>A set of Request modifiers. Defined below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1494,8 +1494,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1responseobject">List[Servicev1Response<wbr>Object]</a></span>
     </dt>
-    <dd>{{% md %}}Allows you to create synthetic responses that exist entirely on the varnish machine. Useful for creating error or maintenance pages that exists outside the scope of your datacenter. Best when used with Condition objects.
-{{% /md %}}</dd>
+    <dd>Allows you to create synthetic responses that exist entirely on the varnish machine. Useful for creating error or maintenance pages that exists outside the scope of your datacenter. Best when used with Condition objects.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1503,9 +1503,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1s3logging">List[Servicev1S3logging]</a></span>
     </dt>
-    <dd>{{% md %}}A set of S3 Buckets to send streaming logs too.
+    <dd>A set of S3 Buckets to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1513,8 +1513,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1snippet">List[Servicev1Snippet]</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom, "regular" (non-dynamic) VCL Snippet configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of custom, "regular" (non-dynamic) VCL Snippet configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1522,9 +1522,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1splunk">List[Servicev1Splunk]</a></span>
     </dt>
-    <dd>{{% md %}}A Splunk endpoint to send streaming logs too.
+    <dd>A Splunk endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1532,9 +1532,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1sumologic">List[Servicev1Sumologic]</a></span>
     </dt>
-    <dd>{{% md %}}A Sumologic endpoint to send streaming logs too.
+    <dd>A Sumologic endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1542,9 +1542,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1syslog">List[Servicev1Syslog]</a></span>
     </dt>
-    <dd>{{% md %}}A syslog endpoint to send streaming logs too.
+    <dd>A syslog endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1552,10 +1552,10 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1vcl">List[Servicev1Vcl]</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom VCL configuration blocks. The
+    <dd>A set of custom VCL configuration blocks. The
 ability to upload custom VCL code is not enabled by default for new Fastly
 accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uploading-custom-vcl) for details).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1563,11 +1563,11 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description field for the version.
-{{% /md %}}</dd>
+    <dd>Description field for the version.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1581,7 +1581,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1590,8 +1590,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The currently active version of your Fastly Service.
-{{% /md %}}</dd>
+    <dd>The currently active version of your Fastly Service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1599,7 +1599,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1607,13 +1607,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1622,8 +1622,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The currently active version of your Fastly Service.
-{{% /md %}}</dd>
+    <dd>The currently active version of your Fastly Service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1631,7 +1631,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1639,13 +1639,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1654,8 +1654,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The currently active version of your Fastly Service.
-{{% /md %}}</dd>
+    <dd>The currently active version of your Fastly Service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1663,7 +1663,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1671,13 +1671,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1686,8 +1686,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The currently active version of your Fastly Service.
-{{% /md %}}</dd>
+    <dd>The currently active version of your Fastly Service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1695,7 +1695,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1703,10 +1703,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1717,25 +1717,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Servicev1 Resource {#look-up}
 
 Get an existing Servicev1 resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/fastly/#Servicev1State">Servicev1State</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/fastly/#Servicev1">Servicev1</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>acls=None<span class="p">, </span>activate=None<span class="p">, </span>active_version=None<span class="p">, </span>backends=None<span class="p">, </span>bigqueryloggings=None<span class="p">, </span>blobstorageloggings=None<span class="p">, </span>cache_settings=None<span class="p">, </span>cloned_version=None<span class="p">, </span>comment=None<span class="p">, </span>conditions=None<span class="p">, </span>default_host=None<span class="p">, </span>default_ttl=None<span class="p">, </span>dictionaries=None<span class="p">, </span>directors=None<span class="p">, </span>domains=None<span class="p">, </span>dynamicsnippets=None<span class="p">, </span>force_destroy=None<span class="p">, </span>gcsloggings=None<span class="p">, </span>gzips=None<span class="p">, </span>headers=None<span class="p">, </span>healthchecks=None<span class="p">, </span>logentries=None<span class="p">, </span>name=None<span class="p">, </span>papertrails=None<span class="p">, </span>request_settings=None<span class="p">, </span>response_objects=None<span class="p">, </span>s3loggings=None<span class="p">, </span>snippets=None<span class="p">, </span>splunks=None<span class="p">, </span>sumologics=None<span class="p">, </span>syslogs=None<span class="p">, </span>vcls=None<span class="p">, </span>version_comment=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetServicev1<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1State">Servicev1State</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1">Servicev1</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Fastly/Pulumi.Fastly.Servicev1.html">Servicev1</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Fastly/Pulumi.Fastly..Servicev1State.html">Servicev1State</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1760,9 +1760,9 @@ Get an existing Servicev1 resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1775,36 +1775,9 @@ Get an existing Servicev1 resource's state with the given name, ID, and optional
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1829,13 +1802,40 @@ Get an existing Servicev1 resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1844,8 +1844,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1acl">List&lt;Servicev1Acl<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of ACL configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of ACL configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1853,8 +1853,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Conditionally prevents the Service from being activated. The apply step will continue to create a new draft version but will not activate it if this is set to false. Default true.
-{{% /md %}}</dd>
+    <dd>Conditionally prevents the Service from being activated. The apply step will continue to create a new draft version but will not activate it if this is set to false. Default true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1862,8 +1862,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The currently active version of your Fastly Service.
-{{% /md %}}</dd>
+    <dd>The currently active version of your Fastly Service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1871,10 +1871,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1backend">List&lt;Servicev1Backend<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of Backends to service requests from your Domains.
+    <dd>A set of Backends to service requests from your Domains.
 Defined below. Backends must be defined in this argument, or defined in the
 `vcl` argument below
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1882,9 +1882,9 @@ Defined below. Backends must be defined in this argument, or defined in the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1bigquerylogging">List&lt;Servicev1Bigquerylogging<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A BigQuery endpoint to send streaming logs too.
+    <dd>A BigQuery endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1892,9 +1892,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1blobstoragelogging">List&lt;Servicev1Blobstoragelogging<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An Azure Blob Storage endpoint to send streaming logs too.
+    <dd>An Azure Blob Storage endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1902,8 +1902,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1cachesetting">List&lt;Servicev1Cache<wbr>Setting<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of Cache Settings, allowing you to override
-{{% /md %}}</dd>
+    <dd>A set of Cache Settings, allowing you to override
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1911,7 +1911,7 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1919,8 +1919,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment about the Director.
-{{% /md %}}</dd>
+    <dd>An optional comment about the Director.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1928,9 +1928,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1condition">List&lt;Servicev1Condition<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of conditions to add logic to any basic
+    <dd>A set of conditions to add logic to any basic
 configuration object in this service. Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1938,8 +1938,8 @@ configuration object in this service. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets the host header.
-{{% /md %}}</dd>
+    <dd>Sets the host header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1947,9 +1947,9 @@ configuration object in this service. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The default Time-to-live (TTL) for
+    <dd>The default Time-to-live (TTL) for
 requests.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1957,8 +1957,8 @@ requests.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1dictionary">List&lt;Servicev1Dictionary<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of dictionaries that allow the storing of key values pair for use within VCL functions. Defined below.
-{{% /md %}}</dd>
+    <dd>A set of dictionaries that allow the storing of key values pair for use within VCL functions. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1966,9 +1966,9 @@ requests.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1director">List&lt;Servicev1Director<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A director to allow more control over balancing traffic over backends.
+    <dd>A director to allow more control over balancing traffic over backends.
 when an item is not to be cached based on an above `condition`. Defined below
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1976,9 +1976,9 @@ when an item is not to be cached based on an above `condition`. Defined below
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1domain">List&lt;Servicev1Domain<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}If you created the S3 bucket outside of `us-east-1`,
+    <dd>If you created the S3 bucket outside of `us-east-1`,
 then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws.com`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1986,8 +1986,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1dynamicsnippet">List&lt;Servicev1Dynamicsnippet<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom, "dynamic" VCL Snippet configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of custom, "dynamic" VCL Snippet configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1995,9 +1995,9 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Services that are active cannot be destroyed. In
+    <dd>Services that are active cannot be destroyed. In
 order to destroy the Service, set `force_destroy` to `true`. Default `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2005,9 +2005,9 @@ order to destroy the Service, set `force_destroy` to `true`. Default `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1gcslogging">List&lt;Servicev1Gcslogging<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A gcs endpoint to send streaming logs too.
+    <dd>A gcs endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2015,9 +2015,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1gzip">List&lt;Servicev1Gzip<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of gzip rules to control automatic gzipping of
+    <dd>A set of gzip rules to control automatic gzipping of
 content. Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2025,9 +2025,9 @@ content. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1header">List&lt;Servicev1Header<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of Headers to manipulate for each request. Defined
+    <dd>A set of Headers to manipulate for each request. Defined
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2035,8 +2035,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1healthcheck">List&lt;Servicev1Healthcheck<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Name of a defined `healthcheck` to assign to this backend.
-{{% /md %}}</dd>
+    <dd>Name of a defined `healthcheck` to assign to this backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2044,9 +2044,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1logentry">List&lt;Servicev1Logentry<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A logentries endpoint to send streaming logs too.
+    <dd>A logentries endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2054,8 +2054,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2063,9 +2063,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1papertrail">List&lt;Servicev1Papertrail<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A Papertrail endpoint to send streaming logs too.
+    <dd>A Papertrail endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2073,8 +2073,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1requestsetting">List&lt;Servicev1Request<wbr>Setting<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of Request modifiers. Defined below
-{{% /md %}}</dd>
+    <dd>A set of Request modifiers. Defined below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2082,8 +2082,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1responseobject">List&lt;Servicev1Response<wbr>Object<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Allows you to create synthetic responses that exist entirely on the varnish machine. Useful for creating error or maintenance pages that exists outside the scope of your datacenter. Best when used with Condition objects.
-{{% /md %}}</dd>
+    <dd>Allows you to create synthetic responses that exist entirely on the varnish machine. Useful for creating error or maintenance pages that exists outside the scope of your datacenter. Best when used with Condition objects.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2091,9 +2091,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1s3logging">List&lt;Servicev1S3logging<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of S3 Buckets to send streaming logs too.
+    <dd>A set of S3 Buckets to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2101,8 +2101,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1snippet">List&lt;Servicev1Snippet<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom, "regular" (non-dynamic) VCL Snippet configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of custom, "regular" (non-dynamic) VCL Snippet configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2110,9 +2110,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1splunk">List&lt;Servicev1Splunk<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A Splunk endpoint to send streaming logs too.
+    <dd>A Splunk endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2120,9 +2120,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1sumologic">List&lt;Servicev1Sumologic<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A Sumologic endpoint to send streaming logs too.
+    <dd>A Sumologic endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2130,9 +2130,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1syslog">List&lt;Servicev1Syslog<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A syslog endpoint to send streaming logs too.
+    <dd>A syslog endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2140,10 +2140,10 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1vcl">List&lt;Servicev1Vcl<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom VCL configuration blocks. The
+    <dd>A set of custom VCL configuration blocks. The
 ability to upload custom VCL code is not enabled by default for new Fastly
 accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uploading-custom-vcl) for details).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2151,14 +2151,14 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description field for the version.
-{{% /md %}}</dd>
+    <dd>Description field for the version.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2167,8 +2167,8 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1acl">[]Servicev1Acl</a></span>
     </dt>
-    <dd>{{% md %}}A set of ACL configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of ACL configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2176,8 +2176,8 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Conditionally prevents the Service from being activated. The apply step will continue to create a new draft version but will not activate it if this is set to false. Default true.
-{{% /md %}}</dd>
+    <dd>Conditionally prevents the Service from being activated. The apply step will continue to create a new draft version but will not activate it if this is set to false. Default true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2185,8 +2185,8 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The currently active version of your Fastly Service.
-{{% /md %}}</dd>
+    <dd>The currently active version of your Fastly Service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2194,10 +2194,10 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1backend">[]Servicev1Backend</a></span>
     </dt>
-    <dd>{{% md %}}A set of Backends to service requests from your Domains.
+    <dd>A set of Backends to service requests from your Domains.
 Defined below. Backends must be defined in this argument, or defined in the
 `vcl` argument below
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2205,9 +2205,9 @@ Defined below. Backends must be defined in this argument, or defined in the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1bigquerylogging">[]Servicev1Bigquerylogging</a></span>
     </dt>
-    <dd>{{% md %}}A BigQuery endpoint to send streaming logs too.
+    <dd>A BigQuery endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2215,9 +2215,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1blobstoragelogging">[]Servicev1Blobstoragelogging</a></span>
     </dt>
-    <dd>{{% md %}}An Azure Blob Storage endpoint to send streaming logs too.
+    <dd>An Azure Blob Storage endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2225,8 +2225,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1cachesetting">[]Servicev1Cache<wbr>Setting</a></span>
     </dt>
-    <dd>{{% md %}}A set of Cache Settings, allowing you to override
-{{% /md %}}</dd>
+    <dd>A set of Cache Settings, allowing you to override
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2234,7 +2234,7 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2242,8 +2242,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment about the Director.
-{{% /md %}}</dd>
+    <dd>An optional comment about the Director.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2251,9 +2251,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1condition">[]Servicev1Condition</a></span>
     </dt>
-    <dd>{{% md %}}A set of conditions to add logic to any basic
+    <dd>A set of conditions to add logic to any basic
 configuration object in this service. Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2261,8 +2261,8 @@ configuration object in this service. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets the host header.
-{{% /md %}}</dd>
+    <dd>Sets the host header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2270,9 +2270,9 @@ configuration object in this service. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The default Time-to-live (TTL) for
+    <dd>The default Time-to-live (TTL) for
 requests.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2280,8 +2280,8 @@ requests.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1dictionary">[]Servicev1Dictionary</a></span>
     </dt>
-    <dd>{{% md %}}A set of dictionaries that allow the storing of key values pair for use within VCL functions. Defined below.
-{{% /md %}}</dd>
+    <dd>A set of dictionaries that allow the storing of key values pair for use within VCL functions. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2289,9 +2289,9 @@ requests.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1director">[]Servicev1Director</a></span>
     </dt>
-    <dd>{{% md %}}A director to allow more control over balancing traffic over backends.
+    <dd>A director to allow more control over balancing traffic over backends.
 when an item is not to be cached based on an above `condition`. Defined below
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2299,9 +2299,9 @@ when an item is not to be cached based on an above `condition`. Defined below
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1domain">[]Servicev1Domain</a></span>
     </dt>
-    <dd>{{% md %}}If you created the S3 bucket outside of `us-east-1`,
+    <dd>If you created the S3 bucket outside of `us-east-1`,
 then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws.com`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2309,8 +2309,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1dynamicsnippet">[]Servicev1Dynamicsnippet</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom, "dynamic" VCL Snippet configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of custom, "dynamic" VCL Snippet configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2318,9 +2318,9 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Services that are active cannot be destroyed. In
+    <dd>Services that are active cannot be destroyed. In
 order to destroy the Service, set `force_destroy` to `true`. Default `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2328,9 +2328,9 @@ order to destroy the Service, set `force_destroy` to `true`. Default `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1gcslogging">[]Servicev1Gcslogging</a></span>
     </dt>
-    <dd>{{% md %}}A gcs endpoint to send streaming logs too.
+    <dd>A gcs endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2338,9 +2338,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1gzip">[]Servicev1Gzip</a></span>
     </dt>
-    <dd>{{% md %}}A set of gzip rules to control automatic gzipping of
+    <dd>A set of gzip rules to control automatic gzipping of
 content. Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2348,9 +2348,9 @@ content. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1header">[]Servicev1Header</a></span>
     </dt>
-    <dd>{{% md %}}A set of Headers to manipulate for each request. Defined
+    <dd>A set of Headers to manipulate for each request. Defined
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2358,8 +2358,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1healthcheck">[]Servicev1Healthcheck</a></span>
     </dt>
-    <dd>{{% md %}}Name of a defined `healthcheck` to assign to this backend.
-{{% /md %}}</dd>
+    <dd>Name of a defined `healthcheck` to assign to this backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2367,9 +2367,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1logentry">[]Servicev1Logentry</a></span>
     </dt>
-    <dd>{{% md %}}A logentries endpoint to send streaming logs too.
+    <dd>A logentries endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2377,8 +2377,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2386,9 +2386,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1papertrail">[]Servicev1Papertrail</a></span>
     </dt>
-    <dd>{{% md %}}A Papertrail endpoint to send streaming logs too.
+    <dd>A Papertrail endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2396,8 +2396,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1requestsetting">[]Servicev1Request<wbr>Setting</a></span>
     </dt>
-    <dd>{{% md %}}A set of Request modifiers. Defined below
-{{% /md %}}</dd>
+    <dd>A set of Request modifiers. Defined below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2405,8 +2405,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1responseobject">[]Servicev1Response<wbr>Object</a></span>
     </dt>
-    <dd>{{% md %}}Allows you to create synthetic responses that exist entirely on the varnish machine. Useful for creating error or maintenance pages that exists outside the scope of your datacenter. Best when used with Condition objects.
-{{% /md %}}</dd>
+    <dd>Allows you to create synthetic responses that exist entirely on the varnish machine. Useful for creating error or maintenance pages that exists outside the scope of your datacenter. Best when used with Condition objects.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2414,9 +2414,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1s3logging">[]Servicev1S3logging</a></span>
     </dt>
-    <dd>{{% md %}}A set of S3 Buckets to send streaming logs too.
+    <dd>A set of S3 Buckets to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2424,8 +2424,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1snippet">[]Servicev1Snippet</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom, "regular" (non-dynamic) VCL Snippet configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of custom, "regular" (non-dynamic) VCL Snippet configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2433,9 +2433,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1splunk">[]Servicev1Splunk</a></span>
     </dt>
-    <dd>{{% md %}}A Splunk endpoint to send streaming logs too.
+    <dd>A Splunk endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2443,9 +2443,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1sumologic">[]Servicev1Sumologic</a></span>
     </dt>
-    <dd>{{% md %}}A Sumologic endpoint to send streaming logs too.
+    <dd>A Sumologic endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2453,9 +2453,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1syslog">[]Servicev1Syslog</a></span>
     </dt>
-    <dd>{{% md %}}A syslog endpoint to send streaming logs too.
+    <dd>A syslog endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2463,10 +2463,10 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1vcl">[]Servicev1Vcl</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom VCL configuration blocks. The
+    <dd>A set of custom VCL configuration blocks. The
 ability to upload custom VCL code is not enabled by default for new Fastly
 accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uploading-custom-vcl) for details).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2474,14 +2474,14 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description field for the version.
-{{% /md %}}</dd>
+    <dd>Description field for the version.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2490,8 +2490,8 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1acl">Servicev1Acl[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of ACL configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of ACL configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2499,8 +2499,8 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Conditionally prevents the Service from being activated. The apply step will continue to create a new draft version but will not activate it if this is set to false. Default true.
-{{% /md %}}</dd>
+    <dd>Conditionally prevents the Service from being activated. The apply step will continue to create a new draft version but will not activate it if this is set to false. Default true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2508,8 +2508,8 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The currently active version of your Fastly Service.
-{{% /md %}}</dd>
+    <dd>The currently active version of your Fastly Service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2517,10 +2517,10 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1backend">Servicev1Backend[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of Backends to service requests from your Domains.
+    <dd>A set of Backends to service requests from your Domains.
 Defined below. Backends must be defined in this argument, or defined in the
 `vcl` argument below
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2528,9 +2528,9 @@ Defined below. Backends must be defined in this argument, or defined in the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1bigquerylogging">Servicev1Bigquerylogging[]</a></span>
     </dt>
-    <dd>{{% md %}}A BigQuery endpoint to send streaming logs too.
+    <dd>A BigQuery endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2538,9 +2538,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1blobstoragelogging">Servicev1Blobstoragelogging[]</a></span>
     </dt>
-    <dd>{{% md %}}An Azure Blob Storage endpoint to send streaming logs too.
+    <dd>An Azure Blob Storage endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2548,8 +2548,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1cachesetting">Servicev1Cache<wbr>Setting[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of Cache Settings, allowing you to override
-{{% /md %}}</dd>
+    <dd>A set of Cache Settings, allowing you to override
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2557,7 +2557,7 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2565,8 +2565,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment about the Director.
-{{% /md %}}</dd>
+    <dd>An optional comment about the Director.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2574,9 +2574,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1condition">Servicev1Condition[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of conditions to add logic to any basic
+    <dd>A set of conditions to add logic to any basic
 configuration object in this service. Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2584,8 +2584,8 @@ configuration object in this service. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets the host header.
-{{% /md %}}</dd>
+    <dd>Sets the host header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2593,9 +2593,9 @@ configuration object in this service. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The default Time-to-live (TTL) for
+    <dd>The default Time-to-live (TTL) for
 requests.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2603,8 +2603,8 @@ requests.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1dictionary">Servicev1Dictionary[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of dictionaries that allow the storing of key values pair for use within VCL functions. Defined below.
-{{% /md %}}</dd>
+    <dd>A set of dictionaries that allow the storing of key values pair for use within VCL functions. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2612,9 +2612,9 @@ requests.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1director">Servicev1Director[]</a></span>
     </dt>
-    <dd>{{% md %}}A director to allow more control over balancing traffic over backends.
+    <dd>A director to allow more control over balancing traffic over backends.
 when an item is not to be cached based on an above `condition`. Defined below
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2622,9 +2622,9 @@ when an item is not to be cached based on an above `condition`. Defined below
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1domain">Servicev1Domain[]</a></span>
     </dt>
-    <dd>{{% md %}}If you created the S3 bucket outside of `us-east-1`,
+    <dd>If you created the S3 bucket outside of `us-east-1`,
 then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws.com`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2632,8 +2632,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1dynamicsnippet">Servicev1Dynamicsnippet[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom, "dynamic" VCL Snippet configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of custom, "dynamic" VCL Snippet configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2641,9 +2641,9 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Services that are active cannot be destroyed. In
+    <dd>Services that are active cannot be destroyed. In
 order to destroy the Service, set `force_destroy` to `true`. Default `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2651,9 +2651,9 @@ order to destroy the Service, set `force_destroy` to `true`. Default `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1gcslogging">Servicev1Gcslogging[]</a></span>
     </dt>
-    <dd>{{% md %}}A gcs endpoint to send streaming logs too.
+    <dd>A gcs endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2661,9 +2661,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1gzip">Servicev1Gzip[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of gzip rules to control automatic gzipping of
+    <dd>A set of gzip rules to control automatic gzipping of
 content. Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2671,9 +2671,9 @@ content. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1header">Servicev1Header[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of Headers to manipulate for each request. Defined
+    <dd>A set of Headers to manipulate for each request. Defined
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2681,8 +2681,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1healthcheck">Servicev1Healthcheck[]</a></span>
     </dt>
-    <dd>{{% md %}}Name of a defined `healthcheck` to assign to this backend.
-{{% /md %}}</dd>
+    <dd>Name of a defined `healthcheck` to assign to this backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2690,9 +2690,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1logentry">Servicev1Logentry[]</a></span>
     </dt>
-    <dd>{{% md %}}A logentries endpoint to send streaming logs too.
+    <dd>A logentries endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2700,8 +2700,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2709,9 +2709,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1papertrail">Servicev1Papertrail[]</a></span>
     </dt>
-    <dd>{{% md %}}A Papertrail endpoint to send streaming logs too.
+    <dd>A Papertrail endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2719,8 +2719,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1requestsetting">Servicev1Request<wbr>Setting[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of Request modifiers. Defined below
-{{% /md %}}</dd>
+    <dd>A set of Request modifiers. Defined below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2728,8 +2728,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1responseobject">Servicev1Response<wbr>Object[]</a></span>
     </dt>
-    <dd>{{% md %}}Allows you to create synthetic responses that exist entirely on the varnish machine. Useful for creating error or maintenance pages that exists outside the scope of your datacenter. Best when used with Condition objects.
-{{% /md %}}</dd>
+    <dd>Allows you to create synthetic responses that exist entirely on the varnish machine. Useful for creating error or maintenance pages that exists outside the scope of your datacenter. Best when used with Condition objects.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2737,9 +2737,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1s3logging">Servicev1S3logging[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of S3 Buckets to send streaming logs too.
+    <dd>A set of S3 Buckets to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2747,8 +2747,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1snippet">Servicev1Snippet[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom, "regular" (non-dynamic) VCL Snippet configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of custom, "regular" (non-dynamic) VCL Snippet configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2756,9 +2756,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1splunk">Servicev1Splunk[]</a></span>
     </dt>
-    <dd>{{% md %}}A Splunk endpoint to send streaming logs too.
+    <dd>A Splunk endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2766,9 +2766,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1sumologic">Servicev1Sumologic[]</a></span>
     </dt>
-    <dd>{{% md %}}A Sumologic endpoint to send streaming logs too.
+    <dd>A Sumologic endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2776,9 +2776,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1syslog">Servicev1Syslog[]</a></span>
     </dt>
-    <dd>{{% md %}}A syslog endpoint to send streaming logs too.
+    <dd>A syslog endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2786,10 +2786,10 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1vcl">Servicev1Vcl[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom VCL configuration blocks. The
+    <dd>A set of custom VCL configuration blocks. The
 ability to upload custom VCL code is not enabled by default for new Fastly
 accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uploading-custom-vcl) for details).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2797,14 +2797,14 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description field for the version.
-{{% /md %}}</dd>
+    <dd>Description field for the version.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2813,8 +2813,8 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1acl">List[Servicev1Acl]</a></span>
     </dt>
-    <dd>{{% md %}}A set of ACL configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of ACL configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2822,8 +2822,8 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Conditionally prevents the Service from being activated. The apply step will continue to create a new draft version but will not activate it if this is set to false. Default true.
-{{% /md %}}</dd>
+    <dd>Conditionally prevents the Service from being activated. The apply step will continue to create a new draft version but will not activate it if this is set to false. Default true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2831,8 +2831,8 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The currently active version of your Fastly Service.
-{{% /md %}}</dd>
+    <dd>The currently active version of your Fastly Service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2840,10 +2840,10 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1backend">List[Servicev1Backend]</a></span>
     </dt>
-    <dd>{{% md %}}A set of Backends to service requests from your Domains.
+    <dd>A set of Backends to service requests from your Domains.
 Defined below. Backends must be defined in this argument, or defined in the
 `vcl` argument below
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2851,9 +2851,9 @@ Defined below. Backends must be defined in this argument, or defined in the
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1bigquerylogging">List[Servicev1Bigquerylogging]</a></span>
     </dt>
-    <dd>{{% md %}}A BigQuery endpoint to send streaming logs too.
+    <dd>A BigQuery endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2861,9 +2861,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1blobstoragelogging">List[Servicev1Blobstoragelogging]</a></span>
     </dt>
-    <dd>{{% md %}}An Azure Blob Storage endpoint to send streaming logs too.
+    <dd>An Azure Blob Storage endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2871,8 +2871,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1cachesetting">List[Servicev1Cache<wbr>Setting]</a></span>
     </dt>
-    <dd>{{% md %}}A set of Cache Settings, allowing you to override
-{{% /md %}}</dd>
+    <dd>A set of Cache Settings, allowing you to override
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2880,7 +2880,7 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2888,8 +2888,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment about the Director.
-{{% /md %}}</dd>
+    <dd>An optional comment about the Director.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2897,9 +2897,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1condition">List[Servicev1Condition]</a></span>
     </dt>
-    <dd>{{% md %}}A set of conditions to add logic to any basic
+    <dd>A set of conditions to add logic to any basic
 configuration object in this service. Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2907,8 +2907,8 @@ configuration object in this service. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sets the host header.
-{{% /md %}}</dd>
+    <dd>Sets the host header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2916,9 +2916,9 @@ configuration object in this service. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The default Time-to-live (TTL) for
+    <dd>The default Time-to-live (TTL) for
 requests.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2926,8 +2926,8 @@ requests.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1dictionary">List[Servicev1Dictionary]</a></span>
     </dt>
-    <dd>{{% md %}}A set of dictionaries that allow the storing of key values pair for use within VCL functions. Defined below.
-{{% /md %}}</dd>
+    <dd>A set of dictionaries that allow the storing of key values pair for use within VCL functions. Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2935,9 +2935,9 @@ requests.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1director">List[Servicev1Director]</a></span>
     </dt>
-    <dd>{{% md %}}A director to allow more control over balancing traffic over backends.
+    <dd>A director to allow more control over balancing traffic over backends.
 when an item is not to be cached based on an above `condition`. Defined below
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2945,9 +2945,9 @@ when an item is not to be cached based on an above `condition`. Defined below
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1domain">List[Servicev1Domain]</a></span>
     </dt>
-    <dd>{{% md %}}If you created the S3 bucket outside of `us-east-1`,
+    <dd>If you created the S3 bucket outside of `us-east-1`,
 then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws.com`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2955,8 +2955,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1dynamicsnippet">List[Servicev1Dynamicsnippet]</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom, "dynamic" VCL Snippet configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of custom, "dynamic" VCL Snippet configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2964,9 +2964,9 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Services that are active cannot be destroyed. In
+    <dd>Services that are active cannot be destroyed. In
 order to destroy the Service, set `force_destroy` to `true`. Default `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2974,9 +2974,9 @@ order to destroy the Service, set `force_destroy` to `true`. Default `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1gcslogging">List[Servicev1Gcslogging]</a></span>
     </dt>
-    <dd>{{% md %}}A gcs endpoint to send streaming logs too.
+    <dd>A gcs endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2984,9 +2984,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1gzip">List[Servicev1Gzip]</a></span>
     </dt>
-    <dd>{{% md %}}A set of gzip rules to control automatic gzipping of
+    <dd>A set of gzip rules to control automatic gzipping of
 content. Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2994,9 +2994,9 @@ content. Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1header">List[Servicev1Header]</a></span>
     </dt>
-    <dd>{{% md %}}A set of Headers to manipulate for each request. Defined
+    <dd>A set of Headers to manipulate for each request. Defined
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3004,8 +3004,8 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1healthcheck">List[Servicev1Healthcheck]</a></span>
     </dt>
-    <dd>{{% md %}}Name of a defined `healthcheck` to assign to this backend.
-{{% /md %}}</dd>
+    <dd>Name of a defined `healthcheck` to assign to this backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3013,9 +3013,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1logentry">List[Servicev1Logentry]</a></span>
     </dt>
-    <dd>{{% md %}}A logentries endpoint to send streaming logs too.
+    <dd>A logentries endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3023,8 +3023,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3032,9 +3032,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1papertrail">List[Servicev1Papertrail]</a></span>
     </dt>
-    <dd>{{% md %}}A Papertrail endpoint to send streaming logs too.
+    <dd>A Papertrail endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3042,8 +3042,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1requestsetting">List[Servicev1Request<wbr>Setting]</a></span>
     </dt>
-    <dd>{{% md %}}A set of Request modifiers. Defined below
-{{% /md %}}</dd>
+    <dd>A set of Request modifiers. Defined below
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3051,8 +3051,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1responseobject">List[Servicev1Response<wbr>Object]</a></span>
     </dt>
-    <dd>{{% md %}}Allows you to create synthetic responses that exist entirely on the varnish machine. Useful for creating error or maintenance pages that exists outside the scope of your datacenter. Best when used with Condition objects.
-{{% /md %}}</dd>
+    <dd>Allows you to create synthetic responses that exist entirely on the varnish machine. Useful for creating error or maintenance pages that exists outside the scope of your datacenter. Best when used with Condition objects.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3060,9 +3060,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1s3logging">List[Servicev1S3logging]</a></span>
     </dt>
-    <dd>{{% md %}}A set of S3 Buckets to send streaming logs too.
+    <dd>A set of S3 Buckets to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3070,8 +3070,8 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1snippet">List[Servicev1Snippet]</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom, "regular" (non-dynamic) VCL Snippet configuration blocks.  Defined below.
-{{% /md %}}</dd>
+    <dd>A set of custom, "regular" (non-dynamic) VCL Snippet configuration blocks.  Defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3079,9 +3079,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1splunk">List[Servicev1Splunk]</a></span>
     </dt>
-    <dd>{{% md %}}A Splunk endpoint to send streaming logs too.
+    <dd>A Splunk endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3089,9 +3089,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1sumologic">List[Servicev1Sumologic]</a></span>
     </dt>
-    <dd>{{% md %}}A Sumologic endpoint to send streaming logs too.
+    <dd>A Sumologic endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3099,9 +3099,9 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1syslog">List[Servicev1Syslog]</a></span>
     </dt>
-    <dd>{{% md %}}A syslog endpoint to send streaming logs too.
+    <dd>A syslog endpoint to send streaming logs too.
 Defined below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3109,10 +3109,10 @@ Defined below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicev1vcl">List[Servicev1Vcl]</a></span>
     </dt>
-    <dd>{{% md %}}A set of custom VCL configuration blocks. The
+    <dd>A set of custom VCL configuration blocks. The
 ability to upload custom VCL code is not enabled by default for new Fastly
 accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uploading-custom-vcl) for details).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3120,11 +3120,11 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description field for the version.
-{{% /md %}}</dd>
+    <dd>Description field for the version.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -3139,18 +3139,18 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
 
 
 <h4 id="servicev1acl">Servicev1Acl</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1Acl">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1Acl">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1AclArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1AclOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3159,8 +3159,8 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3168,14 +3168,14 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the ACL.
-{{% /md %}}</dd>
+    <dd>The ID of the ACL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3184,8 +3184,8 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3193,14 +3193,14 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the ACL.
-{{% /md %}}</dd>
+    <dd>The ID of the ACL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3209,8 +3209,8 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3218,14 +3218,14 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the ACL.
-{{% /md %}}</dd>
+    <dd>The ID of the ACL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3234,8 +3234,8 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3243,29 +3243,29 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the ACL.
-{{% /md %}}</dd>
+    <dd>The ID of the ACL.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1backend">Servicev1Backend</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1Backend">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1Backend">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1BackendArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1BackendOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3274,8 +3274,8 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A hostname or IPv4 address of the Syslog endpoint.
-{{% /md %}}</dd>
+    <dd>A hostname or IPv4 address of the Syslog endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3283,8 +3283,8 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3292,10 +3292,10 @@ accounts (see the [Fastly documentation](https://docs.fastly.com/guides/vcl/uplo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Denotes if this Backend should be
+    <dd>Denotes if this Backend should be
 included in the pool of backends that requests are load balanced against.
 Default `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3303,8 +3303,8 @@ Default `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}How long to wait between bytes in milliseconds. Default `10000`.
-{{% /md %}}</dd>
+    <dd>How long to wait between bytes in milliseconds. Default `10000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3312,9 +3312,9 @@ Default `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}How long to wait for a timeout in milliseconds.
+    <dd>How long to wait for a timeout in milliseconds.
 Default `1000`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3322,8 +3322,8 @@ Default `1000`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of errors to allow before the Backend is marked as down. Default `0`.
-{{% /md %}}</dd>
+    <dd>Number of errors to allow before the Backend is marked as down. Default `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3331,8 +3331,8 @@ Default `1000`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}How long to wait for the first bytes in milliseconds. Default `15000`.
-{{% /md %}}</dd>
+    <dd>How long to wait for the first bytes in milliseconds. Default `15000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3340,8 +3340,8 @@ Default `1000`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of a defined `healthcheck` to assign to this backend.
-{{% /md %}}</dd>
+    <dd>Name of a defined `healthcheck` to assign to this backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3349,9 +3349,9 @@ Default `1000`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of connections for this Backend.
+    <dd>Maximum number of connections for this Backend.
 Default `200`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3359,8 +3359,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Maximum allowed TLS version on SSL connections to this backend.
-{{% /md %}}</dd>
+    <dd>Maximum allowed TLS version on SSL connections to this backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3368,8 +3368,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Minimum allowed TLS version on SSL connections to this backend.
-{{% /md %}}</dd>
+    <dd>Minimum allowed TLS version on SSL connections to this backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3377,8 +3377,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname to override the Host header.
-{{% /md %}}</dd>
+    <dd>The hostname to override the Host header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3386,8 +3386,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port number configured in Logentries to send logs to. Defaults to `20000`.
-{{% /md %}}</dd>
+    <dd>The port number configured in Logentries to send logs to. Defaults to `20000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3395,8 +3395,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
-{{% /md %}}</dd>
+    <dd>Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3404,8 +3404,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Selected POP to serve as a "shield" for origin servers.
-{{% /md %}}</dd>
+    <dd>Selected POP to serve as a "shield" for origin servers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3413,8 +3413,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}CA certificate attached to origin.
-{{% /md %}}</dd>
+    <dd>CA certificate attached to origin.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3422,8 +3422,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides ssl_hostname, but only for cert verification. Does not affect SNI at all.
-{{% /md %}}</dd>
+    <dd>Overrides ssl_hostname, but only for cert verification. Does not affect SNI at all.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3431,8 +3431,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Be strict about checking SSL certs. Default `true`.
-{{% /md %}}</dd>
+    <dd>Be strict about checking SSL certs. Default `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3440,8 +3440,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of OpenSSL Ciphers to try when negotiating to the backend.
-{{% /md %}}</dd>
+    <dd>Comma separated list of OpenSSL Ciphers to try when negotiating to the backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3449,8 +3449,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Client certificate attached to origin. Used when connecting to the backend.
-{{% /md %}}</dd>
+    <dd>Client certificate attached to origin. Used when connecting to the backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3458,8 +3458,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Client key attached to origin. Used when connecting to the backend.
-{{% /md %}}</dd>
+    <dd>Client key attached to origin. Used when connecting to the backend.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3467,8 +3467,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Used for both SNI during the TLS handshake and to validate the cert.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use ssl_cert_hostname and ssl_sni_hostname instead.{{% /md %}}</p></dd>
+    <dd>Used for both SNI during the TLS handshake and to validate the cert.
+<p class="property-message">Deprecated: Use ssl_cert_hostname and ssl_sni_hostname instead.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3476,8 +3476,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides ssl_hostname, but only for SNI in the handshake. Does not affect cert validation at all.
-{{% /md %}}</dd>
+    <dd>Overrides ssl_hostname, but only for SNI in the handshake. Does not affect cert validation at all.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3485,8 +3485,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not to use SSL to reach the backend. Default `false`.
-{{% /md %}}</dd>
+    <dd>Whether or not to use SSL to reach the backend. Default `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3494,14 +3494,14 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The [portion of traffic](https://docs.fastly.com/guides/performance-tuning/load-balancing-configuration.html#how-weight-affects-load-balancing) to send to this Backend. Each Backend receives `weight / total` of the traffic. Default `100`.
-{{% /md %}}</dd>
+    <dd>The [portion of traffic](https://docs.fastly.com/guides/performance-tuning/load-balancing-configuration.html#how-weight-affects-load-balancing) to send to this Backend. Each Backend receives `weight / total` of the traffic. Default `100`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3510,8 +3510,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A hostname or IPv4 address of the Syslog endpoint.
-{{% /md %}}</dd>
+    <dd>A hostname or IPv4 address of the Syslog endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3519,8 +3519,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3528,10 +3528,10 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Denotes if this Backend should be
+    <dd>Denotes if this Backend should be
 included in the pool of backends that requests are load balanced against.
 Default `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3539,8 +3539,8 @@ Default `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}How long to wait between bytes in milliseconds. Default `10000`.
-{{% /md %}}</dd>
+    <dd>How long to wait between bytes in milliseconds. Default `10000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3548,9 +3548,9 @@ Default `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}How long to wait for a timeout in milliseconds.
+    <dd>How long to wait for a timeout in milliseconds.
 Default `1000`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3558,8 +3558,8 @@ Default `1000`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of errors to allow before the Backend is marked as down. Default `0`.
-{{% /md %}}</dd>
+    <dd>Number of errors to allow before the Backend is marked as down. Default `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3567,8 +3567,8 @@ Default `1000`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}How long to wait for the first bytes in milliseconds. Default `15000`.
-{{% /md %}}</dd>
+    <dd>How long to wait for the first bytes in milliseconds. Default `15000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3576,8 +3576,8 @@ Default `1000`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of a defined `healthcheck` to assign to this backend.
-{{% /md %}}</dd>
+    <dd>Name of a defined `healthcheck` to assign to this backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3585,9 +3585,9 @@ Default `1000`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of connections for this Backend.
+    <dd>Maximum number of connections for this Backend.
 Default `200`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3595,8 +3595,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Maximum allowed TLS version on SSL connections to this backend.
-{{% /md %}}</dd>
+    <dd>Maximum allowed TLS version on SSL connections to this backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3604,8 +3604,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Minimum allowed TLS version on SSL connections to this backend.
-{{% /md %}}</dd>
+    <dd>Minimum allowed TLS version on SSL connections to this backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3613,8 +3613,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname to override the Host header.
-{{% /md %}}</dd>
+    <dd>The hostname to override the Host header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3622,8 +3622,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port number configured in Logentries to send logs to. Defaults to `20000`.
-{{% /md %}}</dd>
+    <dd>The port number configured in Logentries to send logs to. Defaults to `20000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3631,8 +3631,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
-{{% /md %}}</dd>
+    <dd>Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3640,8 +3640,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Selected POP to serve as a "shield" for origin servers.
-{{% /md %}}</dd>
+    <dd>Selected POP to serve as a "shield" for origin servers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3649,8 +3649,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}CA certificate attached to origin.
-{{% /md %}}</dd>
+    <dd>CA certificate attached to origin.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3658,8 +3658,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides ssl_hostname, but only for cert verification. Does not affect SNI at all.
-{{% /md %}}</dd>
+    <dd>Overrides ssl_hostname, but only for cert verification. Does not affect SNI at all.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3667,8 +3667,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Be strict about checking SSL certs. Default `true`.
-{{% /md %}}</dd>
+    <dd>Be strict about checking SSL certs. Default `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3676,8 +3676,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of OpenSSL Ciphers to try when negotiating to the backend.
-{{% /md %}}</dd>
+    <dd>Comma separated list of OpenSSL Ciphers to try when negotiating to the backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3685,8 +3685,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Client certificate attached to origin. Used when connecting to the backend.
-{{% /md %}}</dd>
+    <dd>Client certificate attached to origin. Used when connecting to the backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3694,8 +3694,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Client key attached to origin. Used when connecting to the backend.
-{{% /md %}}</dd>
+    <dd>Client key attached to origin. Used when connecting to the backend.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3703,8 +3703,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used for both SNI during the TLS handshake and to validate the cert.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use ssl_cert_hostname and ssl_sni_hostname instead.{{% /md %}}</p></dd>
+    <dd>Used for both SNI during the TLS handshake and to validate the cert.
+<p class="property-message">Deprecated: Use ssl_cert_hostname and ssl_sni_hostname instead.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3712,8 +3712,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides ssl_hostname, but only for SNI in the handshake. Does not affect cert validation at all.
-{{% /md %}}</dd>
+    <dd>Overrides ssl_hostname, but only for SNI in the handshake. Does not affect cert validation at all.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3721,8 +3721,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not to use SSL to reach the backend. Default `false`.
-{{% /md %}}</dd>
+    <dd>Whether or not to use SSL to reach the backend. Default `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3730,14 +3730,14 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The [portion of traffic](https://docs.fastly.com/guides/performance-tuning/load-balancing-configuration.html#how-weight-affects-load-balancing) to send to this Backend. Each Backend receives `weight / total` of the traffic. Default `100`.
-{{% /md %}}</dd>
+    <dd>The [portion of traffic](https://docs.fastly.com/guides/performance-tuning/load-balancing-configuration.html#how-weight-affects-load-balancing) to send to this Backend. Each Backend receives `weight / total` of the traffic. Default `100`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3746,8 +3746,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A hostname or IPv4 address of the Syslog endpoint.
-{{% /md %}}</dd>
+    <dd>A hostname or IPv4 address of the Syslog endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3755,8 +3755,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3764,10 +3764,10 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Denotes if this Backend should be
+    <dd>Denotes if this Backend should be
 included in the pool of backends that requests are load balanced against.
 Default `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3775,8 +3775,8 @@ Default `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}How long to wait between bytes in milliseconds. Default `10000`.
-{{% /md %}}</dd>
+    <dd>How long to wait between bytes in milliseconds. Default `10000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3784,9 +3784,9 @@ Default `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}How long to wait for a timeout in milliseconds.
+    <dd>How long to wait for a timeout in milliseconds.
 Default `1000`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3794,8 +3794,8 @@ Default `1000`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of errors to allow before the Backend is marked as down. Default `0`.
-{{% /md %}}</dd>
+    <dd>Number of errors to allow before the Backend is marked as down. Default `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3803,8 +3803,8 @@ Default `1000`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}How long to wait for the first bytes in milliseconds. Default `15000`.
-{{% /md %}}</dd>
+    <dd>How long to wait for the first bytes in milliseconds. Default `15000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3812,8 +3812,8 @@ Default `1000`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of a defined `healthcheck` to assign to this backend.
-{{% /md %}}</dd>
+    <dd>Name of a defined `healthcheck` to assign to this backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3821,9 +3821,9 @@ Default `1000`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of connections for this Backend.
+    <dd>Maximum number of connections for this Backend.
 Default `200`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3831,8 +3831,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Maximum allowed TLS version on SSL connections to this backend.
-{{% /md %}}</dd>
+    <dd>Maximum allowed TLS version on SSL connections to this backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3840,8 +3840,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Minimum allowed TLS version on SSL connections to this backend.
-{{% /md %}}</dd>
+    <dd>Minimum allowed TLS version on SSL connections to this backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3849,8 +3849,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname to override the Host header.
-{{% /md %}}</dd>
+    <dd>The hostname to override the Host header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3858,8 +3858,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port number configured in Logentries to send logs to. Defaults to `20000`.
-{{% /md %}}</dd>
+    <dd>The port number configured in Logentries to send logs to. Defaults to `20000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3867,8 +3867,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
-{{% /md %}}</dd>
+    <dd>Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3876,8 +3876,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Selected POP to serve as a "shield" for origin servers.
-{{% /md %}}</dd>
+    <dd>Selected POP to serve as a "shield" for origin servers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3885,8 +3885,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}CA certificate attached to origin.
-{{% /md %}}</dd>
+    <dd>CA certificate attached to origin.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3894,8 +3894,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides ssl_hostname, but only for cert verification. Does not affect SNI at all.
-{{% /md %}}</dd>
+    <dd>Overrides ssl_hostname, but only for cert verification. Does not affect SNI at all.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3903,8 +3903,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Be strict about checking SSL certs. Default `true`.
-{{% /md %}}</dd>
+    <dd>Be strict about checking SSL certs. Default `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3912,8 +3912,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of OpenSSL Ciphers to try when negotiating to the backend.
-{{% /md %}}</dd>
+    <dd>Comma separated list of OpenSSL Ciphers to try when negotiating to the backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3921,8 +3921,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Client certificate attached to origin. Used when connecting to the backend.
-{{% /md %}}</dd>
+    <dd>Client certificate attached to origin. Used when connecting to the backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3930,8 +3930,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Client key attached to origin. Used when connecting to the backend.
-{{% /md %}}</dd>
+    <dd>Client key attached to origin. Used when connecting to the backend.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3939,8 +3939,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used for both SNI during the TLS handshake and to validate the cert.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use ssl_cert_hostname and ssl_sni_hostname instead.{{% /md %}}</p></dd>
+    <dd>Used for both SNI during the TLS handshake and to validate the cert.
+<p class="property-message">Deprecated: Use ssl_cert_hostname and ssl_sni_hostname instead.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3948,8 +3948,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Overrides ssl_hostname, but only for SNI in the handshake. Does not affect cert validation at all.
-{{% /md %}}</dd>
+    <dd>Overrides ssl_hostname, but only for SNI in the handshake. Does not affect cert validation at all.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3957,8 +3957,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not to use SSL to reach the backend. Default `false`.
-{{% /md %}}</dd>
+    <dd>Whether or not to use SSL to reach the backend. Default `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3966,14 +3966,14 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The [portion of traffic](https://docs.fastly.com/guides/performance-tuning/load-balancing-configuration.html#how-weight-affects-load-balancing) to send to this Backend. Each Backend receives `weight / total` of the traffic. Default `100`.
-{{% /md %}}</dd>
+    <dd>The [portion of traffic](https://docs.fastly.com/guides/performance-tuning/load-balancing-configuration.html#how-weight-affects-load-balancing) to send to this Backend. Each Backend receives `weight / total` of the traffic. Default `100`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3982,8 +3982,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A hostname or IPv4 address of the Syslog endpoint.
-{{% /md %}}</dd>
+    <dd>A hostname or IPv4 address of the Syslog endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3991,8 +3991,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4000,10 +4000,10 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Denotes if this Backend should be
+    <dd>Denotes if this Backend should be
 included in the pool of backends that requests are load balanced against.
 Default `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4011,8 +4011,8 @@ Default `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}How long to wait between bytes in milliseconds. Default `10000`.
-{{% /md %}}</dd>
+    <dd>How long to wait between bytes in milliseconds. Default `10000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4020,9 +4020,9 @@ Default `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}How long to wait for a timeout in milliseconds.
+    <dd>How long to wait for a timeout in milliseconds.
 Default `1000`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4030,8 +4030,8 @@ Default `1000`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of errors to allow before the Backend is marked as down. Default `0`.
-{{% /md %}}</dd>
+    <dd>Number of errors to allow before the Backend is marked as down. Default `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4039,8 +4039,8 @@ Default `1000`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}How long to wait for the first bytes in milliseconds. Default `15000`.
-{{% /md %}}</dd>
+    <dd>How long to wait for the first bytes in milliseconds. Default `15000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4048,8 +4048,8 @@ Default `1000`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of a defined `healthcheck` to assign to this backend.
-{{% /md %}}</dd>
+    <dd>Name of a defined `healthcheck` to assign to this backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4057,9 +4057,9 @@ Default `1000`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of connections for this Backend.
+    <dd>Maximum number of connections for this Backend.
 Default `200`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4067,8 +4067,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Maximum allowed TLS version on SSL connections to this backend.
-{{% /md %}}</dd>
+    <dd>Maximum allowed TLS version on SSL connections to this backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4076,8 +4076,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Minimum allowed TLS version on SSL connections to this backend.
-{{% /md %}}</dd>
+    <dd>Minimum allowed TLS version on SSL connections to this backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4085,8 +4085,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname to override the Host header.
-{{% /md %}}</dd>
+    <dd>The hostname to override the Host header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4094,8 +4094,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port number configured in Logentries to send logs to. Defaults to `20000`.
-{{% /md %}}</dd>
+    <dd>The port number configured in Logentries to send logs to. Defaults to `20000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4103,8 +4103,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
-{{% /md %}}</dd>
+    <dd>Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4112,8 +4112,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Selected POP to serve as a "shield" for origin servers.
-{{% /md %}}</dd>
+    <dd>Selected POP to serve as a "shield" for origin servers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4121,8 +4121,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}CA certificate attached to origin.
-{{% /md %}}</dd>
+    <dd>CA certificate attached to origin.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4130,8 +4130,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Overrides ssl_hostname, but only for cert verification. Does not affect SNI at all.
-{{% /md %}}</dd>
+    <dd>Overrides ssl_hostname, but only for cert verification. Does not affect SNI at all.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4139,8 +4139,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Be strict about checking SSL certs. Default `true`.
-{{% /md %}}</dd>
+    <dd>Be strict about checking SSL certs. Default `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4148,8 +4148,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of OpenSSL Ciphers to try when negotiating to the backend.
-{{% /md %}}</dd>
+    <dd>Comma separated list of OpenSSL Ciphers to try when negotiating to the backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4157,8 +4157,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Client certificate attached to origin. Used when connecting to the backend.
-{{% /md %}}</dd>
+    <dd>Client certificate attached to origin. Used when connecting to the backend.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4166,8 +4166,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Client key attached to origin. Used when connecting to the backend.
-{{% /md %}}</dd>
+    <dd>Client key attached to origin. Used when connecting to the backend.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -4175,8 +4175,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Used for both SNI during the TLS handshake and to validate the cert.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use ssl_cert_hostname and ssl_sni_hostname instead.{{% /md %}}</p></dd>
+    <dd>Used for both SNI during the TLS handshake and to validate the cert.
+<p class="property-message">Deprecated: Use ssl_cert_hostname and ssl_sni_hostname instead.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4184,8 +4184,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Overrides ssl_hostname, but only for SNI in the handshake. Does not affect cert validation at all.
-{{% /md %}}</dd>
+    <dd>Overrides ssl_hostname, but only for SNI in the handshake. Does not affect cert validation at all.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4193,8 +4193,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not to use SSL to reach the backend. Default `false`.
-{{% /md %}}</dd>
+    <dd>Whether or not to use SSL to reach the backend. Default `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4202,29 +4202,29 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The [portion of traffic](https://docs.fastly.com/guides/performance-tuning/load-balancing-configuration.html#how-weight-affects-load-balancing) to send to this Backend. Each Backend receives `weight / total` of the traffic. Default `100`.
-{{% /md %}}</dd>
+    <dd>The [portion of traffic](https://docs.fastly.com/guides/performance-tuning/load-balancing-configuration.html#how-weight-affects-load-balancing) to send to this Backend. Each Backend receives `weight / total` of the traffic. Default `100`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1bigquerylogging">Servicev1Bigquerylogging</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1Bigquerylogging">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1Bigquerylogging">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1BigqueryloggingArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1BigqueryloggingOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4233,8 +4233,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of your BigQuery dataset.
-{{% /md %}}</dd>
+    <dd>The ID of your BigQuery dataset.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4242,8 +4242,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4251,8 +4251,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of your GCP project.
-{{% /md %}}</dd>
+    <dd>The ID of your GCP project.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4260,8 +4260,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of your BigQuery table.
-{{% /md %}}</dd>
+    <dd>The ID of your BigQuery table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4269,8 +4269,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The email for the service account with write access to your BigQuery dataset. If not provided, this will be pulled from a `FASTLY_BQ_EMAIL` environment variable.
-{{% /md %}}</dd>
+    <dd>The email for the service account with write access to your BigQuery dataset. If not provided, this will be pulled from a `FASTLY_BQ_EMAIL` environment variable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4278,8 +4278,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4287,8 +4287,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4296,8 +4296,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4305,8 +4305,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret key associated with the sservice account that has write access to your BigQuery table. If not provided, this will be pulled from the `FASTLY_BQ_SECRET_KEY` environment variable. Typical format for this is a private key in a string with newlines.
-{{% /md %}}</dd>
+    <dd>The secret key associated with the sservice account that has write access to your BigQuery table. If not provided, this will be pulled from the `FASTLY_BQ_SECRET_KEY` environment variable. Typical format for this is a private key in a string with newlines.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4314,14 +4314,14 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Big query table name suffix template. If set will be interpreted as a strftime compatible string and used as the [Template Suffix for your table](https://cloud.google.com/bigquery/streaming-data-into-bigquery#template-tables).
-{{% /md %}}</dd>
+    <dd>Big query table name suffix template. If set will be interpreted as a strftime compatible string and used as the [Template Suffix for your table](https://cloud.google.com/bigquery/streaming-data-into-bigquery#template-tables).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4330,8 +4330,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of your BigQuery dataset.
-{{% /md %}}</dd>
+    <dd>The ID of your BigQuery dataset.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4339,8 +4339,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4348,8 +4348,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of your GCP project.
-{{% /md %}}</dd>
+    <dd>The ID of your GCP project.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4357,8 +4357,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of your BigQuery table.
-{{% /md %}}</dd>
+    <dd>The ID of your BigQuery table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4366,8 +4366,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The email for the service account with write access to your BigQuery dataset. If not provided, this will be pulled from a `FASTLY_BQ_EMAIL` environment variable.
-{{% /md %}}</dd>
+    <dd>The email for the service account with write access to your BigQuery dataset. If not provided, this will be pulled from a `FASTLY_BQ_EMAIL` environment variable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4375,8 +4375,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4384,8 +4384,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4393,8 +4393,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4402,8 +4402,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret key associated with the sservice account that has write access to your BigQuery table. If not provided, this will be pulled from the `FASTLY_BQ_SECRET_KEY` environment variable. Typical format for this is a private key in a string with newlines.
-{{% /md %}}</dd>
+    <dd>The secret key associated with the sservice account that has write access to your BigQuery table. If not provided, this will be pulled from the `FASTLY_BQ_SECRET_KEY` environment variable. Typical format for this is a private key in a string with newlines.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4411,14 +4411,14 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Big query table name suffix template. If set will be interpreted as a strftime compatible string and used as the [Template Suffix for your table](https://cloud.google.com/bigquery/streaming-data-into-bigquery#template-tables).
-{{% /md %}}</dd>
+    <dd>Big query table name suffix template. If set will be interpreted as a strftime compatible string and used as the [Template Suffix for your table](https://cloud.google.com/bigquery/streaming-data-into-bigquery#template-tables).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4427,8 +4427,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of your BigQuery dataset.
-{{% /md %}}</dd>
+    <dd>The ID of your BigQuery dataset.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4436,8 +4436,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4445,8 +4445,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of your GCP project.
-{{% /md %}}</dd>
+    <dd>The ID of your GCP project.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4454,8 +4454,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of your BigQuery table.
-{{% /md %}}</dd>
+    <dd>The ID of your BigQuery table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4463,8 +4463,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The email for the service account with write access to your BigQuery dataset. If not provided, this will be pulled from a `FASTLY_BQ_EMAIL` environment variable.
-{{% /md %}}</dd>
+    <dd>The email for the service account with write access to your BigQuery dataset. If not provided, this will be pulled from a `FASTLY_BQ_EMAIL` environment variable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4472,8 +4472,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4481,8 +4481,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4490,8 +4490,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4499,8 +4499,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret key associated with the sservice account that has write access to your BigQuery table. If not provided, this will be pulled from the `FASTLY_BQ_SECRET_KEY` environment variable. Typical format for this is a private key in a string with newlines.
-{{% /md %}}</dd>
+    <dd>The secret key associated with the sservice account that has write access to your BigQuery table. If not provided, this will be pulled from the `FASTLY_BQ_SECRET_KEY` environment variable. Typical format for this is a private key in a string with newlines.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4508,14 +4508,14 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Big query table name suffix template. If set will be interpreted as a strftime compatible string and used as the [Template Suffix for your table](https://cloud.google.com/bigquery/streaming-data-into-bigquery#template-tables).
-{{% /md %}}</dd>
+    <dd>Big query table name suffix template. If set will be interpreted as a strftime compatible string and used as the [Template Suffix for your table](https://cloud.google.com/bigquery/streaming-data-into-bigquery#template-tables).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4524,8 +4524,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of your BigQuery dataset.
-{{% /md %}}</dd>
+    <dd>The ID of your BigQuery dataset.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4533,8 +4533,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4542,8 +4542,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of your GCP project.
-{{% /md %}}</dd>
+    <dd>The ID of your GCP project.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4551,8 +4551,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of your BigQuery table.
-{{% /md %}}</dd>
+    <dd>The ID of your BigQuery table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4560,8 +4560,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The email for the service account with write access to your BigQuery dataset. If not provided, this will be pulled from a `FASTLY_BQ_EMAIL` environment variable.
-{{% /md %}}</dd>
+    <dd>The email for the service account with write access to your BigQuery dataset. If not provided, this will be pulled from a `FASTLY_BQ_EMAIL` environment variable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4569,8 +4569,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4578,8 +4578,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4587,8 +4587,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4596,8 +4596,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secret key associated with the sservice account that has write access to your BigQuery table. If not provided, this will be pulled from the `FASTLY_BQ_SECRET_KEY` environment variable. Typical format for this is a private key in a string with newlines.
-{{% /md %}}</dd>
+    <dd>The secret key associated with the sservice account that has write access to your BigQuery table. If not provided, this will be pulled from the `FASTLY_BQ_SECRET_KEY` environment variable. Typical format for this is a private key in a string with newlines.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4605,29 +4605,29 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Big query table name suffix template. If set will be interpreted as a strftime compatible string and used as the [Template Suffix for your table](https://cloud.google.com/bigquery/streaming-data-into-bigquery#template-tables).
-{{% /md %}}</dd>
+    <dd>Big query table name suffix template. If set will be interpreted as a strftime compatible string and used as the [Template Suffix for your table](https://cloud.google.com/bigquery/streaming-data-into-bigquery#template-tables).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1blobstoragelogging">Servicev1Blobstoragelogging</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1Blobstoragelogging">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1Blobstoragelogging">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1BlobstorageloggingArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1BlobstorageloggingOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4636,8 +4636,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique Azure Blob Storage namespace in which your data objects are stored.
-{{% /md %}}</dd>
+    <dd>The unique Azure Blob Storage namespace in which your data objects are stored.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4645,8 +4645,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Azure Blob Storage container in which to store logs.
-{{% /md %}}</dd>
+    <dd>The name of the Azure Blob Storage container in which to store logs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4654,8 +4654,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4663,8 +4663,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure shared access signature providing write access to the blob service objects. Be sure to update your token before it expires or the logging functionality will not work.
-{{% /md %}}</dd>
+    <dd>The Azure shared access signature providing write access to the blob service objects. Be sure to update your token before it expires or the logging functionality will not work.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4672,8 +4672,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4681,8 +4681,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4690,8 +4690,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
-{{% /md %}}</dd>
+    <dd>Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4699,8 +4699,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
-{{% /md %}}</dd>
+    <dd>How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4708,8 +4708,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
-{{% /md %}}</dd>
+    <dd>The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4717,8 +4717,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}How frequently the logs should be transferred in seconds. Default `3600`.
-{{% /md %}}</dd>
+    <dd>How frequently the logs should be transferred in seconds. Default `3600`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4726,8 +4726,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4735,8 +4735,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A PGP public key that Fastly will use to encrypt your log files before writing them to disk.
-{{% /md %}}</dd>
+    <dd>A PGP public key that Fastly will use to encrypt your log files before writing them to disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4744,8 +4744,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4753,14 +4753,14 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
-{{% /md %}}</dd>
+    <dd>`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4769,8 +4769,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique Azure Blob Storage namespace in which your data objects are stored.
-{{% /md %}}</dd>
+    <dd>The unique Azure Blob Storage namespace in which your data objects are stored.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4778,8 +4778,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Azure Blob Storage container in which to store logs.
-{{% /md %}}</dd>
+    <dd>The name of the Azure Blob Storage container in which to store logs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4787,8 +4787,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4796,8 +4796,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure shared access signature providing write access to the blob service objects. Be sure to update your token before it expires or the logging functionality will not work.
-{{% /md %}}</dd>
+    <dd>The Azure shared access signature providing write access to the blob service objects. Be sure to update your token before it expires or the logging functionality will not work.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4805,8 +4805,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4814,8 +4814,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4823,8 +4823,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
-{{% /md %}}</dd>
+    <dd>Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4832,8 +4832,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
-{{% /md %}}</dd>
+    <dd>How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4841,8 +4841,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
-{{% /md %}}</dd>
+    <dd>The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4850,8 +4850,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}How frequently the logs should be transferred in seconds. Default `3600`.
-{{% /md %}}</dd>
+    <dd>How frequently the logs should be transferred in seconds. Default `3600`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4859,8 +4859,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4868,8 +4868,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A PGP public key that Fastly will use to encrypt your log files before writing them to disk.
-{{% /md %}}</dd>
+    <dd>A PGP public key that Fastly will use to encrypt your log files before writing them to disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4877,8 +4877,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4886,14 +4886,14 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
-{{% /md %}}</dd>
+    <dd>`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4902,8 +4902,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique Azure Blob Storage namespace in which your data objects are stored.
-{{% /md %}}</dd>
+    <dd>The unique Azure Blob Storage namespace in which your data objects are stored.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4911,8 +4911,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Azure Blob Storage container in which to store logs.
-{{% /md %}}</dd>
+    <dd>The name of the Azure Blob Storage container in which to store logs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4920,8 +4920,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4929,8 +4929,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure shared access signature providing write access to the blob service objects. Be sure to update your token before it expires or the logging functionality will not work.
-{{% /md %}}</dd>
+    <dd>The Azure shared access signature providing write access to the blob service objects. Be sure to update your token before it expires or the logging functionality will not work.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4938,8 +4938,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4947,8 +4947,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4956,8 +4956,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
-{{% /md %}}</dd>
+    <dd>Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4965,8 +4965,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
-{{% /md %}}</dd>
+    <dd>How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4974,8 +4974,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
-{{% /md %}}</dd>
+    <dd>The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4983,8 +4983,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}How frequently the logs should be transferred in seconds. Default `3600`.
-{{% /md %}}</dd>
+    <dd>How frequently the logs should be transferred in seconds. Default `3600`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4992,8 +4992,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5001,8 +5001,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A PGP public key that Fastly will use to encrypt your log files before writing them to disk.
-{{% /md %}}</dd>
+    <dd>A PGP public key that Fastly will use to encrypt your log files before writing them to disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5010,8 +5010,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5019,14 +5019,14 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
-{{% /md %}}</dd>
+    <dd>`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5035,8 +5035,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique Azure Blob Storage namespace in which your data objects are stored.
-{{% /md %}}</dd>
+    <dd>The unique Azure Blob Storage namespace in which your data objects are stored.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5044,8 +5044,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Azure Blob Storage container in which to store logs.
-{{% /md %}}</dd>
+    <dd>The name of the Azure Blob Storage container in which to store logs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5053,8 +5053,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5062,8 +5062,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Azure shared access signature providing write access to the blob service objects. Be sure to update your token before it expires or the logging functionality will not work.
-{{% /md %}}</dd>
+    <dd>The Azure shared access signature providing write access to the blob service objects. Be sure to update your token before it expires or the logging functionality will not work.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5071,8 +5071,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5080,8 +5080,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5089,8 +5089,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
-{{% /md %}}</dd>
+    <dd>Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5098,8 +5098,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
-{{% /md %}}</dd>
+    <dd>How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5107,8 +5107,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
-{{% /md %}}</dd>
+    <dd>The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5116,8 +5116,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}How frequently the logs should be transferred in seconds. Default `3600`.
-{{% /md %}}</dd>
+    <dd>How frequently the logs should be transferred in seconds. Default `3600`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5125,8 +5125,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5134,8 +5134,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A PGP public key that Fastly will use to encrypt your log files before writing them to disk.
-{{% /md %}}</dd>
+    <dd>A PGP public key that Fastly will use to encrypt your log files before writing them to disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5143,8 +5143,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5152,29 +5152,29 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
-{{% /md %}}</dd>
+    <dd>`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1cachesetting">Servicev1Cache<wbr>Setting</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1CacheSetting">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1CacheSetting">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1CacheSettingArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1CacheSettingOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5183,8 +5183,8 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5192,9 +5192,9 @@ Default `200`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Allows you to terminate request handling and immediately
+    <dd>Allows you to terminate request handling and immediately
 perform an action. When set it can be `lookup` or `pass` (Ignore the cache completely).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5202,9 +5202,9 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
+    <dd>Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
 see [Fastly's Documentation on Conditionals][fastly-conditionals].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5212,8 +5212,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Max "Time To Live" for stale (unreachable) objects.
-{{% /md %}}</dd>
+    <dd>Max "Time To Live" for stale (unreachable) objects.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5221,14 +5221,14 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The Time-To-Live (TTL) for the object.
-{{% /md %}}</dd>
+    <dd>The Time-To-Live (TTL) for the object.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5237,8 +5237,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5246,9 +5246,9 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Allows you to terminate request handling and immediately
+    <dd>Allows you to terminate request handling and immediately
 perform an action. When set it can be `lookup` or `pass` (Ignore the cache completely).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5256,9 +5256,9 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
+    <dd>Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
 see [Fastly's Documentation on Conditionals][fastly-conditionals].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5266,8 +5266,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Max "Time To Live" for stale (unreachable) objects.
-{{% /md %}}</dd>
+    <dd>Max "Time To Live" for stale (unreachable) objects.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5275,14 +5275,14 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The Time-To-Live (TTL) for the object.
-{{% /md %}}</dd>
+    <dd>The Time-To-Live (TTL) for the object.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5291,8 +5291,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5300,9 +5300,9 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Allows you to terminate request handling and immediately
+    <dd>Allows you to terminate request handling and immediately
 perform an action. When set it can be `lookup` or `pass` (Ignore the cache completely).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5310,9 +5310,9 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
+    <dd>Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
 see [Fastly's Documentation on Conditionals][fastly-conditionals].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5320,8 +5320,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Max "Time To Live" for stale (unreachable) objects.
-{{% /md %}}</dd>
+    <dd>Max "Time To Live" for stale (unreachable) objects.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5329,14 +5329,14 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The Time-To-Live (TTL) for the object.
-{{% /md %}}</dd>
+    <dd>The Time-To-Live (TTL) for the object.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5345,8 +5345,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5354,9 +5354,9 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Allows you to terminate request handling and immediately
+    <dd>Allows you to terminate request handling and immediately
 perform an action. When set it can be `lookup` or `pass` (Ignore the cache completely).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5364,9 +5364,9 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
+    <dd>Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
 see [Fastly's Documentation on Conditionals][fastly-conditionals].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5374,8 +5374,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Max "Time To Live" for stale (unreachable) objects.
-{{% /md %}}</dd>
+    <dd>Max "Time To Live" for stale (unreachable) objects.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5383,29 +5383,29 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The Time-To-Live (TTL) for the object.
-{{% /md %}}</dd>
+    <dd>The Time-To-Live (TTL) for the object.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1condition">Servicev1Condition</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1Condition">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1Condition">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1ConditionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1ConditionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5414,8 +5414,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5423,8 +5423,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The statement used to determine if the condition is met.
-{{% /md %}}</dd>
+    <dd>The statement used to determine if the condition is met.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5432,8 +5432,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
-{{% /md %}}</dd>
+    <dd>The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5441,14 +5441,14 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
-{{% /md %}}</dd>
+    <dd>Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5457,8 +5457,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5466,8 +5466,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The statement used to determine if the condition is met.
-{{% /md %}}</dd>
+    <dd>The statement used to determine if the condition is met.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5475,8 +5475,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
-{{% /md %}}</dd>
+    <dd>The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5484,14 +5484,14 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
-{{% /md %}}</dd>
+    <dd>Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5500,8 +5500,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5509,8 +5509,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The statement used to determine if the condition is met.
-{{% /md %}}</dd>
+    <dd>The statement used to determine if the condition is met.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5518,8 +5518,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
-{{% /md %}}</dd>
+    <dd>The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5527,14 +5527,14 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
-{{% /md %}}</dd>
+    <dd>Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5543,8 +5543,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5552,8 +5552,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The statement used to determine if the condition is met.
-{{% /md %}}</dd>
+    <dd>The statement used to determine if the condition is met.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5561,8 +5561,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
-{{% /md %}}</dd>
+    <dd>The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5570,29 +5570,29 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
-{{% /md %}}</dd>
+    <dd>Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1dictionary">Servicev1Dictionary</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1Dictionary">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1Dictionary">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1DictionaryArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1DictionaryOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5601,8 +5601,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5610,8 +5610,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the dictionary.
-{{% /md %}}</dd>
+    <dd>The ID of the dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5619,13 +5619,13 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5634,8 +5634,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5643,8 +5643,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the dictionary.
-{{% /md %}}</dd>
+    <dd>The ID of the dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5652,13 +5652,13 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5667,8 +5667,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5676,8 +5676,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the dictionary.
-{{% /md %}}</dd>
+    <dd>The ID of the dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5685,13 +5685,13 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5700,8 +5700,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5709,8 +5709,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the dictionary.
-{{% /md %}}</dd>
+    <dd>The ID of the dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5718,28 +5718,28 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1director">Servicev1Director</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1Director">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1Director">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1DirectorArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1DirectorOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5748,8 +5748,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Names of defined backends to map the director to. Example: `[ "origin1", "origin2" ]`
-{{% /md %}}</dd>
+    <dd>Names of defined backends to map the director to. Example: `[ "origin1", "origin2" ]`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5757,8 +5757,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5766,8 +5766,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Load balancing weight for the backends. Default `100`.
-{{% /md %}}</dd>
+    <dd>Load balancing weight for the backends. Default `100`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5775,8 +5775,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment about the Director.
-{{% /md %}}</dd>
+    <dd>An optional comment about the Director.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5784,8 +5784,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Percentage of capacity that needs to be up for the director itself to be considered up. Default `75`.
-{{% /md %}}</dd>
+    <dd>Percentage of capacity that needs to be up for the director itself to be considered up. Default `75`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5793,8 +5793,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}How many backends to search if it fails. Default `5`.
-{{% /md %}}</dd>
+    <dd>How many backends to search if it fails. Default `5`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5802,8 +5802,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Selected POP to serve as a "shield" for origin servers.
-{{% /md %}}</dd>
+    <dd>Selected POP to serve as a "shield" for origin servers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5811,14 +5811,14 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
-{{% /md %}}</dd>
+    <dd>The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5827,8 +5827,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Names of defined backends to map the director to. Example: `[ "origin1", "origin2" ]`
-{{% /md %}}</dd>
+    <dd>Names of defined backends to map the director to. Example: `[ "origin1", "origin2" ]`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5836,8 +5836,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5845,8 +5845,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Load balancing weight for the backends. Default `100`.
-{{% /md %}}</dd>
+    <dd>Load balancing weight for the backends. Default `100`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5854,8 +5854,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment about the Director.
-{{% /md %}}</dd>
+    <dd>An optional comment about the Director.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5863,8 +5863,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Percentage of capacity that needs to be up for the director itself to be considered up. Default `75`.
-{{% /md %}}</dd>
+    <dd>Percentage of capacity that needs to be up for the director itself to be considered up. Default `75`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5872,8 +5872,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}How many backends to search if it fails. Default `5`.
-{{% /md %}}</dd>
+    <dd>How many backends to search if it fails. Default `5`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5881,8 +5881,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Selected POP to serve as a "shield" for origin servers.
-{{% /md %}}</dd>
+    <dd>Selected POP to serve as a "shield" for origin servers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5890,14 +5890,14 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
-{{% /md %}}</dd>
+    <dd>The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5906,8 +5906,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Names of defined backends to map the director to. Example: `[ "origin1", "origin2" ]`
-{{% /md %}}</dd>
+    <dd>Names of defined backends to map the director to. Example: `[ "origin1", "origin2" ]`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5915,8 +5915,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5924,8 +5924,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Load balancing weight for the backends. Default `100`.
-{{% /md %}}</dd>
+    <dd>Load balancing weight for the backends. Default `100`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5933,8 +5933,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment about the Director.
-{{% /md %}}</dd>
+    <dd>An optional comment about the Director.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5942,8 +5942,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Percentage of capacity that needs to be up for the director itself to be considered up. Default `75`.
-{{% /md %}}</dd>
+    <dd>Percentage of capacity that needs to be up for the director itself to be considered up. Default `75`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5951,8 +5951,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}How many backends to search if it fails. Default `5`.
-{{% /md %}}</dd>
+    <dd>How many backends to search if it fails. Default `5`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5960,8 +5960,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Selected POP to serve as a "shield" for origin servers.
-{{% /md %}}</dd>
+    <dd>Selected POP to serve as a "shield" for origin servers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5969,14 +5969,14 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
-{{% /md %}}</dd>
+    <dd>The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5985,8 +5985,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Names of defined backends to map the director to. Example: `[ "origin1", "origin2" ]`
-{{% /md %}}</dd>
+    <dd>Names of defined backends to map the director to. Example: `[ "origin1", "origin2" ]`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5994,8 +5994,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6003,8 +6003,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Load balancing weight for the backends. Default `100`.
-{{% /md %}}</dd>
+    <dd>Load balancing weight for the backends. Default `100`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6012,8 +6012,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment about the Director.
-{{% /md %}}</dd>
+    <dd>An optional comment about the Director.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6021,8 +6021,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Percentage of capacity that needs to be up for the director itself to be considered up. Default `75`.
-{{% /md %}}</dd>
+    <dd>Percentage of capacity that needs to be up for the director itself to be considered up. Default `75`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6030,8 +6030,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}How many backends to search if it fails. Default `5`.
-{{% /md %}}</dd>
+    <dd>How many backends to search if it fails. Default `5`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6039,8 +6039,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Selected POP to serve as a "shield" for origin servers.
-{{% /md %}}</dd>
+    <dd>Selected POP to serve as a "shield" for origin servers.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6048,29 +6048,29 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
-{{% /md %}}</dd>
+    <dd>The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1domain">Servicev1Domain</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1Domain">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1Domain">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1DomainArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1DomainOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6079,8 +6079,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6088,14 +6088,14 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment about the Director.
-{{% /md %}}</dd>
+    <dd>An optional comment about the Director.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6104,8 +6104,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6113,14 +6113,14 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment about the Director.
-{{% /md %}}</dd>
+    <dd>An optional comment about the Director.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6129,8 +6129,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6138,14 +6138,14 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment about the Director.
-{{% /md %}}</dd>
+    <dd>An optional comment about the Director.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6154,8 +6154,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6163,29 +6163,29 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional comment about the Director.
-{{% /md %}}</dd>
+    <dd>An optional comment about the Director.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1dynamicsnippet">Servicev1Dynamicsnippet</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1Dynamicsnippet">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1Dynamicsnippet">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1DynamicsnippetArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1DynamicsnippetOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6194,8 +6194,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6203,8 +6203,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
-{{% /md %}}</dd>
+    <dd>The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6212,8 +6212,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
-{{% /md %}}</dd>
+    <dd>Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6221,14 +6221,14 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the dynamic snippet.
-{{% /md %}}</dd>
+    <dd>The ID of the dynamic snippet.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6237,8 +6237,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6246,8 +6246,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
-{{% /md %}}</dd>
+    <dd>The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6255,8 +6255,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
-{{% /md %}}</dd>
+    <dd>Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6264,14 +6264,14 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the dynamic snippet.
-{{% /md %}}</dd>
+    <dd>The ID of the dynamic snippet.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6280,8 +6280,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6289,8 +6289,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
-{{% /md %}}</dd>
+    <dd>The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6298,8 +6298,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
-{{% /md %}}</dd>
+    <dd>Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6307,14 +6307,14 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the dynamic snippet.
-{{% /md %}}</dd>
+    <dd>The ID of the dynamic snippet.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6323,8 +6323,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6332,8 +6332,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
-{{% /md %}}</dd>
+    <dd>The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6341,8 +6341,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
-{{% /md %}}</dd>
+    <dd>Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6350,29 +6350,29 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the dynamic snippet.
-{{% /md %}}</dd>
+    <dd>The ID of the dynamic snippet.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1gcslogging">Servicev1Gcslogging</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1Gcslogging">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1Gcslogging">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1GcsloggingArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1GcsloggingOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6381,8 +6381,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket in which to store the logs.
-{{% /md %}}</dd>
+    <dd>The name of the bucket in which to store the logs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6390,8 +6390,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6399,8 +6399,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The email for the service account with write access to your BigQuery dataset. If not provided, this will be pulled from a `FASTLY_BQ_EMAIL` environment variable.
-{{% /md %}}</dd>
+    <dd>The email for the service account with write access to your BigQuery dataset. If not provided, this will be pulled from a `FASTLY_BQ_EMAIL` environment variable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6408,8 +6408,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6417,8 +6417,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
-{{% /md %}}</dd>
+    <dd>Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6426,8 +6426,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
-{{% /md %}}</dd>
+    <dd>How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6435,8 +6435,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
-{{% /md %}}</dd>
+    <dd>The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6444,8 +6444,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}How frequently the logs should be transferred in seconds. Default `3600`.
-{{% /md %}}</dd>
+    <dd>How frequently the logs should be transferred in seconds. Default `3600`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6453,8 +6453,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6462,8 +6462,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6471,8 +6471,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret key associated with the sservice account that has write access to your BigQuery table. If not provided, this will be pulled from the `FASTLY_BQ_SECRET_KEY` environment variable. Typical format for this is a private key in a string with newlines.
-{{% /md %}}</dd>
+    <dd>The secret key associated with the sservice account that has write access to your BigQuery table. If not provided, this will be pulled from the `FASTLY_BQ_SECRET_KEY` environment variable. Typical format for this is a private key in a string with newlines.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6480,14 +6480,14 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
-{{% /md %}}</dd>
+    <dd>`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6496,8 +6496,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket in which to store the logs.
-{{% /md %}}</dd>
+    <dd>The name of the bucket in which to store the logs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6505,8 +6505,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6514,8 +6514,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The email for the service account with write access to your BigQuery dataset. If not provided, this will be pulled from a `FASTLY_BQ_EMAIL` environment variable.
-{{% /md %}}</dd>
+    <dd>The email for the service account with write access to your BigQuery dataset. If not provided, this will be pulled from a `FASTLY_BQ_EMAIL` environment variable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6523,8 +6523,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6532,8 +6532,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
-{{% /md %}}</dd>
+    <dd>Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6541,8 +6541,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
-{{% /md %}}</dd>
+    <dd>How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6550,8 +6550,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
-{{% /md %}}</dd>
+    <dd>The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6559,8 +6559,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}How frequently the logs should be transferred in seconds. Default `3600`.
-{{% /md %}}</dd>
+    <dd>How frequently the logs should be transferred in seconds. Default `3600`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6568,8 +6568,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6577,8 +6577,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6586,8 +6586,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret key associated with the sservice account that has write access to your BigQuery table. If not provided, this will be pulled from the `FASTLY_BQ_SECRET_KEY` environment variable. Typical format for this is a private key in a string with newlines.
-{{% /md %}}</dd>
+    <dd>The secret key associated with the sservice account that has write access to your BigQuery table. If not provided, this will be pulled from the `FASTLY_BQ_SECRET_KEY` environment variable. Typical format for this is a private key in a string with newlines.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6595,14 +6595,14 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
-{{% /md %}}</dd>
+    <dd>`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6611,8 +6611,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket in which to store the logs.
-{{% /md %}}</dd>
+    <dd>The name of the bucket in which to store the logs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6620,8 +6620,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6629,8 +6629,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The email for the service account with write access to your BigQuery dataset. If not provided, this will be pulled from a `FASTLY_BQ_EMAIL` environment variable.
-{{% /md %}}</dd>
+    <dd>The email for the service account with write access to your BigQuery dataset. If not provided, this will be pulled from a `FASTLY_BQ_EMAIL` environment variable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6638,8 +6638,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6647,8 +6647,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
-{{% /md %}}</dd>
+    <dd>Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6656,8 +6656,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
-{{% /md %}}</dd>
+    <dd>How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6665,8 +6665,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
-{{% /md %}}</dd>
+    <dd>The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6674,8 +6674,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}How frequently the logs should be transferred in seconds. Default `3600`.
-{{% /md %}}</dd>
+    <dd>How frequently the logs should be transferred in seconds. Default `3600`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6683,8 +6683,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6692,8 +6692,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6701,8 +6701,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secret key associated with the sservice account that has write access to your BigQuery table. If not provided, this will be pulled from the `FASTLY_BQ_SECRET_KEY` environment variable. Typical format for this is a private key in a string with newlines.
-{{% /md %}}</dd>
+    <dd>The secret key associated with the sservice account that has write access to your BigQuery table. If not provided, this will be pulled from the `FASTLY_BQ_SECRET_KEY` environment variable. Typical format for this is a private key in a string with newlines.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6710,14 +6710,14 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
-{{% /md %}}</dd>
+    <dd>`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6726,8 +6726,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket in which to store the logs.
-{{% /md %}}</dd>
+    <dd>The name of the bucket in which to store the logs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6735,8 +6735,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6744,8 +6744,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The email for the service account with write access to your BigQuery dataset. If not provided, this will be pulled from a `FASTLY_BQ_EMAIL` environment variable.
-{{% /md %}}</dd>
+    <dd>The email for the service account with write access to your BigQuery dataset. If not provided, this will be pulled from a `FASTLY_BQ_EMAIL` environment variable.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6753,8 +6753,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6762,8 +6762,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
-{{% /md %}}</dd>
+    <dd>Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6771,8 +6771,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
-{{% /md %}}</dd>
+    <dd>How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6780,8 +6780,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
-{{% /md %}}</dd>
+    <dd>The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6789,8 +6789,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}How frequently the logs should be transferred in seconds. Default `3600`.
-{{% /md %}}</dd>
+    <dd>How frequently the logs should be transferred in seconds. Default `3600`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6798,8 +6798,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6807,8 +6807,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6816,8 +6816,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secret key associated with the sservice account that has write access to your BigQuery table. If not provided, this will be pulled from the `FASTLY_BQ_SECRET_KEY` environment variable. Typical format for this is a private key in a string with newlines.
-{{% /md %}}</dd>
+    <dd>The secret key associated with the sservice account that has write access to your BigQuery table. If not provided, this will be pulled from the `FASTLY_BQ_SECRET_KEY` environment variable. Typical format for this is a private key in a string with newlines.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6825,29 +6825,29 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
-{{% /md %}}</dd>
+    <dd>`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1gzip">Servicev1Gzip</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1Gzip">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1Gzip">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1GzipArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1GzipOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6856,8 +6856,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6865,9 +6865,9 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
+    <dd>Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
 see [Fastly's Documentation on Conditionals][fastly-conditionals].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6875,9 +6875,9 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The content-type for each type of content you wish to
+    <dd>The content-type for each type of content you wish to
 have dynamically gzip'ed. Example: `["text/html", "text/css"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6885,15 +6885,15 @@ have dynamically gzip'ed. Example: `["text/html", "text/css"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}File extensions for each file type to dynamically
+    <dd>File extensions for each file type to dynamically
 gzip. Example: `["css", "js"]`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6902,8 +6902,8 @@ gzip. Example: `["css", "js"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6911,9 +6911,9 @@ gzip. Example: `["css", "js"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
+    <dd>Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
 see [Fastly's Documentation on Conditionals][fastly-conditionals].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6921,9 +6921,9 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The content-type for each type of content you wish to
+    <dd>The content-type for each type of content you wish to
 have dynamically gzip'ed. Example: `["text/html", "text/css"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6931,15 +6931,15 @@ have dynamically gzip'ed. Example: `["text/html", "text/css"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}File extensions for each file type to dynamically
+    <dd>File extensions for each file type to dynamically
 gzip. Example: `["css", "js"]`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6948,8 +6948,8 @@ gzip. Example: `["css", "js"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6957,9 +6957,9 @@ gzip. Example: `["css", "js"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
+    <dd>Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
 see [Fastly's Documentation on Conditionals][fastly-conditionals].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6967,9 +6967,9 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The content-type for each type of content you wish to
+    <dd>The content-type for each type of content you wish to
 have dynamically gzip'ed. Example: `["text/html", "text/css"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6977,15 +6977,15 @@ have dynamically gzip'ed. Example: `["text/html", "text/css"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}File extensions for each file type to dynamically
+    <dd>File extensions for each file type to dynamically
 gzip. Example: `["css", "js"]`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6994,8 +6994,8 @@ gzip. Example: `["css", "js"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7003,9 +7003,9 @@ gzip. Example: `["css", "js"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
+    <dd>Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
 see [Fastly's Documentation on Conditionals][fastly-conditionals].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7013,9 +7013,9 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The content-type for each type of content you wish to
+    <dd>The content-type for each type of content you wish to
 have dynamically gzip'ed. Example: `["text/html", "text/css"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7023,30 +7023,30 @@ have dynamically gzip'ed. Example: `["text/html", "text/css"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}File extensions for each file type to dynamically
+    <dd>File extensions for each file type to dynamically
 gzip. Example: `["css", "js"]`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1header">Servicev1Header</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1Header">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1Header">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1HeaderArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1HeaderOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7055,9 +7055,9 @@ gzip. Example: `["css", "js"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Allows you to terminate request handling and immediately
+    <dd>Allows you to terminate request handling and immediately
 perform an action. When set it can be `lookup` or `pass` (Ignore the cache completely).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7065,8 +7065,8 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the header that is going to be affected by the Action.
-{{% /md %}}</dd>
+    <dd>The name of the header that is going to be affected by the Action.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7074,8 +7074,8 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7083,8 +7083,8 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
-{{% /md %}}</dd>
+    <dd>The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7092,9 +7092,9 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
+    <dd>Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
 see [Fastly's Documentation on Conditionals][fastly-conditionals].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7102,8 +7102,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not add the header if it is already present. (Only applies to the `set` action.). Default `false`.
-{{% /md %}}</dd>
+    <dd>Do not add the header if it is already present. (Only applies to the `set` action.). Default `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7111,8 +7111,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
-{{% /md %}}</dd>
+    <dd>Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7120,8 +7120,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Regular expression to use (Only applies to the `regex` and `regex_repeat` actions.)
-{{% /md %}}</dd>
+    <dd>Regular expression to use (Only applies to the `regex` and `regex_repeat` actions.)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7129,8 +7129,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
-{{% /md %}}</dd>
+    <dd>Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7138,8 +7138,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7147,9 +7147,9 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Variable to be used as a source for the header
+    <dd>Variable to be used as a source for the header
 content. (Does not apply to the `delete` action.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7157,14 +7157,14 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Value to substitute in place of regular expression. (Only applies to the `regex` and `regex_repeat` actions.)
-{{% /md %}}</dd>
+    <dd>Value to substitute in place of regular expression. (Only applies to the `regex` and `regex_repeat` actions.)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7173,9 +7173,9 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Allows you to terminate request handling and immediately
+    <dd>Allows you to terminate request handling and immediately
 perform an action. When set it can be `lookup` or `pass` (Ignore the cache completely).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7183,8 +7183,8 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the header that is going to be affected by the Action.
-{{% /md %}}</dd>
+    <dd>The name of the header that is going to be affected by the Action.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7192,8 +7192,8 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7201,8 +7201,8 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
-{{% /md %}}</dd>
+    <dd>The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7210,9 +7210,9 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
+    <dd>Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
 see [Fastly's Documentation on Conditionals][fastly-conditionals].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7220,8 +7220,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not add the header if it is already present. (Only applies to the `set` action.). Default `false`.
-{{% /md %}}</dd>
+    <dd>Do not add the header if it is already present. (Only applies to the `set` action.). Default `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7229,8 +7229,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
-{{% /md %}}</dd>
+    <dd>Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7238,8 +7238,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Regular expression to use (Only applies to the `regex` and `regex_repeat` actions.)
-{{% /md %}}</dd>
+    <dd>Regular expression to use (Only applies to the `regex` and `regex_repeat` actions.)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7247,8 +7247,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
-{{% /md %}}</dd>
+    <dd>Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7256,8 +7256,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7265,9 +7265,9 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Variable to be used as a source for the header
+    <dd>Variable to be used as a source for the header
 content. (Does not apply to the `delete` action.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7275,14 +7275,14 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Value to substitute in place of regular expression. (Only applies to the `regex` and `regex_repeat` actions.)
-{{% /md %}}</dd>
+    <dd>Value to substitute in place of regular expression. (Only applies to the `regex` and `regex_repeat` actions.)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7291,9 +7291,9 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Allows you to terminate request handling and immediately
+    <dd>Allows you to terminate request handling and immediately
 perform an action. When set it can be `lookup` or `pass` (Ignore the cache completely).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7301,8 +7301,8 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the header that is going to be affected by the Action.
-{{% /md %}}</dd>
+    <dd>The name of the header that is going to be affected by the Action.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7310,8 +7310,8 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7319,8 +7319,8 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
-{{% /md %}}</dd>
+    <dd>The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7328,9 +7328,9 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
+    <dd>Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
 see [Fastly's Documentation on Conditionals][fastly-conditionals].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7338,8 +7338,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Do not add the header if it is already present. (Only applies to the `set` action.). Default `false`.
-{{% /md %}}</dd>
+    <dd>Do not add the header if it is already present. (Only applies to the `set` action.). Default `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7347,8 +7347,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
-{{% /md %}}</dd>
+    <dd>Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7356,8 +7356,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Regular expression to use (Only applies to the `regex` and `regex_repeat` actions.)
-{{% /md %}}</dd>
+    <dd>Regular expression to use (Only applies to the `regex` and `regex_repeat` actions.)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7365,8 +7365,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
-{{% /md %}}</dd>
+    <dd>Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7374,8 +7374,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7383,9 +7383,9 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Variable to be used as a source for the header
+    <dd>Variable to be used as a source for the header
 content. (Does not apply to the `delete` action.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7393,14 +7393,14 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Value to substitute in place of regular expression. (Only applies to the `regex` and `regex_repeat` actions.)
-{{% /md %}}</dd>
+    <dd>Value to substitute in place of regular expression. (Only applies to the `regex` and `regex_repeat` actions.)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7409,9 +7409,9 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Allows you to terminate request handling and immediately
+    <dd>Allows you to terminate request handling and immediately
 perform an action. When set it can be `lookup` or `pass` (Ignore the cache completely).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7419,8 +7419,8 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the header that is going to be affected by the Action.
-{{% /md %}}</dd>
+    <dd>The name of the header that is going to be affected by the Action.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7428,8 +7428,8 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7437,8 +7437,8 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
-{{% /md %}}</dd>
+    <dd>The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7446,9 +7446,9 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
+    <dd>Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
 see [Fastly's Documentation on Conditionals][fastly-conditionals].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7456,8 +7456,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not add the header if it is already present. (Only applies to the `set` action.). Default `false`.
-{{% /md %}}</dd>
+    <dd>Do not add the header if it is already present. (Only applies to the `set` action.). Default `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7465,8 +7465,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
-{{% /md %}}</dd>
+    <dd>Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7474,8 +7474,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Regular expression to use (Only applies to the `regex` and `regex_repeat` actions.)
-{{% /md %}}</dd>
+    <dd>Regular expression to use (Only applies to the `regex` and `regex_repeat` actions.)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7483,8 +7483,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
-{{% /md %}}</dd>
+    <dd>Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7492,8 +7492,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7501,9 +7501,9 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Variable to be used as a source for the header
+    <dd>Variable to be used as a source for the header
 content. (Does not apply to the `delete` action.)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7511,29 +7511,29 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Value to substitute in place of regular expression. (Only applies to the `regex` and `regex_repeat` actions.)
-{{% /md %}}</dd>
+    <dd>Value to substitute in place of regular expression. (Only applies to the `regex` and `regex_repeat` actions.)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1healthcheck">Servicev1Healthcheck</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1Healthcheck">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1Healthcheck">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1HealthcheckArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1HealthcheckOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7542,8 +7542,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Host header to send for this Healthcheck.
-{{% /md %}}</dd>
+    <dd>The Host header to send for this Healthcheck.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7551,8 +7551,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7560,8 +7560,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
-{{% /md %}}</dd>
+    <dd>The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7569,8 +7569,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}How often to run the Healthcheck in milliseconds. Default `5000`.
-{{% /md %}}</dd>
+    <dd>How often to run the Healthcheck in milliseconds. Default `5000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7578,8 +7578,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The status code expected from the host. Default `200`.
-{{% /md %}}</dd>
+    <dd>The status code expected from the host. Default `200`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7587,8 +7587,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use version 1.0 or 1.1 HTTP. Default `1.1`.
-{{% /md %}}</dd>
+    <dd>Whether to use version 1.0 or 1.1 HTTP. Default `1.1`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7596,8 +7596,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}When loading a config, the initial number of probes to be seen as OK. Default `2`.
-{{% /md %}}</dd>
+    <dd>When loading a config, the initial number of probes to be seen as OK. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7605,8 +7605,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Which HTTP method to use. Default `HEAD`.
-{{% /md %}}</dd>
+    <dd>Which HTTP method to use. Default `HEAD`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7614,8 +7614,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}How many Healthchecks must succeed to be considered healthy. Default `3`.
-{{% /md %}}</dd>
+    <dd>How many Healthchecks must succeed to be considered healthy. Default `3`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7623,8 +7623,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Timeout in milliseconds. Default `500`.
-{{% /md %}}</dd>
+    <dd>Timeout in milliseconds. Default `500`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7632,14 +7632,14 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of most recent Healthcheck queries to keep for this Healthcheck. Default `5`.
-{{% /md %}}</dd>
+    <dd>The number of most recent Healthcheck queries to keep for this Healthcheck. Default `5`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7648,8 +7648,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Host header to send for this Healthcheck.
-{{% /md %}}</dd>
+    <dd>The Host header to send for this Healthcheck.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7657,8 +7657,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7666,8 +7666,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
-{{% /md %}}</dd>
+    <dd>The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7675,8 +7675,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}How often to run the Healthcheck in milliseconds. Default `5000`.
-{{% /md %}}</dd>
+    <dd>How often to run the Healthcheck in milliseconds. Default `5000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7684,8 +7684,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The status code expected from the host. Default `200`.
-{{% /md %}}</dd>
+    <dd>The status code expected from the host. Default `200`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7693,8 +7693,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use version 1.0 or 1.1 HTTP. Default `1.1`.
-{{% /md %}}</dd>
+    <dd>Whether to use version 1.0 or 1.1 HTTP. Default `1.1`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7702,8 +7702,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}When loading a config, the initial number of probes to be seen as OK. Default `2`.
-{{% /md %}}</dd>
+    <dd>When loading a config, the initial number of probes to be seen as OK. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7711,8 +7711,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Which HTTP method to use. Default `HEAD`.
-{{% /md %}}</dd>
+    <dd>Which HTTP method to use. Default `HEAD`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7720,8 +7720,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}How many Healthchecks must succeed to be considered healthy. Default `3`.
-{{% /md %}}</dd>
+    <dd>How many Healthchecks must succeed to be considered healthy. Default `3`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7729,8 +7729,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Timeout in milliseconds. Default `500`.
-{{% /md %}}</dd>
+    <dd>Timeout in milliseconds. Default `500`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7738,14 +7738,14 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of most recent Healthcheck queries to keep for this Healthcheck. Default `5`.
-{{% /md %}}</dd>
+    <dd>The number of most recent Healthcheck queries to keep for this Healthcheck. Default `5`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7754,8 +7754,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Host header to send for this Healthcheck.
-{{% /md %}}</dd>
+    <dd>The Host header to send for this Healthcheck.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7763,8 +7763,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7772,8 +7772,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
-{{% /md %}}</dd>
+    <dd>The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7781,8 +7781,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}How often to run the Healthcheck in milliseconds. Default `5000`.
-{{% /md %}}</dd>
+    <dd>How often to run the Healthcheck in milliseconds. Default `5000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7790,8 +7790,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The status code expected from the host. Default `200`.
-{{% /md %}}</dd>
+    <dd>The status code expected from the host. Default `200`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7799,8 +7799,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use version 1.0 or 1.1 HTTP. Default `1.1`.
-{{% /md %}}</dd>
+    <dd>Whether to use version 1.0 or 1.1 HTTP. Default `1.1`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7808,8 +7808,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}When loading a config, the initial number of probes to be seen as OK. Default `2`.
-{{% /md %}}</dd>
+    <dd>When loading a config, the initial number of probes to be seen as OK. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7817,8 +7817,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Which HTTP method to use. Default `HEAD`.
-{{% /md %}}</dd>
+    <dd>Which HTTP method to use. Default `HEAD`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7826,8 +7826,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}How many Healthchecks must succeed to be considered healthy. Default `3`.
-{{% /md %}}</dd>
+    <dd>How many Healthchecks must succeed to be considered healthy. Default `3`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7835,8 +7835,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Timeout in milliseconds. Default `500`.
-{{% /md %}}</dd>
+    <dd>Timeout in milliseconds. Default `500`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7844,14 +7844,14 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of most recent Healthcheck queries to keep for this Healthcheck. Default `5`.
-{{% /md %}}</dd>
+    <dd>The number of most recent Healthcheck queries to keep for this Healthcheck. Default `5`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7860,8 +7860,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Host header to send for this Healthcheck.
-{{% /md %}}</dd>
+    <dd>The Host header to send for this Healthcheck.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7869,8 +7869,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7878,8 +7878,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
-{{% /md %}}</dd>
+    <dd>The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7887,8 +7887,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}How often to run the Healthcheck in milliseconds. Default `5000`.
-{{% /md %}}</dd>
+    <dd>How often to run the Healthcheck in milliseconds. Default `5000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7896,8 +7896,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The status code expected from the host. Default `200`.
-{{% /md %}}</dd>
+    <dd>The status code expected from the host. Default `200`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7905,8 +7905,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use version 1.0 or 1.1 HTTP. Default `1.1`.
-{{% /md %}}</dd>
+    <dd>Whether to use version 1.0 or 1.1 HTTP. Default `1.1`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7914,8 +7914,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}When loading a config, the initial number of probes to be seen as OK. Default `2`.
-{{% /md %}}</dd>
+    <dd>When loading a config, the initial number of probes to be seen as OK. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7923,8 +7923,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Which HTTP method to use. Default `HEAD`.
-{{% /md %}}</dd>
+    <dd>Which HTTP method to use. Default `HEAD`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7932,8 +7932,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}How many Healthchecks must succeed to be considered healthy. Default `3`.
-{{% /md %}}</dd>
+    <dd>How many Healthchecks must succeed to be considered healthy. Default `3`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7941,8 +7941,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Timeout in milliseconds. Default `500`.
-{{% /md %}}</dd>
+    <dd>Timeout in milliseconds. Default `500`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7950,29 +7950,29 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of most recent Healthcheck queries to keep for this Healthcheck. Default `5`.
-{{% /md %}}</dd>
+    <dd>The number of most recent Healthcheck queries to keep for this Healthcheck. Default `5`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1logentry">Servicev1Logentry</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1Logentry">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1Logentry">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1LogentryArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1LogentryOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7981,8 +7981,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7990,8 +7990,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Splunk token to be used for authentication.
-{{% /md %}}</dd>
+    <dd>The Splunk token to be used for authentication.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7999,8 +7999,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8008,8 +8008,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8017,8 +8017,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8026,8 +8026,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port number configured in Logentries to send logs to. Defaults to `20000`.
-{{% /md %}}</dd>
+    <dd>The port number configured in Logentries to send logs to. Defaults to `20000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8035,8 +8035,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8044,14 +8044,14 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use TLS for secure logging. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>Whether to use TLS for secure logging. Defaults to `true`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -8060,8 +8060,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -8069,8 +8069,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Splunk token to be used for authentication.
-{{% /md %}}</dd>
+    <dd>The Splunk token to be used for authentication.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8078,8 +8078,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8087,8 +8087,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8096,8 +8096,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8105,8 +8105,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port number configured in Logentries to send logs to. Defaults to `20000`.
-{{% /md %}}</dd>
+    <dd>The port number configured in Logentries to send logs to. Defaults to `20000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8114,8 +8114,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8123,14 +8123,14 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use TLS for secure logging. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>Whether to use TLS for secure logging. Defaults to `true`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -8139,8 +8139,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -8148,8 +8148,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Splunk token to be used for authentication.
-{{% /md %}}</dd>
+    <dd>The Splunk token to be used for authentication.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8157,8 +8157,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8166,8 +8166,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8175,8 +8175,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8184,8 +8184,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port number configured in Logentries to send logs to. Defaults to `20000`.
-{{% /md %}}</dd>
+    <dd>The port number configured in Logentries to send logs to. Defaults to `20000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8193,8 +8193,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8202,14 +8202,14 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use TLS for secure logging. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>Whether to use TLS for secure logging. Defaults to `true`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -8218,8 +8218,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -8227,8 +8227,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Splunk token to be used for authentication.
-{{% /md %}}</dd>
+    <dd>The Splunk token to be used for authentication.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8236,8 +8236,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8245,8 +8245,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8254,8 +8254,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8263,8 +8263,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port number configured in Logentries to send logs to. Defaults to `20000`.
-{{% /md %}}</dd>
+    <dd>The port number configured in Logentries to send logs to. Defaults to `20000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8272,8 +8272,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8281,29 +8281,29 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use TLS for secure logging. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>Whether to use TLS for secure logging. Defaults to `true`
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1papertrail">Servicev1Papertrail</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1Papertrail">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1Papertrail">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1PapertrailArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1PapertrailOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -8312,8 +8312,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A hostname or IPv4 address of the Syslog endpoint.
-{{% /md %}}</dd>
+    <dd>A hostname or IPv4 address of the Syslog endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -8321,8 +8321,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -8330,8 +8330,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port number configured in Logentries to send logs to. Defaults to `20000`.
-{{% /md %}}</dd>
+    <dd>The port number configured in Logentries to send logs to. Defaults to `20000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8339,8 +8339,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8348,8 +8348,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8357,14 +8357,14 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -8373,8 +8373,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A hostname or IPv4 address of the Syslog endpoint.
-{{% /md %}}</dd>
+    <dd>A hostname or IPv4 address of the Syslog endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -8382,8 +8382,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -8391,8 +8391,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port number configured in Logentries to send logs to. Defaults to `20000`.
-{{% /md %}}</dd>
+    <dd>The port number configured in Logentries to send logs to. Defaults to `20000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8400,8 +8400,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8409,8 +8409,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8418,14 +8418,14 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -8434,8 +8434,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A hostname or IPv4 address of the Syslog endpoint.
-{{% /md %}}</dd>
+    <dd>A hostname or IPv4 address of the Syslog endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -8443,8 +8443,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -8452,8 +8452,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port number configured in Logentries to send logs to. Defaults to `20000`.
-{{% /md %}}</dd>
+    <dd>The port number configured in Logentries to send logs to. Defaults to `20000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8461,8 +8461,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8470,8 +8470,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8479,14 +8479,14 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -8495,8 +8495,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A hostname or IPv4 address of the Syslog endpoint.
-{{% /md %}}</dd>
+    <dd>A hostname or IPv4 address of the Syslog endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -8504,8 +8504,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -8513,8 +8513,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port number configured in Logentries to send logs to. Defaults to `20000`.
-{{% /md %}}</dd>
+    <dd>The port number configured in Logentries to send logs to. Defaults to `20000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8522,8 +8522,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8531,8 +8531,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8540,29 +8540,29 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1requestsetting">Servicev1Request<wbr>Setting</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1RequestSetting">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1RequestSetting">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1RequestSettingArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1RequestSettingOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -8571,8 +8571,8 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8580,9 +8580,9 @@ content. (Does not apply to the `delete` action.)
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Allows you to terminate request handling and immediately
+    <dd>Allows you to terminate request handling and immediately
 perform an action. When set it can be `lookup` or `pass` (Ignore the cache completely).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8590,9 +8590,9 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Disable collapsed forwarding, so you don't wait
+    <dd>Disable collapsed forwarding, so you don't wait
 for other objects to origin.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8600,8 +8600,8 @@ for other objects to origin.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets the host header.
-{{% /md %}}</dd>
+    <dd>Sets the host header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8609,9 +8609,9 @@ for other objects to origin.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Force a cache miss for the request. If specified,
+    <dd>Force a cache miss for the request. If specified,
 can be `true` or `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8619,8 +8619,8 @@ can be `true` or `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Forces the request to use SSL (Redirects a non-SSL request to SSL).
-{{% /md %}}</dd>
+    <dd>Forces the request to use SSL (Redirects a non-SSL request to SSL).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8628,9 +8628,9 @@ can be `true` or `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Injects Fastly-Geo-Country, Fastly-Geo-City, and
+    <dd>Injects Fastly-Geo-Country, Fastly-Geo-City, and
 Fastly-Geo-Region into the request headers.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8638,9 +8638,9 @@ Fastly-Geo-Region into the request headers.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of varnish request object fields
+    <dd>Comma separated list of varnish request object fields
 that should be in the hash key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8648,9 +8648,9 @@ that should be in the hash key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}How old an object is allowed to be to serve
+    <dd>How old an object is allowed to be to serve
 `stale-if-error` or `stale-while-revalidate`, in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8658,8 +8658,8 @@ that should be in the hash key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
-{{% /md %}}</dd>
+    <dd>Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8667,9 +8667,9 @@ that should be in the hash key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Injects the X-Timer info into the request for
+    <dd>Injects the X-Timer info into the request for
 viewing origin fetch durations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8677,15 +8677,15 @@ viewing origin fetch durations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}X-Forwarded-For, should be `clear`, `leave`, `append`,
+    <dd>X-Forwarded-For, should be `clear`, `leave`, `append`,
 `append_all`, or `overwrite`. Default `append`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -8694,8 +8694,8 @@ viewing origin fetch durations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8703,9 +8703,9 @@ viewing origin fetch durations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Allows you to terminate request handling and immediately
+    <dd>Allows you to terminate request handling and immediately
 perform an action. When set it can be `lookup` or `pass` (Ignore the cache completely).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8713,9 +8713,9 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Disable collapsed forwarding, so you don't wait
+    <dd>Disable collapsed forwarding, so you don't wait
 for other objects to origin.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8723,8 +8723,8 @@ for other objects to origin.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets the host header.
-{{% /md %}}</dd>
+    <dd>Sets the host header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8732,9 +8732,9 @@ for other objects to origin.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Force a cache miss for the request. If specified,
+    <dd>Force a cache miss for the request. If specified,
 can be `true` or `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8742,8 +8742,8 @@ can be `true` or `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Forces the request to use SSL (Redirects a non-SSL request to SSL).
-{{% /md %}}</dd>
+    <dd>Forces the request to use SSL (Redirects a non-SSL request to SSL).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8751,9 +8751,9 @@ can be `true` or `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Injects Fastly-Geo-Country, Fastly-Geo-City, and
+    <dd>Injects Fastly-Geo-Country, Fastly-Geo-City, and
 Fastly-Geo-Region into the request headers.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8761,9 +8761,9 @@ Fastly-Geo-Region into the request headers.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of varnish request object fields
+    <dd>Comma separated list of varnish request object fields
 that should be in the hash key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8771,9 +8771,9 @@ that should be in the hash key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}How old an object is allowed to be to serve
+    <dd>How old an object is allowed to be to serve
 `stale-if-error` or `stale-while-revalidate`, in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8781,8 +8781,8 @@ that should be in the hash key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
-{{% /md %}}</dd>
+    <dd>Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8790,9 +8790,9 @@ that should be in the hash key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Injects the X-Timer info into the request for
+    <dd>Injects the X-Timer info into the request for
 viewing origin fetch durations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8800,15 +8800,15 @@ viewing origin fetch durations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}X-Forwarded-For, should be `clear`, `leave`, `append`,
+    <dd>X-Forwarded-For, should be `clear`, `leave`, `append`,
 `append_all`, or `overwrite`. Default `append`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -8817,8 +8817,8 @@ viewing origin fetch durations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8826,9 +8826,9 @@ viewing origin fetch durations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Allows you to terminate request handling and immediately
+    <dd>Allows you to terminate request handling and immediately
 perform an action. When set it can be `lookup` or `pass` (Ignore the cache completely).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8836,9 +8836,9 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Disable collapsed forwarding, so you don't wait
+    <dd>Disable collapsed forwarding, so you don't wait
 for other objects to origin.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8846,8 +8846,8 @@ for other objects to origin.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets the host header.
-{{% /md %}}</dd>
+    <dd>Sets the host header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8855,9 +8855,9 @@ for other objects to origin.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Force a cache miss for the request. If specified,
+    <dd>Force a cache miss for the request. If specified,
 can be `true` or `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8865,8 +8865,8 @@ can be `true` or `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Forces the request to use SSL (Redirects a non-SSL request to SSL).
-{{% /md %}}</dd>
+    <dd>Forces the request to use SSL (Redirects a non-SSL request to SSL).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8874,9 +8874,9 @@ can be `true` or `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Injects Fastly-Geo-Country, Fastly-Geo-City, and
+    <dd>Injects Fastly-Geo-Country, Fastly-Geo-City, and
 Fastly-Geo-Region into the request headers.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8884,9 +8884,9 @@ Fastly-Geo-Region into the request headers.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of varnish request object fields
+    <dd>Comma separated list of varnish request object fields
 that should be in the hash key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8894,9 +8894,9 @@ that should be in the hash key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}How old an object is allowed to be to serve
+    <dd>How old an object is allowed to be to serve
 `stale-if-error` or `stale-while-revalidate`, in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8904,8 +8904,8 @@ that should be in the hash key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
-{{% /md %}}</dd>
+    <dd>Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8913,9 +8913,9 @@ that should be in the hash key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Injects the X-Timer info into the request for
+    <dd>Injects the X-Timer info into the request for
 viewing origin fetch durations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8923,15 +8923,15 @@ viewing origin fetch durations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}X-Forwarded-For, should be `clear`, `leave`, `append`,
+    <dd>X-Forwarded-For, should be `clear`, `leave`, `append`,
 `append_all`, or `overwrite`. Default `append`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -8940,8 +8940,8 @@ viewing origin fetch durations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8949,9 +8949,9 @@ viewing origin fetch durations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Allows you to terminate request handling and immediately
+    <dd>Allows you to terminate request handling and immediately
 perform an action. When set it can be `lookup` or `pass` (Ignore the cache completely).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8959,9 +8959,9 @@ perform an action. When set it can be `lookup` or `pass` (Ignore the cache compl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Disable collapsed forwarding, so you don't wait
+    <dd>Disable collapsed forwarding, so you don't wait
 for other objects to origin.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8969,8 +8969,8 @@ for other objects to origin.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sets the host header.
-{{% /md %}}</dd>
+    <dd>Sets the host header.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8978,9 +8978,9 @@ for other objects to origin.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Force a cache miss for the request. If specified,
+    <dd>Force a cache miss for the request. If specified,
 can be `true` or `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8988,8 +8988,8 @@ can be `true` or `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Forces the request to use SSL (Redirects a non-SSL request to SSL).
-{{% /md %}}</dd>
+    <dd>Forces the request to use SSL (Redirects a non-SSL request to SSL).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -8997,9 +8997,9 @@ can be `true` or `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Injects Fastly-Geo-Country, Fastly-Geo-City, and
+    <dd>Injects Fastly-Geo-Country, Fastly-Geo-City, and
 Fastly-Geo-Region into the request headers.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9007,9 +9007,9 @@ Fastly-Geo-Region into the request headers.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of varnish request object fields
+    <dd>Comma separated list of varnish request object fields
 that should be in the hash key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9017,9 +9017,9 @@ that should be in the hash key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}How old an object is allowed to be to serve
+    <dd>How old an object is allowed to be to serve
 `stale-if-error` or `stale-while-revalidate`, in seconds.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9027,8 +9027,8 @@ that should be in the hash key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
-{{% /md %}}</dd>
+    <dd>Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9036,9 +9036,9 @@ that should be in the hash key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Injects the X-Timer info into the request for
+    <dd>Injects the X-Timer info into the request for
 viewing origin fetch durations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9046,30 +9046,30 @@ viewing origin fetch durations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}X-Forwarded-For, should be `clear`, `leave`, `append`,
+    <dd>X-Forwarded-For, should be `clear`, `leave`, `append`,
 `append_all`, or `overwrite`. Default `append`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1responseobject">Servicev1Response<wbr>Object</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1ResponseObject">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1ResponseObject">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1ResponseObjectArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1ResponseObjectOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -9078,8 +9078,8 @@ viewing origin fetch durations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9087,9 +9087,9 @@ viewing origin fetch durations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
+    <dd>Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
 see [Fastly's Documentation on Conditionals][fastly-conditionals].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9097,8 +9097,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The custom VCL code to upload.
-{{% /md %}}</dd>
+    <dd>The custom VCL code to upload.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9106,8 +9106,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The MIME type of the content.
-{{% /md %}}</dd>
+    <dd>The MIME type of the content.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9115,8 +9115,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
-{{% /md %}}</dd>
+    <dd>Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9124,8 +9124,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP Response. Default `Ok`.
-{{% /md %}}</dd>
+    <dd>The HTTP Response. Default `Ok`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9133,14 +9133,14 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP Status Code. Default `200`.
-{{% /md %}}</dd>
+    <dd>The HTTP Status Code. Default `200`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -9149,8 +9149,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9158,9 +9158,9 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
+    <dd>Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
 see [Fastly's Documentation on Conditionals][fastly-conditionals].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9168,8 +9168,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The custom VCL code to upload.
-{{% /md %}}</dd>
+    <dd>The custom VCL code to upload.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9177,8 +9177,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The MIME type of the content.
-{{% /md %}}</dd>
+    <dd>The MIME type of the content.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9186,8 +9186,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
-{{% /md %}}</dd>
+    <dd>Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9195,8 +9195,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP Response. Default `Ok`.
-{{% /md %}}</dd>
+    <dd>The HTTP Response. Default `Ok`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9204,14 +9204,14 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP Status Code. Default `200`.
-{{% /md %}}</dd>
+    <dd>The HTTP Status Code. Default `200`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -9220,8 +9220,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9229,9 +9229,9 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
+    <dd>Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
 see [Fastly's Documentation on Conditionals][fastly-conditionals].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9239,8 +9239,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The custom VCL code to upload.
-{{% /md %}}</dd>
+    <dd>The custom VCL code to upload.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9248,8 +9248,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The MIME type of the content.
-{{% /md %}}</dd>
+    <dd>The MIME type of the content.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9257,8 +9257,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
-{{% /md %}}</dd>
+    <dd>Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9266,8 +9266,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP Response. Default `Ok`.
-{{% /md %}}</dd>
+    <dd>The HTTP Response. Default `Ok`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9275,14 +9275,14 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP Status Code. Default `200`.
-{{% /md %}}</dd>
+    <dd>The HTTP Status Code. Default `200`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -9291,8 +9291,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9300,9 +9300,9 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
+    <dd>Name of already defined `condition` to check after we have retrieved an object. If the condition passes then deliver this Request Object instead. This `condition` must be of type `CACHE`. For detailed information about Conditionals,
 see [Fastly's Documentation on Conditionals][fastly-conditionals].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9310,8 +9310,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The custom VCL code to upload.
-{{% /md %}}</dd>
+    <dd>The custom VCL code to upload.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9319,8 +9319,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The MIME type of the content.
-{{% /md %}}</dd>
+    <dd>The MIME type of the content.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9328,8 +9328,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
-{{% /md %}}</dd>
+    <dd>Name of already defined `condition` to be checked during the request phase. If the condition passes then this object will be delivered. This `condition` must be of type `REQUEST`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9337,8 +9337,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP Response. Default `Ok`.
-{{% /md %}}</dd>
+    <dd>The HTTP Response. Default `Ok`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9346,29 +9346,29 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP Status Code. Default `200`.
-{{% /md %}}</dd>
+    <dd>The HTTP Status Code. Default `200`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1s3logging">Servicev1S3logging</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1S3logging">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1S3logging">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1S3loggingArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1S3loggingOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -9377,8 +9377,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket in which to store the logs.
-{{% /md %}}</dd>
+    <dd>The name of the bucket in which to store the logs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -9386,8 +9386,8 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9395,9 +9395,9 @@ see [Fastly's Documentation on Conditionals][fastly-conditionals].
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If you created the S3 bucket outside of `us-east-1`,
+    <dd>If you created the S3 bucket outside of `us-east-1`,
 then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws.com`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9405,8 +9405,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9414,8 +9414,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9423,8 +9423,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
-{{% /md %}}</dd>
+    <dd>Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9432,8 +9432,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
-{{% /md %}}</dd>
+    <dd>How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9441,8 +9441,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
-{{% /md %}}</dd>
+    <dd>The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9450,8 +9450,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}How frequently the logs should be transferred in seconds. Default `3600`.
-{{% /md %}}</dd>
+    <dd>How frequently the logs should be transferred in seconds. Default `3600`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9459,8 +9459,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9468,8 +9468,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 redundancy level. Should be formatted; one of: `standard`, `reduced_redundancy` or null. Default `null`.
-{{% /md %}}</dd>
+    <dd>The S3 redundancy level. Should be formatted; one of: `standard`, `reduced_redundancy` or null. Default `null`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9477,8 +9477,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9486,11 +9486,11 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS Access Key of an account with the required
+    <dd>AWS Access Key of an account with the required
 permissions to post logs. It is **strongly** recommended you create a separate
 IAM user with permissions to only operate on this Bucket. This key will be
 not be encrypted. You can provide this key via an environment variable, `FASTLY_S3_ACCESS_KEY`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9498,11 +9498,11 @@ not be encrypted. You can provide this key via an environment variable, `FASTLY_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS Secret Key of an account with the required
+    <dd>AWS Secret Key of an account with the required
 permissions to post logs. It is **strongly** recommended you create a separate
 IAM user with permissions to only operate on this Bucket. This secret will be
 not be encrypted. You can provide this secret via an environment variable, `FASTLY_S3_SECRET_KEY`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9510,7 +9510,7 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9518,7 +9518,7 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9526,14 +9526,14 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
-{{% /md %}}</dd>
+    <dd>`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -9542,8 +9542,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket in which to store the logs.
-{{% /md %}}</dd>
+    <dd>The name of the bucket in which to store the logs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -9551,8 +9551,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9560,9 +9560,9 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If you created the S3 bucket outside of `us-east-1`,
+    <dd>If you created the S3 bucket outside of `us-east-1`,
 then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws.com`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9570,8 +9570,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9579,8 +9579,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9588,8 +9588,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
-{{% /md %}}</dd>
+    <dd>Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9597,8 +9597,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
-{{% /md %}}</dd>
+    <dd>How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9606,8 +9606,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
-{{% /md %}}</dd>
+    <dd>The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9615,8 +9615,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}How frequently the logs should be transferred in seconds. Default `3600`.
-{{% /md %}}</dd>
+    <dd>How frequently the logs should be transferred in seconds. Default `3600`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9624,8 +9624,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9633,8 +9633,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 redundancy level. Should be formatted; one of: `standard`, `reduced_redundancy` or null. Default `null`.
-{{% /md %}}</dd>
+    <dd>The S3 redundancy level. Should be formatted; one of: `standard`, `reduced_redundancy` or null. Default `null`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9642,8 +9642,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9651,11 +9651,11 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS Access Key of an account with the required
+    <dd>AWS Access Key of an account with the required
 permissions to post logs. It is **strongly** recommended you create a separate
 IAM user with permissions to only operate on this Bucket. This key will be
 not be encrypted. You can provide this key via an environment variable, `FASTLY_S3_ACCESS_KEY`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9663,11 +9663,11 @@ not be encrypted. You can provide this key via an environment variable, `FASTLY_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS Secret Key of an account with the required
+    <dd>AWS Secret Key of an account with the required
 permissions to post logs. It is **strongly** recommended you create a separate
 IAM user with permissions to only operate on this Bucket. This secret will be
 not be encrypted. You can provide this secret via an environment variable, `FASTLY_S3_SECRET_KEY`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9675,7 +9675,7 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9683,7 +9683,7 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9691,14 +9691,14 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
-{{% /md %}}</dd>
+    <dd>`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -9707,8 +9707,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket in which to store the logs.
-{{% /md %}}</dd>
+    <dd>The name of the bucket in which to store the logs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -9716,8 +9716,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9725,9 +9725,9 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If you created the S3 bucket outside of `us-east-1`,
+    <dd>If you created the S3 bucket outside of `us-east-1`,
 then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws.com`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9735,8 +9735,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9744,8 +9744,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9753,8 +9753,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
-{{% /md %}}</dd>
+    <dd>Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9762,8 +9762,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
-{{% /md %}}</dd>
+    <dd>How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9771,8 +9771,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
-{{% /md %}}</dd>
+    <dd>The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9780,8 +9780,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}How frequently the logs should be transferred in seconds. Default `3600`.
-{{% /md %}}</dd>
+    <dd>How frequently the logs should be transferred in seconds. Default `3600`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9789,8 +9789,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9798,8 +9798,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The S3 redundancy level. Should be formatted; one of: `standard`, `reduced_redundancy` or null. Default `null`.
-{{% /md %}}</dd>
+    <dd>The S3 redundancy level. Should be formatted; one of: `standard`, `reduced_redundancy` or null. Default `null`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9807,8 +9807,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9816,11 +9816,11 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS Access Key of an account with the required
+    <dd>AWS Access Key of an account with the required
 permissions to post logs. It is **strongly** recommended you create a separate
 IAM user with permissions to only operate on this Bucket. This key will be
 not be encrypted. You can provide this key via an environment variable, `FASTLY_S3_ACCESS_KEY`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9828,11 +9828,11 @@ not be encrypted. You can provide this key via an environment variable, `FASTLY_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}AWS Secret Key of an account with the required
+    <dd>AWS Secret Key of an account with the required
 permissions to post logs. It is **strongly** recommended you create a separate
 IAM user with permissions to only operate on this Bucket. This secret will be
 not be encrypted. You can provide this secret via an environment variable, `FASTLY_S3_SECRET_KEY`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9840,7 +9840,7 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9848,7 +9848,7 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9856,14 +9856,14 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
-{{% /md %}}</dd>
+    <dd>`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -9872,8 +9872,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the bucket in which to store the logs.
-{{% /md %}}</dd>
+    <dd>The name of the bucket in which to store the logs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -9881,8 +9881,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9890,9 +9890,9 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If you created the S3 bucket outside of `us-east-1`,
+    <dd>If you created the S3 bucket outside of `us-east-1`,
 then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws.com`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9900,8 +9900,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9909,8 +9909,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9918,8 +9918,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
-{{% /md %}}</dd>
+    <dd>Level of GZIP compression from `0`to `9`. `0` means no compression. `1` is the fastest and the least compressed version, `9` is the slowest and the most compressed version. Default `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9927,8 +9927,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
-{{% /md %}}</dd>
+    <dd>How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9936,8 +9936,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
-{{% /md %}}</dd>
+    <dd>The path to upload logs to. Must end with a trailing slash. If this field is left empty, the files will be saved in the container's root path.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9945,8 +9945,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}How frequently the logs should be transferred in seconds. Default `3600`.
-{{% /md %}}</dd>
+    <dd>How frequently the logs should be transferred in seconds. Default `3600`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9954,8 +9954,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9963,8 +9963,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The S3 redundancy level. Should be formatted; one of: `standard`, `reduced_redundancy` or null. Default `null`.
-{{% /md %}}</dd>
+    <dd>The S3 redundancy level. Should be formatted; one of: `standard`, `reduced_redundancy` or null. Default `null`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9972,8 +9972,8 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9981,11 +9981,11 @@ then specify the corresponding bucket endpoint. Example: `s3-us-west-2.amazonaws
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AWS Access Key of an account with the required
+    <dd>AWS Access Key of an account with the required
 permissions to post logs. It is **strongly** recommended you create a separate
 IAM user with permissions to only operate on this Bucket. This key will be
 not be encrypted. You can provide this key via an environment variable, `FASTLY_S3_ACCESS_KEY`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -9993,11 +9993,11 @@ not be encrypted. You can provide this key via an environment variable, `FASTLY_
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}AWS Secret Key of an account with the required
+    <dd>AWS Secret Key of an account with the required
 permissions to post logs. It is **strongly** recommended you create a separate
 IAM user with permissions to only operate on this Bucket. This secret will be
 not be encrypted. You can provide this secret via an environment variable, `FASTLY_S3_SECRET_KEY`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10005,7 +10005,7 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10013,7 +10013,7 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10021,29 +10021,29 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
-{{% /md %}}</dd>
+    <dd>`strftime` specified timestamp formatting. Default `%Y-%m-%dT%H:%M:%S.000`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1snippet">Servicev1Snippet</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1Snippet">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1Snippet">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1SnippetArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1SnippetOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -10052,8 +10052,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The custom VCL code to upload.
-{{% /md %}}</dd>
+    <dd>The custom VCL code to upload.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10061,8 +10061,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10070,8 +10070,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
-{{% /md %}}</dd>
+    <dd>The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10079,14 +10079,14 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
-{{% /md %}}</dd>
+    <dd>Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -10095,8 +10095,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The custom VCL code to upload.
-{{% /md %}}</dd>
+    <dd>The custom VCL code to upload.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10104,8 +10104,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10113,8 +10113,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
-{{% /md %}}</dd>
+    <dd>The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10122,14 +10122,14 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
-{{% /md %}}</dd>
+    <dd>Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -10138,8 +10138,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The custom VCL code to upload.
-{{% /md %}}</dd>
+    <dd>The custom VCL code to upload.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10147,8 +10147,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10156,8 +10156,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
-{{% /md %}}</dd>
+    <dd>The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10165,14 +10165,14 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
-{{% /md %}}</dd>
+    <dd>Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -10181,8 +10181,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The custom VCL code to upload.
-{{% /md %}}</dd>
+    <dd>The custom VCL code to upload.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10190,8 +10190,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10199,8 +10199,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
-{{% /md %}}</dd>
+    <dd>The location in generated VCL where the snippet should be placed (can be one of `init`, `recv`, `hit`, `miss`, `pass`, `fetch`, `error`, `deliver`, `log` or `none`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10208,29 +10208,29 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
-{{% /md %}}</dd>
+    <dd>Priority determines the ordering for multiple snippets. Lower numbers execute first.  Defaults to `100`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1splunk">Servicev1Splunk</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1Splunk">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1Splunk">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1SplunkArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1SplunkOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -10239,8 +10239,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10248,8 +10248,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Splunk token to be used for authentication.
-{{% /md %}}</dd>
+    <dd>The Splunk token to be used for authentication.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10257,8 +10257,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Splunk URL to stream logs to.
-{{% /md %}}</dd>
+    <dd>The Splunk URL to stream logs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10266,8 +10266,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10275,8 +10275,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10284,8 +10284,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10293,14 +10293,14 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -10309,8 +10309,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10318,8 +10318,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Splunk token to be used for authentication.
-{{% /md %}}</dd>
+    <dd>The Splunk token to be used for authentication.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10327,8 +10327,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Splunk URL to stream logs to.
-{{% /md %}}</dd>
+    <dd>The Splunk URL to stream logs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10336,8 +10336,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10345,8 +10345,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10354,8 +10354,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10363,14 +10363,14 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -10379,8 +10379,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10388,8 +10388,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Splunk token to be used for authentication.
-{{% /md %}}</dd>
+    <dd>The Splunk token to be used for authentication.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10397,8 +10397,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Splunk URL to stream logs to.
-{{% /md %}}</dd>
+    <dd>The Splunk URL to stream logs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10406,8 +10406,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10415,8 +10415,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10424,8 +10424,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10433,14 +10433,14 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -10449,8 +10449,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10458,8 +10458,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Splunk token to be used for authentication.
-{{% /md %}}</dd>
+    <dd>The Splunk token to be used for authentication.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10467,8 +10467,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Splunk URL to stream logs to.
-{{% /md %}}</dd>
+    <dd>The Splunk URL to stream logs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10476,8 +10476,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10485,8 +10485,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10494,8 +10494,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10503,29 +10503,29 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1sumologic">Servicev1Sumologic</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1Sumologic">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1Sumologic">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1SumologicArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1SumologicOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -10534,8 +10534,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10543,8 +10543,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Splunk URL to stream logs to.
-{{% /md %}}</dd>
+    <dd>The Splunk URL to stream logs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10552,8 +10552,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10561,8 +10561,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10570,8 +10570,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
-{{% /md %}}</dd>
+    <dd>How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10579,8 +10579,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10588,14 +10588,14 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -10604,8 +10604,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10613,8 +10613,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Splunk URL to stream logs to.
-{{% /md %}}</dd>
+    <dd>The Splunk URL to stream logs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10622,8 +10622,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10631,8 +10631,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10640,8 +10640,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
-{{% /md %}}</dd>
+    <dd>How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10649,8 +10649,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10658,14 +10658,14 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -10674,8 +10674,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10683,8 +10683,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Splunk URL to stream logs to.
-{{% /md %}}</dd>
+    <dd>The Splunk URL to stream logs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10692,8 +10692,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10701,8 +10701,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10710,8 +10710,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
-{{% /md %}}</dd>
+    <dd>How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10719,8 +10719,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10728,14 +10728,14 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -10744,8 +10744,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10753,8 +10753,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Splunk URL to stream logs to.
-{{% /md %}}</dd>
+    <dd>The Splunk URL to stream logs to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10762,8 +10762,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10771,8 +10771,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10780,8 +10780,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
-{{% /md %}}</dd>
+    <dd>How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10789,8 +10789,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10798,29 +10798,29 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1syslog">Servicev1Syslog</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1Syslog">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1Syslog">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1SyslogArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1SyslogOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -10829,8 +10829,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A hostname or IPv4 address of the Syslog endpoint.
-{{% /md %}}</dd>
+    <dd>A hostname or IPv4 address of the Syslog endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10838,8 +10838,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10847,8 +10847,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10856,8 +10856,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10865,8 +10865,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
-{{% /md %}}</dd>
+    <dd>How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10874,8 +10874,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10883,8 +10883,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port number configured in Logentries to send logs to. Defaults to `20000`.
-{{% /md %}}</dd>
+    <dd>The port number configured in Logentries to send logs to. Defaults to `20000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10892,8 +10892,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10901,8 +10901,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A secure certificate to authenticate the server with. Must be in PEM format. You can provide this certificate via an environment variable, `FASTLY_SYSLOG_CA_CERT`
-{{% /md %}}</dd>
+    <dd>A secure certificate to authenticate the server with. Must be in PEM format. You can provide this certificate via an environment variable, `FASTLY_SYSLOG_CA_CERT`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10910,8 +10910,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The client certificate used to make authenticated requests. Must be in PEM format. You can provide this certificate via an environment variable, `FASTLY_SYSLOG_CLIENT_CERT`
-{{% /md %}}</dd>
+    <dd>The client certificate used to make authenticated requests. Must be in PEM format. You can provide this certificate via an environment variable, `FASTLY_SYSLOG_CLIENT_CERT`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10919,8 +10919,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The client private key used to make authenticated requests. Must be in PEM format. You can provide this key via an environment variable, `FASTLY_SYSLOG_CLIENT_KEY`
-{{% /md %}}</dd>
+    <dd>The client private key used to make authenticated requests. Must be in PEM format. You can provide this key via an environment variable, `FASTLY_SYSLOG_CLIENT_KEY`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10928,8 +10928,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Used during the TLS handshake to validate the certificate.
-{{% /md %}}</dd>
+    <dd>Used during the TLS handshake to validate the certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10937,8 +10937,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Splunk token to be used for authentication.
-{{% /md %}}</dd>
+    <dd>The Splunk token to be used for authentication.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10946,14 +10946,14 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use TLS for secure logging. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>Whether to use TLS for secure logging. Defaults to `true`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -10962,8 +10962,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A hostname or IPv4 address of the Syslog endpoint.
-{{% /md %}}</dd>
+    <dd>A hostname or IPv4 address of the Syslog endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -10971,8 +10971,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10980,8 +10980,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10989,8 +10989,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -10998,8 +10998,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
-{{% /md %}}</dd>
+    <dd>How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11007,8 +11007,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11016,8 +11016,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port number configured in Logentries to send logs to. Defaults to `20000`.
-{{% /md %}}</dd>
+    <dd>The port number configured in Logentries to send logs to. Defaults to `20000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11025,8 +11025,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11034,8 +11034,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A secure certificate to authenticate the server with. Must be in PEM format. You can provide this certificate via an environment variable, `FASTLY_SYSLOG_CA_CERT`
-{{% /md %}}</dd>
+    <dd>A secure certificate to authenticate the server with. Must be in PEM format. You can provide this certificate via an environment variable, `FASTLY_SYSLOG_CA_CERT`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11043,8 +11043,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client certificate used to make authenticated requests. Must be in PEM format. You can provide this certificate via an environment variable, `FASTLY_SYSLOG_CLIENT_CERT`
-{{% /md %}}</dd>
+    <dd>The client certificate used to make authenticated requests. Must be in PEM format. You can provide this certificate via an environment variable, `FASTLY_SYSLOG_CLIENT_CERT`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11052,8 +11052,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client private key used to make authenticated requests. Must be in PEM format. You can provide this key via an environment variable, `FASTLY_SYSLOG_CLIENT_KEY`
-{{% /md %}}</dd>
+    <dd>The client private key used to make authenticated requests. Must be in PEM format. You can provide this key via an environment variable, `FASTLY_SYSLOG_CLIENT_KEY`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11061,8 +11061,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used during the TLS handshake to validate the certificate.
-{{% /md %}}</dd>
+    <dd>Used during the TLS handshake to validate the certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11070,8 +11070,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Splunk token to be used for authentication.
-{{% /md %}}</dd>
+    <dd>The Splunk token to be used for authentication.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11079,14 +11079,14 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use TLS for secure logging. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>Whether to use TLS for secure logging. Defaults to `true`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -11095,8 +11095,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A hostname or IPv4 address of the Syslog endpoint.
-{{% /md %}}</dd>
+    <dd>A hostname or IPv4 address of the Syslog endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -11104,8 +11104,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11113,8 +11113,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11122,8 +11122,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11131,8 +11131,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
-{{% /md %}}</dd>
+    <dd>How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11140,8 +11140,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11149,8 +11149,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port number configured in Logentries to send logs to. Defaults to `20000`.
-{{% /md %}}</dd>
+    <dd>The port number configured in Logentries to send logs to. Defaults to `20000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11158,8 +11158,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11167,8 +11167,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A secure certificate to authenticate the server with. Must be in PEM format. You can provide this certificate via an environment variable, `FASTLY_SYSLOG_CA_CERT`
-{{% /md %}}</dd>
+    <dd>A secure certificate to authenticate the server with. Must be in PEM format. You can provide this certificate via an environment variable, `FASTLY_SYSLOG_CA_CERT`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11176,8 +11176,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client certificate used to make authenticated requests. Must be in PEM format. You can provide this certificate via an environment variable, `FASTLY_SYSLOG_CLIENT_CERT`
-{{% /md %}}</dd>
+    <dd>The client certificate used to make authenticated requests. Must be in PEM format. You can provide this certificate via an environment variable, `FASTLY_SYSLOG_CLIENT_CERT`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11185,8 +11185,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client private key used to make authenticated requests. Must be in PEM format. You can provide this key via an environment variable, `FASTLY_SYSLOG_CLIENT_KEY`
-{{% /md %}}</dd>
+    <dd>The client private key used to make authenticated requests. Must be in PEM format. You can provide this key via an environment variable, `FASTLY_SYSLOG_CLIENT_KEY`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11194,8 +11194,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used during the TLS handshake to validate the certificate.
-{{% /md %}}</dd>
+    <dd>Used during the TLS handshake to validate the certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11203,8 +11203,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Splunk token to be used for authentication.
-{{% /md %}}</dd>
+    <dd>The Splunk token to be used for authentication.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11212,14 +11212,14 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use TLS for secure logging. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>Whether to use TLS for secure logging. Defaults to `true`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -11228,8 +11228,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A hostname or IPv4 address of the Syslog endpoint.
-{{% /md %}}</dd>
+    <dd>A hostname or IPv4 address of the Syslog endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -11237,8 +11237,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11246,8 +11246,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
-{{% /md %}}</dd>
+    <dd>Apache-style string or VCL variables to use for log formatting. Default `%h %l %u %t \"%r\" %>s %b`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11255,8 +11255,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
-{{% /md %}}</dd>
+    <dd>The version of the custom logging format used for the configured endpoint. Can be either `1` or `2`. The logging call gets placed by default in `vcl_log` if `format_version` is set to `2` and in `vcl_deliver` if `format_version` is set to `1`. Default `2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11264,8 +11264,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
-{{% /md %}}</dd>
+    <dd>How the message should be formatted. Can be either `classic`, `loggly`, `logplex` or `blank`.  Default `classic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11273,8 +11273,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
-{{% /md %}}</dd>
+    <dd>Where in the generated VCL the logging call should be placed, overriding any `format_version` default. Can be either `none` or `waf_debug`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11282,8 +11282,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port number configured in Logentries to send logs to. Defaults to `20000`.
-{{% /md %}}</dd>
+    <dd>The port number configured in Logentries to send logs to. Defaults to `20000`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11291,8 +11291,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the `condition` to apply. If empty, always execute.
-{{% /md %}}</dd>
+    <dd>The name of the `condition` to apply. If empty, always execute.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11300,8 +11300,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A secure certificate to authenticate the server with. Must be in PEM format. You can provide this certificate via an environment variable, `FASTLY_SYSLOG_CA_CERT`
-{{% /md %}}</dd>
+    <dd>A secure certificate to authenticate the server with. Must be in PEM format. You can provide this certificate via an environment variable, `FASTLY_SYSLOG_CA_CERT`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11309,8 +11309,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The client certificate used to make authenticated requests. Must be in PEM format. You can provide this certificate via an environment variable, `FASTLY_SYSLOG_CLIENT_CERT`
-{{% /md %}}</dd>
+    <dd>The client certificate used to make authenticated requests. Must be in PEM format. You can provide this certificate via an environment variable, `FASTLY_SYSLOG_CLIENT_CERT`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11318,8 +11318,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The client private key used to make authenticated requests. Must be in PEM format. You can provide this key via an environment variable, `FASTLY_SYSLOG_CLIENT_KEY`
-{{% /md %}}</dd>
+    <dd>The client private key used to make authenticated requests. Must be in PEM format. You can provide this key via an environment variable, `FASTLY_SYSLOG_CLIENT_KEY`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11327,8 +11327,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Used during the TLS handshake to validate the certificate.
-{{% /md %}}</dd>
+    <dd>Used during the TLS handshake to validate the certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11336,8 +11336,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Splunk token to be used for authentication.
-{{% /md %}}</dd>
+    <dd>The Splunk token to be used for authentication.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11345,29 +11345,29 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use TLS for secure logging. Defaults to `true`
-{{% /md %}}</dd>
+    <dd>Whether to use TLS for secure logging. Defaults to `true`
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicev1vcl">Servicev1Vcl</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/input/#Servicev1Vcl">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/fastly/types/output/#Servicev1Vcl">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1VclArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-fastly/sdk/v2/go/fastly/?tab=doc#Servicev1VclOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -11376,8 +11376,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The custom VCL code to upload.
-{{% /md %}}</dd>
+    <dd>The custom VCL code to upload.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -11385,8 +11385,8 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11394,16 +11394,16 @@ not be encrypted. You can provide this secret via an environment variable, `FAST
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, use this block as the main configuration. If
+    <dd>If `true`, use this block as the main configuration. If
 `false`, use this block as an includable library. Only a single VCL block can be
 marked as the main block. Default is `false`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -11412,8 +11412,8 @@ marked as the main block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The custom VCL code to upload.
-{{% /md %}}</dd>
+    <dd>The custom VCL code to upload.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -11421,8 +11421,8 @@ marked as the main block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11430,16 +11430,16 @@ marked as the main block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, use this block as the main configuration. If
+    <dd>If `true`, use this block as the main configuration. If
 `false`, use this block as an includable library. Only a single VCL block can be
 marked as the main block. Default is `false`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -11448,8 +11448,8 @@ marked as the main block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The custom VCL code to upload.
-{{% /md %}}</dd>
+    <dd>The custom VCL code to upload.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -11457,8 +11457,8 @@ marked as the main block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11466,16 +11466,16 @@ marked as the main block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, use this block as the main configuration. If
+    <dd>If `true`, use this block as the main configuration. If
 `false`, use this block as an includable library. Only a single VCL block can be
 marked as the main block. Default is `false`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -11484,8 +11484,8 @@ marked as the main block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The custom VCL code to upload.
-{{% /md %}}</dd>
+    <dd>The custom VCL code to upload.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -11493,8 +11493,8 @@ marked as the main block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name to identify this dictionary.
-{{% /md %}}</dd>
+    <dd>A unique name to identify this dictionary.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -11502,13 +11502,13 @@ marked as the main block. Default is `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, use this block as the main configuration. If
+    <dd>If `true`, use this block as the main configuration. If
 `false`, use this block as an includable library. Only a single VCL block can be
 marked as the main block. Default is `false`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

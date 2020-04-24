@@ -68,26 +68,26 @@ const job = new gcp.cloudscheduler.Job("job", {
 
 
 ## Create a Job Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/cloudscheduler/#Job">Job</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/cloudscheduler/#JobArgs">JobArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Job</span><span class="p">(resource_name, opts=None, </span>app_engine_http_target=None<span class="p">, </span>attempt_deadline=None<span class="p">, </span>description=None<span class="p">, </span>http_target=None<span class="p">, </span>name=None<span class="p">, </span>project=None<span class="p">, </span>pubsub_target=None<span class="p">, </span>region=None<span class="p">, </span>retry_config=None<span class="p">, </span>schedule=None<span class="p">, </span>time_zone=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewJob<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudscheduler?tab=doc#JobArgs">JobArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudscheduler?tab=doc#Job">Job</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.CloudScheduler.Job.html">Job</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.CloudScheduler.JobArgs.html">JobArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -124,9 +124,9 @@ const job = new gcp.cloudscheduler.Job("job", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -144,9 +144,9 @@ const job = new gcp.cloudscheduler.Job("job", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -193,9 +193,9 @@ const job = new gcp.cloudscheduler.Job("job", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -232,7 +232,7 @@ const job = new gcp.cloudscheduler.Job("job", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Job Resource Properties {#properties}
 
@@ -245,7 +245,7 @@ The Job resource accepts the following [input]({{< relref "/docs/intro/concepts/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -254,9 +254,9 @@ The Job resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobappenginehttptarget">Job<wbr>App<wbr>Engine<wbr>Http<wbr>Target<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}App Engine HTTP target. If the job providers a App Engine HTTP target the cron will send a request to the service
+    <dd>App Engine HTTP target. If the job providers a App Engine HTTP target the cron will send a request to the service
 instance
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -264,12 +264,12 @@ instance
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The deadline for job attempts. If the request handler does not respond by this deadline then the request is cancelled
+    <dd>The deadline for job attempts. If the request handler does not respond by this deadline then the request is cancelled
 and the attempt is marked as a DEADLINE_EXCEEDED failure. The failed attempt can be viewed in execution logs. Cloud
 Scheduler will retry the job according to the RetryConfig. The allowed duration for this deadline is: * For HTTP
 targets, between 15 seconds and 30 minutes. * For App Engine HTTP targets, between 15 seconds and 24 hours. A duration
 in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -277,8 +277,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A human-readable description for the job. This string must not contain more than 500 characters.
-{{% /md %}}</dd>
+    <dd>A human-readable description for the job. This string must not contain more than 500 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -286,8 +286,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobhttptarget">Job<wbr>Http<wbr>Target<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}HTTP target. If the job providers a http_target the cron will send a request to the targeted url
-{{% /md %}}</dd>
+    <dd>HTTP target. If the job providers a http_target the cron will send a request to the targeted url
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -295,8 +295,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the job.
-{{% /md %}}</dd>
+    <dd>The name of the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -304,9 +304,9 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -314,8 +314,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobpubsubtarget">Job<wbr>Pubsub<wbr>Target<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Pub/Sub target If the job providers a Pub/Sub target the cron will publish a message to the provided topic
-{{% /md %}}</dd>
+    <dd>Pub/Sub target If the job providers a Pub/Sub target the cron will publish a message to the provided topic
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -323,8 +323,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Region where the scheduler job resides
-{{% /md %}}</dd>
+    <dd>Region where the scheduler job resides
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,9 +332,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobretryconfig">Job<wbr>Retry<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}By default, if a job does not complete successfully, meaning that an acknowledgement is not received from the handler,
+    <dd>By default, if a job does not complete successfully, meaning that an acknowledgement is not received from the handler,
 then it will be retried with exponential backoff according to the settings
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -342,8 +342,8 @@ then it will be retried with exponential backoff according to the settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Describes the schedule on which the job will be executed.
-{{% /md %}}</dd>
+    <dd>Describes the schedule on which the job will be executed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -351,15 +351,15 @@ then it will be retried with exponential backoff according to the settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time zone to be used in interpreting schedule. The value of this field must be a time zone name from the
+    <dd>Specifies the time zone to be used in interpreting schedule. The value of this field must be a time zone name from the
 tz database.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -368,9 +368,9 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobappenginehttptarget">Job<wbr>App<wbr>Engine<wbr>Http<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}App Engine HTTP target. If the job providers a App Engine HTTP target the cron will send a request to the service
+    <dd>App Engine HTTP target. If the job providers a App Engine HTTP target the cron will send a request to the service
 instance
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -378,12 +378,12 @@ instance
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The deadline for job attempts. If the request handler does not respond by this deadline then the request is cancelled
+    <dd>The deadline for job attempts. If the request handler does not respond by this deadline then the request is cancelled
 and the attempt is marked as a DEADLINE_EXCEEDED failure. The failed attempt can be viewed in execution logs. Cloud
 Scheduler will retry the job according to the RetryConfig. The allowed duration for this deadline is: * For HTTP
 targets, between 15 seconds and 30 minutes. * For App Engine HTTP targets, between 15 seconds and 24 hours. A duration
 in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -391,8 +391,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A human-readable description for the job. This string must not contain more than 500 characters.
-{{% /md %}}</dd>
+    <dd>A human-readable description for the job. This string must not contain more than 500 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -400,8 +400,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobhttptarget">Job<wbr>Http<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}HTTP target. If the job providers a http_target the cron will send a request to the targeted url
-{{% /md %}}</dd>
+    <dd>HTTP target. If the job providers a http_target the cron will send a request to the targeted url
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -409,8 +409,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the job.
-{{% /md %}}</dd>
+    <dd>The name of the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -418,9 +418,9 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -428,8 +428,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobpubsubtarget">Job<wbr>Pubsub<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}Pub/Sub target If the job providers a Pub/Sub target the cron will publish a message to the provided topic
-{{% /md %}}</dd>
+    <dd>Pub/Sub target If the job providers a Pub/Sub target the cron will publish a message to the provided topic
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -437,8 +437,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Region where the scheduler job resides
-{{% /md %}}</dd>
+    <dd>Region where the scheduler job resides
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -446,9 +446,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobretryconfig">Job<wbr>Retry<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}By default, if a job does not complete successfully, meaning that an acknowledgement is not received from the handler,
+    <dd>By default, if a job does not complete successfully, meaning that an acknowledgement is not received from the handler,
 then it will be retried with exponential backoff according to the settings
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -456,8 +456,8 @@ then it will be retried with exponential backoff according to the settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Describes the schedule on which the job will be executed.
-{{% /md %}}</dd>
+    <dd>Describes the schedule on which the job will be executed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -465,15 +465,15 @@ then it will be retried with exponential backoff according to the settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time zone to be used in interpreting schedule. The value of this field must be a time zone name from the
+    <dd>Specifies the time zone to be used in interpreting schedule. The value of this field must be a time zone name from the
 tz database.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -482,9 +482,9 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobappenginehttptarget">Job<wbr>App<wbr>Engine<wbr>Http<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}App Engine HTTP target. If the job providers a App Engine HTTP target the cron will send a request to the service
+    <dd>App Engine HTTP target. If the job providers a App Engine HTTP target the cron will send a request to the service
 instance
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -492,12 +492,12 @@ instance
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The deadline for job attempts. If the request handler does not respond by this deadline then the request is cancelled
+    <dd>The deadline for job attempts. If the request handler does not respond by this deadline then the request is cancelled
 and the attempt is marked as a DEADLINE_EXCEEDED failure. The failed attempt can be viewed in execution logs. Cloud
 Scheduler will retry the job according to the RetryConfig. The allowed duration for this deadline is: * For HTTP
 targets, between 15 seconds and 30 minutes. * For App Engine HTTP targets, between 15 seconds and 24 hours. A duration
 in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -505,8 +505,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A human-readable description for the job. This string must not contain more than 500 characters.
-{{% /md %}}</dd>
+    <dd>A human-readable description for the job. This string must not contain more than 500 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -514,8 +514,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobhttptarget">Job<wbr>Http<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}HTTP target. If the job providers a http_target the cron will send a request to the targeted url
-{{% /md %}}</dd>
+    <dd>HTTP target. If the job providers a http_target the cron will send a request to the targeted url
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -523,8 +523,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the job.
-{{% /md %}}</dd>
+    <dd>The name of the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -532,9 +532,9 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -542,8 +542,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobpubsubtarget">Job<wbr>Pubsub<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}Pub/Sub target If the job providers a Pub/Sub target the cron will publish a message to the provided topic
-{{% /md %}}</dd>
+    <dd>Pub/Sub target If the job providers a Pub/Sub target the cron will publish a message to the provided topic
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -551,8 +551,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Region where the scheduler job resides
-{{% /md %}}</dd>
+    <dd>Region where the scheduler job resides
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -560,9 +560,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobretryconfig">Job<wbr>Retry<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}By default, if a job does not complete successfully, meaning that an acknowledgement is not received from the handler,
+    <dd>By default, if a job does not complete successfully, meaning that an acknowledgement is not received from the handler,
 then it will be retried with exponential backoff according to the settings
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -570,8 +570,8 @@ then it will be retried with exponential backoff according to the settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Describes the schedule on which the job will be executed.
-{{% /md %}}</dd>
+    <dd>Describes the schedule on which the job will be executed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -579,15 +579,15 @@ then it will be retried with exponential backoff according to the settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time zone to be used in interpreting schedule. The value of this field must be a time zone name from the
+    <dd>Specifies the time zone to be used in interpreting schedule. The value of this field must be a time zone name from the
 tz database.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -596,9 +596,9 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobappenginehttptarget">Dict[Job<wbr>App<wbr>Engine<wbr>Http<wbr>Target]</a></span>
     </dt>
-    <dd>{{% md %}}App Engine HTTP target. If the job providers a App Engine HTTP target the cron will send a request to the service
+    <dd>App Engine HTTP target. If the job providers a App Engine HTTP target the cron will send a request to the service
 instance
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -606,12 +606,12 @@ instance
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The deadline for job attempts. If the request handler does not respond by this deadline then the request is cancelled
+    <dd>The deadline for job attempts. If the request handler does not respond by this deadline then the request is cancelled
 and the attempt is marked as a DEADLINE_EXCEEDED failure. The failed attempt can be viewed in execution logs. Cloud
 Scheduler will retry the job according to the RetryConfig. The allowed duration for this deadline is: * For HTTP
 targets, between 15 seconds and 30 minutes. * For App Engine HTTP targets, between 15 seconds and 24 hours. A duration
 in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -619,8 +619,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A human-readable description for the job. This string must not contain more than 500 characters.
-{{% /md %}}</dd>
+    <dd>A human-readable description for the job. This string must not contain more than 500 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -628,8 +628,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobhttptarget">Dict[Job<wbr>Http<wbr>Target]</a></span>
     </dt>
-    <dd>{{% md %}}HTTP target. If the job providers a http_target the cron will send a request to the targeted url
-{{% /md %}}</dd>
+    <dd>HTTP target. If the job providers a http_target the cron will send a request to the targeted url
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -637,8 +637,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the job.
-{{% /md %}}</dd>
+    <dd>The name of the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -646,9 +646,9 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -656,8 +656,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobpubsubtarget">Dict[Job<wbr>Pubsub<wbr>Target]</a></span>
     </dt>
-    <dd>{{% md %}}Pub/Sub target If the job providers a Pub/Sub target the cron will publish a message to the provided topic
-{{% /md %}}</dd>
+    <dd>Pub/Sub target If the job providers a Pub/Sub target the cron will publish a message to the provided topic
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -665,8 +665,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Region where the scheduler job resides
-{{% /md %}}</dd>
+    <dd>Region where the scheduler job resides
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -674,9 +674,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobretryconfig">Dict[Job<wbr>Retry<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}By default, if a job does not complete successfully, meaning that an acknowledgement is not received from the handler,
+    <dd>By default, if a job does not complete successfully, meaning that an acknowledgement is not received from the handler,
 then it will be retried with exponential backoff according to the settings
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -684,8 +684,8 @@ then it will be retried with exponential backoff according to the settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Describes the schedule on which the job will be executed.
-{{% /md %}}</dd>
+    <dd>Describes the schedule on which the job will be executed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -693,12 +693,12 @@ then it will be retried with exponential backoff according to the settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time zone to be used in interpreting schedule. The value of this field must be a time zone name from the
+    <dd>Specifies the time zone to be used in interpreting schedule. The value of this field must be a time zone name from the
 tz database.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -712,7 +712,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -721,13 +721,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -736,13 +736,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -751,13 +751,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -766,10 +766,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -780,25 +780,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Job Resource {#look-up}
 
 Get an existing Job resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/cloudscheduler/#JobState">JobState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/cloudscheduler/#Job">Job</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>app_engine_http_target=None<span class="p">, </span>attempt_deadline=None<span class="p">, </span>description=None<span class="p">, </span>http_target=None<span class="p">, </span>name=None<span class="p">, </span>project=None<span class="p">, </span>pubsub_target=None<span class="p">, </span>region=None<span class="p">, </span>retry_config=None<span class="p">, </span>schedule=None<span class="p">, </span>time_zone=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetJob<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudscheduler?tab=doc#JobState">JobState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudscheduler?tab=doc#Job">Job</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.CloudScheduler.Job.html">Job</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.CloudScheduler.JobState.html">JobState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -823,9 +823,9 @@ Get an existing Job resource's state with the given name, ID, and optional extra
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -838,36 +838,9 @@ Get an existing Job resource's state with the given name, ID, and optional extra
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -892,13 +865,40 @@ Get an existing Job resource's state with the given name, ID, and optional extra
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -907,9 +907,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobappenginehttptarget">Job<wbr>App<wbr>Engine<wbr>Http<wbr>Target<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}App Engine HTTP target. If the job providers a App Engine HTTP target the cron will send a request to the service
+    <dd>App Engine HTTP target. If the job providers a App Engine HTTP target the cron will send a request to the service
 instance
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -917,12 +917,12 @@ instance
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The deadline for job attempts. If the request handler does not respond by this deadline then the request is cancelled
+    <dd>The deadline for job attempts. If the request handler does not respond by this deadline then the request is cancelled
 and the attempt is marked as a DEADLINE_EXCEEDED failure. The failed attempt can be viewed in execution logs. Cloud
 Scheduler will retry the job according to the RetryConfig. The allowed duration for this deadline is: * For HTTP
 targets, between 15 seconds and 30 minutes. * For App Engine HTTP targets, between 15 seconds and 24 hours. A duration
 in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -930,8 +930,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A human-readable description for the job. This string must not contain more than 500 characters.
-{{% /md %}}</dd>
+    <dd>A human-readable description for the job. This string must not contain more than 500 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -939,8 +939,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobhttptarget">Job<wbr>Http<wbr>Target<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}HTTP target. If the job providers a http_target the cron will send a request to the targeted url
-{{% /md %}}</dd>
+    <dd>HTTP target. If the job providers a http_target the cron will send a request to the targeted url
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -948,8 +948,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the job.
-{{% /md %}}</dd>
+    <dd>The name of the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -957,9 +957,9 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -967,8 +967,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobpubsubtarget">Job<wbr>Pubsub<wbr>Target<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Pub/Sub target If the job providers a Pub/Sub target the cron will publish a message to the provided topic
-{{% /md %}}</dd>
+    <dd>Pub/Sub target If the job providers a Pub/Sub target the cron will publish a message to the provided topic
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -976,8 +976,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Region where the scheduler job resides
-{{% /md %}}</dd>
+    <dd>Region where the scheduler job resides
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -985,9 +985,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobretryconfig">Job<wbr>Retry<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}By default, if a job does not complete successfully, meaning that an acknowledgement is not received from the handler,
+    <dd>By default, if a job does not complete successfully, meaning that an acknowledgement is not received from the handler,
 then it will be retried with exponential backoff according to the settings
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -995,8 +995,8 @@ then it will be retried with exponential backoff according to the settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Describes the schedule on which the job will be executed.
-{{% /md %}}</dd>
+    <dd>Describes the schedule on which the job will be executed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1004,15 +1004,15 @@ then it will be retried with exponential backoff according to the settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time zone to be used in interpreting schedule. The value of this field must be a time zone name from the
+    <dd>Specifies the time zone to be used in interpreting schedule. The value of this field must be a time zone name from the
 tz database.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1021,9 +1021,9 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobappenginehttptarget">Job<wbr>App<wbr>Engine<wbr>Http<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}App Engine HTTP target. If the job providers a App Engine HTTP target the cron will send a request to the service
+    <dd>App Engine HTTP target. If the job providers a App Engine HTTP target the cron will send a request to the service
 instance
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1031,12 +1031,12 @@ instance
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The deadline for job attempts. If the request handler does not respond by this deadline then the request is cancelled
+    <dd>The deadline for job attempts. If the request handler does not respond by this deadline then the request is cancelled
 and the attempt is marked as a DEADLINE_EXCEEDED failure. The failed attempt can be viewed in execution logs. Cloud
 Scheduler will retry the job according to the RetryConfig. The allowed duration for this deadline is: * For HTTP
 targets, between 15 seconds and 30 minutes. * For App Engine HTTP targets, between 15 seconds and 24 hours. A duration
 in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1044,8 +1044,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A human-readable description for the job. This string must not contain more than 500 characters.
-{{% /md %}}</dd>
+    <dd>A human-readable description for the job. This string must not contain more than 500 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1053,8 +1053,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobhttptarget">Job<wbr>Http<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}HTTP target. If the job providers a http_target the cron will send a request to the targeted url
-{{% /md %}}</dd>
+    <dd>HTTP target. If the job providers a http_target the cron will send a request to the targeted url
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1062,8 +1062,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the job.
-{{% /md %}}</dd>
+    <dd>The name of the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1071,9 +1071,9 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1081,8 +1081,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobpubsubtarget">Job<wbr>Pubsub<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}Pub/Sub target If the job providers a Pub/Sub target the cron will publish a message to the provided topic
-{{% /md %}}</dd>
+    <dd>Pub/Sub target If the job providers a Pub/Sub target the cron will publish a message to the provided topic
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1090,8 +1090,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Region where the scheduler job resides
-{{% /md %}}</dd>
+    <dd>Region where the scheduler job resides
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1099,9 +1099,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobretryconfig">Job<wbr>Retry<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}By default, if a job does not complete successfully, meaning that an acknowledgement is not received from the handler,
+    <dd>By default, if a job does not complete successfully, meaning that an acknowledgement is not received from the handler,
 then it will be retried with exponential backoff according to the settings
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1109,8 +1109,8 @@ then it will be retried with exponential backoff according to the settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Describes the schedule on which the job will be executed.
-{{% /md %}}</dd>
+    <dd>Describes the schedule on which the job will be executed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1118,15 +1118,15 @@ then it will be retried with exponential backoff according to the settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time zone to be used in interpreting schedule. The value of this field must be a time zone name from the
+    <dd>Specifies the time zone to be used in interpreting schedule. The value of this field must be a time zone name from the
 tz database.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1135,9 +1135,9 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobappenginehttptarget">Job<wbr>App<wbr>Engine<wbr>Http<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}App Engine HTTP target. If the job providers a App Engine HTTP target the cron will send a request to the service
+    <dd>App Engine HTTP target. If the job providers a App Engine HTTP target the cron will send a request to the service
 instance
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1145,12 +1145,12 @@ instance
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The deadline for job attempts. If the request handler does not respond by this deadline then the request is cancelled
+    <dd>The deadline for job attempts. If the request handler does not respond by this deadline then the request is cancelled
 and the attempt is marked as a DEADLINE_EXCEEDED failure. The failed attempt can be viewed in execution logs. Cloud
 Scheduler will retry the job according to the RetryConfig. The allowed duration for this deadline is: * For HTTP
 targets, between 15 seconds and 30 minutes. * For App Engine HTTP targets, between 15 seconds and 24 hours. A duration
 in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1158,8 +1158,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A human-readable description for the job. This string must not contain more than 500 characters.
-{{% /md %}}</dd>
+    <dd>A human-readable description for the job. This string must not contain more than 500 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1167,8 +1167,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobhttptarget">Job<wbr>Http<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}HTTP target. If the job providers a http_target the cron will send a request to the targeted url
-{{% /md %}}</dd>
+    <dd>HTTP target. If the job providers a http_target the cron will send a request to the targeted url
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1176,8 +1176,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the job.
-{{% /md %}}</dd>
+    <dd>The name of the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1185,9 +1185,9 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1195,8 +1195,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobpubsubtarget">Job<wbr>Pubsub<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}Pub/Sub target If the job providers a Pub/Sub target the cron will publish a message to the provided topic
-{{% /md %}}</dd>
+    <dd>Pub/Sub target If the job providers a Pub/Sub target the cron will publish a message to the provided topic
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1204,8 +1204,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Region where the scheduler job resides
-{{% /md %}}</dd>
+    <dd>Region where the scheduler job resides
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1213,9 +1213,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobretryconfig">Job<wbr>Retry<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}By default, if a job does not complete successfully, meaning that an acknowledgement is not received from the handler,
+    <dd>By default, if a job does not complete successfully, meaning that an acknowledgement is not received from the handler,
 then it will be retried with exponential backoff according to the settings
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1223,8 +1223,8 @@ then it will be retried with exponential backoff according to the settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Describes the schedule on which the job will be executed.
-{{% /md %}}</dd>
+    <dd>Describes the schedule on which the job will be executed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1232,15 +1232,15 @@ then it will be retried with exponential backoff according to the settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time zone to be used in interpreting schedule. The value of this field must be a time zone name from the
+    <dd>Specifies the time zone to be used in interpreting schedule. The value of this field must be a time zone name from the
 tz database.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1249,9 +1249,9 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobappenginehttptarget">Dict[Job<wbr>App<wbr>Engine<wbr>Http<wbr>Target]</a></span>
     </dt>
-    <dd>{{% md %}}App Engine HTTP target. If the job providers a App Engine HTTP target the cron will send a request to the service
+    <dd>App Engine HTTP target. If the job providers a App Engine HTTP target the cron will send a request to the service
 instance
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1259,12 +1259,12 @@ instance
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The deadline for job attempts. If the request handler does not respond by this deadline then the request is cancelled
+    <dd>The deadline for job attempts. If the request handler does not respond by this deadline then the request is cancelled
 and the attempt is marked as a DEADLINE_EXCEEDED failure. The failed attempt can be viewed in execution logs. Cloud
 Scheduler will retry the job according to the RetryConfig. The allowed duration for this deadline is: * For HTTP
 targets, between 15 seconds and 30 minutes. * For App Engine HTTP targets, between 15 seconds and 24 hours. A duration
 in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1272,8 +1272,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A human-readable description for the job. This string must not contain more than 500 characters.
-{{% /md %}}</dd>
+    <dd>A human-readable description for the job. This string must not contain more than 500 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1281,8 +1281,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobhttptarget">Dict[Job<wbr>Http<wbr>Target]</a></span>
     </dt>
-    <dd>{{% md %}}HTTP target. If the job providers a http_target the cron will send a request to the targeted url
-{{% /md %}}</dd>
+    <dd>HTTP target. If the job providers a http_target the cron will send a request to the targeted url
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1290,8 +1290,8 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the job.
-{{% /md %}}</dd>
+    <dd>The name of the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1299,9 +1299,9 @@ in seconds with up to nine fractional digits, terminated by 's'. Example: "3.5s"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1309,8 +1309,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobpubsubtarget">Dict[Job<wbr>Pubsub<wbr>Target]</a></span>
     </dt>
-    <dd>{{% md %}}Pub/Sub target If the job providers a Pub/Sub target the cron will publish a message to the provided topic
-{{% /md %}}</dd>
+    <dd>Pub/Sub target If the job providers a Pub/Sub target the cron will publish a message to the provided topic
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1318,8 +1318,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Region where the scheduler job resides
-{{% /md %}}</dd>
+    <dd>Region where the scheduler job resides
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1327,9 +1327,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobretryconfig">Dict[Job<wbr>Retry<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}By default, if a job does not complete successfully, meaning that an acknowledgement is not received from the handler,
+    <dd>By default, if a job does not complete successfully, meaning that an acknowledgement is not received from the handler,
 then it will be retried with exponential backoff according to the settings
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1337,8 +1337,8 @@ then it will be retried with exponential backoff according to the settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Describes the schedule on which the job will be executed.
-{{% /md %}}</dd>
+    <dd>Describes the schedule on which the job will be executed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1346,12 +1346,12 @@ then it will be retried with exponential backoff according to the settings
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time zone to be used in interpreting schedule. The value of this field must be a time zone name from the
+    <dd>Specifies the time zone to be used in interpreting schedule. The value of this field must be a time zone name from the
 tz database.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1366,18 +1366,18 @@ tz database.
 
 
 <h4 id="jobappenginehttptarget">Job<wbr>App<wbr>Engine<wbr>Http<wbr>Target</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#JobAppEngineHttpTarget">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#JobAppEngineHttpTarget">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudscheduler?tab=doc#JobAppEngineHttpTargetArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudscheduler?tab=doc#JobAppEngineHttpTargetOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1386,7 +1386,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1394,7 +1394,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobappenginehttptargetappenginerouting">Job<wbr>App<wbr>Engine<wbr>Http<wbr>Target<wbr>App<wbr>Engine<wbr>Routing<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1402,7 +1402,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1410,7 +1410,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1418,13 +1418,13 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1433,7 +1433,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1441,7 +1441,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobappenginehttptargetappenginerouting">Job<wbr>App<wbr>Engine<wbr>Http<wbr>Target<wbr>App<wbr>Engine<wbr>Routing</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1449,7 +1449,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1457,7 +1457,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1465,13 +1465,13 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1480,7 +1480,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1488,7 +1488,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobappenginehttptargetappenginerouting">Job<wbr>App<wbr>Engine<wbr>Http<wbr>Target<wbr>App<wbr>Engine<wbr>Routing</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1496,7 +1496,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1504,7 +1504,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1512,13 +1512,13 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1527,7 +1527,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1535,7 +1535,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobappenginehttptargetappenginerouting">Dict[Job<wbr>App<wbr>Engine<wbr>Http<wbr>Target<wbr>App<wbr>Engine<wbr>Routing]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1543,7 +1543,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1551,7 +1551,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1559,28 +1559,28 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="jobappenginehttptargetappenginerouting">Job<wbr>App<wbr>Engine<wbr>Http<wbr>Target<wbr>App<wbr>Engine<wbr>Routing</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#JobAppEngineHttpTargetAppEngineRouting">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#JobAppEngineHttpTargetAppEngineRouting">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudscheduler?tab=doc#JobAppEngineHttpTargetAppEngineRoutingArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudscheduler?tab=doc#JobAppEngineHttpTargetAppEngineRoutingOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1589,7 +1589,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1597,7 +1597,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1605,13 +1605,13 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1620,7 +1620,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1628,7 +1628,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1636,13 +1636,13 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1651,7 +1651,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1659,7 +1659,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1667,13 +1667,13 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1682,7 +1682,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1690,7 +1690,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1698,28 +1698,28 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="jobhttptarget">Job<wbr>Http<wbr>Target</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#JobHttpTarget">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#JobHttpTarget">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudscheduler?tab=doc#JobHttpTargetArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudscheduler?tab=doc#JobHttpTargetOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1728,7 +1728,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1736,7 +1736,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1744,7 +1744,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1752,7 +1752,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1760,7 +1760,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobhttptargetoauthtoken">Job<wbr>Http<wbr>Target<wbr>Oauth<wbr>Token<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1768,13 +1768,13 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobhttptargetoidctoken">Job<wbr>Http<wbr>Target<wbr>Oidc<wbr>Token<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1783,7 +1783,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1791,7 +1791,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1799,7 +1799,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1807,7 +1807,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1815,7 +1815,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobhttptargetoauthtoken">Job<wbr>Http<wbr>Target<wbr>Oauth<wbr>Token</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1823,13 +1823,13 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobhttptargetoidctoken">Job<wbr>Http<wbr>Target<wbr>Oidc<wbr>Token</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1838,7 +1838,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1846,7 +1846,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1854,7 +1854,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1862,7 +1862,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1870,7 +1870,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobhttptargetoauthtoken">Job<wbr>Http<wbr>Target<wbr>Oauth<wbr>Token</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1878,13 +1878,13 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobhttptargetoidctoken">Job<wbr>Http<wbr>Target<wbr>Oidc<wbr>Token</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1893,7 +1893,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1901,7 +1901,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1909,7 +1909,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1917,7 +1917,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1925,7 +1925,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobhttptargetoauthtoken">Dict[Job<wbr>Http<wbr>Target<wbr>Oauth<wbr>Token]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1933,28 +1933,28 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#jobhttptargetoidctoken">Dict[Job<wbr>Http<wbr>Target<wbr>Oidc<wbr>Token]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="jobhttptargetoauthtoken">Job<wbr>Http<wbr>Target<wbr>Oauth<wbr>Token</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#JobHttpTargetOauthToken">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#JobHttpTargetOauthToken">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudscheduler?tab=doc#JobHttpTargetOauthTokenArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudscheduler?tab=doc#JobHttpTargetOauthTokenOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1963,7 +1963,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1971,13 +1971,13 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1986,7 +1986,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1994,13 +1994,13 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2009,7 +2009,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2017,13 +2017,13 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2032,7 +2032,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2040,28 +2040,28 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="jobhttptargetoidctoken">Job<wbr>Http<wbr>Target<wbr>Oidc<wbr>Token</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#JobHttpTargetOidcToken">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#JobHttpTargetOidcToken">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudscheduler?tab=doc#JobHttpTargetOidcTokenArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudscheduler?tab=doc#JobHttpTargetOidcTokenOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2070,7 +2070,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2078,13 +2078,13 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2093,7 +2093,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2101,13 +2101,13 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2116,7 +2116,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2124,13 +2124,13 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2139,7 +2139,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2147,28 +2147,28 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="jobpubsubtarget">Job<wbr>Pubsub<wbr>Target</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#JobPubsubTarget">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#JobPubsubTarget">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudscheduler?tab=doc#JobPubsubTargetArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudscheduler?tab=doc#JobPubsubTargetOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2177,7 +2177,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2185,7 +2185,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2193,13 +2193,13 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2208,7 +2208,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2216,7 +2216,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2224,13 +2224,13 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2239,7 +2239,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2247,7 +2247,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2255,13 +2255,13 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2270,7 +2270,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2278,7 +2278,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2286,28 +2286,28 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="jobretryconfig">Job<wbr>Retry<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#JobRetryConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#JobRetryConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudscheduler?tab=doc#JobRetryConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/cloudscheduler?tab=doc#JobRetryConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2316,7 +2316,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2324,7 +2324,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2332,7 +2332,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2340,7 +2340,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2348,13 +2348,13 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2363,7 +2363,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2371,7 +2371,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2379,7 +2379,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2387,7 +2387,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2395,13 +2395,13 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2410,7 +2410,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2418,7 +2418,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2426,7 +2426,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2434,7 +2434,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2442,13 +2442,13 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2457,7 +2457,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2465,7 +2465,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2473,7 +2473,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2481,7 +2481,7 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2489,10 +2489,10 @@ tz database.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

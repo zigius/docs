@@ -18,26 +18,26 @@ Manages an Azure App Configuration.
 
 
 ## Create a ConfigurationStore Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/appconfiguration/#ConfigurationStore">ConfigurationStore</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/appconfiguration/#ConfigurationStoreArgs">ConfigurationStoreArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ConfigurationStore</span><span class="p">(resource_name, opts=None, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>sku=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewConfigurationStore<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appconfiguration?tab=doc#ConfigurationStoreArgs">ConfigurationStoreArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appconfiguration?tab=doc#ConfigurationStore">ConfigurationStore</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.AppConfiguration.ConfigurationStore.html">ConfigurationStore</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.AppConfiguration.ConfigurationStoreArgs.html">ConfigurationStoreArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ Manages an Azure App Configuration.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ Manages an Azure App Configuration.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ Manages an Azure App Configuration.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ Manages an Azure App Configuration.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ConfigurationStore Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The ConfigurationStore resource accepts the following [input]({{< relref "/docs/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -204,8 +204,8 @@ The ConfigurationStore resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the App Configuration. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the App Configuration. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -213,8 +213,8 @@ The ConfigurationStore resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -222,8 +222,8 @@ The ConfigurationStore resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the App Configuration. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the App Configuration. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -231,8 +231,8 @@ The ConfigurationStore resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU name of the the App Configuration. Possible values are `free` and `standard`.
-{{% /md %}}</dd>
+    <dd>The SKU name of the the App Configuration. Possible values are `free` and `standard`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -240,14 +240,14 @@ The ConfigurationStore resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -256,8 +256,8 @@ The ConfigurationStore resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the App Configuration. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the App Configuration. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -265,8 +265,8 @@ The ConfigurationStore resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -274,8 +274,8 @@ The ConfigurationStore resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the App Configuration. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the App Configuration. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -283,8 +283,8 @@ The ConfigurationStore resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU name of the the App Configuration. Possible values are `free` and `standard`.
-{{% /md %}}</dd>
+    <dd>The SKU name of the the App Configuration. Possible values are `free` and `standard`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -292,14 +292,14 @@ The ConfigurationStore resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -308,8 +308,8 @@ The ConfigurationStore resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the App Configuration. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the App Configuration. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -317,8 +317,8 @@ The ConfigurationStore resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -326,8 +326,8 @@ The ConfigurationStore resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the App Configuration. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the App Configuration. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -335,8 +335,8 @@ The ConfigurationStore resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU name of the the App Configuration. Possible values are `free` and `standard`.
-{{% /md %}}</dd>
+    <dd>The SKU name of the the App Configuration. Possible values are `free` and `standard`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -344,14 +344,14 @@ The ConfigurationStore resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -360,8 +360,8 @@ The ConfigurationStore resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the App Configuration. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the App Configuration. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -369,8 +369,8 @@ The ConfigurationStore resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -378,8 +378,8 @@ The ConfigurationStore resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the App Configuration. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the App Configuration. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -387,8 +387,8 @@ The ConfigurationStore resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SKU name of the the App Configuration. Possible values are `free` and `standard`.
-{{% /md %}}</dd>
+    <dd>The SKU name of the the App Configuration. Possible values are `free` and `standard`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -396,11 +396,11 @@ The ConfigurationStore resource accepts the following [input]({{< relref "/docs/
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -414,7 +414,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -423,8 +423,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the App Configuration.
-{{% /md %}}</dd>
+    <dd>The URL of the App Configuration.
+</dd>
 
     <dt class="property-"
             title="">
@@ -432,7 +432,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -440,8 +440,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoreprimaryreadkey">List&lt;Configuration<wbr>Store<wbr>Primary<wbr>Read<wbr>Key&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `primary_read_key` block as defined below containing the primary read access key.
-{{% /md %}}</dd>
+    <dd>A `primary_read_key` block as defined below containing the primary read access key.
+</dd>
 
     <dt class="property-"
             title="">
@@ -449,8 +449,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoreprimarywritekey">List&lt;Configuration<wbr>Store<wbr>Primary<wbr>Write<wbr>Key&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `primary_write_key` block as defined below containing the primary write access key.
-{{% /md %}}</dd>
+    <dd>A `primary_write_key` block as defined below containing the primary write access key.
+</dd>
 
     <dt class="property-"
             title="">
@@ -458,8 +458,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoresecondaryreadkey">List&lt;Configuration<wbr>Store<wbr>Secondary<wbr>Read<wbr>Key&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `secondary_read_key` block as defined below containing the secondary read access key.
-{{% /md %}}</dd>
+    <dd>A `secondary_read_key` block as defined below containing the secondary read access key.
+</dd>
 
     <dt class="property-"
             title="">
@@ -467,14 +467,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoresecondarywritekey">List&lt;Configuration<wbr>Store<wbr>Secondary<wbr>Write<wbr>Key&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `secondary_write_key` block as defined below containing the secondary write access key.
-{{% /md %}}</dd>
+    <dd>A `secondary_write_key` block as defined below containing the secondary write access key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -483,8 +483,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the App Configuration.
-{{% /md %}}</dd>
+    <dd>The URL of the App Configuration.
+</dd>
 
     <dt class="property-"
             title="">
@@ -492,7 +492,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -500,8 +500,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoreprimaryreadkey">[]Configuration<wbr>Store<wbr>Primary<wbr>Read<wbr>Key</a></span>
     </dt>
-    <dd>{{% md %}}A `primary_read_key` block as defined below containing the primary read access key.
-{{% /md %}}</dd>
+    <dd>A `primary_read_key` block as defined below containing the primary read access key.
+</dd>
 
     <dt class="property-"
             title="">
@@ -509,8 +509,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoreprimarywritekey">[]Configuration<wbr>Store<wbr>Primary<wbr>Write<wbr>Key</a></span>
     </dt>
-    <dd>{{% md %}}A `primary_write_key` block as defined below containing the primary write access key.
-{{% /md %}}</dd>
+    <dd>A `primary_write_key` block as defined below containing the primary write access key.
+</dd>
 
     <dt class="property-"
             title="">
@@ -518,8 +518,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoresecondaryreadkey">[]Configuration<wbr>Store<wbr>Secondary<wbr>Read<wbr>Key</a></span>
     </dt>
-    <dd>{{% md %}}A `secondary_read_key` block as defined below containing the secondary read access key.
-{{% /md %}}</dd>
+    <dd>A `secondary_read_key` block as defined below containing the secondary read access key.
+</dd>
 
     <dt class="property-"
             title="">
@@ -527,14 +527,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoresecondarywritekey">[]Configuration<wbr>Store<wbr>Secondary<wbr>Write<wbr>Key</a></span>
     </dt>
-    <dd>{{% md %}}A `secondary_write_key` block as defined below containing the secondary write access key.
-{{% /md %}}</dd>
+    <dd>A `secondary_write_key` block as defined below containing the secondary write access key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -543,8 +543,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the App Configuration.
-{{% /md %}}</dd>
+    <dd>The URL of the App Configuration.
+</dd>
 
     <dt class="property-"
             title="">
@@ -552,7 +552,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -560,8 +560,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoreprimaryreadkey">Configuration<wbr>Store<wbr>Primary<wbr>Read<wbr>Key[]</a></span>
     </dt>
-    <dd>{{% md %}}A `primary_read_key` block as defined below containing the primary read access key.
-{{% /md %}}</dd>
+    <dd>A `primary_read_key` block as defined below containing the primary read access key.
+</dd>
 
     <dt class="property-"
             title="">
@@ -569,8 +569,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoreprimarywritekey">Configuration<wbr>Store<wbr>Primary<wbr>Write<wbr>Key[]</a></span>
     </dt>
-    <dd>{{% md %}}A `primary_write_key` block as defined below containing the primary write access key.
-{{% /md %}}</dd>
+    <dd>A `primary_write_key` block as defined below containing the primary write access key.
+</dd>
 
     <dt class="property-"
             title="">
@@ -578,8 +578,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoresecondaryreadkey">Configuration<wbr>Store<wbr>Secondary<wbr>Read<wbr>Key[]</a></span>
     </dt>
-    <dd>{{% md %}}A `secondary_read_key` block as defined below containing the secondary read access key.
-{{% /md %}}</dd>
+    <dd>A `secondary_read_key` block as defined below containing the secondary read access key.
+</dd>
 
     <dt class="property-"
             title="">
@@ -587,14 +587,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoresecondarywritekey">Configuration<wbr>Store<wbr>Secondary<wbr>Write<wbr>Key[]</a></span>
     </dt>
-    <dd>{{% md %}}A `secondary_write_key` block as defined below containing the secondary write access key.
-{{% /md %}}</dd>
+    <dd>A `secondary_write_key` block as defined below containing the secondary write access key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -603,8 +603,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the App Configuration.
-{{% /md %}}</dd>
+    <dd>The URL of the App Configuration.
+</dd>
 
     <dt class="property-"
             title="">
@@ -612,7 +612,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -620,8 +620,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoreprimaryreadkey">List[Configuration<wbr>Store<wbr>Primary<wbr>Read<wbr>Key]</a></span>
     </dt>
-    <dd>{{% md %}}A `primary_read_key` block as defined below containing the primary read access key.
-{{% /md %}}</dd>
+    <dd>A `primary_read_key` block as defined below containing the primary read access key.
+</dd>
 
     <dt class="property-"
             title="">
@@ -629,8 +629,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoreprimarywritekey">List[Configuration<wbr>Store<wbr>Primary<wbr>Write<wbr>Key]</a></span>
     </dt>
-    <dd>{{% md %}}A `primary_write_key` block as defined below containing the primary write access key.
-{{% /md %}}</dd>
+    <dd>A `primary_write_key` block as defined below containing the primary write access key.
+</dd>
 
     <dt class="property-"
             title="">
@@ -638,8 +638,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoresecondaryreadkey">List[Configuration<wbr>Store<wbr>Secondary<wbr>Read<wbr>Key]</a></span>
     </dt>
-    <dd>{{% md %}}A `secondary_read_key` block as defined below containing the secondary read access key.
-{{% /md %}}</dd>
+    <dd>A `secondary_read_key` block as defined below containing the secondary read access key.
+</dd>
 
     <dt class="property-"
             title="">
@@ -647,11 +647,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoresecondarywritekey">List[Configuration<wbr>Store<wbr>Secondary<wbr>Write<wbr>Key]</a></span>
     </dt>
-    <dd>{{% md %}}A `secondary_write_key` block as defined below containing the secondary write access key.
-{{% /md %}}</dd>
+    <dd>A `secondary_write_key` block as defined below containing the secondary write access key.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -662,25 +662,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ConfigurationStore Resource {#look-up}
 
 Get an existing ConfigurationStore resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/appconfiguration/#ConfigurationStoreState">ConfigurationStoreState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/appconfiguration/#ConfigurationStore">ConfigurationStore</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>endpoint=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>primary_read_keys=None<span class="p">, </span>primary_write_keys=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>secondary_read_keys=None<span class="p">, </span>secondary_write_keys=None<span class="p">, </span>sku=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetConfigurationStore<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appconfiguration?tab=doc#ConfigurationStoreState">ConfigurationStoreState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appconfiguration?tab=doc#ConfigurationStore">ConfigurationStore</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.AppConfiguration.ConfigurationStore.html">ConfigurationStore</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.AppConfiguration.ConfigurationStoreState.html">ConfigurationStoreState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -705,9 +705,9 @@ Get an existing ConfigurationStore resource's state with the given name, ID, and
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -720,36 +720,9 @@ Get an existing ConfigurationStore resource's state with the given name, ID, and
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -774,13 +747,40 @@ Get an existing ConfigurationStore resource's state with the given name, ID, and
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -789,8 +789,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the App Configuration.
-{{% /md %}}</dd>
+    <dd>The URL of the App Configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -798,8 +798,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -807,8 +807,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the App Configuration. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the App Configuration. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -816,8 +816,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoreprimaryreadkey">List&lt;Configuration<wbr>Store<wbr>Primary<wbr>Read<wbr>Key<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `primary_read_key` block as defined below containing the primary read access key.
-{{% /md %}}</dd>
+    <dd>A `primary_read_key` block as defined below containing the primary read access key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -825,8 +825,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoreprimarywritekey">List&lt;Configuration<wbr>Store<wbr>Primary<wbr>Write<wbr>Key<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `primary_write_key` block as defined below containing the primary write access key.
-{{% /md %}}</dd>
+    <dd>A `primary_write_key` block as defined below containing the primary write access key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -834,8 +834,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the App Configuration. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the App Configuration. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -843,8 +843,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoresecondaryreadkey">List&lt;Configuration<wbr>Store<wbr>Secondary<wbr>Read<wbr>Key<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `secondary_read_key` block as defined below containing the secondary read access key.
-{{% /md %}}</dd>
+    <dd>A `secondary_read_key` block as defined below containing the secondary read access key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -852,8 +852,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoresecondarywritekey">List&lt;Configuration<wbr>Store<wbr>Secondary<wbr>Write<wbr>Key<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `secondary_write_key` block as defined below containing the secondary write access key.
-{{% /md %}}</dd>
+    <dd>A `secondary_write_key` block as defined below containing the secondary write access key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -861,8 +861,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU name of the the App Configuration. Possible values are `free` and `standard`.
-{{% /md %}}</dd>
+    <dd>The SKU name of the the App Configuration. Possible values are `free` and `standard`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -870,14 +870,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -886,8 +886,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the App Configuration.
-{{% /md %}}</dd>
+    <dd>The URL of the App Configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -895,8 +895,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -904,8 +904,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the App Configuration. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the App Configuration. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -913,8 +913,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoreprimaryreadkey">[]Configuration<wbr>Store<wbr>Primary<wbr>Read<wbr>Key</a></span>
     </dt>
-    <dd>{{% md %}}A `primary_read_key` block as defined below containing the primary read access key.
-{{% /md %}}</dd>
+    <dd>A `primary_read_key` block as defined below containing the primary read access key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -922,8 +922,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoreprimarywritekey">[]Configuration<wbr>Store<wbr>Primary<wbr>Write<wbr>Key</a></span>
     </dt>
-    <dd>{{% md %}}A `primary_write_key` block as defined below containing the primary write access key.
-{{% /md %}}</dd>
+    <dd>A `primary_write_key` block as defined below containing the primary write access key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -931,8 +931,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the App Configuration. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the App Configuration. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -940,8 +940,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoresecondaryreadkey">[]Configuration<wbr>Store<wbr>Secondary<wbr>Read<wbr>Key</a></span>
     </dt>
-    <dd>{{% md %}}A `secondary_read_key` block as defined below containing the secondary read access key.
-{{% /md %}}</dd>
+    <dd>A `secondary_read_key` block as defined below containing the secondary read access key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -949,8 +949,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoresecondarywritekey">[]Configuration<wbr>Store<wbr>Secondary<wbr>Write<wbr>Key</a></span>
     </dt>
-    <dd>{{% md %}}A `secondary_write_key` block as defined below containing the secondary write access key.
-{{% /md %}}</dd>
+    <dd>A `secondary_write_key` block as defined below containing the secondary write access key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -958,8 +958,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU name of the the App Configuration. Possible values are `free` and `standard`.
-{{% /md %}}</dd>
+    <dd>The SKU name of the the App Configuration. Possible values are `free` and `standard`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -967,14 +967,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -983,8 +983,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the App Configuration.
-{{% /md %}}</dd>
+    <dd>The URL of the App Configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -992,8 +992,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,8 +1001,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the App Configuration. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the App Configuration. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1010,8 +1010,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoreprimaryreadkey">Configuration<wbr>Store<wbr>Primary<wbr>Read<wbr>Key[]</a></span>
     </dt>
-    <dd>{{% md %}}A `primary_read_key` block as defined below containing the primary read access key.
-{{% /md %}}</dd>
+    <dd>A `primary_read_key` block as defined below containing the primary read access key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1019,8 +1019,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoreprimarywritekey">Configuration<wbr>Store<wbr>Primary<wbr>Write<wbr>Key[]</a></span>
     </dt>
-    <dd>{{% md %}}A `primary_write_key` block as defined below containing the primary write access key.
-{{% /md %}}</dd>
+    <dd>A `primary_write_key` block as defined below containing the primary write access key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1028,8 +1028,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the App Configuration. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the App Configuration. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1037,8 +1037,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoresecondaryreadkey">Configuration<wbr>Store<wbr>Secondary<wbr>Read<wbr>Key[]</a></span>
     </dt>
-    <dd>{{% md %}}A `secondary_read_key` block as defined below containing the secondary read access key.
-{{% /md %}}</dd>
+    <dd>A `secondary_read_key` block as defined below containing the secondary read access key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1046,8 +1046,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoresecondarywritekey">Configuration<wbr>Store<wbr>Secondary<wbr>Write<wbr>Key[]</a></span>
     </dt>
-    <dd>{{% md %}}A `secondary_write_key` block as defined below containing the secondary write access key.
-{{% /md %}}</dd>
+    <dd>A `secondary_write_key` block as defined below containing the secondary write access key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1055,8 +1055,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SKU name of the the App Configuration. Possible values are `free` and `standard`.
-{{% /md %}}</dd>
+    <dd>The SKU name of the the App Configuration. Possible values are `free` and `standard`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1064,14 +1064,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1080,8 +1080,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URL of the App Configuration.
-{{% /md %}}</dd>
+    <dd>The URL of the App Configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1089,8 +1089,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1098,8 +1098,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the App Configuration. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the App Configuration. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1107,8 +1107,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoreprimaryreadkey">List[Configuration<wbr>Store<wbr>Primary<wbr>Read<wbr>Key]</a></span>
     </dt>
-    <dd>{{% md %}}A `primary_read_key` block as defined below containing the primary read access key.
-{{% /md %}}</dd>
+    <dd>A `primary_read_key` block as defined below containing the primary read access key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1116,8 +1116,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoreprimarywritekey">List[Configuration<wbr>Store<wbr>Primary<wbr>Write<wbr>Key]</a></span>
     </dt>
-    <dd>{{% md %}}A `primary_write_key` block as defined below containing the primary write access key.
-{{% /md %}}</dd>
+    <dd>A `primary_write_key` block as defined below containing the primary write access key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1125,8 +1125,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the App Configuration. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the App Configuration. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1134,8 +1134,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoresecondaryreadkey">List[Configuration<wbr>Store<wbr>Secondary<wbr>Read<wbr>Key]</a></span>
     </dt>
-    <dd>{{% md %}}A `secondary_read_key` block as defined below containing the secondary read access key.
-{{% /md %}}</dd>
+    <dd>A `secondary_read_key` block as defined below containing the secondary read access key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1143,8 +1143,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#configurationstoresecondarywritekey">List[Configuration<wbr>Store<wbr>Secondary<wbr>Write<wbr>Key]</a></span>
     </dt>
-    <dd>{{% md %}}A `secondary_write_key` block as defined below containing the secondary write access key.
-{{% /md %}}</dd>
+    <dd>A `secondary_write_key` block as defined below containing the secondary write access key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1152,8 +1152,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SKU name of the the App Configuration. Possible values are `free` and `standard`.
-{{% /md %}}</dd>
+    <dd>The SKU name of the the App Configuration. Possible values are `free` and `standard`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1161,11 +1161,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1180,18 +1180,18 @@ The following state arguments are supported:
 
 
 <h4 id="configurationstoreprimaryreadkey">Configuration<wbr>Store<wbr>Primary<wbr>Read<wbr>Key</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#ConfigurationStorePrimaryReadKey">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appconfiguration?tab=doc#ConfigurationStorePrimaryReadKeyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1200,8 +1200,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
-{{% /md %}}</dd>
+    <dd>The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1209,8 +1209,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Access Key.
-{{% /md %}}</dd>
+    <dd>The ID of the Access Key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1218,14 +1218,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secret of the Access Key.
-{{% /md %}}</dd>
+    <dd>The Secret of the Access Key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1234,8 +1234,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
-{{% /md %}}</dd>
+    <dd>The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1243,8 +1243,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Access Key.
-{{% /md %}}</dd>
+    <dd>The ID of the Access Key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1252,14 +1252,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secret of the Access Key.
-{{% /md %}}</dd>
+    <dd>The Secret of the Access Key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1268,8 +1268,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
-{{% /md %}}</dd>
+    <dd>The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1277,8 +1277,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Access Key.
-{{% /md %}}</dd>
+    <dd>The ID of the Access Key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1286,14 +1286,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secret of the Access Key.
-{{% /md %}}</dd>
+    <dd>The Secret of the Access Key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1302,8 +1302,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
-{{% /md %}}</dd>
+    <dd>The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1311,8 +1311,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Access Key.
-{{% /md %}}</dd>
+    <dd>The ID of the Access Key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1320,29 +1320,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Secret of the Access Key.
-{{% /md %}}</dd>
+    <dd>The Secret of the Access Key.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="configurationstoreprimarywritekey">Configuration<wbr>Store<wbr>Primary<wbr>Write<wbr>Key</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#ConfigurationStorePrimaryWriteKey">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appconfiguration?tab=doc#ConfigurationStorePrimaryWriteKeyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1351,8 +1351,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
-{{% /md %}}</dd>
+    <dd>The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1360,8 +1360,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Access Key.
-{{% /md %}}</dd>
+    <dd>The ID of the Access Key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1369,14 +1369,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secret of the Access Key.
-{{% /md %}}</dd>
+    <dd>The Secret of the Access Key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1385,8 +1385,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
-{{% /md %}}</dd>
+    <dd>The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1394,8 +1394,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Access Key.
-{{% /md %}}</dd>
+    <dd>The ID of the Access Key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1403,14 +1403,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secret of the Access Key.
-{{% /md %}}</dd>
+    <dd>The Secret of the Access Key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1419,8 +1419,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
-{{% /md %}}</dd>
+    <dd>The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1428,8 +1428,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Access Key.
-{{% /md %}}</dd>
+    <dd>The ID of the Access Key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1437,14 +1437,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secret of the Access Key.
-{{% /md %}}</dd>
+    <dd>The Secret of the Access Key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1453,8 +1453,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
-{{% /md %}}</dd>
+    <dd>The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1462,8 +1462,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Access Key.
-{{% /md %}}</dd>
+    <dd>The ID of the Access Key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1471,29 +1471,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Secret of the Access Key.
-{{% /md %}}</dd>
+    <dd>The Secret of the Access Key.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="configurationstoresecondaryreadkey">Configuration<wbr>Store<wbr>Secondary<wbr>Read<wbr>Key</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#ConfigurationStoreSecondaryReadKey">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appconfiguration?tab=doc#ConfigurationStoreSecondaryReadKeyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1502,8 +1502,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
-{{% /md %}}</dd>
+    <dd>The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1511,8 +1511,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Access Key.
-{{% /md %}}</dd>
+    <dd>The ID of the Access Key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1520,14 +1520,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secret of the Access Key.
-{{% /md %}}</dd>
+    <dd>The Secret of the Access Key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1536,8 +1536,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
-{{% /md %}}</dd>
+    <dd>The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1545,8 +1545,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Access Key.
-{{% /md %}}</dd>
+    <dd>The ID of the Access Key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1554,14 +1554,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secret of the Access Key.
-{{% /md %}}</dd>
+    <dd>The Secret of the Access Key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1570,8 +1570,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
-{{% /md %}}</dd>
+    <dd>The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1579,8 +1579,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Access Key.
-{{% /md %}}</dd>
+    <dd>The ID of the Access Key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1588,14 +1588,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secret of the Access Key.
-{{% /md %}}</dd>
+    <dd>The Secret of the Access Key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1604,8 +1604,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
-{{% /md %}}</dd>
+    <dd>The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1613,8 +1613,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Access Key.
-{{% /md %}}</dd>
+    <dd>The ID of the Access Key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1622,29 +1622,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Secret of the Access Key.
-{{% /md %}}</dd>
+    <dd>The Secret of the Access Key.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="configurationstoresecondarywritekey">Configuration<wbr>Store<wbr>Secondary<wbr>Write<wbr>Key</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#ConfigurationStoreSecondaryWriteKey">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/appconfiguration?tab=doc#ConfigurationStoreSecondaryWriteKeyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1653,8 +1653,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
-{{% /md %}}</dd>
+    <dd>The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1662,8 +1662,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Access Key.
-{{% /md %}}</dd>
+    <dd>The ID of the Access Key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1671,14 +1671,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secret of the Access Key.
-{{% /md %}}</dd>
+    <dd>The Secret of the Access Key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1687,8 +1687,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
-{{% /md %}}</dd>
+    <dd>The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1696,8 +1696,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Access Key.
-{{% /md %}}</dd>
+    <dd>The ID of the Access Key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1705,14 +1705,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secret of the Access Key.
-{{% /md %}}</dd>
+    <dd>The Secret of the Access Key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1721,8 +1721,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
-{{% /md %}}</dd>
+    <dd>The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1730,8 +1730,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Access Key.
-{{% /md %}}</dd>
+    <dd>The ID of the Access Key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1739,14 +1739,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secret of the Access Key.
-{{% /md %}}</dd>
+    <dd>The Secret of the Access Key.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1755,8 +1755,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
-{{% /md %}}</dd>
+    <dd>The Connection String for this Access Key - comprising of the Endpoint, ID and Secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1764,8 +1764,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Access Key.
-{{% /md %}}</dd>
+    <dd>The ID of the Access Key.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1773,11 +1773,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Secret of the Access Key.
-{{% /md %}}</dd>
+    <dd>The Secret of the Access Key.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

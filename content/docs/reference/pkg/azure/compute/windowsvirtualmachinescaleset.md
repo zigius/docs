@@ -24,26 +24,26 @@ Manages a Windows Virtual Machine Scale Set.
 
 
 ## Create a WindowsVirtualMachineScaleSet Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/compute/#WindowsVirtualMachineScaleSet">WindowsVirtualMachineScaleSet</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/compute/#WindowsVirtualMachineScaleSetArgs">WindowsVirtualMachineScaleSetArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">WindowsVirtualMachineScaleSet</span><span class="p">(resource_name, opts=None, </span>additional_capabilities=None<span class="p">, </span>additional_unattend_contents=None<span class="p">, </span>admin_password=None<span class="p">, </span>admin_username=None<span class="p">, </span>automatic_os_upgrade_policy=None<span class="p">, </span>boot_diagnostics=None<span class="p">, </span>computer_name_prefix=None<span class="p">, </span>custom_data=None<span class="p">, </span>data_disks=None<span class="p">, </span>do_not_run_extensions_on_overprovisioned_machines=None<span class="p">, </span>enable_automatic_updates=None<span class="p">, </span>eviction_policy=None<span class="p">, </span>health_probe_id=None<span class="p">, </span>identity=None<span class="p">, </span>instances=None<span class="p">, </span>license_type=None<span class="p">, </span>location=None<span class="p">, </span>max_bid_price=None<span class="p">, </span>name=None<span class="p">, </span>network_interfaces=None<span class="p">, </span>os_disk=None<span class="p">, </span>overprovision=None<span class="p">, </span>plan=None<span class="p">, </span>priority=None<span class="p">, </span>provision_vm_agent=None<span class="p">, </span>proximity_placement_group_id=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>rolling_upgrade_policy=None<span class="p">, </span>scale_in_policy=None<span class="p">, </span>secrets=None<span class="p">, </span>single_placement_group=None<span class="p">, </span>sku=None<span class="p">, </span>source_image_id=None<span class="p">, </span>source_image_reference=None<span class="p">, </span>tags=None<span class="p">, </span>terminate_notification=None<span class="p">, </span>timezone=None<span class="p">, </span>upgrade_mode=None<span class="p">, </span>winrm_listeners=None<span class="p">, </span>zone_balance=None<span class="p">, </span>zones=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewWindowsVirtualMachineScaleSet<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetArgs">WindowsVirtualMachineScaleSetArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSet">WindowsVirtualMachineScaleSet</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Compute.WindowsVirtualMachineScaleSet.html">WindowsVirtualMachineScaleSet</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Compute.WindowsVirtualMachineScaleSetArgs.html">WindowsVirtualMachineScaleSetArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -80,9 +80,9 @@ Manages a Windows Virtual Machine Scale Set.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -100,9 +100,9 @@ Manages a Windows Virtual Machine Scale Set.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -149,9 +149,9 @@ Manages a Windows Virtual Machine Scale Set.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -188,7 +188,7 @@ Manages a Windows Virtual Machine Scale Set.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## WindowsVirtualMachineScaleSet Resource Properties {#properties}
 
@@ -201,7 +201,7 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -210,8 +210,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -219,8 +219,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The username of the local administrator on each Virtual Machine Scale Set instance. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The username of the local administrator on each Virtual Machine Scale Set instance. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -228,8 +228,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of Virtual Machines in the Scale Set.
-{{% /md %}}</dd>
+    <dd>The number of Virtual Machines in the Scale Set.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -237,8 +237,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetnetworkinterface">List&lt;Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `network_interface` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `network_interface` blocks as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -246,8 +246,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetosdisk">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Os<wbr>Disk<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}An `os_disk` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `os_disk` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -255,8 +255,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Resource Group in which the Windows Virtual Machine Scale Set should be exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Resource Group in which the Windows Virtual Machine Scale Set should be exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -264,8 +264,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
-{{% /md %}}</dd>
+    <dd>The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -273,8 +273,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetadditionalcapabilities">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Additional<wbr>Capabilities<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `additional_capabilities` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `additional_capabilities` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -282,8 +282,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetadditionalunattendcontent">List&lt;Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Additional<wbr>Unattend<wbr>Content<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `additional_unattend_content` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `additional_unattend_content` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -291,8 +291,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetautomaticosupgradepolicy">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Automatic<wbr>Os<wbr>Upgrade<wbr>Policy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `automatic_os_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic`.
-{{% /md %}}</dd>
+    <dd>A `automatic_os_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -300,8 +300,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetbootdiagnostics">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Boot<wbr>Diagnostics<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `boot_diagnostics` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `boot_diagnostics` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -309,8 +309,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The prefix which should be used for the name of the Virtual Machines in this Scale Set. If unspecified this defaults to the value for the `name` field.
-{{% /md %}}</dd>
+    <dd>The prefix which should be used for the name of the Virtual Machines in this Scale Set. If unspecified this defaults to the value for the `name` field.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -318,8 +318,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-Encoded Custom Data which should be used for this Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>The Base64-Encoded Custom Data which should be used for this Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -327,8 +327,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetdatadisk">List&lt;Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Data<wbr>Disk<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `data_disk` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `data_disk` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -336,8 +336,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Virtual Machine Extensions be run on Overprovisioned Virtual Machines in the Scale Set? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Virtual Machine Extensions be run on Overprovisioned Virtual Machines in the Scale Set? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -345,8 +345,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Are automatic updates enabled for this Virtual Machine? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Are automatic updates enabled for this Virtual Machine? Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -354,8 +354,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Policy which should be used Virtual Machines are Evicted from the Scale Set. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Policy which should be used Virtual Machines are Evicted from the Scale Set. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -363,8 +363,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a Load Balancer Probe which should be used to determine the health of an instance. Changing this forces a new resource to be created. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
-{{% /md %}}</dd>
+    <dd>The ID of a Load Balancer Probe which should be used to determine the health of an instance. Changing this forces a new resource to be created. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -372,8 +372,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetidentity">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Identity<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -381,8 +381,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of on-premise license (also known as [Azure Hybrid Use Benefit](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing)) which should be used for this Virtual Machine Scale Set. Possible values are `None`, `Windows_Client` and `Windows_Server`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the type of on-premise license (also known as [Azure Hybrid Use Benefit](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing)) which should be used for this Virtual Machine Scale Set. Possible values are `None`, `Windows_Client` and `Windows_Server`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -390,8 +390,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the Windows Virtual Machine Scale Set should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Azure location where the Windows Virtual Machine Scale Set should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -399,8 +399,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}The maximum price you're willing to pay for each Virtual Machine in this Scale Set, in US Dollars; which must be greater than the current spot price. If this bid price falls below the current spot price the Virtual Machines in the Scale Set will be evicted using the `eviction_policy`. Defaults to `-1`, which means that each Virtual Machine in the Scale Set should not be evicted for price reasons.
-{{% /md %}}</dd>
+    <dd>The maximum price you're willing to pay for each Virtual Machine in this Scale Set, in US Dollars; which must be greater than the current spot price. If this bid price falls below the current spot price the Virtual Machines in the Scale Set will be evicted using the `eviction_policy`. Defaults to `-1`, which means that each Virtual Machine in the Scale Set should not be evicted for price reasons.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -408,8 +408,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -417,8 +417,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Azure over-provision Virtual Machines in this Scale Set? This means that multiple Virtual Machines will be provisioned and Azure will keep the instances which become available first - which improves provisioning success rates and improves deployment time. You're not billed for these over-provisioned VM's and they don't count towards the Subscription Quota. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Azure over-provision Virtual Machines in this Scale Set? This means that multiple Virtual Machines will be provisioned and Azure will keep the instances which become available first - which improves provisioning success rates and improves deployment time. You're not billed for these over-provisioned VM's and they don't count towards the Subscription Quota. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -426,7 +426,7 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetplan">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Plan<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -434,8 +434,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Priority of this Virtual Machine Scale Set. Possible values are `Regular` and `Spot`. Defaults to `Regular`. Changing this value forces a new resource.
-{{% /md %}}</dd>
+    <dd>The Priority of this Virtual Machine Scale Set. Possible values are `Regular` and `Spot`. Defaults to `Regular`. Changing this value forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -443,8 +443,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to `true`. Changing this value forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to `true`. Changing this value forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -452,8 +452,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Proximity Placement Group in which the Virtual Machine Scale Set should be assigned to. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Proximity Placement Group in which the Virtual Machine Scale Set should be assigned to. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -461,8 +461,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetrollingupgradepolicy">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Rolling<wbr>Upgrade<wbr>Policy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `rolling_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
-{{% /md %}}</dd>
+    <dd>A `rolling_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -470,8 +470,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The scale-in policy rule that decides which virtual machines are chosen for removal when a Virtual Machine Scale Set is scaled in. Possible values for the scale-in policy rules are `Default`, `NewestVM` and `OldestVM`, defaults to `Default`. For more information about scale in policy, please [refer to this doc](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy).
-{{% /md %}}</dd>
+    <dd>The scale-in policy rule that decides which virtual machines are chosen for removal when a Virtual Machine Scale Set is scaled in. Possible values for the scale-in policy rules are `Default`, `NewestVM` and `OldestVM`, defaults to `Default`. For more information about scale in policy, please [refer to this doc](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -479,8 +479,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetsecret">List&lt;Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Secret<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `secret` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `secret` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -488,8 +488,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should this Virtual Machine Scale Set be limited to a Single Placement Group, which means the number of instances will be capped at 100 Virtual Machines. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should this Virtual Machine Scale Set be limited to a Single Placement Group, which means the number of instances will be capped at 100 Virtual Machines. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -497,8 +497,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of an Image which each Virtual Machine in this Scale Set should be based on.
-{{% /md %}}</dd>
+    <dd>The ID of an Image which each Virtual Machine in this Scale Set should be based on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -506,8 +506,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetsourceimagereference">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Source<wbr>Image<wbr>Reference<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `source_image_reference` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `source_image_reference` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -515,8 +515,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags which should be assigned to this Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>A mapping of tags which should be assigned to this Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -524,8 +524,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetterminatenotification">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Terminate<wbr>Notification<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `terminate_notification` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `terminate_notification` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -533,8 +533,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time zone of the virtual machine, [the possible values are defined here](https://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
-{{% /md %}}</dd>
+    <dd>Specifies the time zone of the virtual machine, [the possible values are defined here](https://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -542,8 +542,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how Upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are `Automatic`, `Manual` and `Rolling`. Defaults to `Manual`.
-{{% /md %}}</dd>
+    <dd>Specifies how Upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are `Automatic`, `Manual` and `Rolling`. Defaults to `Manual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -551,8 +551,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetwinrmlistener">List&lt;Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Winrm<wbr>Listener<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `winrm_listener` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `winrm_listener` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -560,8 +560,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Virtual Machines in this Scale Set be strictly evenly distributed across Availability Zones? Defaults to `false`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should the Virtual Machines in this Scale Set be strictly evenly distributed across Availability Zones? Defaults to `false`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -569,14 +569,14 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Availability Zones in which the Virtual Machines in this Scale Set should be created in. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A list of Availability Zones in which the Virtual Machines in this Scale Set should be created in. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -585,8 +585,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -594,8 +594,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username of the local administrator on each Virtual Machine Scale Set instance. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The username of the local administrator on each Virtual Machine Scale Set instance. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -603,8 +603,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of Virtual Machines in the Scale Set.
-{{% /md %}}</dd>
+    <dd>The number of Virtual Machines in the Scale Set.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -612,8 +612,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetnetworkinterface">[]Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface</a></span>
     </dt>
-    <dd>{{% md %}}One or more `network_interface` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `network_interface` blocks as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -621,8 +621,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetosdisk">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Os<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}An `os_disk` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `os_disk` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -630,8 +630,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Resource Group in which the Windows Virtual Machine Scale Set should be exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Resource Group in which the Windows Virtual Machine Scale Set should be exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -639,8 +639,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
-{{% /md %}}</dd>
+    <dd>The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -648,8 +648,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetadditionalcapabilities">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Additional<wbr>Capabilities</a></span>
     </dt>
-    <dd>{{% md %}}A `additional_capabilities` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `additional_capabilities` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -657,8 +657,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetadditionalunattendcontent">[]Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Additional<wbr>Unattend<wbr>Content</a></span>
     </dt>
-    <dd>{{% md %}}One or more `additional_unattend_content` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `additional_unattend_content` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -666,8 +666,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetautomaticosupgradepolicy">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Automatic<wbr>Os<wbr>Upgrade<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}A `automatic_os_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic`.
-{{% /md %}}</dd>
+    <dd>A `automatic_os_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -675,8 +675,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetbootdiagnostics">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Boot<wbr>Diagnostics</a></span>
     </dt>
-    <dd>{{% md %}}A `boot_diagnostics` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `boot_diagnostics` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -684,8 +684,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The prefix which should be used for the name of the Virtual Machines in this Scale Set. If unspecified this defaults to the value for the `name` field.
-{{% /md %}}</dd>
+    <dd>The prefix which should be used for the name of the Virtual Machines in this Scale Set. If unspecified this defaults to the value for the `name` field.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -693,8 +693,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-Encoded Custom Data which should be used for this Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>The Base64-Encoded Custom Data which should be used for this Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -702,8 +702,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetdatadisk">[]Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Data<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}One or more `data_disk` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `data_disk` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -711,8 +711,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Virtual Machine Extensions be run on Overprovisioned Virtual Machines in the Scale Set? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Virtual Machine Extensions be run on Overprovisioned Virtual Machines in the Scale Set? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -720,8 +720,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Are automatic updates enabled for this Virtual Machine? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Are automatic updates enabled for this Virtual Machine? Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -729,8 +729,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Policy which should be used Virtual Machines are Evicted from the Scale Set. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Policy which should be used Virtual Machines are Evicted from the Scale Set. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -738,8 +738,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a Load Balancer Probe which should be used to determine the health of an instance. Changing this forces a new resource to be created. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
-{{% /md %}}</dd>
+    <dd>The ID of a Load Balancer Probe which should be used to determine the health of an instance. Changing this forces a new resource to be created. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -747,8 +747,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetidentity">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Identity</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -756,8 +756,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of on-premise license (also known as [Azure Hybrid Use Benefit](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing)) which should be used for this Virtual Machine Scale Set. Possible values are `None`, `Windows_Client` and `Windows_Server`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the type of on-premise license (also known as [Azure Hybrid Use Benefit](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing)) which should be used for this Virtual Machine Scale Set. Possible values are `None`, `Windows_Client` and `Windows_Server`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -765,8 +765,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the Windows Virtual Machine Scale Set should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Azure location where the Windows Virtual Machine Scale Set should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -774,8 +774,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}The maximum price you're willing to pay for each Virtual Machine in this Scale Set, in US Dollars; which must be greater than the current spot price. If this bid price falls below the current spot price the Virtual Machines in the Scale Set will be evicted using the `eviction_policy`. Defaults to `-1`, which means that each Virtual Machine in the Scale Set should not be evicted for price reasons.
-{{% /md %}}</dd>
+    <dd>The maximum price you're willing to pay for each Virtual Machine in this Scale Set, in US Dollars; which must be greater than the current spot price. If this bid price falls below the current spot price the Virtual Machines in the Scale Set will be evicted using the `eviction_policy`. Defaults to `-1`, which means that each Virtual Machine in the Scale Set should not be evicted for price reasons.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -783,8 +783,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -792,8 +792,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Azure over-provision Virtual Machines in this Scale Set? This means that multiple Virtual Machines will be provisioned and Azure will keep the instances which become available first - which improves provisioning success rates and improves deployment time. You're not billed for these over-provisioned VM's and they don't count towards the Subscription Quota. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Azure over-provision Virtual Machines in this Scale Set? This means that multiple Virtual Machines will be provisioned and Azure will keep the instances which become available first - which improves provisioning success rates and improves deployment time. You're not billed for these over-provisioned VM's and they don't count towards the Subscription Quota. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -801,7 +801,7 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetplan">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Plan</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -809,8 +809,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Priority of this Virtual Machine Scale Set. Possible values are `Regular` and `Spot`. Defaults to `Regular`. Changing this value forces a new resource.
-{{% /md %}}</dd>
+    <dd>The Priority of this Virtual Machine Scale Set. Possible values are `Regular` and `Spot`. Defaults to `Regular`. Changing this value forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -818,8 +818,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to `true`. Changing this value forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to `true`. Changing this value forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -827,8 +827,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Proximity Placement Group in which the Virtual Machine Scale Set should be assigned to. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Proximity Placement Group in which the Virtual Machine Scale Set should be assigned to. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -836,8 +836,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetrollingupgradepolicy">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Rolling<wbr>Upgrade<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}A `rolling_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
-{{% /md %}}</dd>
+    <dd>A `rolling_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -845,8 +845,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The scale-in policy rule that decides which virtual machines are chosen for removal when a Virtual Machine Scale Set is scaled in. Possible values for the scale-in policy rules are `Default`, `NewestVM` and `OldestVM`, defaults to `Default`. For more information about scale in policy, please [refer to this doc](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy).
-{{% /md %}}</dd>
+    <dd>The scale-in policy rule that decides which virtual machines are chosen for removal when a Virtual Machine Scale Set is scaled in. Possible values for the scale-in policy rules are `Default`, `NewestVM` and `OldestVM`, defaults to `Default`. For more information about scale in policy, please [refer to this doc](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -854,8 +854,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetsecret">[]Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Secret</a></span>
     </dt>
-    <dd>{{% md %}}One or more `secret` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `secret` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -863,8 +863,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should this Virtual Machine Scale Set be limited to a Single Placement Group, which means the number of instances will be capped at 100 Virtual Machines. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should this Virtual Machine Scale Set be limited to a Single Placement Group, which means the number of instances will be capped at 100 Virtual Machines. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -872,8 +872,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of an Image which each Virtual Machine in this Scale Set should be based on.
-{{% /md %}}</dd>
+    <dd>The ID of an Image which each Virtual Machine in this Scale Set should be based on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -881,8 +881,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetsourceimagereference">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Source<wbr>Image<wbr>Reference</a></span>
     </dt>
-    <dd>{{% md %}}A `source_image_reference` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `source_image_reference` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -890,8 +890,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags which should be assigned to this Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>A mapping of tags which should be assigned to this Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -899,8 +899,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetterminatenotification">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Terminate<wbr>Notification</a></span>
     </dt>
-    <dd>{{% md %}}A `terminate_notification` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `terminate_notification` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -908,8 +908,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time zone of the virtual machine, [the possible values are defined here](https://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
-{{% /md %}}</dd>
+    <dd>Specifies the time zone of the virtual machine, [the possible values are defined here](https://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -917,8 +917,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how Upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are `Automatic`, `Manual` and `Rolling`. Defaults to `Manual`.
-{{% /md %}}</dd>
+    <dd>Specifies how Upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are `Automatic`, `Manual` and `Rolling`. Defaults to `Manual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -926,8 +926,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetwinrmlistener">[]Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Winrm<wbr>Listener</a></span>
     </dt>
-    <dd>{{% md %}}One or more `winrm_listener` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `winrm_listener` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -935,8 +935,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Virtual Machines in this Scale Set be strictly evenly distributed across Availability Zones? Defaults to `false`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should the Virtual Machines in this Scale Set be strictly evenly distributed across Availability Zones? Defaults to `false`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -944,14 +944,14 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of Availability Zones in which the Virtual Machines in this Scale Set should be created in. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A list of Availability Zones in which the Virtual Machines in this Scale Set should be created in. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -960,8 +960,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -969,8 +969,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username of the local administrator on each Virtual Machine Scale Set instance. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The username of the local administrator on each Virtual Machine Scale Set instance. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -978,8 +978,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of Virtual Machines in the Scale Set.
-{{% /md %}}</dd>
+    <dd>The number of Virtual Machines in the Scale Set.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -987,8 +987,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetnetworkinterface">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `network_interface` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `network_interface` blocks as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -996,8 +996,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetosdisk">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Os<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}An `os_disk` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `os_disk` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1005,8 +1005,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Resource Group in which the Windows Virtual Machine Scale Set should be exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Resource Group in which the Windows Virtual Machine Scale Set should be exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1014,8 +1014,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
-{{% /md %}}</dd>
+    <dd>The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1023,8 +1023,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetadditionalcapabilities">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Additional<wbr>Capabilities</a></span>
     </dt>
-    <dd>{{% md %}}A `additional_capabilities` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `additional_capabilities` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1032,8 +1032,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetadditionalunattendcontent">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Additional<wbr>Unattend<wbr>Content[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `additional_unattend_content` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `additional_unattend_content` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1041,8 +1041,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetautomaticosupgradepolicy">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Automatic<wbr>Os<wbr>Upgrade<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}A `automatic_os_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic`.
-{{% /md %}}</dd>
+    <dd>A `automatic_os_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1050,8 +1050,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetbootdiagnostics">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Boot<wbr>Diagnostics</a></span>
     </dt>
-    <dd>{{% md %}}A `boot_diagnostics` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `boot_diagnostics` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1059,8 +1059,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The prefix which should be used for the name of the Virtual Machines in this Scale Set. If unspecified this defaults to the value for the `name` field.
-{{% /md %}}</dd>
+    <dd>The prefix which should be used for the name of the Virtual Machines in this Scale Set. If unspecified this defaults to the value for the `name` field.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1068,8 +1068,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-Encoded Custom Data which should be used for this Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>The Base64-Encoded Custom Data which should be used for this Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1077,8 +1077,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetdatadisk">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Data<wbr>Disk[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `data_disk` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `data_disk` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1086,8 +1086,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should Virtual Machine Extensions be run on Overprovisioned Virtual Machines in the Scale Set? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Virtual Machine Extensions be run on Overprovisioned Virtual Machines in the Scale Set? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1095,8 +1095,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Are automatic updates enabled for this Virtual Machine? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Are automatic updates enabled for this Virtual Machine? Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1104,8 +1104,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Policy which should be used Virtual Machines are Evicted from the Scale Set. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Policy which should be used Virtual Machines are Evicted from the Scale Set. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1113,8 +1113,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a Load Balancer Probe which should be used to determine the health of an instance. Changing this forces a new resource to be created. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
-{{% /md %}}</dd>
+    <dd>The ID of a Load Balancer Probe which should be used to determine the health of an instance. Changing this forces a new resource to be created. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1122,8 +1122,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetidentity">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Identity</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1131,8 +1131,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of on-premise license (also known as [Azure Hybrid Use Benefit](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing)) which should be used for this Virtual Machine Scale Set. Possible values are `None`, `Windows_Client` and `Windows_Server`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the type of on-premise license (also known as [Azure Hybrid Use Benefit](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing)) which should be used for this Virtual Machine Scale Set. Possible values are `None`, `Windows_Client` and `Windows_Server`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1140,8 +1140,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the Windows Virtual Machine Scale Set should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Azure location where the Windows Virtual Machine Scale Set should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1149,8 +1149,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum price you're willing to pay for each Virtual Machine in this Scale Set, in US Dollars; which must be greater than the current spot price. If this bid price falls below the current spot price the Virtual Machines in the Scale Set will be evicted using the `eviction_policy`. Defaults to `-1`, which means that each Virtual Machine in the Scale Set should not be evicted for price reasons.
-{{% /md %}}</dd>
+    <dd>The maximum price you're willing to pay for each Virtual Machine in this Scale Set, in US Dollars; which must be greater than the current spot price. If this bid price falls below the current spot price the Virtual Machines in the Scale Set will be evicted using the `eviction_policy`. Defaults to `-1`, which means that each Virtual Machine in the Scale Set should not be evicted for price reasons.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1158,8 +1158,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1167,8 +1167,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should Azure over-provision Virtual Machines in this Scale Set? This means that multiple Virtual Machines will be provisioned and Azure will keep the instances which become available first - which improves provisioning success rates and improves deployment time. You're not billed for these over-provisioned VM's and they don't count towards the Subscription Quota. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Azure over-provision Virtual Machines in this Scale Set? This means that multiple Virtual Machines will be provisioned and Azure will keep the instances which become available first - which improves provisioning success rates and improves deployment time. You're not billed for these over-provisioned VM's and they don't count towards the Subscription Quota. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1176,7 +1176,7 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetplan">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Plan</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1184,8 +1184,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Priority of this Virtual Machine Scale Set. Possible values are `Regular` and `Spot`. Defaults to `Regular`. Changing this value forces a new resource.
-{{% /md %}}</dd>
+    <dd>The Priority of this Virtual Machine Scale Set. Possible values are `Regular` and `Spot`. Defaults to `Regular`. Changing this value forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1193,8 +1193,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to `true`. Changing this value forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to `true`. Changing this value forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1202,8 +1202,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Proximity Placement Group in which the Virtual Machine Scale Set should be assigned to. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Proximity Placement Group in which the Virtual Machine Scale Set should be assigned to. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1211,8 +1211,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetrollingupgradepolicy">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Rolling<wbr>Upgrade<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}A `rolling_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
-{{% /md %}}</dd>
+    <dd>A `rolling_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1220,8 +1220,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The scale-in policy rule that decides which virtual machines are chosen for removal when a Virtual Machine Scale Set is scaled in. Possible values for the scale-in policy rules are `Default`, `NewestVM` and `OldestVM`, defaults to `Default`. For more information about scale in policy, please [refer to this doc](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy).
-{{% /md %}}</dd>
+    <dd>The scale-in policy rule that decides which virtual machines are chosen for removal when a Virtual Machine Scale Set is scaled in. Possible values for the scale-in policy rules are `Default`, `NewestVM` and `OldestVM`, defaults to `Default`. For more information about scale in policy, please [refer to this doc](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1229,8 +1229,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetsecret">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Secret[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `secret` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `secret` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1238,8 +1238,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should this Virtual Machine Scale Set be limited to a Single Placement Group, which means the number of instances will be capped at 100 Virtual Machines. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should this Virtual Machine Scale Set be limited to a Single Placement Group, which means the number of instances will be capped at 100 Virtual Machines. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1247,8 +1247,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of an Image which each Virtual Machine in this Scale Set should be based on.
-{{% /md %}}</dd>
+    <dd>The ID of an Image which each Virtual Machine in this Scale Set should be based on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1256,8 +1256,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetsourceimagereference">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Source<wbr>Image<wbr>Reference</a></span>
     </dt>
-    <dd>{{% md %}}A `source_image_reference` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `source_image_reference` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1265,8 +1265,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags which should be assigned to this Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>A mapping of tags which should be assigned to this Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1274,8 +1274,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetterminatenotification">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Terminate<wbr>Notification</a></span>
     </dt>
-    <dd>{{% md %}}A `terminate_notification` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `terminate_notification` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1283,8 +1283,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time zone of the virtual machine, [the possible values are defined here](https://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
-{{% /md %}}</dd>
+    <dd>Specifies the time zone of the virtual machine, [the possible values are defined here](https://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1292,8 +1292,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how Upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are `Automatic`, `Manual` and `Rolling`. Defaults to `Manual`.
-{{% /md %}}</dd>
+    <dd>Specifies how Upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are `Automatic`, `Manual` and `Rolling`. Defaults to `Manual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1301,8 +1301,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetwinrmlistener">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Winrm<wbr>Listener[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `winrm_listener` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `winrm_listener` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1310,8 +1310,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the Virtual Machines in this Scale Set be strictly evenly distributed across Availability Zones? Defaults to `false`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should the Virtual Machines in this Scale Set be strictly evenly distributed across Availability Zones? Defaults to `false`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1319,14 +1319,14 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Availability Zones in which the Virtual Machines in this Scale Set should be created in. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A list of Availability Zones in which the Virtual Machines in this Scale Set should be created in. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1335,8 +1335,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1344,8 +1344,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The username of the local administrator on each Virtual Machine Scale Set instance. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The username of the local administrator on each Virtual Machine Scale Set instance. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1353,8 +1353,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of Virtual Machines in the Scale Set.
-{{% /md %}}</dd>
+    <dd>The number of Virtual Machines in the Scale Set.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1362,8 +1362,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetnetworkinterface">List[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `network_interface` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `network_interface` blocks as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1371,8 +1371,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetosdisk">Dict[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Os<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}An `os_disk` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `os_disk` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1380,8 +1380,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Resource Group in which the Windows Virtual Machine Scale Set should be exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Resource Group in which the Windows Virtual Machine Scale Set should be exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1389,8 +1389,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
-{{% /md %}}</dd>
+    <dd>The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1398,8 +1398,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetadditionalcapabilities">Dict[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Additional<wbr>Capabilities]</a></span>
     </dt>
-    <dd>{{% md %}}A `additional_capabilities` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `additional_capabilities` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1407,8 +1407,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetadditionalunattendcontent">List[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Additional<wbr>Unattend<wbr>Content]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `additional_unattend_content` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `additional_unattend_content` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1416,8 +1416,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetautomaticosupgradepolicy">Dict[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Automatic<wbr>Os<wbr>Upgrade<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}A `automatic_os_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic`.
-{{% /md %}}</dd>
+    <dd>A `automatic_os_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1425,8 +1425,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetbootdiagnostics">Dict[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Boot<wbr>Diagnostics]</a></span>
     </dt>
-    <dd>{{% md %}}A `boot_diagnostics` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `boot_diagnostics` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1434,8 +1434,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The prefix which should be used for the name of the Virtual Machines in this Scale Set. If unspecified this defaults to the value for the `name` field.
-{{% /md %}}</dd>
+    <dd>The prefix which should be used for the name of the Virtual Machines in this Scale Set. If unspecified this defaults to the value for the `name` field.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1443,8 +1443,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-Encoded Custom Data which should be used for this Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>The Base64-Encoded Custom Data which should be used for this Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1452,8 +1452,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetdatadisk">List[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Data<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `data_disk` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `data_disk` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1461,8 +1461,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Virtual Machine Extensions be run on Overprovisioned Virtual Machines in the Scale Set? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Virtual Machine Extensions be run on Overprovisioned Virtual Machines in the Scale Set? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1470,8 +1470,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Are automatic updates enabled for this Virtual Machine? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Are automatic updates enabled for this Virtual Machine? Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1479,8 +1479,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Policy which should be used Virtual Machines are Evicted from the Scale Set. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Policy which should be used Virtual Machines are Evicted from the Scale Set. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1488,8 +1488,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a Load Balancer Probe which should be used to determine the health of an instance. Changing this forces a new resource to be created. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
-{{% /md %}}</dd>
+    <dd>The ID of a Load Balancer Probe which should be used to determine the health of an instance. Changing this forces a new resource to be created. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1497,8 +1497,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetidentity">Dict[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Identity]</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1506,8 +1506,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of on-premise license (also known as [Azure Hybrid Use Benefit](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing)) which should be used for this Virtual Machine Scale Set. Possible values are `None`, `Windows_Client` and `Windows_Server`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the type of on-premise license (also known as [Azure Hybrid Use Benefit](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing)) which should be used for this Virtual Machine Scale Set. Possible values are `None`, `Windows_Client` and `Windows_Server`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1515,8 +1515,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the Windows Virtual Machine Scale Set should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Azure location where the Windows Virtual Machine Scale Set should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1524,8 +1524,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum price you're willing to pay for each Virtual Machine in this Scale Set, in US Dollars; which must be greater than the current spot price. If this bid price falls below the current spot price the Virtual Machines in the Scale Set will be evicted using the `eviction_policy`. Defaults to `-1`, which means that each Virtual Machine in the Scale Set should not be evicted for price reasons.
-{{% /md %}}</dd>
+    <dd>The maximum price you're willing to pay for each Virtual Machine in this Scale Set, in US Dollars; which must be greater than the current spot price. If this bid price falls below the current spot price the Virtual Machines in the Scale Set will be evicted using the `eviction_policy`. Defaults to `-1`, which means that each Virtual Machine in the Scale Set should not be evicted for price reasons.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1533,8 +1533,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1542,8 +1542,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Azure over-provision Virtual Machines in this Scale Set? This means that multiple Virtual Machines will be provisioned and Azure will keep the instances which become available first - which improves provisioning success rates and improves deployment time. You're not billed for these over-provisioned VM's and they don't count towards the Subscription Quota. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Azure over-provision Virtual Machines in this Scale Set? This means that multiple Virtual Machines will be provisioned and Azure will keep the instances which become available first - which improves provisioning success rates and improves deployment time. You're not billed for these over-provisioned VM's and they don't count towards the Subscription Quota. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1551,7 +1551,7 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetplan">Dict[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Plan]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1559,8 +1559,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Priority of this Virtual Machine Scale Set. Possible values are `Regular` and `Spot`. Defaults to `Regular`. Changing this value forces a new resource.
-{{% /md %}}</dd>
+    <dd>The Priority of this Virtual Machine Scale Set. Possible values are `Regular` and `Spot`. Defaults to `Regular`. Changing this value forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1568,8 +1568,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to `true`. Changing this value forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to `true`. Changing this value forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1577,8 +1577,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Proximity Placement Group in which the Virtual Machine Scale Set should be assigned to. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Proximity Placement Group in which the Virtual Machine Scale Set should be assigned to. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1586,8 +1586,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetrollingupgradepolicy">Dict[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Rolling<wbr>Upgrade<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}A `rolling_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
-{{% /md %}}</dd>
+    <dd>A `rolling_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1595,8 +1595,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The scale-in policy rule that decides which virtual machines are chosen for removal when a Virtual Machine Scale Set is scaled in. Possible values for the scale-in policy rules are `Default`, `NewestVM` and `OldestVM`, defaults to `Default`. For more information about scale in policy, please [refer to this doc](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy).
-{{% /md %}}</dd>
+    <dd>The scale-in policy rule that decides which virtual machines are chosen for removal when a Virtual Machine Scale Set is scaled in. Possible values for the scale-in policy rules are `Default`, `NewestVM` and `OldestVM`, defaults to `Default`. For more information about scale in policy, please [refer to this doc](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1604,8 +1604,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetsecret">List[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Secret]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `secret` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `secret` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1613,8 +1613,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should this Virtual Machine Scale Set be limited to a Single Placement Group, which means the number of instances will be capped at 100 Virtual Machines. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should this Virtual Machine Scale Set be limited to a Single Placement Group, which means the number of instances will be capped at 100 Virtual Machines. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1622,8 +1622,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of an Image which each Virtual Machine in this Scale Set should be based on.
-{{% /md %}}</dd>
+    <dd>The ID of an Image which each Virtual Machine in this Scale Set should be based on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1631,8 +1631,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetsourceimagereference">Dict[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Source<wbr>Image<wbr>Reference]</a></span>
     </dt>
-    <dd>{{% md %}}A `source_image_reference` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `source_image_reference` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1640,8 +1640,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags which should be assigned to this Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>A mapping of tags which should be assigned to this Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1649,8 +1649,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetterminatenotification">Dict[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Terminate<wbr>Notification]</a></span>
     </dt>
-    <dd>{{% md %}}A `terminate_notification` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `terminate_notification` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1658,8 +1658,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time zone of the virtual machine, [the possible values are defined here](https://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
-{{% /md %}}</dd>
+    <dd>Specifies the time zone of the virtual machine, [the possible values are defined here](https://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1667,8 +1667,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how Upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are `Automatic`, `Manual` and `Rolling`. Defaults to `Manual`.
-{{% /md %}}</dd>
+    <dd>Specifies how Upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are `Automatic`, `Manual` and `Rolling`. Defaults to `Manual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1676,8 +1676,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetwinrmlistener">List[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Winrm<wbr>Listener]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `winrm_listener` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `winrm_listener` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1685,8 +1685,8 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Virtual Machines in this Scale Set be strictly evenly distributed across Availability Zones? Defaults to `false`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should the Virtual Machines in this Scale Set be strictly evenly distributed across Availability Zones? Defaults to `false`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1694,11 +1694,11 @@ The WindowsVirtualMachineScaleSet resource accepts the following [input]({{< rel
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Availability Zones in which the Virtual Machines in this Scale Set should be created in. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A list of Availability Zones in which the Virtual Machines in this Scale Set should be created in. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1712,7 +1712,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1721,7 +1721,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1729,14 +1729,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Unique ID for this Windows Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>The Unique ID for this Windows Virtual Machine Scale Set.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1745,7 +1745,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1753,14 +1753,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Unique ID for this Windows Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>The Unique ID for this Windows Virtual Machine Scale Set.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1769,7 +1769,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1777,14 +1777,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Unique ID for this Windows Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>The Unique ID for this Windows Virtual Machine Scale Set.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1793,7 +1793,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1801,11 +1801,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Unique ID for this Windows Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>The Unique ID for this Windows Virtual Machine Scale Set.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1816,25 +1816,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing WindowsVirtualMachineScaleSet Resource {#look-up}
 
 Get an existing WindowsVirtualMachineScaleSet resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/compute/#WindowsVirtualMachineScaleSetState">WindowsVirtualMachineScaleSetState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/compute/#WindowsVirtualMachineScaleSet">WindowsVirtualMachineScaleSet</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>additional_capabilities=None<span class="p">, </span>additional_unattend_contents=None<span class="p">, </span>admin_password=None<span class="p">, </span>admin_username=None<span class="p">, </span>automatic_os_upgrade_policy=None<span class="p">, </span>boot_diagnostics=None<span class="p">, </span>computer_name_prefix=None<span class="p">, </span>custom_data=None<span class="p">, </span>data_disks=None<span class="p">, </span>do_not_run_extensions_on_overprovisioned_machines=None<span class="p">, </span>enable_automatic_updates=None<span class="p">, </span>eviction_policy=None<span class="p">, </span>health_probe_id=None<span class="p">, </span>identity=None<span class="p">, </span>instances=None<span class="p">, </span>license_type=None<span class="p">, </span>location=None<span class="p">, </span>max_bid_price=None<span class="p">, </span>name=None<span class="p">, </span>network_interfaces=None<span class="p">, </span>os_disk=None<span class="p">, </span>overprovision=None<span class="p">, </span>plan=None<span class="p">, </span>priority=None<span class="p">, </span>provision_vm_agent=None<span class="p">, </span>proximity_placement_group_id=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>rolling_upgrade_policy=None<span class="p">, </span>scale_in_policy=None<span class="p">, </span>secrets=None<span class="p">, </span>single_placement_group=None<span class="p">, </span>sku=None<span class="p">, </span>source_image_id=None<span class="p">, </span>source_image_reference=None<span class="p">, </span>tags=None<span class="p">, </span>terminate_notification=None<span class="p">, </span>timezone=None<span class="p">, </span>unique_id=None<span class="p">, </span>upgrade_mode=None<span class="p">, </span>winrm_listeners=None<span class="p">, </span>zone_balance=None<span class="p">, </span>zones=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetWindowsVirtualMachineScaleSet<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetState">WindowsVirtualMachineScaleSetState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSet">WindowsVirtualMachineScaleSet</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Compute.WindowsVirtualMachineScaleSet.html">WindowsVirtualMachineScaleSet</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Compute.WindowsVirtualMachineScaleSetState.html">WindowsVirtualMachineScaleSetState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1859,9 +1859,9 @@ Get an existing WindowsVirtualMachineScaleSet resource's state with the given na
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1874,36 +1874,9 @@ Get an existing WindowsVirtualMachineScaleSet resource's state with the given na
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1928,13 +1901,40 @@ Get an existing WindowsVirtualMachineScaleSet resource's state with the given na
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1943,8 +1943,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetadditionalcapabilities">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Additional<wbr>Capabilities<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `additional_capabilities` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `additional_capabilities` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1952,8 +1952,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetadditionalunattendcontent">List&lt;Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Additional<wbr>Unattend<wbr>Content<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `additional_unattend_content` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `additional_unattend_content` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1961,8 +1961,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1970,8 +1970,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The username of the local administrator on each Virtual Machine Scale Set instance. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The username of the local administrator on each Virtual Machine Scale Set instance. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1979,8 +1979,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetautomaticosupgradepolicy">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Automatic<wbr>Os<wbr>Upgrade<wbr>Policy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `automatic_os_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic`.
-{{% /md %}}</dd>
+    <dd>A `automatic_os_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1988,8 +1988,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetbootdiagnostics">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Boot<wbr>Diagnostics<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `boot_diagnostics` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `boot_diagnostics` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1997,8 +1997,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The prefix which should be used for the name of the Virtual Machines in this Scale Set. If unspecified this defaults to the value for the `name` field.
-{{% /md %}}</dd>
+    <dd>The prefix which should be used for the name of the Virtual Machines in this Scale Set. If unspecified this defaults to the value for the `name` field.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2006,8 +2006,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-Encoded Custom Data which should be used for this Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>The Base64-Encoded Custom Data which should be used for this Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2015,8 +2015,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetdatadisk">List&lt;Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Data<wbr>Disk<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `data_disk` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `data_disk` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2024,8 +2024,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Virtual Machine Extensions be run on Overprovisioned Virtual Machines in the Scale Set? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Virtual Machine Extensions be run on Overprovisioned Virtual Machines in the Scale Set? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2033,8 +2033,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Are automatic updates enabled for this Virtual Machine? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Are automatic updates enabled for this Virtual Machine? Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2042,8 +2042,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Policy which should be used Virtual Machines are Evicted from the Scale Set. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Policy which should be used Virtual Machines are Evicted from the Scale Set. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2051,8 +2051,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a Load Balancer Probe which should be used to determine the health of an instance. Changing this forces a new resource to be created. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
-{{% /md %}}</dd>
+    <dd>The ID of a Load Balancer Probe which should be used to determine the health of an instance. Changing this forces a new resource to be created. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2060,8 +2060,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetidentity">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Identity<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2069,8 +2069,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of Virtual Machines in the Scale Set.
-{{% /md %}}</dd>
+    <dd>The number of Virtual Machines in the Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2078,8 +2078,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of on-premise license (also known as [Azure Hybrid Use Benefit](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing)) which should be used for this Virtual Machine Scale Set. Possible values are `None`, `Windows_Client` and `Windows_Server`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the type of on-premise license (also known as [Azure Hybrid Use Benefit](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing)) which should be used for this Virtual Machine Scale Set. Possible values are `None`, `Windows_Client` and `Windows_Server`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2087,8 +2087,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the Windows Virtual Machine Scale Set should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Azure location where the Windows Virtual Machine Scale Set should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2096,8 +2096,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}The maximum price you're willing to pay for each Virtual Machine in this Scale Set, in US Dollars; which must be greater than the current spot price. If this bid price falls below the current spot price the Virtual Machines in the Scale Set will be evicted using the `eviction_policy`. Defaults to `-1`, which means that each Virtual Machine in the Scale Set should not be evicted for price reasons.
-{{% /md %}}</dd>
+    <dd>The maximum price you're willing to pay for each Virtual Machine in this Scale Set, in US Dollars; which must be greater than the current spot price. If this bid price falls below the current spot price the Virtual Machines in the Scale Set will be evicted using the `eviction_policy`. Defaults to `-1`, which means that each Virtual Machine in the Scale Set should not be evicted for price reasons.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2105,8 +2105,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2114,8 +2114,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetnetworkinterface">List&lt;Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `network_interface` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `network_interface` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2123,8 +2123,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetosdisk">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Os<wbr>Disk<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}An `os_disk` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `os_disk` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2132,8 +2132,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Azure over-provision Virtual Machines in this Scale Set? This means that multiple Virtual Machines will be provisioned and Azure will keep the instances which become available first - which improves provisioning success rates and improves deployment time. You're not billed for these over-provisioned VM's and they don't count towards the Subscription Quota. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Azure over-provision Virtual Machines in this Scale Set? This means that multiple Virtual Machines will be provisioned and Azure will keep the instances which become available first - which improves provisioning success rates and improves deployment time. You're not billed for these over-provisioned VM's and they don't count towards the Subscription Quota. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2141,7 +2141,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetplan">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Plan<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2149,8 +2149,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Priority of this Virtual Machine Scale Set. Possible values are `Regular` and `Spot`. Defaults to `Regular`. Changing this value forces a new resource.
-{{% /md %}}</dd>
+    <dd>The Priority of this Virtual Machine Scale Set. Possible values are `Regular` and `Spot`. Defaults to `Regular`. Changing this value forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2158,8 +2158,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to `true`. Changing this value forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to `true`. Changing this value forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2167,8 +2167,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Proximity Placement Group in which the Virtual Machine Scale Set should be assigned to. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Proximity Placement Group in which the Virtual Machine Scale Set should be assigned to. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2176,8 +2176,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Resource Group in which the Windows Virtual Machine Scale Set should be exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Resource Group in which the Windows Virtual Machine Scale Set should be exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2185,8 +2185,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetrollingupgradepolicy">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Rolling<wbr>Upgrade<wbr>Policy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `rolling_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
-{{% /md %}}</dd>
+    <dd>A `rolling_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2194,8 +2194,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The scale-in policy rule that decides which virtual machines are chosen for removal when a Virtual Machine Scale Set is scaled in. Possible values for the scale-in policy rules are `Default`, `NewestVM` and `OldestVM`, defaults to `Default`. For more information about scale in policy, please [refer to this doc](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy).
-{{% /md %}}</dd>
+    <dd>The scale-in policy rule that decides which virtual machines are chosen for removal when a Virtual Machine Scale Set is scaled in. Possible values for the scale-in policy rules are `Default`, `NewestVM` and `OldestVM`, defaults to `Default`. For more information about scale in policy, please [refer to this doc](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2203,8 +2203,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetsecret">List&lt;Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Secret<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `secret` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `secret` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2212,8 +2212,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should this Virtual Machine Scale Set be limited to a Single Placement Group, which means the number of instances will be capped at 100 Virtual Machines. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should this Virtual Machine Scale Set be limited to a Single Placement Group, which means the number of instances will be capped at 100 Virtual Machines. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2221,8 +2221,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
-{{% /md %}}</dd>
+    <dd>The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2230,8 +2230,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of an Image which each Virtual Machine in this Scale Set should be based on.
-{{% /md %}}</dd>
+    <dd>The ID of an Image which each Virtual Machine in this Scale Set should be based on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2239,8 +2239,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetsourceimagereference">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Source<wbr>Image<wbr>Reference<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `source_image_reference` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `source_image_reference` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2248,8 +2248,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags which should be assigned to this Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>A mapping of tags which should be assigned to this Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2257,8 +2257,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetterminatenotification">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Terminate<wbr>Notification<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `terminate_notification` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `terminate_notification` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2266,8 +2266,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time zone of the virtual machine, [the possible values are defined here](https://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
-{{% /md %}}</dd>
+    <dd>Specifies the time zone of the virtual machine, [the possible values are defined here](https://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2275,8 +2275,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Unique ID for this Windows Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>The Unique ID for this Windows Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2284,8 +2284,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how Upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are `Automatic`, `Manual` and `Rolling`. Defaults to `Manual`.
-{{% /md %}}</dd>
+    <dd>Specifies how Upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are `Automatic`, `Manual` and `Rolling`. Defaults to `Manual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2293,8 +2293,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetwinrmlistener">List&lt;Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Winrm<wbr>Listener<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `winrm_listener` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `winrm_listener` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2302,8 +2302,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Virtual Machines in this Scale Set be strictly evenly distributed across Availability Zones? Defaults to `false`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should the Virtual Machines in this Scale Set be strictly evenly distributed across Availability Zones? Defaults to `false`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2311,14 +2311,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Availability Zones in which the Virtual Machines in this Scale Set should be created in. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A list of Availability Zones in which the Virtual Machines in this Scale Set should be created in. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2327,8 +2327,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetadditionalcapabilities">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Additional<wbr>Capabilities</a></span>
     </dt>
-    <dd>{{% md %}}A `additional_capabilities` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `additional_capabilities` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2336,8 +2336,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetadditionalunattendcontent">[]Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Additional<wbr>Unattend<wbr>Content</a></span>
     </dt>
-    <dd>{{% md %}}One or more `additional_unattend_content` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `additional_unattend_content` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2345,8 +2345,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2354,8 +2354,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username of the local administrator on each Virtual Machine Scale Set instance. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The username of the local administrator on each Virtual Machine Scale Set instance. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2363,8 +2363,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetautomaticosupgradepolicy">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Automatic<wbr>Os<wbr>Upgrade<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}A `automatic_os_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic`.
-{{% /md %}}</dd>
+    <dd>A `automatic_os_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2372,8 +2372,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetbootdiagnostics">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Boot<wbr>Diagnostics</a></span>
     </dt>
-    <dd>{{% md %}}A `boot_diagnostics` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `boot_diagnostics` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2381,8 +2381,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The prefix which should be used for the name of the Virtual Machines in this Scale Set. If unspecified this defaults to the value for the `name` field.
-{{% /md %}}</dd>
+    <dd>The prefix which should be used for the name of the Virtual Machines in this Scale Set. If unspecified this defaults to the value for the `name` field.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2390,8 +2390,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-Encoded Custom Data which should be used for this Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>The Base64-Encoded Custom Data which should be used for this Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2399,8 +2399,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetdatadisk">[]Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Data<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}One or more `data_disk` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `data_disk` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2408,8 +2408,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Virtual Machine Extensions be run on Overprovisioned Virtual Machines in the Scale Set? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Virtual Machine Extensions be run on Overprovisioned Virtual Machines in the Scale Set? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2417,8 +2417,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Are automatic updates enabled for this Virtual Machine? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Are automatic updates enabled for this Virtual Machine? Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2426,8 +2426,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Policy which should be used Virtual Machines are Evicted from the Scale Set. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Policy which should be used Virtual Machines are Evicted from the Scale Set. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2435,8 +2435,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a Load Balancer Probe which should be used to determine the health of an instance. Changing this forces a new resource to be created. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
-{{% /md %}}</dd>
+    <dd>The ID of a Load Balancer Probe which should be used to determine the health of an instance. Changing this forces a new resource to be created. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2444,8 +2444,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetidentity">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Identity</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2453,8 +2453,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of Virtual Machines in the Scale Set.
-{{% /md %}}</dd>
+    <dd>The number of Virtual Machines in the Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2462,8 +2462,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of on-premise license (also known as [Azure Hybrid Use Benefit](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing)) which should be used for this Virtual Machine Scale Set. Possible values are `None`, `Windows_Client` and `Windows_Server`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the type of on-premise license (also known as [Azure Hybrid Use Benefit](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing)) which should be used for this Virtual Machine Scale Set. Possible values are `None`, `Windows_Client` and `Windows_Server`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2471,8 +2471,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the Windows Virtual Machine Scale Set should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Azure location where the Windows Virtual Machine Scale Set should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2480,8 +2480,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}The maximum price you're willing to pay for each Virtual Machine in this Scale Set, in US Dollars; which must be greater than the current spot price. If this bid price falls below the current spot price the Virtual Machines in the Scale Set will be evicted using the `eviction_policy`. Defaults to `-1`, which means that each Virtual Machine in the Scale Set should not be evicted for price reasons.
-{{% /md %}}</dd>
+    <dd>The maximum price you're willing to pay for each Virtual Machine in this Scale Set, in US Dollars; which must be greater than the current spot price. If this bid price falls below the current spot price the Virtual Machines in the Scale Set will be evicted using the `eviction_policy`. Defaults to `-1`, which means that each Virtual Machine in the Scale Set should not be evicted for price reasons.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2489,8 +2489,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2498,8 +2498,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetnetworkinterface">[]Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface</a></span>
     </dt>
-    <dd>{{% md %}}One or more `network_interface` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `network_interface` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2507,8 +2507,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetosdisk">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Os<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}An `os_disk` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `os_disk` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2516,8 +2516,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Azure over-provision Virtual Machines in this Scale Set? This means that multiple Virtual Machines will be provisioned and Azure will keep the instances which become available first - which improves provisioning success rates and improves deployment time. You're not billed for these over-provisioned VM's and they don't count towards the Subscription Quota. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Azure over-provision Virtual Machines in this Scale Set? This means that multiple Virtual Machines will be provisioned and Azure will keep the instances which become available first - which improves provisioning success rates and improves deployment time. You're not billed for these over-provisioned VM's and they don't count towards the Subscription Quota. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2525,7 +2525,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetplan">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Plan</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2533,8 +2533,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Priority of this Virtual Machine Scale Set. Possible values are `Regular` and `Spot`. Defaults to `Regular`. Changing this value forces a new resource.
-{{% /md %}}</dd>
+    <dd>The Priority of this Virtual Machine Scale Set. Possible values are `Regular` and `Spot`. Defaults to `Regular`. Changing this value forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2542,8 +2542,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to `true`. Changing this value forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to `true`. Changing this value forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2551,8 +2551,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Proximity Placement Group in which the Virtual Machine Scale Set should be assigned to. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Proximity Placement Group in which the Virtual Machine Scale Set should be assigned to. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2560,8 +2560,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Resource Group in which the Windows Virtual Machine Scale Set should be exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Resource Group in which the Windows Virtual Machine Scale Set should be exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2569,8 +2569,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetrollingupgradepolicy">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Rolling<wbr>Upgrade<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}A `rolling_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
-{{% /md %}}</dd>
+    <dd>A `rolling_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2578,8 +2578,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The scale-in policy rule that decides which virtual machines are chosen for removal when a Virtual Machine Scale Set is scaled in. Possible values for the scale-in policy rules are `Default`, `NewestVM` and `OldestVM`, defaults to `Default`. For more information about scale in policy, please [refer to this doc](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy).
-{{% /md %}}</dd>
+    <dd>The scale-in policy rule that decides which virtual machines are chosen for removal when a Virtual Machine Scale Set is scaled in. Possible values for the scale-in policy rules are `Default`, `NewestVM` and `OldestVM`, defaults to `Default`. For more information about scale in policy, please [refer to this doc](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2587,8 +2587,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetsecret">[]Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Secret</a></span>
     </dt>
-    <dd>{{% md %}}One or more `secret` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `secret` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2596,8 +2596,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should this Virtual Machine Scale Set be limited to a Single Placement Group, which means the number of instances will be capped at 100 Virtual Machines. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should this Virtual Machine Scale Set be limited to a Single Placement Group, which means the number of instances will be capped at 100 Virtual Machines. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2605,8 +2605,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
-{{% /md %}}</dd>
+    <dd>The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2614,8 +2614,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of an Image which each Virtual Machine in this Scale Set should be based on.
-{{% /md %}}</dd>
+    <dd>The ID of an Image which each Virtual Machine in this Scale Set should be based on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2623,8 +2623,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetsourceimagereference">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Source<wbr>Image<wbr>Reference</a></span>
     </dt>
-    <dd>{{% md %}}A `source_image_reference` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `source_image_reference` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2632,8 +2632,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags which should be assigned to this Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>A mapping of tags which should be assigned to this Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2641,8 +2641,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetterminatenotification">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Terminate<wbr>Notification</a></span>
     </dt>
-    <dd>{{% md %}}A `terminate_notification` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `terminate_notification` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2650,8 +2650,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time zone of the virtual machine, [the possible values are defined here](https://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
-{{% /md %}}</dd>
+    <dd>Specifies the time zone of the virtual machine, [the possible values are defined here](https://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2659,8 +2659,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Unique ID for this Windows Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>The Unique ID for this Windows Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2668,8 +2668,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how Upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are `Automatic`, `Manual` and `Rolling`. Defaults to `Manual`.
-{{% /md %}}</dd>
+    <dd>Specifies how Upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are `Automatic`, `Manual` and `Rolling`. Defaults to `Manual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2677,8 +2677,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetwinrmlistener">[]Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Winrm<wbr>Listener</a></span>
     </dt>
-    <dd>{{% md %}}One or more `winrm_listener` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `winrm_listener` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2686,8 +2686,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Virtual Machines in this Scale Set be strictly evenly distributed across Availability Zones? Defaults to `false`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should the Virtual Machines in this Scale Set be strictly evenly distributed across Availability Zones? Defaults to `false`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2695,14 +2695,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of Availability Zones in which the Virtual Machines in this Scale Set should be created in. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A list of Availability Zones in which the Virtual Machines in this Scale Set should be created in. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2711,8 +2711,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetadditionalcapabilities">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Additional<wbr>Capabilities</a></span>
     </dt>
-    <dd>{{% md %}}A `additional_capabilities` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `additional_capabilities` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2720,8 +2720,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetadditionalunattendcontent">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Additional<wbr>Unattend<wbr>Content[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `additional_unattend_content` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `additional_unattend_content` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2729,8 +2729,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2738,8 +2738,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username of the local administrator on each Virtual Machine Scale Set instance. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The username of the local administrator on each Virtual Machine Scale Set instance. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2747,8 +2747,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetautomaticosupgradepolicy">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Automatic<wbr>Os<wbr>Upgrade<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}A `automatic_os_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic`.
-{{% /md %}}</dd>
+    <dd>A `automatic_os_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2756,8 +2756,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetbootdiagnostics">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Boot<wbr>Diagnostics</a></span>
     </dt>
-    <dd>{{% md %}}A `boot_diagnostics` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `boot_diagnostics` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2765,8 +2765,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The prefix which should be used for the name of the Virtual Machines in this Scale Set. If unspecified this defaults to the value for the `name` field.
-{{% /md %}}</dd>
+    <dd>The prefix which should be used for the name of the Virtual Machines in this Scale Set. If unspecified this defaults to the value for the `name` field.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2774,8 +2774,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-Encoded Custom Data which should be used for this Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>The Base64-Encoded Custom Data which should be used for this Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2783,8 +2783,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetdatadisk">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Data<wbr>Disk[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `data_disk` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `data_disk` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2792,8 +2792,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should Virtual Machine Extensions be run on Overprovisioned Virtual Machines in the Scale Set? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Virtual Machine Extensions be run on Overprovisioned Virtual Machines in the Scale Set? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2801,8 +2801,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Are automatic updates enabled for this Virtual Machine? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Are automatic updates enabled for this Virtual Machine? Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2810,8 +2810,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Policy which should be used Virtual Machines are Evicted from the Scale Set. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Policy which should be used Virtual Machines are Evicted from the Scale Set. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2819,8 +2819,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a Load Balancer Probe which should be used to determine the health of an instance. Changing this forces a new resource to be created. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
-{{% /md %}}</dd>
+    <dd>The ID of a Load Balancer Probe which should be used to determine the health of an instance. Changing this forces a new resource to be created. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2828,8 +2828,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetidentity">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Identity</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2837,8 +2837,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of Virtual Machines in the Scale Set.
-{{% /md %}}</dd>
+    <dd>The number of Virtual Machines in the Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2846,8 +2846,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of on-premise license (also known as [Azure Hybrid Use Benefit](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing)) which should be used for this Virtual Machine Scale Set. Possible values are `None`, `Windows_Client` and `Windows_Server`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the type of on-premise license (also known as [Azure Hybrid Use Benefit](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing)) which should be used for this Virtual Machine Scale Set. Possible values are `None`, `Windows_Client` and `Windows_Server`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2855,8 +2855,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the Windows Virtual Machine Scale Set should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Azure location where the Windows Virtual Machine Scale Set should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2864,8 +2864,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum price you're willing to pay for each Virtual Machine in this Scale Set, in US Dollars; which must be greater than the current spot price. If this bid price falls below the current spot price the Virtual Machines in the Scale Set will be evicted using the `eviction_policy`. Defaults to `-1`, which means that each Virtual Machine in the Scale Set should not be evicted for price reasons.
-{{% /md %}}</dd>
+    <dd>The maximum price you're willing to pay for each Virtual Machine in this Scale Set, in US Dollars; which must be greater than the current spot price. If this bid price falls below the current spot price the Virtual Machines in the Scale Set will be evicted using the `eviction_policy`. Defaults to `-1`, which means that each Virtual Machine in the Scale Set should not be evicted for price reasons.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2873,8 +2873,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2882,8 +2882,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetnetworkinterface">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `network_interface` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `network_interface` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2891,8 +2891,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetosdisk">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Os<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}An `os_disk` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `os_disk` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2900,8 +2900,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should Azure over-provision Virtual Machines in this Scale Set? This means that multiple Virtual Machines will be provisioned and Azure will keep the instances which become available first - which improves provisioning success rates and improves deployment time. You're not billed for these over-provisioned VM's and they don't count towards the Subscription Quota. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Azure over-provision Virtual Machines in this Scale Set? This means that multiple Virtual Machines will be provisioned and Azure will keep the instances which become available first - which improves provisioning success rates and improves deployment time. You're not billed for these over-provisioned VM's and they don't count towards the Subscription Quota. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2909,7 +2909,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetplan">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Plan</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2917,8 +2917,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Priority of this Virtual Machine Scale Set. Possible values are `Regular` and `Spot`. Defaults to `Regular`. Changing this value forces a new resource.
-{{% /md %}}</dd>
+    <dd>The Priority of this Virtual Machine Scale Set. Possible values are `Regular` and `Spot`. Defaults to `Regular`. Changing this value forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2926,8 +2926,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to `true`. Changing this value forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to `true`. Changing this value forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2935,8 +2935,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Proximity Placement Group in which the Virtual Machine Scale Set should be assigned to. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Proximity Placement Group in which the Virtual Machine Scale Set should be assigned to. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2944,8 +2944,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Resource Group in which the Windows Virtual Machine Scale Set should be exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Resource Group in which the Windows Virtual Machine Scale Set should be exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2953,8 +2953,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetrollingupgradepolicy">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Rolling<wbr>Upgrade<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}A `rolling_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
-{{% /md %}}</dd>
+    <dd>A `rolling_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2962,8 +2962,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The scale-in policy rule that decides which virtual machines are chosen for removal when a Virtual Machine Scale Set is scaled in. Possible values for the scale-in policy rules are `Default`, `NewestVM` and `OldestVM`, defaults to `Default`. For more information about scale in policy, please [refer to this doc](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy).
-{{% /md %}}</dd>
+    <dd>The scale-in policy rule that decides which virtual machines are chosen for removal when a Virtual Machine Scale Set is scaled in. Possible values for the scale-in policy rules are `Default`, `NewestVM` and `OldestVM`, defaults to `Default`. For more information about scale in policy, please [refer to this doc](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2971,8 +2971,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetsecret">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Secret[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `secret` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `secret` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2980,8 +2980,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should this Virtual Machine Scale Set be limited to a Single Placement Group, which means the number of instances will be capped at 100 Virtual Machines. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should this Virtual Machine Scale Set be limited to a Single Placement Group, which means the number of instances will be capped at 100 Virtual Machines. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2989,8 +2989,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
-{{% /md %}}</dd>
+    <dd>The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2998,8 +2998,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of an Image which each Virtual Machine in this Scale Set should be based on.
-{{% /md %}}</dd>
+    <dd>The ID of an Image which each Virtual Machine in this Scale Set should be based on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3007,8 +3007,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetsourceimagereference">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Source<wbr>Image<wbr>Reference</a></span>
     </dt>
-    <dd>{{% md %}}A `source_image_reference` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `source_image_reference` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3016,8 +3016,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags which should be assigned to this Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>A mapping of tags which should be assigned to this Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3025,8 +3025,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetterminatenotification">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Terminate<wbr>Notification</a></span>
     </dt>
-    <dd>{{% md %}}A `terminate_notification` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `terminate_notification` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3034,8 +3034,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time zone of the virtual machine, [the possible values are defined here](https://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
-{{% /md %}}</dd>
+    <dd>Specifies the time zone of the virtual machine, [the possible values are defined here](https://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3043,8 +3043,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Unique ID for this Windows Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>The Unique ID for this Windows Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3052,8 +3052,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how Upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are `Automatic`, `Manual` and `Rolling`. Defaults to `Manual`.
-{{% /md %}}</dd>
+    <dd>Specifies how Upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are `Automatic`, `Manual` and `Rolling`. Defaults to `Manual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3061,8 +3061,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetwinrmlistener">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Winrm<wbr>Listener[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `winrm_listener` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `winrm_listener` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3070,8 +3070,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the Virtual Machines in this Scale Set be strictly evenly distributed across Availability Zones? Defaults to `false`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should the Virtual Machines in this Scale Set be strictly evenly distributed across Availability Zones? Defaults to `false`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3079,14 +3079,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Availability Zones in which the Virtual Machines in this Scale Set should be created in. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A list of Availability Zones in which the Virtual Machines in this Scale Set should be created in. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3095,8 +3095,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetadditionalcapabilities">Dict[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Additional<wbr>Capabilities]</a></span>
     </dt>
-    <dd>{{% md %}}A `additional_capabilities` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `additional_capabilities` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3104,8 +3104,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetadditionalunattendcontent">List[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Additional<wbr>Unattend<wbr>Content]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `additional_unattend_content` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `additional_unattend_content` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3113,8 +3113,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Password which should be used for the local-administrator on this Virtual Machine. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3122,8 +3122,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The username of the local administrator on each Virtual Machine Scale Set instance. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The username of the local administrator on each Virtual Machine Scale Set instance. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3131,8 +3131,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetautomaticosupgradepolicy">Dict[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Automatic<wbr>Os<wbr>Upgrade<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}A `automatic_os_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic`.
-{{% /md %}}</dd>
+    <dd>A `automatic_os_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3140,8 +3140,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetbootdiagnostics">Dict[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Boot<wbr>Diagnostics]</a></span>
     </dt>
-    <dd>{{% md %}}A `boot_diagnostics` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `boot_diagnostics` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3149,8 +3149,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The prefix which should be used for the name of the Virtual Machines in this Scale Set. If unspecified this defaults to the value for the `name` field.
-{{% /md %}}</dd>
+    <dd>The prefix which should be used for the name of the Virtual Machines in this Scale Set. If unspecified this defaults to the value for the `name` field.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3158,8 +3158,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-Encoded Custom Data which should be used for this Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>The Base64-Encoded Custom Data which should be used for this Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3167,8 +3167,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetdatadisk">List[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Data<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `data_disk` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `data_disk` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3176,8 +3176,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Virtual Machine Extensions be run on Overprovisioned Virtual Machines in the Scale Set? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Virtual Machine Extensions be run on Overprovisioned Virtual Machines in the Scale Set? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3185,8 +3185,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Are automatic updates enabled for this Virtual Machine? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Are automatic updates enabled for this Virtual Machine? Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3194,8 +3194,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Policy which should be used Virtual Machines are Evicted from the Scale Set. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Policy which should be used Virtual Machines are Evicted from the Scale Set. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3203,8 +3203,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a Load Balancer Probe which should be used to determine the health of an instance. Changing this forces a new resource to be created. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
-{{% /md %}}</dd>
+    <dd>The ID of a Load Balancer Probe which should be used to determine the health of an instance. Changing this forces a new resource to be created. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3212,8 +3212,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetidentity">Dict[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Identity]</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3221,8 +3221,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of Virtual Machines in the Scale Set.
-{{% /md %}}</dd>
+    <dd>The number of Virtual Machines in the Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3230,8 +3230,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the type of on-premise license (also known as [Azure Hybrid Use Benefit](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing)) which should be used for this Virtual Machine Scale Set. Possible values are `None`, `Windows_Client` and `Windows_Server`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the type of on-premise license (also known as [Azure Hybrid Use Benefit](https://docs.microsoft.com/azure/virtual-machines/virtual-machines-windows-hybrid-use-benefit-licensing)) which should be used for this Virtual Machine Scale Set. Possible values are `None`, `Windows_Client` and `Windows_Server`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3239,8 +3239,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Azure location where the Windows Virtual Machine Scale Set should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Azure location where the Windows Virtual Machine Scale Set should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3248,8 +3248,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum price you're willing to pay for each Virtual Machine in this Scale Set, in US Dollars; which must be greater than the current spot price. If this bid price falls below the current spot price the Virtual Machines in the Scale Set will be evicted using the `eviction_policy`. Defaults to `-1`, which means that each Virtual Machine in the Scale Set should not be evicted for price reasons.
-{{% /md %}}</dd>
+    <dd>The maximum price you're willing to pay for each Virtual Machine in this Scale Set, in US Dollars; which must be greater than the current spot price. If this bid price falls below the current spot price the Virtual Machines in the Scale Set will be evicted using the `eviction_policy`. Defaults to `-1`, which means that each Virtual Machine in the Scale Set should not be evicted for price reasons.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3257,8 +3257,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3266,8 +3266,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetnetworkinterface">List[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `network_interface` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `network_interface` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3275,8 +3275,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetosdisk">Dict[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Os<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}An `os_disk` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `os_disk` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3284,8 +3284,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Azure over-provision Virtual Machines in this Scale Set? This means that multiple Virtual Machines will be provisioned and Azure will keep the instances which become available first - which improves provisioning success rates and improves deployment time. You're not billed for these over-provisioned VM's and they don't count towards the Subscription Quota. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Azure over-provision Virtual Machines in this Scale Set? This means that multiple Virtual Machines will be provisioned and Azure will keep the instances which become available first - which improves provisioning success rates and improves deployment time. You're not billed for these over-provisioned VM's and they don't count towards the Subscription Quota. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3293,7 +3293,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetplan">Dict[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Plan]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3301,8 +3301,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Priority of this Virtual Machine Scale Set. Possible values are `Regular` and `Spot`. Defaults to `Regular`. Changing this value forces a new resource.
-{{% /md %}}</dd>
+    <dd>The Priority of this Virtual Machine Scale Set. Possible values are `Regular` and `Spot`. Defaults to `Regular`. Changing this value forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3310,8 +3310,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to `true`. Changing this value forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should the Azure VM Agent be provisioned on each Virtual Machine in the Scale Set? Defaults to `true`. Changing this value forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3319,8 +3319,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Proximity Placement Group in which the Virtual Machine Scale Set should be assigned to. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Proximity Placement Group in which the Virtual Machine Scale Set should be assigned to. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3328,8 +3328,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Resource Group in which the Windows Virtual Machine Scale Set should be exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Resource Group in which the Windows Virtual Machine Scale Set should be exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3337,8 +3337,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetrollingupgradepolicy">Dict[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Rolling<wbr>Upgrade<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}A `rolling_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
-{{% /md %}}</dd>
+    <dd>A `rolling_upgrade_policy` block as defined below. This is Required and can only be specified when `upgrade_mode` is set to `Automatic` or `Rolling`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3346,8 +3346,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The scale-in policy rule that decides which virtual machines are chosen for removal when a Virtual Machine Scale Set is scaled in. Possible values for the scale-in policy rules are `Default`, `NewestVM` and `OldestVM`, defaults to `Default`. For more information about scale in policy, please [refer to this doc](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy).
-{{% /md %}}</dd>
+    <dd>The scale-in policy rule that decides which virtual machines are chosen for removal when a Virtual Machine Scale Set is scaled in. Possible values for the scale-in policy rules are `Default`, `NewestVM` and `OldestVM`, defaults to `Default`. For more information about scale in policy, please [refer to this doc](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-scale-in-policy).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3355,8 +3355,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetsecret">List[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Secret]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `secret` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `secret` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3364,8 +3364,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should this Virtual Machine Scale Set be limited to a Single Placement Group, which means the number of instances will be capped at 100 Virtual Machines. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should this Virtual Machine Scale Set be limited to a Single Placement Group, which means the number of instances will be capped at 100 Virtual Machines. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3373,8 +3373,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
-{{% /md %}}</dd>
+    <dd>The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3382,8 +3382,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of an Image which each Virtual Machine in this Scale Set should be based on.
-{{% /md %}}</dd>
+    <dd>The ID of an Image which each Virtual Machine in this Scale Set should be based on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3391,8 +3391,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetsourceimagereference">Dict[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Source<wbr>Image<wbr>Reference]</a></span>
     </dt>
-    <dd>{{% md %}}A `source_image_reference` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `source_image_reference` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3400,8 +3400,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags which should be assigned to this Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>A mapping of tags which should be assigned to this Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3409,8 +3409,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetterminatenotification">Dict[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Terminate<wbr>Notification]</a></span>
     </dt>
-    <dd>{{% md %}}A `terminate_notification` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `terminate_notification` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3418,8 +3418,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time zone of the virtual machine, [the possible values are defined here](https://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
-{{% /md %}}</dd>
+    <dd>Specifies the time zone of the virtual machine, [the possible values are defined here](https://jackstromberg.com/2017/01/list-of-time-zones-consumed-by-azure/).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3427,8 +3427,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Unique ID for this Windows Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>The Unique ID for this Windows Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3436,8 +3436,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies how Upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are `Automatic`, `Manual` and `Rolling`. Defaults to `Manual`.
-{{% /md %}}</dd>
+    <dd>Specifies how Upgrades (e.g. changing the Image/SKU) should be performed to Virtual Machine Instances. Possible values are `Automatic`, `Manual` and `Rolling`. Defaults to `Manual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3445,8 +3445,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetwinrmlistener">List[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Winrm<wbr>Listener]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `winrm_listener` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `winrm_listener` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3454,8 +3454,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Virtual Machines in this Scale Set be strictly evenly distributed across Availability Zones? Defaults to `false`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should the Virtual Machines in this Scale Set be strictly evenly distributed across Availability Zones? Defaults to `false`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3463,11 +3463,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Availability Zones in which the Virtual Machines in this Scale Set should be created in. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A list of Availability Zones in which the Virtual Machines in this Scale Set should be created in. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -3482,18 +3482,18 @@ The following state arguments are supported:
 
 
 <h4 id="windowsvirtualmachinescalesetadditionalcapabilities">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Additional<wbr>Capabilities</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#WindowsVirtualMachineScaleSetAdditionalCapabilities">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#WindowsVirtualMachineScaleSetAdditionalCapabilities">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetAdditionalCapabilitiesArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetAdditionalCapabilitiesOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3502,14 +3502,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the capacity to enable Data Disks of the `UltraSSD_LRS` storage account type be supported on this Virtual Machine Scale Set? Defaults to `false`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should the capacity to enable Data Disks of the `UltraSSD_LRS` storage account type be supported on this Virtual Machine Scale Set? Defaults to `false`. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3518,14 +3518,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the capacity to enable Data Disks of the `UltraSSD_LRS` storage account type be supported on this Virtual Machine Scale Set? Defaults to `false`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should the capacity to enable Data Disks of the `UltraSSD_LRS` storage account type be supported on this Virtual Machine Scale Set? Defaults to `false`. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3534,14 +3534,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the capacity to enable Data Disks of the `UltraSSD_LRS` storage account type be supported on this Virtual Machine Scale Set? Defaults to `false`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should the capacity to enable Data Disks of the `UltraSSD_LRS` storage account type be supported on this Virtual Machine Scale Set? Defaults to `false`. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3550,29 +3550,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the capacity to enable Data Disks of the `UltraSSD_LRS` storage account type be supported on this Virtual Machine Scale Set? Defaults to `false`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should the capacity to enable Data Disks of the `UltraSSD_LRS` storage account type be supported on this Virtual Machine Scale Set? Defaults to `false`. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="windowsvirtualmachinescalesetadditionalunattendcontent">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Additional<wbr>Unattend<wbr>Content</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#WindowsVirtualMachineScaleSetAdditionalUnattendContent">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#WindowsVirtualMachineScaleSetAdditionalUnattendContent">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetAdditionalUnattendContentArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetAdditionalUnattendContentOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3581,8 +3581,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The XML formatted content that is added to the unattend.xml file for the specified path and component. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The XML formatted content that is added to the unattend.xml file for the specified path and component. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3590,14 +3590,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the setting to which the content applies. Possible values are `AutoLogon` and `FirstLogonCommands`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the setting to which the content applies. Possible values are `AutoLogon` and `FirstLogonCommands`. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3606,8 +3606,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The XML formatted content that is added to the unattend.xml file for the specified path and component. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The XML formatted content that is added to the unattend.xml file for the specified path and component. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3615,14 +3615,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the setting to which the content applies. Possible values are `AutoLogon` and `FirstLogonCommands`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the setting to which the content applies. Possible values are `AutoLogon` and `FirstLogonCommands`. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3631,8 +3631,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The XML formatted content that is added to the unattend.xml file for the specified path and component. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The XML formatted content that is added to the unattend.xml file for the specified path and component. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3640,14 +3640,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the setting to which the content applies. Possible values are `AutoLogon` and `FirstLogonCommands`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the setting to which the content applies. Possible values are `AutoLogon` and `FirstLogonCommands`. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3656,8 +3656,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The XML formatted content that is added to the unattend.xml file for the specified path and component. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The XML formatted content that is added to the unattend.xml file for the specified path and component. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3665,29 +3665,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the setting to which the content applies. Possible values are `AutoLogon` and `FirstLogonCommands`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the setting to which the content applies. Possible values are `AutoLogon` and `FirstLogonCommands`. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="windowsvirtualmachinescalesetautomaticosupgradepolicy">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Automatic<wbr>Os<wbr>Upgrade<wbr>Policy</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#WindowsVirtualMachineScaleSetAutomaticOsUpgradePolicy">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#WindowsVirtualMachineScaleSetAutomaticOsUpgradePolicy">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetAutomaticOsUpgradePolicyArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetAutomaticOsUpgradePolicyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3696,8 +3696,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should automatic rollbacks be disabled? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should automatic rollbacks be disabled? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3705,14 +3705,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should OS Upgrades automatically be applied to Scale Set instances in a rolling fashion when a newer version of the OS Image becomes available? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should OS Upgrades automatically be applied to Scale Set instances in a rolling fashion when a newer version of the OS Image becomes available? Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3721,8 +3721,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should automatic rollbacks be disabled? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should automatic rollbacks be disabled? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3730,14 +3730,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should OS Upgrades automatically be applied to Scale Set instances in a rolling fashion when a newer version of the OS Image becomes available? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should OS Upgrades automatically be applied to Scale Set instances in a rolling fashion when a newer version of the OS Image becomes available? Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3746,8 +3746,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should automatic rollbacks be disabled? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should automatic rollbacks be disabled? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3755,14 +3755,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should OS Upgrades automatically be applied to Scale Set instances in a rolling fashion when a newer version of the OS Image becomes available? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should OS Upgrades automatically be applied to Scale Set instances in a rolling fashion when a newer version of the OS Image becomes available? Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3771,8 +3771,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should automatic rollbacks be disabled? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should automatic rollbacks be disabled? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3780,29 +3780,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should OS Upgrades automatically be applied to Scale Set instances in a rolling fashion when a newer version of the OS Image becomes available? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Should OS Upgrades automatically be applied to Scale Set instances in a rolling fashion when a newer version of the OS Image becomes available? Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="windowsvirtualmachinescalesetbootdiagnostics">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Boot<wbr>Diagnostics</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#WindowsVirtualMachineScaleSetBootDiagnostics">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#WindowsVirtualMachineScaleSetBootDiagnostics">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetBootDiagnosticsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetBootDiagnosticsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3811,14 +3811,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Primary/Secondary Endpoint for the Azure Storage Account which should be used to store Boot Diagnostics, including Console Output and Screenshots from the Hypervisor.
-{{% /md %}}</dd>
+    <dd>The Primary/Secondary Endpoint for the Azure Storage Account which should be used to store Boot Diagnostics, including Console Output and Screenshots from the Hypervisor.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3827,14 +3827,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Primary/Secondary Endpoint for the Azure Storage Account which should be used to store Boot Diagnostics, including Console Output and Screenshots from the Hypervisor.
-{{% /md %}}</dd>
+    <dd>The Primary/Secondary Endpoint for the Azure Storage Account which should be used to store Boot Diagnostics, including Console Output and Screenshots from the Hypervisor.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3843,14 +3843,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Primary/Secondary Endpoint for the Azure Storage Account which should be used to store Boot Diagnostics, including Console Output and Screenshots from the Hypervisor.
-{{% /md %}}</dd>
+    <dd>The Primary/Secondary Endpoint for the Azure Storage Account which should be used to store Boot Diagnostics, including Console Output and Screenshots from the Hypervisor.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3859,29 +3859,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Primary/Secondary Endpoint for the Azure Storage Account which should be used to store Boot Diagnostics, including Console Output and Screenshots from the Hypervisor.
-{{% /md %}}</dd>
+    <dd>The Primary/Secondary Endpoint for the Azure Storage Account which should be used to store Boot Diagnostics, including Console Output and Screenshots from the Hypervisor.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="windowsvirtualmachinescalesetdatadisk">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Data<wbr>Disk</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#WindowsVirtualMachineScaleSetDataDisk">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#WindowsVirtualMachineScaleSetDataDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetDataDiskArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetDataDiskOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3890,8 +3890,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of Caching which should be used for this Data Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.
-{{% /md %}}</dd>
+    <dd>The type of Caching which should be used for this Data Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3899,8 +3899,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the Data Disk which should be created.
-{{% /md %}}</dd>
+    <dd>The size of the Data Disk which should be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3908,8 +3908,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The Logical Unit Number of the Data Disk, which must be unique within the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>The Logical Unit Number of the Data Disk, which must be unique within the Virtual Machine.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3917,8 +3917,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Type of Storage Account which should back this Data Disk. Possible values include `Standard_LRS`, `StandardSSD_LRS`, `Premium_LRS` and `UltraSSD_LRS`.
-{{% /md %}}</dd>
+    <dd>The Type of Storage Account which should back this Data Disk. Possible values include `Standard_LRS`, `StandardSSD_LRS`, `Premium_LRS` and `UltraSSD_LRS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3926,8 +3926,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Disk Encryption Set which should be used to encrypt this Data Disk.
-{{% /md %}}</dd>
+    <dd>The ID of the Disk Encryption Set which should be used to encrypt this Data Disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3935,14 +3935,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Write Accelerator be enabled for this Data Disk? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Write Accelerator be enabled for this Data Disk? Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3951,8 +3951,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of Caching which should be used for this Data Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.
-{{% /md %}}</dd>
+    <dd>The type of Caching which should be used for this Data Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3960,8 +3960,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the Data Disk which should be created.
-{{% /md %}}</dd>
+    <dd>The size of the Data Disk which should be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3969,8 +3969,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The Logical Unit Number of the Data Disk, which must be unique within the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>The Logical Unit Number of the Data Disk, which must be unique within the Virtual Machine.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3978,8 +3978,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Type of Storage Account which should back this Data Disk. Possible values include `Standard_LRS`, `StandardSSD_LRS`, `Premium_LRS` and `UltraSSD_LRS`.
-{{% /md %}}</dd>
+    <dd>The Type of Storage Account which should back this Data Disk. Possible values include `Standard_LRS`, `StandardSSD_LRS`, `Premium_LRS` and `UltraSSD_LRS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3987,8 +3987,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Disk Encryption Set which should be used to encrypt this Data Disk.
-{{% /md %}}</dd>
+    <dd>The ID of the Disk Encryption Set which should be used to encrypt this Data Disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3996,14 +3996,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Write Accelerator be enabled for this Data Disk? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Write Accelerator be enabled for this Data Disk? Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4012,8 +4012,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of Caching which should be used for this Data Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.
-{{% /md %}}</dd>
+    <dd>The type of Caching which should be used for this Data Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4021,8 +4021,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of the Data Disk which should be created.
-{{% /md %}}</dd>
+    <dd>The size of the Data Disk which should be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4030,8 +4030,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The Logical Unit Number of the Data Disk, which must be unique within the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>The Logical Unit Number of the Data Disk, which must be unique within the Virtual Machine.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4039,8 +4039,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Type of Storage Account which should back this Data Disk. Possible values include `Standard_LRS`, `StandardSSD_LRS`, `Premium_LRS` and `UltraSSD_LRS`.
-{{% /md %}}</dd>
+    <dd>The Type of Storage Account which should back this Data Disk. Possible values include `Standard_LRS`, `StandardSSD_LRS`, `Premium_LRS` and `UltraSSD_LRS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4048,8 +4048,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Disk Encryption Set which should be used to encrypt this Data Disk.
-{{% /md %}}</dd>
+    <dd>The ID of the Disk Encryption Set which should be used to encrypt this Data Disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4057,14 +4057,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should Write Accelerator be enabled for this Data Disk? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Write Accelerator be enabled for this Data Disk? Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4073,8 +4073,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of Caching which should be used for this Data Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.
-{{% /md %}}</dd>
+    <dd>The type of Caching which should be used for this Data Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4082,8 +4082,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of the Data Disk which should be created.
-{{% /md %}}</dd>
+    <dd>The size of the Data Disk which should be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4091,8 +4091,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The Logical Unit Number of the Data Disk, which must be unique within the Virtual Machine.
-{{% /md %}}</dd>
+    <dd>The Logical Unit Number of the Data Disk, which must be unique within the Virtual Machine.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4100,8 +4100,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Type of Storage Account which should back this Data Disk. Possible values include `Standard_LRS`, `StandardSSD_LRS`, `Premium_LRS` and `UltraSSD_LRS`.
-{{% /md %}}</dd>
+    <dd>The Type of Storage Account which should back this Data Disk. Possible values include `Standard_LRS`, `StandardSSD_LRS`, `Premium_LRS` and `UltraSSD_LRS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4109,8 +4109,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Disk Encryption Set which should be used to encrypt this Data Disk.
-{{% /md %}}</dd>
+    <dd>The ID of the Disk Encryption Set which should be used to encrypt this Data Disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4118,29 +4118,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Write Accelerator be enabled for this Data Disk? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Write Accelerator be enabled for this Data Disk? Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="windowsvirtualmachinescalesetidentity">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Identity</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#WindowsVirtualMachineScaleSetIdentity">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#WindowsVirtualMachineScaleSetIdentity">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetIdentityArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetIdentityOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4149,8 +4149,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of Managed Identity which should be assigned to the Windows Virtual Machine Scale Set. Possible values are `SystemAssigned`, `UserAssigned` and `SystemAssigned, UserAssigned`.
-{{% /md %}}</dd>
+    <dd>The type of Managed Identity which should be assigned to the Windows Virtual Machine Scale Set. Possible values are `SystemAssigned`, `UserAssigned` and `SystemAssigned, UserAssigned`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4158,8 +4158,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of User Managed Identity ID's which should be assigned to the Windows Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>A list of User Managed Identity ID's which should be assigned to the Windows Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4167,14 +4167,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the System Managed Service Principal.
-{{% /md %}}</dd>
+    <dd>The ID of the System Managed Service Principal.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4183,8 +4183,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of Managed Identity which should be assigned to the Windows Virtual Machine Scale Set. Possible values are `SystemAssigned`, `UserAssigned` and `SystemAssigned, UserAssigned`.
-{{% /md %}}</dd>
+    <dd>The type of Managed Identity which should be assigned to the Windows Virtual Machine Scale Set. Possible values are `SystemAssigned`, `UserAssigned` and `SystemAssigned, UserAssigned`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4192,8 +4192,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of User Managed Identity ID's which should be assigned to the Windows Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>A list of User Managed Identity ID's which should be assigned to the Windows Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4201,14 +4201,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the System Managed Service Principal.
-{{% /md %}}</dd>
+    <dd>The ID of the System Managed Service Principal.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4217,8 +4217,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of Managed Identity which should be assigned to the Windows Virtual Machine Scale Set. Possible values are `SystemAssigned`, `UserAssigned` and `SystemAssigned, UserAssigned`.
-{{% /md %}}</dd>
+    <dd>The type of Managed Identity which should be assigned to the Windows Virtual Machine Scale Set. Possible values are `SystemAssigned`, `UserAssigned` and `SystemAssigned, UserAssigned`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4226,8 +4226,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of User Managed Identity ID's which should be assigned to the Windows Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>A list of User Managed Identity ID's which should be assigned to the Windows Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4235,14 +4235,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the System Managed Service Principal.
-{{% /md %}}</dd>
+    <dd>The ID of the System Managed Service Principal.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4251,8 +4251,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of Managed Identity which should be assigned to the Windows Virtual Machine Scale Set. Possible values are `SystemAssigned`, `UserAssigned` and `SystemAssigned, UserAssigned`.
-{{% /md %}}</dd>
+    <dd>The type of Managed Identity which should be assigned to the Windows Virtual Machine Scale Set. Possible values are `SystemAssigned`, `UserAssigned` and `SystemAssigned, UserAssigned`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4260,8 +4260,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of User Managed Identity ID's which should be assigned to the Windows Virtual Machine Scale Set.
-{{% /md %}}</dd>
+    <dd>A list of User Managed Identity ID's which should be assigned to the Windows Virtual Machine Scale Set.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4269,29 +4269,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the System Managed Service Principal.
-{{% /md %}}</dd>
+    <dd>The ID of the System Managed Service Principal.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="windowsvirtualmachinescalesetnetworkinterface">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#WindowsVirtualMachineScaleSetNetworkInterface">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#WindowsVirtualMachineScaleSetNetworkInterface">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetNetworkInterfaceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetNetworkInterfaceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4300,8 +4300,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetnetworkinterfaceipconfiguration">List&lt;Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface<wbr>Ip<wbr>Configuration<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_configuration` blocks as defined above.
-{{% /md %}}</dd>
+    <dd>One or more `ip_configuration` blocks as defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4309,8 +4309,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name which should be used for this Network Interface. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Name which should be used for this Network Interface. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4318,8 +4318,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of IP Addresses of DNS Servers which should be assigned to the Network Interface.
-{{% /md %}}</dd>
+    <dd>A list of IP Addresses of DNS Servers which should be assigned to the Network Interface.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4327,8 +4327,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Does this Network Interface support Accelerated Networking? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Does this Network Interface support Accelerated Networking? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4336,8 +4336,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Does this Network Interface support IP Forwarding? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Does this Network Interface support IP Forwarding? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4345,8 +4345,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a Network Security Group which should be assigned to this Network Interface.
-{{% /md %}}</dd>
+    <dd>The ID of a Network Security Group which should be assigned to this Network Interface.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4354,14 +4354,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is this the Primary IP Configuration?
-{{% /md %}}</dd>
+    <dd>Is this the Primary IP Configuration?
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4370,8 +4370,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetnetworkinterfaceipconfiguration">[]Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface<wbr>Ip<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_configuration` blocks as defined above.
-{{% /md %}}</dd>
+    <dd>One or more `ip_configuration` blocks as defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4379,8 +4379,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name which should be used for this Network Interface. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Name which should be used for this Network Interface. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4388,8 +4388,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of IP Addresses of DNS Servers which should be assigned to the Network Interface.
-{{% /md %}}</dd>
+    <dd>A list of IP Addresses of DNS Servers which should be assigned to the Network Interface.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4397,8 +4397,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Does this Network Interface support Accelerated Networking? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Does this Network Interface support Accelerated Networking? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4406,8 +4406,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Does this Network Interface support IP Forwarding? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Does this Network Interface support IP Forwarding? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4415,8 +4415,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a Network Security Group which should be assigned to this Network Interface.
-{{% /md %}}</dd>
+    <dd>The ID of a Network Security Group which should be assigned to this Network Interface.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4424,14 +4424,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is this the Primary IP Configuration?
-{{% /md %}}</dd>
+    <dd>Is this the Primary IP Configuration?
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4440,8 +4440,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetnetworkinterfaceipconfiguration">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface<wbr>Ip<wbr>Configuration[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_configuration` blocks as defined above.
-{{% /md %}}</dd>
+    <dd>One or more `ip_configuration` blocks as defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4449,8 +4449,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name which should be used for this Network Interface. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Name which should be used for this Network Interface. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4458,8 +4458,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of IP Addresses of DNS Servers which should be assigned to the Network Interface.
-{{% /md %}}</dd>
+    <dd>A list of IP Addresses of DNS Servers which should be assigned to the Network Interface.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4467,8 +4467,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Does this Network Interface support Accelerated Networking? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Does this Network Interface support Accelerated Networking? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4476,8 +4476,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Does this Network Interface support IP Forwarding? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Does this Network Interface support IP Forwarding? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4485,8 +4485,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a Network Security Group which should be assigned to this Network Interface.
-{{% /md %}}</dd>
+    <dd>The ID of a Network Security Group which should be assigned to this Network Interface.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4494,14 +4494,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is this the Primary IP Configuration?
-{{% /md %}}</dd>
+    <dd>Is this the Primary IP Configuration?
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4510,8 +4510,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetnetworkinterfaceipconfiguration">List[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface<wbr>Ip<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_configuration` blocks as defined above.
-{{% /md %}}</dd>
+    <dd>One or more `ip_configuration` blocks as defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4519,8 +4519,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Name which should be used for this Network Interface. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Name which should be used for this Network Interface. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4528,8 +4528,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of IP Addresses of DNS Servers which should be assigned to the Network Interface.
-{{% /md %}}</dd>
+    <dd>A list of IP Addresses of DNS Servers which should be assigned to the Network Interface.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4537,8 +4537,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Does this Network Interface support Accelerated Networking? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Does this Network Interface support Accelerated Networking? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4546,8 +4546,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Does this Network Interface support IP Forwarding? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Does this Network Interface support IP Forwarding? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4555,8 +4555,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of a Network Security Group which should be assigned to this Network Interface.
-{{% /md %}}</dd>
+    <dd>The ID of a Network Security Group which should be assigned to this Network Interface.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4564,29 +4564,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is this the Primary IP Configuration?
-{{% /md %}}</dd>
+    <dd>Is this the Primary IP Configuration?
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="windowsvirtualmachinescalesetnetworkinterfaceipconfiguration">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface<wbr>Ip<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#WindowsVirtualMachineScaleSetNetworkInterfaceIpConfiguration">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#WindowsVirtualMachineScaleSetNetworkInterfaceIpConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetNetworkInterfaceIpConfigurationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetNetworkInterfaceIpConfigurationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4595,8 +4595,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name which should be used for this IP Configuration.
-{{% /md %}}</dd>
+    <dd>The Name which should be used for this IP Configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4604,8 +4604,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Backend Address Pools ID's from a Application Gateway which this Virtual Machine Scale Set should be connected to.
-{{% /md %}}</dd>
+    <dd>A list of Backend Address Pools ID's from a Application Gateway which this Virtual Machine Scale Set should be connected to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4613,8 +4613,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Application Security Group ID's which this Virtual Machine Scale Set should be connected to.
-{{% /md %}}</dd>
+    <dd>A list of Application Security Group ID's which this Virtual Machine Scale Set should be connected to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4622,8 +4622,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of Backend Address Pools ID's from a Load Balancer which this Virtual Machine Scale Set should be connected to.
-{{% /md %}}</dd>
+    <dd>A list of Backend Address Pools ID's from a Load Balancer which this Virtual Machine Scale Set should be connected to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4631,8 +4631,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of NAT Rule ID's from a Load Balancer which this Virtual Machine Scale Set should be connected to.
-{{% /md %}}</dd>
+    <dd>A list of NAT Rule ID's from a Load Balancer which this Virtual Machine Scale Set should be connected to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4640,8 +4640,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is this the Primary IP Configuration for this Network Interface? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Is this the Primary IP Configuration for this Network Interface? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4649,8 +4649,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetnetworkinterfaceipconfigurationpublicipaddress">List&lt;Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface<wbr>Ip<wbr>Configuration<wbr>Public<wbr>Ip<wbr>Address<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `public_ip_address` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `public_ip_address` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4658,8 +4658,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Subnet which this IP Configuration should be connected to.
-{{% /md %}}</dd>
+    <dd>The ID of the Subnet which this IP Configuration should be connected to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4667,14 +4667,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Internet Protocol Version which should be used for this IP Configuration. Possible values are `IPv4` and `IPv6`. Defaults to `IPv4`.
-{{% /md %}}</dd>
+    <dd>The Internet Protocol Version which should be used for this IP Configuration. Possible values are `IPv4` and `IPv6`. Defaults to `IPv4`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4683,8 +4683,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name which should be used for this IP Configuration.
-{{% /md %}}</dd>
+    <dd>The Name which should be used for this IP Configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4692,8 +4692,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of Backend Address Pools ID's from a Application Gateway which this Virtual Machine Scale Set should be connected to.
-{{% /md %}}</dd>
+    <dd>A list of Backend Address Pools ID's from a Application Gateway which this Virtual Machine Scale Set should be connected to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4701,8 +4701,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of Application Security Group ID's which this Virtual Machine Scale Set should be connected to.
-{{% /md %}}</dd>
+    <dd>A list of Application Security Group ID's which this Virtual Machine Scale Set should be connected to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4710,8 +4710,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of Backend Address Pools ID's from a Load Balancer which this Virtual Machine Scale Set should be connected to.
-{{% /md %}}</dd>
+    <dd>A list of Backend Address Pools ID's from a Load Balancer which this Virtual Machine Scale Set should be connected to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4719,8 +4719,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of NAT Rule ID's from a Load Balancer which this Virtual Machine Scale Set should be connected to.
-{{% /md %}}</dd>
+    <dd>A list of NAT Rule ID's from a Load Balancer which this Virtual Machine Scale Set should be connected to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4728,8 +4728,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is this the Primary IP Configuration for this Network Interface? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Is this the Primary IP Configuration for this Network Interface? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4737,8 +4737,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetnetworkinterfaceipconfigurationpublicipaddress">[]Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface<wbr>Ip<wbr>Configuration<wbr>Public<wbr>Ip<wbr>Address</a></span>
     </dt>
-    <dd>{{% md %}}A `public_ip_address` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `public_ip_address` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4746,8 +4746,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Subnet which this IP Configuration should be connected to.
-{{% /md %}}</dd>
+    <dd>The ID of the Subnet which this IP Configuration should be connected to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4755,14 +4755,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Internet Protocol Version which should be used for this IP Configuration. Possible values are `IPv4` and `IPv6`. Defaults to `IPv4`.
-{{% /md %}}</dd>
+    <dd>The Internet Protocol Version which should be used for this IP Configuration. Possible values are `IPv4` and `IPv6`. Defaults to `IPv4`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4771,8 +4771,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name which should be used for this IP Configuration.
-{{% /md %}}</dd>
+    <dd>The Name which should be used for this IP Configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4780,8 +4780,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Backend Address Pools ID's from a Application Gateway which this Virtual Machine Scale Set should be connected to.
-{{% /md %}}</dd>
+    <dd>A list of Backend Address Pools ID's from a Application Gateway which this Virtual Machine Scale Set should be connected to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4789,8 +4789,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Application Security Group ID's which this Virtual Machine Scale Set should be connected to.
-{{% /md %}}</dd>
+    <dd>A list of Application Security Group ID's which this Virtual Machine Scale Set should be connected to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4798,8 +4798,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Backend Address Pools ID's from a Load Balancer which this Virtual Machine Scale Set should be connected to.
-{{% /md %}}</dd>
+    <dd>A list of Backend Address Pools ID's from a Load Balancer which this Virtual Machine Scale Set should be connected to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4807,8 +4807,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of NAT Rule ID's from a Load Balancer which this Virtual Machine Scale Set should be connected to.
-{{% /md %}}</dd>
+    <dd>A list of NAT Rule ID's from a Load Balancer which this Virtual Machine Scale Set should be connected to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4816,8 +4816,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is this the Primary IP Configuration for this Network Interface? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Is this the Primary IP Configuration for this Network Interface? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4825,8 +4825,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetnetworkinterfaceipconfigurationpublicipaddress">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface<wbr>Ip<wbr>Configuration<wbr>Public<wbr>Ip<wbr>Address[]</a></span>
     </dt>
-    <dd>{{% md %}}A `public_ip_address` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `public_ip_address` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4834,8 +4834,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Subnet which this IP Configuration should be connected to.
-{{% /md %}}</dd>
+    <dd>The ID of the Subnet which this IP Configuration should be connected to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4843,14 +4843,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Internet Protocol Version which should be used for this IP Configuration. Possible values are `IPv4` and `IPv6`. Defaults to `IPv4`.
-{{% /md %}}</dd>
+    <dd>The Internet Protocol Version which should be used for this IP Configuration. Possible values are `IPv4` and `IPv6`. Defaults to `IPv4`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4859,8 +4859,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Name which should be used for this IP Configuration.
-{{% /md %}}</dd>
+    <dd>The Name which should be used for this IP Configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4868,8 +4868,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Backend Address Pools ID's from a Application Gateway which this Virtual Machine Scale Set should be connected to.
-{{% /md %}}</dd>
+    <dd>A list of Backend Address Pools ID's from a Application Gateway which this Virtual Machine Scale Set should be connected to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4877,8 +4877,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Application Security Group ID's which this Virtual Machine Scale Set should be connected to.
-{{% /md %}}</dd>
+    <dd>A list of Application Security Group ID's which this Virtual Machine Scale Set should be connected to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4886,8 +4886,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of Backend Address Pools ID's from a Load Balancer which this Virtual Machine Scale Set should be connected to.
-{{% /md %}}</dd>
+    <dd>A list of Backend Address Pools ID's from a Load Balancer which this Virtual Machine Scale Set should be connected to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4895,8 +4895,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of NAT Rule ID's from a Load Balancer which this Virtual Machine Scale Set should be connected to.
-{{% /md %}}</dd>
+    <dd>A list of NAT Rule ID's from a Load Balancer which this Virtual Machine Scale Set should be connected to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4904,8 +4904,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is this the Primary IP Configuration for this Network Interface? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Is this the Primary IP Configuration for this Network Interface? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4913,8 +4913,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetnetworkinterfaceipconfigurationpublicipaddress">List[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface<wbr>Ip<wbr>Configuration<wbr>Public<wbr>Ip<wbr>Address]</a></span>
     </dt>
-    <dd>{{% md %}}A `public_ip_address` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `public_ip_address` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4922,8 +4922,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Subnet which this IP Configuration should be connected to.
-{{% /md %}}</dd>
+    <dd>The ID of the Subnet which this IP Configuration should be connected to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4931,29 +4931,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Internet Protocol Version which should be used for this IP Configuration. Possible values are `IPv4` and `IPv6`. Defaults to `IPv4`.
-{{% /md %}}</dd>
+    <dd>The Internet Protocol Version which should be used for this IP Configuration. Possible values are `IPv4` and `IPv6`. Defaults to `IPv4`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="windowsvirtualmachinescalesetnetworkinterfaceipconfigurationpublicipaddress">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface<wbr>Ip<wbr>Configuration<wbr>Public<wbr>Ip<wbr>Address</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#WindowsVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddress">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#WindowsVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddress">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4962,8 +4962,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Public IP Address Configuration.
-{{% /md %}}</dd>
+    <dd>The Name of the Public IP Address Configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4971,8 +4971,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Prefix which should be used for the Domain Name Label for each Virtual Machine Instance. Azure concatenates the Domain Name Label and Virtual Machine Index to create a unique Domain Name Label for each Virtual Machine.
-{{% /md %}}</dd>
+    <dd>The Prefix which should be used for the Domain Name Label for each Virtual Machine Instance. Azure concatenates the Domain Name Label and Virtual Machine Index to create a unique Domain Name Label for each Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4980,8 +4980,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The Idle Timeout in Minutes for the Public IP Address. Possible values are in the range `4` to `32`.
-{{% /md %}}</dd>
+    <dd>The Idle Timeout in Minutes for the Public IP Address. Possible values are in the range `4` to `32`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4989,8 +4989,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetnetworkinterfaceipconfigurationpublicipaddressiptag">List&lt;Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface<wbr>Ip<wbr>Configuration<wbr>Public<wbr>Ip<wbr>Address<wbr>Ip<wbr>Tag<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_tag` blocks as defined above.
-{{% /md %}}</dd>
+    <dd>One or more `ip_tag` blocks as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4998,14 +4998,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Public IP Address Prefix from where Public IP Addresses should be allocated. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Public IP Address Prefix from where Public IP Addresses should be allocated. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5014,8 +5014,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Public IP Address Configuration.
-{{% /md %}}</dd>
+    <dd>The Name of the Public IP Address Configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5023,8 +5023,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Prefix which should be used for the Domain Name Label for each Virtual Machine Instance. Azure concatenates the Domain Name Label and Virtual Machine Index to create a unique Domain Name Label for each Virtual Machine.
-{{% /md %}}</dd>
+    <dd>The Prefix which should be used for the Domain Name Label for each Virtual Machine Instance. Azure concatenates the Domain Name Label and Virtual Machine Index to create a unique Domain Name Label for each Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5032,8 +5032,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The Idle Timeout in Minutes for the Public IP Address. Possible values are in the range `4` to `32`.
-{{% /md %}}</dd>
+    <dd>The Idle Timeout in Minutes for the Public IP Address. Possible values are in the range `4` to `32`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5041,8 +5041,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetnetworkinterfaceipconfigurationpublicipaddressiptag">[]Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface<wbr>Ip<wbr>Configuration<wbr>Public<wbr>Ip<wbr>Address<wbr>Ip<wbr>Tag</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_tag` blocks as defined above.
-{{% /md %}}</dd>
+    <dd>One or more `ip_tag` blocks as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5050,14 +5050,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Public IP Address Prefix from where Public IP Addresses should be allocated. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Public IP Address Prefix from where Public IP Addresses should be allocated. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5066,8 +5066,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Public IP Address Configuration.
-{{% /md %}}</dd>
+    <dd>The Name of the Public IP Address Configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5075,8 +5075,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Prefix which should be used for the Domain Name Label for each Virtual Machine Instance. Azure concatenates the Domain Name Label and Virtual Machine Index to create a unique Domain Name Label for each Virtual Machine.
-{{% /md %}}</dd>
+    <dd>The Prefix which should be used for the Domain Name Label for each Virtual Machine Instance. Azure concatenates the Domain Name Label and Virtual Machine Index to create a unique Domain Name Label for each Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5084,8 +5084,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The Idle Timeout in Minutes for the Public IP Address. Possible values are in the range `4` to `32`.
-{{% /md %}}</dd>
+    <dd>The Idle Timeout in Minutes for the Public IP Address. Possible values are in the range `4` to `32`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5093,8 +5093,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetnetworkinterfaceipconfigurationpublicipaddressiptag">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface<wbr>Ip<wbr>Configuration<wbr>Public<wbr>Ip<wbr>Address<wbr>Ip<wbr>Tag[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_tag` blocks as defined above.
-{{% /md %}}</dd>
+    <dd>One or more `ip_tag` blocks as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5102,14 +5102,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Public IP Address Prefix from where Public IP Addresses should be allocated. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Public IP Address Prefix from where Public IP Addresses should be allocated. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5118,8 +5118,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Public IP Address Configuration.
-{{% /md %}}</dd>
+    <dd>The Name of the Public IP Address Configuration.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5127,8 +5127,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Prefix which should be used for the Domain Name Label for each Virtual Machine Instance. Azure concatenates the Domain Name Label and Virtual Machine Index to create a unique Domain Name Label for each Virtual Machine.
-{{% /md %}}</dd>
+    <dd>The Prefix which should be used for the Domain Name Label for each Virtual Machine Instance. Azure concatenates the Domain Name Label and Virtual Machine Index to create a unique Domain Name Label for each Virtual Machine.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5136,8 +5136,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The Idle Timeout in Minutes for the Public IP Address. Possible values are in the range `4` to `32`.
-{{% /md %}}</dd>
+    <dd>The Idle Timeout in Minutes for the Public IP Address. Possible values are in the range `4` to `32`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5145,8 +5145,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetnetworkinterfaceipconfigurationpublicipaddressiptag">List[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface<wbr>Ip<wbr>Configuration<wbr>Public<wbr>Ip<wbr>Address<wbr>Ip<wbr>Tag]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `ip_tag` blocks as defined above.
-{{% /md %}}</dd>
+    <dd>One or more `ip_tag` blocks as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5154,29 +5154,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Public IP Address Prefix from where Public IP Addresses should be allocated. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Public IP Address Prefix from where Public IP Addresses should be allocated. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="windowsvirtualmachinescalesetnetworkinterfaceipconfigurationpublicipaddressiptag">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Network<wbr>Interface<wbr>Ip<wbr>Configuration<wbr>Public<wbr>Ip<wbr>Address<wbr>Ip<wbr>Tag</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#WindowsVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTag">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#WindowsVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTag">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTagArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetNetworkInterfaceIpConfigurationPublicIpAddressIpTagOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5185,8 +5185,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP Tag associated with the Public IP, such as `SQL` or `Storage`.
-{{% /md %}}</dd>
+    <dd>The IP Tag associated with the Public IP, such as `SQL` or `Storage`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5194,14 +5194,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Type of IP Tag, such as `FirstPartyUsage`.
-{{% /md %}}</dd>
+    <dd>The Type of IP Tag, such as `FirstPartyUsage`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5210,8 +5210,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP Tag associated with the Public IP, such as `SQL` or `Storage`.
-{{% /md %}}</dd>
+    <dd>The IP Tag associated with the Public IP, such as `SQL` or `Storage`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5219,14 +5219,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Type of IP Tag, such as `FirstPartyUsage`.
-{{% /md %}}</dd>
+    <dd>The Type of IP Tag, such as `FirstPartyUsage`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5235,8 +5235,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP Tag associated with the Public IP, such as `SQL` or `Storage`.
-{{% /md %}}</dd>
+    <dd>The IP Tag associated with the Public IP, such as `SQL` or `Storage`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5244,14 +5244,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Type of IP Tag, such as `FirstPartyUsage`.
-{{% /md %}}</dd>
+    <dd>The Type of IP Tag, such as `FirstPartyUsage`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5260,8 +5260,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IP Tag associated with the Public IP, such as `SQL` or `Storage`.
-{{% /md %}}</dd>
+    <dd>The IP Tag associated with the Public IP, such as `SQL` or `Storage`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5269,29 +5269,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Type of IP Tag, such as `FirstPartyUsage`.
-{{% /md %}}</dd>
+    <dd>The Type of IP Tag, such as `FirstPartyUsage`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="windowsvirtualmachinescalesetosdisk">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Os<wbr>Disk</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#WindowsVirtualMachineScaleSetOsDisk">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#WindowsVirtualMachineScaleSetOsDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetOsDiskArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetOsDiskOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5300,8 +5300,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Type of Caching which should be used for the Internal OS Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.
-{{% /md %}}</dd>
+    <dd>The Type of Caching which should be used for the Internal OS Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5309,8 +5309,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Type of Storage Account which should back this the Internal OS Disk. Possible values include `Standard_LRS`, `StandardSSD_LRS` and `Premium_LRS`.
-{{% /md %}}</dd>
+    <dd>The Type of Storage Account which should back this the Internal OS Disk. Possible values include `Standard_LRS`, `StandardSSD_LRS` and `Premium_LRS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5318,8 +5318,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetosdiskdiffdisksettings">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Os<wbr>Disk<wbr>Diff<wbr>Disk<wbr>Settings<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `diff_disk_settings` block as defined above. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A `diff_disk_settings` block as defined above. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5327,8 +5327,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Disk Encryption Set which should be used to encrypt this OS Disk.
-{{% /md %}}</dd>
+    <dd>The ID of the Disk Encryption Set which should be used to encrypt this OS Disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5336,8 +5336,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The Size of the Internal OS Disk in GB, if you wish to vary from the size used in the image this Virtual Machine Scale Set is sourced from.
-{{% /md %}}</dd>
+    <dd>The Size of the Internal OS Disk in GB, if you wish to vary from the size used in the image this Virtual Machine Scale Set is sourced from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5345,14 +5345,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Write Accelerator be Enabled for this OS Disk? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Write Accelerator be Enabled for this OS Disk? Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5361,8 +5361,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Type of Caching which should be used for the Internal OS Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.
-{{% /md %}}</dd>
+    <dd>The Type of Caching which should be used for the Internal OS Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5370,8 +5370,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Type of Storage Account which should back this the Internal OS Disk. Possible values include `Standard_LRS`, `StandardSSD_LRS` and `Premium_LRS`.
-{{% /md %}}</dd>
+    <dd>The Type of Storage Account which should back this the Internal OS Disk. Possible values include `Standard_LRS`, `StandardSSD_LRS` and `Premium_LRS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5379,8 +5379,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetosdiskdiffdisksettings">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Os<wbr>Disk<wbr>Diff<wbr>Disk<wbr>Settings</a></span>
     </dt>
-    <dd>{{% md %}}A `diff_disk_settings` block as defined above. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A `diff_disk_settings` block as defined above. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5388,8 +5388,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Disk Encryption Set which should be used to encrypt this OS Disk.
-{{% /md %}}</dd>
+    <dd>The ID of the Disk Encryption Set which should be used to encrypt this OS Disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5397,8 +5397,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The Size of the Internal OS Disk in GB, if you wish to vary from the size used in the image this Virtual Machine Scale Set is sourced from.
-{{% /md %}}</dd>
+    <dd>The Size of the Internal OS Disk in GB, if you wish to vary from the size used in the image this Virtual Machine Scale Set is sourced from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5406,14 +5406,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Write Accelerator be Enabled for this OS Disk? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Write Accelerator be Enabled for this OS Disk? Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5422,8 +5422,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Type of Caching which should be used for the Internal OS Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.
-{{% /md %}}</dd>
+    <dd>The Type of Caching which should be used for the Internal OS Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5431,8 +5431,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Type of Storage Account which should back this the Internal OS Disk. Possible values include `Standard_LRS`, `StandardSSD_LRS` and `Premium_LRS`.
-{{% /md %}}</dd>
+    <dd>The Type of Storage Account which should back this the Internal OS Disk. Possible values include `Standard_LRS`, `StandardSSD_LRS` and `Premium_LRS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5440,8 +5440,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetosdiskdiffdisksettings">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Os<wbr>Disk<wbr>Diff<wbr>Disk<wbr>Settings</a></span>
     </dt>
-    <dd>{{% md %}}A `diff_disk_settings` block as defined above. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A `diff_disk_settings` block as defined above. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5449,8 +5449,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Disk Encryption Set which should be used to encrypt this OS Disk.
-{{% /md %}}</dd>
+    <dd>The ID of the Disk Encryption Set which should be used to encrypt this OS Disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5458,8 +5458,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The Size of the Internal OS Disk in GB, if you wish to vary from the size used in the image this Virtual Machine Scale Set is sourced from.
-{{% /md %}}</dd>
+    <dd>The Size of the Internal OS Disk in GB, if you wish to vary from the size used in the image this Virtual Machine Scale Set is sourced from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5467,14 +5467,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should Write Accelerator be Enabled for this OS Disk? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Write Accelerator be Enabled for this OS Disk? Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5483,8 +5483,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Type of Caching which should be used for the Internal OS Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.
-{{% /md %}}</dd>
+    <dd>The Type of Caching which should be used for the Internal OS Disk. Possible values are `None`, `ReadOnly` and `ReadWrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5492,8 +5492,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Type of Storage Account which should back this the Internal OS Disk. Possible values include `Standard_LRS`, `StandardSSD_LRS` and `Premium_LRS`.
-{{% /md %}}</dd>
+    <dd>The Type of Storage Account which should back this the Internal OS Disk. Possible values include `Standard_LRS`, `StandardSSD_LRS` and `Premium_LRS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5501,8 +5501,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetosdiskdiffdisksettings">Dict[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Os<wbr>Disk<wbr>Diff<wbr>Disk<wbr>Settings]</a></span>
     </dt>
-    <dd>{{% md %}}A `diff_disk_settings` block as defined above. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A `diff_disk_settings` block as defined above. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5510,8 +5510,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Disk Encryption Set which should be used to encrypt this OS Disk.
-{{% /md %}}</dd>
+    <dd>The ID of the Disk Encryption Set which should be used to encrypt this OS Disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5519,8 +5519,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The Size of the Internal OS Disk in GB, if you wish to vary from the size used in the image this Virtual Machine Scale Set is sourced from.
-{{% /md %}}</dd>
+    <dd>The Size of the Internal OS Disk in GB, if you wish to vary from the size used in the image this Virtual Machine Scale Set is sourced from.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5528,29 +5528,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should Write Accelerator be Enabled for this OS Disk? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should Write Accelerator be Enabled for this OS Disk? Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="windowsvirtualmachinescalesetosdiskdiffdisksettings">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Os<wbr>Disk<wbr>Diff<wbr>Disk<wbr>Settings</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#WindowsVirtualMachineScaleSetOsDiskDiffDiskSettings">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#WindowsVirtualMachineScaleSetOsDiskDiffDiskSettings">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetOsDiskDiffDiskSettingsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetOsDiskDiffDiskSettingsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5559,13 +5559,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5574,13 +5574,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5589,13 +5589,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5604,28 +5604,28 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="windowsvirtualmachinescalesetplan">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Plan</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#WindowsVirtualMachineScaleSetPlan">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#WindowsVirtualMachineScaleSetPlan">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetPlanArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetPlanOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5634,8 +5634,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5643,7 +5643,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -5651,13 +5651,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5666,8 +5666,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5675,7 +5675,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -5683,13 +5683,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5698,8 +5698,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5707,7 +5707,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -5715,13 +5715,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5730,8 +5730,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the Windows Virtual Machine Scale Set. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5739,7 +5739,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -5747,28 +5747,28 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="windowsvirtualmachinescalesetrollingupgradepolicy">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Rolling<wbr>Upgrade<wbr>Policy</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#WindowsVirtualMachineScaleSetRollingUpgradePolicy">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#WindowsVirtualMachineScaleSetRollingUpgradePolicy">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetRollingUpgradePolicyArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetRollingUpgradePolicyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5777,8 +5777,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum percent of total virtual machine instances that will be upgraded simultaneously by the rolling upgrade in one batch. As this is a maximum, unhealthy instances in previous or future batches can cause the percentage of instances in a batch to decrease to ensure higher reliability. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The maximum percent of total virtual machine instances that will be upgraded simultaneously by the rolling upgrade in one batch. As this is a maximum, unhealthy instances in previous or future batches can cause the percentage of instances in a batch to decrease to ensure higher reliability. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5786,8 +5786,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum percentage of the total virtual machine instances in the scale set that can be simultaneously unhealthy, either as a result of being upgraded, or by being found in an unhealthy state by the virtual machine health checks before the rolling upgrade aborts. This constraint will be checked prior to starting any batch. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The maximum percentage of the total virtual machine instances in the scale set that can be simultaneously unhealthy, either as a result of being upgraded, or by being found in an unhealthy state by the virtual machine health checks before the rolling upgrade aborts. This constraint will be checked prior to starting any batch. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5795,8 +5795,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum percentage of upgraded virtual machine instances that can be found to be in an unhealthy state. This check will happen after each batch is upgraded. If this percentage is ever exceeded, the rolling update aborts. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The maximum percentage of upgraded virtual machine instances that can be found to be in an unhealthy state. This check will happen after each batch is upgraded. If this percentage is ever exceeded, the rolling update aborts. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5804,14 +5804,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The wait time between completing the update for all virtual machines in one batch and starting the next batch. The time duration should be specified in ISO 8601 format. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The wait time between completing the update for all virtual machines in one batch and starting the next batch. The time duration should be specified in ISO 8601 format. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5820,8 +5820,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum percent of total virtual machine instances that will be upgraded simultaneously by the rolling upgrade in one batch. As this is a maximum, unhealthy instances in previous or future batches can cause the percentage of instances in a batch to decrease to ensure higher reliability. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The maximum percent of total virtual machine instances that will be upgraded simultaneously by the rolling upgrade in one batch. As this is a maximum, unhealthy instances in previous or future batches can cause the percentage of instances in a batch to decrease to ensure higher reliability. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5829,8 +5829,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum percentage of the total virtual machine instances in the scale set that can be simultaneously unhealthy, either as a result of being upgraded, or by being found in an unhealthy state by the virtual machine health checks before the rolling upgrade aborts. This constraint will be checked prior to starting any batch. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The maximum percentage of the total virtual machine instances in the scale set that can be simultaneously unhealthy, either as a result of being upgraded, or by being found in an unhealthy state by the virtual machine health checks before the rolling upgrade aborts. This constraint will be checked prior to starting any batch. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5838,8 +5838,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum percentage of upgraded virtual machine instances that can be found to be in an unhealthy state. This check will happen after each batch is upgraded. If this percentage is ever exceeded, the rolling update aborts. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The maximum percentage of upgraded virtual machine instances that can be found to be in an unhealthy state. This check will happen after each batch is upgraded. If this percentage is ever exceeded, the rolling update aborts. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5847,14 +5847,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The wait time between completing the update for all virtual machines in one batch and starting the next batch. The time duration should be specified in ISO 8601 format. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The wait time between completing the update for all virtual machines in one batch and starting the next batch. The time duration should be specified in ISO 8601 format. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5863,8 +5863,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum percent of total virtual machine instances that will be upgraded simultaneously by the rolling upgrade in one batch. As this is a maximum, unhealthy instances in previous or future batches can cause the percentage of instances in a batch to decrease to ensure higher reliability. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The maximum percent of total virtual machine instances that will be upgraded simultaneously by the rolling upgrade in one batch. As this is a maximum, unhealthy instances in previous or future batches can cause the percentage of instances in a batch to decrease to ensure higher reliability. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5872,8 +5872,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum percentage of the total virtual machine instances in the scale set that can be simultaneously unhealthy, either as a result of being upgraded, or by being found in an unhealthy state by the virtual machine health checks before the rolling upgrade aborts. This constraint will be checked prior to starting any batch. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The maximum percentage of the total virtual machine instances in the scale set that can be simultaneously unhealthy, either as a result of being upgraded, or by being found in an unhealthy state by the virtual machine health checks before the rolling upgrade aborts. This constraint will be checked prior to starting any batch. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5881,8 +5881,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum percentage of upgraded virtual machine instances that can be found to be in an unhealthy state. This check will happen after each batch is upgraded. If this percentage is ever exceeded, the rolling update aborts. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The maximum percentage of upgraded virtual machine instances that can be found to be in an unhealthy state. This check will happen after each batch is upgraded. If this percentage is ever exceeded, the rolling update aborts. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5890,14 +5890,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The wait time between completing the update for all virtual machines in one batch and starting the next batch. The time duration should be specified in ISO 8601 format. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The wait time between completing the update for all virtual machines in one batch and starting the next batch. The time duration should be specified in ISO 8601 format. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5906,8 +5906,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum percent of total virtual machine instances that will be upgraded simultaneously by the rolling upgrade in one batch. As this is a maximum, unhealthy instances in previous or future batches can cause the percentage of instances in a batch to decrease to ensure higher reliability. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The maximum percent of total virtual machine instances that will be upgraded simultaneously by the rolling upgrade in one batch. As this is a maximum, unhealthy instances in previous or future batches can cause the percentage of instances in a batch to decrease to ensure higher reliability. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5915,8 +5915,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum percentage of the total virtual machine instances in the scale set that can be simultaneously unhealthy, either as a result of being upgraded, or by being found in an unhealthy state by the virtual machine health checks before the rolling upgrade aborts. This constraint will be checked prior to starting any batch. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The maximum percentage of the total virtual machine instances in the scale set that can be simultaneously unhealthy, either as a result of being upgraded, or by being found in an unhealthy state by the virtual machine health checks before the rolling upgrade aborts. This constraint will be checked prior to starting any batch. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5924,8 +5924,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum percentage of upgraded virtual machine instances that can be found to be in an unhealthy state. This check will happen after each batch is upgraded. If this percentage is ever exceeded, the rolling update aborts. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The maximum percentage of upgraded virtual machine instances that can be found to be in an unhealthy state. This check will happen after each batch is upgraded. If this percentage is ever exceeded, the rolling update aborts. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5933,29 +5933,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The wait time between completing the update for all virtual machines in one batch and starting the next batch. The time duration should be specified in ISO 8601 format. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The wait time between completing the update for all virtual machines in one batch and starting the next batch. The time duration should be specified in ISO 8601 format. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="windowsvirtualmachinescalesetsecret">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Secret</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#WindowsVirtualMachineScaleSetSecret">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#WindowsVirtualMachineScaleSetSecret">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetSecretArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetSecretOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5964,8 +5964,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetsecretcertificate">List&lt;Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Secret<wbr>Certificate<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `certificate` blocks as defined above.
-{{% /md %}}</dd>
+    <dd>One or more `certificate` blocks as defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5973,14 +5973,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Key Vault from which all Secrets should be sourced.
-{{% /md %}}</dd>
+    <dd>The ID of the Key Vault from which all Secrets should be sourced.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5989,8 +5989,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetsecretcertificate">[]Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Secret<wbr>Certificate</a></span>
     </dt>
-    <dd>{{% md %}}One or more `certificate` blocks as defined above.
-{{% /md %}}</dd>
+    <dd>One or more `certificate` blocks as defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5998,14 +5998,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Key Vault from which all Secrets should be sourced.
-{{% /md %}}</dd>
+    <dd>The ID of the Key Vault from which all Secrets should be sourced.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6014,8 +6014,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetsecretcertificate">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Secret<wbr>Certificate[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `certificate` blocks as defined above.
-{{% /md %}}</dd>
+    <dd>One or more `certificate` blocks as defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6023,14 +6023,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Key Vault from which all Secrets should be sourced.
-{{% /md %}}</dd>
+    <dd>The ID of the Key Vault from which all Secrets should be sourced.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6039,8 +6039,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#windowsvirtualmachinescalesetsecretcertificate">List[Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Secret<wbr>Certificate]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `certificate` blocks as defined above.
-{{% /md %}}</dd>
+    <dd>One or more `certificate` blocks as defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6048,29 +6048,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Key Vault from which all Secrets should be sourced.
-{{% /md %}}</dd>
+    <dd>The ID of the Key Vault from which all Secrets should be sourced.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="windowsvirtualmachinescalesetsecretcertificate">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Secret<wbr>Certificate</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#WindowsVirtualMachineScaleSetSecretCertificate">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#WindowsVirtualMachineScaleSetSecretCertificate">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetSecretCertificateArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetSecretCertificateOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6079,8 +6079,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate store on the Virtual Machine where the certificate should be added.
-{{% /md %}}</dd>
+    <dd>The certificate store on the Virtual Machine where the certificate should be added.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6088,14 +6088,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secret URL of a Key Vault Certificate.
-{{% /md %}}</dd>
+    <dd>The Secret URL of a Key Vault Certificate.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6104,8 +6104,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate store on the Virtual Machine where the certificate should be added.
-{{% /md %}}</dd>
+    <dd>The certificate store on the Virtual Machine where the certificate should be added.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6113,14 +6113,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secret URL of a Key Vault Certificate.
-{{% /md %}}</dd>
+    <dd>The Secret URL of a Key Vault Certificate.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6129,8 +6129,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate store on the Virtual Machine where the certificate should be added.
-{{% /md %}}</dd>
+    <dd>The certificate store on the Virtual Machine where the certificate should be added.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6138,14 +6138,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secret URL of a Key Vault Certificate.
-{{% /md %}}</dd>
+    <dd>The Secret URL of a Key Vault Certificate.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6154,8 +6154,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The certificate store on the Virtual Machine where the certificate should be added.
-{{% /md %}}</dd>
+    <dd>The certificate store on the Virtual Machine where the certificate should be added.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6163,29 +6163,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Secret URL of a Key Vault Certificate.
-{{% /md %}}</dd>
+    <dd>The Secret URL of a Key Vault Certificate.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="windowsvirtualmachinescalesetsourceimagereference">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Source<wbr>Image<wbr>Reference</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#WindowsVirtualMachineScaleSetSourceImageReference">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#WindowsVirtualMachineScaleSetSourceImageReference">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetSourceImageReferenceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetSourceImageReferenceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6194,7 +6194,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -6202,7 +6202,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -6210,8 +6210,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
-{{% /md %}}</dd>
+    <dd>The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6219,14 +6219,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Internet Protocol Version which should be used for this IP Configuration. Possible values are `IPv4` and `IPv6`. Defaults to `IPv4`.
-{{% /md %}}</dd>
+    <dd>The Internet Protocol Version which should be used for this IP Configuration. Possible values are `IPv4` and `IPv6`. Defaults to `IPv4`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6235,7 +6235,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -6243,7 +6243,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -6251,8 +6251,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
-{{% /md %}}</dd>
+    <dd>The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6260,14 +6260,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Internet Protocol Version which should be used for this IP Configuration. Possible values are `IPv4` and `IPv6`. Defaults to `IPv4`.
-{{% /md %}}</dd>
+    <dd>The Internet Protocol Version which should be used for this IP Configuration. Possible values are `IPv4` and `IPv6`. Defaults to `IPv4`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6276,7 +6276,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -6284,7 +6284,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -6292,8 +6292,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
-{{% /md %}}</dd>
+    <dd>The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6301,14 +6301,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Internet Protocol Version which should be used for this IP Configuration. Possible values are `IPv4` and `IPv6`. Defaults to `IPv4`.
-{{% /md %}}</dd>
+    <dd>The Internet Protocol Version which should be used for this IP Configuration. Possible values are `IPv4` and `IPv6`. Defaults to `IPv4`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6317,7 +6317,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -6325,7 +6325,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -6333,8 +6333,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
-{{% /md %}}</dd>
+    <dd>The Virtual Machine SKU for the Scale Set, such as `Standard_F2`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6342,29 +6342,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Internet Protocol Version which should be used for this IP Configuration. Possible values are `IPv4` and `IPv6`. Defaults to `IPv4`.
-{{% /md %}}</dd>
+    <dd>The Internet Protocol Version which should be used for this IP Configuration. Possible values are `IPv4` and `IPv6`. Defaults to `IPv4`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="windowsvirtualmachinescalesetterminatenotification">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Terminate<wbr>Notification</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#WindowsVirtualMachineScaleSetTerminateNotification">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#WindowsVirtualMachineScaleSetTerminateNotification">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetTerminateNotificationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetTerminateNotificationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6373,8 +6373,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the terminate notification be enabled on this Virtual Machine Scale Set? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the terminate notification be enabled on this Virtual Machine Scale Set? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6382,14 +6382,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Length of time (in minutes, between 5 and 15) a notification to be sent to the VM on the instance metadata server till the VM gets deleted. The time duration should be specified in ISO 8601 format.
-{{% /md %}}</dd>
+    <dd>Length of time (in minutes, between 5 and 15) a notification to be sent to the VM on the instance metadata server till the VM gets deleted. The time duration should be specified in ISO 8601 format.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6398,8 +6398,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the terminate notification be enabled on this Virtual Machine Scale Set? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the terminate notification be enabled on this Virtual Machine Scale Set? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6407,14 +6407,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Length of time (in minutes, between 5 and 15) a notification to be sent to the VM on the instance metadata server till the VM gets deleted. The time duration should be specified in ISO 8601 format.
-{{% /md %}}</dd>
+    <dd>Length of time (in minutes, between 5 and 15) a notification to be sent to the VM on the instance metadata server till the VM gets deleted. The time duration should be specified in ISO 8601 format.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6423,8 +6423,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the terminate notification be enabled on this Virtual Machine Scale Set? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the terminate notification be enabled on this Virtual Machine Scale Set? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6432,14 +6432,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Length of time (in minutes, between 5 and 15) a notification to be sent to the VM on the instance metadata server till the VM gets deleted. The time duration should be specified in ISO 8601 format.
-{{% /md %}}</dd>
+    <dd>Length of time (in minutes, between 5 and 15) a notification to be sent to the VM on the instance metadata server till the VM gets deleted. The time duration should be specified in ISO 8601 format.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6448,8 +6448,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the terminate notification be enabled on this Virtual Machine Scale Set? Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Should the terminate notification be enabled on this Virtual Machine Scale Set? Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6457,29 +6457,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Length of time (in minutes, between 5 and 15) a notification to be sent to the VM on the instance metadata server till the VM gets deleted. The time duration should be specified in ISO 8601 format.
-{{% /md %}}</dd>
+    <dd>Length of time (in minutes, between 5 and 15) a notification to be sent to the VM on the instance metadata server till the VM gets deleted. The time duration should be specified in ISO 8601 format.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="windowsvirtualmachinescalesetwinrmlistener">Windows<wbr>Virtual<wbr>Machine<wbr>Scale<wbr>Set<wbr>Winrm<wbr>Listener</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#WindowsVirtualMachineScaleSetWinrmListener">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#WindowsVirtualMachineScaleSetWinrmListener">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetWinrmListenerArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/compute?tab=doc#WindowsVirtualMachineScaleSetWinrmListenerOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6488,8 +6488,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Protocol of the WinRM Listener. Possible values are `Http` and `Https`.
-{{% /md %}}</dd>
+    <dd>The Protocol of the WinRM Listener. Possible values are `Http` and `Https`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6497,14 +6497,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secret URL of a Key Vault Certificate, which must be specified when `protocol` is set to `Https`.
-{{% /md %}}</dd>
+    <dd>The Secret URL of a Key Vault Certificate, which must be specified when `protocol` is set to `Https`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6513,8 +6513,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Protocol of the WinRM Listener. Possible values are `Http` and `Https`.
-{{% /md %}}</dd>
+    <dd>The Protocol of the WinRM Listener. Possible values are `Http` and `Https`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6522,14 +6522,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secret URL of a Key Vault Certificate, which must be specified when `protocol` is set to `Https`.
-{{% /md %}}</dd>
+    <dd>The Secret URL of a Key Vault Certificate, which must be specified when `protocol` is set to `Https`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6538,8 +6538,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Protocol of the WinRM Listener. Possible values are `Http` and `Https`.
-{{% /md %}}</dd>
+    <dd>The Protocol of the WinRM Listener. Possible values are `Http` and `Https`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6547,14 +6547,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Secret URL of a Key Vault Certificate, which must be specified when `protocol` is set to `Https`.
-{{% /md %}}</dd>
+    <dd>The Secret URL of a Key Vault Certificate, which must be specified when `protocol` is set to `Https`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6563,8 +6563,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Protocol of the WinRM Listener. Possible values are `Http` and `Https`.
-{{% /md %}}</dd>
+    <dd>The Protocol of the WinRM Listener. Possible values are `Http` and `Https`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6572,11 +6572,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Secret URL of a Key Vault Certificate, which must be specified when `protocol` is set to `Https`.
-{{% /md %}}</dd>
+    <dd>The Secret URL of a Key Vault Certificate, which must be specified when `protocol` is set to `Https`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -19,29 +19,29 @@ Use this data source to access the properties of an Action Group.
 
 ## Using GetActionGroup {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getActionGroup<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/monitoring/#GetActionGroupArgs">GetActionGroupArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/monitoring/#GetActionGroupResult">GetActionGroupResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_action_group(</span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupActionGroup<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#LookupActionGroupArgs">LookupActionGroupArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#LookupActionGroupResult">LookupActionGroupResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetActionGroup </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Monitoring.GetActionGroupResult.html">GetActionGroupResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Monitoring.GetActionGroupArgs.html">GetActionGroupArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -49,7 +49,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -58,8 +58,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -67,14 +67,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the resource group the Action Group is located in.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the resource group the Action Group is located in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -83,8 +83,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -92,14 +92,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the resource group the Action Group is located in.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the resource group the Action Group is located in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -108,8 +108,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -117,14 +117,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the resource group the Action Group is located in.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the resource group the Action Group is located in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -133,8 +133,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -142,11 +142,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the resource group the Action Group is located in.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the resource group the Action Group is located in.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -162,7 +162,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -171,8 +171,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongrouparmrolereceiver">List&lt;Get<wbr>Action<wbr>Group<wbr>Arm<wbr>Role<wbr>Receiver&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `arm_role_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `arm_role_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -180,8 +180,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupautomationrunbookreceiver">List&lt;Get<wbr>Action<wbr>Group<wbr>Automation<wbr>Runbook<wbr>Receiver&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `automation_runbook_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `automation_runbook_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -189,8 +189,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupazureapppushreceiver">List&lt;Get<wbr>Action<wbr>Group<wbr>Azure<wbr>App<wbr>Push<wbr>Receiver&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `azure_app_push_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `azure_app_push_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -198,8 +198,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupazurefunctionreceiver">List&lt;Get<wbr>Action<wbr>Group<wbr>Azure<wbr>Function<wbr>Receiver&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `azure_function_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `azure_function_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -207,8 +207,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupemailreceiver">List&lt;Get<wbr>Action<wbr>Group<wbr>Email<wbr>Receiver&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `email_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `email_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -216,8 +216,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether this action group is enabled.
-{{% /md %}}</dd>
+    <dd>Whether this action group is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -225,8 +225,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -234,8 +234,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupitsmreceiver">List&lt;Get<wbr>Action<wbr>Group<wbr>Itsm<wbr>Receiver&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `itsm_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `itsm_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -243,8 +243,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongrouplogicappreceiver">List&lt;Get<wbr>Action<wbr>Group<wbr>Logic<wbr>App<wbr>Receiver&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `logic_app_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `logic_app_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -252,8 +252,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the webhook receiver.
-{{% /md %}}</dd>
+    <dd>The name of the webhook receiver.
+</dd>
 
     <dt class="property-"
             title="">
@@ -261,7 +261,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -269,8 +269,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The short name of the action group.
-{{% /md %}}</dd>
+    <dd>The short name of the action group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -278,8 +278,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupsmsreceiver">List&lt;Get<wbr>Action<wbr>Group<wbr>Sms<wbr>Receiver&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `sms_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `sms_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -287,8 +287,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupvoicereceiver">List&lt;Get<wbr>Action<wbr>Group<wbr>Voice<wbr>Receiver&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `voice_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `voice_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -296,14 +296,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupwebhookreceiver">List&lt;Get<wbr>Action<wbr>Group<wbr>Webhook<wbr>Receiver&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `webhook_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `webhook_receiver` blocks as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -312,8 +312,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongrouparmrolereceiver">[]Get<wbr>Action<wbr>Group<wbr>Arm<wbr>Role<wbr>Receiver</a></span>
     </dt>
-    <dd>{{% md %}}One or more `arm_role_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `arm_role_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -321,8 +321,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupautomationrunbookreceiver">[]Get<wbr>Action<wbr>Group<wbr>Automation<wbr>Runbook<wbr>Receiver</a></span>
     </dt>
-    <dd>{{% md %}}One or more `automation_runbook_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `automation_runbook_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -330,8 +330,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupazureapppushreceiver">[]Get<wbr>Action<wbr>Group<wbr>Azure<wbr>App<wbr>Push<wbr>Receiver</a></span>
     </dt>
-    <dd>{{% md %}}One or more `azure_app_push_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `azure_app_push_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -339,8 +339,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupazurefunctionreceiver">[]Get<wbr>Action<wbr>Group<wbr>Azure<wbr>Function<wbr>Receiver</a></span>
     </dt>
-    <dd>{{% md %}}One or more `azure_function_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `azure_function_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -348,8 +348,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupemailreceiver">[]Get<wbr>Action<wbr>Group<wbr>Email<wbr>Receiver</a></span>
     </dt>
-    <dd>{{% md %}}One or more `email_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `email_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -357,8 +357,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether this action group is enabled.
-{{% /md %}}</dd>
+    <dd>Whether this action group is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -366,8 +366,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -375,8 +375,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupitsmreceiver">[]Get<wbr>Action<wbr>Group<wbr>Itsm<wbr>Receiver</a></span>
     </dt>
-    <dd>{{% md %}}One or more `itsm_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `itsm_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -384,8 +384,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongrouplogicappreceiver">[]Get<wbr>Action<wbr>Group<wbr>Logic<wbr>App<wbr>Receiver</a></span>
     </dt>
-    <dd>{{% md %}}One or more `logic_app_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `logic_app_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -393,8 +393,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the webhook receiver.
-{{% /md %}}</dd>
+    <dd>The name of the webhook receiver.
+</dd>
 
     <dt class="property-"
             title="">
@@ -402,7 +402,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -410,8 +410,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The short name of the action group.
-{{% /md %}}</dd>
+    <dd>The short name of the action group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -419,8 +419,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupsmsreceiver">[]Get<wbr>Action<wbr>Group<wbr>Sms<wbr>Receiver</a></span>
     </dt>
-    <dd>{{% md %}}One or more `sms_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `sms_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -428,8 +428,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupvoicereceiver">[]Get<wbr>Action<wbr>Group<wbr>Voice<wbr>Receiver</a></span>
     </dt>
-    <dd>{{% md %}}One or more `voice_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `voice_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -437,14 +437,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupwebhookreceiver">[]Get<wbr>Action<wbr>Group<wbr>Webhook<wbr>Receiver</a></span>
     </dt>
-    <dd>{{% md %}}One or more `webhook_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `webhook_receiver` blocks as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -453,8 +453,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongrouparmrolereceiver">Get<wbr>Action<wbr>Group<wbr>Arm<wbr>Role<wbr>Receiver[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `arm_role_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `arm_role_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -462,8 +462,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupautomationrunbookreceiver">Get<wbr>Action<wbr>Group<wbr>Automation<wbr>Runbook<wbr>Receiver[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `automation_runbook_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `automation_runbook_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -471,8 +471,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupazureapppushreceiver">Get<wbr>Action<wbr>Group<wbr>Azure<wbr>App<wbr>Push<wbr>Receiver[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `azure_app_push_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `azure_app_push_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -480,8 +480,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupazurefunctionreceiver">Get<wbr>Action<wbr>Group<wbr>Azure<wbr>Function<wbr>Receiver[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `azure_function_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `azure_function_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -489,8 +489,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupemailreceiver">Get<wbr>Action<wbr>Group<wbr>Email<wbr>Receiver[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `email_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `email_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -498,8 +498,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether this action group is enabled.
-{{% /md %}}</dd>
+    <dd>Whether this action group is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -507,8 +507,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -516,8 +516,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupitsmreceiver">Get<wbr>Action<wbr>Group<wbr>Itsm<wbr>Receiver[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `itsm_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `itsm_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -525,8 +525,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongrouplogicappreceiver">Get<wbr>Action<wbr>Group<wbr>Logic<wbr>App<wbr>Receiver[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `logic_app_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `logic_app_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -534,8 +534,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the webhook receiver.
-{{% /md %}}</dd>
+    <dd>The name of the webhook receiver.
+</dd>
 
     <dt class="property-"
             title="">
@@ -543,7 +543,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -551,8 +551,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The short name of the action group.
-{{% /md %}}</dd>
+    <dd>The short name of the action group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -560,8 +560,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupsmsreceiver">Get<wbr>Action<wbr>Group<wbr>Sms<wbr>Receiver[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `sms_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `sms_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -569,8 +569,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupvoicereceiver">Get<wbr>Action<wbr>Group<wbr>Voice<wbr>Receiver[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `voice_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `voice_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -578,14 +578,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupwebhookreceiver">Get<wbr>Action<wbr>Group<wbr>Webhook<wbr>Receiver[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `webhook_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `webhook_receiver` blocks as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -594,8 +594,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongrouparmrolereceiver">List[Get<wbr>Action<wbr>Group<wbr>Arm<wbr>Role<wbr>Receiver]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `arm_role_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `arm_role_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -603,8 +603,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupautomationrunbookreceiver">List[Get<wbr>Action<wbr>Group<wbr>Automation<wbr>Runbook<wbr>Receiver]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `automation_runbook_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `automation_runbook_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -612,8 +612,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupazureapppushreceiver">List[Get<wbr>Action<wbr>Group<wbr>Azure<wbr>App<wbr>Push<wbr>Receiver]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `azure_app_push_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `azure_app_push_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -621,8 +621,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupazurefunctionreceiver">List[Get<wbr>Action<wbr>Group<wbr>Azure<wbr>Function<wbr>Receiver]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `azure_function_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `azure_function_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -630,8 +630,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupemailreceiver">List[Get<wbr>Action<wbr>Group<wbr>Email<wbr>Receiver]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `email_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `email_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -639,8 +639,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether this action group is enabled.
-{{% /md %}}</dd>
+    <dd>Whether this action group is enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -648,8 +648,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -657,8 +657,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupitsmreceiver">List[Get<wbr>Action<wbr>Group<wbr>Itsm<wbr>Receiver]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `itsm_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `itsm_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -666,8 +666,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongrouplogicappreceiver">List[Get<wbr>Action<wbr>Group<wbr>Logic<wbr>App<wbr>Receiver]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `logic_app_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `logic_app_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -675,8 +675,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the webhook receiver.
-{{% /md %}}</dd>
+    <dd>The name of the webhook receiver.
+</dd>
 
     <dt class="property-"
             title="">
@@ -684,7 +684,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -692,8 +692,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The short name of the action group.
-{{% /md %}}</dd>
+    <dd>The short name of the action group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -701,8 +701,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupsmsreceiver">List[Get<wbr>Action<wbr>Group<wbr>Sms<wbr>Receiver]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `sms_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `sms_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -710,8 +710,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupvoicereceiver">List[Get<wbr>Action<wbr>Group<wbr>Voice<wbr>Receiver]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `voice_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `voice_receiver` blocks as defined below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -719,11 +719,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getactiongroupwebhookreceiver">List[Get<wbr>Action<wbr>Group<wbr>Webhook<wbr>Receiver]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `webhook_receiver` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `webhook_receiver` blocks as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -736,18 +736,18 @@ The following output properties are available:
 
 
 <h4 id="getactiongrouparmrolereceiver">Get<wbr>Action<wbr>Group<wbr>Arm<wbr>Role<wbr>Receiver</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetActionGroupArmRoleReceiver">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#GetActionGroupArmRoleReceiver">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -756,8 +756,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -765,8 +765,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The arm role id.
-{{% /md %}}</dd>
+    <dd>The arm role id.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -774,14 +774,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -790,8 +790,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -799,8 +799,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The arm role id.
-{{% /md %}}</dd>
+    <dd>The arm role id.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -808,14 +808,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -824,8 +824,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -833,8 +833,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The arm role id.
-{{% /md %}}</dd>
+    <dd>The arm role id.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -842,14 +842,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -858,8 +858,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -867,8 +867,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The arm role id.
-{{% /md %}}</dd>
+    <dd>The arm role id.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -876,29 +876,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getactiongroupautomationrunbookreceiver">Get<wbr>Action<wbr>Group<wbr>Automation<wbr>Runbook<wbr>Receiver</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetActionGroupAutomationRunbookReceiver">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#GetActionGroupAutomationRunbookReceiver">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -907,8 +907,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The automation account ID which holds this runbook and authenticates to Azure resources.
-{{% /md %}}</dd>
+    <dd>The automation account ID which holds this runbook and authenticates to Azure resources.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -916,8 +916,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether this instance is global runbook.
-{{% /md %}}</dd>
+    <dd>Indicates whether this instance is global runbook.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -925,8 +925,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -934,8 +934,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for this runbook.
-{{% /md %}}</dd>
+    <dd>The name for this runbook.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -943,8 +943,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI where webhooks should be sent.
-{{% /md %}}</dd>
+    <dd>The URI where webhooks should be sent.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -952,8 +952,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -961,14 +961,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The resource id for webhook linked to this runbook.
-{{% /md %}}</dd>
+    <dd>The resource id for webhook linked to this runbook.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -977,8 +977,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The automation account ID which holds this runbook and authenticates to Azure resources.
-{{% /md %}}</dd>
+    <dd>The automation account ID which holds this runbook and authenticates to Azure resources.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -986,8 +986,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether this instance is global runbook.
-{{% /md %}}</dd>
+    <dd>Indicates whether this instance is global runbook.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -995,8 +995,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1004,8 +1004,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for this runbook.
-{{% /md %}}</dd>
+    <dd>The name for this runbook.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1013,8 +1013,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI where webhooks should be sent.
-{{% /md %}}</dd>
+    <dd>The URI where webhooks should be sent.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1022,8 +1022,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1031,14 +1031,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The resource id for webhook linked to this runbook.
-{{% /md %}}</dd>
+    <dd>The resource id for webhook linked to this runbook.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1047,8 +1047,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The automation account ID which holds this runbook and authenticates to Azure resources.
-{{% /md %}}</dd>
+    <dd>The automation account ID which holds this runbook and authenticates to Azure resources.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1056,8 +1056,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether this instance is global runbook.
-{{% /md %}}</dd>
+    <dd>Indicates whether this instance is global runbook.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1065,8 +1065,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1074,8 +1074,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for this runbook.
-{{% /md %}}</dd>
+    <dd>The name for this runbook.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1083,8 +1083,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI where webhooks should be sent.
-{{% /md %}}</dd>
+    <dd>The URI where webhooks should be sent.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1092,8 +1092,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1101,14 +1101,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The resource id for webhook linked to this runbook.
-{{% /md %}}</dd>
+    <dd>The resource id for webhook linked to this runbook.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1117,8 +1117,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The automation account ID which holds this runbook and authenticates to Azure resources.
-{{% /md %}}</dd>
+    <dd>The automation account ID which holds this runbook and authenticates to Azure resources.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1126,8 +1126,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether this instance is global runbook.
-{{% /md %}}</dd>
+    <dd>Indicates whether this instance is global runbook.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1135,8 +1135,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1144,8 +1144,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name for this runbook.
-{{% /md %}}</dd>
+    <dd>The name for this runbook.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1153,8 +1153,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI where webhooks should be sent.
-{{% /md %}}</dd>
+    <dd>The URI where webhooks should be sent.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1162,8 +1162,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1171,29 +1171,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The resource id for webhook linked to this runbook.
-{{% /md %}}</dd>
+    <dd>The resource id for webhook linked to this runbook.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getactiongroupazureapppushreceiver">Get<wbr>Action<wbr>Group<wbr>Azure<wbr>App<wbr>Push<wbr>Receiver</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetActionGroupAzureAppPushReceiver">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#GetActionGroupAzureAppPushReceiver">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1202,8 +1202,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The email address of this receiver.
-{{% /md %}}</dd>
+    <dd>The email address of this receiver.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1211,14 +1211,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1227,8 +1227,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The email address of this receiver.
-{{% /md %}}</dd>
+    <dd>The email address of this receiver.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1236,14 +1236,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1252,8 +1252,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The email address of this receiver.
-{{% /md %}}</dd>
+    <dd>The email address of this receiver.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1261,14 +1261,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1277,8 +1277,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The email address of this receiver.
-{{% /md %}}</dd>
+    <dd>The email address of this receiver.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1286,29 +1286,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getactiongroupazurefunctionreceiver">Get<wbr>Action<wbr>Group<wbr>Azure<wbr>Function<wbr>Receiver</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetActionGroupAzureFunctionReceiver">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#GetActionGroupAzureFunctionReceiver">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1317,7 +1317,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1325,8 +1325,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The function name in the function app.
-{{% /md %}}</dd>
+    <dd>The function name in the function app.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1334,8 +1334,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The http trigger url where http request sent to.
-{{% /md %}}</dd>
+    <dd>The http trigger url where http request sent to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1343,8 +1343,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1352,14 +1352,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1368,7 +1368,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1376,8 +1376,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The function name in the function app.
-{{% /md %}}</dd>
+    <dd>The function name in the function app.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1385,8 +1385,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The http trigger url where http request sent to.
-{{% /md %}}</dd>
+    <dd>The http trigger url where http request sent to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1394,8 +1394,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1403,14 +1403,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1419,7 +1419,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1427,8 +1427,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The function name in the function app.
-{{% /md %}}</dd>
+    <dd>The function name in the function app.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1436,8 +1436,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The http trigger url where http request sent to.
-{{% /md %}}</dd>
+    <dd>The http trigger url where http request sent to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1445,8 +1445,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1454,14 +1454,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1470,7 +1470,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1478,8 +1478,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The function name in the function app.
-{{% /md %}}</dd>
+    <dd>The function name in the function app.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1487,8 +1487,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The http trigger url where http request sent to.
-{{% /md %}}</dd>
+    <dd>The http trigger url where http request sent to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1496,8 +1496,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1505,29 +1505,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getactiongroupemailreceiver">Get<wbr>Action<wbr>Group<wbr>Email<wbr>Receiver</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetActionGroupEmailReceiver">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#GetActionGroupEmailReceiver">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1536,8 +1536,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The email address of this receiver.
-{{% /md %}}</dd>
+    <dd>The email address of this receiver.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1545,8 +1545,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1554,14 +1554,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1570,8 +1570,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The email address of this receiver.
-{{% /md %}}</dd>
+    <dd>The email address of this receiver.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1579,8 +1579,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1588,14 +1588,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1604,8 +1604,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The email address of this receiver.
-{{% /md %}}</dd>
+    <dd>The email address of this receiver.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1613,8 +1613,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1622,14 +1622,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1638,8 +1638,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The email address of this receiver.
-{{% /md %}}</dd>
+    <dd>The email address of this receiver.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1647,8 +1647,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1656,29 +1656,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getactiongroupitsmreceiver">Get<wbr>Action<wbr>Group<wbr>Itsm<wbr>Receiver</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetActionGroupItsmReceiver">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#GetActionGroupItsmReceiver">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1687,8 +1687,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique connection identifier of the ITSM connection.
-{{% /md %}}</dd>
+    <dd>The unique connection identifier of the ITSM connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1696,8 +1696,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1705,8 +1705,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region of the workspace.
-{{% /md %}}</dd>
+    <dd>The region of the workspace.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1714,8 +1714,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON blob for the configurations of the ITSM action. CreateMultipleWorkItems option will be part of this blob as well.
-{{% /md %}}</dd>
+    <dd>A JSON blob for the configurations of the ITSM action. CreateMultipleWorkItems option will be part of this blob as well.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1723,14 +1723,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure Log Analytics workspace ID where this connection is defined.
-{{% /md %}}</dd>
+    <dd>The Azure Log Analytics workspace ID where this connection is defined.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1739,8 +1739,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique connection identifier of the ITSM connection.
-{{% /md %}}</dd>
+    <dd>The unique connection identifier of the ITSM connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1748,8 +1748,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1757,8 +1757,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region of the workspace.
-{{% /md %}}</dd>
+    <dd>The region of the workspace.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1766,8 +1766,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON blob for the configurations of the ITSM action. CreateMultipleWorkItems option will be part of this blob as well.
-{{% /md %}}</dd>
+    <dd>A JSON blob for the configurations of the ITSM action. CreateMultipleWorkItems option will be part of this blob as well.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1775,14 +1775,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure Log Analytics workspace ID where this connection is defined.
-{{% /md %}}</dd>
+    <dd>The Azure Log Analytics workspace ID where this connection is defined.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1791,8 +1791,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique connection identifier of the ITSM connection.
-{{% /md %}}</dd>
+    <dd>The unique connection identifier of the ITSM connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1800,8 +1800,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1809,8 +1809,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region of the workspace.
-{{% /md %}}</dd>
+    <dd>The region of the workspace.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1818,8 +1818,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A JSON blob for the configurations of the ITSM action. CreateMultipleWorkItems option will be part of this blob as well.
-{{% /md %}}</dd>
+    <dd>A JSON blob for the configurations of the ITSM action. CreateMultipleWorkItems option will be part of this blob as well.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1827,14 +1827,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure Log Analytics workspace ID where this connection is defined.
-{{% /md %}}</dd>
+    <dd>The Azure Log Analytics workspace ID where this connection is defined.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1843,8 +1843,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique connection identifier of the ITSM connection.
-{{% /md %}}</dd>
+    <dd>The unique connection identifier of the ITSM connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1852,8 +1852,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1861,8 +1861,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region of the workspace.
-{{% /md %}}</dd>
+    <dd>The region of the workspace.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1870,8 +1870,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A JSON blob for the configurations of the ITSM action. CreateMultipleWorkItems option will be part of this blob as well.
-{{% /md %}}</dd>
+    <dd>A JSON blob for the configurations of the ITSM action. CreateMultipleWorkItems option will be part of this blob as well.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1879,29 +1879,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Azure Log Analytics workspace ID where this connection is defined.
-{{% /md %}}</dd>
+    <dd>The Azure Log Analytics workspace ID where this connection is defined.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getactiongrouplogicappreceiver">Get<wbr>Action<wbr>Group<wbr>Logic<wbr>App<wbr>Receiver</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetActionGroupLogicAppReceiver">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#GetActionGroupLogicAppReceiver">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1910,8 +1910,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The callback url where http request sent to.
-{{% /md %}}</dd>
+    <dd>The callback url where http request sent to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1919,8 +1919,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1928,8 +1928,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure resource ID of the logic app.
-{{% /md %}}</dd>
+    <dd>The Azure resource ID of the logic app.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1937,14 +1937,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1953,8 +1953,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The callback url where http request sent to.
-{{% /md %}}</dd>
+    <dd>The callback url where http request sent to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1962,8 +1962,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1971,8 +1971,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure resource ID of the logic app.
-{{% /md %}}</dd>
+    <dd>The Azure resource ID of the logic app.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1980,14 +1980,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1996,8 +1996,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The callback url where http request sent to.
-{{% /md %}}</dd>
+    <dd>The callback url where http request sent to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2005,8 +2005,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2014,8 +2014,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Azure resource ID of the logic app.
-{{% /md %}}</dd>
+    <dd>The Azure resource ID of the logic app.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2023,14 +2023,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2039,8 +2039,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The callback url where http request sent to.
-{{% /md %}}</dd>
+    <dd>The callback url where http request sent to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2048,8 +2048,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2057,8 +2057,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Azure resource ID of the logic app.
-{{% /md %}}</dd>
+    <dd>The Azure resource ID of the logic app.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2066,29 +2066,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getactiongroupsmsreceiver">Get<wbr>Action<wbr>Group<wbr>Sms<wbr>Receiver</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetActionGroupSmsReceiver">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#GetActionGroupSmsReceiver">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2097,8 +2097,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The country code of the voice receiver.
-{{% /md %}}</dd>
+    <dd>The country code of the voice receiver.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2106,8 +2106,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2115,14 +2115,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The phone number of the voice receiver.
-{{% /md %}}</dd>
+    <dd>The phone number of the voice receiver.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2131,8 +2131,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The country code of the voice receiver.
-{{% /md %}}</dd>
+    <dd>The country code of the voice receiver.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2140,8 +2140,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2149,14 +2149,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The phone number of the voice receiver.
-{{% /md %}}</dd>
+    <dd>The phone number of the voice receiver.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2165,8 +2165,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The country code of the voice receiver.
-{{% /md %}}</dd>
+    <dd>The country code of the voice receiver.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2174,8 +2174,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2183,14 +2183,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The phone number of the voice receiver.
-{{% /md %}}</dd>
+    <dd>The phone number of the voice receiver.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2199,8 +2199,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The country code of the voice receiver.
-{{% /md %}}</dd>
+    <dd>The country code of the voice receiver.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2208,8 +2208,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2217,29 +2217,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The phone number of the voice receiver.
-{{% /md %}}</dd>
+    <dd>The phone number of the voice receiver.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getactiongroupvoicereceiver">Get<wbr>Action<wbr>Group<wbr>Voice<wbr>Receiver</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetActionGroupVoiceReceiver">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#GetActionGroupVoiceReceiver">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2248,8 +2248,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The country code of the voice receiver.
-{{% /md %}}</dd>
+    <dd>The country code of the voice receiver.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2257,8 +2257,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2266,14 +2266,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The phone number of the voice receiver.
-{{% /md %}}</dd>
+    <dd>The phone number of the voice receiver.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2282,8 +2282,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The country code of the voice receiver.
-{{% /md %}}</dd>
+    <dd>The country code of the voice receiver.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2291,8 +2291,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2300,14 +2300,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The phone number of the voice receiver.
-{{% /md %}}</dd>
+    <dd>The phone number of the voice receiver.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2316,8 +2316,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The country code of the voice receiver.
-{{% /md %}}</dd>
+    <dd>The country code of the voice receiver.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2325,8 +2325,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2334,14 +2334,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The phone number of the voice receiver.
-{{% /md %}}</dd>
+    <dd>The phone number of the voice receiver.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2350,8 +2350,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The country code of the voice receiver.
-{{% /md %}}</dd>
+    <dd>The country code of the voice receiver.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2359,8 +2359,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2368,29 +2368,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The phone number of the voice receiver.
-{{% /md %}}</dd>
+    <dd>The phone number of the voice receiver.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getactiongroupwebhookreceiver">Get<wbr>Action<wbr>Group<wbr>Webhook<wbr>Receiver</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#GetActionGroupWebhookReceiver">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#GetActionGroupWebhookReceiver">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2399,8 +2399,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2408,8 +2408,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI where webhooks should be sent.
-{{% /md %}}</dd>
+    <dd>The URI where webhooks should be sent.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2417,14 +2417,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2433,8 +2433,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2442,8 +2442,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI where webhooks should be sent.
-{{% /md %}}</dd>
+    <dd>The URI where webhooks should be sent.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2451,14 +2451,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2467,8 +2467,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2476,8 +2476,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI where webhooks should be sent.
-{{% /md %}}</dd>
+    <dd>The URI where webhooks should be sent.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2485,14 +2485,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2501,8 +2501,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Action Group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Action Group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2510,8 +2510,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI where webhooks should be sent.
-{{% /md %}}</dd>
+    <dd>The URI where webhooks should be sent.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2519,11 +2519,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to use common alert schema.
-{{% /md %}}</dd>
+    <dd>Indicates whether to use common alert schema.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

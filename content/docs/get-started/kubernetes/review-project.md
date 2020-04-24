@@ -17,17 +17,17 @@ Let's review some of the generated project files:
 - `Pulumi.yaml` defines the [project]({{< relref "/docs/intro/concepts/project" >}}).
 - `Pulumi.dev.yaml` contains [configuration]({{< relref "/docs/intro/concepts/config" >}}) values for the [stack]({{< relref "/docs/intro/concepts/stack" >}}) we initialized.
 
-{{% choosable language csharp %}}
+
 
 - `Program.cs` with a simple entry point.
 
-{{% /choosable %}}
+
 
 - {{< langfile >}} is the Pulumi program that defines our stack resources. Let's examine it.
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 "use strict";
@@ -47,8 +47,8 @@ const deployment = new k8s.apps.v1.Deployment("nginx", {
 exports.name = deployment.metadata.name;
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as k8s from "@pulumi/kubernetes";
@@ -67,8 +67,8 @@ const deployment = new k8s.apps.v1.Deployment("nginx", {
 export const name = deployment.metadata.name;
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 """
@@ -93,8 +93,8 @@ deployment = Deployment(
 pulumi.export("name", deployment.metadata["name"])
 ```
 
-{{% /choosable %}}
-{{% choosable language go %}}
+
+
 
 ```go
 package main
@@ -143,8 +143,8 @@ func main() {
 }
 ```
 
-{{% /choosable %}}
-{{% choosable language csharp %}}
+
+
 
 ```csharp
 using Pulumi;
@@ -207,15 +207,15 @@ class MyStack : Stack
 }
 ```
 
-{{% /choosable %}}
+
 
 This Pulumi program creates an NGINX deployment and exports the name of the deployment.
 
-{{% choosable language python %}}
+
 
 {{< python-venv >}}
 
-{{% /choosable %}}
+
 
 Next, we'll deploy the stack.
 

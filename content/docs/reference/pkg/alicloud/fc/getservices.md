@@ -34,29 +34,29 @@ export const firstFcServiceName = fcServicesDs.services[0].name;
 
 ## Using GetServices {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getServices<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/fc/#GetServicesArgs">GetServicesArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/fc/#GetServicesResult">GetServicesResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_services(</span>ids=None<span class="p">, </span>name_regex=None<span class="p">, </span>output_file=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupServices<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/fc?tab=doc#LookupServicesArgs">LookupServicesArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/fc?tab=doc#LookupServicesResult">LookupServicesResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetServices </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Fc.GetServicesResult.html">GetServicesResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.FC.GetServicesArgs.html">GetServicesArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -64,7 +64,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -73,8 +73,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of FC services ids.
-{{% /md %}}</dd>
+    <dd>A list of FC services ids.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -82,9 +82,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by FC service name.
+    <dd>A regex string to filter results by FC service name.
 * `ids` (Optional, Available in 1.53.0+) - A list of FC services ids.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -92,13 +92,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -107,8 +107,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of FC services ids.
-{{% /md %}}</dd>
+    <dd>A list of FC services ids.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -116,9 +116,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by FC service name.
+    <dd>A regex string to filter results by FC service name.
 * `ids` (Optional, Available in 1.53.0+) - A list of FC services ids.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -126,13 +126,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -141,8 +141,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of FC services ids.
-{{% /md %}}</dd>
+    <dd>A list of FC services ids.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -150,9 +150,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by FC service name.
+    <dd>A regex string to filter results by FC service name.
 * `ids` (Optional, Available in 1.53.0+) - A list of FC services ids.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -160,13 +160,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -175,8 +175,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of FC services ids.
-{{% /md %}}</dd>
+    <dd>A list of FC services ids.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -184,9 +184,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by FC service name.
+    <dd>A regex string to filter results by FC service name.
 * `ids` (Optional, Available in 1.53.0+) - A list of FC services ids.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -194,10 +194,10 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -213,7 +213,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -222,8 +222,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -231,8 +231,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of FC services ids.
-{{% /md %}}</dd>
+    <dd>A list of FC services ids.
+</dd>
 
     <dt class="property-"
             title="">
@@ -240,8 +240,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of FC services names.
-{{% /md %}}</dd>
+    <dd>A list of FC services names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -249,8 +249,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getservicesservice">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>FC.<wbr>Outputs.<wbr>Get<wbr>Services<wbr>Service&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of FC services. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of FC services. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -258,7 +258,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -266,13 +266,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -281,8 +281,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -290,8 +290,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of FC services ids.
-{{% /md %}}</dd>
+    <dd>A list of FC services ids.
+</dd>
 
     <dt class="property-"
             title="">
@@ -299,8 +299,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of FC services names.
-{{% /md %}}</dd>
+    <dd>A list of FC services names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -308,8 +308,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getservicesservice">[]Get<wbr>Services<wbr>Service</a></span>
     </dt>
-    <dd>{{% md %}}A list of FC services. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of FC services. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -317,7 +317,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -325,13 +325,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -340,8 +340,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -349,8 +349,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of FC services ids.
-{{% /md %}}</dd>
+    <dd>A list of FC services ids.
+</dd>
 
     <dt class="property-"
             title="">
@@ -358,8 +358,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of FC services names.
-{{% /md %}}</dd>
+    <dd>A list of FC services names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -367,8 +367,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getservicesservice">Get<wbr>Services<wbr>Service[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of FC services. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of FC services. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -376,7 +376,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -384,13 +384,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -399,8 +399,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -408,8 +408,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of FC services ids.
-{{% /md %}}</dd>
+    <dd>A list of FC services ids.
+</dd>
 
     <dt class="property-"
             title="">
@@ -417,8 +417,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of FC services names.
-{{% /md %}}</dd>
+    <dd>A list of FC services names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -426,8 +426,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getservicesservice">List[Get<wbr>Services<wbr>Service]</a></span>
     </dt>
-    <dd>{{% md %}}A list of FC services. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of FC services. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -435,7 +435,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -443,10 +443,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -459,18 +459,18 @@ The following output properties are available:
 
 
 <h4 id="getservicesservice">Get<wbr>Services<wbr>Service</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetServicesService">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/fc?tab=doc#GetServicesService">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -479,8 +479,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}FC service creation time.
-{{% /md %}}</dd>
+    <dd>FC service creation time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -488,8 +488,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}FC service description.
-{{% /md %}}</dd>
+    <dd>FC service description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -497,8 +497,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}FC service ID.
-{{% /md %}}</dd>
+    <dd>FC service ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -506,8 +506,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the service can access to internet or not.
-{{% /md %}}</dd>
+    <dd>Indicate whether the service can access to internet or not.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -515,8 +515,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}FC service last modification time.
-{{% /md %}}</dd>
+    <dd>FC service last modification time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -524,8 +524,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getservicesservicelogconfig">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>FC.<wbr>Inputs.<wbr>Get<wbr>Services<wbr>Service<wbr>Log<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A list of one element containing information about the associated log store. It contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of one element containing information about the associated log store. It contains the following attributes:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -533,8 +533,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}FC service name.
-{{% /md %}}</dd>
+    <dd>FC service name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -542,8 +542,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}FC service role ARN.
-{{% /md %}}</dd>
+    <dd>FC service role ARN.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -551,14 +551,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getservicesservicevpcconfig">Pulumi.<wbr>Ali<wbr>Cloud.<wbr>FC.<wbr>Inputs.<wbr>Get<wbr>Services<wbr>Service<wbr>Vpc<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A list of one element containing information about accessible VPC resources. It contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of one element containing information about accessible VPC resources. It contains the following attributes:
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -567,8 +567,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}FC service creation time.
-{{% /md %}}</dd>
+    <dd>FC service creation time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -576,8 +576,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}FC service description.
-{{% /md %}}</dd>
+    <dd>FC service description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -585,8 +585,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}FC service ID.
-{{% /md %}}</dd>
+    <dd>FC service ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -594,8 +594,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the service can access to internet or not.
-{{% /md %}}</dd>
+    <dd>Indicate whether the service can access to internet or not.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -603,8 +603,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}FC service last modification time.
-{{% /md %}}</dd>
+    <dd>FC service last modification time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -612,8 +612,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getservicesservicelogconfig">Get<wbr>Services<wbr>Service<wbr>Log<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A list of one element containing information about the associated log store. It contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of one element containing information about the associated log store. It contains the following attributes:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -621,8 +621,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}FC service name.
-{{% /md %}}</dd>
+    <dd>FC service name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -630,8 +630,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}FC service role ARN.
-{{% /md %}}</dd>
+    <dd>FC service role ARN.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -639,14 +639,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getservicesservicevpcconfig">Get<wbr>Services<wbr>Service<wbr>Vpc<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A list of one element containing information about accessible VPC resources. It contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of one element containing information about accessible VPC resources. It contains the following attributes:
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -655,8 +655,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}FC service creation time.
-{{% /md %}}</dd>
+    <dd>FC service creation time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -664,8 +664,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}FC service description.
-{{% /md %}}</dd>
+    <dd>FC service description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -673,8 +673,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}FC service ID.
-{{% /md %}}</dd>
+    <dd>FC service ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -682,8 +682,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the service can access to internet or not.
-{{% /md %}}</dd>
+    <dd>Indicate whether the service can access to internet or not.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -691,8 +691,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}FC service last modification time.
-{{% /md %}}</dd>
+    <dd>FC service last modification time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -700,8 +700,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getservicesservicelogconfig">Get<wbr>Services<wbr>Service<wbr>Log<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A list of one element containing information about the associated log store. It contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of one element containing information about the associated log store. It contains the following attributes:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -709,8 +709,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}FC service name.
-{{% /md %}}</dd>
+    <dd>FC service name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -718,8 +718,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}FC service role ARN.
-{{% /md %}}</dd>
+    <dd>FC service role ARN.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -727,14 +727,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getservicesservicevpcconfig">Get<wbr>Services<wbr>Service<wbr>Vpc<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}A list of one element containing information about accessible VPC resources. It contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of one element containing information about accessible VPC resources. It contains the following attributes:
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -743,8 +743,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}FC service creation time.
-{{% /md %}}</dd>
+    <dd>FC service creation time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -752,8 +752,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}FC service description.
-{{% /md %}}</dd>
+    <dd>FC service description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -761,8 +761,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}FC service ID.
-{{% /md %}}</dd>
+    <dd>FC service ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -770,8 +770,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the service can access to internet or not.
-{{% /md %}}</dd>
+    <dd>Indicate whether the service can access to internet or not.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -779,8 +779,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}FC service last modification time.
-{{% /md %}}</dd>
+    <dd>FC service last modification time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -788,8 +788,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getservicesservicelogconfig">Dict[Get<wbr>Services<wbr>Service<wbr>Log<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}A list of one element containing information about the associated log store. It contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of one element containing information about the associated log store. It contains the following attributes:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -797,8 +797,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}FC service name.
-{{% /md %}}</dd>
+    <dd>FC service name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -806,8 +806,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}FC service role ARN.
-{{% /md %}}</dd>
+    <dd>FC service role ARN.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -815,29 +815,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getservicesservicevpcconfig">Dict[Get<wbr>Services<wbr>Service<wbr>Vpc<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}A list of one element containing information about accessible VPC resources. It contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of one element containing information about accessible VPC resources. It contains the following attributes:
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getservicesservicelogconfig">Get<wbr>Services<wbr>Service<wbr>Log<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetServicesServiceLogConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/fc?tab=doc#GetServicesServiceLogConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -846,8 +846,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Log Service store name.
-{{% /md %}}</dd>
+    <dd>Log Service store name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -855,14 +855,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Log Service project name.
-{{% /md %}}</dd>
+    <dd>Log Service project name.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -871,8 +871,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Log Service store name.
-{{% /md %}}</dd>
+    <dd>Log Service store name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -880,14 +880,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Log Service project name.
-{{% /md %}}</dd>
+    <dd>Log Service project name.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -896,8 +896,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Log Service store name.
-{{% /md %}}</dd>
+    <dd>Log Service store name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -905,14 +905,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Log Service project name.
-{{% /md %}}</dd>
+    <dd>Log Service project name.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -921,8 +921,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Log Service store name.
-{{% /md %}}</dd>
+    <dd>Log Service store name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -930,29 +930,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Log Service project name.
-{{% /md %}}</dd>
+    <dd>Log Service project name.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getservicesservicevpcconfig">Get<wbr>Services<wbr>Service<wbr>Vpc<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetServicesServiceVpcConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/fc?tab=doc#GetServicesServiceVpcConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -961,8 +961,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Associated security group ID.
-{{% /md %}}</dd>
+    <dd>Associated security group ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -970,8 +970,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Associated VPC ID.
-{{% /md %}}</dd>
+    <dd>Associated VPC ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -979,14 +979,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Associated VSwitch IDs.
-{{% /md %}}</dd>
+    <dd>Associated VSwitch IDs.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -995,8 +995,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Associated security group ID.
-{{% /md %}}</dd>
+    <dd>Associated security group ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1004,8 +1004,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Associated VPC ID.
-{{% /md %}}</dd>
+    <dd>Associated VPC ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1013,14 +1013,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Associated VSwitch IDs.
-{{% /md %}}</dd>
+    <dd>Associated VSwitch IDs.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1029,8 +1029,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Associated security group ID.
-{{% /md %}}</dd>
+    <dd>Associated security group ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1038,8 +1038,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Associated VPC ID.
-{{% /md %}}</dd>
+    <dd>Associated VPC ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1047,14 +1047,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Associated VSwitch IDs.
-{{% /md %}}</dd>
+    <dd>Associated VSwitch IDs.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1063,8 +1063,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Associated security group ID.
-{{% /md %}}</dd>
+    <dd>Associated security group ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1072,8 +1072,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Associated VPC ID.
-{{% /md %}}</dd>
+    <dd>Associated VPC ID.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1081,11 +1081,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Associated VSwitch IDs.
-{{% /md %}}</dd>
+    <dd>Associated VSwitch IDs.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

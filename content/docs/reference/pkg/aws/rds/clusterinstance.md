@@ -60,26 +60,26 @@ for (let i = 0; i < 2; i++) {
 
 
 ## Create a ClusterInstance Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/rds/#ClusterInstance">ClusterInstance</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/rds/#ClusterInstanceArgs">ClusterInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ClusterInstance</span><span class="p">(resource_name, opts=None, </span>apply_immediately=None<span class="p">, </span>auto_minor_version_upgrade=None<span class="p">, </span>availability_zone=None<span class="p">, </span>ca_cert_identifier=None<span class="p">, </span>cluster_identifier=None<span class="p">, </span>copy_tags_to_snapshot=None<span class="p">, </span>db_parameter_group_name=None<span class="p">, </span>db_subnet_group_name=None<span class="p">, </span>engine=None<span class="p">, </span>engine_version=None<span class="p">, </span>identifier=None<span class="p">, </span>identifier_prefix=None<span class="p">, </span>instance_class=None<span class="p">, </span>monitoring_interval=None<span class="p">, </span>monitoring_role_arn=None<span class="p">, </span>performance_insights_enabled=None<span class="p">, </span>performance_insights_kms_key_id=None<span class="p">, </span>preferred_backup_window=None<span class="p">, </span>preferred_maintenance_window=None<span class="p">, </span>promotion_tier=None<span class="p">, </span>publicly_accessible=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewClusterInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/rds?tab=doc#ClusterInstanceArgs">ClusterInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/rds?tab=doc#ClusterInstance">ClusterInstance</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Rds.ClusterInstance.html">ClusterInstance</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Rds.ClusterInstanceArgs.html">ClusterInstanceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -116,9 +116,9 @@ for (let i = 0; i < 2; i++) {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -136,9 +136,9 @@ for (let i = 0; i < 2; i++) {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -185,9 +185,9 @@ for (let i = 0; i < 2; i++) {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -224,7 +224,7 @@ for (let i = 0; i < 2; i++) {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ClusterInstance Resource Properties {#properties}
 
@@ -237,7 +237,7 @@ The ClusterInstance resource accepts the following [input]({{< relref "/docs/int
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -246,8 +246,8 @@ The ClusterInstance resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -255,9 +255,9 @@ The ClusterInstance resource accepts the following [input]({{< relref "/docs/int
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The instance class to use. For details on CPU
+    <dd>The instance class to use. For details on CPU
 and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance classes/types. Please see [AWS Documentation][7] for currently available instance classes and complete details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -265,9 +265,9 @@ and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance cl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any database modifications
+    <dd>Specifies whether any database modifications
 are applied immediately, or during the next maintenance window. Default is`false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -275,8 +275,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default `true`.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,8 +284,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the DB instance is created in. See [docs](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) about the details.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the DB instance is created in. See [docs](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) about the details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,8 +293,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the CA certificate for the DB instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the CA certificate for the DB instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -302,8 +302,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default `false`.
-{{% /md %}}</dd>
+    <dd>Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -311,8 +311,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the DB parameter group to associate with this instance.
-{{% /md %}}</dd>
+    <dd>The name of the DB parameter group to associate with this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -320,8 +320,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A DB subnet group to associate with this DB instance. **NOTE:** This must match the `db_subnet_group_name` of the attached [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html).
-{{% /md %}}</dd>
+    <dd>A DB subnet group to associate with this DB instance. **NOTE:** This must match the `db_subnet_group_name` of the attached [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -329,11 +329,11 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The name of the database engine to be used for the RDS instance. Defaults to `aurora`. Valid Values: `aurora`, `aurora-mysql`, `aurora-postgresql`.
+    <dd>The name of the database engine to be used for the RDS instance. Defaults to `aurora`. Valid Values: `aurora`, `aurora-mysql`, `aurora-postgresql`.
 For information on the difference between the available Aurora MySQL engines
 see [Comparison between Aurora MySQL 1 and Aurora MySQL 2](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AuroraMySQL.Updates.20180206.html)
 in the Amazon RDS User Guide.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -341,8 +341,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The database engine version.
-{{% /md %}}</dd>
+    <dd>The database engine version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -350,8 +350,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The indentifier for the RDS instance, if omitted, this provider will assign a random, unique identifier.
-{{% /md %}}</dd>
+    <dd>The indentifier for the RDS instance, if omitted, this provider will assign a random, unique identifier.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -359,8 +359,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
-{{% /md %}}</dd>
+    <dd>Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -368,8 +368,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0. The default is 0. Valid Values: 0, 1, 5, 10, 15, 30, 60.
-{{% /md %}}</dd>
+    <dd>The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0. The default is 0. Valid Values: 0, 1, 5, 10, 15, 30, 60.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -377,10 +377,10 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the IAM role that permits RDS to send
+    <dd>The ARN for the IAM role that permits RDS to send
 enhanced monitoring metrics to CloudWatch Logs. You can find more information on the [AWS Documentation](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.html)
 what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -388,8 +388,8 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Performance Insights is enabled or not.
-{{% /md %}}</dd>
+    <dd>Specifies whether Performance Insights is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -397,8 +397,8 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -406,9 +406,9 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range during which automated backups are created if automated backups are enabled.
+    <dd>The daily time range during which automated backups are created if automated backups are enabled.
 Eg: "04:00-09:00"
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -416,9 +416,9 @@ Eg: "04:00-09:00"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The window to perform maintenance in.
+    <dd>The window to perform maintenance in.
 Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -426,8 +426,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoted to writer.
-{{% /md %}}</dd>
+    <dd>Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoted to writer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -435,10 +435,10 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Bool to control if instance is publicly accessible.
+    <dd>Bool to control if instance is publicly accessible.
 Default `false`. See the documentation on [Creating DB Instances][6] for more
 details on controlling this property.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -446,14 +446,14 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -462,8 +462,8 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -471,9 +471,9 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
-    <dd>{{% md %}}The instance class to use. For details on CPU
+    <dd>The instance class to use. For details on CPU
 and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance classes/types. Please see [AWS Documentation][7] for currently available instance classes and complete details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -481,9 +481,9 @@ and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance cl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any database modifications
+    <dd>Specifies whether any database modifications
 are applied immediately, or during the next maintenance window. Default is`false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -491,8 +491,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default `true`.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -500,8 +500,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the DB instance is created in. See [docs](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) about the details.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the DB instance is created in. See [docs](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) about the details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -509,8 +509,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the CA certificate for the DB instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the CA certificate for the DB instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -518,8 +518,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default `false`.
-{{% /md %}}</dd>
+    <dd>Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -527,8 +527,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the DB parameter group to associate with this instance.
-{{% /md %}}</dd>
+    <dd>The name of the DB parameter group to associate with this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -536,8 +536,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A DB subnet group to associate with this DB instance. **NOTE:** This must match the `db_subnet_group_name` of the attached [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html).
-{{% /md %}}</dd>
+    <dd>A DB subnet group to associate with this DB instance. **NOTE:** This must match the `db_subnet_group_name` of the attached [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -545,11 +545,11 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The name of the database engine to be used for the RDS instance. Defaults to `aurora`. Valid Values: `aurora`, `aurora-mysql`, `aurora-postgresql`.
+    <dd>The name of the database engine to be used for the RDS instance. Defaults to `aurora`. Valid Values: `aurora`, `aurora-mysql`, `aurora-postgresql`.
 For information on the difference between the available Aurora MySQL engines
 see [Comparison between Aurora MySQL 1 and Aurora MySQL 2](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AuroraMySQL.Updates.20180206.html)
 in the Amazon RDS User Guide.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -557,8 +557,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The database engine version.
-{{% /md %}}</dd>
+    <dd>The database engine version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -566,8 +566,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The indentifier for the RDS instance, if omitted, this provider will assign a random, unique identifier.
-{{% /md %}}</dd>
+    <dd>The indentifier for the RDS instance, if omitted, this provider will assign a random, unique identifier.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -575,8 +575,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
-{{% /md %}}</dd>
+    <dd>Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -584,8 +584,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0. The default is 0. Valid Values: 0, 1, 5, 10, 15, 30, 60.
-{{% /md %}}</dd>
+    <dd>The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0. The default is 0. Valid Values: 0, 1, 5, 10, 15, 30, 60.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -593,10 +593,10 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the IAM role that permits RDS to send
+    <dd>The ARN for the IAM role that permits RDS to send
 enhanced monitoring metrics to CloudWatch Logs. You can find more information on the [AWS Documentation](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.html)
 what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -604,8 +604,8 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Performance Insights is enabled or not.
-{{% /md %}}</dd>
+    <dd>Specifies whether Performance Insights is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -613,8 +613,8 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -622,9 +622,9 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range during which automated backups are created if automated backups are enabled.
+    <dd>The daily time range during which automated backups are created if automated backups are enabled.
 Eg: "04:00-09:00"
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -632,9 +632,9 @@ Eg: "04:00-09:00"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The window to perform maintenance in.
+    <dd>The window to perform maintenance in.
 Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -642,8 +642,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoted to writer.
-{{% /md %}}</dd>
+    <dd>Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoted to writer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -651,10 +651,10 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Bool to control if instance is publicly accessible.
+    <dd>Bool to control if instance is publicly accessible.
 Default `false`. See the documentation on [Creating DB Instances][6] for more
 details on controlling this property.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -662,14 +662,14 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -678,8 +678,8 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -687,9 +687,9 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type">string | Instance<wbr>Type</span>
     </dt>
-    <dd>{{% md %}}The instance class to use. For details on CPU
+    <dd>The instance class to use. For details on CPU
 and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance classes/types. Please see [AWS Documentation][7] for currently available instance classes and complete details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -697,9 +697,9 @@ and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance cl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any database modifications
+    <dd>Specifies whether any database modifications
 are applied immediately, or during the next maintenance window. Default is`false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -707,8 +707,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default `true`.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -716,8 +716,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the DB instance is created in. See [docs](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) about the details.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the DB instance is created in. See [docs](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) about the details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -725,8 +725,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the CA certificate for the DB instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the CA certificate for the DB instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -734,8 +734,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default `false`.
-{{% /md %}}</dd>
+    <dd>Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -743,8 +743,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the DB parameter group to associate with this instance.
-{{% /md %}}</dd>
+    <dd>The name of the DB parameter group to associate with this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -752,8 +752,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A DB subnet group to associate with this DB instance. **NOTE:** This must match the `db_subnet_group_name` of the attached [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html).
-{{% /md %}}</dd>
+    <dd>A DB subnet group to associate with this DB instance. **NOTE:** This must match the `db_subnet_group_name` of the attached [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -761,11 +761,11 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type">Engine<wbr>Type</span>
     </dt>
-    <dd>{{% md %}}The name of the database engine to be used for the RDS instance. Defaults to `aurora`. Valid Values: `aurora`, `aurora-mysql`, `aurora-postgresql`.
+    <dd>The name of the database engine to be used for the RDS instance. Defaults to `aurora`. Valid Values: `aurora`, `aurora-mysql`, `aurora-postgresql`.
 For information on the difference between the available Aurora MySQL engines
 see [Comparison between Aurora MySQL 1 and Aurora MySQL 2](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AuroraMySQL.Updates.20180206.html)
 in the Amazon RDS User Guide.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -773,8 +773,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The database engine version.
-{{% /md %}}</dd>
+    <dd>The database engine version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -782,8 +782,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The indentifier for the RDS instance, if omitted, this provider will assign a random, unique identifier.
-{{% /md %}}</dd>
+    <dd>The indentifier for the RDS instance, if omitted, this provider will assign a random, unique identifier.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -791,8 +791,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
-{{% /md %}}</dd>
+    <dd>Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -800,8 +800,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0. The default is 0. Valid Values: 0, 1, 5, 10, 15, 30, 60.
-{{% /md %}}</dd>
+    <dd>The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0. The default is 0. Valid Values: 0, 1, 5, 10, 15, 30, 60.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -809,10 +809,10 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the IAM role that permits RDS to send
+    <dd>The ARN for the IAM role that permits RDS to send
 enhanced monitoring metrics to CloudWatch Logs. You can find more information on the [AWS Documentation](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.html)
 what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -820,8 +820,8 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Performance Insights is enabled or not.
-{{% /md %}}</dd>
+    <dd>Specifies whether Performance Insights is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -829,8 +829,8 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -838,9 +838,9 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range during which automated backups are created if automated backups are enabled.
+    <dd>The daily time range during which automated backups are created if automated backups are enabled.
 Eg: "04:00-09:00"
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -848,9 +848,9 @@ Eg: "04:00-09:00"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The window to perform maintenance in.
+    <dd>The window to perform maintenance in.
 Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -858,8 +858,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoted to writer.
-{{% /md %}}</dd>
+    <dd>Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoted to writer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -867,10 +867,10 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Bool to control if instance is publicly accessible.
+    <dd>Bool to control if instance is publicly accessible.
 Default `false`. See the documentation on [Creating DB Instances][6] for more
 details on controlling this property.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -878,14 +878,14 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -894,8 +894,8 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -903,9 +903,9 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
-    <dd>{{% md %}}The instance class to use. For details on CPU
+    <dd>The instance class to use. For details on CPU
 and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance classes/types. Please see [AWS Documentation][7] for currently available instance classes and complete details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -913,9 +913,9 @@ and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance cl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any database modifications
+    <dd>Specifies whether any database modifications
 are applied immediately, or during the next maintenance window. Default is`false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -923,8 +923,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default `true`.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -932,8 +932,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the DB instance is created in. See [docs](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) about the details.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the DB instance is created in. See [docs](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) about the details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -941,8 +941,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the CA certificate for the DB instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the CA certificate for the DB instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -950,8 +950,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default `false`.
-{{% /md %}}</dd>
+    <dd>Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -959,8 +959,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the DB parameter group to associate with this instance.
-{{% /md %}}</dd>
+    <dd>The name of the DB parameter group to associate with this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -968,8 +968,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A DB subnet group to associate with this DB instance. **NOTE:** This must match the `db_subnet_group_name` of the attached [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html).
-{{% /md %}}</dd>
+    <dd>A DB subnet group to associate with this DB instance. **NOTE:** This must match the `db_subnet_group_name` of the attached [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -977,11 +977,11 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}The name of the database engine to be used for the RDS instance. Defaults to `aurora`. Valid Values: `aurora`, `aurora-mysql`, `aurora-postgresql`.
+    <dd>The name of the database engine to be used for the RDS instance. Defaults to `aurora`. Valid Values: `aurora`, `aurora-mysql`, `aurora-postgresql`.
 For information on the difference between the available Aurora MySQL engines
 see [Comparison between Aurora MySQL 1 and Aurora MySQL 2](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AuroraMySQL.Updates.20180206.html)
 in the Amazon RDS User Guide.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -989,8 +989,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The database engine version.
-{{% /md %}}</dd>
+    <dd>The database engine version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -998,8 +998,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The indentifier for the RDS instance, if omitted, this provider will assign a random, unique identifier.
-{{% /md %}}</dd>
+    <dd>The indentifier for the RDS instance, if omitted, this provider will assign a random, unique identifier.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1007,8 +1007,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
-{{% /md %}}</dd>
+    <dd>Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1016,8 +1016,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0. The default is 0. Valid Values: 0, 1, 5, 10, 15, 30, 60.
-{{% /md %}}</dd>
+    <dd>The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0. The default is 0. Valid Values: 0, 1, 5, 10, 15, 30, 60.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1025,10 +1025,10 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the IAM role that permits RDS to send
+    <dd>The ARN for the IAM role that permits RDS to send
 enhanced monitoring metrics to CloudWatch Logs. You can find more information on the [AWS Documentation](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.html)
 what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1036,8 +1036,8 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Performance Insights is enabled or not.
-{{% /md %}}</dd>
+    <dd>Specifies whether Performance Insights is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1045,8 +1045,8 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1054,9 +1054,9 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range during which automated backups are created if automated backups are enabled.
+    <dd>The daily time range during which automated backups are created if automated backups are enabled.
 Eg: "04:00-09:00"
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1064,9 +1064,9 @@ Eg: "04:00-09:00"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The window to perform maintenance in.
+    <dd>The window to perform maintenance in.
 Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1074,8 +1074,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoted to writer.
-{{% /md %}}</dd>
+    <dd>Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoted to writer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1083,10 +1083,10 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Bool to control if instance is publicly accessible.
+    <dd>Bool to control if instance is publicly accessible.
 Default `false`. See the documentation on [Creating DB Instances][6] for more
 details on controlling this property.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1094,11 +1094,11 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1112,7 +1112,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1121,8 +1121,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of cluster instance
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of cluster instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -1130,8 +1130,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region-unique, immutable identifier for the DB instance.
-{{% /md %}}</dd>
+    <dd>The region-unique, immutable identifier for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1139,8 +1139,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS address for this instance. May not be writable
-{{% /md %}}</dd>
+    <dd>The DNS address for this instance. May not be writable
+</dd>
 
     <dt class="property-"
             title="">
@@ -1148,7 +1148,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1156,8 +1156,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key if one is set to the cluster.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key if one is set to the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1165,8 +1165,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The database port
-{{% /md %}}</dd>
+    <dd>The database port
+</dd>
 
     <dt class="property-"
             title="">
@@ -1174,8 +1174,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the DB cluster is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the DB cluster is encrypted.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1183,14 +1183,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
-{{% /md %}}</dd>
+    <dd>Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1199,8 +1199,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of cluster instance
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of cluster instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -1208,8 +1208,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region-unique, immutable identifier for the DB instance.
-{{% /md %}}</dd>
+    <dd>The region-unique, immutable identifier for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1217,8 +1217,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS address for this instance. May not be writable
-{{% /md %}}</dd>
+    <dd>The DNS address for this instance. May not be writable
+</dd>
 
     <dt class="property-"
             title="">
@@ -1226,7 +1226,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1234,8 +1234,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key if one is set to the cluster.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key if one is set to the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1243,8 +1243,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The database port
-{{% /md %}}</dd>
+    <dd>The database port
+</dd>
 
     <dt class="property-"
             title="">
@@ -1252,8 +1252,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the DB cluster is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the DB cluster is encrypted.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1261,14 +1261,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
-{{% /md %}}</dd>
+    <dd>Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1277,8 +1277,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of cluster instance
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of cluster instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -1286,8 +1286,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region-unique, immutable identifier for the DB instance.
-{{% /md %}}</dd>
+    <dd>The region-unique, immutable identifier for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1295,8 +1295,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS address for this instance. May not be writable
-{{% /md %}}</dd>
+    <dd>The DNS address for this instance. May not be writable
+</dd>
 
     <dt class="property-"
             title="">
@@ -1304,7 +1304,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1312,8 +1312,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key if one is set to the cluster.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key if one is set to the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1321,8 +1321,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The database port
-{{% /md %}}</dd>
+    <dd>The database port
+</dd>
 
     <dt class="property-"
             title="">
@@ -1330,8 +1330,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the DB cluster is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the DB cluster is encrypted.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1339,14 +1339,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
-{{% /md %}}</dd>
+    <dd>Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1355,8 +1355,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of cluster instance
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of cluster instance
+</dd>
 
     <dt class="property-"
             title="">
@@ -1364,8 +1364,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region-unique, immutable identifier for the DB instance.
-{{% /md %}}</dd>
+    <dd>The region-unique, immutable identifier for the DB instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1373,8 +1373,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The DNS address for this instance. May not be writable
-{{% /md %}}</dd>
+    <dd>The DNS address for this instance. May not be writable
+</dd>
 
     <dt class="property-"
             title="">
@@ -1382,7 +1382,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1390,8 +1390,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key if one is set to the cluster.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key if one is set to the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1399,8 +1399,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The database port
-{{% /md %}}</dd>
+    <dd>The database port
+</dd>
 
     <dt class="property-"
             title="">
@@ -1408,8 +1408,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the DB cluster is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the DB cluster is encrypted.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1417,11 +1417,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
-{{% /md %}}</dd>
+    <dd>Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1432,25 +1432,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ClusterInstance Resource {#look-up}
 
 Get an existing ClusterInstance resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/rds/#ClusterInstanceState">ClusterInstanceState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/rds/#ClusterInstance">ClusterInstance</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>apply_immediately=None<span class="p">, </span>arn=None<span class="p">, </span>auto_minor_version_upgrade=None<span class="p">, </span>availability_zone=None<span class="p">, </span>ca_cert_identifier=None<span class="p">, </span>cluster_identifier=None<span class="p">, </span>copy_tags_to_snapshot=None<span class="p">, </span>db_parameter_group_name=None<span class="p">, </span>db_subnet_group_name=None<span class="p">, </span>dbi_resource_id=None<span class="p">, </span>endpoint=None<span class="p">, </span>engine=None<span class="p">, </span>engine_version=None<span class="p">, </span>identifier=None<span class="p">, </span>identifier_prefix=None<span class="p">, </span>instance_class=None<span class="p">, </span>kms_key_id=None<span class="p">, </span>monitoring_interval=None<span class="p">, </span>monitoring_role_arn=None<span class="p">, </span>performance_insights_enabled=None<span class="p">, </span>performance_insights_kms_key_id=None<span class="p">, </span>port=None<span class="p">, </span>preferred_backup_window=None<span class="p">, </span>preferred_maintenance_window=None<span class="p">, </span>promotion_tier=None<span class="p">, </span>publicly_accessible=None<span class="p">, </span>storage_encrypted=None<span class="p">, </span>tags=None<span class="p">, </span>writer=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetClusterInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/rds?tab=doc#ClusterInstanceState">ClusterInstanceState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/rds?tab=doc#ClusterInstance">ClusterInstance</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Rds.ClusterInstance.html">ClusterInstance</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Rds.ClusterInstanceState.html">ClusterInstanceState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1475,9 +1475,9 @@ Get an existing ClusterInstance resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1490,36 +1490,9 @@ Get an existing ClusterInstance resource's state with the given name, ID, and op
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1544,13 +1517,40 @@ Get an existing ClusterInstance resource's state with the given name, ID, and op
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1559,9 +1559,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any database modifications
+    <dd>Specifies whether any database modifications
 are applied immediately, or during the next maintenance window. Default is`false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1569,8 +1569,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of cluster instance
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of cluster instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1578,8 +1578,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default `true`.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1587,8 +1587,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the DB instance is created in. See [docs](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) about the details.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the DB instance is created in. See [docs](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) about the details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1596,8 +1596,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the CA certificate for the DB instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the CA certificate for the DB instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1605,8 +1605,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1614,8 +1614,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default `false`.
-{{% /md %}}</dd>
+    <dd>Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1623,8 +1623,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the DB parameter group to associate with this instance.
-{{% /md %}}</dd>
+    <dd>The name of the DB parameter group to associate with this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1632,8 +1632,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A DB subnet group to associate with this DB instance. **NOTE:** This must match the `db_subnet_group_name` of the attached [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html).
-{{% /md %}}</dd>
+    <dd>A DB subnet group to associate with this DB instance. **NOTE:** This must match the `db_subnet_group_name` of the attached [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1641,8 +1641,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region-unique, immutable identifier for the DB instance.
-{{% /md %}}</dd>
+    <dd>The region-unique, immutable identifier for the DB instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1650,8 +1650,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS address for this instance. May not be writable
-{{% /md %}}</dd>
+    <dd>The DNS address for this instance. May not be writable
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1659,11 +1659,11 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The name of the database engine to be used for the RDS instance. Defaults to `aurora`. Valid Values: `aurora`, `aurora-mysql`, `aurora-postgresql`.
+    <dd>The name of the database engine to be used for the RDS instance. Defaults to `aurora`. Valid Values: `aurora`, `aurora-mysql`, `aurora-postgresql`.
 For information on the difference between the available Aurora MySQL engines
 see [Comparison between Aurora MySQL 1 and Aurora MySQL 2](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AuroraMySQL.Updates.20180206.html)
 in the Amazon RDS User Guide.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1671,8 +1671,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The database engine version.
-{{% /md %}}</dd>
+    <dd>The database engine version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1680,8 +1680,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The indentifier for the RDS instance, if omitted, this provider will assign a random, unique identifier.
-{{% /md %}}</dd>
+    <dd>The indentifier for the RDS instance, if omitted, this provider will assign a random, unique identifier.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1689,8 +1689,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
-{{% /md %}}</dd>
+    <dd>Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1698,9 +1698,9 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The instance class to use. For details on CPU
+    <dd>The instance class to use. For details on CPU
 and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance classes/types. Please see [AWS Documentation][7] for currently available instance classes and complete details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1708,8 +1708,8 @@ and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance cl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key if one is set to the cluster.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key if one is set to the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1717,8 +1717,8 @@ and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance cl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0. The default is 0. Valid Values: 0, 1, 5, 10, 15, 30, 60.
-{{% /md %}}</dd>
+    <dd>The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0. The default is 0. Valid Values: 0, 1, 5, 10, 15, 30, 60.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1726,10 +1726,10 @@ and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance cl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the IAM role that permits RDS to send
+    <dd>The ARN for the IAM role that permits RDS to send
 enhanced monitoring metrics to CloudWatch Logs. You can find more information on the [AWS Documentation](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.html)
 what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1737,8 +1737,8 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Performance Insights is enabled or not.
-{{% /md %}}</dd>
+    <dd>Specifies whether Performance Insights is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1746,8 +1746,8 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1755,8 +1755,8 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The database port
-{{% /md %}}</dd>
+    <dd>The database port
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1764,9 +1764,9 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range during which automated backups are created if automated backups are enabled.
+    <dd>The daily time range during which automated backups are created if automated backups are enabled.
 Eg: "04:00-09:00"
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1774,9 +1774,9 @@ Eg: "04:00-09:00"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The window to perform maintenance in.
+    <dd>The window to perform maintenance in.
 Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1784,8 +1784,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoted to writer.
-{{% /md %}}</dd>
+    <dd>Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoted to writer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1793,10 +1793,10 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Bool to control if instance is publicly accessible.
+    <dd>Bool to control if instance is publicly accessible.
 Default `false`. See the documentation on [Creating DB Instances][6] for more
 details on controlling this property.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1804,8 +1804,8 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the DB cluster is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the DB cluster is encrypted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1813,8 +1813,8 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1822,14 +1822,14 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
-{{% /md %}}</dd>
+    <dd>Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1838,9 +1838,9 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any database modifications
+    <dd>Specifies whether any database modifications
 are applied immediately, or during the next maintenance window. Default is`false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1848,8 +1848,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of cluster instance
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of cluster instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1857,8 +1857,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default `true`.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1866,8 +1866,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the DB instance is created in. See [docs](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) about the details.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the DB instance is created in. See [docs](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) about the details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1875,8 +1875,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the CA certificate for the DB instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the CA certificate for the DB instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1884,8 +1884,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1893,8 +1893,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default `false`.
-{{% /md %}}</dd>
+    <dd>Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1902,8 +1902,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the DB parameter group to associate with this instance.
-{{% /md %}}</dd>
+    <dd>The name of the DB parameter group to associate with this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1911,8 +1911,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A DB subnet group to associate with this DB instance. **NOTE:** This must match the `db_subnet_group_name` of the attached [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html).
-{{% /md %}}</dd>
+    <dd>A DB subnet group to associate with this DB instance. **NOTE:** This must match the `db_subnet_group_name` of the attached [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1920,8 +1920,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region-unique, immutable identifier for the DB instance.
-{{% /md %}}</dd>
+    <dd>The region-unique, immutable identifier for the DB instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1929,8 +1929,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS address for this instance. May not be writable
-{{% /md %}}</dd>
+    <dd>The DNS address for this instance. May not be writable
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1938,11 +1938,11 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type">string</span>
     </dt>
-    <dd>{{% md %}}The name of the database engine to be used for the RDS instance. Defaults to `aurora`. Valid Values: `aurora`, `aurora-mysql`, `aurora-postgresql`.
+    <dd>The name of the database engine to be used for the RDS instance. Defaults to `aurora`. Valid Values: `aurora`, `aurora-mysql`, `aurora-postgresql`.
 For information on the difference between the available Aurora MySQL engines
 see [Comparison between Aurora MySQL 1 and Aurora MySQL 2](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AuroraMySQL.Updates.20180206.html)
 in the Amazon RDS User Guide.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1950,8 +1950,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The database engine version.
-{{% /md %}}</dd>
+    <dd>The database engine version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1959,8 +1959,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The indentifier for the RDS instance, if omitted, this provider will assign a random, unique identifier.
-{{% /md %}}</dd>
+    <dd>The indentifier for the RDS instance, if omitted, this provider will assign a random, unique identifier.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1968,8 +1968,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
-{{% /md %}}</dd>
+    <dd>Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1977,9 +1977,9 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type">interface{}</span>
     </dt>
-    <dd>{{% md %}}The instance class to use. For details on CPU
+    <dd>The instance class to use. For details on CPU
 and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance classes/types. Please see [AWS Documentation][7] for currently available instance classes and complete details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1987,8 +1987,8 @@ and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance cl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key if one is set to the cluster.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key if one is set to the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1996,8 +1996,8 @@ and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance cl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0. The default is 0. Valid Values: 0, 1, 5, 10, 15, 30, 60.
-{{% /md %}}</dd>
+    <dd>The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0. The default is 0. Valid Values: 0, 1, 5, 10, 15, 30, 60.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2005,10 +2005,10 @@ and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance cl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the IAM role that permits RDS to send
+    <dd>The ARN for the IAM role that permits RDS to send
 enhanced monitoring metrics to CloudWatch Logs. You can find more information on the [AWS Documentation](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.html)
 what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2016,8 +2016,8 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Performance Insights is enabled or not.
-{{% /md %}}</dd>
+    <dd>Specifies whether Performance Insights is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2025,8 +2025,8 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2034,8 +2034,8 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The database port
-{{% /md %}}</dd>
+    <dd>The database port
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2043,9 +2043,9 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range during which automated backups are created if automated backups are enabled.
+    <dd>The daily time range during which automated backups are created if automated backups are enabled.
 Eg: "04:00-09:00"
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2053,9 +2053,9 @@ Eg: "04:00-09:00"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The window to perform maintenance in.
+    <dd>The window to perform maintenance in.
 Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2063,8 +2063,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoted to writer.
-{{% /md %}}</dd>
+    <dd>Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoted to writer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2072,10 +2072,10 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Bool to control if instance is publicly accessible.
+    <dd>Bool to control if instance is publicly accessible.
 Default `false`. See the documentation on [Creating DB Instances][6] for more
 details on controlling this property.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2083,8 +2083,8 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the DB cluster is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the DB cluster is encrypted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2092,8 +2092,8 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2101,14 +2101,14 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
-{{% /md %}}</dd>
+    <dd>Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2117,9 +2117,9 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any database modifications
+    <dd>Specifies whether any database modifications
 are applied immediately, or during the next maintenance window. Default is`false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2127,8 +2127,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of cluster instance
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of cluster instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2136,8 +2136,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default `true`.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2145,8 +2145,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the DB instance is created in. See [docs](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) about the details.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the DB instance is created in. See [docs](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) about the details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2154,8 +2154,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the CA certificate for the DB instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the CA certificate for the DB instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2163,8 +2163,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2172,8 +2172,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default `false`.
-{{% /md %}}</dd>
+    <dd>Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2181,8 +2181,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the DB parameter group to associate with this instance.
-{{% /md %}}</dd>
+    <dd>The name of the DB parameter group to associate with this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2190,8 +2190,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A DB subnet group to associate with this DB instance. **NOTE:** This must match the `db_subnet_group_name` of the attached [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html).
-{{% /md %}}</dd>
+    <dd>A DB subnet group to associate with this DB instance. **NOTE:** This must match the `db_subnet_group_name` of the attached [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2199,8 +2199,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region-unique, immutable identifier for the DB instance.
-{{% /md %}}</dd>
+    <dd>The region-unique, immutable identifier for the DB instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2208,8 +2208,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS address for this instance. May not be writable
-{{% /md %}}</dd>
+    <dd>The DNS address for this instance. May not be writable
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2217,11 +2217,11 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type">Engine<wbr>Type</span>
     </dt>
-    <dd>{{% md %}}The name of the database engine to be used for the RDS instance. Defaults to `aurora`. Valid Values: `aurora`, `aurora-mysql`, `aurora-postgresql`.
+    <dd>The name of the database engine to be used for the RDS instance. Defaults to `aurora`. Valid Values: `aurora`, `aurora-mysql`, `aurora-postgresql`.
 For information on the difference between the available Aurora MySQL engines
 see [Comparison between Aurora MySQL 1 and Aurora MySQL 2](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AuroraMySQL.Updates.20180206.html)
 in the Amazon RDS User Guide.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2229,8 +2229,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The database engine version.
-{{% /md %}}</dd>
+    <dd>The database engine version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2238,8 +2238,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The indentifier for the RDS instance, if omitted, this provider will assign a random, unique identifier.
-{{% /md %}}</dd>
+    <dd>The indentifier for the RDS instance, if omitted, this provider will assign a random, unique identifier.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2247,8 +2247,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
-{{% /md %}}</dd>
+    <dd>Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2256,9 +2256,9 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type">string | Instance<wbr>Type</span>
     </dt>
-    <dd>{{% md %}}The instance class to use. For details on CPU
+    <dd>The instance class to use. For details on CPU
 and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance classes/types. Please see [AWS Documentation][7] for currently available instance classes and complete details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2266,8 +2266,8 @@ and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance cl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key if one is set to the cluster.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key if one is set to the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2275,8 +2275,8 @@ and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance cl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0. The default is 0. Valid Values: 0, 1, 5, 10, 15, 30, 60.
-{{% /md %}}</dd>
+    <dd>The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0. The default is 0. Valid Values: 0, 1, 5, 10, 15, 30, 60.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2284,10 +2284,10 @@ and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance cl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the IAM role that permits RDS to send
+    <dd>The ARN for the IAM role that permits RDS to send
 enhanced monitoring metrics to CloudWatch Logs. You can find more information on the [AWS Documentation](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.html)
 what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2295,8 +2295,8 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Performance Insights is enabled or not.
-{{% /md %}}</dd>
+    <dd>Specifies whether Performance Insights is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2304,8 +2304,8 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2313,8 +2313,8 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The database port
-{{% /md %}}</dd>
+    <dd>The database port
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2322,9 +2322,9 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range during which automated backups are created if automated backups are enabled.
+    <dd>The daily time range during which automated backups are created if automated backups are enabled.
 Eg: "04:00-09:00"
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2332,9 +2332,9 @@ Eg: "04:00-09:00"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The window to perform maintenance in.
+    <dd>The window to perform maintenance in.
 Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2342,8 +2342,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoted to writer.
-{{% /md %}}</dd>
+    <dd>Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoted to writer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2351,10 +2351,10 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Bool to control if instance is publicly accessible.
+    <dd>Bool to control if instance is publicly accessible.
 Default `false`. See the documentation on [Creating DB Instances][6] for more
 details on controlling this property.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2362,8 +2362,8 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the DB cluster is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the DB cluster is encrypted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2371,8 +2371,8 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2380,14 +2380,14 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
-{{% /md %}}</dd>
+    <dd>Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2396,9 +2396,9 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether any database modifications
+    <dd>Specifies whether any database modifications
 are applied immediately, or during the next maintenance window. Default is`false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2406,8 +2406,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of cluster instance
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of cluster instance
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2415,8 +2415,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default `true`.
-{{% /md %}}</dd>
+    <dd>Indicates that minor engine upgrades will be applied automatically to the DB instance during the maintenance window. Default `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2424,8 +2424,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The EC2 Availability Zone that the DB instance is created in. See [docs](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) about the details.
-{{% /md %}}</dd>
+    <dd>The EC2 Availability Zone that the DB instance is created in. See [docs](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_CreateDBInstance.html) about the details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2433,8 +2433,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the CA certificate for the DB instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the CA certificate for the DB instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2442,8 +2442,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The identifier of the [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
-{{% /md %}}</dd>
+    <dd>The identifier of the [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html) in which to launch this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2451,8 +2451,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default `false`.
-{{% /md %}}</dd>
+    <dd>Indicates whether to copy all of the user-defined tags from the DB instance to snapshots of the DB instance. Default `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2460,8 +2460,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the DB parameter group to associate with this instance.
-{{% /md %}}</dd>
+    <dd>The name of the DB parameter group to associate with this instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2469,8 +2469,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A DB subnet group to associate with this DB instance. **NOTE:** This must match the `db_subnet_group_name` of the attached [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html).
-{{% /md %}}</dd>
+    <dd>A DB subnet group to associate with this DB instance. **NOTE:** This must match the `db_subnet_group_name` of the attached [`aws.rds.Cluster`](https://www.terraform.io/docs/providers/aws/r/rds_cluster.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2478,8 +2478,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region-unique, immutable identifier for the DB instance.
-{{% /md %}}</dd>
+    <dd>The region-unique, immutable identifier for the DB instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2487,8 +2487,8 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The DNS address for this instance. May not be writable
-{{% /md %}}</dd>
+    <dd>The DNS address for this instance. May not be writable
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2496,11 +2496,11 @@ are applied immediately, or during the next maintenance window. Default is`false
         <span class="property-indicator"></span>
         <span class="property-type">str</span>
     </dt>
-    <dd>{{% md %}}The name of the database engine to be used for the RDS instance. Defaults to `aurora`. Valid Values: `aurora`, `aurora-mysql`, `aurora-postgresql`.
+    <dd>The name of the database engine to be used for the RDS instance. Defaults to `aurora`. Valid Values: `aurora`, `aurora-mysql`, `aurora-postgresql`.
 For information on the difference between the available Aurora MySQL engines
 see [Comparison between Aurora MySQL 1 and Aurora MySQL 2](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/AuroraMySQL.Updates.20180206.html)
 in the Amazon RDS User Guide.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2508,8 +2508,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The database engine version.
-{{% /md %}}</dd>
+    <dd>The database engine version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2517,8 +2517,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The indentifier for the RDS instance, if omitted, this provider will assign a random, unique identifier.
-{{% /md %}}</dd>
+    <dd>The indentifier for the RDS instance, if omitted, this provider will assign a random, unique identifier.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2526,8 +2526,8 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
-{{% /md %}}</dd>
+    <dd>Creates a unique identifier beginning with the specified prefix. Conflicts with `identifier`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2535,9 +2535,9 @@ in the Amazon RDS User Guide.
         <span class="property-indicator"></span>
         <span class="property-type">string | str</span>
     </dt>
-    <dd>{{% md %}}The instance class to use. For details on CPU
+    <dd>The instance class to use. For details on CPU
 and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance classes/types. Please see [AWS Documentation][7] for currently available instance classes and complete details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2545,8 +2545,8 @@ and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance cl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS encryption key if one is set to the cluster.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS encryption key if one is set to the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2554,8 +2554,8 @@ and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance cl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0. The default is 0. Valid Values: 0, 1, 5, 10, 15, 30, 60.
-{{% /md %}}</dd>
+    <dd>The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance. To disable collecting Enhanced Monitoring metrics, specify 0. The default is 0. Valid Values: 0, 1, 5, 10, 15, 30, 60.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2563,10 +2563,10 @@ and memory, see [Scaling Aurora DB Instances][4]. Aurora uses `db.*` instance cl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the IAM role that permits RDS to send
+    <dd>The ARN for the IAM role that permits RDS to send
 enhanced monitoring metrics to CloudWatch Logs. You can find more information on the [AWS Documentation](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_Monitoring.html)
 what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2574,8 +2574,8 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether Performance Insights is enabled or not.
-{{% /md %}}</dd>
+    <dd>Specifies whether Performance Insights is enabled or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2583,8 +2583,8 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true.
-{{% /md %}}</dd>
+    <dd>The ARN for the KMS key to encrypt Performance Insights data. When specifying `performance_insights_kms_key_id`, `performance_insights_enabled` needs to be set to true.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2592,8 +2592,8 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The database port
-{{% /md %}}</dd>
+    <dd>The database port
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2601,9 +2601,9 @@ what IAM permissions are needed to allow Enhanced Monitoring for RDS Instances.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The daily time range during which automated backups are created if automated backups are enabled.
+    <dd>The daily time range during which automated backups are created if automated backups are enabled.
 Eg: "04:00-09:00"
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2611,9 +2611,9 @@ Eg: "04:00-09:00"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The window to perform maintenance in.
+    <dd>The window to perform maintenance in.
 Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2621,8 +2621,8 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoted to writer.
-{{% /md %}}</dd>
+    <dd>Default 0. Failover Priority setting on instance level. The reader who has lower tier has higher priority to get promoted to writer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2630,10 +2630,10 @@ Syntax: "ddd:hh24:mi-ddd:hh24:mi". Eg: "Mon:00:00-Mon:03:00".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Bool to control if instance is publicly accessible.
+    <dd>Bool to control if instance is publicly accessible.
 Default `false`. See the documentation on [Creating DB Instances][6] for more
 details on controlling this property.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2641,8 +2641,8 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether the DB cluster is encrypted.
-{{% /md %}}</dd>
+    <dd>Specifies whether the DB cluster is encrypted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2650,8 +2650,8 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2659,11 +2659,11 @@ details on controlling this property.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
-{{% /md %}}</dd>
+    <dd>Boolean indicating if this instance is writable. `False` indicates this instance is a read replica.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

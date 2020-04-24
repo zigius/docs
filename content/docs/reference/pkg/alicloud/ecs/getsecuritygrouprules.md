@@ -53,29 +53,29 @@ const backend = new alicloud.ecs.Instance("backend", {
 
 ## Using GetSecurityGroupRules {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getSecurityGroupRules<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ecs/#GetSecurityGroupRulesArgs">GetSecurityGroupRulesArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ecs/#GetSecurityGroupRulesResult">GetSecurityGroupRulesResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_security_group_rules(</span>direction=None<span class="p">, </span>group_id=None<span class="p">, </span>ip_protocol=None<span class="p">, </span>nic_type=None<span class="p">, </span>output_file=None<span class="p">, </span>policy=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupSecurityGroupRules<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#LookupSecurityGroupRulesArgs">LookupSecurityGroupRulesArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#LookupSecurityGroupRulesResult">LookupSecurityGroupRulesResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetSecurityGroupRules </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Ecs.GetSecurityGroupRulesResult.html">GetSecurityGroupRulesResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Ecs.GetSecurityGroupRulesArgs.html">GetSecurityGroupRulesArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -83,7 +83,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -92,8 +92,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group that owns the rules.
-{{% /md %}}</dd>
+    <dd>The ID of the security group that owns the rules.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -101,8 +101,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Authorization direction. Valid values are: `ingress` or `egress`.
-{{% /md %}}</dd>
+    <dd>Authorization direction. Valid values are: `ingress` or `egress`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -110,8 +110,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP protocol. Valid values are: `tcp`, `udp`, `icmp`, `gre` and `all`.
-{{% /md %}}</dd>
+    <dd>The IP protocol. Valid values are: `tcp`, `udp`, `icmp`, `gre` and `all`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -119,8 +119,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Refers to the network type. Can be either `internet` or `intranet`. The default value is `internet`.
-{{% /md %}}</dd>
+    <dd>Refers to the network type. Can be either `internet` or `intranet`. The default value is `internet`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -128,7 +128,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -136,14 +136,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Authorization policy. Can be either `accept` or `drop`. The default value is `accept`.
-{{% /md %}}</dd>
+    <dd>Authorization policy. Can be either `accept` or `drop`. The default value is `accept`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -152,8 +152,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group that owns the rules.
-{{% /md %}}</dd>
+    <dd>The ID of the security group that owns the rules.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -161,8 +161,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authorization direction. Valid values are: `ingress` or `egress`.
-{{% /md %}}</dd>
+    <dd>Authorization direction. Valid values are: `ingress` or `egress`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -170,8 +170,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP protocol. Valid values are: `tcp`, `udp`, `icmp`, `gre` and `all`.
-{{% /md %}}</dd>
+    <dd>The IP protocol. Valid values are: `tcp`, `udp`, `icmp`, `gre` and `all`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -179,8 +179,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Refers to the network type. Can be either `internet` or `intranet`. The default value is `internet`.
-{{% /md %}}</dd>
+    <dd>Refers to the network type. Can be either `internet` or `intranet`. The default value is `internet`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -188,7 +188,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -196,14 +196,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authorization policy. Can be either `accept` or `drop`. The default value is `accept`.
-{{% /md %}}</dd>
+    <dd>Authorization policy. Can be either `accept` or `drop`. The default value is `accept`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -212,8 +212,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group that owns the rules.
-{{% /md %}}</dd>
+    <dd>The ID of the security group that owns the rules.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -221,8 +221,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authorization direction. Valid values are: `ingress` or `egress`.
-{{% /md %}}</dd>
+    <dd>Authorization direction. Valid values are: `ingress` or `egress`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -230,8 +230,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP protocol. Valid values are: `tcp`, `udp`, `icmp`, `gre` and `all`.
-{{% /md %}}</dd>
+    <dd>The IP protocol. Valid values are: `tcp`, `udp`, `icmp`, `gre` and `all`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -239,8 +239,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Refers to the network type. Can be either `internet` or `intranet`. The default value is `internet`.
-{{% /md %}}</dd>
+    <dd>Refers to the network type. Can be either `internet` or `intranet`. The default value is `internet`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -248,7 +248,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -256,14 +256,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authorization policy. Can be either `accept` or `drop`. The default value is `accept`.
-{{% /md %}}</dd>
+    <dd>Authorization policy. Can be either `accept` or `drop`. The default value is `accept`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -272,8 +272,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group that owns the rules.
-{{% /md %}}</dd>
+    <dd>The ID of the security group that owns the rules.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -281,8 +281,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Authorization direction. Valid values are: `ingress` or `egress`.
-{{% /md %}}</dd>
+    <dd>Authorization direction. Valid values are: `ingress` or `egress`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -290,8 +290,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IP protocol. Valid values are: `tcp`, `udp`, `icmp`, `gre` and `all`.
-{{% /md %}}</dd>
+    <dd>The IP protocol. Valid values are: `tcp`, `udp`, `icmp`, `gre` and `all`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -299,8 +299,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Refers to the network type. Can be either `internet` or `intranet`. The default value is `internet`.
-{{% /md %}}</dd>
+    <dd>Refers to the network type. Can be either `internet` or `intranet`. The default value is `internet`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -308,7 +308,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -316,11 +316,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Authorization policy. Can be either `accept` or `drop`. The default value is `accept`.
-{{% /md %}}</dd>
+    <dd>Authorization policy. Can be either `accept` or `drop`. The default value is `accept`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -336,7 +336,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -345,8 +345,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the security group that owns the rules.
-{{% /md %}}</dd>
+    <dd>The description of the security group that owns the rules.
+</dd>
 
     <dt class="property-"
             title="">
@@ -354,7 +354,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -362,8 +362,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the security group that owns the rules.
-{{% /md %}}</dd>
+    <dd>The name of the security group that owns the rules.
+</dd>
 
     <dt class="property-"
             title="">
@@ -371,8 +371,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -380,8 +380,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsecuritygrouprulesrule">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Ecs.<wbr>Outputs.<wbr>Get<wbr>Security<wbr>Group<wbr>Rules<wbr>Rule&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group rules. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of security group rules. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -389,8 +389,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Authorization direction, `ingress` or `egress`.
-{{% /md %}}</dd>
+    <dd>Authorization direction, `ingress` or `egress`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -398,8 +398,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol. Can be `tcp`, `udp`, `icmp`, `gre` or `all`.
-{{% /md %}}</dd>
+    <dd>The protocol. Can be `tcp`, `udp`, `icmp`, `gre` or `all`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -407,8 +407,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Network type, `internet` or `intranet`.
-{{% /md %}}</dd>
+    <dd>Network type, `internet` or `intranet`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -416,7 +416,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -424,14 +424,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Authorization policy. Can be either `accept` or `drop`.
-{{% /md %}}</dd>
+    <dd>Authorization policy. Can be either `accept` or `drop`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -440,8 +440,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the security group that owns the rules.
-{{% /md %}}</dd>
+    <dd>The description of the security group that owns the rules.
+</dd>
 
     <dt class="property-"
             title="">
@@ -449,7 +449,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -457,8 +457,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the security group that owns the rules.
-{{% /md %}}</dd>
+    <dd>The name of the security group that owns the rules.
+</dd>
 
     <dt class="property-"
             title="">
@@ -466,8 +466,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -475,8 +475,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsecuritygrouprulesrule">[]Get<wbr>Security<wbr>Group<wbr>Rules<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group rules. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of security group rules. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -484,8 +484,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authorization direction, `ingress` or `egress`.
-{{% /md %}}</dd>
+    <dd>Authorization direction, `ingress` or `egress`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -493,8 +493,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol. Can be `tcp`, `udp`, `icmp`, `gre` or `all`.
-{{% /md %}}</dd>
+    <dd>The protocol. Can be `tcp`, `udp`, `icmp`, `gre` or `all`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -502,8 +502,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Network type, `internet` or `intranet`.
-{{% /md %}}</dd>
+    <dd>Network type, `internet` or `intranet`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -511,7 +511,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -519,14 +519,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authorization policy. Can be either `accept` or `drop`.
-{{% /md %}}</dd>
+    <dd>Authorization policy. Can be either `accept` or `drop`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -535,8 +535,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the security group that owns the rules.
-{{% /md %}}</dd>
+    <dd>The description of the security group that owns the rules.
+</dd>
 
     <dt class="property-"
             title="">
@@ -544,7 +544,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -552,8 +552,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the security group that owns the rules.
-{{% /md %}}</dd>
+    <dd>The name of the security group that owns the rules.
+</dd>
 
     <dt class="property-"
             title="">
@@ -561,8 +561,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -570,8 +570,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsecuritygrouprulesrule">Get<wbr>Security<wbr>Group<wbr>Rules<wbr>Rule[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group rules. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of security group rules. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -579,8 +579,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authorization direction, `ingress` or `egress`.
-{{% /md %}}</dd>
+    <dd>Authorization direction, `ingress` or `egress`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -588,8 +588,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The protocol. Can be `tcp`, `udp`, `icmp`, `gre` or `all`.
-{{% /md %}}</dd>
+    <dd>The protocol. Can be `tcp`, `udp`, `icmp`, `gre` or `all`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -597,8 +597,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Network type, `internet` or `intranet`.
-{{% /md %}}</dd>
+    <dd>Network type, `internet` or `intranet`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -606,7 +606,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -614,14 +614,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authorization policy. Can be either `accept` or `drop`.
-{{% /md %}}</dd>
+    <dd>Authorization policy. Can be either `accept` or `drop`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -630,8 +630,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the security group that owns the rules.
-{{% /md %}}</dd>
+    <dd>The description of the security group that owns the rules.
+</dd>
 
     <dt class="property-"
             title="">
@@ -639,7 +639,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -647,8 +647,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the security group that owns the rules.
-{{% /md %}}</dd>
+    <dd>The name of the security group that owns the rules.
+</dd>
 
     <dt class="property-"
             title="">
@@ -656,8 +656,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -665,8 +665,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsecuritygrouprulesrule">List[Get<wbr>Security<wbr>Group<wbr>Rules<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group rules. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of security group rules. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -674,8 +674,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Authorization direction, `ingress` or `egress`.
-{{% /md %}}</dd>
+    <dd>Authorization direction, `ingress` or `egress`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -683,8 +683,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The protocol. Can be `tcp`, `udp`, `icmp`, `gre` or `all`.
-{{% /md %}}</dd>
+    <dd>The protocol. Can be `tcp`, `udp`, `icmp`, `gre` or `all`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -692,8 +692,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Network type, `internet` or `intranet`.
-{{% /md %}}</dd>
+    <dd>Network type, `internet` or `intranet`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -701,7 +701,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -709,11 +709,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Authorization policy. Can be either `accept` or `drop`.
-{{% /md %}}</dd>
+    <dd>Authorization policy. Can be either `accept` or `drop`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -726,18 +726,18 @@ The following output properties are available:
 
 
 <h4 id="getsecuritygrouprulesrule">Get<wbr>Security<wbr>Group<wbr>Rules<wbr>Rule</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetSecurityGroupRulesRule">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#GetSecurityGroupRulesRule">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -746,8 +746,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the rule.
-{{% /md %}}</dd>
+    <dd>The description of the rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -755,8 +755,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Target IP address segment for egress authorization.
-{{% /md %}}</dd>
+    <dd>Target IP address segment for egress authorization.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -764,7 +764,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -772,8 +772,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Alibaba Cloud account of the target security group.
-{{% /md %}}</dd>
+    <dd>Alibaba Cloud account of the target security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -781,8 +781,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Authorization direction. Valid values are: `ingress` or `egress`.
-{{% /md %}}</dd>
+    <dd>Authorization direction. Valid values are: `ingress` or `egress`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -790,8 +790,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP protocol. Valid values are: `tcp`, `udp`, `icmp`, `gre` and `all`.
-{{% /md %}}</dd>
+    <dd>The IP protocol. Valid values are: `tcp`, `udp`, `icmp`, `gre` and `all`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -799,8 +799,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Refers to the network type. Can be either `internet` or `intranet`. The default value is `internet`.
-{{% /md %}}</dd>
+    <dd>Refers to the network type. Can be either `internet` or `intranet`. The default value is `internet`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -808,8 +808,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Authorization policy. Can be either `accept` or `drop`. The default value is `accept`.
-{{% /md %}}</dd>
+    <dd>Authorization policy. Can be either `accept` or `drop`. The default value is `accept`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -817,8 +817,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The range of port numbers.
-{{% /md %}}</dd>
+    <dd>The range of port numbers.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -826,8 +826,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Rule priority.
-{{% /md %}}</dd>
+    <dd>Rule priority.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -835,8 +835,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Source IP address segment for ingress authorization.
-{{% /md %}}</dd>
+    <dd>Source IP address segment for ingress authorization.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -844,7 +844,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -852,14 +852,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Alibaba Cloud account of the source security group.
-{{% /md %}}</dd>
+    <dd>Alibaba Cloud account of the source security group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -868,8 +868,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the rule.
-{{% /md %}}</dd>
+    <dd>The description of the rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -877,8 +877,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Target IP address segment for egress authorization.
-{{% /md %}}</dd>
+    <dd>Target IP address segment for egress authorization.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -886,7 +886,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -894,8 +894,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alibaba Cloud account of the target security group.
-{{% /md %}}</dd>
+    <dd>Alibaba Cloud account of the target security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -903,8 +903,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authorization direction. Valid values are: `ingress` or `egress`.
-{{% /md %}}</dd>
+    <dd>Authorization direction. Valid values are: `ingress` or `egress`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -912,8 +912,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP protocol. Valid values are: `tcp`, `udp`, `icmp`, `gre` and `all`.
-{{% /md %}}</dd>
+    <dd>The IP protocol. Valid values are: `tcp`, `udp`, `icmp`, `gre` and `all`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -921,8 +921,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Refers to the network type. Can be either `internet` or `intranet`. The default value is `internet`.
-{{% /md %}}</dd>
+    <dd>Refers to the network type. Can be either `internet` or `intranet`. The default value is `internet`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -930,8 +930,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authorization policy. Can be either `accept` or `drop`. The default value is `accept`.
-{{% /md %}}</dd>
+    <dd>Authorization policy. Can be either `accept` or `drop`. The default value is `accept`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -939,8 +939,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The range of port numbers.
-{{% /md %}}</dd>
+    <dd>The range of port numbers.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -948,8 +948,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Rule priority.
-{{% /md %}}</dd>
+    <dd>Rule priority.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -957,8 +957,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Source IP address segment for ingress authorization.
-{{% /md %}}</dd>
+    <dd>Source IP address segment for ingress authorization.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -966,7 +966,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -974,14 +974,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alibaba Cloud account of the source security group.
-{{% /md %}}</dd>
+    <dd>Alibaba Cloud account of the source security group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -990,8 +990,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the rule.
-{{% /md %}}</dd>
+    <dd>The description of the rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -999,8 +999,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Target IP address segment for egress authorization.
-{{% /md %}}</dd>
+    <dd>Target IP address segment for egress authorization.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1008,7 +1008,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1016,8 +1016,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alibaba Cloud account of the target security group.
-{{% /md %}}</dd>
+    <dd>Alibaba Cloud account of the target security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1025,8 +1025,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authorization direction. Valid values are: `ingress` or `egress`.
-{{% /md %}}</dd>
+    <dd>Authorization direction. Valid values are: `ingress` or `egress`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1034,8 +1034,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP protocol. Valid values are: `tcp`, `udp`, `icmp`, `gre` and `all`.
-{{% /md %}}</dd>
+    <dd>The IP protocol. Valid values are: `tcp`, `udp`, `icmp`, `gre` and `all`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1043,8 +1043,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Refers to the network type. Can be either `internet` or `intranet`. The default value is `internet`.
-{{% /md %}}</dd>
+    <dd>Refers to the network type. Can be either `internet` or `intranet`. The default value is `internet`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1052,8 +1052,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Authorization policy. Can be either `accept` or `drop`. The default value is `accept`.
-{{% /md %}}</dd>
+    <dd>Authorization policy. Can be either `accept` or `drop`. The default value is `accept`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1061,8 +1061,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The range of port numbers.
-{{% /md %}}</dd>
+    <dd>The range of port numbers.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1070,8 +1070,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Rule priority.
-{{% /md %}}</dd>
+    <dd>Rule priority.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1079,8 +1079,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Source IP address segment for ingress authorization.
-{{% /md %}}</dd>
+    <dd>Source IP address segment for ingress authorization.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1088,7 +1088,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1096,14 +1096,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Alibaba Cloud account of the source security group.
-{{% /md %}}</dd>
+    <dd>Alibaba Cloud account of the source security group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1112,8 +1112,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the rule.
-{{% /md %}}</dd>
+    <dd>The description of the rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1121,8 +1121,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Target IP address segment for egress authorization.
-{{% /md %}}</dd>
+    <dd>Target IP address segment for egress authorization.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1130,7 +1130,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1138,8 +1138,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Alibaba Cloud account of the target security group.
-{{% /md %}}</dd>
+    <dd>Alibaba Cloud account of the target security group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1147,8 +1147,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Authorization direction. Valid values are: `ingress` or `egress`.
-{{% /md %}}</dd>
+    <dd>Authorization direction. Valid values are: `ingress` or `egress`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1156,8 +1156,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IP protocol. Valid values are: `tcp`, `udp`, `icmp`, `gre` and `all`.
-{{% /md %}}</dd>
+    <dd>The IP protocol. Valid values are: `tcp`, `udp`, `icmp`, `gre` and `all`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1165,8 +1165,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Refers to the network type. Can be either `internet` or `intranet`. The default value is `internet`.
-{{% /md %}}</dd>
+    <dd>Refers to the network type. Can be either `internet` or `intranet`. The default value is `internet`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1174,8 +1174,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Authorization policy. Can be either `accept` or `drop`. The default value is `accept`.
-{{% /md %}}</dd>
+    <dd>Authorization policy. Can be either `accept` or `drop`. The default value is `accept`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1183,8 +1183,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The range of port numbers.
-{{% /md %}}</dd>
+    <dd>The range of port numbers.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1192,8 +1192,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Rule priority.
-{{% /md %}}</dd>
+    <dd>Rule priority.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1201,7 +1201,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1209,8 +1209,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Source IP address segment for ingress authorization.
-{{% /md %}}</dd>
+    <dd>Source IP address segment for ingress authorization.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1218,11 +1218,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Alibaba Cloud account of the source security group.
-{{% /md %}}</dd>
+    <dd>Alibaba Cloud account of the source security group.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

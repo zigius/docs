@@ -36,29 +36,29 @@ export const instanceIds = instancesDs.ids!;
 
 ## Using GetInstances {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getInstances<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ecs/#GetInstancesArgs">GetInstancesArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ecs/#GetInstancesResult">GetInstancesResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_instances(</span>availability_zone=None<span class="p">, </span>ids=None<span class="p">, </span>image_id=None<span class="p">, </span>name_regex=None<span class="p">, </span>output_file=None<span class="p">, </span>ram_role_name=None<span class="p">, </span>resource_group_id=None<span class="p">, </span>status=None<span class="p">, </span>tags=None<span class="p">, </span>vpc_id=None<span class="p">, </span>vswitch_id=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupInstances<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#LookupInstancesArgs">LookupInstancesArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#LookupInstancesResult">LookupInstancesResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetInstances </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Ecs.GetInstancesResult.html">GetInstancesResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Ecs.GetInstancesArgs.html">GetInstancesArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -66,7 +66,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -75,8 +75,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Availability zone where instances are located.
-{{% /md %}}</dd>
+    <dd>Availability zone where instances are located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -84,8 +84,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of ECS instance IDs.
-{{% /md %}}</dd>
+    <dd>A list of ECS instance IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -93,8 +93,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The image ID of some ECS instance used.
-{{% /md %}}</dd>
+    <dd>The image ID of some ECS instance used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -102,8 +102,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by instance name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by instance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -111,7 +111,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -119,8 +119,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The RAM role name which the instance attaches.
-{{% /md %}}</dd>
+    <dd>The RAM role name which the instance attaches.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -128,8 +128,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the instance belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the instance belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -137,8 +137,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance status. Valid values: "Creating", "Starting", "Running", "Stopping" and "Stopped". If undefined, all statuses are considered.
-{{% /md %}}</dd>
+    <dd>Instance status. Valid values: "Creating", "Starting", "Running", "Stopping" and "Stopped". If undefined, all statuses are considered.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -146,7 +146,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instances. It must be in the format:
+    <dd>A map of tags assigned to the ECS instances. It must be in the format:
 ```
 data "alicloud.ecs.getInstances" "taggedInstances" {
 tags = {
@@ -155,7 +155,7 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -163,8 +163,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC linked to the instances.
-{{% /md %}}</dd>
+    <dd>ID of the VPC linked to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -172,14 +172,14 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch linked to the instances.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch linked to the instances.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -188,8 +188,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Availability zone where instances are located.
-{{% /md %}}</dd>
+    <dd>Availability zone where instances are located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -197,8 +197,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of ECS instance IDs.
-{{% /md %}}</dd>
+    <dd>A list of ECS instance IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -206,8 +206,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The image ID of some ECS instance used.
-{{% /md %}}</dd>
+    <dd>The image ID of some ECS instance used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -215,8 +215,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by instance name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by instance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -224,7 +224,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -232,8 +232,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RAM role name which the instance attaches.
-{{% /md %}}</dd>
+    <dd>The RAM role name which the instance attaches.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -241,8 +241,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the instance belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the instance belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -250,8 +250,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance status. Valid values: "Creating", "Starting", "Running", "Stopping" and "Stopped". If undefined, all statuses are considered.
-{{% /md %}}</dd>
+    <dd>Instance status. Valid values: "Creating", "Starting", "Running", "Stopping" and "Stopped". If undefined, all statuses are considered.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -259,7 +259,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instances. It must be in the format:
+    <dd>A map of tags assigned to the ECS instances. It must be in the format:
 ```
 data "alicloud.ecs.getInstances" "taggedInstances" {
 tags = {
@@ -268,7 +268,7 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -276,8 +276,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC linked to the instances.
-{{% /md %}}</dd>
+    <dd>ID of the VPC linked to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -285,14 +285,14 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch linked to the instances.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch linked to the instances.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -301,8 +301,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Availability zone where instances are located.
-{{% /md %}}</dd>
+    <dd>Availability zone where instances are located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -310,8 +310,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of ECS instance IDs.
-{{% /md %}}</dd>
+    <dd>A list of ECS instance IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -319,8 +319,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The image ID of some ECS instance used.
-{{% /md %}}</dd>
+    <dd>The image ID of some ECS instance used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -328,8 +328,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by instance name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by instance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -337,7 +337,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -345,8 +345,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RAM role name which the instance attaches.
-{{% /md %}}</dd>
+    <dd>The RAM role name which the instance attaches.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -354,8 +354,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the instance belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the instance belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -363,8 +363,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance status. Valid values: "Creating", "Starting", "Running", "Stopping" and "Stopped". If undefined, all statuses are considered.
-{{% /md %}}</dd>
+    <dd>Instance status. Valid values: "Creating", "Starting", "Running", "Stopping" and "Stopped". If undefined, all statuses are considered.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -372,7 +372,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instances. It must be in the format:
+    <dd>A map of tags assigned to the ECS instances. It must be in the format:
 ```
 data "alicloud.ecs.getInstances" "taggedInstances" {
 tags = {
@@ -381,7 +381,7 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -389,8 +389,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC linked to the instances.
-{{% /md %}}</dd>
+    <dd>ID of the VPC linked to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -398,14 +398,14 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch linked to the instances.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch linked to the instances.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -414,8 +414,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Availability zone where instances are located.
-{{% /md %}}</dd>
+    <dd>Availability zone where instances are located.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -423,8 +423,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of ECS instance IDs.
-{{% /md %}}</dd>
+    <dd>A list of ECS instance IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -432,8 +432,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The image ID of some ECS instance used.
-{{% /md %}}</dd>
+    <dd>The image ID of some ECS instance used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -441,8 +441,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by instance name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by instance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -450,7 +450,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -458,8 +458,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The RAM role name which the instance attaches.
-{{% /md %}}</dd>
+    <dd>The RAM role name which the instance attaches.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -467,8 +467,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the instance belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the instance belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -476,8 +476,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance status. Valid values: "Creating", "Starting", "Running", "Stopping" and "Stopped". If undefined, all statuses are considered.
-{{% /md %}}</dd>
+    <dd>Instance status. Valid values: "Creating", "Starting", "Running", "Stopping" and "Stopped". If undefined, all statuses are considered.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -485,7 +485,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instances. It must be in the format:
+    <dd>A map of tags assigned to the ECS instances. It must be in the format:
 ```
 data "alicloud.ecs.getInstances" "taggedInstances" {
 tags = {
@@ -494,7 +494,7 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -502,8 +502,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC linked to the instances.
-{{% /md %}}</dd>
+    <dd>ID of the VPC linked to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -511,11 +511,11 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch linked to the instances.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch linked to the instances.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -531,7 +531,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -540,8 +540,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -549,8 +549,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of ECS instance IDs.
-{{% /md %}}</dd>
+    <dd>A list of ECS instance IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -558,8 +558,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstance">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Ecs.<wbr>Outputs.<wbr>Get<wbr>Instances<wbr>Instance&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of instances. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of instances. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -567,8 +567,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of instances names. 
-{{% /md %}}</dd>
+    <dd>A list of instances names. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -576,8 +576,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Availability zone the instance belongs to.
-{{% /md %}}</dd>
+    <dd>Availability zone the instance belongs to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -585,8 +585,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Image ID the instance is using.
-{{% /md %}}</dd>
+    <dd>Image ID the instance is using.
+</dd>
 
     <dt class="property-"
             title="">
@@ -594,7 +594,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -602,7 +602,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -610,8 +610,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Ram role name.
-{{% /md %}}</dd>
+    <dd>The Ram role name.
+</dd>
 
     <dt class="property-"
             title="">
@@ -619,8 +619,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group.
-{{% /md %}}</dd>
+    <dd>The Id of resource group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -628,8 +628,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance current status.
-{{% /md %}}</dd>
+    <dd>Instance current status.
+</dd>
 
     <dt class="property-"
             title="">
@@ -637,8 +637,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instance.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the ECS instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -646,8 +646,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC the instance belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC the instance belongs to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -655,14 +655,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch the instance belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch the instance belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -671,8 +671,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -680,8 +680,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of ECS instance IDs.
-{{% /md %}}</dd>
+    <dd>A list of ECS instance IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -689,8 +689,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstance">[]Get<wbr>Instances<wbr>Instance</a></span>
     </dt>
-    <dd>{{% md %}}A list of instances. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of instances. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -698,8 +698,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of instances names. 
-{{% /md %}}</dd>
+    <dd>A list of instances names. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -707,8 +707,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Availability zone the instance belongs to.
-{{% /md %}}</dd>
+    <dd>Availability zone the instance belongs to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -716,8 +716,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Image ID the instance is using.
-{{% /md %}}</dd>
+    <dd>Image ID the instance is using.
+</dd>
 
     <dt class="property-"
             title="">
@@ -725,7 +725,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -733,7 +733,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -741,8 +741,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Ram role name.
-{{% /md %}}</dd>
+    <dd>The Ram role name.
+</dd>
 
     <dt class="property-"
             title="">
@@ -750,8 +750,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group.
-{{% /md %}}</dd>
+    <dd>The Id of resource group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -759,8 +759,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance current status.
-{{% /md %}}</dd>
+    <dd>Instance current status.
+</dd>
 
     <dt class="property-"
             title="">
@@ -768,8 +768,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instance.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the ECS instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -777,8 +777,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC the instance belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC the instance belongs to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -786,14 +786,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch the instance belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch the instance belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -802,8 +802,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -811,8 +811,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of ECS instance IDs.
-{{% /md %}}</dd>
+    <dd>A list of ECS instance IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -820,8 +820,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstance">Get<wbr>Instances<wbr>Instance[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of instances. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of instances. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -829,8 +829,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of instances names. 
-{{% /md %}}</dd>
+    <dd>A list of instances names. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -838,8 +838,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Availability zone the instance belongs to.
-{{% /md %}}</dd>
+    <dd>Availability zone the instance belongs to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -847,8 +847,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Image ID the instance is using.
-{{% /md %}}</dd>
+    <dd>Image ID the instance is using.
+</dd>
 
     <dt class="property-"
             title="">
@@ -856,7 +856,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -864,7 +864,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -872,8 +872,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Ram role name.
-{{% /md %}}</dd>
+    <dd>The Ram role name.
+</dd>
 
     <dt class="property-"
             title="">
@@ -881,8 +881,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group.
-{{% /md %}}</dd>
+    <dd>The Id of resource group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -890,8 +890,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance current status.
-{{% /md %}}</dd>
+    <dd>Instance current status.
+</dd>
 
     <dt class="property-"
             title="">
@@ -899,8 +899,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instance.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the ECS instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -908,8 +908,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC the instance belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC the instance belongs to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -917,14 +917,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch the instance belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch the instance belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -933,8 +933,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -942,8 +942,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of ECS instance IDs.
-{{% /md %}}</dd>
+    <dd>A list of ECS instance IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -951,8 +951,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstance">List[Get<wbr>Instances<wbr>Instance]</a></span>
     </dt>
-    <dd>{{% md %}}A list of instances. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of instances. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -960,8 +960,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of instances names. 
-{{% /md %}}</dd>
+    <dd>A list of instances names. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -969,8 +969,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Availability zone the instance belongs to.
-{{% /md %}}</dd>
+    <dd>Availability zone the instance belongs to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -978,8 +978,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Image ID the instance is using.
-{{% /md %}}</dd>
+    <dd>Image ID the instance is using.
+</dd>
 
     <dt class="property-"
             title="">
@@ -987,7 +987,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -995,7 +995,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1003,8 +1003,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Ram role name.
-{{% /md %}}</dd>
+    <dd>The Ram role name.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1012,8 +1012,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group.
-{{% /md %}}</dd>
+    <dd>The Id of resource group.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1021,8 +1021,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance current status.
-{{% /md %}}</dd>
+    <dd>Instance current status.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1030,8 +1030,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instance.
-{{% /md %}}</dd>
+    <dd>A map of tags assigned to the ECS instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1039,8 +1039,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC the instance belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC the instance belongs to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1048,11 +1048,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch the instance belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch the instance belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1065,18 +1065,18 @@ The following output properties are available:
 
 
 <h4 id="getinstancesinstance">Get<wbr>Instances<wbr>Instance</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetInstancesInstance">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#GetInstancesInstance">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1085,8 +1085,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Availability zone where instances are located.
-{{% /md %}}</dd>
+    <dd>Availability zone where instances are located.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1094,8 +1094,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance creation time.
-{{% /md %}}</dd>
+    <dd>Instance creation time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1103,8 +1103,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance description.
-{{% /md %}}</dd>
+    <dd>Instance description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1112,8 +1112,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstancediskdevicemapping">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Ecs.<wbr>Inputs.<wbr>Get<wbr>Instances<wbr>Instance<wbr>Disk<wbr>Device<wbr>Mapping<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Description of the attached disks.
-{{% /md %}}</dd>
+    <dd>Description of the attached disks.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1121,8 +1121,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}EIP address the VPC instance is using.
-{{% /md %}}</dd>
+    <dd>EIP address the VPC instance is using.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1130,8 +1130,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the instance.
-{{% /md %}}</dd>
+    <dd>ID of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1139,8 +1139,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The image ID of some ECS instance used.
-{{% /md %}}</dd>
+    <dd>The image ID of some ECS instance used.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1148,8 +1148,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance charge type.
-{{% /md %}}</dd>
+    <dd>Instance charge type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1157,8 +1157,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance type.
-{{% /md %}}</dd>
+    <dd>Instance type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1166,8 +1166,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance network charge type.
-{{% /md %}}</dd>
+    <dd>Instance network charge type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1175,8 +1175,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Max output bandwidth for internet.
-{{% /md %}}</dd>
+    <dd>Max output bandwidth for internet.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1184,8 +1184,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Key pair the instance is using.
-{{% /md %}}</dd>
+    <dd>Key pair the instance is using.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1193,8 +1193,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance name.
-{{% /md %}}</dd>
+    <dd>Instance name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1202,8 +1202,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance private IP address.
-{{% /md %}}</dd>
+    <dd>Instance private IP address.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1211,8 +1211,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance public IP address.
-{{% /md %}}</dd>
+    <dd>Instance public IP address.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1220,8 +1220,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The RAM role name which the instance attaches.
-{{% /md %}}</dd>
+    <dd>The RAM role name which the instance attaches.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1229,8 +1229,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Region ID the instance belongs to.
-{{% /md %}}</dd>
+    <dd>Region ID the instance belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1238,8 +1238,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the instance belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the instance belongs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1247,8 +1247,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of security group IDs the instance belongs to.
-{{% /md %}}</dd>
+    <dd>List of security group IDs the instance belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1256,8 +1256,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Spot strategy the instance is using.
-{{% /md %}}</dd>
+    <dd>Spot strategy the instance is using.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1265,8 +1265,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance status. Valid values: "Creating", "Starting", "Running", "Stopping" and "Stopped". If undefined, all statuses are considered.
-{{% /md %}}</dd>
+    <dd>Instance status. Valid values: "Creating", "Starting", "Running", "Stopping" and "Stopped". If undefined, all statuses are considered.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1274,8 +1274,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC linked to the instances.
-{{% /md %}}</dd>
+    <dd>ID of the VPC linked to the instances.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1283,8 +1283,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch linked to the instances.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch linked to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1292,7 +1292,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instances. It must be in the format:
+    <dd>A map of tags assigned to the ECS instances. It must be in the format:
 ```
 data "alicloud.ecs.getInstances" "taggedInstances" {
 tags = {
@@ -1301,13 +1301,13 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1316,8 +1316,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Availability zone where instances are located.
-{{% /md %}}</dd>
+    <dd>Availability zone where instances are located.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1325,8 +1325,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance creation time.
-{{% /md %}}</dd>
+    <dd>Instance creation time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1334,8 +1334,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance description.
-{{% /md %}}</dd>
+    <dd>Instance description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1343,8 +1343,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstancediskdevicemapping">[]Get<wbr>Instances<wbr>Instance<wbr>Disk<wbr>Device<wbr>Mapping</a></span>
     </dt>
-    <dd>{{% md %}}Description of the attached disks.
-{{% /md %}}</dd>
+    <dd>Description of the attached disks.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1352,8 +1352,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}EIP address the VPC instance is using.
-{{% /md %}}</dd>
+    <dd>EIP address the VPC instance is using.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1361,8 +1361,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the instance.
-{{% /md %}}</dd>
+    <dd>ID of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1370,8 +1370,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The image ID of some ECS instance used.
-{{% /md %}}</dd>
+    <dd>The image ID of some ECS instance used.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1379,8 +1379,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance charge type.
-{{% /md %}}</dd>
+    <dd>Instance charge type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1388,8 +1388,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance type.
-{{% /md %}}</dd>
+    <dd>Instance type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1397,8 +1397,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance network charge type.
-{{% /md %}}</dd>
+    <dd>Instance network charge type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1406,8 +1406,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Max output bandwidth for internet.
-{{% /md %}}</dd>
+    <dd>Max output bandwidth for internet.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1415,8 +1415,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Key pair the instance is using.
-{{% /md %}}</dd>
+    <dd>Key pair the instance is using.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1424,8 +1424,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance name.
-{{% /md %}}</dd>
+    <dd>Instance name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1433,8 +1433,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance private IP address.
-{{% /md %}}</dd>
+    <dd>Instance private IP address.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1442,8 +1442,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance public IP address.
-{{% /md %}}</dd>
+    <dd>Instance public IP address.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1451,8 +1451,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RAM role name which the instance attaches.
-{{% /md %}}</dd>
+    <dd>The RAM role name which the instance attaches.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1460,8 +1460,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Region ID the instance belongs to.
-{{% /md %}}</dd>
+    <dd>Region ID the instance belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1469,8 +1469,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the instance belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the instance belongs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1478,8 +1478,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of security group IDs the instance belongs to.
-{{% /md %}}</dd>
+    <dd>List of security group IDs the instance belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1487,8 +1487,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Spot strategy the instance is using.
-{{% /md %}}</dd>
+    <dd>Spot strategy the instance is using.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1496,8 +1496,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance status. Valid values: "Creating", "Starting", "Running", "Stopping" and "Stopped". If undefined, all statuses are considered.
-{{% /md %}}</dd>
+    <dd>Instance status. Valid values: "Creating", "Starting", "Running", "Stopping" and "Stopped". If undefined, all statuses are considered.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1505,8 +1505,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC linked to the instances.
-{{% /md %}}</dd>
+    <dd>ID of the VPC linked to the instances.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1514,8 +1514,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch linked to the instances.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch linked to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1523,7 +1523,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instances. It must be in the format:
+    <dd>A map of tags assigned to the ECS instances. It must be in the format:
 ```
 data "alicloud.ecs.getInstances" "taggedInstances" {
 tags = {
@@ -1532,13 +1532,13 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1547,8 +1547,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Availability zone where instances are located.
-{{% /md %}}</dd>
+    <dd>Availability zone where instances are located.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1556,8 +1556,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance creation time.
-{{% /md %}}</dd>
+    <dd>Instance creation time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1565,8 +1565,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance description.
-{{% /md %}}</dd>
+    <dd>Instance description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1574,8 +1574,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstancediskdevicemapping">Get<wbr>Instances<wbr>Instance<wbr>Disk<wbr>Device<wbr>Mapping[]</a></span>
     </dt>
-    <dd>{{% md %}}Description of the attached disks.
-{{% /md %}}</dd>
+    <dd>Description of the attached disks.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1583,8 +1583,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}EIP address the VPC instance is using.
-{{% /md %}}</dd>
+    <dd>EIP address the VPC instance is using.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1592,8 +1592,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the instance.
-{{% /md %}}</dd>
+    <dd>ID of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1601,8 +1601,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The image ID of some ECS instance used.
-{{% /md %}}</dd>
+    <dd>The image ID of some ECS instance used.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1610,8 +1610,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance charge type.
-{{% /md %}}</dd>
+    <dd>Instance charge type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1619,8 +1619,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance type.
-{{% /md %}}</dd>
+    <dd>Instance type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1628,8 +1628,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance network charge type.
-{{% /md %}}</dd>
+    <dd>Instance network charge type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1637,8 +1637,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Max output bandwidth for internet.
-{{% /md %}}</dd>
+    <dd>Max output bandwidth for internet.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1646,8 +1646,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Key pair the instance is using.
-{{% /md %}}</dd>
+    <dd>Key pair the instance is using.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1655,8 +1655,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance name.
-{{% /md %}}</dd>
+    <dd>Instance name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1664,8 +1664,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance private IP address.
-{{% /md %}}</dd>
+    <dd>Instance private IP address.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1673,8 +1673,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance public IP address.
-{{% /md %}}</dd>
+    <dd>Instance public IP address.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1682,8 +1682,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RAM role name which the instance attaches.
-{{% /md %}}</dd>
+    <dd>The RAM role name which the instance attaches.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1691,8 +1691,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Region ID the instance belongs to.
-{{% /md %}}</dd>
+    <dd>Region ID the instance belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1700,8 +1700,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the instance belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the instance belongs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1709,8 +1709,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of security group IDs the instance belongs to.
-{{% /md %}}</dd>
+    <dd>List of security group IDs the instance belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1718,8 +1718,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Spot strategy the instance is using.
-{{% /md %}}</dd>
+    <dd>Spot strategy the instance is using.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1727,8 +1727,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Instance status. Valid values: "Creating", "Starting", "Running", "Stopping" and "Stopped". If undefined, all statuses are considered.
-{{% /md %}}</dd>
+    <dd>Instance status. Valid values: "Creating", "Starting", "Running", "Stopping" and "Stopped". If undefined, all statuses are considered.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1736,8 +1736,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC linked to the instances.
-{{% /md %}}</dd>
+    <dd>ID of the VPC linked to the instances.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1745,8 +1745,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch linked to the instances.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch linked to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1754,7 +1754,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instances. It must be in the format:
+    <dd>A map of tags assigned to the ECS instances. It must be in the format:
 ```
 data "alicloud.ecs.getInstances" "taggedInstances" {
 tags = {
@@ -1763,13 +1763,13 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1778,8 +1778,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Availability zone where instances are located.
-{{% /md %}}</dd>
+    <dd>Availability zone where instances are located.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1787,8 +1787,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance creation time.
-{{% /md %}}</dd>
+    <dd>Instance creation time.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1796,8 +1796,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance description.
-{{% /md %}}</dd>
+    <dd>Instance description.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1805,8 +1805,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstancediskdevicemapping">List[Get<wbr>Instances<wbr>Instance<wbr>Disk<wbr>Device<wbr>Mapping]</a></span>
     </dt>
-    <dd>{{% md %}}Description of the attached disks.
-{{% /md %}}</dd>
+    <dd>Description of the attached disks.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1814,8 +1814,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}EIP address the VPC instance is using.
-{{% /md %}}</dd>
+    <dd>EIP address the VPC instance is using.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1823,8 +1823,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the instance.
-{{% /md %}}</dd>
+    <dd>ID of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1832,8 +1832,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The image ID of some ECS instance used.
-{{% /md %}}</dd>
+    <dd>The image ID of some ECS instance used.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1841,8 +1841,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance charge type.
-{{% /md %}}</dd>
+    <dd>Instance charge type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1850,8 +1850,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance type.
-{{% /md %}}</dd>
+    <dd>Instance type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1859,8 +1859,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance network charge type.
-{{% /md %}}</dd>
+    <dd>Instance network charge type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1868,8 +1868,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Max output bandwidth for internet.
-{{% /md %}}</dd>
+    <dd>Max output bandwidth for internet.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1877,8 +1877,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Key pair the instance is using.
-{{% /md %}}</dd>
+    <dd>Key pair the instance is using.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1886,8 +1886,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance name.
-{{% /md %}}</dd>
+    <dd>Instance name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1895,8 +1895,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance private IP address.
-{{% /md %}}</dd>
+    <dd>Instance private IP address.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1904,8 +1904,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance public IP address.
-{{% /md %}}</dd>
+    <dd>Instance public IP address.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1913,8 +1913,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The RAM role name which the instance attaches.
-{{% /md %}}</dd>
+    <dd>The RAM role name which the instance attaches.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1922,8 +1922,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Region ID the instance belongs to.
-{{% /md %}}</dd>
+    <dd>Region ID the instance belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1931,8 +1931,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the instance belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the instance belongs.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1940,8 +1940,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of security group IDs the instance belongs to.
-{{% /md %}}</dd>
+    <dd>List of security group IDs the instance belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1949,8 +1949,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Spot strategy the instance is using.
-{{% /md %}}</dd>
+    <dd>Spot strategy the instance is using.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1958,8 +1958,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Instance status. Valid values: "Creating", "Starting", "Running", "Stopping" and "Stopped". If undefined, all statuses are considered.
-{{% /md %}}</dd>
+    <dd>Instance status. Valid values: "Creating", "Starting", "Running", "Stopping" and "Stopped". If undefined, all statuses are considered.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1967,8 +1967,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC linked to the instances.
-{{% /md %}}</dd>
+    <dd>ID of the VPC linked to the instances.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1976,8 +1976,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch linked to the instances.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch linked to the instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1985,7 +1985,7 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the ECS instances. It must be in the format:
+    <dd>A map of tags assigned to the ECS instances. It must be in the format:
 ```
 data "alicloud.ecs.getInstances" "taggedInstances" {
 tags = {
@@ -1994,28 +1994,28 @@ tagKey2 = "tagValue2"
 }
 }
 ```
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstancesinstancediskdevicemapping">Get<wbr>Instances<wbr>Instance<wbr>Disk<wbr>Device<wbr>Mapping</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetInstancesInstanceDiskDeviceMapping">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#GetInstancesInstanceDiskDeviceMapping">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2024,8 +2024,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Cloud disk category.
-{{% /md %}}</dd>
+    <dd>Cloud disk category.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2033,8 +2033,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Device information of the created disk: such as /dev/xvdb.
-{{% /md %}}</dd>
+    <dd>Device information of the created disk: such as /dev/xvdb.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2042,8 +2042,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Size of the created disk.
-{{% /md %}}</dd>
+    <dd>Size of the created disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2051,14 +2051,14 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Cloud disk type: system disk or data disk.
-{{% /md %}}</dd>
+    <dd>Cloud disk type: system disk or data disk.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2067,8 +2067,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cloud disk category.
-{{% /md %}}</dd>
+    <dd>Cloud disk category.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2076,8 +2076,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Device information of the created disk: such as /dev/xvdb.
-{{% /md %}}</dd>
+    <dd>Device information of the created disk: such as /dev/xvdb.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2085,8 +2085,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Size of the created disk.
-{{% /md %}}</dd>
+    <dd>Size of the created disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2094,14 +2094,14 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cloud disk type: system disk or data disk.
-{{% /md %}}</dd>
+    <dd>Cloud disk type: system disk or data disk.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2110,8 +2110,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cloud disk category.
-{{% /md %}}</dd>
+    <dd>Cloud disk category.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2119,8 +2119,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Device information of the created disk: such as /dev/xvdb.
-{{% /md %}}</dd>
+    <dd>Device information of the created disk: such as /dev/xvdb.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2128,8 +2128,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Size of the created disk.
-{{% /md %}}</dd>
+    <dd>Size of the created disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2137,14 +2137,14 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cloud disk type: system disk or data disk.
-{{% /md %}}</dd>
+    <dd>Cloud disk type: system disk or data disk.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2153,8 +2153,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Cloud disk category.
-{{% /md %}}</dd>
+    <dd>Cloud disk category.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2162,8 +2162,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Device information of the created disk: such as /dev/xvdb.
-{{% /md %}}</dd>
+    <dd>Device information of the created disk: such as /dev/xvdb.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2171,8 +2171,8 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Size of the created disk.
-{{% /md %}}</dd>
+    <dd>Size of the created disk.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2180,11 +2180,11 @@ tagKey2 = "tagValue2"
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Cloud disk type: system disk or data disk.
-{{% /md %}}</dd>
+    <dd>Cloud disk type: system disk or data disk.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

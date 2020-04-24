@@ -18,26 +18,26 @@ Manages AWS Managed Streaming for Kafka cluster
 
 
 ## Create a Cluster Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/msk/#Cluster">Cluster</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/msk/#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Cluster</span><span class="p">(resource_name, opts=None, </span>broker_node_group_info=None<span class="p">, </span>client_authentication=None<span class="p">, </span>cluster_name=None<span class="p">, </span>configuration_info=None<span class="p">, </span>encryption_info=None<span class="p">, </span>enhanced_monitoring=None<span class="p">, </span>kafka_version=None<span class="p">, </span>logging_info=None<span class="p">, </span>number_of_broker_nodes=None<span class="p">, </span>open_monitoring=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterArgs">ClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Msk.Cluster.html">Cluster</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Msk.ClusterArgs.html">ClusterArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ Manages AWS Managed Streaming for Kafka cluster
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ Manages AWS Managed Streaming for Kafka cluster
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ Manages AWS Managed Streaming for Kafka cluster
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ Manages AWS Managed Streaming for Kafka cluster
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Cluster Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -204,8 +204,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbrokernodegroupinfo">Cluster<wbr>Broker<wbr>Node<wbr>Group<wbr>Info<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for the broker nodes of the Kafka cluster.
-{{% /md %}}</dd>
+    <dd>Configuration block for the broker nodes of the Kafka cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -213,8 +213,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the MSK cluster.
-{{% /md %}}</dd>
+    <dd>Name of the MSK cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -222,8 +222,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify the desired Kafka software version.
-{{% /md %}}</dd>
+    <dd>Specify the desired Kafka software version.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -231,8 +231,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.
-{{% /md %}}</dd>
+    <dd>The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -240,8 +240,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthentication">Cluster<wbr>Client<wbr>Authentication<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying a client authentication. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying a client authentication. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -249,8 +249,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterconfigurationinfo">Cluster<wbr>Configuration<wbr>Info<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -258,8 +258,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfo">Cluster<wbr>Encryption<wbr>Info<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying encryption. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying encryption. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,8 +267,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
-{{% /md %}}</dd>
+    <dd>Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -276,8 +276,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfo">Cluster<wbr>Logging<wbr>Info<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -285,8 +285,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoring">Cluster<wbr>Open<wbr>Monitoring<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for JMX and Node monitoring for the MSK cluster. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for JMX and Node monitoring for the MSK cluster. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -294,14 +294,14 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -310,8 +310,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbrokernodegroupinfo">Cluster<wbr>Broker<wbr>Node<wbr>Group<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for the broker nodes of the Kafka cluster.
-{{% /md %}}</dd>
+    <dd>Configuration block for the broker nodes of the Kafka cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -319,8 +319,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the MSK cluster.
-{{% /md %}}</dd>
+    <dd>Name of the MSK cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -328,8 +328,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify the desired Kafka software version.
-{{% /md %}}</dd>
+    <dd>Specify the desired Kafka software version.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -337,8 +337,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.
-{{% /md %}}</dd>
+    <dd>The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,8 +346,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthentication">Cluster<wbr>Client<wbr>Authentication</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying a client authentication. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying a client authentication. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,8 +355,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterconfigurationinfo">Cluster<wbr>Configuration<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -364,8 +364,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfo">Cluster<wbr>Encryption<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying encryption. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying encryption. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -373,8 +373,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
-{{% /md %}}</dd>
+    <dd>Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -382,8 +382,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfo">Cluster<wbr>Logging<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -391,8 +391,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoring">Cluster<wbr>Open<wbr>Monitoring</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for JMX and Node monitoring for the MSK cluster. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for JMX and Node monitoring for the MSK cluster. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -400,14 +400,14 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -416,8 +416,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbrokernodegroupinfo">Cluster<wbr>Broker<wbr>Node<wbr>Group<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for the broker nodes of the Kafka cluster.
-{{% /md %}}</dd>
+    <dd>Configuration block for the broker nodes of the Kafka cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -425,8 +425,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the MSK cluster.
-{{% /md %}}</dd>
+    <dd>Name of the MSK cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -434,8 +434,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify the desired Kafka software version.
-{{% /md %}}</dd>
+    <dd>Specify the desired Kafka software version.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -443,8 +443,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.
-{{% /md %}}</dd>
+    <dd>The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -452,8 +452,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthentication">Cluster<wbr>Client<wbr>Authentication</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying a client authentication. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying a client authentication. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -461,8 +461,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterconfigurationinfo">Cluster<wbr>Configuration<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -470,8 +470,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfo">Cluster<wbr>Encryption<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying encryption. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying encryption. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -479,8 +479,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
-{{% /md %}}</dd>
+    <dd>Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -488,8 +488,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfo">Cluster<wbr>Logging<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -497,8 +497,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoring">Cluster<wbr>Open<wbr>Monitoring</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for JMX and Node monitoring for the MSK cluster. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for JMX and Node monitoring for the MSK cluster. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -506,14 +506,14 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -522,8 +522,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbrokernodegroupinfo">Dict[Cluster<wbr>Broker<wbr>Node<wbr>Group<wbr>Info]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for the broker nodes of the Kafka cluster.
-{{% /md %}}</dd>
+    <dd>Configuration block for the broker nodes of the Kafka cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -531,8 +531,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the MSK cluster.
-{{% /md %}}</dd>
+    <dd>Name of the MSK cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -540,8 +540,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specify the desired Kafka software version.
-{{% /md %}}</dd>
+    <dd>Specify the desired Kafka software version.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -549,8 +549,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.
-{{% /md %}}</dd>
+    <dd>The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -558,8 +558,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthentication">Dict[Cluster<wbr>Client<wbr>Authentication]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying a client authentication. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying a client authentication. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -567,8 +567,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterconfigurationinfo">Dict[Cluster<wbr>Configuration<wbr>Info]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -576,8 +576,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfo">Dict[Cluster<wbr>Encryption<wbr>Info]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying encryption. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying encryption. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -585,8 +585,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
-{{% /md %}}</dd>
+    <dd>Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -594,8 +594,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfo">Dict[Cluster<wbr>Logging<wbr>Info]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -603,8 +603,8 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoring">Dict[Cluster<wbr>Open<wbr>Monitoring]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for JMX and Node monitoring for the MSK cluster. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for JMX and Node monitoring for the MSK cluster. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -612,11 +612,11 @@ The Cluster resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -630,7 +630,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -639,8 +639,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -648,8 +648,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more hostname:port pairs of kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `PLAINTEXT` or `TLS_PLAINTEXT`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more hostname:port pairs of kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `PLAINTEXT` or `TLS_PLAINTEXT`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -657,8 +657,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `TLS_PLAINTEXT` or `TLS`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `TLS_PLAINTEXT` or `TLS`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -666,9 +666,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Current version of the MSK Cluster used for updates, e.g. `K13V1IB3VIYZZH`
+    <dd>Current version of the MSK Cluster used for updates, e.g. `K13V1IB3VIYZZH`
 * `encryption_info.0.encryption_at_rest_kms_key_arn` - The ARN of the KMS key used for encryption at rest of the broker data volumes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -676,7 +676,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -684,14 +684,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -700,8 +700,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -709,8 +709,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more hostname:port pairs of kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `PLAINTEXT` or `TLS_PLAINTEXT`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more hostname:port pairs of kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `PLAINTEXT` or `TLS_PLAINTEXT`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -718,8 +718,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `TLS_PLAINTEXT` or `TLS`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `TLS_PLAINTEXT` or `TLS`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -727,9 +727,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current version of the MSK Cluster used for updates, e.g. `K13V1IB3VIYZZH`
+    <dd>Current version of the MSK Cluster used for updates, e.g. `K13V1IB3VIYZZH`
 * `encryption_info.0.encryption_at_rest_kms_key_arn` - The ARN of the KMS key used for encryption at rest of the broker data volumes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -737,7 +737,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -745,14 +745,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -761,8 +761,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -770,8 +770,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more hostname:port pairs of kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `PLAINTEXT` or `TLS_PLAINTEXT`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more hostname:port pairs of kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `PLAINTEXT` or `TLS_PLAINTEXT`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -779,8 +779,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `TLS_PLAINTEXT` or `TLS`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `TLS_PLAINTEXT` or `TLS`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -788,9 +788,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current version of the MSK Cluster used for updates, e.g. `K13V1IB3VIYZZH`
+    <dd>Current version of the MSK Cluster used for updates, e.g. `K13V1IB3VIYZZH`
 * `encryption_info.0.encryption_at_rest_kms_key_arn` - The ARN of the KMS key used for encryption at rest of the broker data volumes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -798,7 +798,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -806,14 +806,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -822,8 +822,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -831,8 +831,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more hostname:port pairs of kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `PLAINTEXT` or `TLS_PLAINTEXT`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more hostname:port pairs of kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `PLAINTEXT` or `TLS_PLAINTEXT`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -840,8 +840,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `TLS_PLAINTEXT` or `TLS`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `TLS_PLAINTEXT` or `TLS`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -849,9 +849,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Current version of the MSK Cluster used for updates, e.g. `K13V1IB3VIYZZH`
+    <dd>Current version of the MSK Cluster used for updates, e.g. `K13V1IB3VIYZZH`
 * `encryption_info.0.encryption_at_rest_kms_key_arn` - The ARN of the KMS key used for encryption at rest of the broker data volumes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -859,7 +859,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -867,11 +867,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -882,25 +882,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Cluster Resource {#look-up}
 
 Get an existing Cluster resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/msk/#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/msk/#Cluster">Cluster</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>bootstrap_brokers=None<span class="p">, </span>bootstrap_brokers_tls=None<span class="p">, </span>broker_node_group_info=None<span class="p">, </span>client_authentication=None<span class="p">, </span>cluster_name=None<span class="p">, </span>configuration_info=None<span class="p">, </span>current_version=None<span class="p">, </span>encryption_info=None<span class="p">, </span>enhanced_monitoring=None<span class="p">, </span>kafka_version=None<span class="p">, </span>logging_info=None<span class="p">, </span>number_of_broker_nodes=None<span class="p">, </span>open_monitoring=None<span class="p">, </span>tags=None<span class="p">, </span>zookeeper_connect_string=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterState">ClusterState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#Cluster">Cluster</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Msk.Cluster.html">Cluster</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Msk.ClusterState.html">ClusterState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -925,9 +925,9 @@ Get an existing Cluster resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -940,36 +940,9 @@ Get an existing Cluster resource's state with the given name, ID, and optional e
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -994,13 +967,40 @@ Get an existing Cluster resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1009,8 +1009,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1018,8 +1018,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more hostname:port pairs of kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `PLAINTEXT` or `TLS_PLAINTEXT`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more hostname:port pairs of kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `PLAINTEXT` or `TLS_PLAINTEXT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1027,8 +1027,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `TLS_PLAINTEXT` or `TLS`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `TLS_PLAINTEXT` or `TLS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1036,8 +1036,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbrokernodegroupinfo">Cluster<wbr>Broker<wbr>Node<wbr>Group<wbr>Info<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for the broker nodes of the Kafka cluster.
-{{% /md %}}</dd>
+    <dd>Configuration block for the broker nodes of the Kafka cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1045,8 +1045,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthentication">Cluster<wbr>Client<wbr>Authentication<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying a client authentication. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying a client authentication. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1054,8 +1054,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the MSK cluster.
-{{% /md %}}</dd>
+    <dd>Name of the MSK cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1063,8 +1063,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterconfigurationinfo">Cluster<wbr>Configuration<wbr>Info<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1072,9 +1072,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Current version of the MSK Cluster used for updates, e.g. `K13V1IB3VIYZZH`
+    <dd>Current version of the MSK Cluster used for updates, e.g. `K13V1IB3VIYZZH`
 * `encryption_info.0.encryption_at_rest_kms_key_arn` - The ARN of the KMS key used for encryption at rest of the broker data volumes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1082,8 +1082,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfo">Cluster<wbr>Encryption<wbr>Info<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying encryption. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying encryption. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1091,8 +1091,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
-{{% /md %}}</dd>
+    <dd>Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1100,8 +1100,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify the desired Kafka software version.
-{{% /md %}}</dd>
+    <dd>Specify the desired Kafka software version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1109,8 +1109,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfo">Cluster<wbr>Logging<wbr>Info<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1118,8 +1118,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.
-{{% /md %}}</dd>
+    <dd>The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1127,8 +1127,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoring">Cluster<wbr>Open<wbr>Monitoring<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for JMX and Node monitoring for the MSK cluster. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for JMX and Node monitoring for the MSK cluster. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1136,8 +1136,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1145,14 +1145,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1161,8 +1161,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1170,8 +1170,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more hostname:port pairs of kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `PLAINTEXT` or `TLS_PLAINTEXT`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more hostname:port pairs of kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `PLAINTEXT` or `TLS_PLAINTEXT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1179,8 +1179,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `TLS_PLAINTEXT` or `TLS`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `TLS_PLAINTEXT` or `TLS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1188,8 +1188,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbrokernodegroupinfo">Cluster<wbr>Broker<wbr>Node<wbr>Group<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for the broker nodes of the Kafka cluster.
-{{% /md %}}</dd>
+    <dd>Configuration block for the broker nodes of the Kafka cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1197,8 +1197,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthentication">Cluster<wbr>Client<wbr>Authentication</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying a client authentication. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying a client authentication. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1206,8 +1206,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the MSK cluster.
-{{% /md %}}</dd>
+    <dd>Name of the MSK cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1215,8 +1215,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterconfigurationinfo">Cluster<wbr>Configuration<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1224,9 +1224,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current version of the MSK Cluster used for updates, e.g. `K13V1IB3VIYZZH`
+    <dd>Current version of the MSK Cluster used for updates, e.g. `K13V1IB3VIYZZH`
 * `encryption_info.0.encryption_at_rest_kms_key_arn` - The ARN of the KMS key used for encryption at rest of the broker data volumes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1234,8 +1234,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfo">Cluster<wbr>Encryption<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying encryption. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying encryption. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1243,8 +1243,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
-{{% /md %}}</dd>
+    <dd>Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1252,8 +1252,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify the desired Kafka software version.
-{{% /md %}}</dd>
+    <dd>Specify the desired Kafka software version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1261,8 +1261,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfo">Cluster<wbr>Logging<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1270,8 +1270,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.
-{{% /md %}}</dd>
+    <dd>The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1279,8 +1279,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoring">Cluster<wbr>Open<wbr>Monitoring</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for JMX and Node monitoring for the MSK cluster. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for JMX and Node monitoring for the MSK cluster. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1288,8 +1288,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1297,14 +1297,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1313,8 +1313,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1322,8 +1322,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more hostname:port pairs of kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `PLAINTEXT` or `TLS_PLAINTEXT`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more hostname:port pairs of kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `PLAINTEXT` or `TLS_PLAINTEXT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1331,8 +1331,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `TLS_PLAINTEXT` or `TLS`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `TLS_PLAINTEXT` or `TLS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1340,8 +1340,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbrokernodegroupinfo">Cluster<wbr>Broker<wbr>Node<wbr>Group<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for the broker nodes of the Kafka cluster.
-{{% /md %}}</dd>
+    <dd>Configuration block for the broker nodes of the Kafka cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1349,8 +1349,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthentication">Cluster<wbr>Client<wbr>Authentication</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying a client authentication. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying a client authentication. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1358,8 +1358,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the MSK cluster.
-{{% /md %}}</dd>
+    <dd>Name of the MSK cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1367,8 +1367,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterconfigurationinfo">Cluster<wbr>Configuration<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1376,9 +1376,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Current version of the MSK Cluster used for updates, e.g. `K13V1IB3VIYZZH`
+    <dd>Current version of the MSK Cluster used for updates, e.g. `K13V1IB3VIYZZH`
 * `encryption_info.0.encryption_at_rest_kms_key_arn` - The ARN of the KMS key used for encryption at rest of the broker data volumes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1386,8 +1386,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfo">Cluster<wbr>Encryption<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying encryption. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying encryption. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1395,8 +1395,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
-{{% /md %}}</dd>
+    <dd>Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1404,8 +1404,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify the desired Kafka software version.
-{{% /md %}}</dd>
+    <dd>Specify the desired Kafka software version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1413,8 +1413,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfo">Cluster<wbr>Logging<wbr>Info</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1422,8 +1422,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.
-{{% /md %}}</dd>
+    <dd>The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1431,8 +1431,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoring">Cluster<wbr>Open<wbr>Monitoring</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for JMX and Node monitoring for the MSK cluster. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for JMX and Node monitoring for the MSK cluster. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1440,8 +1440,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1449,14 +1449,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1465,8 +1465,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1474,8 +1474,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more hostname:port pairs of kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `PLAINTEXT` or `TLS_PLAINTEXT`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more hostname:port pairs of kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `PLAINTEXT` or `TLS_PLAINTEXT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1483,8 +1483,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `TLS_PLAINTEXT` or `TLS`.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more DNS names (or IPs) and TLS port pairs kafka brokers suitable to boostrap connectivity to the kafka cluster. Only contains value if `client_broker` encryption in transit is set to `TLS_PLAINTEXT` or `TLS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1492,8 +1492,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterbrokernodegroupinfo">Dict[Cluster<wbr>Broker<wbr>Node<wbr>Group<wbr>Info]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for the broker nodes of the Kafka cluster.
-{{% /md %}}</dd>
+    <dd>Configuration block for the broker nodes of the Kafka cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1501,8 +1501,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthentication">Dict[Cluster<wbr>Client<wbr>Authentication]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying a client authentication. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying a client authentication. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1510,8 +1510,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the MSK cluster.
-{{% /md %}}</dd>
+    <dd>Name of the MSK cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1519,8 +1519,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterconfigurationinfo">Dict[Cluster<wbr>Configuration<wbr>Info]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying a MSK Configuration to attach to Kafka brokers. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1528,9 +1528,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Current version of the MSK Cluster used for updates, e.g. `K13V1IB3VIYZZH`
+    <dd>Current version of the MSK Cluster used for updates, e.g. `K13V1IB3VIYZZH`
 * `encryption_info.0.encryption_at_rest_kms_key_arn` - The ARN of the KMS key used for encryption at rest of the broker data volumes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1538,8 +1538,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfo">Dict[Cluster<wbr>Encryption<wbr>Info]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying encryption. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying encryption. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1547,8 +1547,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
-{{% /md %}}</dd>
+    <dd>Specify the desired enhanced MSK CloudWatch monitoring level.  See [Monitoring Amazon MSK with Amazon CloudWatch](https://docs.aws.amazon.com/msk/latest/developerguide/monitoring.html)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1556,8 +1556,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specify the desired Kafka software version.
-{{% /md %}}</dd>
+    <dd>Specify the desired Kafka software version.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1565,8 +1565,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfo">Dict[Cluster<wbr>Logging<wbr>Info]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for streaming broker logs to Cloudwatch/S3/Kinesis Firehose. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1574,8 +1574,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.
-{{% /md %}}</dd>
+    <dd>The desired total number of broker nodes in the kafka cluster.  It must be a multiple of the number of specified client subnets.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1583,8 +1583,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoring">Dict[Cluster<wbr>Open<wbr>Monitoring]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for JMX and Node monitoring for the MSK cluster. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for JMX and Node monitoring for the MSK cluster. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1592,8 +1592,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1601,11 +1601,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster.
-{{% /md %}}</dd>
+    <dd>A comma separated list of one or more hostname:port pairs to use to connect to the Apache Zookeeper cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1620,18 +1620,18 @@ The following state arguments are supported:
 
 
 <h4 id="clusterbrokernodegroupinfo">Cluster<wbr>Broker<wbr>Node<wbr>Group<wbr>Info</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ClusterBrokerNodeGroupInfo">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ClusterBrokerNodeGroupInfo">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterBrokerNodeGroupInfoArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterBrokerNodeGroupInfoOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1640,8 +1640,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnets to connect to in client VPC ([documentation](https://docs.aws.amazon.com/msk/1.0/apireference/clusters.html#clusters-prop-brokernodegroupinfo-clientsubnets)).
-{{% /md %}}</dd>
+    <dd>A list of subnets to connect to in client VPC ([documentation](https://docs.aws.amazon.com/msk/1.0/apireference/clusters.html#clusters-prop-brokernodegroupinfo-clientsubnets)).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1649,8 +1649,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size in GiB of the EBS volume for the data drive on each broker node.
-{{% /md %}}</dd>
+    <dd>The size in GiB of the EBS volume for the data drive on each broker node.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1658,8 +1658,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify the instance type to use for the kafka brokers. e.g. kafka.m5.large. ([Pricing info](https://aws.amazon.com/msk/pricing/))
-{{% /md %}}</dd>
+    <dd>Specify the instance type to use for the kafka brokers. e.g. kafka.m5.large. ([Pricing info](https://aws.amazon.com/msk/pricing/))
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1667,8 +1667,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of the security groups to associate with the elastic network interfaces to control who can communicate with the cluster.
-{{% /md %}}</dd>
+    <dd>A list of the security groups to associate with the elastic network interfaces to control who can communicate with the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1676,14 +1676,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The distribution of broker nodes across availability zones ([documentation](https://docs.aws.amazon.com/msk/1.0/apireference/clusters.html#clusters-model-brokerazdistribution)). Currently the only valid value is `DEFAULT`.
-{{% /md %}}</dd>
+    <dd>The distribution of broker nodes across availability zones ([documentation](https://docs.aws.amazon.com/msk/1.0/apireference/clusters.html#clusters-model-brokerazdistribution)). Currently the only valid value is `DEFAULT`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1692,8 +1692,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnets to connect to in client VPC ([documentation](https://docs.aws.amazon.com/msk/1.0/apireference/clusters.html#clusters-prop-brokernodegroupinfo-clientsubnets)).
-{{% /md %}}</dd>
+    <dd>A list of subnets to connect to in client VPC ([documentation](https://docs.aws.amazon.com/msk/1.0/apireference/clusters.html#clusters-prop-brokernodegroupinfo-clientsubnets)).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1701,8 +1701,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size in GiB of the EBS volume for the data drive on each broker node.
-{{% /md %}}</dd>
+    <dd>The size in GiB of the EBS volume for the data drive on each broker node.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1710,8 +1710,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify the instance type to use for the kafka brokers. e.g. kafka.m5.large. ([Pricing info](https://aws.amazon.com/msk/pricing/))
-{{% /md %}}</dd>
+    <dd>Specify the instance type to use for the kafka brokers. e.g. kafka.m5.large. ([Pricing info](https://aws.amazon.com/msk/pricing/))
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1719,8 +1719,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of the security groups to associate with the elastic network interfaces to control who can communicate with the cluster.
-{{% /md %}}</dd>
+    <dd>A list of the security groups to associate with the elastic network interfaces to control who can communicate with the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1728,14 +1728,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The distribution of broker nodes across availability zones ([documentation](https://docs.aws.amazon.com/msk/1.0/apireference/clusters.html#clusters-model-brokerazdistribution)). Currently the only valid value is `DEFAULT`.
-{{% /md %}}</dd>
+    <dd>The distribution of broker nodes across availability zones ([documentation](https://docs.aws.amazon.com/msk/1.0/apireference/clusters.html#clusters-model-brokerazdistribution)). Currently the only valid value is `DEFAULT`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1744,8 +1744,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnets to connect to in client VPC ([documentation](https://docs.aws.amazon.com/msk/1.0/apireference/clusters.html#clusters-prop-brokernodegroupinfo-clientsubnets)).
-{{% /md %}}</dd>
+    <dd>A list of subnets to connect to in client VPC ([documentation](https://docs.aws.amazon.com/msk/1.0/apireference/clusters.html#clusters-prop-brokernodegroupinfo-clientsubnets)).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1753,8 +1753,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size in GiB of the EBS volume for the data drive on each broker node.
-{{% /md %}}</dd>
+    <dd>The size in GiB of the EBS volume for the data drive on each broker node.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1762,8 +1762,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specify the instance type to use for the kafka brokers. e.g. kafka.m5.large. ([Pricing info](https://aws.amazon.com/msk/pricing/))
-{{% /md %}}</dd>
+    <dd>Specify the instance type to use for the kafka brokers. e.g. kafka.m5.large. ([Pricing info](https://aws.amazon.com/msk/pricing/))
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1771,8 +1771,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the security groups to associate with the elastic network interfaces to control who can communicate with the cluster.
-{{% /md %}}</dd>
+    <dd>A list of the security groups to associate with the elastic network interfaces to control who can communicate with the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1780,14 +1780,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The distribution of broker nodes across availability zones ([documentation](https://docs.aws.amazon.com/msk/1.0/apireference/clusters.html#clusters-model-brokerazdistribution)). Currently the only valid value is `DEFAULT`.
-{{% /md %}}</dd>
+    <dd>The distribution of broker nodes across availability zones ([documentation](https://docs.aws.amazon.com/msk/1.0/apireference/clusters.html#clusters-model-brokerazdistribution)). Currently the only valid value is `DEFAULT`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1796,8 +1796,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of subnets to connect to in client VPC ([documentation](https://docs.aws.amazon.com/msk/1.0/apireference/clusters.html#clusters-prop-brokernodegroupinfo-clientsubnets)).
-{{% /md %}}</dd>
+    <dd>A list of subnets to connect to in client VPC ([documentation](https://docs.aws.amazon.com/msk/1.0/apireference/clusters.html#clusters-prop-brokernodegroupinfo-clientsubnets)).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1805,8 +1805,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size in GiB of the EBS volume for the data drive on each broker node.
-{{% /md %}}</dd>
+    <dd>The size in GiB of the EBS volume for the data drive on each broker node.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1814,8 +1814,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specify the instance type to use for the kafka brokers. e.g. kafka.m5.large. ([Pricing info](https://aws.amazon.com/msk/pricing/))
-{{% /md %}}</dd>
+    <dd>Specify the instance type to use for the kafka brokers. e.g. kafka.m5.large. ([Pricing info](https://aws.amazon.com/msk/pricing/))
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1823,8 +1823,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of the security groups to associate with the elastic network interfaces to control who can communicate with the cluster.
-{{% /md %}}</dd>
+    <dd>A list of the security groups to associate with the elastic network interfaces to control who can communicate with the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1832,29 +1832,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The distribution of broker nodes across availability zones ([documentation](https://docs.aws.amazon.com/msk/1.0/apireference/clusters.html#clusters-model-brokerazdistribution)). Currently the only valid value is `DEFAULT`.
-{{% /md %}}</dd>
+    <dd>The distribution of broker nodes across availability zones ([documentation](https://docs.aws.amazon.com/msk/1.0/apireference/clusters.html#clusters-model-brokerazdistribution)). Currently the only valid value is `DEFAULT`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="clusterclientauthentication">Cluster<wbr>Client<wbr>Authentication</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ClusterClientAuthentication">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ClusterClientAuthentication">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterClientAuthenticationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterClientAuthenticationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1863,14 +1863,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthenticationtls">Cluster<wbr>Client<wbr>Authentication<wbr>Tls<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying TLS client authentication. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying TLS client authentication. See below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1879,14 +1879,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthenticationtls">Cluster<wbr>Client<wbr>Authentication<wbr>Tls</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying TLS client authentication. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying TLS client authentication. See below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1895,14 +1895,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthenticationtls">Cluster<wbr>Client<wbr>Authentication<wbr>Tls</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying TLS client authentication. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying TLS client authentication. See below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1911,29 +1911,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterclientauthenticationtls">Dict[Cluster<wbr>Client<wbr>Authentication<wbr>Tls]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for specifying TLS client authentication. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for specifying TLS client authentication. See below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="clusterclientauthenticationtls">Cluster<wbr>Client<wbr>Authentication<wbr>Tls</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ClusterClientAuthenticationTls">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ClusterClientAuthenticationTls">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterClientAuthenticationTlsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterClientAuthenticationTlsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1942,14 +1942,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of ACM Certificate Authority Amazon Resource Names (ARNs).
-{{% /md %}}</dd>
+    <dd>List of ACM Certificate Authority Amazon Resource Names (ARNs).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1958,14 +1958,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of ACM Certificate Authority Amazon Resource Names (ARNs).
-{{% /md %}}</dd>
+    <dd>List of ACM Certificate Authority Amazon Resource Names (ARNs).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1974,14 +1974,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of ACM Certificate Authority Amazon Resource Names (ARNs).
-{{% /md %}}</dd>
+    <dd>List of ACM Certificate Authority Amazon Resource Names (ARNs).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1990,29 +1990,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of ACM Certificate Authority Amazon Resource Names (ARNs).
-{{% /md %}}</dd>
+    <dd>List of ACM Certificate Authority Amazon Resource Names (ARNs).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="clusterconfigurationinfo">Cluster<wbr>Configuration<wbr>Info</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ClusterConfigurationInfo">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ClusterConfigurationInfo">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterConfigurationInfoArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterConfigurationInfoOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2021,8 +2021,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2030,14 +2030,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Revision of the MSK Configuration to use in the cluster.
-{{% /md %}}</dd>
+    <dd>Revision of the MSK Configuration to use in the cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2046,8 +2046,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2055,14 +2055,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Revision of the MSK Configuration to use in the cluster.
-{{% /md %}}</dd>
+    <dd>Revision of the MSK Configuration to use in the cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2071,8 +2071,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2080,14 +2080,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Revision of the MSK Configuration to use in the cluster.
-{{% /md %}}</dd>
+    <dd>Revision of the MSK Configuration to use in the cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2096,8 +2096,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
-{{% /md %}}</dd>
+    <dd>Amazon Resource Name (ARN) of the MSK Configuration to use in the cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2105,29 +2105,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Revision of the MSK Configuration to use in the cluster.
-{{% /md %}}</dd>
+    <dd>Revision of the MSK Configuration to use in the cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="clusterencryptioninfo">Cluster<wbr>Encryption<wbr>Info</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ClusterEncryptionInfo">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ClusterEncryptionInfo">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterEncryptionInfoArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterEncryptionInfoOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2136,8 +2136,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}You may specify a KMS key short ID or ARN (it will always output an ARN) to use for encrypting your data at rest.  If no key is specified, an AWS managed KMS ('aws/msk' managed service) key will be used for encrypting the data at rest.
-{{% /md %}}</dd>
+    <dd>You may specify a KMS key short ID or ARN (it will always output an ARN) to use for encrypting your data at rest.  If no key is specified, an AWS managed KMS ('aws/msk' managed service) key will be used for encrypting the data at rest.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2145,14 +2145,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfoencryptionintransit">Cluster<wbr>Encryption<wbr>Info<wbr>Encryption<wbr>In<wbr>Transit<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block to specify encryption in transit. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block to specify encryption in transit. See below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2161,8 +2161,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}You may specify a KMS key short ID or ARN (it will always output an ARN) to use for encrypting your data at rest.  If no key is specified, an AWS managed KMS ('aws/msk' managed service) key will be used for encrypting the data at rest.
-{{% /md %}}</dd>
+    <dd>You may specify a KMS key short ID or ARN (it will always output an ARN) to use for encrypting your data at rest.  If no key is specified, an AWS managed KMS ('aws/msk' managed service) key will be used for encrypting the data at rest.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2170,14 +2170,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfoencryptionintransit">Cluster<wbr>Encryption<wbr>Info<wbr>Encryption<wbr>In<wbr>Transit</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block to specify encryption in transit. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block to specify encryption in transit. See below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2186,8 +2186,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}You may specify a KMS key short ID or ARN (it will always output an ARN) to use for encrypting your data at rest.  If no key is specified, an AWS managed KMS ('aws/msk' managed service) key will be used for encrypting the data at rest.
-{{% /md %}}</dd>
+    <dd>You may specify a KMS key short ID or ARN (it will always output an ARN) to use for encrypting your data at rest.  If no key is specified, an AWS managed KMS ('aws/msk' managed service) key will be used for encrypting the data at rest.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2195,14 +2195,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfoencryptionintransit">Cluster<wbr>Encryption<wbr>Info<wbr>Encryption<wbr>In<wbr>Transit</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block to specify encryption in transit. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block to specify encryption in transit. See below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2211,8 +2211,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}You may specify a KMS key short ID or ARN (it will always output an ARN) to use for encrypting your data at rest.  If no key is specified, an AWS managed KMS ('aws/msk' managed service) key will be used for encrypting the data at rest.
-{{% /md %}}</dd>
+    <dd>You may specify a KMS key short ID or ARN (it will always output an ARN) to use for encrypting your data at rest.  If no key is specified, an AWS managed KMS ('aws/msk' managed service) key will be used for encrypting the data at rest.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2220,29 +2220,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterencryptioninfoencryptionintransit">Dict[Cluster<wbr>Encryption<wbr>Info<wbr>Encryption<wbr>In<wbr>Transit]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block to specify encryption in transit. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block to specify encryption in transit. See below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="clusterencryptioninfoencryptionintransit">Cluster<wbr>Encryption<wbr>Info<wbr>Encryption<wbr>In<wbr>Transit</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ClusterEncryptionInfoEncryptionInTransit">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ClusterEncryptionInfoEncryptionInTransit">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterEncryptionInfoEncryptionInTransitArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterEncryptionInfoEncryptionInTransitOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2251,8 +2251,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Encryption setting for data in transit between clients and brokers. Valid values: `TLS`, `TLS_PLAINTEXT`, and `PLAINTEXT`. Default value is `TLS_PLAINTEXT` when `encryption_in_transit` block defined, but `TLS` when `encryption_in_transit` block omitted.
-{{% /md %}}</dd>
+    <dd>Encryption setting for data in transit between clients and brokers. Valid values: `TLS`, `TLS_PLAINTEXT`, and `PLAINTEXT`. Default value is `TLS_PLAINTEXT` when `encryption_in_transit` block defined, but `TLS` when `encryption_in_transit` block omitted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2260,14 +2260,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether data communication among broker nodes is encrypted. Default value: `true`.
-{{% /md %}}</dd>
+    <dd>Whether data communication among broker nodes is encrypted. Default value: `true`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2276,8 +2276,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Encryption setting for data in transit between clients and brokers. Valid values: `TLS`, `TLS_PLAINTEXT`, and `PLAINTEXT`. Default value is `TLS_PLAINTEXT` when `encryption_in_transit` block defined, but `TLS` when `encryption_in_transit` block omitted.
-{{% /md %}}</dd>
+    <dd>Encryption setting for data in transit between clients and brokers. Valid values: `TLS`, `TLS_PLAINTEXT`, and `PLAINTEXT`. Default value is `TLS_PLAINTEXT` when `encryption_in_transit` block defined, but `TLS` when `encryption_in_transit` block omitted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2285,14 +2285,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether data communication among broker nodes is encrypted. Default value: `true`.
-{{% /md %}}</dd>
+    <dd>Whether data communication among broker nodes is encrypted. Default value: `true`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2301,8 +2301,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Encryption setting for data in transit between clients and brokers. Valid values: `TLS`, `TLS_PLAINTEXT`, and `PLAINTEXT`. Default value is `TLS_PLAINTEXT` when `encryption_in_transit` block defined, but `TLS` when `encryption_in_transit` block omitted.
-{{% /md %}}</dd>
+    <dd>Encryption setting for data in transit between clients and brokers. Valid values: `TLS`, `TLS_PLAINTEXT`, and `PLAINTEXT`. Default value is `TLS_PLAINTEXT` when `encryption_in_transit` block defined, but `TLS` when `encryption_in_transit` block omitted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2310,14 +2310,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether data communication among broker nodes is encrypted. Default value: `true`.
-{{% /md %}}</dd>
+    <dd>Whether data communication among broker nodes is encrypted. Default value: `true`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2326,8 +2326,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Encryption setting for data in transit between clients and brokers. Valid values: `TLS`, `TLS_PLAINTEXT`, and `PLAINTEXT`. Default value is `TLS_PLAINTEXT` when `encryption_in_transit` block defined, but `TLS` when `encryption_in_transit` block omitted.
-{{% /md %}}</dd>
+    <dd>Encryption setting for data in transit between clients and brokers. Valid values: `TLS`, `TLS_PLAINTEXT`, and `PLAINTEXT`. Default value is `TLS_PLAINTEXT` when `encryption_in_transit` block defined, but `TLS` when `encryption_in_transit` block omitted.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2335,29 +2335,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether data communication among broker nodes is encrypted. Default value: `true`.
-{{% /md %}}</dd>
+    <dd>Whether data communication among broker nodes is encrypted. Default value: `true`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="clusterlogginginfo">Cluster<wbr>Logging<wbr>Info</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ClusterLoggingInfo">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ClusterLoggingInfo">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterLoggingInfoArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterLoggingInfoOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2366,14 +2366,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogs">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for Broker Logs settings for logging info. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for Broker Logs settings for logging info. See below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2382,14 +2382,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogs">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for Broker Logs settings for logging info. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for Broker Logs settings for logging info. See below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2398,14 +2398,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogs">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for Broker Logs settings for logging info. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for Broker Logs settings for logging info. See below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2414,29 +2414,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogs">Dict[Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for Broker Logs settings for logging info. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for Broker Logs settings for logging info. See below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="clusterlogginginfobrokerlogs">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ClusterLoggingInfoBrokerLogs">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ClusterLoggingInfoBrokerLogs">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterLoggingInfoBrokerLogsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterLoggingInfoBrokerLogsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2445,7 +2445,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogscloudwatchlogs">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>Cloudwatch<wbr>Logs<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2453,7 +2453,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogsfirehose">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>Firehose<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2461,13 +2461,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogss3">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>S3Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2476,7 +2476,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogscloudwatchlogs">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>Cloudwatch<wbr>Logs</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2484,7 +2484,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogsfirehose">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>Firehose</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2492,13 +2492,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogss3">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>S3</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2507,7 +2507,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogscloudwatchlogs">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>Cloudwatch<wbr>Logs</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2515,7 +2515,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogsfirehose">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>Firehose</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2523,13 +2523,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogss3">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>S3</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2538,7 +2538,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogscloudwatchlogs">Dict[Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>Cloudwatch<wbr>Logs]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2546,7 +2546,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogsfirehose">Dict[Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>Firehose]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2554,28 +2554,28 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusterlogginginfobrokerlogss3">Dict[Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>S3]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="clusterlogginginfobrokerlogscloudwatchlogs">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>Cloudwatch<wbr>Logs</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ClusterLoggingInfoBrokerLogsCloudwatchLogs">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ClusterLoggingInfoBrokerLogsCloudwatchLogs">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterLoggingInfoBrokerLogsCloudwatchLogsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterLoggingInfoBrokerLogsCloudwatchLogsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2584,8 +2584,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
-{{% /md %}}</dd>
+    <dd>Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2593,14 +2593,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Cloudwatch Log Group to deliver logs to.
-{{% /md %}}</dd>
+    <dd>Name of the Cloudwatch Log Group to deliver logs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2609,8 +2609,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
-{{% /md %}}</dd>
+    <dd>Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2618,14 +2618,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Cloudwatch Log Group to deliver logs to.
-{{% /md %}}</dd>
+    <dd>Name of the Cloudwatch Log Group to deliver logs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2634,8 +2634,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
-{{% /md %}}</dd>
+    <dd>Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2643,14 +2643,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Cloudwatch Log Group to deliver logs to.
-{{% /md %}}</dd>
+    <dd>Name of the Cloudwatch Log Group to deliver logs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2659,8 +2659,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
-{{% /md %}}</dd>
+    <dd>Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2668,29 +2668,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Cloudwatch Log Group to deliver logs to.
-{{% /md %}}</dd>
+    <dd>Name of the Cloudwatch Log Group to deliver logs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="clusterlogginginfobrokerlogsfirehose">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>Firehose</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ClusterLoggingInfoBrokerLogsFirehose">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ClusterLoggingInfoBrokerLogsFirehose">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterLoggingInfoBrokerLogsFirehoseArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterLoggingInfoBrokerLogsFirehoseOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2699,8 +2699,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
-{{% /md %}}</dd>
+    <dd>Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2708,14 +2708,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Kinesis Data Firehose delivery stream to deliver logs to.
-{{% /md %}}</dd>
+    <dd>Name of the Kinesis Data Firehose delivery stream to deliver logs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2724,8 +2724,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
-{{% /md %}}</dd>
+    <dd>Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2733,14 +2733,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Kinesis Data Firehose delivery stream to deliver logs to.
-{{% /md %}}</dd>
+    <dd>Name of the Kinesis Data Firehose delivery stream to deliver logs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2749,8 +2749,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
-{{% /md %}}</dd>
+    <dd>Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2758,14 +2758,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Kinesis Data Firehose delivery stream to deliver logs to.
-{{% /md %}}</dd>
+    <dd>Name of the Kinesis Data Firehose delivery stream to deliver logs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2774,8 +2774,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
-{{% /md %}}</dd>
+    <dd>Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2783,29 +2783,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Kinesis Data Firehose delivery stream to deliver logs to.
-{{% /md %}}</dd>
+    <dd>Name of the Kinesis Data Firehose delivery stream to deliver logs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="clusterlogginginfobrokerlogss3">Cluster<wbr>Logging<wbr>Info<wbr>Broker<wbr>Logs<wbr>S3</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ClusterLoggingInfoBrokerLogsS3">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ClusterLoggingInfoBrokerLogsS3">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterLoggingInfoBrokerLogsS3Args">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterLoggingInfoBrokerLogsS3Output">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2814,8 +2814,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
-{{% /md %}}</dd>
+    <dd>Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2823,8 +2823,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the S3 bucket to deliver logs to. 
-{{% /md %}}</dd>
+    <dd>Name of the S3 bucket to deliver logs to. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2832,14 +2832,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Prefix to append to the folder name. 
-{{% /md %}}</dd>
+    <dd>Prefix to append to the folder name. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2848,8 +2848,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
-{{% /md %}}</dd>
+    <dd>Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2857,8 +2857,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the S3 bucket to deliver logs to. 
-{{% /md %}}</dd>
+    <dd>Name of the S3 bucket to deliver logs to. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2866,14 +2866,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Prefix to append to the folder name. 
-{{% /md %}}</dd>
+    <dd>Prefix to append to the folder name. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2882,8 +2882,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
-{{% /md %}}</dd>
+    <dd>Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2891,8 +2891,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the S3 bucket to deliver logs to. 
-{{% /md %}}</dd>
+    <dd>Name of the S3 bucket to deliver logs to. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2900,14 +2900,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Prefix to append to the folder name. 
-{{% /md %}}</dd>
+    <dd>Prefix to append to the folder name. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2916,8 +2916,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
-{{% /md %}}</dd>
+    <dd>Indicates whether you want to enable or disable streaming broker logs to Cloudwatch Logs. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2925,8 +2925,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the S3 bucket to deliver logs to. 
-{{% /md %}}</dd>
+    <dd>Name of the S3 bucket to deliver logs to. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2934,29 +2934,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Prefix to append to the folder name. 
-{{% /md %}}</dd>
+    <dd>Prefix to append to the folder name. 
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="clusteropenmonitoring">Cluster<wbr>Open<wbr>Monitoring</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ClusterOpenMonitoring">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ClusterOpenMonitoring">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterOpenMonitoringArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterOpenMonitoringOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2965,14 +2965,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheus">Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for Prometheus settings for open monitoring. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for Prometheus settings for open monitoring. See below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2981,14 +2981,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheus">Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for Prometheus settings for open monitoring. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for Prometheus settings for open monitoring. See below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2997,14 +2997,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheus">Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for Prometheus settings for open monitoring. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for Prometheus settings for open monitoring. See below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3013,29 +3013,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheus">Dict[Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for Prometheus settings for open monitoring. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for Prometheus settings for open monitoring. See below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="clusteropenmonitoringprometheus">Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ClusterOpenMonitoringPrometheus">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ClusterOpenMonitoringPrometheus">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterOpenMonitoringPrometheusArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterOpenMonitoringPrometheusOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3044,8 +3044,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheusjmxexporter">Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus<wbr>Jmx<wbr>Exporter<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for JMX Exporter. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for JMX Exporter. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3053,14 +3053,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheusnodeexporter">Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus<wbr>Node<wbr>Exporter<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for Node Exporter. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for Node Exporter. See below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3069,8 +3069,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheusjmxexporter">Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus<wbr>Jmx<wbr>Exporter</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for JMX Exporter. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for JMX Exporter. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3078,14 +3078,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheusnodeexporter">Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus<wbr>Node<wbr>Exporter</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for Node Exporter. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for Node Exporter. See below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3094,8 +3094,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheusjmxexporter">Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus<wbr>Jmx<wbr>Exporter</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for JMX Exporter. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for JMX Exporter. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3103,14 +3103,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheusnodeexporter">Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus<wbr>Node<wbr>Exporter</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for Node Exporter. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for Node Exporter. See below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3119,8 +3119,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheusjmxexporter">Dict[Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus<wbr>Jmx<wbr>Exporter]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for JMX Exporter. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for JMX Exporter. See below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3128,29 +3128,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#clusteropenmonitoringprometheusnodeexporter">Dict[Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus<wbr>Node<wbr>Exporter]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block for Node Exporter. See below.
-{{% /md %}}</dd>
+    <dd>Configuration block for Node Exporter. See below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="clusteropenmonitoringprometheusjmxexporter">Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus<wbr>Jmx<wbr>Exporter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ClusterOpenMonitoringPrometheusJmxExporter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ClusterOpenMonitoringPrometheusJmxExporter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterOpenMonitoringPrometheusJmxExporterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterOpenMonitoringPrometheusJmxExporterOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3159,14 +3159,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether you want to enable or disable the JMX Exporter. 
-{{% /md %}}</dd>
+    <dd>Indicates whether you want to enable or disable the JMX Exporter. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3175,14 +3175,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether you want to enable or disable the JMX Exporter. 
-{{% /md %}}</dd>
+    <dd>Indicates whether you want to enable or disable the JMX Exporter. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3191,14 +3191,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether you want to enable or disable the JMX Exporter. 
-{{% /md %}}</dd>
+    <dd>Indicates whether you want to enable or disable the JMX Exporter. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3207,29 +3207,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether you want to enable or disable the JMX Exporter. 
-{{% /md %}}</dd>
+    <dd>Indicates whether you want to enable or disable the JMX Exporter. 
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="clusteropenmonitoringprometheusnodeexporter">Cluster<wbr>Open<wbr>Monitoring<wbr>Prometheus<wbr>Node<wbr>Exporter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#ClusterOpenMonitoringPrometheusNodeExporter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#ClusterOpenMonitoringPrometheusNodeExporter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterOpenMonitoringPrometheusNodeExporterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/msk?tab=doc#ClusterOpenMonitoringPrometheusNodeExporterOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3238,14 +3238,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether you want to enable or disable the JMX Exporter. 
-{{% /md %}}</dd>
+    <dd>Indicates whether you want to enable or disable the JMX Exporter. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3254,14 +3254,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether you want to enable or disable the JMX Exporter. 
-{{% /md %}}</dd>
+    <dd>Indicates whether you want to enable or disable the JMX Exporter. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3270,14 +3270,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether you want to enable or disable the JMX Exporter. 
-{{% /md %}}</dd>
+    <dd>Indicates whether you want to enable or disable the JMX Exporter. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3286,11 +3286,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether you want to enable or disable the JMX Exporter. 
-{{% /md %}}</dd>
+    <dd>Indicates whether you want to enable or disable the JMX Exporter. 
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

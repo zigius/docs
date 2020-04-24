@@ -56,26 +56,26 @@ const serverInstance = new aws.ec2.Instance("server", {
 
 
 ## Create a RandomId Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/random/#RandomId">RandomId</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/random/#RandomIdArgs">RandomIdArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">RandomId</span><span class="p">(resource_name, opts=None, </span>byte_length=None<span class="p">, </span>keepers=None<span class="p">, </span>prefix=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewRandomId<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-random/sdk/v2/go/random/?tab=doc#RandomIdArgs">RandomIdArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-random/sdk/v2/go/random/?tab=doc#RandomId">RandomId</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Random/Pulumi.Random.RandomId.html">RandomId</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Random/Pulumi.Random.RandomIdArgs.html">RandomIdArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -112,9 +112,9 @@ const serverInstance = new aws.ec2.Instance("server", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -132,9 +132,9 @@ const serverInstance = new aws.ec2.Instance("server", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -181,9 +181,9 @@ const serverInstance = new aws.ec2.Instance("server", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -220,7 +220,7 @@ const serverInstance = new aws.ec2.Instance("server", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## RandomId Resource Properties {#properties}
 
@@ -233,7 +233,7 @@ The RandomId resource accepts the following [input]({{< relref "/docs/intro/conc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -242,9 +242,9 @@ The RandomId resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of random bytes to produce. The
+    <dd>The number of random bytes to produce. The
 minimum value is 1, which produces eight bits of randomness.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -252,10 +252,10 @@ minimum value is 1, which produces eight bits of randomness.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Arbitrary map of values that, when changed, will
+    <dd>Arbitrary map of values that, when changed, will
 trigger a new id to be generated. See
 the main provider documentation for more information.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -263,16 +263,16 @@ the main provider documentation for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Arbitrary string to prefix the output value with. This
+    <dd>Arbitrary string to prefix the output value with. This
 string is supplied as-is, meaning it is not guaranteed to be URL-safe or
 base64 encoded.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -281,9 +281,9 @@ base64 encoded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of random bytes to produce. The
+    <dd>The number of random bytes to produce. The
 minimum value is 1, which produces eight bits of randomness.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -291,10 +291,10 @@ minimum value is 1, which produces eight bits of randomness.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Arbitrary map of values that, when changed, will
+    <dd>Arbitrary map of values that, when changed, will
 trigger a new id to be generated. See
 the main provider documentation for more information.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -302,16 +302,16 @@ the main provider documentation for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Arbitrary string to prefix the output value with. This
+    <dd>Arbitrary string to prefix the output value with. This
 string is supplied as-is, meaning it is not guaranteed to be URL-safe or
 base64 encoded.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -320,9 +320,9 @@ base64 encoded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of random bytes to produce. The
+    <dd>The number of random bytes to produce. The
 minimum value is 1, which produces eight bits of randomness.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -330,10 +330,10 @@ minimum value is 1, which produces eight bits of randomness.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Arbitrary map of values that, when changed, will
+    <dd>Arbitrary map of values that, when changed, will
 trigger a new id to be generated. See
 the main provider documentation for more information.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -341,16 +341,16 @@ the main provider documentation for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Arbitrary string to prefix the output value with. This
+    <dd>Arbitrary string to prefix the output value with. This
 string is supplied as-is, meaning it is not guaranteed to be URL-safe or
 base64 encoded.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -359,9 +359,9 @@ base64 encoded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of random bytes to produce. The
+    <dd>The number of random bytes to produce. The
 minimum value is 1, which produces eight bits of randomness.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -369,10 +369,10 @@ minimum value is 1, which produces eight bits of randomness.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Arbitrary map of values that, when changed, will
+    <dd>Arbitrary map of values that, when changed, will
 trigger a new id to be generated. See
 the main provider documentation for more information.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -380,13 +380,13 @@ the main provider documentation for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Arbitrary string to prefix the output value with. This
+    <dd>Arbitrary string to prefix the output value with. This
 string is supplied as-is, meaning it is not guaranteed to be URL-safe or
 base64 encoded.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -400,7 +400,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property- property-deprecated"
@@ -409,7 +409,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use b64_url for old behavior, or b64_std for standard base64 encoding{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use b64_url for old behavior, or b64_std for standard base64 encoding</p></dd>
 
     <dt class="property-"
             title="">
@@ -417,8 +417,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in base64 without additional transformations.
-{{% /md %}}</dd>
+    <dd>The generated id presented in base64 without additional transformations.
+</dd>
 
     <dt class="property-"
             title="">
@@ -426,8 +426,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in base64, using the URL-friendly character set: case-sensitive letters, digits and the characters `_` and `-`.
-{{% /md %}}</dd>
+    <dd>The generated id presented in base64, using the URL-friendly character set: case-sensitive letters, digits and the characters `_` and `-`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -435,8 +435,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in non-padded decimal digits.
-{{% /md %}}</dd>
+    <dd>The generated id presented in non-padded decimal digits.
+</dd>
 
     <dt class="property-"
             title="">
@@ -444,8 +444,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in padded hexadecimal digits. This result will always be twice as long as the requested byte length.
-{{% /md %}}</dd>
+    <dd>The generated id presented in padded hexadecimal digits. This result will always be twice as long as the requested byte length.
+</dd>
 
     <dt class="property-"
             title="">
@@ -453,13 +453,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property- property-deprecated"
@@ -468,7 +468,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use b64_url for old behavior, or b64_std for standard base64 encoding{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use b64_url for old behavior, or b64_std for standard base64 encoding</p></dd>
 
     <dt class="property-"
             title="">
@@ -476,8 +476,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in base64 without additional transformations.
-{{% /md %}}</dd>
+    <dd>The generated id presented in base64 without additional transformations.
+</dd>
 
     <dt class="property-"
             title="">
@@ -485,8 +485,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in base64, using the URL-friendly character set: case-sensitive letters, digits and the characters `_` and `-`.
-{{% /md %}}</dd>
+    <dd>The generated id presented in base64, using the URL-friendly character set: case-sensitive letters, digits and the characters `_` and `-`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -494,8 +494,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in non-padded decimal digits.
-{{% /md %}}</dd>
+    <dd>The generated id presented in non-padded decimal digits.
+</dd>
 
     <dt class="property-"
             title="">
@@ -503,8 +503,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in padded hexadecimal digits. This result will always be twice as long as the requested byte length.
-{{% /md %}}</dd>
+    <dd>The generated id presented in padded hexadecimal digits. This result will always be twice as long as the requested byte length.
+</dd>
 
     <dt class="property-"
             title="">
@@ -512,13 +512,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property- property-deprecated"
@@ -527,7 +527,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use b64_url for old behavior, or b64_std for standard base64 encoding{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use b64_url for old behavior, or b64_std for standard base64 encoding</p></dd>
 
     <dt class="property-"
             title="">
@@ -535,8 +535,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in base64 without additional transformations.
-{{% /md %}}</dd>
+    <dd>The generated id presented in base64 without additional transformations.
+</dd>
 
     <dt class="property-"
             title="">
@@ -544,8 +544,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in base64, using the URL-friendly character set: case-sensitive letters, digits and the characters `_` and `-`.
-{{% /md %}}</dd>
+    <dd>The generated id presented in base64, using the URL-friendly character set: case-sensitive letters, digits and the characters `_` and `-`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -553,8 +553,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in non-padded decimal digits.
-{{% /md %}}</dd>
+    <dd>The generated id presented in non-padded decimal digits.
+</dd>
 
     <dt class="property-"
             title="">
@@ -562,8 +562,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in padded hexadecimal digits. This result will always be twice as long as the requested byte length.
-{{% /md %}}</dd>
+    <dd>The generated id presented in padded hexadecimal digits. This result will always be twice as long as the requested byte length.
+</dd>
 
     <dt class="property-"
             title="">
@@ -571,13 +571,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property- property-deprecated"
@@ -586,7 +586,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use b64_url for old behavior, or b64_std for standard base64 encoding{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use b64_url for old behavior, or b64_std for standard base64 encoding</p></dd>
 
     <dt class="property-"
             title="">
@@ -594,8 +594,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in base64 without additional transformations.
-{{% /md %}}</dd>
+    <dd>The generated id presented in base64 without additional transformations.
+</dd>
 
     <dt class="property-"
             title="">
@@ -603,8 +603,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in base64, using the URL-friendly character set: case-sensitive letters, digits and the characters `_` and `-`.
-{{% /md %}}</dd>
+    <dd>The generated id presented in base64, using the URL-friendly character set: case-sensitive letters, digits and the characters `_` and `-`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -612,8 +612,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in non-padded decimal digits.
-{{% /md %}}</dd>
+    <dd>The generated id presented in non-padded decimal digits.
+</dd>
 
     <dt class="property-"
             title="">
@@ -621,8 +621,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in padded hexadecimal digits. This result will always be twice as long as the requested byte length.
-{{% /md %}}</dd>
+    <dd>The generated id presented in padded hexadecimal digits. This result will always be twice as long as the requested byte length.
+</dd>
 
     <dt class="property-"
             title="">
@@ -630,10 +630,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -644,25 +644,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing RandomId Resource {#look-up}
 
 Get an existing RandomId resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/random/#RandomIdState">RandomIdState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/random/#RandomId">RandomId</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>b64=None<span class="p">, </span>b64_std=None<span class="p">, </span>b64_url=None<span class="p">, </span>byte_length=None<span class="p">, </span>dec=None<span class="p">, </span>hex=None<span class="p">, </span>keepers=None<span class="p">, </span>prefix=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetRandomId<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-random/sdk/v2/go/random/?tab=doc#RandomIdState">RandomIdState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-random/sdk/v2/go/random/?tab=doc#RandomId">RandomId</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Random/Pulumi.Random.RandomId.html">RandomId</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Random/Pulumi.Random..RandomIdState.html">RandomIdState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -687,9 +687,9 @@ Get an existing RandomId resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -702,36 +702,9 @@ Get an existing RandomId resource's state with the given name, ID, and optional 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -756,13 +729,40 @@ Get an existing RandomId resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -771,7 +771,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use b64_url for old behavior, or b64_std for standard base64 encoding{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use b64_url for old behavior, or b64_std for standard base64 encoding</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -779,8 +779,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in base64 without additional transformations.
-{{% /md %}}</dd>
+    <dd>The generated id presented in base64 without additional transformations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -788,8 +788,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in base64, using the URL-friendly character set: case-sensitive letters, digits and the characters `_` and `-`.
-{{% /md %}}</dd>
+    <dd>The generated id presented in base64, using the URL-friendly character set: case-sensitive letters, digits and the characters `_` and `-`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -797,9 +797,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of random bytes to produce. The
+    <dd>The number of random bytes to produce. The
 minimum value is 1, which produces eight bits of randomness.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -807,8 +807,8 @@ minimum value is 1, which produces eight bits of randomness.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in non-padded decimal digits.
-{{% /md %}}</dd>
+    <dd>The generated id presented in non-padded decimal digits.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -816,8 +816,8 @@ minimum value is 1, which produces eight bits of randomness.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in padded hexadecimal digits. This result will always be twice as long as the requested byte length.
-{{% /md %}}</dd>
+    <dd>The generated id presented in padded hexadecimal digits. This result will always be twice as long as the requested byte length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -825,10 +825,10 @@ minimum value is 1, which produces eight bits of randomness.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Arbitrary map of values that, when changed, will
+    <dd>Arbitrary map of values that, when changed, will
 trigger a new id to be generated. See
 the main provider documentation for more information.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -836,16 +836,16 @@ the main provider documentation for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Arbitrary string to prefix the output value with. This
+    <dd>Arbitrary string to prefix the output value with. This
 string is supplied as-is, meaning it is not guaranteed to be URL-safe or
 base64 encoded.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -854,7 +854,7 @@ base64 encoded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use b64_url for old behavior, or b64_std for standard base64 encoding{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use b64_url for old behavior, or b64_std for standard base64 encoding</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -862,8 +862,8 @@ base64 encoded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in base64 without additional transformations.
-{{% /md %}}</dd>
+    <dd>The generated id presented in base64 without additional transformations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -871,8 +871,8 @@ base64 encoded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in base64, using the URL-friendly character set: case-sensitive letters, digits and the characters `_` and `-`.
-{{% /md %}}</dd>
+    <dd>The generated id presented in base64, using the URL-friendly character set: case-sensitive letters, digits and the characters `_` and `-`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -880,9 +880,9 @@ base64 encoded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of random bytes to produce. The
+    <dd>The number of random bytes to produce. The
 minimum value is 1, which produces eight bits of randomness.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -890,8 +890,8 @@ minimum value is 1, which produces eight bits of randomness.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in non-padded decimal digits.
-{{% /md %}}</dd>
+    <dd>The generated id presented in non-padded decimal digits.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -899,8 +899,8 @@ minimum value is 1, which produces eight bits of randomness.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in padded hexadecimal digits. This result will always be twice as long as the requested byte length.
-{{% /md %}}</dd>
+    <dd>The generated id presented in padded hexadecimal digits. This result will always be twice as long as the requested byte length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -908,10 +908,10 @@ minimum value is 1, which produces eight bits of randomness.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Arbitrary map of values that, when changed, will
+    <dd>Arbitrary map of values that, when changed, will
 trigger a new id to be generated. See
 the main provider documentation for more information.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -919,16 +919,16 @@ the main provider documentation for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Arbitrary string to prefix the output value with. This
+    <dd>Arbitrary string to prefix the output value with. This
 string is supplied as-is, meaning it is not guaranteed to be URL-safe or
 base64 encoded.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -937,7 +937,7 @@ base64 encoded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use b64_url for old behavior, or b64_std for standard base64 encoding{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use b64_url for old behavior, or b64_std for standard base64 encoding</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -945,8 +945,8 @@ base64 encoded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in base64 without additional transformations.
-{{% /md %}}</dd>
+    <dd>The generated id presented in base64 without additional transformations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -954,8 +954,8 @@ base64 encoded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in base64, using the URL-friendly character set: case-sensitive letters, digits and the characters `_` and `-`.
-{{% /md %}}</dd>
+    <dd>The generated id presented in base64, using the URL-friendly character set: case-sensitive letters, digits and the characters `_` and `-`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -963,9 +963,9 @@ base64 encoded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of random bytes to produce. The
+    <dd>The number of random bytes to produce. The
 minimum value is 1, which produces eight bits of randomness.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -973,8 +973,8 @@ minimum value is 1, which produces eight bits of randomness.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in non-padded decimal digits.
-{{% /md %}}</dd>
+    <dd>The generated id presented in non-padded decimal digits.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -982,8 +982,8 @@ minimum value is 1, which produces eight bits of randomness.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in padded hexadecimal digits. This result will always be twice as long as the requested byte length.
-{{% /md %}}</dd>
+    <dd>The generated id presented in padded hexadecimal digits. This result will always be twice as long as the requested byte length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -991,10 +991,10 @@ minimum value is 1, which produces eight bits of randomness.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Arbitrary map of values that, when changed, will
+    <dd>Arbitrary map of values that, when changed, will
 trigger a new id to be generated. See
 the main provider documentation for more information.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1002,16 +1002,16 @@ the main provider documentation for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Arbitrary string to prefix the output value with. This
+    <dd>Arbitrary string to prefix the output value with. This
 string is supplied as-is, meaning it is not guaranteed to be URL-safe or
 base64 encoded.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -1020,7 +1020,7 @@ base64 encoded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Use b64_url for old behavior, or b64_std for standard base64 encoding{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Use b64_url for old behavior, or b64_std for standard base64 encoding</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1028,8 +1028,8 @@ base64 encoded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in base64 without additional transformations.
-{{% /md %}}</dd>
+    <dd>The generated id presented in base64 without additional transformations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1037,8 +1037,8 @@ base64 encoded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in base64, using the URL-friendly character set: case-sensitive letters, digits and the characters `_` and `-`.
-{{% /md %}}</dd>
+    <dd>The generated id presented in base64, using the URL-friendly character set: case-sensitive letters, digits and the characters `_` and `-`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1046,9 +1046,9 @@ base64 encoded.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of random bytes to produce. The
+    <dd>The number of random bytes to produce. The
 minimum value is 1, which produces eight bits of randomness.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1056,8 +1056,8 @@ minimum value is 1, which produces eight bits of randomness.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in non-padded decimal digits.
-{{% /md %}}</dd>
+    <dd>The generated id presented in non-padded decimal digits.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1065,8 +1065,8 @@ minimum value is 1, which produces eight bits of randomness.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The generated id presented in padded hexadecimal digits. This result will always be twice as long as the requested byte length.
-{{% /md %}}</dd>
+    <dd>The generated id presented in padded hexadecimal digits. This result will always be twice as long as the requested byte length.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1074,10 +1074,10 @@ minimum value is 1, which produces eight bits of randomness.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Arbitrary map of values that, when changed, will
+    <dd>Arbitrary map of values that, when changed, will
 trigger a new id to be generated. See
 the main provider documentation for more information.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1085,13 +1085,13 @@ the main provider documentation for more information.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Arbitrary string to prefix the output value with. This
+    <dd>Arbitrary string to prefix the output value with. This
 string is supplied as-is, meaning it is not guaranteed to be URL-safe or
 base64 encoded.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

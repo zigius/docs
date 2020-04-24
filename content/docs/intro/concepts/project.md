@@ -88,9 +88,9 @@ description: A precompiled .NET Pulumi program
 
 When your Pulumi program references resources in the local filesystem, they are always relative to the working directory. The following example code references a subfolder `app` of the working directory, which would contain a `Dockerfile` and application code:
 
-{{< chooser language "javascript,typescript,python,csharp" >}}
 
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 const myTask = new cloud.Task("myTask", {
@@ -99,8 +99,8 @@ const myTask = new cloud.Task("myTask", {
 });
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 const myTask = new cloud.Task("myTask", {
@@ -109,8 +109,8 @@ const myTask = new cloud.Task("myTask", {
 });
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 myTask = Task('myTask',
@@ -121,8 +121,8 @@ myTask = Task('myTask',
 )
 ```
 
-{{% /choosable %}}
-{{% choosable language csharp %}}
+
+
 
 ```csharp
 var myTask = new Task("myTask", new TaskArgs
@@ -132,9 +132,9 @@ var myTask = new Task("myTask", new TaskArgs
 });
 ```
 
-{{% /choosable %}}
 
-{{< /chooser >}}
+
+
 
 ## Stack Settings Files {#stack-settings-file}
 

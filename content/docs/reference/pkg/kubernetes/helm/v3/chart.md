@@ -15,26 +15,26 @@ ConfigFile creates a set of Kubernetes resources from Kubernetes YAML file. If `
 
 
 ## Create a Chart Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/kubernetes/helm/v3/#Chart">Chart</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/kubernetes/types/input/#Chart">Chart</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Chart</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>chart=None<span class="p">, </span>fetch_opts=None<span class="p">, </span>namespace=None<span class="p">, </span>path=None<span class="p">, </span>repo=None<span class="p">, </span>resource_prefix=None<span class="p">, </span>transformations=None<span class="p">, </span>values=None<span class="p">, </span>version=None<span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewChart<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/helm/v3?tab=doc#ChartArgs">ChartArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/helm/v3?tab=doc#Chart">Chart</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Kubernetes/Pulumi.Kubernetes.Helm.V3.Chart.html">Chart</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Kubernetes/Pulumi.Kubernetes.Types.Inputs.Helm.V3.ChartArgs.html">ChartArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -71,9 +71,9 @@ ConfigFile creates a set of Kubernetes resources from Kubernetes YAML file. If `
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -91,9 +91,9 @@ ConfigFile creates a set of Kubernetes resources from Kubernetes YAML file. If `
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -140,9 +140,9 @@ ConfigFile creates a set of Kubernetes resources from Kubernetes YAML file. If `
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -179,7 +179,7 @@ ConfigFile creates a set of Kubernetes resources from Kubernetes YAML file. If `
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Chart Resource Properties {#properties}
 
@@ -192,7 +192,7 @@ The Chart resource accepts the following [input]({{< relref "/docs/intro/concept
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -201,9 +201,9 @@ The Chart resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the chart to deploy. If [repo] is provided, this chart name will be prefixed by the repo name. Example: repo: "stable", chart: "nginx-ingress" -> "stable/nginx-ingress" Example: chart: "stable/nginx-ingress" -> "stable/nginx-ingress"
+    <dd>The name of the chart to deploy. If [repo] is provided, this chart name will be prefixed by the repo name. Example: repo: "stable", chart: "nginx-ingress" -> "stable/nginx-ingress" Example: chart: "stable/nginx-ingress" -> "stable/nginx-ingress"
 
-Required if specifying `ChartOpts` for a remote chart.{{% /md %}}</dd>
+Required if specifying `ChartOpts` for a remote chart.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -211,7 +211,7 @@ Required if specifying `ChartOpts` for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fetchopts">Fetch<wbr>Opts<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Additional options to customize the fetching of the Helm chart.{{% /md %}}</dd>
+    <dd>Additional options to customize the fetching of the Helm chart.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -219,7 +219,7 @@ Required if specifying `ChartOpts` for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The optional namespace to install chart resources into.{{% /md %}}</dd>
+    <dd>The optional namespace to install chart resources into.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -227,9 +227,9 @@ Required if specifying `ChartOpts` for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the chart directory which contains the `Chart.yaml` file.
+    <dd>The path to the chart directory which contains the `Chart.yaml` file.
 
-Required if specifying `LocalChartOpts`.{{% /md %}}</dd>
+Required if specifying `LocalChartOpts`.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -237,9 +237,9 @@ Required if specifying `LocalChartOpts`.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The repository name of the chart to deploy. Example: "stable".
+    <dd>The repository name of the chart to deploy. Example: "stable".
 
-Used only when specifying options for a remote chart.{{% /md %}}</dd>
+Used only when specifying options for a remote chart.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -247,7 +247,7 @@ Used only when specifying options for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional prefix for the auto-generated resource names. Example: A resource created with resourcePrefix="foo" would produce a resource named "foo-resourceName".{{% /md %}}</dd>
+    <dd>An optional prefix for the auto-generated resource names. Example: A resource created with resourcePrefix="foo" would produce a resource named "foo-resourceName".</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -255,7 +255,7 @@ Used only when specifying options for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;object&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Optional array of transformations to apply to resources that will be created by this chart prior to creation. Allows customization of the chart behaviour without directly modifying the chart itself.{{% /md %}}</dd>
+    <dd>Optional array of transformations to apply to resources that will be created by this chart prior to creation. Allows customization of the chart behaviour without directly modifying the chart itself.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -263,7 +263,7 @@ Used only when specifying options for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Overrides for chart values.{{% /md %}}</dd>
+    <dd>Overrides for chart values.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -271,13 +271,13 @@ Used only when specifying options for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the chart to deploy. If not provided, the latest version will be deployed.{{% /md %}}</dd>
+    <dd>The version of the chart to deploy. If not provided, the latest version will be deployed.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -286,9 +286,9 @@ Used only when specifying options for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the chart to deploy. If [repo] is provided, this chart name will be prefixed by the repo name. Example: repo: "stable", chart: "nginx-ingress" -> "stable/nginx-ingress" Example: chart: "stable/nginx-ingress" -> "stable/nginx-ingress"
+    <dd>The name of the chart to deploy. If [repo] is provided, this chart name will be prefixed by the repo name. Example: repo: "stable", chart: "nginx-ingress" -> "stable/nginx-ingress" Example: chart: "stable/nginx-ingress" -> "stable/nginx-ingress"
 
-Required if specifying `ChartOpts` for a remote chart.{{% /md %}}</dd>
+Required if specifying `ChartOpts` for a remote chart.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -296,7 +296,7 @@ Required if specifying `ChartOpts` for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fetchopts">Fetch<wbr>Opts</a></span>
     </dt>
-    <dd>{{% md %}}Additional options to customize the fetching of the Helm chart.{{% /md %}}</dd>
+    <dd>Additional options to customize the fetching of the Helm chart.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -304,7 +304,7 @@ Required if specifying `ChartOpts` for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The optional namespace to install chart resources into.{{% /md %}}</dd>
+    <dd>The optional namespace to install chart resources into.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -312,9 +312,9 @@ Required if specifying `ChartOpts` for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the chart directory which contains the `Chart.yaml` file.
+    <dd>The path to the chart directory which contains the `Chart.yaml` file.
 
-Required if specifying `LocalChartOpts`.{{% /md %}}</dd>
+Required if specifying `LocalChartOpts`.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -322,9 +322,9 @@ Required if specifying `LocalChartOpts`.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The repository name of the chart to deploy. Example: "stable".
+    <dd>The repository name of the chart to deploy. Example: "stable".
 
-Used only when specifying options for a remote chart.{{% /md %}}</dd>
+Used only when specifying options for a remote chart.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,7 +332,7 @@ Used only when specifying options for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional prefix for the auto-generated resource names. Example: A resource created with resourcePrefix="foo" would produce a resource named "foo-resourceName".{{% /md %}}</dd>
+    <dd>An optional prefix for the auto-generated resource names. Example: A resource created with resourcePrefix="foo" would produce a resource named "foo-resourceName".</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -340,7 +340,7 @@ Used only when specifying options for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#pulumi:pulumi:Any">[]interface{}</a></span>
     </dt>
-    <dd>{{% md %}}Optional array of transformations to apply to resources that will be created by this chart prior to creation. Allows customization of the chart behaviour without directly modifying the chart itself.{{% /md %}}</dd>
+    <dd>Optional array of transformations to apply to resources that will be created by this chart prior to creation. Allows customization of the chart behaviour without directly modifying the chart itself.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -348,7 +348,7 @@ Used only when specifying options for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Overrides for chart values.{{% /md %}}</dd>
+    <dd>Overrides for chart values.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -356,13 +356,13 @@ Used only when specifying options for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the chart to deploy. If not provided, the latest version will be deployed.{{% /md %}}</dd>
+    <dd>The version of the chart to deploy. If not provided, the latest version will be deployed.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -371,9 +371,9 @@ Used only when specifying options for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the chart to deploy. If [repo] is provided, this chart name will be prefixed by the repo name. Example: repo: "stable", chart: "nginx-ingress" -> "stable/nginx-ingress" Example: chart: "stable/nginx-ingress" -> "stable/nginx-ingress"
+    <dd>The name of the chart to deploy. If [repo] is provided, this chart name will be prefixed by the repo name. Example: repo: "stable", chart: "nginx-ingress" -> "stable/nginx-ingress" Example: chart: "stable/nginx-ingress" -> "stable/nginx-ingress"
 
-Required if specifying `ChartOpts` for a remote chart.{{% /md %}}</dd>
+Required if specifying `ChartOpts` for a remote chart.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -381,7 +381,7 @@ Required if specifying `ChartOpts` for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fetchopts">Fetch<wbr>Opts</a></span>
     </dt>
-    <dd>{{% md %}}Additional options to customize the fetching of the Helm chart.{{% /md %}}</dd>
+    <dd>Additional options to customize the fetching of the Helm chart.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -389,7 +389,7 @@ Required if specifying `ChartOpts` for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The optional namespace to install chart resources into.{{% /md %}}</dd>
+    <dd>The optional namespace to install chart resources into.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -397,9 +397,9 @@ Required if specifying `ChartOpts` for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to the chart directory which contains the `Chart.yaml` file.
+    <dd>The path to the chart directory which contains the `Chart.yaml` file.
 
-Required if specifying `LocalChartOpts`.{{% /md %}}</dd>
+Required if specifying `LocalChartOpts`.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -407,9 +407,9 @@ Required if specifying `LocalChartOpts`.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The repository name of the chart to deploy. Example: "stable".
+    <dd>The repository name of the chart to deploy. Example: "stable".
 
-Used only when specifying options for a remote chart.{{% /md %}}</dd>
+Used only when specifying options for a remote chart.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -417,7 +417,7 @@ Used only when specifying options for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional prefix for the auto-generated resource names. Example: A resource created with resourcePrefix="foo" would produce a resource named "foo-resourceName".{{% /md %}}</dd>
+    <dd>An optional prefix for the auto-generated resource names. Example: A resource created with resourcePrefix="foo" would produce a resource named "foo-resourceName".</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -425,7 +425,7 @@ Used only when specifying options for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/pulumi:pulumi:Any">any[]</a></span>
     </dt>
-    <dd>{{% md %}}Optional array of transformations to apply to resources that will be created by this chart prior to creation. Allows customization of the chart behaviour without directly modifying the chart itself.{{% /md %}}</dd>
+    <dd>Optional array of transformations to apply to resources that will be created by this chart prior to creation. Allows customization of the chart behaviour without directly modifying the chart itself.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -433,7 +433,7 @@ Used only when specifying options for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Overrides for chart values.{{% /md %}}</dd>
+    <dd>Overrides for chart values.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -441,13 +441,13 @@ Used only when specifying options for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the chart to deploy. If not provided, the latest version will be deployed.{{% /md %}}</dd>
+    <dd>The version of the chart to deploy. If not provided, the latest version will be deployed.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -456,9 +456,9 @@ Used only when specifying options for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the chart to deploy. If [repo] is provided, this chart name will be prefixed by the repo name. Example: repo: "stable", chart: "nginx-ingress" -> "stable/nginx-ingress" Example: chart: "stable/nginx-ingress" -> "stable/nginx-ingress"
+    <dd>The name of the chart to deploy. If [repo] is provided, this chart name will be prefixed by the repo name. Example: repo: "stable", chart: "nginx-ingress" -> "stable/nginx-ingress" Example: chart: "stable/nginx-ingress" -> "stable/nginx-ingress"
 
-Required if specifying `ChartOpts` for a remote chart.{{% /md %}}</dd>
+Required if specifying `ChartOpts` for a remote chart.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -466,7 +466,7 @@ Required if specifying `ChartOpts` for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#fetchopts">Dict[Fetch<wbr>Opts]</a></span>
     </dt>
-    <dd>{{% md %}}Additional options to customize the fetching of the Helm chart.{{% /md %}}</dd>
+    <dd>Additional options to customize the fetching of the Helm chart.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -474,7 +474,7 @@ Required if specifying `ChartOpts` for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The optional namespace to install chart resources into.{{% /md %}}</dd>
+    <dd>The optional namespace to install chart resources into.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -482,9 +482,9 @@ Required if specifying `ChartOpts` for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path to the chart directory which contains the `Chart.yaml` file.
+    <dd>The path to the chart directory which contains the `Chart.yaml` file.
 
-Required if specifying `LocalChartOpts`.{{% /md %}}</dd>
+Required if specifying `LocalChartOpts`.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -492,9 +492,9 @@ Required if specifying `LocalChartOpts`.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The repository name of the chart to deploy. Example: "stable".
+    <dd>The repository name of the chart to deploy. Example: "stable".
 
-Used only when specifying options for a remote chart.{{% /md %}}</dd>
+Used only when specifying options for a remote chart.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -502,7 +502,7 @@ Used only when specifying options for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional prefix for the auto-generated resource names. Example: A resource created with resourcePrefix="foo" would produce a resource named "foo-resourceName".{{% /md %}}</dd>
+    <dd>An optional prefix for the auto-generated resource names. Example: A resource created with resourcePrefix="foo" would produce a resource named "foo-resourceName".</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -510,7 +510,7 @@ Used only when specifying options for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[Any]</a></span>
     </dt>
-    <dd>{{% md %}}Optional array of transformations to apply to resources that will be created by this chart prior to creation. Allows customization of the chart behaviour without directly modifying the chart itself.{{% /md %}}</dd>
+    <dd>Optional array of transformations to apply to resources that will be created by this chart prior to creation. Allows customization of the chart behaviour without directly modifying the chart itself.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -518,7 +518,7 @@ Used only when specifying options for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Overrides for chart values.{{% /md %}}</dd>
+    <dd>Overrides for chart values.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -526,10 +526,10 @@ Used only when specifying options for a remote chart.{{% /md %}}</dd>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of the chart to deploy. If not provided, the latest version will be deployed.{{% /md %}}</dd>
+    <dd>The version of the chart to deploy. If not provided, the latest version will be deployed.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -543,7 +543,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -552,7 +552,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -560,7 +560,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -568,13 +568,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}urn is the stable logical URN used to distinctly address a resource, both before and after deployments.{{% /md %}}</dd>
+    <dd>urn is the stable logical URN used to distinctly address a resource, both before and after deployments.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -583,7 +583,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -591,7 +591,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -599,13 +599,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}urn is the stable logical URN used to distinctly address a resource, both before and after deployments.{{% /md %}}</dd>
+    <dd>urn is the stable logical URN used to distinctly address a resource, both before and after deployments.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -614,7 +614,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -622,7 +622,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -630,13 +630,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}urn is the stable logical URN used to distinctly address a resource, both before and after deployments.{{% /md %}}</dd>
+    <dd>urn is the stable logical URN used to distinctly address a resource, both before and after deployments.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -645,7 +645,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -653,7 +653,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -661,10 +661,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}urn is the stable logical URN used to distinctly address a resource, both before and after deployments.{{% /md %}}</dd>
+    <dd>urn is the stable logical URN used to distinctly address a resource, both before and after deployments.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -680,18 +680,18 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 <h4 id="fetchopts">Fetch<wbr>Opts</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/kubernetes/types/input/#FetchOpts">input</a>   API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-kubernetes/sdk/v2/go/kubernetes/helm/v3?tab=doc#FetchOptsArgs">input</a>   API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -700,7 +700,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Verify certificates of HTTPS-enabled servers using this CA bundle.{{% /md %}}</dd>
+    <dd>Verify certificates of HTTPS-enabled servers using this CA bundle.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -708,7 +708,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Identify HTTPS client using this SSL certificate file.{{% /md %}}</dd>
+    <dd>Identify HTTPS client using this SSL certificate file.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -716,7 +716,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Location to write the chart. If this and tardir are specified, tardir is appended to this (default ".").{{% /md %}}</dd>
+    <dd>Location to write the chart. If this and tardir are specified, tardir is appended to this (default ".").</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -724,7 +724,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Use development versions, too. Equivalent to version '>0.0.0-0'. If –version is set, this is ignored.{{% /md %}}</dd>
+    <dd>Use development versions, too. Equivalent to version '>0.0.0-0'. If –version is set, this is ignored.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -732,7 +732,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Location of your Helm config. Overrides $HELM_HOME (default "/Users/abc/.helm").{{% /md %}}</dd>
+    <dd>Location of your Helm config. Overrides $HELM_HOME (default "/Users/abc/.helm").</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -740,7 +740,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Identify HTTPS client using this SSL key file.{{% /md %}}</dd>
+    <dd>Identify HTTPS client using this SSL key file.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -748,7 +748,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyring containing public keys (default “/Users/abc/.gnupg/pubring.gpg”).{{% /md %}}</dd>
+    <dd>Keyring containing public keys (default “/Users/abc/.gnupg/pubring.gpg”).</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -756,7 +756,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Chart repository password.{{% /md %}}</dd>
+    <dd>Chart repository password.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -764,7 +764,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Fetch the provenance file, but don’t perform verification.{{% /md %}}</dd>
+    <dd>Fetch the provenance file, but don’t perform verification.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -772,7 +772,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Chart repository url where to locate the requested chart.{{% /md %}}</dd>
+    <dd>Chart repository url where to locate the requested chart.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -780,7 +780,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to false, will leave the chart as a tarball after downloading.{{% /md %}}</dd>
+    <dd>If set to false, will leave the chart as a tarball after downloading.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -788,7 +788,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If untar is specified, this flag specifies the name of the directory into which the chart is expanded (default ".").{{% /md %}}</dd>
+    <dd>If untar is specified, this flag specifies the name of the directory into which the chart is expanded (default ".").</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -796,7 +796,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Chart repository username.{{% /md %}}</dd>
+    <dd>Chart repository username.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -804,7 +804,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Verify the package against its signature.{{% /md %}}</dd>
+    <dd>Verify the package against its signature.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -812,13 +812,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specific version of a chart. Without this, the latest version is fetched.{{% /md %}}</dd>
+    <dd>Specific version of a chart. Without this, the latest version is fetched.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -827,7 +827,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Verify certificates of HTTPS-enabled servers using this CA bundle.{{% /md %}}</dd>
+    <dd>Verify certificates of HTTPS-enabled servers using this CA bundle.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -835,7 +835,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identify HTTPS client using this SSL certificate file.{{% /md %}}</dd>
+    <dd>Identify HTTPS client using this SSL certificate file.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -843,7 +843,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Location to write the chart. If this and tardir are specified, tardir is appended to this (default ".").{{% /md %}}</dd>
+    <dd>Location to write the chart. If this and tardir are specified, tardir is appended to this (default ".").</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -851,7 +851,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Use development versions, too. Equivalent to version '>0.0.0-0'. If –version is set, this is ignored.{{% /md %}}</dd>
+    <dd>Use development versions, too. Equivalent to version '>0.0.0-0'. If –version is set, this is ignored.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -859,7 +859,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Location of your Helm config. Overrides $HELM_HOME (default "/Users/abc/.helm").{{% /md %}}</dd>
+    <dd>Location of your Helm config. Overrides $HELM_HOME (default "/Users/abc/.helm").</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -867,7 +867,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identify HTTPS client using this SSL key file.{{% /md %}}</dd>
+    <dd>Identify HTTPS client using this SSL key file.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -875,7 +875,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyring containing public keys (default “/Users/abc/.gnupg/pubring.gpg”).{{% /md %}}</dd>
+    <dd>Keyring containing public keys (default “/Users/abc/.gnupg/pubring.gpg”).</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -883,7 +883,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Chart repository password.{{% /md %}}</dd>
+    <dd>Chart repository password.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -891,7 +891,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Fetch the provenance file, but don’t perform verification.{{% /md %}}</dd>
+    <dd>Fetch the provenance file, but don’t perform verification.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -899,7 +899,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Chart repository url where to locate the requested chart.{{% /md %}}</dd>
+    <dd>Chart repository url where to locate the requested chart.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -907,7 +907,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to false, will leave the chart as a tarball after downloading.{{% /md %}}</dd>
+    <dd>If set to false, will leave the chart as a tarball after downloading.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -915,7 +915,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If untar is specified, this flag specifies the name of the directory into which the chart is expanded (default ".").{{% /md %}}</dd>
+    <dd>If untar is specified, this flag specifies the name of the directory into which the chart is expanded (default ".").</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -923,7 +923,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Chart repository username.{{% /md %}}</dd>
+    <dd>Chart repository username.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -931,7 +931,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Verify the package against its signature.{{% /md %}}</dd>
+    <dd>Verify the package against its signature.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -939,13 +939,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specific version of a chart. Without this, the latest version is fetched.{{% /md %}}</dd>
+    <dd>Specific version of a chart. Without this, the latest version is fetched.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -954,7 +954,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Verify certificates of HTTPS-enabled servers using this CA bundle.{{% /md %}}</dd>
+    <dd>Verify certificates of HTTPS-enabled servers using this CA bundle.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -962,7 +962,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identify HTTPS client using this SSL certificate file.{{% /md %}}</dd>
+    <dd>Identify HTTPS client using this SSL certificate file.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -970,7 +970,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Location to write the chart. If this and tardir are specified, tardir is appended to this (default ".").{{% /md %}}</dd>
+    <dd>Location to write the chart. If this and tardir are specified, tardir is appended to this (default ".").</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -978,7 +978,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Use development versions, too. Equivalent to version '>0.0.0-0'. If –version is set, this is ignored.{{% /md %}}</dd>
+    <dd>Use development versions, too. Equivalent to version '>0.0.0-0'. If –version is set, this is ignored.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -986,7 +986,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Location of your Helm config. Overrides $HELM_HOME (default "/Users/abc/.helm").{{% /md %}}</dd>
+    <dd>Location of your Helm config. Overrides $HELM_HOME (default "/Users/abc/.helm").</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -994,7 +994,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identify HTTPS client using this SSL key file.{{% /md %}}</dd>
+    <dd>Identify HTTPS client using this SSL key file.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1002,7 +1002,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyring containing public keys (default “/Users/abc/.gnupg/pubring.gpg”).{{% /md %}}</dd>
+    <dd>Keyring containing public keys (default “/Users/abc/.gnupg/pubring.gpg”).</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1010,7 +1010,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Chart repository password.{{% /md %}}</dd>
+    <dd>Chart repository password.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1018,7 +1018,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Fetch the provenance file, but don’t perform verification.{{% /md %}}</dd>
+    <dd>Fetch the provenance file, but don’t perform verification.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1026,7 +1026,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Chart repository url where to locate the requested chart.{{% /md %}}</dd>
+    <dd>Chart repository url where to locate the requested chart.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1034,7 +1034,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If set to false, will leave the chart as a tarball after downloading.{{% /md %}}</dd>
+    <dd>If set to false, will leave the chart as a tarball after downloading.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1042,7 +1042,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If untar is specified, this flag specifies the name of the directory into which the chart is expanded (default ".").{{% /md %}}</dd>
+    <dd>If untar is specified, this flag specifies the name of the directory into which the chart is expanded (default ".").</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1050,7 +1050,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Chart repository username.{{% /md %}}</dd>
+    <dd>Chart repository username.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1058,7 +1058,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Verify the package against its signature.{{% /md %}}</dd>
+    <dd>Verify the package against its signature.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1066,13 +1066,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specific version of a chart. Without this, the latest version is fetched.{{% /md %}}</dd>
+    <dd>Specific version of a chart. Without this, the latest version is fetched.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1081,7 +1081,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Verify certificates of HTTPS-enabled servers using this CA bundle.{{% /md %}}</dd>
+    <dd>Verify certificates of HTTPS-enabled servers using this CA bundle.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1089,7 +1089,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Identify HTTPS client using this SSL certificate file.{{% /md %}}</dd>
+    <dd>Identify HTTPS client using this SSL certificate file.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1097,7 +1097,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Location to write the chart. If this and tardir are specified, tardir is appended to this (default ".").{{% /md %}}</dd>
+    <dd>Location to write the chart. If this and tardir are specified, tardir is appended to this (default ".").</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1105,7 +1105,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Use development versions, too. Equivalent to version '>0.0.0-0'. If –version is set, this is ignored.{{% /md %}}</dd>
+    <dd>Use development versions, too. Equivalent to version '>0.0.0-0'. If –version is set, this is ignored.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1113,7 +1113,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Location of your Helm config. Overrides $HELM_HOME (default "/Users/abc/.helm").{{% /md %}}</dd>
+    <dd>Location of your Helm config. Overrides $HELM_HOME (default "/Users/abc/.helm").</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1121,7 +1121,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Identify HTTPS client using this SSL key file.{{% /md %}}</dd>
+    <dd>Identify HTTPS client using this SSL key file.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1129,7 +1129,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Keyring containing public keys (default “/Users/abc/.gnupg/pubring.gpg”).{{% /md %}}</dd>
+    <dd>Keyring containing public keys (default “/Users/abc/.gnupg/pubring.gpg”).</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1137,7 +1137,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Chart repository password.{{% /md %}}</dd>
+    <dd>Chart repository password.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1145,7 +1145,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Fetch the provenance file, but don’t perform verification.{{% /md %}}</dd>
+    <dd>Fetch the provenance file, but don’t perform verification.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1153,7 +1153,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Chart repository url where to locate the requested chart.{{% /md %}}</dd>
+    <dd>Chart repository url where to locate the requested chart.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1161,7 +1161,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to false, will leave the chart as a tarball after downloading.{{% /md %}}</dd>
+    <dd>If set to false, will leave the chart as a tarball after downloading.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1169,7 +1169,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If untar is specified, this flag specifies the name of the directory into which the chart is expanded (default ".").{{% /md %}}</dd>
+    <dd>If untar is specified, this flag specifies the name of the directory into which the chart is expanded (default ".").</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1177,7 +1177,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Chart repository username.{{% /md %}}</dd>
+    <dd>Chart repository username.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1185,7 +1185,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Verify the package against its signature.{{% /md %}}</dd>
+    <dd>Verify the package against its signature.</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1193,10 +1193,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specific version of a chart. Without this, the latest version is fetched.{{% /md %}}</dd>
+    <dd>Specific version of a chart. Without this, the latest version is fetched.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

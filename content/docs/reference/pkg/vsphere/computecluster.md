@@ -14,26 +14,26 @@ meta_desc: "Explore the ComputeCluster resource of the vSphere package, includin
 
 
 ## Create a ComputeCluster Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vsphere/#ComputeCluster">ComputeCluster</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vsphere/#ComputeClusterArgs">ComputeClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ComputeCluster</span><span class="p">(resource_name, </span>opts=None<span class="p">, </span>custom_attributes=None<span class="p">, </span>datacenter_id=None<span class="p">, </span>dpm_automation_level=None<span class="p">, </span>dpm_enabled=None<span class="p">, </span>dpm_threshold=None<span class="p">, </span>drs_advanced_options=None<span class="p">, </span>drs_automation_level=None<span class="p">, </span>drs_enable_predictive_drs=None<span class="p">, </span>drs_enable_vm_overrides=None<span class="p">, </span>drs_enabled=None<span class="p">, </span>drs_migration_threshold=None<span class="p">, </span>folder=None<span class="p">, </span>force_evacuate_on_destroy=None<span class="p">, </span>ha_admission_control_failover_host_system_ids=None<span class="p">, </span>ha_admission_control_host_failure_tolerance=None<span class="p">, </span>ha_admission_control_performance_tolerance=None<span class="p">, </span>ha_admission_control_policy=None<span class="p">, </span>ha_admission_control_resource_percentage_auto_compute=None<span class="p">, </span>ha_admission_control_resource_percentage_cpu=None<span class="p">, </span>ha_admission_control_resource_percentage_memory=None<span class="p">, </span>ha_admission_control_slot_policy_explicit_cpu=None<span class="p">, </span>ha_admission_control_slot_policy_explicit_memory=None<span class="p">, </span>ha_admission_control_slot_policy_use_explicit_size=None<span class="p">, </span>ha_advanced_options=None<span class="p">, </span>ha_datastore_apd_recovery_action=None<span class="p">, </span>ha_datastore_apd_response=None<span class="p">, </span>ha_datastore_apd_response_delay=None<span class="p">, </span>ha_datastore_pdl_response=None<span class="p">, </span>ha_enabled=None<span class="p">, </span>ha_heartbeat_datastore_ids=None<span class="p">, </span>ha_heartbeat_datastore_policy=None<span class="p">, </span>ha_host_isolation_response=None<span class="p">, </span>ha_host_monitoring=None<span class="p">, </span>ha_vm_component_protection=None<span class="p">, </span>ha_vm_dependency_restart_condition=None<span class="p">, </span>ha_vm_failure_interval=None<span class="p">, </span>ha_vm_maximum_failure_window=None<span class="p">, </span>ha_vm_maximum_resets=None<span class="p">, </span>ha_vm_minimum_uptime=None<span class="p">, </span>ha_vm_monitoring=None<span class="p">, </span>ha_vm_restart_additional_delay=None<span class="p">, </span>ha_vm_restart_priority=None<span class="p">, </span>ha_vm_restart_timeout=None<span class="p">, </span>host_cluster_exit_timeout=None<span class="p">, </span>host_system_ids=None<span class="p">, </span>name=None<span class="p">, </span>proactive_ha_automation_level=None<span class="p">, </span>proactive_ha_enabled=None<span class="p">, </span>proactive_ha_moderate_remediation=None<span class="p">, </span>proactive_ha_provider_ids=None<span class="p">, </span>proactive_ha_severe_remediation=None<span class="p">, </span>tags=None<span class="p">, </span>__props__=None<span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewComputeCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vsphere/sdk/v2/go/vsphere/?tab=doc#ComputeClusterArgs">ComputeClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vsphere/sdk/v2/go/vsphere/?tab=doc#ComputeCluster">ComputeCluster</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vsphere/Pulumi.Vsphere.ComputeCluster.html">ComputeCluster</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vsphere/Pulumi.VSphere.ComputeClusterArgs.html">ComputeClusterArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the ComputeCluster resource of the vSphere package, includin
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the ComputeCluster resource of the vSphere package, includin
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the ComputeCluster resource of the vSphere package, includin
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the ComputeCluster resource of the vSphere package, includin
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ComputeCluster Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The ComputeCluster resource accepts the following [input]({{< relref "/docs/intr
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,9 +200,9 @@ The ComputeCluster resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object ID][docs-about-morefs] of
+    <dd>The [managed object ID][docs-about-morefs] of
 the datacenter to create the cluster in. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -210,11 +210,11 @@ the datacenter to create the cluster in. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of custom attribute ids to attribute
+    <dd>A map of custom attribute ids to attribute
 value strings to set for the datastore cluster. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -222,10 +222,10 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The automation level for host power
+    <dd>The automation level for host power
 operations in this cluster. Can be one of `manual` or `automated`. Default:
 `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -233,10 +233,10 @@ operations in this cluster. Can be one of `manual` or `automated`. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable DPM support for DRS in this cluster.
+    <dd>Enable DPM support for DRS in this cluster.
 Requires `drs_enabled` to be `true` in order to be effective.
 Default: `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -244,11 +244,11 @@ Default: `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}A value between `1` and `5` indicating the
+    <dd>A value between `1` and `5` indicating the
 threshold of load within the cluster that influences host power operations.
 This affects both power on and power off operations - a lower setting will
 tolerate more of a surplus/deficit than a higher setting. Default: `3`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -256,9 +256,9 @@ tolerate more of a surplus/deficit than a higher setting. Default: `3`.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A key/value map that specifies advanced
+    <dd>A key/value map that specifies advanced
 options for DRS and DPM.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -266,10 +266,10 @@ options for DRS and DPM.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The default automation level for all
+    <dd>The default automation level for all
 virtual machines in this cluster. Can be one of `manual`,
 `partiallyAutomated`, or `fullyAutomated`. Default: `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -277,10 +277,10 @@ virtual machines in this cluster. Can be one of `manual`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}When `true`, enables DRS to use data
+    <dd>When `true`, enables DRS to use data
 from [vRealize Operations Manager][ref-vsphere-vro] to make proactive DRS
 recommendations. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -288,9 +288,9 @@ recommendations. <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Allow individual DRS overrides to be
+    <dd>Allow individual DRS overrides to be
 set for virtual machines in the cluster. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -298,8 +298,8 @@ set for virtual machines in the cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable DRS for this cluster. Default: `false`.
-{{% /md %}}</dd>
+    <dd>Enable DRS for this cluster. Default: `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -307,11 +307,11 @@ set for virtual machines in the cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}A value between `1` and `5` indicating
+    <dd>A value between `1` and `5` indicating
 the threshold of imbalance tolerated between hosts. A lower setting will
 tolerate more imbalance while a higher setting will tolerate less. Default:
 `3`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -319,8 +319,8 @@ tolerate more imbalance while a higher setting will tolerate less. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the folder to locate the cluster in.
-{{% /md %}}</dd>
+    <dd>The name of the folder to locate the cluster in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -328,9 +328,9 @@ tolerate more imbalance while a higher setting will tolerate less. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Force removal of all hosts in the cluster during destroy and make them standalone hosts. Use of this flag mainly exists
+    <dd>Force removal of all hosts in the cluster during destroy and make them standalone hosts. Use of this flag mainly exists
 for testing and is not recommended in normal use.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -338,12 +338,12 @@ for testing and is not recommended in normal use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Defines the
+    <dd>Defines the
 [managed object IDs][docs-about-morefs] of hosts to use as dedicated failover
 hosts. These hosts are kept as available as possible - admission control will
 block access to the host, and DRS will ignore the host when making
 recommendations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -351,12 +351,12 @@ recommendations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number
+    <dd>The maximum number
 of failed hosts that admission control tolerates when making decisions on
 whether to permit virtual machine operations. The maximum is one less than
 the number of hosts in the cluster. Default: `1`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -364,11 +364,11 @@ the number of hosts in the cluster. Default: `1`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The percentage of
+    <dd>The percentage of
 resource reduction that a cluster of virtual machines can tolerate in case of
 a failover. A value of 0 produces warnings only, whereas a value of 100
 disables the setting. Default: `100` (disabled).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -376,10 +376,10 @@ disables the setting. Default: `100` (disabled).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of admission control
+    <dd>The type of admission control
 policy to use with vSphere HA. Can be one of `resourcePercentage`,
 `slotPolicy`, `failoverHosts`, or `disabled`. Default: `resourcePercentage`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -387,14 +387,14 @@ policy to use with vSphere HA. Can be one of `resourcePercentage`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}
+    <dd>
 Automatically determine available resource percentages by subtracting the
 average number of host resources represented by the
 `ha_admission_control_host_failure_tolerance`
 setting from the total amount of resources in the cluster. Disable to supply
 user-defined values. Default: `true`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -402,10 +402,10 @@ user-defined values. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined percentage of CPU resources in the cluster to reserve for
 failover. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -413,10 +413,10 @@ failover. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined percentage of memory resources in the cluster to reserve for
 failover. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -424,9 +424,9 @@ failover. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined CPU slot size, in MHz. Default: `32`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -434,9 +434,9 @@ user-defined CPU slot size, in MHz. Default: `32`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined memory slot size, in MB. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -444,11 +444,11 @@ user-defined memory slot size, in MB. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Controls
+    <dd>Controls
 whether or not you wish to supply explicit values to CPU and memory slot
 sizes. The default is `false`, which tells vSphere to gather a automatic
 average based on all powered-on virtual machines currently in the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -456,9 +456,9 @@ average based on all powered-on virtual machines currently in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A key/value map that specifies advanced
+    <dd>A key/value map that specifies advanced
 options for vSphere HA.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -466,11 +466,11 @@ options for vSphere HA.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take
+    <dd>Controls the action to take
 on virtual machines if an APD status on an affected datastore clears in the
 middle of an APD event. Can be one of `none` or `reset`. Default: `none`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -478,12 +478,12 @@ middle of an APD event. Can be one of `none` or `reset`. Default: `none`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take on
+    <dd>Controls the action to take on
 virtual machines when the cluster has detected loss to all paths to a
 relevant datastore. Can be one of `disabled`, `warning`,
 `restartConservative`, or `restartAggressive`.  Default: `disabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -491,11 +491,11 @@ relevant datastore. Can be one of `disabled`, `warning`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Controls the delay in minutes
+    <dd>Controls the delay in minutes
 to wait after an APD timeout event to execute the response action defined in
 `ha_datastore_apd_response`. Default: `3`
 minutes. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -503,12 +503,12 @@ minutes. <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take on
+    <dd>Controls the action to take on
 virtual machines when the cluster has detected a permanent device loss to a
 relevant datastore. Can be one of `disabled`, `warning`, or
 `restartAggressive`. Default: `disabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -516,9 +516,9 @@ relevant datastore. Can be one of `disabled`, `warning`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable vSphere HA for this cluster. Default:
+    <dd>Enable vSphere HA for this cluster. Default:
 `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -526,11 +526,11 @@ relevant datastore. Can be one of `disabled`, `warning`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of managed object IDs for
+    <dd>The list of managed object IDs for
 preferred datastores to use for HA heartbeating. This setting is only useful
 when `ha_heartbeat_datastore_policy` is set
 to either `userSelectedDs` or `allFeasibleDsWithUserPreference`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -538,11 +538,11 @@ to either `userSelectedDs` or `allFeasibleDsWithUserPreference`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The selection policy for HA
+    <dd>The selection policy for HA
 heartbeat datastores. Can be one of `allFeasibleDs`, `userSelectedDs`, or
 `allFeasibleDsWithUserPreference`. Default:
 `allFeasibleDsWithUserPreference`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -550,11 +550,11 @@ heartbeat datastores. Can be one of `allFeasibleDs`, `userSelectedDs`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The action to take on virtual
+    <dd>The action to take on virtual
 machines when a host has detected that it has been isolated from the rest of
 the cluster. Can be one of `none`, `powerOff`, or `shutdown`. Default:
 `none`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -562,10 +562,10 @@ the cluster. Can be one of `none`, `powerOff`, or `shutdown`. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Global setting that controls whether
+    <dd>Global setting that controls whether
 vSphere HA remediates virtual machines on host failure. Can be one of `enabled`
 or `disabled`. Default: `enabled`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -573,11 +573,11 @@ or `disabled`. Default: `enabled`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls vSphere VM component
+    <dd>Controls vSphere VM component
 protection for virtual machines in this cluster. Can be one of `enabled` or
 `disabled`. Default: `enabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -585,14 +585,14 @@ protection for virtual machines in this cluster. Can be one of `enabled` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The condition used to
+    <dd>The condition used to
 determine whether or not virtual machines in a certain restart priority class
 are online, allowing HA to move on to restarting virtual machines on the next
 priority. Can be one of `none`, `poweredOn`, `guestHbStatusGreen`, or
 `appHbStatusGreen`. The default is `none`, which means that a virtual machine
 is considered ready immediately after a host is found to start it on.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -600,10 +600,10 @@ is considered ready immediately after a host is found to start it on.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If a heartbeat from a virtual machine
+    <dd>If a heartbeat from a virtual machine
 is not received within this configured interval, the virtual machine is
 marked as failed. The value is in seconds. Default: `30`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -611,13 +611,13 @@ marked as failed. The value is in seconds. Default: `30`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The length of the reset window in
+    <dd>The length of the reset window in
 which `ha_vm_maximum_resets` can operate. When this
 window expires, no more resets are attempted regardless of the setting
 configured in `ha_vm_maximum_resets`. `-1` means no window, meaning an
 unlimited reset time is allotted. The value is specified in seconds. Default:
 `-1` (no window).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -625,9 +625,9 @@ unlimited reset time is allotted. The value is specified in seconds. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of resets that HA will
+    <dd>The maximum number of resets that HA will
 perform to a virtual machine when responding to a failure event. Default: `3`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -635,10 +635,10 @@ perform to a virtual machine when responding to a failure event. Default: `3`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, that HA waits after
+    <dd>The time, in seconds, that HA waits after
 powering on a virtual machine before monitoring for heartbeats. Default:
 `120` (2 minutes).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -646,10 +646,10 @@ powering on a virtual machine before monitoring for heartbeats. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of virtual machine monitoring to use
+    <dd>The type of virtual machine monitoring to use
 when HA is enabled in the cluster. Can be one of `vmMonitoringDisabled`,
 `vmMonitoringOnly`, or `vmAndAppMonitoring`. Default: `vmMonitoringDisabled`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -657,10 +657,10 @@ when HA is enabled in the cluster. Can be one of `vmMonitoringDisabled`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Additional delay in seconds
+    <dd>Additional delay in seconds
 after ready condition is met. A VM is considered ready at this point.
 Default: `0` (no delay). <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -668,10 +668,10 @@ Default: `0` (no delay). <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The default restart priority
+    <dd>The default restart priority
 for affected virtual machines when vSphere detects a host failure. Can be one
 of `lowest`, `low`, `medium`, `high`, or `highest`. Default: `medium`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -679,11 +679,11 @@ of `lowest`, `low`, `medium`, `high`, or `highest`. Default: `medium`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum time, in seconds,
+    <dd>The maximum time, in seconds,
 that vSphere HA will wait for virtual machines in one priority to be ready
 before proceeding with the next priority. Default: `600` (10 minutes).
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -691,10 +691,10 @@ before proceeding with the next priority. Default: `600` (10 minutes).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The timeout for each host maintenance mode
+    <dd>The timeout for each host maintenance mode
 operation when removing hosts from a cluster. The value is specified in
 seconds. Default: `3600` (1 hour).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -702,9 +702,9 @@ seconds. Default: `3600` (1 hour).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object IDs][docs-about-morefs] of
+    <dd>The [managed object IDs][docs-about-morefs] of
 the hosts to put in the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -712,8 +712,8 @@ the hosts to put in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cluster.
-{{% /md %}}</dd>
+    <dd>The name of the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -721,11 +721,11 @@ the hosts to put in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Determines how the host
+    <dd>Determines how the host
 quarantine, maintenance mode, or virtual machine migration recommendations
 made by proactive HA are to be handled. Can be one of `Automated` or
 `Manual`. Default: `Manual`. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -733,9 +733,9 @@ made by proactive HA are to be handled. Can be one of `Automated` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables Proactive HA. Default: `false`.
+    <dd>Enables Proactive HA. Default: `false`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -743,13 +743,13 @@ made by proactive HA are to be handled. Can be one of `Automated` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The configured remediation
+    <dd>The configured remediation
 for moderately degraded hosts. Can be one of `MaintenanceMode` or
 `QuarantineMode`. Note that this cannot be set to `MaintenanceMode` when
 `proactive_ha_severe_remediation` is set
 to `QuarantineMode`. Default: `QuarantineMode`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -757,10 +757,10 @@ to `QuarantineMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of IDs for health update
+    <dd>The list of IDs for health update
 providers configured for this cluster.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -768,13 +768,13 @@ providers configured for this cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The configured remediation for
+    <dd>The configured remediation for
 severely degraded hosts. Can be one of `MaintenanceMode` or `QuarantineMode`.
 Note that this cannot be set to `QuarantineMode` when
 `proactive_ha_moderate_remediation` is
 set to `MaintenanceMode`. Default: `QuarantineMode`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -782,15 +782,15 @@ set to `MaintenanceMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -799,9 +799,9 @@ set to `MaintenanceMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object ID][docs-about-morefs] of
+    <dd>The [managed object ID][docs-about-morefs] of
 the datacenter to create the cluster in. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -809,11 +809,11 @@ the datacenter to create the cluster in. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A map of custom attribute ids to attribute
+    <dd>A map of custom attribute ids to attribute
 value strings to set for the datastore cluster. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -821,10 +821,10 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The automation level for host power
+    <dd>The automation level for host power
 operations in this cluster. Can be one of `manual` or `automated`. Default:
 `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -832,10 +832,10 @@ operations in this cluster. Can be one of `manual` or `automated`. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable DPM support for DRS in this cluster.
+    <dd>Enable DPM support for DRS in this cluster.
 Requires `drs_enabled` to be `true` in order to be effective.
 Default: `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -843,11 +843,11 @@ Default: `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}A value between `1` and `5` indicating the
+    <dd>A value between `1` and `5` indicating the
 threshold of load within the cluster that influences host power operations.
 This affects both power on and power off operations - a lower setting will
 tolerate more of a surplus/deficit than a higher setting. Default: `3`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -855,9 +855,9 @@ tolerate more of a surplus/deficit than a higher setting. Default: `3`.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A key/value map that specifies advanced
+    <dd>A key/value map that specifies advanced
 options for DRS and DPM.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -865,10 +865,10 @@ options for DRS and DPM.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default automation level for all
+    <dd>The default automation level for all
 virtual machines in this cluster. Can be one of `manual`,
 `partiallyAutomated`, or `fullyAutomated`. Default: `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -876,10 +876,10 @@ virtual machines in this cluster. Can be one of `manual`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}When `true`, enables DRS to use data
+    <dd>When `true`, enables DRS to use data
 from [vRealize Operations Manager][ref-vsphere-vro] to make proactive DRS
 recommendations. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -887,9 +887,9 @@ recommendations. <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Allow individual DRS overrides to be
+    <dd>Allow individual DRS overrides to be
 set for virtual machines in the cluster. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -897,8 +897,8 @@ set for virtual machines in the cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable DRS for this cluster. Default: `false`.
-{{% /md %}}</dd>
+    <dd>Enable DRS for this cluster. Default: `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -906,11 +906,11 @@ set for virtual machines in the cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}A value between `1` and `5` indicating
+    <dd>A value between `1` and `5` indicating
 the threshold of imbalance tolerated between hosts. A lower setting will
 tolerate more imbalance while a higher setting will tolerate less. Default:
 `3`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -918,8 +918,8 @@ tolerate more imbalance while a higher setting will tolerate less. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the folder to locate the cluster in.
-{{% /md %}}</dd>
+    <dd>The name of the folder to locate the cluster in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -927,9 +927,9 @@ tolerate more imbalance while a higher setting will tolerate less. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Force removal of all hosts in the cluster during destroy and make them standalone hosts. Use of this flag mainly exists
+    <dd>Force removal of all hosts in the cluster during destroy and make them standalone hosts. Use of this flag mainly exists
 for testing and is not recommended in normal use.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -937,12 +937,12 @@ for testing and is not recommended in normal use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the
+    <dd>Defines the
 [managed object IDs][docs-about-morefs] of hosts to use as dedicated failover
 hosts. These hosts are kept as available as possible - admission control will
 block access to the host, and DRS will ignore the host when making
 recommendations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -950,12 +950,12 @@ recommendations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number
+    <dd>The maximum number
 of failed hosts that admission control tolerates when making decisions on
 whether to permit virtual machine operations. The maximum is one less than
 the number of hosts in the cluster. Default: `1`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -963,11 +963,11 @@ the number of hosts in the cluster. Default: `1`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The percentage of
+    <dd>The percentage of
 resource reduction that a cluster of virtual machines can tolerate in case of
 a failover. A value of 0 produces warnings only, whereas a value of 100
 disables the setting. Default: `100` (disabled).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -975,10 +975,10 @@ disables the setting. Default: `100` (disabled).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of admission control
+    <dd>The type of admission control
 policy to use with vSphere HA. Can be one of `resourcePercentage`,
 `slotPolicy`, `failoverHosts`, or `disabled`. Default: `resourcePercentage`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -986,14 +986,14 @@ policy to use with vSphere HA. Can be one of `resourcePercentage`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}
+    <dd>
 Automatically determine available resource percentages by subtracting the
 average number of host resources represented by the
 `ha_admission_control_host_failure_tolerance`
 setting from the total amount of resources in the cluster. Disable to supply
 user-defined values. Default: `true`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,10 +1001,10 @@ user-defined values. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined percentage of CPU resources in the cluster to reserve for
 failover. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1012,10 +1012,10 @@ failover. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined percentage of memory resources in the cluster to reserve for
 failover. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1023,9 +1023,9 @@ failover. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined CPU slot size, in MHz. Default: `32`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1033,9 +1033,9 @@ user-defined CPU slot size, in MHz. Default: `32`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined memory slot size, in MB. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1043,11 +1043,11 @@ user-defined memory slot size, in MB. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Controls
+    <dd>Controls
 whether or not you wish to supply explicit values to CPU and memory slot
 sizes. The default is `false`, which tells vSphere to gather a automatic
 average based on all powered-on virtual machines currently in the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1055,9 +1055,9 @@ average based on all powered-on virtual machines currently in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A key/value map that specifies advanced
+    <dd>A key/value map that specifies advanced
 options for vSphere HA.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1065,11 +1065,11 @@ options for vSphere HA.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take
+    <dd>Controls the action to take
 on virtual machines if an APD status on an affected datastore clears in the
 middle of an APD event. Can be one of `none` or `reset`. Default: `none`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1077,12 +1077,12 @@ middle of an APD event. Can be one of `none` or `reset`. Default: `none`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take on
+    <dd>Controls the action to take on
 virtual machines when the cluster has detected loss to all paths to a
 relevant datastore. Can be one of `disabled`, `warning`,
 `restartConservative`, or `restartAggressive`.  Default: `disabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1090,11 +1090,11 @@ relevant datastore. Can be one of `disabled`, `warning`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Controls the delay in minutes
+    <dd>Controls the delay in minutes
 to wait after an APD timeout event to execute the response action defined in
 `ha_datastore_apd_response`. Default: `3`
 minutes. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1102,12 +1102,12 @@ minutes. <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take on
+    <dd>Controls the action to take on
 virtual machines when the cluster has detected a permanent device loss to a
 relevant datastore. Can be one of `disabled`, `warning`, or
 `restartAggressive`. Default: `disabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1115,9 +1115,9 @@ relevant datastore. Can be one of `disabled`, `warning`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable vSphere HA for this cluster. Default:
+    <dd>Enable vSphere HA for this cluster. Default:
 `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1125,11 +1125,11 @@ relevant datastore. Can be one of `disabled`, `warning`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of managed object IDs for
+    <dd>The list of managed object IDs for
 preferred datastores to use for HA heartbeating. This setting is only useful
 when `ha_heartbeat_datastore_policy` is set
 to either `userSelectedDs` or `allFeasibleDsWithUserPreference`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1137,11 +1137,11 @@ to either `userSelectedDs` or `allFeasibleDsWithUserPreference`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The selection policy for HA
+    <dd>The selection policy for HA
 heartbeat datastores. Can be one of `allFeasibleDs`, `userSelectedDs`, or
 `allFeasibleDsWithUserPreference`. Default:
 `allFeasibleDsWithUserPreference`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1149,11 +1149,11 @@ heartbeat datastores. Can be one of `allFeasibleDs`, `userSelectedDs`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The action to take on virtual
+    <dd>The action to take on virtual
 machines when a host has detected that it has been isolated from the rest of
 the cluster. Can be one of `none`, `powerOff`, or `shutdown`. Default:
 `none`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1161,10 +1161,10 @@ the cluster. Can be one of `none`, `powerOff`, or `shutdown`. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Global setting that controls whether
+    <dd>Global setting that controls whether
 vSphere HA remediates virtual machines on host failure. Can be one of `enabled`
 or `disabled`. Default: `enabled`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,11 +1172,11 @@ or `disabled`. Default: `enabled`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls vSphere VM component
+    <dd>Controls vSphere VM component
 protection for virtual machines in this cluster. Can be one of `enabled` or
 `disabled`. Default: `enabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1184,14 +1184,14 @@ protection for virtual machines in this cluster. Can be one of `enabled` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The condition used to
+    <dd>The condition used to
 determine whether or not virtual machines in a certain restart priority class
 are online, allowing HA to move on to restarting virtual machines on the next
 priority. Can be one of `none`, `poweredOn`, `guestHbStatusGreen`, or
 `appHbStatusGreen`. The default is `none`, which means that a virtual machine
 is considered ready immediately after a host is found to start it on.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1199,10 +1199,10 @@ is considered ready immediately after a host is found to start it on.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If a heartbeat from a virtual machine
+    <dd>If a heartbeat from a virtual machine
 is not received within this configured interval, the virtual machine is
 marked as failed. The value is in seconds. Default: `30`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1210,13 +1210,13 @@ marked as failed. The value is in seconds. Default: `30`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The length of the reset window in
+    <dd>The length of the reset window in
 which `ha_vm_maximum_resets` can operate. When this
 window expires, no more resets are attempted regardless of the setting
 configured in `ha_vm_maximum_resets`. `-1` means no window, meaning an
 unlimited reset time is allotted. The value is specified in seconds. Default:
 `-1` (no window).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1224,9 +1224,9 @@ unlimited reset time is allotted. The value is specified in seconds. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of resets that HA will
+    <dd>The maximum number of resets that HA will
 perform to a virtual machine when responding to a failure event. Default: `3`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1234,10 +1234,10 @@ perform to a virtual machine when responding to a failure event. Default: `3`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, that HA waits after
+    <dd>The time, in seconds, that HA waits after
 powering on a virtual machine before monitoring for heartbeats. Default:
 `120` (2 minutes).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1245,10 +1245,10 @@ powering on a virtual machine before monitoring for heartbeats. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of virtual machine monitoring to use
+    <dd>The type of virtual machine monitoring to use
 when HA is enabled in the cluster. Can be one of `vmMonitoringDisabled`,
 `vmMonitoringOnly`, or `vmAndAppMonitoring`. Default: `vmMonitoringDisabled`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1256,10 +1256,10 @@ when HA is enabled in the cluster. Can be one of `vmMonitoringDisabled`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Additional delay in seconds
+    <dd>Additional delay in seconds
 after ready condition is met. A VM is considered ready at this point.
 Default: `0` (no delay). <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1267,10 +1267,10 @@ Default: `0` (no delay). <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default restart priority
+    <dd>The default restart priority
 for affected virtual machines when vSphere detects a host failure. Can be one
 of `lowest`, `low`, `medium`, `high`, or `highest`. Default: `medium`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,11 +1278,11 @@ of `lowest`, `low`, `medium`, `high`, or `highest`. Default: `medium`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum time, in seconds,
+    <dd>The maximum time, in seconds,
 that vSphere HA will wait for virtual machines in one priority to be ready
 before proceeding with the next priority. Default: `600` (10 minutes).
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1290,10 +1290,10 @@ before proceeding with the next priority. Default: `600` (10 minutes).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The timeout for each host maintenance mode
+    <dd>The timeout for each host maintenance mode
 operation when removing hosts from a cluster. The value is specified in
 seconds. Default: `3600` (1 hour).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1301,9 +1301,9 @@ seconds. Default: `3600` (1 hour).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object IDs][docs-about-morefs] of
+    <dd>The [managed object IDs][docs-about-morefs] of
 the hosts to put in the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1311,8 +1311,8 @@ the hosts to put in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cluster.
-{{% /md %}}</dd>
+    <dd>The name of the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1320,11 +1320,11 @@ the hosts to put in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Determines how the host
+    <dd>Determines how the host
 quarantine, maintenance mode, or virtual machine migration recommendations
 made by proactive HA are to be handled. Can be one of `Automated` or
 `Manual`. Default: `Manual`. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1332,9 +1332,9 @@ made by proactive HA are to be handled. Can be one of `Automated` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables Proactive HA. Default: `false`.
+    <dd>Enables Proactive HA. Default: `false`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1342,13 +1342,13 @@ made by proactive HA are to be handled. Can be one of `Automated` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The configured remediation
+    <dd>The configured remediation
 for moderately degraded hosts. Can be one of `MaintenanceMode` or
 `QuarantineMode`. Note that this cannot be set to `MaintenanceMode` when
 `proactive_ha_severe_remediation` is set
 to `QuarantineMode`. Default: `QuarantineMode`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1356,10 +1356,10 @@ to `QuarantineMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of IDs for health update
+    <dd>The list of IDs for health update
 providers configured for this cluster.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1367,13 +1367,13 @@ providers configured for this cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The configured remediation for
+    <dd>The configured remediation for
 severely degraded hosts. Can be one of `MaintenanceMode` or `QuarantineMode`.
 Note that this cannot be set to `QuarantineMode` when
 `proactive_ha_moderate_remediation` is
 set to `MaintenanceMode`. Default: `QuarantineMode`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1381,15 +1381,15 @@ set to `MaintenanceMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1398,9 +1398,9 @@ set to `MaintenanceMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object ID][docs-about-morefs] of
+    <dd>The [managed object ID][docs-about-morefs] of
 the datacenter to create the cluster in. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1408,11 +1408,11 @@ the datacenter to create the cluster in. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A map of custom attribute ids to attribute
+    <dd>A map of custom attribute ids to attribute
 value strings to set for the datastore cluster. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1420,10 +1420,10 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The automation level for host power
+    <dd>The automation level for host power
 operations in this cluster. Can be one of `manual` or `automated`. Default:
 `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1431,10 +1431,10 @@ operations in this cluster. Can be one of `manual` or `automated`. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable DPM support for DRS in this cluster.
+    <dd>Enable DPM support for DRS in this cluster.
 Requires `drs_enabled` to be `true` in order to be effective.
 Default: `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1442,11 +1442,11 @@ Default: `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}A value between `1` and `5` indicating the
+    <dd>A value between `1` and `5` indicating the
 threshold of load within the cluster that influences host power operations.
 This affects both power on and power off operations - a lower setting will
 tolerate more of a surplus/deficit than a higher setting. Default: `3`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1454,9 +1454,9 @@ tolerate more of a surplus/deficit than a higher setting. Default: `3`.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A key/value map that specifies advanced
+    <dd>A key/value map that specifies advanced
 options for DRS and DPM.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1464,10 +1464,10 @@ options for DRS and DPM.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default automation level for all
+    <dd>The default automation level for all
 virtual machines in this cluster. Can be one of `manual`,
 `partiallyAutomated`, or `fullyAutomated`. Default: `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1475,10 +1475,10 @@ virtual machines in this cluster. Can be one of `manual`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}When `true`, enables DRS to use data
+    <dd>When `true`, enables DRS to use data
 from [vRealize Operations Manager][ref-vsphere-vro] to make proactive DRS
 recommendations. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1486,9 +1486,9 @@ recommendations. <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Allow individual DRS overrides to be
+    <dd>Allow individual DRS overrides to be
 set for virtual machines in the cluster. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1496,8 +1496,8 @@ set for virtual machines in the cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable DRS for this cluster. Default: `false`.
-{{% /md %}}</dd>
+    <dd>Enable DRS for this cluster. Default: `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1505,11 +1505,11 @@ set for virtual machines in the cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}A value between `1` and `5` indicating
+    <dd>A value between `1` and `5` indicating
 the threshold of imbalance tolerated between hosts. A lower setting will
 tolerate more imbalance while a higher setting will tolerate less. Default:
 `3`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1517,8 +1517,8 @@ tolerate more imbalance while a higher setting will tolerate less. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the folder to locate the cluster in.
-{{% /md %}}</dd>
+    <dd>The name of the folder to locate the cluster in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1526,9 +1526,9 @@ tolerate more imbalance while a higher setting will tolerate less. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Force removal of all hosts in the cluster during destroy and make them standalone hosts. Use of this flag mainly exists
+    <dd>Force removal of all hosts in the cluster during destroy and make them standalone hosts. Use of this flag mainly exists
 for testing and is not recommended in normal use.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1536,12 +1536,12 @@ for testing and is not recommended in normal use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Defines the
+    <dd>Defines the
 [managed object IDs][docs-about-morefs] of hosts to use as dedicated failover
 hosts. These hosts are kept as available as possible - admission control will
 block access to the host, and DRS will ignore the host when making
 recommendations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1549,12 +1549,12 @@ recommendations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number
+    <dd>The maximum number
 of failed hosts that admission control tolerates when making decisions on
 whether to permit virtual machine operations. The maximum is one less than
 the number of hosts in the cluster. Default: `1`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1562,11 +1562,11 @@ the number of hosts in the cluster. Default: `1`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The percentage of
+    <dd>The percentage of
 resource reduction that a cluster of virtual machines can tolerate in case of
 a failover. A value of 0 produces warnings only, whereas a value of 100
 disables the setting. Default: `100` (disabled).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1574,10 +1574,10 @@ disables the setting. Default: `100` (disabled).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of admission control
+    <dd>The type of admission control
 policy to use with vSphere HA. Can be one of `resourcePercentage`,
 `slotPolicy`, `failoverHosts`, or `disabled`. Default: `resourcePercentage`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1585,14 +1585,14 @@ policy to use with vSphere HA. Can be one of `resourcePercentage`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}
+    <dd>
 Automatically determine available resource percentages by subtracting the
 average number of host resources represented by the
 `ha_admission_control_host_failure_tolerance`
 setting from the total amount of resources in the cluster. Disable to supply
 user-defined values. Default: `true`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1600,10 +1600,10 @@ user-defined values. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined percentage of CPU resources in the cluster to reserve for
 failover. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1611,10 +1611,10 @@ failover. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined percentage of memory resources in the cluster to reserve for
 failover. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1622,9 +1622,9 @@ failover. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined CPU slot size, in MHz. Default: `32`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1632,9 +1632,9 @@ user-defined CPU slot size, in MHz. Default: `32`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined memory slot size, in MB. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1642,11 +1642,11 @@ user-defined memory slot size, in MB. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Controls
+    <dd>Controls
 whether or not you wish to supply explicit values to CPU and memory slot
 sizes. The default is `false`, which tells vSphere to gather a automatic
 average based on all powered-on virtual machines currently in the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1654,9 +1654,9 @@ average based on all powered-on virtual machines currently in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A key/value map that specifies advanced
+    <dd>A key/value map that specifies advanced
 options for vSphere HA.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1664,11 +1664,11 @@ options for vSphere HA.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take
+    <dd>Controls the action to take
 on virtual machines if an APD status on an affected datastore clears in the
 middle of an APD event. Can be one of `none` or `reset`. Default: `none`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1676,12 +1676,12 @@ middle of an APD event. Can be one of `none` or `reset`. Default: `none`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take on
+    <dd>Controls the action to take on
 virtual machines when the cluster has detected loss to all paths to a
 relevant datastore. Can be one of `disabled`, `warning`,
 `restartConservative`, or `restartAggressive`.  Default: `disabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1689,11 +1689,11 @@ relevant datastore. Can be one of `disabled`, `warning`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Controls the delay in minutes
+    <dd>Controls the delay in minutes
 to wait after an APD timeout event to execute the response action defined in
 `ha_datastore_apd_response`. Default: `3`
 minutes. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1701,12 +1701,12 @@ minutes. <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take on
+    <dd>Controls the action to take on
 virtual machines when the cluster has detected a permanent device loss to a
 relevant datastore. Can be one of `disabled`, `warning`, or
 `restartAggressive`. Default: `disabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1714,9 +1714,9 @@ relevant datastore. Can be one of `disabled`, `warning`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable vSphere HA for this cluster. Default:
+    <dd>Enable vSphere HA for this cluster. Default:
 `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1724,11 +1724,11 @@ relevant datastore. Can be one of `disabled`, `warning`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of managed object IDs for
+    <dd>The list of managed object IDs for
 preferred datastores to use for HA heartbeating. This setting is only useful
 when `ha_heartbeat_datastore_policy` is set
 to either `userSelectedDs` or `allFeasibleDsWithUserPreference`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1736,11 +1736,11 @@ to either `userSelectedDs` or `allFeasibleDsWithUserPreference`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The selection policy for HA
+    <dd>The selection policy for HA
 heartbeat datastores. Can be one of `allFeasibleDs`, `userSelectedDs`, or
 `allFeasibleDsWithUserPreference`. Default:
 `allFeasibleDsWithUserPreference`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1748,11 +1748,11 @@ heartbeat datastores. Can be one of `allFeasibleDs`, `userSelectedDs`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The action to take on virtual
+    <dd>The action to take on virtual
 machines when a host has detected that it has been isolated from the rest of
 the cluster. Can be one of `none`, `powerOff`, or `shutdown`. Default:
 `none`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1760,10 +1760,10 @@ the cluster. Can be one of `none`, `powerOff`, or `shutdown`. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Global setting that controls whether
+    <dd>Global setting that controls whether
 vSphere HA remediates virtual machines on host failure. Can be one of `enabled`
 or `disabled`. Default: `enabled`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1771,11 +1771,11 @@ or `disabled`. Default: `enabled`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls vSphere VM component
+    <dd>Controls vSphere VM component
 protection for virtual machines in this cluster. Can be one of `enabled` or
 `disabled`. Default: `enabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1783,14 +1783,14 @@ protection for virtual machines in this cluster. Can be one of `enabled` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The condition used to
+    <dd>The condition used to
 determine whether or not virtual machines in a certain restart priority class
 are online, allowing HA to move on to restarting virtual machines on the next
 priority. Can be one of `none`, `poweredOn`, `guestHbStatusGreen`, or
 `appHbStatusGreen`. The default is `none`, which means that a virtual machine
 is considered ready immediately after a host is found to start it on.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1798,10 +1798,10 @@ is considered ready immediately after a host is found to start it on.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If a heartbeat from a virtual machine
+    <dd>If a heartbeat from a virtual machine
 is not received within this configured interval, the virtual machine is
 marked as failed. The value is in seconds. Default: `30`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1809,13 +1809,13 @@ marked as failed. The value is in seconds. Default: `30`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The length of the reset window in
+    <dd>The length of the reset window in
 which `ha_vm_maximum_resets` can operate. When this
 window expires, no more resets are attempted regardless of the setting
 configured in `ha_vm_maximum_resets`. `-1` means no window, meaning an
 unlimited reset time is allotted. The value is specified in seconds. Default:
 `-1` (no window).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1823,9 +1823,9 @@ unlimited reset time is allotted. The value is specified in seconds. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of resets that HA will
+    <dd>The maximum number of resets that HA will
 perform to a virtual machine when responding to a failure event. Default: `3`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1833,10 +1833,10 @@ perform to a virtual machine when responding to a failure event. Default: `3`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, that HA waits after
+    <dd>The time, in seconds, that HA waits after
 powering on a virtual machine before monitoring for heartbeats. Default:
 `120` (2 minutes).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1844,10 +1844,10 @@ powering on a virtual machine before monitoring for heartbeats. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of virtual machine monitoring to use
+    <dd>The type of virtual machine monitoring to use
 when HA is enabled in the cluster. Can be one of `vmMonitoringDisabled`,
 `vmMonitoringOnly`, or `vmAndAppMonitoring`. Default: `vmMonitoringDisabled`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1855,10 +1855,10 @@ when HA is enabled in the cluster. Can be one of `vmMonitoringDisabled`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Additional delay in seconds
+    <dd>Additional delay in seconds
 after ready condition is met. A VM is considered ready at this point.
 Default: `0` (no delay). <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1866,10 +1866,10 @@ Default: `0` (no delay). <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default restart priority
+    <dd>The default restart priority
 for affected virtual machines when vSphere detects a host failure. Can be one
 of `lowest`, `low`, `medium`, `high`, or `highest`. Default: `medium`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1877,11 +1877,11 @@ of `lowest`, `low`, `medium`, `high`, or `highest`. Default: `medium`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum time, in seconds,
+    <dd>The maximum time, in seconds,
 that vSphere HA will wait for virtual machines in one priority to be ready
 before proceeding with the next priority. Default: `600` (10 minutes).
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1889,10 +1889,10 @@ before proceeding with the next priority. Default: `600` (10 minutes).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The timeout for each host maintenance mode
+    <dd>The timeout for each host maintenance mode
 operation when removing hosts from a cluster. The value is specified in
 seconds. Default: `3600` (1 hour).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1900,9 +1900,9 @@ seconds. Default: `3600` (1 hour).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object IDs][docs-about-morefs] of
+    <dd>The [managed object IDs][docs-about-morefs] of
 the hosts to put in the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1910,8 +1910,8 @@ the hosts to put in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cluster.
-{{% /md %}}</dd>
+    <dd>The name of the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1919,11 +1919,11 @@ the hosts to put in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Determines how the host
+    <dd>Determines how the host
 quarantine, maintenance mode, or virtual machine migration recommendations
 made by proactive HA are to be handled. Can be one of `Automated` or
 `Manual`. Default: `Manual`. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1931,9 +1931,9 @@ made by proactive HA are to be handled. Can be one of `Automated` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enables Proactive HA. Default: `false`.
+    <dd>Enables Proactive HA. Default: `false`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1941,13 +1941,13 @@ made by proactive HA are to be handled. Can be one of `Automated` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The configured remediation
+    <dd>The configured remediation
 for moderately degraded hosts. Can be one of `MaintenanceMode` or
 `QuarantineMode`. Note that this cannot be set to `MaintenanceMode` when
 `proactive_ha_severe_remediation` is set
 to `QuarantineMode`. Default: `QuarantineMode`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1955,10 +1955,10 @@ to `QuarantineMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of IDs for health update
+    <dd>The list of IDs for health update
 providers configured for this cluster.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1966,13 +1966,13 @@ providers configured for this cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The configured remediation for
+    <dd>The configured remediation for
 severely degraded hosts. Can be one of `MaintenanceMode` or `QuarantineMode`.
 Note that this cannot be set to `QuarantineMode` when
 `proactive_ha_moderate_remediation` is
 set to `MaintenanceMode`. Default: `QuarantineMode`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1980,15 +1980,15 @@ set to `MaintenanceMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1997,9 +1997,9 @@ set to `MaintenanceMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object ID][docs-about-morefs] of
+    <dd>The [managed object ID][docs-about-morefs] of
 the datacenter to create the cluster in. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2007,11 +2007,11 @@ the datacenter to create the cluster in. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A map of custom attribute ids to attribute
+    <dd>A map of custom attribute ids to attribute
 value strings to set for the datastore cluster. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2019,10 +2019,10 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The automation level for host power
+    <dd>The automation level for host power
 operations in this cluster. Can be one of `manual` or `automated`. Default:
 `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2030,10 +2030,10 @@ operations in this cluster. Can be one of `manual` or `automated`. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable DPM support for DRS in this cluster.
+    <dd>Enable DPM support for DRS in this cluster.
 Requires `drs_enabled` to be `true` in order to be effective.
 Default: `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2041,11 +2041,11 @@ Default: `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}A value between `1` and `5` indicating the
+    <dd>A value between `1` and `5` indicating the
 threshold of load within the cluster that influences host power operations.
 This affects both power on and power off operations - a lower setting will
 tolerate more of a surplus/deficit than a higher setting. Default: `3`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2053,9 +2053,9 @@ tolerate more of a surplus/deficit than a higher setting. Default: `3`.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A key/value map that specifies advanced
+    <dd>A key/value map that specifies advanced
 options for DRS and DPM.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2063,10 +2063,10 @@ options for DRS and DPM.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The default automation level for all
+    <dd>The default automation level for all
 virtual machines in this cluster. Can be one of `manual`,
 `partiallyAutomated`, or `fullyAutomated`. Default: `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2074,10 +2074,10 @@ virtual machines in this cluster. Can be one of `manual`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}When `true`, enables DRS to use data
+    <dd>When `true`, enables DRS to use data
 from [vRealize Operations Manager][ref-vsphere-vro] to make proactive DRS
 recommendations. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2085,9 +2085,9 @@ recommendations. <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Allow individual DRS overrides to be
+    <dd>Allow individual DRS overrides to be
 set for virtual machines in the cluster. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2095,8 +2095,8 @@ set for virtual machines in the cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable DRS for this cluster. Default: `false`.
-{{% /md %}}</dd>
+    <dd>Enable DRS for this cluster. Default: `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2104,11 +2104,11 @@ set for virtual machines in the cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}A value between `1` and `5` indicating
+    <dd>A value between `1` and `5` indicating
 the threshold of imbalance tolerated between hosts. A lower setting will
 tolerate more imbalance while a higher setting will tolerate less. Default:
 `3`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2116,8 +2116,8 @@ tolerate more imbalance while a higher setting will tolerate less. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the folder to locate the cluster in.
-{{% /md %}}</dd>
+    <dd>The name of the folder to locate the cluster in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2125,9 +2125,9 @@ tolerate more imbalance while a higher setting will tolerate less. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Force removal of all hosts in the cluster during destroy and make them standalone hosts. Use of this flag mainly exists
+    <dd>Force removal of all hosts in the cluster during destroy and make them standalone hosts. Use of this flag mainly exists
 for testing and is not recommended in normal use.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2135,12 +2135,12 @@ for testing and is not recommended in normal use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Defines the
+    <dd>Defines the
 [managed object IDs][docs-about-morefs] of hosts to use as dedicated failover
 hosts. These hosts are kept as available as possible - admission control will
 block access to the host, and DRS will ignore the host when making
 recommendations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2148,12 +2148,12 @@ recommendations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number
+    <dd>The maximum number
 of failed hosts that admission control tolerates when making decisions on
 whether to permit virtual machine operations. The maximum is one less than
 the number of hosts in the cluster. Default: `1`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2161,11 +2161,11 @@ the number of hosts in the cluster. Default: `1`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The percentage of
+    <dd>The percentage of
 resource reduction that a cluster of virtual machines can tolerate in case of
 a failover. A value of 0 produces warnings only, whereas a value of 100
 disables the setting. Default: `100` (disabled).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2173,10 +2173,10 @@ disables the setting. Default: `100` (disabled).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of admission control
+    <dd>The type of admission control
 policy to use with vSphere HA. Can be one of `resourcePercentage`,
 `slotPolicy`, `failoverHosts`, or `disabled`. Default: `resourcePercentage`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2184,14 +2184,14 @@ policy to use with vSphere HA. Can be one of `resourcePercentage`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}
+    <dd>
 Automatically determine available resource percentages by subtracting the
 average number of host resources represented by the
 `ha_admission_control_host_failure_tolerance`
 setting from the total amount of resources in the cluster. Disable to supply
 user-defined values. Default: `true`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2199,10 +2199,10 @@ user-defined values. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined percentage of CPU resources in the cluster to reserve for
 failover. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2210,10 +2210,10 @@ failover. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined percentage of memory resources in the cluster to reserve for
 failover. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2221,9 +2221,9 @@ failover. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined CPU slot size, in MHz. Default: `32`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2231,9 +2231,9 @@ user-defined CPU slot size, in MHz. Default: `32`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined memory slot size, in MB. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2241,11 +2241,11 @@ user-defined memory slot size, in MB. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Controls
+    <dd>Controls
 whether or not you wish to supply explicit values to CPU and memory slot
 sizes. The default is `false`, which tells vSphere to gather a automatic
 average based on all powered-on virtual machines currently in the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2253,9 +2253,9 @@ average based on all powered-on virtual machines currently in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A key/value map that specifies advanced
+    <dd>A key/value map that specifies advanced
 options for vSphere HA.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2263,11 +2263,11 @@ options for vSphere HA.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take
+    <dd>Controls the action to take
 on virtual machines if an APD status on an affected datastore clears in the
 middle of an APD event. Can be one of `none` or `reset`. Default: `none`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2275,12 +2275,12 @@ middle of an APD event. Can be one of `none` or `reset`. Default: `none`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take on
+    <dd>Controls the action to take on
 virtual machines when the cluster has detected loss to all paths to a
 relevant datastore. Can be one of `disabled`, `warning`,
 `restartConservative`, or `restartAggressive`.  Default: `disabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2288,11 +2288,11 @@ relevant datastore. Can be one of `disabled`, `warning`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Controls the delay in minutes
+    <dd>Controls the delay in minutes
 to wait after an APD timeout event to execute the response action defined in
 `ha_datastore_apd_response`. Default: `3`
 minutes. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2300,12 +2300,12 @@ minutes. <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take on
+    <dd>Controls the action to take on
 virtual machines when the cluster has detected a permanent device loss to a
 relevant datastore. Can be one of `disabled`, `warning`, or
 `restartAggressive`. Default: `disabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2313,9 +2313,9 @@ relevant datastore. Can be one of `disabled`, `warning`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable vSphere HA for this cluster. Default:
+    <dd>Enable vSphere HA for this cluster. Default:
 `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2323,11 +2323,11 @@ relevant datastore. Can be one of `disabled`, `warning`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of managed object IDs for
+    <dd>The list of managed object IDs for
 preferred datastores to use for HA heartbeating. This setting is only useful
 when `ha_heartbeat_datastore_policy` is set
 to either `userSelectedDs` or `allFeasibleDsWithUserPreference`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2335,11 +2335,11 @@ to either `userSelectedDs` or `allFeasibleDsWithUserPreference`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The selection policy for HA
+    <dd>The selection policy for HA
 heartbeat datastores. Can be one of `allFeasibleDs`, `userSelectedDs`, or
 `allFeasibleDsWithUserPreference`. Default:
 `allFeasibleDsWithUserPreference`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2347,11 +2347,11 @@ heartbeat datastores. Can be one of `allFeasibleDs`, `userSelectedDs`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The action to take on virtual
+    <dd>The action to take on virtual
 machines when a host has detected that it has been isolated from the rest of
 the cluster. Can be one of `none`, `powerOff`, or `shutdown`. Default:
 `none`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2359,10 +2359,10 @@ the cluster. Can be one of `none`, `powerOff`, or `shutdown`. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Global setting that controls whether
+    <dd>Global setting that controls whether
 vSphere HA remediates virtual machines on host failure. Can be one of `enabled`
 or `disabled`. Default: `enabled`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2370,11 +2370,11 @@ or `disabled`. Default: `enabled`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Controls vSphere VM component
+    <dd>Controls vSphere VM component
 protection for virtual machines in this cluster. Can be one of `enabled` or
 `disabled`. Default: `enabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2382,14 +2382,14 @@ protection for virtual machines in this cluster. Can be one of `enabled` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The condition used to
+    <dd>The condition used to
 determine whether or not virtual machines in a certain restart priority class
 are online, allowing HA to move on to restarting virtual machines on the next
 priority. Can be one of `none`, `poweredOn`, `guestHbStatusGreen`, or
 `appHbStatusGreen`. The default is `none`, which means that a virtual machine
 is considered ready immediately after a host is found to start it on.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2397,10 +2397,10 @@ is considered ready immediately after a host is found to start it on.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If a heartbeat from a virtual machine
+    <dd>If a heartbeat from a virtual machine
 is not received within this configured interval, the virtual machine is
 marked as failed. The value is in seconds. Default: `30`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2408,13 +2408,13 @@ marked as failed. The value is in seconds. Default: `30`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The length of the reset window in
+    <dd>The length of the reset window in
 which `ha_vm_maximum_resets` can operate. When this
 window expires, no more resets are attempted regardless of the setting
 configured in `ha_vm_maximum_resets`. `-1` means no window, meaning an
 unlimited reset time is allotted. The value is specified in seconds. Default:
 `-1` (no window).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2422,9 +2422,9 @@ unlimited reset time is allotted. The value is specified in seconds. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of resets that HA will
+    <dd>The maximum number of resets that HA will
 perform to a virtual machine when responding to a failure event. Default: `3`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2432,10 +2432,10 @@ perform to a virtual machine when responding to a failure event. Default: `3`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, that HA waits after
+    <dd>The time, in seconds, that HA waits after
 powering on a virtual machine before monitoring for heartbeats. Default:
 `120` (2 minutes).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2443,10 +2443,10 @@ powering on a virtual machine before monitoring for heartbeats. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of virtual machine monitoring to use
+    <dd>The type of virtual machine monitoring to use
 when HA is enabled in the cluster. Can be one of `vmMonitoringDisabled`,
 `vmMonitoringOnly`, or `vmAndAppMonitoring`. Default: `vmMonitoringDisabled`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2454,10 +2454,10 @@ when HA is enabled in the cluster. Can be one of `vmMonitoringDisabled`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Additional delay in seconds
+    <dd>Additional delay in seconds
 after ready condition is met. A VM is considered ready at this point.
 Default: `0` (no delay). <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2465,10 +2465,10 @@ Default: `0` (no delay). <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The default restart priority
+    <dd>The default restart priority
 for affected virtual machines when vSphere detects a host failure. Can be one
 of `lowest`, `low`, `medium`, `high`, or `highest`. Default: `medium`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2476,11 +2476,11 @@ of `lowest`, `low`, `medium`, `high`, or `highest`. Default: `medium`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum time, in seconds,
+    <dd>The maximum time, in seconds,
 that vSphere HA will wait for virtual machines in one priority to be ready
 before proceeding with the next priority. Default: `600` (10 minutes).
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2488,10 +2488,10 @@ before proceeding with the next priority. Default: `600` (10 minutes).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The timeout for each host maintenance mode
+    <dd>The timeout for each host maintenance mode
 operation when removing hosts from a cluster. The value is specified in
 seconds. Default: `3600` (1 hour).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2499,9 +2499,9 @@ seconds. Default: `3600` (1 hour).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object IDs][docs-about-morefs] of
+    <dd>The [managed object IDs][docs-about-morefs] of
 the hosts to put in the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2509,8 +2509,8 @@ the hosts to put in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cluster.
-{{% /md %}}</dd>
+    <dd>The name of the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2518,11 +2518,11 @@ the hosts to put in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Determines how the host
+    <dd>Determines how the host
 quarantine, maintenance mode, or virtual machine migration recommendations
 made by proactive HA are to be handled. Can be one of `Automated` or
 `Manual`. Default: `Manual`. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2530,9 +2530,9 @@ made by proactive HA are to be handled. Can be one of `Automated` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables Proactive HA. Default: `false`.
+    <dd>Enables Proactive HA. Default: `false`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2540,13 +2540,13 @@ made by proactive HA are to be handled. Can be one of `Automated` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The configured remediation
+    <dd>The configured remediation
 for moderately degraded hosts. Can be one of `MaintenanceMode` or
 `QuarantineMode`. Note that this cannot be set to `MaintenanceMode` when
 `proactive_ha_severe_remediation` is set
 to `QuarantineMode`. Default: `QuarantineMode`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2554,10 +2554,10 @@ to `QuarantineMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of IDs for health update
+    <dd>The list of IDs for health update
 providers configured for this cluster.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2565,13 +2565,13 @@ providers configured for this cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The configured remediation for
+    <dd>The configured remediation for
 severely degraded hosts. Can be one of `MaintenanceMode` or `QuarantineMode`.
 Note that this cannot be set to `QuarantineMode` when
 `proactive_ha_moderate_remediation` is
 set to `MaintenanceMode`. Default: `QuarantineMode`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2579,12 +2579,12 @@ set to `MaintenanceMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2598,7 +2598,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -2607,7 +2607,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -2615,14 +2615,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The managed object ID of the cluster's root resource pool.
-{{% /md %}}</dd>
+    <dd>The managed object ID of the cluster's root resource pool.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -2631,7 +2631,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -2639,14 +2639,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The managed object ID of the cluster's root resource pool.
-{{% /md %}}</dd>
+    <dd>The managed object ID of the cluster's root resource pool.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -2655,7 +2655,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -2663,14 +2663,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The managed object ID of the cluster's root resource pool.
-{{% /md %}}</dd>
+    <dd>The managed object ID of the cluster's root resource pool.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -2679,7 +2679,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -2687,11 +2687,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The managed object ID of the cluster's root resource pool.
-{{% /md %}}</dd>
+    <dd>The managed object ID of the cluster's root resource pool.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2702,25 +2702,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ComputeCluster Resource {#look-up}
 
 Get an existing ComputeCluster resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vsphere/#ComputeClusterState">ComputeClusterState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/vsphere/#ComputeCluster">ComputeCluster</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>custom_attributes=None<span class="p">, </span>datacenter_id=None<span class="p">, </span>dpm_automation_level=None<span class="p">, </span>dpm_enabled=None<span class="p">, </span>dpm_threshold=None<span class="p">, </span>drs_advanced_options=None<span class="p">, </span>drs_automation_level=None<span class="p">, </span>drs_enable_predictive_drs=None<span class="p">, </span>drs_enable_vm_overrides=None<span class="p">, </span>drs_enabled=None<span class="p">, </span>drs_migration_threshold=None<span class="p">, </span>folder=None<span class="p">, </span>force_evacuate_on_destroy=None<span class="p">, </span>ha_admission_control_failover_host_system_ids=None<span class="p">, </span>ha_admission_control_host_failure_tolerance=None<span class="p">, </span>ha_admission_control_performance_tolerance=None<span class="p">, </span>ha_admission_control_policy=None<span class="p">, </span>ha_admission_control_resource_percentage_auto_compute=None<span class="p">, </span>ha_admission_control_resource_percentage_cpu=None<span class="p">, </span>ha_admission_control_resource_percentage_memory=None<span class="p">, </span>ha_admission_control_slot_policy_explicit_cpu=None<span class="p">, </span>ha_admission_control_slot_policy_explicit_memory=None<span class="p">, </span>ha_admission_control_slot_policy_use_explicit_size=None<span class="p">, </span>ha_advanced_options=None<span class="p">, </span>ha_datastore_apd_recovery_action=None<span class="p">, </span>ha_datastore_apd_response=None<span class="p">, </span>ha_datastore_apd_response_delay=None<span class="p">, </span>ha_datastore_pdl_response=None<span class="p">, </span>ha_enabled=None<span class="p">, </span>ha_heartbeat_datastore_ids=None<span class="p">, </span>ha_heartbeat_datastore_policy=None<span class="p">, </span>ha_host_isolation_response=None<span class="p">, </span>ha_host_monitoring=None<span class="p">, </span>ha_vm_component_protection=None<span class="p">, </span>ha_vm_dependency_restart_condition=None<span class="p">, </span>ha_vm_failure_interval=None<span class="p">, </span>ha_vm_maximum_failure_window=None<span class="p">, </span>ha_vm_maximum_resets=None<span class="p">, </span>ha_vm_minimum_uptime=None<span class="p">, </span>ha_vm_monitoring=None<span class="p">, </span>ha_vm_restart_additional_delay=None<span class="p">, </span>ha_vm_restart_priority=None<span class="p">, </span>ha_vm_restart_timeout=None<span class="p">, </span>host_cluster_exit_timeout=None<span class="p">, </span>host_system_ids=None<span class="p">, </span>name=None<span class="p">, </span>proactive_ha_automation_level=None<span class="p">, </span>proactive_ha_enabled=None<span class="p">, </span>proactive_ha_moderate_remediation=None<span class="p">, </span>proactive_ha_provider_ids=None<span class="p">, </span>proactive_ha_severe_remediation=None<span class="p">, </span>resource_pool_id=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetComputeCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vsphere/sdk/v2/go/vsphere/?tab=doc#ComputeClusterState">ComputeClusterState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-vsphere/sdk/v2/go/vsphere/?tab=doc#ComputeCluster">ComputeCluster</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vsphere/Pulumi.Vsphere.ComputeCluster.html">ComputeCluster</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Vsphere/Pulumi.Vsphere..ComputeClusterState.html">ComputeClusterState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -2745,9 +2745,9 @@ Get an existing ComputeCluster resource's state with the given name, ID, and opt
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -2760,36 +2760,9 @@ Get an existing ComputeCluster resource's state with the given name, ID, and opt
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -2814,13 +2787,40 @@ Get an existing ComputeCluster resource's state with the given name, ID, and opt
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2829,11 +2829,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of custom attribute ids to attribute
+    <dd>A map of custom attribute ids to attribute
 value strings to set for the datastore cluster. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2841,9 +2841,9 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object ID][docs-about-morefs] of
+    <dd>The [managed object ID][docs-about-morefs] of
 the datacenter to create the cluster in. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2851,10 +2851,10 @@ the datacenter to create the cluster in. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The automation level for host power
+    <dd>The automation level for host power
 operations in this cluster. Can be one of `manual` or `automated`. Default:
 `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2862,10 +2862,10 @@ operations in this cluster. Can be one of `manual` or `automated`. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable DPM support for DRS in this cluster.
+    <dd>Enable DPM support for DRS in this cluster.
 Requires `drs_enabled` to be `true` in order to be effective.
 Default: `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2873,11 +2873,11 @@ Default: `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}A value between `1` and `5` indicating the
+    <dd>A value between `1` and `5` indicating the
 threshold of load within the cluster that influences host power operations.
 This affects both power on and power off operations - a lower setting will
 tolerate more of a surplus/deficit than a higher setting. Default: `3`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2885,9 +2885,9 @@ tolerate more of a surplus/deficit than a higher setting. Default: `3`.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A key/value map that specifies advanced
+    <dd>A key/value map that specifies advanced
 options for DRS and DPM.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2895,10 +2895,10 @@ options for DRS and DPM.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The default automation level for all
+    <dd>The default automation level for all
 virtual machines in this cluster. Can be one of `manual`,
 `partiallyAutomated`, or `fullyAutomated`. Default: `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2906,10 +2906,10 @@ virtual machines in this cluster. Can be one of `manual`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}When `true`, enables DRS to use data
+    <dd>When `true`, enables DRS to use data
 from [vRealize Operations Manager][ref-vsphere-vro] to make proactive DRS
 recommendations. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2917,9 +2917,9 @@ recommendations. <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Allow individual DRS overrides to be
+    <dd>Allow individual DRS overrides to be
 set for virtual machines in the cluster. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2927,8 +2927,8 @@ set for virtual machines in the cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable DRS for this cluster. Default: `false`.
-{{% /md %}}</dd>
+    <dd>Enable DRS for this cluster. Default: `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2936,11 +2936,11 @@ set for virtual machines in the cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}A value between `1` and `5` indicating
+    <dd>A value between `1` and `5` indicating
 the threshold of imbalance tolerated between hosts. A lower setting will
 tolerate more imbalance while a higher setting will tolerate less. Default:
 `3`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2948,8 +2948,8 @@ tolerate more imbalance while a higher setting will tolerate less. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the folder to locate the cluster in.
-{{% /md %}}</dd>
+    <dd>The name of the folder to locate the cluster in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2957,9 +2957,9 @@ tolerate more imbalance while a higher setting will tolerate less. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Force removal of all hosts in the cluster during destroy and make them standalone hosts. Use of this flag mainly exists
+    <dd>Force removal of all hosts in the cluster during destroy and make them standalone hosts. Use of this flag mainly exists
 for testing and is not recommended in normal use.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2967,12 +2967,12 @@ for testing and is not recommended in normal use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Defines the
+    <dd>Defines the
 [managed object IDs][docs-about-morefs] of hosts to use as dedicated failover
 hosts. These hosts are kept as available as possible - admission control will
 block access to the host, and DRS will ignore the host when making
 recommendations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2980,12 +2980,12 @@ recommendations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number
+    <dd>The maximum number
 of failed hosts that admission control tolerates when making decisions on
 whether to permit virtual machine operations. The maximum is one less than
 the number of hosts in the cluster. Default: `1`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2993,11 +2993,11 @@ the number of hosts in the cluster. Default: `1`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The percentage of
+    <dd>The percentage of
 resource reduction that a cluster of virtual machines can tolerate in case of
 a failover. A value of 0 produces warnings only, whereas a value of 100
 disables the setting. Default: `100` (disabled).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3005,10 +3005,10 @@ disables the setting. Default: `100` (disabled).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of admission control
+    <dd>The type of admission control
 policy to use with vSphere HA. Can be one of `resourcePercentage`,
 `slotPolicy`, `failoverHosts`, or `disabled`. Default: `resourcePercentage`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3016,14 +3016,14 @@ policy to use with vSphere HA. Can be one of `resourcePercentage`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}
+    <dd>
 Automatically determine available resource percentages by subtracting the
 average number of host resources represented by the
 `ha_admission_control_host_failure_tolerance`
 setting from the total amount of resources in the cluster. Disable to supply
 user-defined values. Default: `true`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3031,10 +3031,10 @@ user-defined values. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined percentage of CPU resources in the cluster to reserve for
 failover. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3042,10 +3042,10 @@ failover. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined percentage of memory resources in the cluster to reserve for
 failover. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3053,9 +3053,9 @@ failover. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined CPU slot size, in MHz. Default: `32`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3063,9 +3063,9 @@ user-defined CPU slot size, in MHz. Default: `32`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined memory slot size, in MB. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3073,11 +3073,11 @@ user-defined memory slot size, in MB. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Controls
+    <dd>Controls
 whether or not you wish to supply explicit values to CPU and memory slot
 sizes. The default is `false`, which tells vSphere to gather a automatic
 average based on all powered-on virtual machines currently in the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3085,9 +3085,9 @@ average based on all powered-on virtual machines currently in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A key/value map that specifies advanced
+    <dd>A key/value map that specifies advanced
 options for vSphere HA.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3095,11 +3095,11 @@ options for vSphere HA.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take
+    <dd>Controls the action to take
 on virtual machines if an APD status on an affected datastore clears in the
 middle of an APD event. Can be one of `none` or `reset`. Default: `none`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3107,12 +3107,12 @@ middle of an APD event. Can be one of `none` or `reset`. Default: `none`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take on
+    <dd>Controls the action to take on
 virtual machines when the cluster has detected loss to all paths to a
 relevant datastore. Can be one of `disabled`, `warning`,
 `restartConservative`, or `restartAggressive`.  Default: `disabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3120,11 +3120,11 @@ relevant datastore. Can be one of `disabled`, `warning`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Controls the delay in minutes
+    <dd>Controls the delay in minutes
 to wait after an APD timeout event to execute the response action defined in
 `ha_datastore_apd_response`. Default: `3`
 minutes. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3132,12 +3132,12 @@ minutes. <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take on
+    <dd>Controls the action to take on
 virtual machines when the cluster has detected a permanent device loss to a
 relevant datastore. Can be one of `disabled`, `warning`, or
 `restartAggressive`. Default: `disabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3145,9 +3145,9 @@ relevant datastore. Can be one of `disabled`, `warning`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable vSphere HA for this cluster. Default:
+    <dd>Enable vSphere HA for this cluster. Default:
 `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3155,11 +3155,11 @@ relevant datastore. Can be one of `disabled`, `warning`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of managed object IDs for
+    <dd>The list of managed object IDs for
 preferred datastores to use for HA heartbeating. This setting is only useful
 when `ha_heartbeat_datastore_policy` is set
 to either `userSelectedDs` or `allFeasibleDsWithUserPreference`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3167,11 +3167,11 @@ to either `userSelectedDs` or `allFeasibleDsWithUserPreference`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The selection policy for HA
+    <dd>The selection policy for HA
 heartbeat datastores. Can be one of `allFeasibleDs`, `userSelectedDs`, or
 `allFeasibleDsWithUserPreference`. Default:
 `allFeasibleDsWithUserPreference`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3179,11 +3179,11 @@ heartbeat datastores. Can be one of `allFeasibleDs`, `userSelectedDs`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The action to take on virtual
+    <dd>The action to take on virtual
 machines when a host has detected that it has been isolated from the rest of
 the cluster. Can be one of `none`, `powerOff`, or `shutdown`. Default:
 `none`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3191,10 +3191,10 @@ the cluster. Can be one of `none`, `powerOff`, or `shutdown`. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Global setting that controls whether
+    <dd>Global setting that controls whether
 vSphere HA remediates virtual machines on host failure. Can be one of `enabled`
 or `disabled`. Default: `enabled`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3202,11 +3202,11 @@ or `disabled`. Default: `enabled`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls vSphere VM component
+    <dd>Controls vSphere VM component
 protection for virtual machines in this cluster. Can be one of `enabled` or
 `disabled`. Default: `enabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3214,14 +3214,14 @@ protection for virtual machines in this cluster. Can be one of `enabled` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The condition used to
+    <dd>The condition used to
 determine whether or not virtual machines in a certain restart priority class
 are online, allowing HA to move on to restarting virtual machines on the next
 priority. Can be one of `none`, `poweredOn`, `guestHbStatusGreen`, or
 `appHbStatusGreen`. The default is `none`, which means that a virtual machine
 is considered ready immediately after a host is found to start it on.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3229,10 +3229,10 @@ is considered ready immediately after a host is found to start it on.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}If a heartbeat from a virtual machine
+    <dd>If a heartbeat from a virtual machine
 is not received within this configured interval, the virtual machine is
 marked as failed. The value is in seconds. Default: `30`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3240,13 +3240,13 @@ marked as failed. The value is in seconds. Default: `30`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The length of the reset window in
+    <dd>The length of the reset window in
 which `ha_vm_maximum_resets` can operate. When this
 window expires, no more resets are attempted regardless of the setting
 configured in `ha_vm_maximum_resets`. `-1` means no window, meaning an
 unlimited reset time is allotted. The value is specified in seconds. Default:
 `-1` (no window).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3254,9 +3254,9 @@ unlimited reset time is allotted. The value is specified in seconds. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of resets that HA will
+    <dd>The maximum number of resets that HA will
 perform to a virtual machine when responding to a failure event. Default: `3`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3264,10 +3264,10 @@ perform to a virtual machine when responding to a failure event. Default: `3`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, that HA waits after
+    <dd>The time, in seconds, that HA waits after
 powering on a virtual machine before monitoring for heartbeats. Default:
 `120` (2 minutes).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3275,10 +3275,10 @@ powering on a virtual machine before monitoring for heartbeats. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of virtual machine monitoring to use
+    <dd>The type of virtual machine monitoring to use
 when HA is enabled in the cluster. Can be one of `vmMonitoringDisabled`,
 `vmMonitoringOnly`, or `vmAndAppMonitoring`. Default: `vmMonitoringDisabled`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3286,10 +3286,10 @@ when HA is enabled in the cluster. Can be one of `vmMonitoringDisabled`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Additional delay in seconds
+    <dd>Additional delay in seconds
 after ready condition is met. A VM is considered ready at this point.
 Default: `0` (no delay). <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3297,10 +3297,10 @@ Default: `0` (no delay). <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The default restart priority
+    <dd>The default restart priority
 for affected virtual machines when vSphere detects a host failure. Can be one
 of `lowest`, `low`, `medium`, `high`, or `highest`. Default: `medium`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3308,11 +3308,11 @@ of `lowest`, `low`, `medium`, `high`, or `highest`. Default: `medium`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum time, in seconds,
+    <dd>The maximum time, in seconds,
 that vSphere HA will wait for virtual machines in one priority to be ready
 before proceeding with the next priority. Default: `600` (10 minutes).
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3320,10 +3320,10 @@ before proceeding with the next priority. Default: `600` (10 minutes).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The timeout for each host maintenance mode
+    <dd>The timeout for each host maintenance mode
 operation when removing hosts from a cluster. The value is specified in
 seconds. Default: `3600` (1 hour).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3331,9 +3331,9 @@ seconds. Default: `3600` (1 hour).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object IDs][docs-about-morefs] of
+    <dd>The [managed object IDs][docs-about-morefs] of
 the hosts to put in the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3341,8 +3341,8 @@ the hosts to put in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cluster.
-{{% /md %}}</dd>
+    <dd>The name of the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3350,11 +3350,11 @@ the hosts to put in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Determines how the host
+    <dd>Determines how the host
 quarantine, maintenance mode, or virtual machine migration recommendations
 made by proactive HA are to be handled. Can be one of `Automated` or
 `Manual`. Default: `Manual`. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3362,9 +3362,9 @@ made by proactive HA are to be handled. Can be one of `Automated` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables Proactive HA. Default: `false`.
+    <dd>Enables Proactive HA. Default: `false`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3372,13 +3372,13 @@ made by proactive HA are to be handled. Can be one of `Automated` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The configured remediation
+    <dd>The configured remediation
 for moderately degraded hosts. Can be one of `MaintenanceMode` or
 `QuarantineMode`. Note that this cannot be set to `MaintenanceMode` when
 `proactive_ha_severe_remediation` is set
 to `QuarantineMode`. Default: `QuarantineMode`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3386,10 +3386,10 @@ to `QuarantineMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of IDs for health update
+    <dd>The list of IDs for health update
 providers configured for this cluster.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3397,13 +3397,13 @@ providers configured for this cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The configured remediation for
+    <dd>The configured remediation for
 severely degraded hosts. Can be one of `MaintenanceMode` or `QuarantineMode`.
 Note that this cannot be set to `QuarantineMode` when
 `proactive_ha_moderate_remediation` is
 set to `MaintenanceMode`. Default: `QuarantineMode`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3411,8 +3411,8 @@ set to `MaintenanceMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The managed object ID of the cluster's root resource pool.
-{{% /md %}}</dd>
+    <dd>The managed object ID of the cluster's root resource pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3420,15 +3420,15 @@ set to `MaintenanceMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3437,11 +3437,11 @@ set to `MaintenanceMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A map of custom attribute ids to attribute
+    <dd>A map of custom attribute ids to attribute
 value strings to set for the datastore cluster. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3449,9 +3449,9 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object ID][docs-about-morefs] of
+    <dd>The [managed object ID][docs-about-morefs] of
 the datacenter to create the cluster in. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3459,10 +3459,10 @@ the datacenter to create the cluster in. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The automation level for host power
+    <dd>The automation level for host power
 operations in this cluster. Can be one of `manual` or `automated`. Default:
 `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3470,10 +3470,10 @@ operations in this cluster. Can be one of `manual` or `automated`. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable DPM support for DRS in this cluster.
+    <dd>Enable DPM support for DRS in this cluster.
 Requires `drs_enabled` to be `true` in order to be effective.
 Default: `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3481,11 +3481,11 @@ Default: `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}A value between `1` and `5` indicating the
+    <dd>A value between `1` and `5` indicating the
 threshold of load within the cluster that influences host power operations.
 This affects both power on and power off operations - a lower setting will
 tolerate more of a surplus/deficit than a higher setting. Default: `3`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3493,9 +3493,9 @@ tolerate more of a surplus/deficit than a higher setting. Default: `3`.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A key/value map that specifies advanced
+    <dd>A key/value map that specifies advanced
 options for DRS and DPM.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3503,10 +3503,10 @@ options for DRS and DPM.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default automation level for all
+    <dd>The default automation level for all
 virtual machines in this cluster. Can be one of `manual`,
 `partiallyAutomated`, or `fullyAutomated`. Default: `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3514,10 +3514,10 @@ virtual machines in this cluster. Can be one of `manual`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}When `true`, enables DRS to use data
+    <dd>When `true`, enables DRS to use data
 from [vRealize Operations Manager][ref-vsphere-vro] to make proactive DRS
 recommendations. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3525,9 +3525,9 @@ recommendations. <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Allow individual DRS overrides to be
+    <dd>Allow individual DRS overrides to be
 set for virtual machines in the cluster. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3535,8 +3535,8 @@ set for virtual machines in the cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable DRS for this cluster. Default: `false`.
-{{% /md %}}</dd>
+    <dd>Enable DRS for this cluster. Default: `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3544,11 +3544,11 @@ set for virtual machines in the cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}A value between `1` and `5` indicating
+    <dd>A value between `1` and `5` indicating
 the threshold of imbalance tolerated between hosts. A lower setting will
 tolerate more imbalance while a higher setting will tolerate less. Default:
 `3`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3556,8 +3556,8 @@ tolerate more imbalance while a higher setting will tolerate less. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the folder to locate the cluster in.
-{{% /md %}}</dd>
+    <dd>The name of the folder to locate the cluster in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3565,9 +3565,9 @@ tolerate more imbalance while a higher setting will tolerate less. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Force removal of all hosts in the cluster during destroy and make them standalone hosts. Use of this flag mainly exists
+    <dd>Force removal of all hosts in the cluster during destroy and make them standalone hosts. Use of this flag mainly exists
 for testing and is not recommended in normal use.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3575,12 +3575,12 @@ for testing and is not recommended in normal use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the
+    <dd>Defines the
 [managed object IDs][docs-about-morefs] of hosts to use as dedicated failover
 hosts. These hosts are kept as available as possible - admission control will
 block access to the host, and DRS will ignore the host when making
 recommendations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3588,12 +3588,12 @@ recommendations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number
+    <dd>The maximum number
 of failed hosts that admission control tolerates when making decisions on
 whether to permit virtual machine operations. The maximum is one less than
 the number of hosts in the cluster. Default: `1`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3601,11 +3601,11 @@ the number of hosts in the cluster. Default: `1`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The percentage of
+    <dd>The percentage of
 resource reduction that a cluster of virtual machines can tolerate in case of
 a failover. A value of 0 produces warnings only, whereas a value of 100
 disables the setting. Default: `100` (disabled).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3613,10 +3613,10 @@ disables the setting. Default: `100` (disabled).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of admission control
+    <dd>The type of admission control
 policy to use with vSphere HA. Can be one of `resourcePercentage`,
 `slotPolicy`, `failoverHosts`, or `disabled`. Default: `resourcePercentage`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3624,14 +3624,14 @@ policy to use with vSphere HA. Can be one of `resourcePercentage`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}
+    <dd>
 Automatically determine available resource percentages by subtracting the
 average number of host resources represented by the
 `ha_admission_control_host_failure_tolerance`
 setting from the total amount of resources in the cluster. Disable to supply
 user-defined values. Default: `true`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3639,10 +3639,10 @@ user-defined values. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined percentage of CPU resources in the cluster to reserve for
 failover. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3650,10 +3650,10 @@ failover. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined percentage of memory resources in the cluster to reserve for
 failover. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3661,9 +3661,9 @@ failover. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined CPU slot size, in MHz. Default: `32`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3671,9 +3671,9 @@ user-defined CPU slot size, in MHz. Default: `32`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined memory slot size, in MB. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3681,11 +3681,11 @@ user-defined memory slot size, in MB. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Controls
+    <dd>Controls
 whether or not you wish to supply explicit values to CPU and memory slot
 sizes. The default is `false`, which tells vSphere to gather a automatic
 average based on all powered-on virtual machines currently in the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3693,9 +3693,9 @@ average based on all powered-on virtual machines currently in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A key/value map that specifies advanced
+    <dd>A key/value map that specifies advanced
 options for vSphere HA.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3703,11 +3703,11 @@ options for vSphere HA.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take
+    <dd>Controls the action to take
 on virtual machines if an APD status on an affected datastore clears in the
 middle of an APD event. Can be one of `none` or `reset`. Default: `none`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3715,12 +3715,12 @@ middle of an APD event. Can be one of `none` or `reset`. Default: `none`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take on
+    <dd>Controls the action to take on
 virtual machines when the cluster has detected loss to all paths to a
 relevant datastore. Can be one of `disabled`, `warning`,
 `restartConservative`, or `restartAggressive`.  Default: `disabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3728,11 +3728,11 @@ relevant datastore. Can be one of `disabled`, `warning`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Controls the delay in minutes
+    <dd>Controls the delay in minutes
 to wait after an APD timeout event to execute the response action defined in
 `ha_datastore_apd_response`. Default: `3`
 minutes. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3740,12 +3740,12 @@ minutes. <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take on
+    <dd>Controls the action to take on
 virtual machines when the cluster has detected a permanent device loss to a
 relevant datastore. Can be one of `disabled`, `warning`, or
 `restartAggressive`. Default: `disabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3753,9 +3753,9 @@ relevant datastore. Can be one of `disabled`, `warning`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable vSphere HA for this cluster. Default:
+    <dd>Enable vSphere HA for this cluster. Default:
 `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3763,11 +3763,11 @@ relevant datastore. Can be one of `disabled`, `warning`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of managed object IDs for
+    <dd>The list of managed object IDs for
 preferred datastores to use for HA heartbeating. This setting is only useful
 when `ha_heartbeat_datastore_policy` is set
 to either `userSelectedDs` or `allFeasibleDsWithUserPreference`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3775,11 +3775,11 @@ to either `userSelectedDs` or `allFeasibleDsWithUserPreference`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The selection policy for HA
+    <dd>The selection policy for HA
 heartbeat datastores. Can be one of `allFeasibleDs`, `userSelectedDs`, or
 `allFeasibleDsWithUserPreference`. Default:
 `allFeasibleDsWithUserPreference`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3787,11 +3787,11 @@ heartbeat datastores. Can be one of `allFeasibleDs`, `userSelectedDs`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The action to take on virtual
+    <dd>The action to take on virtual
 machines when a host has detected that it has been isolated from the rest of
 the cluster. Can be one of `none`, `powerOff`, or `shutdown`. Default:
 `none`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3799,10 +3799,10 @@ the cluster. Can be one of `none`, `powerOff`, or `shutdown`. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Global setting that controls whether
+    <dd>Global setting that controls whether
 vSphere HA remediates virtual machines on host failure. Can be one of `enabled`
 or `disabled`. Default: `enabled`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3810,11 +3810,11 @@ or `disabled`. Default: `enabled`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls vSphere VM component
+    <dd>Controls vSphere VM component
 protection for virtual machines in this cluster. Can be one of `enabled` or
 `disabled`. Default: `enabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3822,14 +3822,14 @@ protection for virtual machines in this cluster. Can be one of `enabled` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The condition used to
+    <dd>The condition used to
 determine whether or not virtual machines in a certain restart priority class
 are online, allowing HA to move on to restarting virtual machines on the next
 priority. Can be one of `none`, `poweredOn`, `guestHbStatusGreen`, or
 `appHbStatusGreen`. The default is `none`, which means that a virtual machine
 is considered ready immediately after a host is found to start it on.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3837,10 +3837,10 @@ is considered ready immediately after a host is found to start it on.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}If a heartbeat from a virtual machine
+    <dd>If a heartbeat from a virtual machine
 is not received within this configured interval, the virtual machine is
 marked as failed. The value is in seconds. Default: `30`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3848,13 +3848,13 @@ marked as failed. The value is in seconds. Default: `30`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The length of the reset window in
+    <dd>The length of the reset window in
 which `ha_vm_maximum_resets` can operate. When this
 window expires, no more resets are attempted regardless of the setting
 configured in `ha_vm_maximum_resets`. `-1` means no window, meaning an
 unlimited reset time is allotted. The value is specified in seconds. Default:
 `-1` (no window).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3862,9 +3862,9 @@ unlimited reset time is allotted. The value is specified in seconds. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of resets that HA will
+    <dd>The maximum number of resets that HA will
 perform to a virtual machine when responding to a failure event. Default: `3`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3872,10 +3872,10 @@ perform to a virtual machine when responding to a failure event. Default: `3`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, that HA waits after
+    <dd>The time, in seconds, that HA waits after
 powering on a virtual machine before monitoring for heartbeats. Default:
 `120` (2 minutes).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3883,10 +3883,10 @@ powering on a virtual machine before monitoring for heartbeats. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of virtual machine monitoring to use
+    <dd>The type of virtual machine monitoring to use
 when HA is enabled in the cluster. Can be one of `vmMonitoringDisabled`,
 `vmMonitoringOnly`, or `vmAndAppMonitoring`. Default: `vmMonitoringDisabled`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3894,10 +3894,10 @@ when HA is enabled in the cluster. Can be one of `vmMonitoringDisabled`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Additional delay in seconds
+    <dd>Additional delay in seconds
 after ready condition is met. A VM is considered ready at this point.
 Default: `0` (no delay). <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3905,10 +3905,10 @@ Default: `0` (no delay). <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default restart priority
+    <dd>The default restart priority
 for affected virtual machines when vSphere detects a host failure. Can be one
 of `lowest`, `low`, `medium`, `high`, or `highest`. Default: `medium`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3916,11 +3916,11 @@ of `lowest`, `low`, `medium`, `high`, or `highest`. Default: `medium`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum time, in seconds,
+    <dd>The maximum time, in seconds,
 that vSphere HA will wait for virtual machines in one priority to be ready
 before proceeding with the next priority. Default: `600` (10 minutes).
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3928,10 +3928,10 @@ before proceeding with the next priority. Default: `600` (10 minutes).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The timeout for each host maintenance mode
+    <dd>The timeout for each host maintenance mode
 operation when removing hosts from a cluster. The value is specified in
 seconds. Default: `3600` (1 hour).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3939,9 +3939,9 @@ seconds. Default: `3600` (1 hour).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object IDs][docs-about-morefs] of
+    <dd>The [managed object IDs][docs-about-morefs] of
 the hosts to put in the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3949,8 +3949,8 @@ the hosts to put in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cluster.
-{{% /md %}}</dd>
+    <dd>The name of the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3958,11 +3958,11 @@ the hosts to put in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Determines how the host
+    <dd>Determines how the host
 quarantine, maintenance mode, or virtual machine migration recommendations
 made by proactive HA are to be handled. Can be one of `Automated` or
 `Manual`. Default: `Manual`. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3970,9 +3970,9 @@ made by proactive HA are to be handled. Can be one of `Automated` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables Proactive HA. Default: `false`.
+    <dd>Enables Proactive HA. Default: `false`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3980,13 +3980,13 @@ made by proactive HA are to be handled. Can be one of `Automated` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The configured remediation
+    <dd>The configured remediation
 for moderately degraded hosts. Can be one of `MaintenanceMode` or
 `QuarantineMode`. Note that this cannot be set to `MaintenanceMode` when
 `proactive_ha_severe_remediation` is set
 to `QuarantineMode`. Default: `QuarantineMode`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3994,10 +3994,10 @@ to `QuarantineMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of IDs for health update
+    <dd>The list of IDs for health update
 providers configured for this cluster.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4005,13 +4005,13 @@ providers configured for this cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The configured remediation for
+    <dd>The configured remediation for
 severely degraded hosts. Can be one of `MaintenanceMode` or `QuarantineMode`.
 Note that this cannot be set to `QuarantineMode` when
 `proactive_ha_moderate_remediation` is
 set to `MaintenanceMode`. Default: `QuarantineMode`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4019,8 +4019,8 @@ set to `MaintenanceMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The managed object ID of the cluster's root resource pool.
-{{% /md %}}</dd>
+    <dd>The managed object ID of the cluster's root resource pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4028,15 +4028,15 @@ set to `MaintenanceMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4045,11 +4045,11 @@ set to `MaintenanceMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A map of custom attribute ids to attribute
+    <dd>A map of custom attribute ids to attribute
 value strings to set for the datastore cluster. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4057,9 +4057,9 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object ID][docs-about-morefs] of
+    <dd>The [managed object ID][docs-about-morefs] of
 the datacenter to create the cluster in. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4067,10 +4067,10 @@ the datacenter to create the cluster in. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The automation level for host power
+    <dd>The automation level for host power
 operations in this cluster. Can be one of `manual` or `automated`. Default:
 `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4078,10 +4078,10 @@ operations in this cluster. Can be one of `manual` or `automated`. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable DPM support for DRS in this cluster.
+    <dd>Enable DPM support for DRS in this cluster.
 Requires `drs_enabled` to be `true` in order to be effective.
 Default: `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4089,11 +4089,11 @@ Default: `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}A value between `1` and `5` indicating the
+    <dd>A value between `1` and `5` indicating the
 threshold of load within the cluster that influences host power operations.
 This affects both power on and power off operations - a lower setting will
 tolerate more of a surplus/deficit than a higher setting. Default: `3`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4101,9 +4101,9 @@ tolerate more of a surplus/deficit than a higher setting. Default: `3`.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A key/value map that specifies advanced
+    <dd>A key/value map that specifies advanced
 options for DRS and DPM.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4111,10 +4111,10 @@ options for DRS and DPM.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default automation level for all
+    <dd>The default automation level for all
 virtual machines in this cluster. Can be one of `manual`,
 `partiallyAutomated`, or `fullyAutomated`. Default: `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4122,10 +4122,10 @@ virtual machines in this cluster. Can be one of `manual`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}When `true`, enables DRS to use data
+    <dd>When `true`, enables DRS to use data
 from [vRealize Operations Manager][ref-vsphere-vro] to make proactive DRS
 recommendations. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4133,9 +4133,9 @@ recommendations. <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Allow individual DRS overrides to be
+    <dd>Allow individual DRS overrides to be
 set for virtual machines in the cluster. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4143,8 +4143,8 @@ set for virtual machines in the cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable DRS for this cluster. Default: `false`.
-{{% /md %}}</dd>
+    <dd>Enable DRS for this cluster. Default: `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4152,11 +4152,11 @@ set for virtual machines in the cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}A value between `1` and `5` indicating
+    <dd>A value between `1` and `5` indicating
 the threshold of imbalance tolerated between hosts. A lower setting will
 tolerate more imbalance while a higher setting will tolerate less. Default:
 `3`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4164,8 +4164,8 @@ tolerate more imbalance while a higher setting will tolerate less. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the folder to locate the cluster in.
-{{% /md %}}</dd>
+    <dd>The name of the folder to locate the cluster in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4173,9 +4173,9 @@ tolerate more imbalance while a higher setting will tolerate less. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Force removal of all hosts in the cluster during destroy and make them standalone hosts. Use of this flag mainly exists
+    <dd>Force removal of all hosts in the cluster during destroy and make them standalone hosts. Use of this flag mainly exists
 for testing and is not recommended in normal use.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4183,12 +4183,12 @@ for testing and is not recommended in normal use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Defines the
+    <dd>Defines the
 [managed object IDs][docs-about-morefs] of hosts to use as dedicated failover
 hosts. These hosts are kept as available as possible - admission control will
 block access to the host, and DRS will ignore the host when making
 recommendations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4196,12 +4196,12 @@ recommendations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number
+    <dd>The maximum number
 of failed hosts that admission control tolerates when making decisions on
 whether to permit virtual machine operations. The maximum is one less than
 the number of hosts in the cluster. Default: `1`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4209,11 +4209,11 @@ the number of hosts in the cluster. Default: `1`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The percentage of
+    <dd>The percentage of
 resource reduction that a cluster of virtual machines can tolerate in case of
 a failover. A value of 0 produces warnings only, whereas a value of 100
 disables the setting. Default: `100` (disabled).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4221,10 +4221,10 @@ disables the setting. Default: `100` (disabled).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of admission control
+    <dd>The type of admission control
 policy to use with vSphere HA. Can be one of `resourcePercentage`,
 `slotPolicy`, `failoverHosts`, or `disabled`. Default: `resourcePercentage`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4232,14 +4232,14 @@ policy to use with vSphere HA. Can be one of `resourcePercentage`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}
+    <dd>
 Automatically determine available resource percentages by subtracting the
 average number of host resources represented by the
 `ha_admission_control_host_failure_tolerance`
 setting from the total amount of resources in the cluster. Disable to supply
 user-defined values. Default: `true`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4247,10 +4247,10 @@ user-defined values. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined percentage of CPU resources in the cluster to reserve for
 failover. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4258,10 +4258,10 @@ failover. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined percentage of memory resources in the cluster to reserve for
 failover. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4269,9 +4269,9 @@ failover. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined CPU slot size, in MHz. Default: `32`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4279,9 +4279,9 @@ user-defined CPU slot size, in MHz. Default: `32`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined memory slot size, in MB. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4289,11 +4289,11 @@ user-defined memory slot size, in MB. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Controls
+    <dd>Controls
 whether or not you wish to supply explicit values to CPU and memory slot
 sizes. The default is `false`, which tells vSphere to gather a automatic
 average based on all powered-on virtual machines currently in the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4301,9 +4301,9 @@ average based on all powered-on virtual machines currently in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A key/value map that specifies advanced
+    <dd>A key/value map that specifies advanced
 options for vSphere HA.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4311,11 +4311,11 @@ options for vSphere HA.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take
+    <dd>Controls the action to take
 on virtual machines if an APD status on an affected datastore clears in the
 middle of an APD event. Can be one of `none` or `reset`. Default: `none`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4323,12 +4323,12 @@ middle of an APD event. Can be one of `none` or `reset`. Default: `none`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take on
+    <dd>Controls the action to take on
 virtual machines when the cluster has detected loss to all paths to a
 relevant datastore. Can be one of `disabled`, `warning`,
 `restartConservative`, or `restartAggressive`.  Default: `disabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4336,11 +4336,11 @@ relevant datastore. Can be one of `disabled`, `warning`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Controls the delay in minutes
+    <dd>Controls the delay in minutes
 to wait after an APD timeout event to execute the response action defined in
 `ha_datastore_apd_response`. Default: `3`
 minutes. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4348,12 +4348,12 @@ minutes. <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take on
+    <dd>Controls the action to take on
 virtual machines when the cluster has detected a permanent device loss to a
 relevant datastore. Can be one of `disabled`, `warning`, or
 `restartAggressive`. Default: `disabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4361,9 +4361,9 @@ relevant datastore. Can be one of `disabled`, `warning`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable vSphere HA for this cluster. Default:
+    <dd>Enable vSphere HA for this cluster. Default:
 `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4371,11 +4371,11 @@ relevant datastore. Can be one of `disabled`, `warning`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of managed object IDs for
+    <dd>The list of managed object IDs for
 preferred datastores to use for HA heartbeating. This setting is only useful
 when `ha_heartbeat_datastore_policy` is set
 to either `userSelectedDs` or `allFeasibleDsWithUserPreference`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4383,11 +4383,11 @@ to either `userSelectedDs` or `allFeasibleDsWithUserPreference`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The selection policy for HA
+    <dd>The selection policy for HA
 heartbeat datastores. Can be one of `allFeasibleDs`, `userSelectedDs`, or
 `allFeasibleDsWithUserPreference`. Default:
 `allFeasibleDsWithUserPreference`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4395,11 +4395,11 @@ heartbeat datastores. Can be one of `allFeasibleDs`, `userSelectedDs`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The action to take on virtual
+    <dd>The action to take on virtual
 machines when a host has detected that it has been isolated from the rest of
 the cluster. Can be one of `none`, `powerOff`, or `shutdown`. Default:
 `none`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4407,10 +4407,10 @@ the cluster. Can be one of `none`, `powerOff`, or `shutdown`. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Global setting that controls whether
+    <dd>Global setting that controls whether
 vSphere HA remediates virtual machines on host failure. Can be one of `enabled`
 or `disabled`. Default: `enabled`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4418,11 +4418,11 @@ or `disabled`. Default: `enabled`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls vSphere VM component
+    <dd>Controls vSphere VM component
 protection for virtual machines in this cluster. Can be one of `enabled` or
 `disabled`. Default: `enabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4430,14 +4430,14 @@ protection for virtual machines in this cluster. Can be one of `enabled` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The condition used to
+    <dd>The condition used to
 determine whether or not virtual machines in a certain restart priority class
 are online, allowing HA to move on to restarting virtual machines on the next
 priority. Can be one of `none`, `poweredOn`, `guestHbStatusGreen`, or
 `appHbStatusGreen`. The default is `none`, which means that a virtual machine
 is considered ready immediately after a host is found to start it on.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4445,10 +4445,10 @@ is considered ready immediately after a host is found to start it on.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}If a heartbeat from a virtual machine
+    <dd>If a heartbeat from a virtual machine
 is not received within this configured interval, the virtual machine is
 marked as failed. The value is in seconds. Default: `30`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4456,13 +4456,13 @@ marked as failed. The value is in seconds. Default: `30`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The length of the reset window in
+    <dd>The length of the reset window in
 which `ha_vm_maximum_resets` can operate. When this
 window expires, no more resets are attempted regardless of the setting
 configured in `ha_vm_maximum_resets`. `-1` means no window, meaning an
 unlimited reset time is allotted. The value is specified in seconds. Default:
 `-1` (no window).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4470,9 +4470,9 @@ unlimited reset time is allotted. The value is specified in seconds. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of resets that HA will
+    <dd>The maximum number of resets that HA will
 perform to a virtual machine when responding to a failure event. Default: `3`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4480,10 +4480,10 @@ perform to a virtual machine when responding to a failure event. Default: `3`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, that HA waits after
+    <dd>The time, in seconds, that HA waits after
 powering on a virtual machine before monitoring for heartbeats. Default:
 `120` (2 minutes).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4491,10 +4491,10 @@ powering on a virtual machine before monitoring for heartbeats. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of virtual machine monitoring to use
+    <dd>The type of virtual machine monitoring to use
 when HA is enabled in the cluster. Can be one of `vmMonitoringDisabled`,
 `vmMonitoringOnly`, or `vmAndAppMonitoring`. Default: `vmMonitoringDisabled`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4502,10 +4502,10 @@ when HA is enabled in the cluster. Can be one of `vmMonitoringDisabled`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Additional delay in seconds
+    <dd>Additional delay in seconds
 after ready condition is met. A VM is considered ready at this point.
 Default: `0` (no delay). <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4513,10 +4513,10 @@ Default: `0` (no delay). <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The default restart priority
+    <dd>The default restart priority
 for affected virtual machines when vSphere detects a host failure. Can be one
 of `lowest`, `low`, `medium`, `high`, or `highest`. Default: `medium`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4524,11 +4524,11 @@ of `lowest`, `low`, `medium`, `high`, or `highest`. Default: `medium`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum time, in seconds,
+    <dd>The maximum time, in seconds,
 that vSphere HA will wait for virtual machines in one priority to be ready
 before proceeding with the next priority. Default: `600` (10 minutes).
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4536,10 +4536,10 @@ before proceeding with the next priority. Default: `600` (10 minutes).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The timeout for each host maintenance mode
+    <dd>The timeout for each host maintenance mode
 operation when removing hosts from a cluster. The value is specified in
 seconds. Default: `3600` (1 hour).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4547,9 +4547,9 @@ seconds. Default: `3600` (1 hour).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object IDs][docs-about-morefs] of
+    <dd>The [managed object IDs][docs-about-morefs] of
 the hosts to put in the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4557,8 +4557,8 @@ the hosts to put in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cluster.
-{{% /md %}}</dd>
+    <dd>The name of the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4566,11 +4566,11 @@ the hosts to put in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Determines how the host
+    <dd>Determines how the host
 quarantine, maintenance mode, or virtual machine migration recommendations
 made by proactive HA are to be handled. Can be one of `Automated` or
 `Manual`. Default: `Manual`. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4578,9 +4578,9 @@ made by proactive HA are to be handled. Can be one of `Automated` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enables Proactive HA. Default: `false`.
+    <dd>Enables Proactive HA. Default: `false`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4588,13 +4588,13 @@ made by proactive HA are to be handled. Can be one of `Automated` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The configured remediation
+    <dd>The configured remediation
 for moderately degraded hosts. Can be one of `MaintenanceMode` or
 `QuarantineMode`. Note that this cannot be set to `MaintenanceMode` when
 `proactive_ha_severe_remediation` is set
 to `QuarantineMode`. Default: `QuarantineMode`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4602,10 +4602,10 @@ to `QuarantineMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of IDs for health update
+    <dd>The list of IDs for health update
 providers configured for this cluster.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4613,13 +4613,13 @@ providers configured for this cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The configured remediation for
+    <dd>The configured remediation for
 severely degraded hosts. Can be one of `MaintenanceMode` or `QuarantineMode`.
 Note that this cannot be set to `QuarantineMode` when
 `proactive_ha_moderate_remediation` is
 set to `MaintenanceMode`. Default: `QuarantineMode`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4627,8 +4627,8 @@ set to `MaintenanceMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The managed object ID of the cluster's root resource pool.
-{{% /md %}}</dd>
+    <dd>The managed object ID of the cluster's root resource pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4636,15 +4636,15 @@ set to `MaintenanceMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4653,11 +4653,11 @@ set to `MaintenanceMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A map of custom attribute ids to attribute
+    <dd>A map of custom attribute ids to attribute
 value strings to set for the datastore cluster. See
 [here][docs-setting-custom-attributes] for a reference on how to set values
 for custom attributes.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4665,9 +4665,9 @@ for custom attributes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object ID][docs-about-morefs] of
+    <dd>The [managed object ID][docs-about-morefs] of
 the datacenter to create the cluster in. Forces a new resource if changed.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4675,10 +4675,10 @@ the datacenter to create the cluster in. Forces a new resource if changed.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The automation level for host power
+    <dd>The automation level for host power
 operations in this cluster. Can be one of `manual` or `automated`. Default:
 `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4686,10 +4686,10 @@ operations in this cluster. Can be one of `manual` or `automated`. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable DPM support for DRS in this cluster.
+    <dd>Enable DPM support for DRS in this cluster.
 Requires `drs_enabled` to be `true` in order to be effective.
 Default: `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4697,11 +4697,11 @@ Default: `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}A value between `1` and `5` indicating the
+    <dd>A value between `1` and `5` indicating the
 threshold of load within the cluster that influences host power operations.
 This affects both power on and power off operations - a lower setting will
 tolerate more of a surplus/deficit than a higher setting. Default: `3`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4709,9 +4709,9 @@ tolerate more of a surplus/deficit than a higher setting. Default: `3`.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A key/value map that specifies advanced
+    <dd>A key/value map that specifies advanced
 options for DRS and DPM.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4719,10 +4719,10 @@ options for DRS and DPM.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The default automation level for all
+    <dd>The default automation level for all
 virtual machines in this cluster. Can be one of `manual`,
 `partiallyAutomated`, or `fullyAutomated`. Default: `manual`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4730,10 +4730,10 @@ virtual machines in this cluster. Can be one of `manual`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}When `true`, enables DRS to use data
+    <dd>When `true`, enables DRS to use data
 from [vRealize Operations Manager][ref-vsphere-vro] to make proactive DRS
 recommendations. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4741,9 +4741,9 @@ recommendations. <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Allow individual DRS overrides to be
+    <dd>Allow individual DRS overrides to be
 set for virtual machines in the cluster. Default: `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4751,8 +4751,8 @@ set for virtual machines in the cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable DRS for this cluster. Default: `false`.
-{{% /md %}}</dd>
+    <dd>Enable DRS for this cluster. Default: `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4760,11 +4760,11 @@ set for virtual machines in the cluster. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}A value between `1` and `5` indicating
+    <dd>A value between `1` and `5` indicating
 the threshold of imbalance tolerated between hosts. A lower setting will
 tolerate more imbalance while a higher setting will tolerate less. Default:
 `3`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4772,8 +4772,8 @@ tolerate more imbalance while a higher setting will tolerate less. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the folder to locate the cluster in.
-{{% /md %}}</dd>
+    <dd>The name of the folder to locate the cluster in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4781,9 +4781,9 @@ tolerate more imbalance while a higher setting will tolerate less. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Force removal of all hosts in the cluster during destroy and make them standalone hosts. Use of this flag mainly exists
+    <dd>Force removal of all hosts in the cluster during destroy and make them standalone hosts. Use of this flag mainly exists
 for testing and is not recommended in normal use.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4791,12 +4791,12 @@ for testing and is not recommended in normal use.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Defines the
+    <dd>Defines the
 [managed object IDs][docs-about-morefs] of hosts to use as dedicated failover
 hosts. These hosts are kept as available as possible - admission control will
 block access to the host, and DRS will ignore the host when making
 recommendations.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4804,12 +4804,12 @@ recommendations.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number
+    <dd>The maximum number
 of failed hosts that admission control tolerates when making decisions on
 whether to permit virtual machine operations. The maximum is one less than
 the number of hosts in the cluster. Default: `1`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4817,11 +4817,11 @@ the number of hosts in the cluster. Default: `1`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The percentage of
+    <dd>The percentage of
 resource reduction that a cluster of virtual machines can tolerate in case of
 a failover. A value of 0 produces warnings only, whereas a value of 100
 disables the setting. Default: `100` (disabled).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4829,10 +4829,10 @@ disables the setting. Default: `100` (disabled).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of admission control
+    <dd>The type of admission control
 policy to use with vSphere HA. Can be one of `resourcePercentage`,
 `slotPolicy`, `failoverHosts`, or `disabled`. Default: `resourcePercentage`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4840,14 +4840,14 @@ policy to use with vSphere HA. Can be one of `resourcePercentage`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}
+    <dd>
 Automatically determine available resource percentages by subtracting the
 average number of host resources represented by the
 `ha_admission_control_host_failure_tolerance`
 setting from the total amount of resources in the cluster. Disable to supply
 user-defined values. Default: `true`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4855,10 +4855,10 @@ user-defined values. Default: `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined percentage of CPU resources in the cluster to reserve for
 failover. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4866,10 +4866,10 @@ failover. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined percentage of memory resources in the cluster to reserve for
 failover. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4877,9 +4877,9 @@ failover. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined CPU slot size, in MHz. Default: `32`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4887,9 +4887,9 @@ user-defined CPU slot size, in MHz. Default: `32`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Controls the
+    <dd>Controls the
 user-defined memory slot size, in MB. Default: `100`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4897,11 +4897,11 @@ user-defined memory slot size, in MB. Default: `100`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Controls
+    <dd>Controls
 whether or not you wish to supply explicit values to CPU and memory slot
 sizes. The default is `false`, which tells vSphere to gather a automatic
 average based on all powered-on virtual machines currently in the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4909,9 +4909,9 @@ average based on all powered-on virtual machines currently in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A key/value map that specifies advanced
+    <dd>A key/value map that specifies advanced
 options for vSphere HA.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4919,11 +4919,11 @@ options for vSphere HA.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take
+    <dd>Controls the action to take
 on virtual machines if an APD status on an affected datastore clears in the
 middle of an APD event. Can be one of `none` or `reset`. Default: `none`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4931,12 +4931,12 @@ middle of an APD event. Can be one of `none` or `reset`. Default: `none`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take on
+    <dd>Controls the action to take on
 virtual machines when the cluster has detected loss to all paths to a
 relevant datastore. Can be one of `disabled`, `warning`,
 `restartConservative`, or `restartAggressive`.  Default: `disabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4944,11 +4944,11 @@ relevant datastore. Can be one of `disabled`, `warning`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Controls the delay in minutes
+    <dd>Controls the delay in minutes
 to wait after an APD timeout event to execute the response action defined in
 `ha_datastore_apd_response`. Default: `3`
 minutes. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4956,12 +4956,12 @@ minutes. <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Controls the action to take on
+    <dd>Controls the action to take on
 virtual machines when the cluster has detected a permanent device loss to a
 relevant datastore. Can be one of `disabled`, `warning`, or
 `restartAggressive`. Default: `disabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4969,9 +4969,9 @@ relevant datastore. Can be one of `disabled`, `warning`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable vSphere HA for this cluster. Default:
+    <dd>Enable vSphere HA for this cluster. Default:
 `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4979,11 +4979,11 @@ relevant datastore. Can be one of `disabled`, `warning`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of managed object IDs for
+    <dd>The list of managed object IDs for
 preferred datastores to use for HA heartbeating. This setting is only useful
 when `ha_heartbeat_datastore_policy` is set
 to either `userSelectedDs` or `allFeasibleDsWithUserPreference`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4991,11 +4991,11 @@ to either `userSelectedDs` or `allFeasibleDsWithUserPreference`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The selection policy for HA
+    <dd>The selection policy for HA
 heartbeat datastores. Can be one of `allFeasibleDs`, `userSelectedDs`, or
 `allFeasibleDsWithUserPreference`. Default:
 `allFeasibleDsWithUserPreference`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5003,11 +5003,11 @@ heartbeat datastores. Can be one of `allFeasibleDs`, `userSelectedDs`, or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The action to take on virtual
+    <dd>The action to take on virtual
 machines when a host has detected that it has been isolated from the rest of
 the cluster. Can be one of `none`, `powerOff`, or `shutdown`. Default:
 `none`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5015,10 +5015,10 @@ the cluster. Can be one of `none`, `powerOff`, or `shutdown`. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Global setting that controls whether
+    <dd>Global setting that controls whether
 vSphere HA remediates virtual machines on host failure. Can be one of `enabled`
 or `disabled`. Default: `enabled`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5026,11 +5026,11 @@ or `disabled`. Default: `enabled`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Controls vSphere VM component
+    <dd>Controls vSphere VM component
 protection for virtual machines in this cluster. Can be one of `enabled` or
 `disabled`. Default: `enabled`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5038,14 +5038,14 @@ protection for virtual machines in this cluster. Can be one of `enabled` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The condition used to
+    <dd>The condition used to
 determine whether or not virtual machines in a certain restart priority class
 are online, allowing HA to move on to restarting virtual machines on the next
 priority. Can be one of `none`, `poweredOn`, `guestHbStatusGreen`, or
 `appHbStatusGreen`. The default is `none`, which means that a virtual machine
 is considered ready immediately after a host is found to start it on.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5053,10 +5053,10 @@ is considered ready immediately after a host is found to start it on.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}If a heartbeat from a virtual machine
+    <dd>If a heartbeat from a virtual machine
 is not received within this configured interval, the virtual machine is
 marked as failed. The value is in seconds. Default: `30`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5064,13 +5064,13 @@ marked as failed. The value is in seconds. Default: `30`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The length of the reset window in
+    <dd>The length of the reset window in
 which `ha_vm_maximum_resets` can operate. When this
 window expires, no more resets are attempted regardless of the setting
 configured in `ha_vm_maximum_resets`. `-1` means no window, meaning an
 unlimited reset time is allotted. The value is specified in seconds. Default:
 `-1` (no window).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5078,9 +5078,9 @@ unlimited reset time is allotted. The value is specified in seconds. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of resets that HA will
+    <dd>The maximum number of resets that HA will
 perform to a virtual machine when responding to a failure event. Default: `3`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5088,10 +5088,10 @@ perform to a virtual machine when responding to a failure event. Default: `3`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, that HA waits after
+    <dd>The time, in seconds, that HA waits after
 powering on a virtual machine before monitoring for heartbeats. Default:
 `120` (2 minutes).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5099,10 +5099,10 @@ powering on a virtual machine before monitoring for heartbeats. Default:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of virtual machine monitoring to use
+    <dd>The type of virtual machine monitoring to use
 when HA is enabled in the cluster. Can be one of `vmMonitoringDisabled`,
 `vmMonitoringOnly`, or `vmAndAppMonitoring`. Default: `vmMonitoringDisabled`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5110,10 +5110,10 @@ when HA is enabled in the cluster. Can be one of `vmMonitoringDisabled`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Additional delay in seconds
+    <dd>Additional delay in seconds
 after ready condition is met. A VM is considered ready at this point.
 Default: `0` (no delay). <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5121,10 +5121,10 @@ Default: `0` (no delay). <sup>\*</sup>
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The default restart priority
+    <dd>The default restart priority
 for affected virtual machines when vSphere detects a host failure. Can be one
 of `lowest`, `low`, `medium`, `high`, or `highest`. Default: `medium`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5132,11 +5132,11 @@ of `lowest`, `low`, `medium`, `high`, or `highest`. Default: `medium`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum time, in seconds,
+    <dd>The maximum time, in seconds,
 that vSphere HA will wait for virtual machines in one priority to be ready
 before proceeding with the next priority. Default: `600` (10 minutes).
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5144,10 +5144,10 @@ before proceeding with the next priority. Default: `600` (10 minutes).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The timeout for each host maintenance mode
+    <dd>The timeout for each host maintenance mode
 operation when removing hosts from a cluster. The value is specified in
 seconds. Default: `3600` (1 hour).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5155,9 +5155,9 @@ seconds. Default: `3600` (1 hour).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The [managed object IDs][docs-about-morefs] of
+    <dd>The [managed object IDs][docs-about-morefs] of
 the hosts to put in the cluster.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5165,8 +5165,8 @@ the hosts to put in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the cluster.
-{{% /md %}}</dd>
+    <dd>The name of the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5174,11 +5174,11 @@ the hosts to put in the cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Determines how the host
+    <dd>Determines how the host
 quarantine, maintenance mode, or virtual machine migration recommendations
 made by proactive HA are to be handled. Can be one of `Automated` or
 `Manual`. Default: `Manual`. <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5186,9 +5186,9 @@ made by proactive HA are to be handled. Can be one of `Automated` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enables Proactive HA. Default: `false`.
+    <dd>Enables Proactive HA. Default: `false`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5196,13 +5196,13 @@ made by proactive HA are to be handled. Can be one of `Automated` or
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The configured remediation
+    <dd>The configured remediation
 for moderately degraded hosts. Can be one of `MaintenanceMode` or
 `QuarantineMode`. Note that this cannot be set to `MaintenanceMode` when
 `proactive_ha_severe_remediation` is set
 to `QuarantineMode`. Default: `QuarantineMode`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5210,10 +5210,10 @@ to `QuarantineMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of IDs for health update
+    <dd>The list of IDs for health update
 providers configured for this cluster.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5221,13 +5221,13 @@ providers configured for this cluster.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The configured remediation for
+    <dd>The configured remediation for
 severely degraded hosts. Can be one of `MaintenanceMode` or `QuarantineMode`.
 Note that this cannot be set to `QuarantineMode` when
 `proactive_ha_moderate_remediation` is
 set to `MaintenanceMode`. Default: `QuarantineMode`.
 <sup>\*</sup>
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5235,8 +5235,8 @@ set to `MaintenanceMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The managed object ID of the cluster's root resource pool.
-{{% /md %}}</dd>
+    <dd>The managed object ID of the cluster's root resource pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5244,12 +5244,12 @@ set to `MaintenanceMode`. Default: `QuarantineMode`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The IDs of any tags to attach to this resource. See
+    <dd>The IDs of any tags to attach to this resource. See
 [here][docs-applying-tags] for a reference on how to apply tags.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

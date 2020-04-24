@@ -89,26 +89,26 @@ const redis = new consul.Service("redis", {
 
 
 ## Create a Service Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/consul/#Service">Service</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/consul/#ServiceArgs">ServiceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Service</span><span class="p">(resource_name, opts=None, </span>address=None<span class="p">, </span>checks=None<span class="p">, </span>datacenter=None<span class="p">, </span>external=None<span class="p">, </span>meta=None<span class="p">, </span>name=None<span class="p">, </span>namespace=None<span class="p">, </span>node=None<span class="p">, </span>port=None<span class="p">, </span>service_id=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewService<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#ServiceArgs">ServiceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#Service">Service</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Consul/Pulumi.Consul.Service.html">Service</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Consul/Pulumi.Consul.ServiceArgs.html">ServiceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -145,9 +145,9 @@ const redis = new consul.Service("redis", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -165,9 +165,9 @@ const redis = new consul.Service("redis", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -214,9 +214,9 @@ const redis = new consul.Service("redis", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -253,7 +253,7 @@ const redis = new consul.Service("redis", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Service Resource Properties {#properties}
 
@@ -266,7 +266,7 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -275,8 +275,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the node the to register the service on.
-{{% /md %}}</dd>
+    <dd>The name of the node the to register the service on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,9 +284,9 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of the service. Defaults to the
+    <dd>The address of the service. Defaults to the
 address of the node.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -294,7 +294,7 @@ address of the node.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicecheck">List&lt;Service<wbr>Check<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -302,9 +302,9 @@ address of the node.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The datacenter to use. This overrides the
+    <dd>The datacenter to use. This overrides the
 agent's default datacenter and the datacenter in the provider setup.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -312,7 +312,7 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}The external field has been deprecated and does nothing.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: The external field has been deprecated and does nothing.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -320,9 +320,9 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of arbitrary KV metadata linked to the service
+    <dd>A map of arbitrary KV metadata linked to the service
 instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -330,8 +330,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the health-check.
-{{% /md %}}</dd>
+    <dd>The name of the health-check.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -339,8 +339,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to create the service within.
-{{% /md %}}</dd>
+    <dd>The namespace to create the service within.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -348,8 +348,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port of the service.
-{{% /md %}}</dd>
+    <dd>The port of the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -357,8 +357,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the service.
-{{% /md %}}</dd>
+    <dd>The ID of the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -366,15 +366,15 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of values that are opaque to Consul,
+    <dd>A list of values that are opaque to Consul,
 but can be used to distinguish between services or nodes.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -383,8 +383,8 @@ but can be used to distinguish between services or nodes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the node the to register the service on.
-{{% /md %}}</dd>
+    <dd>The name of the node the to register the service on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -392,9 +392,9 @@ but can be used to distinguish between services or nodes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of the service. Defaults to the
+    <dd>The address of the service. Defaults to the
 address of the node.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -402,7 +402,7 @@ address of the node.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicecheck">[]Service<wbr>Check</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -410,9 +410,9 @@ address of the node.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The datacenter to use. This overrides the
+    <dd>The datacenter to use. This overrides the
 agent's default datacenter and the datacenter in the provider setup.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -420,7 +420,7 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}The external field has been deprecated and does nothing.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: The external field has been deprecated and does nothing.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -428,9 +428,9 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A map of arbitrary KV metadata linked to the service
+    <dd>A map of arbitrary KV metadata linked to the service
 instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -438,8 +438,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the health-check.
-{{% /md %}}</dd>
+    <dd>The name of the health-check.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -447,8 +447,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to create the service within.
-{{% /md %}}</dd>
+    <dd>The namespace to create the service within.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -456,8 +456,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port of the service.
-{{% /md %}}</dd>
+    <dd>The port of the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -465,8 +465,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the service.
-{{% /md %}}</dd>
+    <dd>The ID of the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -474,15 +474,15 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of values that are opaque to Consul,
+    <dd>A list of values that are opaque to Consul,
 but can be used to distinguish between services or nodes.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -491,8 +491,8 @@ but can be used to distinguish between services or nodes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the node the to register the service on.
-{{% /md %}}</dd>
+    <dd>The name of the node the to register the service on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -500,9 +500,9 @@ but can be used to distinguish between services or nodes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of the service. Defaults to the
+    <dd>The address of the service. Defaults to the
 address of the node.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -510,7 +510,7 @@ address of the node.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicecheck">Service<wbr>Check[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -518,9 +518,9 @@ address of the node.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The datacenter to use. This overrides the
+    <dd>The datacenter to use. This overrides the
 agent's default datacenter and the datacenter in the provider setup.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -528,7 +528,7 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}The external field has been deprecated and does nothing.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: The external field has been deprecated and does nothing.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -536,9 +536,9 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A map of arbitrary KV metadata linked to the service
+    <dd>A map of arbitrary KV metadata linked to the service
 instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -546,8 +546,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the health-check.
-{{% /md %}}</dd>
+    <dd>The name of the health-check.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -555,8 +555,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to create the service within.
-{{% /md %}}</dd>
+    <dd>The namespace to create the service within.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -564,8 +564,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port of the service.
-{{% /md %}}</dd>
+    <dd>The port of the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -573,8 +573,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the service.
-{{% /md %}}</dd>
+    <dd>The ID of the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -582,15 +582,15 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of values that are opaque to Consul,
+    <dd>A list of values that are opaque to Consul,
 but can be used to distinguish between services or nodes.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -599,8 +599,8 @@ but can be used to distinguish between services or nodes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the node the to register the service on.
-{{% /md %}}</dd>
+    <dd>The name of the node the to register the service on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -608,9 +608,9 @@ but can be used to distinguish between services or nodes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The address of the service. Defaults to the
+    <dd>The address of the service. Defaults to the
 address of the node.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -618,7 +618,7 @@ address of the node.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicecheck">List[Service<wbr>Check]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -626,9 +626,9 @@ address of the node.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The datacenter to use. This overrides the
+    <dd>The datacenter to use. This overrides the
 agent's default datacenter and the datacenter in the provider setup.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -636,7 +636,7 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}The external field has been deprecated and does nothing.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: The external field has been deprecated and does nothing.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -644,9 +644,9 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A map of arbitrary KV metadata linked to the service
+    <dd>A map of arbitrary KV metadata linked to the service
 instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -654,8 +654,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the health-check.
-{{% /md %}}</dd>
+    <dd>The name of the health-check.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -663,8 +663,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to create the service within.
-{{% /md %}}</dd>
+    <dd>The namespace to create the service within.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -672,8 +672,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port of the service.
-{{% /md %}}</dd>
+    <dd>The port of the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -681,8 +681,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the service.
-{{% /md %}}</dd>
+    <dd>The ID of the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -690,12 +690,12 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of values that are opaque to Consul,
+    <dd>A list of values that are opaque to Consul,
 but can be used to distinguish between services or nodes.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -709,7 +709,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -718,13 +718,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -733,13 +733,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -748,13 +748,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -763,10 +763,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -777,25 +777,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Service Resource {#look-up}
 
 Get an existing Service resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/consul/#ServiceState">ServiceState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/consul/#Service">Service</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>address=None<span class="p">, </span>checks=None<span class="p">, </span>datacenter=None<span class="p">, </span>external=None<span class="p">, </span>meta=None<span class="p">, </span>name=None<span class="p">, </span>namespace=None<span class="p">, </span>node=None<span class="p">, </span>port=None<span class="p">, </span>service_id=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetService<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#ServiceState">ServiceState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#Service">Service</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Consul/Pulumi.Consul.Service.html">Service</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Consul/Pulumi.Consul..ServiceState.html">ServiceState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -820,9 +820,9 @@ Get an existing Service resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -835,36 +835,9 @@ Get an existing Service resource's state with the given name, ID, and optional e
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -889,13 +862,40 @@ Get an existing Service resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -904,9 +904,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of the service. Defaults to the
+    <dd>The address of the service. Defaults to the
 address of the node.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -914,7 +914,7 @@ address of the node.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicecheck">List&lt;Service<wbr>Check<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -922,9 +922,9 @@ address of the node.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The datacenter to use. This overrides the
+    <dd>The datacenter to use. This overrides the
 agent's default datacenter and the datacenter in the provider setup.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -932,7 +932,7 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}The external field has been deprecated and does nothing.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: The external field has been deprecated and does nothing.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -940,9 +940,9 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of arbitrary KV metadata linked to the service
+    <dd>A map of arbitrary KV metadata linked to the service
 instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -950,8 +950,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the health-check.
-{{% /md %}}</dd>
+    <dd>The name of the health-check.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -959,8 +959,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to create the service within.
-{{% /md %}}</dd>
+    <dd>The namespace to create the service within.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -968,8 +968,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the node the to register the service on.
-{{% /md %}}</dd>
+    <dd>The name of the node the to register the service on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -977,8 +977,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port of the service.
-{{% /md %}}</dd>
+    <dd>The port of the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -986,8 +986,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the service.
-{{% /md %}}</dd>
+    <dd>The ID of the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -995,15 +995,15 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of values that are opaque to Consul,
+    <dd>A list of values that are opaque to Consul,
 but can be used to distinguish between services or nodes.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1012,9 +1012,9 @@ but can be used to distinguish between services or nodes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of the service. Defaults to the
+    <dd>The address of the service. Defaults to the
 address of the node.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1022,7 +1022,7 @@ address of the node.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicecheck">[]Service<wbr>Check</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1030,9 +1030,9 @@ address of the node.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The datacenter to use. This overrides the
+    <dd>The datacenter to use. This overrides the
 agent's default datacenter and the datacenter in the provider setup.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1040,7 +1040,7 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}The external field has been deprecated and does nothing.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: The external field has been deprecated and does nothing.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1048,9 +1048,9 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A map of arbitrary KV metadata linked to the service
+    <dd>A map of arbitrary KV metadata linked to the service
 instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1058,8 +1058,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the health-check.
-{{% /md %}}</dd>
+    <dd>The name of the health-check.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1067,8 +1067,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to create the service within.
-{{% /md %}}</dd>
+    <dd>The namespace to create the service within.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1076,8 +1076,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the node the to register the service on.
-{{% /md %}}</dd>
+    <dd>The name of the node the to register the service on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1085,8 +1085,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port of the service.
-{{% /md %}}</dd>
+    <dd>The port of the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1094,8 +1094,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the service.
-{{% /md %}}</dd>
+    <dd>The ID of the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1103,15 +1103,15 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of values that are opaque to Consul,
+    <dd>A list of values that are opaque to Consul,
 but can be used to distinguish between services or nodes.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1120,9 +1120,9 @@ but can be used to distinguish between services or nodes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of the service. Defaults to the
+    <dd>The address of the service. Defaults to the
 address of the node.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1130,7 +1130,7 @@ address of the node.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicecheck">Service<wbr>Check[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1138,9 +1138,9 @@ address of the node.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The datacenter to use. This overrides the
+    <dd>The datacenter to use. This overrides the
 agent's default datacenter and the datacenter in the provider setup.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1148,7 +1148,7 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}The external field has been deprecated and does nothing.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: The external field has been deprecated and does nothing.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1156,9 +1156,9 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A map of arbitrary KV metadata linked to the service
+    <dd>A map of arbitrary KV metadata linked to the service
 instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1166,8 +1166,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the health-check.
-{{% /md %}}</dd>
+    <dd>The name of the health-check.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1175,8 +1175,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to create the service within.
-{{% /md %}}</dd>
+    <dd>The namespace to create the service within.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1184,8 +1184,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the node the to register the service on.
-{{% /md %}}</dd>
+    <dd>The name of the node the to register the service on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1193,8 +1193,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port of the service.
-{{% /md %}}</dd>
+    <dd>The port of the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1202,8 +1202,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the service.
-{{% /md %}}</dd>
+    <dd>The ID of the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1211,15 +1211,15 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of values that are opaque to Consul,
+    <dd>A list of values that are opaque to Consul,
 but can be used to distinguish between services or nodes.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1228,9 +1228,9 @@ but can be used to distinguish between services or nodes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The address of the service. Defaults to the
+    <dd>The address of the service. Defaults to the
 address of the node.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1238,7 +1238,7 @@ address of the node.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicecheck">List[Service<wbr>Check]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1246,9 +1246,9 @@ address of the node.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The datacenter to use. This overrides the
+    <dd>The datacenter to use. This overrides the
 agent's default datacenter and the datacenter in the provider setup.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1256,7 +1256,7 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}The external field has been deprecated and does nothing.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: The external field has been deprecated and does nothing.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1264,9 +1264,9 @@ agent's default datacenter and the datacenter in the provider setup.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A map of arbitrary KV metadata linked to the service
+    <dd>A map of arbitrary KV metadata linked to the service
 instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1274,8 +1274,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the health-check.
-{{% /md %}}</dd>
+    <dd>The name of the health-check.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1283,8 +1283,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to create the service within.
-{{% /md %}}</dd>
+    <dd>The namespace to create the service within.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1292,8 +1292,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the node the to register the service on.
-{{% /md %}}</dd>
+    <dd>The name of the node the to register the service on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1301,8 +1301,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port of the service.
-{{% /md %}}</dd>
+    <dd>The port of the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1310,8 +1310,8 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the service.
-{{% /md %}}</dd>
+    <dd>The ID of the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1319,12 +1319,12 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of values that are opaque to Consul,
+    <dd>A list of values that are opaque to Consul,
 but can be used to distinguish between services or nodes.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1339,18 +1339,18 @@ but can be used to distinguish between services or nodes.
 
 
 <h4 id="servicecheck">Service<wbr>Check</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/consul/types/input/#ServiceCheck">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/consul/types/output/#ServiceCheck">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#ServiceCheckArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#ServiceCheckOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1359,9 +1359,9 @@ but can be used to distinguish between services or nodes.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An ID, *unique per agent*. Will default to *name*
+    <dd>An ID, *unique per agent*. Will default to *name*
 if not set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1369,9 +1369,9 @@ if not set.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The interval to wait between each health-check
+    <dd>The interval to wait between each health-check
 invocation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1379,8 +1379,8 @@ invocation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the health-check.
-{{% /md %}}</dd>
+    <dd>The name of the health-check.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1388,8 +1388,8 @@ invocation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The timeout value for HTTP checks.
-{{% /md %}}</dd>
+    <dd>The timeout value for HTTP checks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1397,10 +1397,10 @@ invocation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time after which
+    <dd>The time after which
 the service is automatically deregistered when in the `critical` state.
 Defaults to `30s`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1408,9 +1408,9 @@ Defaults to `30s`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicecheckheader">List&lt;Service<wbr>Check<wbr>Header<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The headers to send for an HTTP check.
+    <dd>The headers to send for an HTTP check.
 The attributes of each header is given below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1418,8 +1418,8 @@ The attributes of each header is given below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP endpoint to call for an HTTP check.
-{{% /md %}}</dd>
+    <dd>The HTTP endpoint to call for an HTTP check.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1427,9 +1427,9 @@ The attributes of each header is given below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The method to use for HTTP health-checks. Defaults
+    <dd>The method to use for HTTP health-checks. Defaults
 to `GET`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1437,8 +1437,8 @@ to `GET`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An opaque field meant to hold human readable text.
-{{% /md %}}</dd>
+    <dd>An opaque field meant to hold human readable text.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1446,8 +1446,8 @@ to `GET`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The initial health-check status.
-{{% /md %}}</dd>
+    <dd>The initial health-check status.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1455,8 +1455,8 @@ to `GET`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The TCP address and port to connect to for a TCP check.
-{{% /md %}}</dd>
+    <dd>The TCP address and port to connect to for a TCP check.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1464,15 +1464,15 @@ to `GET`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to deactivate certificate
+    <dd>Whether to deactivate certificate
 verification for HTTP health-checks. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1481,9 +1481,9 @@ verification for HTTP health-checks. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An ID, *unique per agent*. Will default to *name*
+    <dd>An ID, *unique per agent*. Will default to *name*
 if not set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1491,9 +1491,9 @@ if not set.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The interval to wait between each health-check
+    <dd>The interval to wait between each health-check
 invocation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1501,8 +1501,8 @@ invocation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the health-check.
-{{% /md %}}</dd>
+    <dd>The name of the health-check.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1510,8 +1510,8 @@ invocation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The timeout value for HTTP checks.
-{{% /md %}}</dd>
+    <dd>The timeout value for HTTP checks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1519,10 +1519,10 @@ invocation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time after which
+    <dd>The time after which
 the service is automatically deregistered when in the `critical` state.
 Defaults to `30s`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1530,9 +1530,9 @@ Defaults to `30s`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicecheckheader">[]Service<wbr>Check<wbr>Header</a></span>
     </dt>
-    <dd>{{% md %}}The headers to send for an HTTP check.
+    <dd>The headers to send for an HTTP check.
 The attributes of each header is given below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1540,8 +1540,8 @@ The attributes of each header is given below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP endpoint to call for an HTTP check.
-{{% /md %}}</dd>
+    <dd>The HTTP endpoint to call for an HTTP check.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1549,9 +1549,9 @@ The attributes of each header is given below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The method to use for HTTP health-checks. Defaults
+    <dd>The method to use for HTTP health-checks. Defaults
 to `GET`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1559,8 +1559,8 @@ to `GET`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An opaque field meant to hold human readable text.
-{{% /md %}}</dd>
+    <dd>An opaque field meant to hold human readable text.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1568,8 +1568,8 @@ to `GET`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The initial health-check status.
-{{% /md %}}</dd>
+    <dd>The initial health-check status.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1577,8 +1577,8 @@ to `GET`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The TCP address and port to connect to for a TCP check.
-{{% /md %}}</dd>
+    <dd>The TCP address and port to connect to for a TCP check.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1586,15 +1586,15 @@ to `GET`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to deactivate certificate
+    <dd>Whether to deactivate certificate
 verification for HTTP health-checks. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1603,9 +1603,9 @@ verification for HTTP health-checks. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An ID, *unique per agent*. Will default to *name*
+    <dd>An ID, *unique per agent*. Will default to *name*
 if not set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1613,9 +1613,9 @@ if not set.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The interval to wait between each health-check
+    <dd>The interval to wait between each health-check
 invocation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1623,8 +1623,8 @@ invocation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the health-check.
-{{% /md %}}</dd>
+    <dd>The name of the health-check.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1632,8 +1632,8 @@ invocation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The timeout value for HTTP checks.
-{{% /md %}}</dd>
+    <dd>The timeout value for HTTP checks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1641,10 +1641,10 @@ invocation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time after which
+    <dd>The time after which
 the service is automatically deregistered when in the `critical` state.
 Defaults to `30s`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1652,9 +1652,9 @@ Defaults to `30s`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicecheckheader">Service<wbr>Check<wbr>Header[]</a></span>
     </dt>
-    <dd>{{% md %}}The headers to send for an HTTP check.
+    <dd>The headers to send for an HTTP check.
 The attributes of each header is given below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1662,8 +1662,8 @@ The attributes of each header is given below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP endpoint to call for an HTTP check.
-{{% /md %}}</dd>
+    <dd>The HTTP endpoint to call for an HTTP check.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1671,9 +1671,9 @@ The attributes of each header is given below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The method to use for HTTP health-checks. Defaults
+    <dd>The method to use for HTTP health-checks. Defaults
 to `GET`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1681,8 +1681,8 @@ to `GET`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An opaque field meant to hold human readable text.
-{{% /md %}}</dd>
+    <dd>An opaque field meant to hold human readable text.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1690,8 +1690,8 @@ to `GET`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The initial health-check status.
-{{% /md %}}</dd>
+    <dd>The initial health-check status.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1699,8 +1699,8 @@ to `GET`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The TCP address and port to connect to for a TCP check.
-{{% /md %}}</dd>
+    <dd>The TCP address and port to connect to for a TCP check.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1708,15 +1708,15 @@ to `GET`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to deactivate certificate
+    <dd>Whether to deactivate certificate
 verification for HTTP health-checks. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1725,9 +1725,9 @@ verification for HTTP health-checks. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An ID, *unique per agent*. Will default to *name*
+    <dd>An ID, *unique per agent*. Will default to *name*
 if not set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1735,9 +1735,9 @@ if not set.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The interval to wait between each health-check
+    <dd>The interval to wait between each health-check
 invocation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1745,8 +1745,8 @@ invocation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the health-check.
-{{% /md %}}</dd>
+    <dd>The name of the health-check.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1754,8 +1754,8 @@ invocation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The timeout value for HTTP checks.
-{{% /md %}}</dd>
+    <dd>The timeout value for HTTP checks.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1763,10 +1763,10 @@ invocation.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time after which
+    <dd>The time after which
 the service is automatically deregistered when in the `critical` state.
 Defaults to `30s`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1774,9 +1774,9 @@ Defaults to `30s`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicecheckheader">List[Service<wbr>Check<wbr>Header]</a></span>
     </dt>
-    <dd>{{% md %}}The headers to send for an HTTP check.
+    <dd>The headers to send for an HTTP check.
 The attributes of each header is given below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1784,8 +1784,8 @@ The attributes of each header is given below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP endpoint to call for an HTTP check.
-{{% /md %}}</dd>
+    <dd>The HTTP endpoint to call for an HTTP check.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1793,9 +1793,9 @@ The attributes of each header is given below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The method to use for HTTP health-checks. Defaults
+    <dd>The method to use for HTTP health-checks. Defaults
 to `GET`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1803,8 +1803,8 @@ to `GET`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An opaque field meant to hold human readable text.
-{{% /md %}}</dd>
+    <dd>An opaque field meant to hold human readable text.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1812,8 +1812,8 @@ to `GET`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The initial health-check status.
-{{% /md %}}</dd>
+    <dd>The initial health-check status.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1821,8 +1821,8 @@ to `GET`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The TCP address and port to connect to for a TCP check.
-{{% /md %}}</dd>
+    <dd>The TCP address and port to connect to for a TCP check.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1830,30 +1830,30 @@ to `GET`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to deactivate certificate
+    <dd>Whether to deactivate certificate
 verification for HTTP health-checks. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicecheckheader">Service<wbr>Check<wbr>Header</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/consul/types/input/#ServiceCheckHeader">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/consul/types/output/#ServiceCheckHeader">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#ServiceCheckHeaderArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#ServiceCheckHeaderOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1862,8 +1862,8 @@ verification for HTTP health-checks. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the header.
-{{% /md %}}</dd>
+    <dd>The name of the header.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1871,14 +1871,14 @@ verification for HTTP health-checks. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The header's list of values.
-{{% /md %}}</dd>
+    <dd>The header's list of values.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1887,8 +1887,8 @@ verification for HTTP health-checks. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the header.
-{{% /md %}}</dd>
+    <dd>The name of the header.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1896,14 +1896,14 @@ verification for HTTP health-checks. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The header's list of values.
-{{% /md %}}</dd>
+    <dd>The header's list of values.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1912,8 +1912,8 @@ verification for HTTP health-checks. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the header.
-{{% /md %}}</dd>
+    <dd>The name of the header.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1921,14 +1921,14 @@ verification for HTTP health-checks. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The header's list of values.
-{{% /md %}}</dd>
+    <dd>The header's list of values.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1937,8 +1937,8 @@ verification for HTTP health-checks. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the header.
-{{% /md %}}</dd>
+    <dd>The name of the header.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1946,11 +1946,11 @@ verification for HTTP health-checks. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The header's list of values.
-{{% /md %}}</dd>
+    <dd>The header's list of values.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

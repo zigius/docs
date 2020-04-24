@@ -38,29 +38,29 @@ export const firstScalingGroup = scalinggroupsDs.groups[0].id;
 
 ## Using GetScalingGroups {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getScalingGroups<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ess/#GetScalingGroupsArgs">GetScalingGroupsArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ess/#GetScalingGroupsResult">GetScalingGroupsResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_scaling_groups(</span>ids=None<span class="p">, </span>name_regex=None<span class="p">, </span>output_file=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupScalingGroups<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#LookupScalingGroupsArgs">LookupScalingGroupsArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#LookupScalingGroupsResult">LookupScalingGroupsResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetScalingGroups </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Ess.GetScalingGroupsResult.html">GetScalingGroupsResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Ess.GetScalingGroupsArgs.html">GetScalingGroupsArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -68,7 +68,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -77,8 +77,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling group IDs.
-{{% /md %}}</dd>
+    <dd>A list of scaling group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -86,8 +86,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter resulting scaling groups by name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter resulting scaling groups by name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -95,13 +95,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -110,8 +110,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling group IDs.
-{{% /md %}}</dd>
+    <dd>A list of scaling group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -119,8 +119,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter resulting scaling groups by name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter resulting scaling groups by name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -128,13 +128,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -143,8 +143,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling group IDs.
-{{% /md %}}</dd>
+    <dd>A list of scaling group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -152,8 +152,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter resulting scaling groups by name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter resulting scaling groups by name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -161,13 +161,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -176,8 +176,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling group IDs.
-{{% /md %}}</dd>
+    <dd>A list of scaling group IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -185,8 +185,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter resulting scaling groups by name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter resulting scaling groups by name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -194,10 +194,10 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -213,7 +213,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -222,8 +222,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscalinggroupsgroup">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Ess.<wbr>Outputs.<wbr>Get<wbr>Scaling<wbr>Groups<wbr>Group&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling groups. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of scaling groups. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -231,8 +231,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -240,8 +240,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling group ids.
-{{% /md %}}</dd>
+    <dd>A list of scaling group ids.
+</dd>
 
     <dt class="property-"
             title="">
@@ -249,8 +249,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling group names.
-{{% /md %}}</dd>
+    <dd>A list of scaling group names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -258,7 +258,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -266,13 +266,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -281,8 +281,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscalinggroupsgroup">[]Get<wbr>Scaling<wbr>Groups<wbr>Group</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling groups. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of scaling groups. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -290,8 +290,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -299,8 +299,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling group ids.
-{{% /md %}}</dd>
+    <dd>A list of scaling group ids.
+</dd>
 
     <dt class="property-"
             title="">
@@ -308,8 +308,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling group names.
-{{% /md %}}</dd>
+    <dd>A list of scaling group names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -317,7 +317,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -325,13 +325,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -340,8 +340,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscalinggroupsgroup">Get<wbr>Scaling<wbr>Groups<wbr>Group[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling groups. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of scaling groups. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -349,8 +349,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -358,8 +358,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling group ids.
-{{% /md %}}</dd>
+    <dd>A list of scaling group ids.
+</dd>
 
     <dt class="property-"
             title="">
@@ -367,8 +367,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling group names.
-{{% /md %}}</dd>
+    <dd>A list of scaling group names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -376,7 +376,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -384,13 +384,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -399,8 +399,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getscalinggroupsgroup">List[Get<wbr>Scaling<wbr>Groups<wbr>Group]</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling groups. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of scaling groups. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -408,8 +408,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -417,8 +417,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling group ids.
-{{% /md %}}</dd>
+    <dd>A list of scaling group ids.
+</dd>
 
     <dt class="property-"
             title="">
@@ -426,8 +426,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of scaling group names.
-{{% /md %}}</dd>
+    <dd>A list of scaling group names.
+</dd>
 
     <dt class="property-"
             title="">
@@ -435,7 +435,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -443,10 +443,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -459,18 +459,18 @@ The following output properties are available:
 
 
 <h4 id="getscalinggroupsgroup">Get<wbr>Scaling<wbr>Groups<wbr>Group</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetScalingGroupsGroup">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ess?tab=doc#GetScalingGroupsGroup">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -479,8 +479,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of active instances in scaling group.
-{{% /md %}}</dd>
+    <dd>Number of active instances in scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -488,7 +488,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -496,8 +496,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Default cooldown time of scaling group.
-{{% /md %}}</dd>
+    <dd>Default cooldown time of scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -505,8 +505,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of scaling group.
-{{% /md %}}</dd>
+    <dd>Creation time of scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -514,8 +514,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Db instances id which the ECS instance attached to.
-{{% /md %}}</dd>
+    <dd>Db instances id which the ECS instance attached to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -523,8 +523,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -532,8 +532,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Active launch template ID for scaling group.
-{{% /md %}}</dd>
+    <dd>Active launch template ID for scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -541,8 +541,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Version of active launch template.
-{{% /md %}}</dd>
+    <dd>Version of active launch template.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -550,8 +550,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Lifecycle state of scaling group.
-{{% /md %}}</dd>
+    <dd>Lifecycle state of scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -559,8 +559,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Slb instances id which the ECS instance attached to.
-{{% /md %}}</dd>
+    <dd>Slb instances id which the ECS instance attached to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -568,8 +568,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of ECS instances.
-{{% /md %}}</dd>
+    <dd>The maximum number of ECS instances.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -577,8 +577,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The minimum number of ECS instances.
-{{% /md %}}</dd>
+    <dd>The minimum number of ECS instances.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -586,9 +586,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the scaling group.
+    <dd>Name of the scaling group.
 * `active_scaling_configuration` -Active scaling configuration for scaling group.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -596,8 +596,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of pending instances in scaling group.
-{{% /md %}}</dd>
+    <dd>Number of pending instances in scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -605,8 +605,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Region ID the scaling group belongs to.
-{{% /md %}}</dd>
+    <dd>Region ID the scaling group belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -614,8 +614,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Removal policy used to select the ECS instance to remove from the scaling group.
-{{% /md %}}</dd>
+    <dd>Removal policy used to select the ECS instance to remove from the scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -623,8 +623,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of removing instances in scaling group.
-{{% /md %}}</dd>
+    <dd>Number of removing instances in scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -632,8 +632,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of instances in scaling group.
-{{% /md %}}</dd>
+    <dd>Number of instances in scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -641,14 +641,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Vswitches id in which the ECS instance launched.
-{{% /md %}}</dd>
+    <dd>Vswitches id in which the ECS instance launched.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -657,8 +657,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of active instances in scaling group.
-{{% /md %}}</dd>
+    <dd>Number of active instances in scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -666,7 +666,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -674,8 +674,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Default cooldown time of scaling group.
-{{% /md %}}</dd>
+    <dd>Default cooldown time of scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -683,8 +683,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of scaling group.
-{{% /md %}}</dd>
+    <dd>Creation time of scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -692,8 +692,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Db instances id which the ECS instance attached to.
-{{% /md %}}</dd>
+    <dd>Db instances id which the ECS instance attached to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -701,8 +701,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -710,8 +710,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Active launch template ID for scaling group.
-{{% /md %}}</dd>
+    <dd>Active launch template ID for scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -719,8 +719,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Version of active launch template.
-{{% /md %}}</dd>
+    <dd>Version of active launch template.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -728,8 +728,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Lifecycle state of scaling group.
-{{% /md %}}</dd>
+    <dd>Lifecycle state of scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -737,8 +737,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Slb instances id which the ECS instance attached to.
-{{% /md %}}</dd>
+    <dd>Slb instances id which the ECS instance attached to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -746,8 +746,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of ECS instances.
-{{% /md %}}</dd>
+    <dd>The maximum number of ECS instances.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -755,8 +755,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The minimum number of ECS instances.
-{{% /md %}}</dd>
+    <dd>The minimum number of ECS instances.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -764,9 +764,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the scaling group.
+    <dd>Name of the scaling group.
 * `active_scaling_configuration` -Active scaling configuration for scaling group.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -774,8 +774,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of pending instances in scaling group.
-{{% /md %}}</dd>
+    <dd>Number of pending instances in scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -783,8 +783,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Region ID the scaling group belongs to.
-{{% /md %}}</dd>
+    <dd>Region ID the scaling group belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -792,8 +792,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Removal policy used to select the ECS instance to remove from the scaling group.
-{{% /md %}}</dd>
+    <dd>Removal policy used to select the ECS instance to remove from the scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -801,8 +801,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of removing instances in scaling group.
-{{% /md %}}</dd>
+    <dd>Number of removing instances in scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -810,8 +810,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of instances in scaling group.
-{{% /md %}}</dd>
+    <dd>Number of instances in scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -819,14 +819,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Vswitches id in which the ECS instance launched.
-{{% /md %}}</dd>
+    <dd>Vswitches id in which the ECS instance launched.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -835,8 +835,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of active instances in scaling group.
-{{% /md %}}</dd>
+    <dd>Number of active instances in scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -844,7 +844,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -852,8 +852,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Default cooldown time of scaling group.
-{{% /md %}}</dd>
+    <dd>Default cooldown time of scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -861,8 +861,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of scaling group.
-{{% /md %}}</dd>
+    <dd>Creation time of scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -870,8 +870,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Db instances id which the ECS instance attached to.
-{{% /md %}}</dd>
+    <dd>Db instances id which the ECS instance attached to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -879,8 +879,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -888,8 +888,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Active launch template ID for scaling group.
-{{% /md %}}</dd>
+    <dd>Active launch template ID for scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -897,8 +897,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Version of active launch template.
-{{% /md %}}</dd>
+    <dd>Version of active launch template.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -906,8 +906,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Lifecycle state of scaling group.
-{{% /md %}}</dd>
+    <dd>Lifecycle state of scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -915,8 +915,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Slb instances id which the ECS instance attached to.
-{{% /md %}}</dd>
+    <dd>Slb instances id which the ECS instance attached to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -924,8 +924,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of ECS instances.
-{{% /md %}}</dd>
+    <dd>The maximum number of ECS instances.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -933,8 +933,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The minimum number of ECS instances.
-{{% /md %}}</dd>
+    <dd>The minimum number of ECS instances.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -942,9 +942,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the scaling group.
+    <dd>Name of the scaling group.
 * `active_scaling_configuration` -Active scaling configuration for scaling group.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -952,8 +952,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of pending instances in scaling group.
-{{% /md %}}</dd>
+    <dd>Number of pending instances in scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -961,8 +961,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Region ID the scaling group belongs to.
-{{% /md %}}</dd>
+    <dd>Region ID the scaling group belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -970,8 +970,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Removal policy used to select the ECS instance to remove from the scaling group.
-{{% /md %}}</dd>
+    <dd>Removal policy used to select the ECS instance to remove from the scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -979,8 +979,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of removing instances in scaling group.
-{{% /md %}}</dd>
+    <dd>Number of removing instances in scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -988,8 +988,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of instances in scaling group.
-{{% /md %}}</dd>
+    <dd>Number of instances in scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -997,14 +997,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Vswitches id in which the ECS instance launched.
-{{% /md %}}</dd>
+    <dd>Vswitches id in which the ECS instance launched.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1013,8 +1013,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of active instances in scaling group.
-{{% /md %}}</dd>
+    <dd>Number of active instances in scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1022,7 +1022,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1030,8 +1030,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Default cooldown time of scaling group.
-{{% /md %}}</dd>
+    <dd>Default cooldown time of scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1039,8 +1039,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of scaling group.
-{{% /md %}}</dd>
+    <dd>Creation time of scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1048,8 +1048,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Db instances id which the ECS instance attached to.
-{{% /md %}}</dd>
+    <dd>Db instances id which the ECS instance attached to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1057,8 +1057,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the scaling group.
-{{% /md %}}</dd>
+    <dd>ID of the scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1066,8 +1066,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Active launch template ID for scaling group.
-{{% /md %}}</dd>
+    <dd>Active launch template ID for scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1075,8 +1075,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Version of active launch template.
-{{% /md %}}</dd>
+    <dd>Version of active launch template.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1084,8 +1084,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Lifecycle state of scaling group.
-{{% /md %}}</dd>
+    <dd>Lifecycle state of scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1093,8 +1093,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Slb instances id which the ECS instance attached to.
-{{% /md %}}</dd>
+    <dd>Slb instances id which the ECS instance attached to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1102,8 +1102,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of ECS instances.
-{{% /md %}}</dd>
+    <dd>The maximum number of ECS instances.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1111,8 +1111,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The minimum number of ECS instances.
-{{% /md %}}</dd>
+    <dd>The minimum number of ECS instances.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1120,9 +1120,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the scaling group.
+    <dd>Name of the scaling group.
 * `active_scaling_configuration` -Active scaling configuration for scaling group.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1130,8 +1130,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of pending instances in scaling group.
-{{% /md %}}</dd>
+    <dd>Number of pending instances in scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1139,8 +1139,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Region ID the scaling group belongs to.
-{{% /md %}}</dd>
+    <dd>Region ID the scaling group belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1148,8 +1148,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Removal policy used to select the ECS instance to remove from the scaling group.
-{{% /md %}}</dd>
+    <dd>Removal policy used to select the ECS instance to remove from the scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1157,8 +1157,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of removing instances in scaling group.
-{{% /md %}}</dd>
+    <dd>Number of removing instances in scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1166,8 +1166,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of instances in scaling group.
-{{% /md %}}</dd>
+    <dd>Number of instances in scaling group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1175,11 +1175,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Vswitches id in which the ECS instance launched.
-{{% /md %}}</dd>
+    <dd>Vswitches id in which the ECS instance launched.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

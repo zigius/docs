@@ -14,33 +14,33 @@ aliases: ["/docs/quickstart/gcp/create-project/"]
 
 Let's get started with a new project in a new directory.
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language javascript %}}
+
+
 
 ```bash
 $ mkdir quickstart && cd quickstart
 $ pulumi new gcp-javascript
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```bash
 $ mkdir quickstart && cd quickstart
 $ pulumi new gcp-typescript
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```bash
 $ mkdir quickstart && cd quickstart
 $ pulumi new gcp-python
 ```
 
-{{% /choosable %}}
-{{% choosable language go %}}
+
+
 
 ```bash
 # from within your $GOPATH
@@ -48,15 +48,15 @@ $ mkdir quickstart && cd quickstart
 $ pulumi new gcp-go
 ```
 
-{{% /choosable %}}
-{{% choosable language csharp %}}
+
+
 
 ```bash
 $ mkdir quickstart && cd quickstart
 $ pulumi new gcp-csharp
 ```
 
-{{% /choosable %}}
+
 
 {{< cli-note >}}
 
@@ -91,21 +91,21 @@ Next, you will be prompted for some configuration values for the stack.
 
 For GCP projects you will be prompted for the Google Cloud project to deploy into.
 
-{{% choosable language "javascript,typescript" %}}
+
 After some dependency installations from `npm`, the project and stack will be ready.
-{{% /choosable %}}
 
-{{% choosable language python %}}
-After the command completes, the project and stack will be ready.
-{{% /choosable %}}
 
-{{% choosable language go %}}
-After the command completes, the project and stack will be ready.
-{{% /choosable %}}
 
-{{% choosable language "csharp,fsharp,visualbasic" %}}
 After the command completes, the project and stack will be ready.
-{{% /choosable %}}
+
+
+
+After the command completes, the project and stack will be ready.
+
+
+
+After the command completes, the project and stack will be ready.
+
 
 Next, we'll review the generated project files.
 

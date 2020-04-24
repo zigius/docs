@@ -18,26 +18,26 @@ Manages a HDInsight Interactive Query Cluster.
 
 
 ## Create a InteractiveQueryCluster Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/hdinsight/#InteractiveQueryCluster">InteractiveQueryCluster</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/hdinsight/#InteractiveQueryClusterArgs">InteractiveQueryClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">InteractiveQueryCluster</span><span class="p">(resource_name, opts=None, </span>cluster_version=None<span class="p">, </span>component_version=None<span class="p">, </span>gateway=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>roles=None<span class="p">, </span>storage_account_gen2=None<span class="p">, </span>storage_accounts=None<span class="p">, </span>tags=None<span class="p">, </span>tier=None<span class="p">, </span>tls_min_version=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewInteractiveQueryCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/hdinsight?tab=doc#InteractiveQueryClusterArgs">InteractiveQueryClusterArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/hdinsight?tab=doc#InteractiveQueryCluster">InteractiveQueryCluster</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.HDInsight.InteractiveQueryCluster.html">InteractiveQueryCluster</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.HDInsight.InteractiveQueryClusterArgs.html">InteractiveQueryClusterArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ Manages a HDInsight Interactive Query Cluster.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ Manages a HDInsight Interactive Query Cluster.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ Manages a HDInsight Interactive Query Cluster.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ Manages a HDInsight Interactive Query Cluster.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## InteractiveQueryCluster Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -204,8 +204,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Version of HDInsights which should be used for this Cluster. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Version of HDInsights which should be used for this Cluster. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -213,8 +213,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclustercomponentversion">Interactive<wbr>Query<wbr>Cluster<wbr>Component<wbr>Version<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `component_version` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `component_version` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -222,8 +222,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclustergateway">Interactive<wbr>Query<wbr>Cluster<wbr>Gateway<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `gateway` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `gateway` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -231,8 +231,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -240,8 +240,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterroles">Interactive<wbr>Query<wbr>Cluster<wbr>Roles<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `roles` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `roles` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -249,8 +249,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Tier which should be used for this HDInsight Interactive Query Cluster. Possible values are `Standard` or `Premium`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Tier which should be used for this HDInsight Interactive Query Cluster. Possible values are `Standard` or `Premium`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -258,8 +258,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Azure Region which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Azure Region which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,8 +267,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name for this HDInsight Interactive Query Cluster. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name for this HDInsight Interactive Query Cluster. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -276,8 +276,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterstorageaccountgen2">Interactive<wbr>Query<wbr>Cluster<wbr>Storage<wbr>Account<wbr>Gen2Args</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_account_gen2` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_account_gen2` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -285,8 +285,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterstorageaccount">List&lt;Interactive<wbr>Query<wbr>Cluster<wbr>Storage<wbr>Account<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `storage_account` block as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `storage_account` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -294,8 +294,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of Tags which should be assigned to this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>A map of Tags which should be assigned to this HDInsight Interactive Query Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -303,13 +303,13 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -318,8 +318,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Version of HDInsights which should be used for this Cluster. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Version of HDInsights which should be used for this Cluster. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -327,8 +327,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclustercomponentversion">Interactive<wbr>Query<wbr>Cluster<wbr>Component<wbr>Version</a></span>
     </dt>
-    <dd>{{% md %}}A `component_version` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `component_version` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -336,8 +336,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclustergateway">Interactive<wbr>Query<wbr>Cluster<wbr>Gateway</a></span>
     </dt>
-    <dd>{{% md %}}A `gateway` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `gateway` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -345,8 +345,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -354,8 +354,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterroles">Interactive<wbr>Query<wbr>Cluster<wbr>Roles</a></span>
     </dt>
-    <dd>{{% md %}}A `roles` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `roles` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -363,8 +363,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Tier which should be used for this HDInsight Interactive Query Cluster. Possible values are `Standard` or `Premium`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Tier which should be used for this HDInsight Interactive Query Cluster. Possible values are `Standard` or `Premium`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -372,8 +372,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Azure Region which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Azure Region which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -381,8 +381,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name for this HDInsight Interactive Query Cluster. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name for this HDInsight Interactive Query Cluster. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -390,8 +390,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterstorageaccountgen2">Interactive<wbr>Query<wbr>Cluster<wbr>Storage<wbr>Account<wbr>Gen2</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_account_gen2` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_account_gen2` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -399,8 +399,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterstorageaccount">[]Interactive<wbr>Query<wbr>Cluster<wbr>Storage<wbr>Account</a></span>
     </dt>
-    <dd>{{% md %}}One or more `storage_account` block as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `storage_account` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -408,8 +408,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A map of Tags which should be assigned to this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>A map of Tags which should be assigned to this HDInsight Interactive Query Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -417,13 +417,13 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -432,8 +432,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Version of HDInsights which should be used for this Cluster. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Version of HDInsights which should be used for this Cluster. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -441,8 +441,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclustercomponentversion">Interactive<wbr>Query<wbr>Cluster<wbr>Component<wbr>Version</a></span>
     </dt>
-    <dd>{{% md %}}A `component_version` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `component_version` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -450,8 +450,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclustergateway">Interactive<wbr>Query<wbr>Cluster<wbr>Gateway</a></span>
     </dt>
-    <dd>{{% md %}}A `gateway` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `gateway` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -459,8 +459,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -468,8 +468,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterroles">Interactive<wbr>Query<wbr>Cluster<wbr>Roles</a></span>
     </dt>
-    <dd>{{% md %}}A `roles` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `roles` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -477,8 +477,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Tier which should be used for this HDInsight Interactive Query Cluster. Possible values are `Standard` or `Premium`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Tier which should be used for this HDInsight Interactive Query Cluster. Possible values are `Standard` or `Premium`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -486,8 +486,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Azure Region which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Azure Region which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -495,8 +495,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name for this HDInsight Interactive Query Cluster. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name for this HDInsight Interactive Query Cluster. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -504,8 +504,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterstorageaccountgen2">Interactive<wbr>Query<wbr>Cluster<wbr>Storage<wbr>Account<wbr>Gen2</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_account_gen2` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_account_gen2` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -513,8 +513,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterstorageaccount">Interactive<wbr>Query<wbr>Cluster<wbr>Storage<wbr>Account[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `storage_account` block as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `storage_account` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -522,8 +522,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A map of Tags which should be assigned to this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>A map of Tags which should be assigned to this HDInsight Interactive Query Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -531,13 +531,13 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -546,8 +546,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Version of HDInsights which should be used for this Cluster. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Version of HDInsights which should be used for this Cluster. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -555,8 +555,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclustercomponentversion">Dict[Interactive<wbr>Query<wbr>Cluster<wbr>Component<wbr>Version]</a></span>
     </dt>
-    <dd>{{% md %}}A `component_version` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `component_version` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -564,8 +564,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclustergateway">Dict[Interactive<wbr>Query<wbr>Cluster<wbr>Gateway]</a></span>
     </dt>
-    <dd>{{% md %}}A `gateway` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `gateway` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -573,8 +573,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -582,8 +582,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterroles">Dict[Interactive<wbr>Query<wbr>Cluster<wbr>Roles]</a></span>
     </dt>
-    <dd>{{% md %}}A `roles` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `roles` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -591,8 +591,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Tier which should be used for this HDInsight Interactive Query Cluster. Possible values are `Standard` or `Premium`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Tier which should be used for this HDInsight Interactive Query Cluster. Possible values are `Standard` or `Premium`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -600,8 +600,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Azure Region which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Azure Region which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -609,8 +609,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name for this HDInsight Interactive Query Cluster. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name for this HDInsight Interactive Query Cluster. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -618,8 +618,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterstorageaccountgen2">Dict[Interactive<wbr>Query<wbr>Cluster<wbr>Storage<wbr>Account<wbr>Gen2]</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_account_gen2` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_account_gen2` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -627,8 +627,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterstorageaccount">List[Interactive<wbr>Query<wbr>Cluster<wbr>Storage<wbr>Account]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `storage_account` block as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `storage_account` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -636,8 +636,8 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A map of Tags which should be assigned to this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>A map of Tags which should be assigned to this HDInsight Interactive Query Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -645,10 +645,10 @@ The InteractiveQueryCluster resource accepts the following [input]({{< relref "/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -662,7 +662,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -671,8 +671,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The HTTPS Connectivity Endpoint for this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>The HTTPS Connectivity Endpoint for this HDInsight Interactive Query Cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -680,7 +680,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -688,14 +688,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SSH Connectivity Endpoint for this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>The SSH Connectivity Endpoint for this HDInsight Interactive Query Cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -704,8 +704,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The HTTPS Connectivity Endpoint for this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>The HTTPS Connectivity Endpoint for this HDInsight Interactive Query Cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -713,7 +713,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -721,14 +721,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SSH Connectivity Endpoint for this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>The SSH Connectivity Endpoint for this HDInsight Interactive Query Cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -737,8 +737,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The HTTPS Connectivity Endpoint for this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>The HTTPS Connectivity Endpoint for this HDInsight Interactive Query Cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -746,7 +746,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -754,14 +754,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SSH Connectivity Endpoint for this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>The SSH Connectivity Endpoint for this HDInsight Interactive Query Cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -770,8 +770,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The HTTPS Connectivity Endpoint for this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>The HTTPS Connectivity Endpoint for this HDInsight Interactive Query Cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -779,7 +779,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -787,11 +787,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SSH Connectivity Endpoint for this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>The SSH Connectivity Endpoint for this HDInsight Interactive Query Cluster.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -802,25 +802,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing InteractiveQueryCluster Resource {#look-up}
 
 Get an existing InteractiveQueryCluster resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/hdinsight/#InteractiveQueryClusterState">InteractiveQueryClusterState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/hdinsight/#InteractiveQueryCluster">InteractiveQueryCluster</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>cluster_version=None<span class="p">, </span>component_version=None<span class="p">, </span>gateway=None<span class="p">, </span>https_endpoint=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>roles=None<span class="p">, </span>ssh_endpoint=None<span class="p">, </span>storage_account_gen2=None<span class="p">, </span>storage_accounts=None<span class="p">, </span>tags=None<span class="p">, </span>tier=None<span class="p">, </span>tls_min_version=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetInteractiveQueryCluster<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/hdinsight?tab=doc#InteractiveQueryClusterState">InteractiveQueryClusterState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/hdinsight?tab=doc#InteractiveQueryCluster">InteractiveQueryCluster</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.HDInsight.InteractiveQueryCluster.html">InteractiveQueryCluster</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.HDInsight.InteractiveQueryClusterState.html">InteractiveQueryClusterState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -845,9 +845,9 @@ Get an existing InteractiveQueryCluster resource's state with the given name, ID
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -860,36 +860,9 @@ Get an existing InteractiveQueryCluster resource's state with the given name, ID
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -914,13 +887,40 @@ Get an existing InteractiveQueryCluster resource's state with the given name, ID
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -929,8 +929,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Version of HDInsights which should be used for this Cluster. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Version of HDInsights which should be used for this Cluster. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -938,8 +938,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclustercomponentversion">Interactive<wbr>Query<wbr>Cluster<wbr>Component<wbr>Version<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `component_version` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `component_version` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -947,8 +947,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclustergateway">Interactive<wbr>Query<wbr>Cluster<wbr>Gateway<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `gateway` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `gateway` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -956,8 +956,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The HTTPS Connectivity Endpoint for this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>The HTTPS Connectivity Endpoint for this HDInsight Interactive Query Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -965,8 +965,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Azure Region which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Azure Region which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -974,8 +974,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name for this HDInsight Interactive Query Cluster. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name for this HDInsight Interactive Query Cluster. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -983,8 +983,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -992,8 +992,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterroles">Interactive<wbr>Query<wbr>Cluster<wbr>Roles<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `roles` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `roles` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,8 +1001,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The SSH Connectivity Endpoint for this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>The SSH Connectivity Endpoint for this HDInsight Interactive Query Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1010,8 +1010,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterstorageaccountgen2">Interactive<wbr>Query<wbr>Cluster<wbr>Storage<wbr>Account<wbr>Gen2Args</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_account_gen2` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_account_gen2` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1019,8 +1019,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterstorageaccount">List&lt;Interactive<wbr>Query<wbr>Cluster<wbr>Storage<wbr>Account<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more `storage_account` block as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `storage_account` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1028,8 +1028,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of Tags which should be assigned to this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>A map of Tags which should be assigned to this HDInsight Interactive Query Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1037,8 +1037,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Tier which should be used for this HDInsight Interactive Query Cluster. Possible values are `Standard` or `Premium`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Tier which should be used for this HDInsight Interactive Query Cluster. Possible values are `Standard` or `Premium`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1046,13 +1046,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1061,8 +1061,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Version of HDInsights which should be used for this Cluster. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Version of HDInsights which should be used for this Cluster. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1070,8 +1070,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclustercomponentversion">Interactive<wbr>Query<wbr>Cluster<wbr>Component<wbr>Version</a></span>
     </dt>
-    <dd>{{% md %}}A `component_version` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `component_version` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1079,8 +1079,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclustergateway">Interactive<wbr>Query<wbr>Cluster<wbr>Gateway</a></span>
     </dt>
-    <dd>{{% md %}}A `gateway` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `gateway` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1088,8 +1088,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The HTTPS Connectivity Endpoint for this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>The HTTPS Connectivity Endpoint for this HDInsight Interactive Query Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1097,8 +1097,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Azure Region which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Azure Region which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1106,8 +1106,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name for this HDInsight Interactive Query Cluster. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name for this HDInsight Interactive Query Cluster. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1115,8 +1115,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1124,8 +1124,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterroles">Interactive<wbr>Query<wbr>Cluster<wbr>Roles</a></span>
     </dt>
-    <dd>{{% md %}}A `roles` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `roles` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1133,8 +1133,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SSH Connectivity Endpoint for this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>The SSH Connectivity Endpoint for this HDInsight Interactive Query Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1142,8 +1142,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterstorageaccountgen2">Interactive<wbr>Query<wbr>Cluster<wbr>Storage<wbr>Account<wbr>Gen2</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_account_gen2` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_account_gen2` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1151,8 +1151,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterstorageaccount">[]Interactive<wbr>Query<wbr>Cluster<wbr>Storage<wbr>Account</a></span>
     </dt>
-    <dd>{{% md %}}One or more `storage_account` block as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `storage_account` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1160,8 +1160,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A map of Tags which should be assigned to this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>A map of Tags which should be assigned to this HDInsight Interactive Query Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1169,8 +1169,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Tier which should be used for this HDInsight Interactive Query Cluster. Possible values are `Standard` or `Premium`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Tier which should be used for this HDInsight Interactive Query Cluster. Possible values are `Standard` or `Premium`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1178,13 +1178,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1193,8 +1193,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Version of HDInsights which should be used for this Cluster. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Version of HDInsights which should be used for this Cluster. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1202,8 +1202,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclustercomponentversion">Interactive<wbr>Query<wbr>Cluster<wbr>Component<wbr>Version</a></span>
     </dt>
-    <dd>{{% md %}}A `component_version` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `component_version` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1211,8 +1211,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclustergateway">Interactive<wbr>Query<wbr>Cluster<wbr>Gateway</a></span>
     </dt>
-    <dd>{{% md %}}A `gateway` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `gateway` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1220,8 +1220,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The HTTPS Connectivity Endpoint for this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>The HTTPS Connectivity Endpoint for this HDInsight Interactive Query Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1229,8 +1229,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Azure Region which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Azure Region which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1238,8 +1238,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name for this HDInsight Interactive Query Cluster. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name for this HDInsight Interactive Query Cluster. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1247,8 +1247,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1256,8 +1256,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterroles">Interactive<wbr>Query<wbr>Cluster<wbr>Roles</a></span>
     </dt>
-    <dd>{{% md %}}A `roles` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `roles` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1265,8 +1265,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The SSH Connectivity Endpoint for this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>The SSH Connectivity Endpoint for this HDInsight Interactive Query Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1274,8 +1274,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterstorageaccountgen2">Interactive<wbr>Query<wbr>Cluster<wbr>Storage<wbr>Account<wbr>Gen2</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_account_gen2` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_account_gen2` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1283,8 +1283,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterstorageaccount">Interactive<wbr>Query<wbr>Cluster<wbr>Storage<wbr>Account[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `storage_account` block as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `storage_account` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1292,8 +1292,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A map of Tags which should be assigned to this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>A map of Tags which should be assigned to this HDInsight Interactive Query Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1301,8 +1301,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Tier which should be used for this HDInsight Interactive Query Cluster. Possible values are `Standard` or `Premium`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Tier which should be used for this HDInsight Interactive Query Cluster. Possible values are `Standard` or `Premium`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1310,13 +1310,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1325,8 +1325,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Version of HDInsights which should be used for this Cluster. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Version of HDInsights which should be used for this Cluster. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1334,8 +1334,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclustercomponentversion">Dict[Interactive<wbr>Query<wbr>Cluster<wbr>Component<wbr>Version]</a></span>
     </dt>
-    <dd>{{% md %}}A `component_version` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `component_version` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1343,8 +1343,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclustergateway">Dict[Interactive<wbr>Query<wbr>Cluster<wbr>Gateway]</a></span>
     </dt>
-    <dd>{{% md %}}A `gateway` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `gateway` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1352,8 +1352,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The HTTPS Connectivity Endpoint for this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>The HTTPS Connectivity Endpoint for this HDInsight Interactive Query Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1361,8 +1361,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Azure Region which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Azure Region which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1370,8 +1370,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name for this HDInsight Interactive Query Cluster. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name for this HDInsight Interactive Query Cluster. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1379,8 +1379,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which this HDInsight Interactive Query Cluster should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1388,8 +1388,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterroles">Dict[Interactive<wbr>Query<wbr>Cluster<wbr>Roles]</a></span>
     </dt>
-    <dd>{{% md %}}A `roles` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `roles` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1397,8 +1397,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The SSH Connectivity Endpoint for this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>The SSH Connectivity Endpoint for this HDInsight Interactive Query Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1406,8 +1406,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterstorageaccountgen2">Dict[Interactive<wbr>Query<wbr>Cluster<wbr>Storage<wbr>Account<wbr>Gen2]</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_account_gen2` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_account_gen2` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1415,8 +1415,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterstorageaccount">List[Interactive<wbr>Query<wbr>Cluster<wbr>Storage<wbr>Account]</a></span>
     </dt>
-    <dd>{{% md %}}One or more `storage_account` block as defined below.
-{{% /md %}}</dd>
+    <dd>One or more `storage_account` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1424,8 +1424,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A map of Tags which should be assigned to this HDInsight Interactive Query Cluster.
-{{% /md %}}</dd>
+    <dd>A map of Tags which should be assigned to this HDInsight Interactive Query Cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1433,8 +1433,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the Tier which should be used for this HDInsight Interactive Query Cluster. Possible values are `Standard` or `Premium`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the Tier which should be used for this HDInsight Interactive Query Cluster. Possible values are `Standard` or `Premium`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1442,10 +1442,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1460,18 +1460,18 @@ The following state arguments are supported:
 
 
 <h4 id="interactivequeryclustercomponentversion">Interactive<wbr>Query<wbr>Cluster<wbr>Component<wbr>Version</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#InteractiveQueryClusterComponentVersion">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#InteractiveQueryClusterComponentVersion">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/hdinsight?tab=doc#InteractiveQueryClusterComponentVersionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/hdinsight?tab=doc#InteractiveQueryClusterComponentVersionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1480,13 +1480,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1495,13 +1495,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1510,13 +1510,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1525,28 +1525,28 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="interactivequeryclustergateway">Interactive<wbr>Query<wbr>Cluster<wbr>Gateway</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#InteractiveQueryClusterGateway">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#InteractiveQueryClusterGateway">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/hdinsight?tab=doc#InteractiveQueryClusterGatewayArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/hdinsight?tab=doc#InteractiveQueryClusterGatewayOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1555,8 +1555,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the Ambari portal enabled? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is the Ambari portal enabled? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1564,8 +1564,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The password used for the Ambari Portal. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The password used for the Ambari Portal. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1573,14 +1573,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The username used for the Ambari Portal. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The username used for the Ambari Portal. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1589,8 +1589,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the Ambari portal enabled? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is the Ambari portal enabled? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1598,8 +1598,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password used for the Ambari Portal. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The password used for the Ambari Portal. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1607,14 +1607,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username used for the Ambari Portal. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The username used for the Ambari Portal. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1623,8 +1623,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is the Ambari portal enabled? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is the Ambari portal enabled? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1632,8 +1632,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password used for the Ambari Portal. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The password used for the Ambari Portal. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1641,14 +1641,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username used for the Ambari Portal. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The username used for the Ambari Portal. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1657,8 +1657,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is the Ambari portal enabled? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is the Ambari portal enabled? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1666,8 +1666,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The password used for the Ambari Portal. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The password used for the Ambari Portal. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1675,29 +1675,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The username used for the Ambari Portal. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The username used for the Ambari Portal. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="interactivequeryclusterroles">Interactive<wbr>Query<wbr>Cluster<wbr>Roles</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#InteractiveQueryClusterRoles">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#InteractiveQueryClusterRoles">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/hdinsight?tab=doc#InteractiveQueryClusterRolesArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/hdinsight?tab=doc#InteractiveQueryClusterRolesOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1706,8 +1706,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterrolesheadnode">Interactive<wbr>Query<wbr>Cluster<wbr>Roles<wbr>Head<wbr>Node<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `head_node` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `head_node` block as defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1715,8 +1715,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterrolesworkernode">Interactive<wbr>Query<wbr>Cluster<wbr>Roles<wbr>Worker<wbr>Node<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `worker_node` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `worker_node` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1724,14 +1724,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterroleszookeepernode">Interactive<wbr>Query<wbr>Cluster<wbr>Roles<wbr>Zookeeper<wbr>Node<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `zookeeper_node` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `zookeeper_node` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1740,8 +1740,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterrolesheadnode">Interactive<wbr>Query<wbr>Cluster<wbr>Roles<wbr>Head<wbr>Node</a></span>
     </dt>
-    <dd>{{% md %}}A `head_node` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `head_node` block as defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1749,8 +1749,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterrolesworkernode">Interactive<wbr>Query<wbr>Cluster<wbr>Roles<wbr>Worker<wbr>Node</a></span>
     </dt>
-    <dd>{{% md %}}A `worker_node` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `worker_node` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1758,14 +1758,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterroleszookeepernode">Interactive<wbr>Query<wbr>Cluster<wbr>Roles<wbr>Zookeeper<wbr>Node</a></span>
     </dt>
-    <dd>{{% md %}}A `zookeeper_node` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `zookeeper_node` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1774,8 +1774,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterrolesheadnode">Interactive<wbr>Query<wbr>Cluster<wbr>Roles<wbr>Head<wbr>Node</a></span>
     </dt>
-    <dd>{{% md %}}A `head_node` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `head_node` block as defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1783,8 +1783,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterrolesworkernode">Interactive<wbr>Query<wbr>Cluster<wbr>Roles<wbr>Worker<wbr>Node</a></span>
     </dt>
-    <dd>{{% md %}}A `worker_node` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `worker_node` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1792,14 +1792,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterroleszookeepernode">Interactive<wbr>Query<wbr>Cluster<wbr>Roles<wbr>Zookeeper<wbr>Node</a></span>
     </dt>
-    <dd>{{% md %}}A `zookeeper_node` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `zookeeper_node` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1808,8 +1808,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterrolesheadnode">Dict[Interactive<wbr>Query<wbr>Cluster<wbr>Roles<wbr>Head<wbr>Node]</a></span>
     </dt>
-    <dd>{{% md %}}A `head_node` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `head_node` block as defined above.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1817,8 +1817,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterrolesworkernode">Dict[Interactive<wbr>Query<wbr>Cluster<wbr>Roles<wbr>Worker<wbr>Node]</a></span>
     </dt>
-    <dd>{{% md %}}A `worker_node` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `worker_node` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1826,29 +1826,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#interactivequeryclusterroleszookeepernode">Dict[Interactive<wbr>Query<wbr>Cluster<wbr>Roles<wbr>Zookeeper<wbr>Node]</a></span>
     </dt>
-    <dd>{{% md %}}A `zookeeper_node` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `zookeeper_node` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="interactivequeryclusterrolesheadnode">Interactive<wbr>Query<wbr>Cluster<wbr>Roles<wbr>Head<wbr>Node</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#InteractiveQueryClusterRolesHeadNode">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#InteractiveQueryClusterRolesHeadNode">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/hdinsight?tab=doc#InteractiveQueryClusterRolesHeadNodeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/hdinsight?tab=doc#InteractiveQueryClusterRolesHeadNodeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1857,8 +1857,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Username of the local administrator for the Head Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Username of the local administrator for the Head Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1866,8 +1866,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Size of the Virtual Machine which should be used as the Head Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Size of the Virtual Machine which should be used as the Head Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1875,8 +1875,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Password associated with the local administrator for the Head Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Password associated with the local administrator for the Head Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1884,8 +1884,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSH Keys which should be used for the local administrator on the Head Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A list of SSH Keys which should be used for the local administrator on the Head Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1893,8 +1893,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Subnet within the Virtual Network where the Head Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Subnet within the Virtual Network where the Head Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1902,14 +1902,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network where the Head Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Network where the Head Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1918,8 +1918,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Username of the local administrator for the Head Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Username of the local administrator for the Head Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1927,8 +1927,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Size of the Virtual Machine which should be used as the Head Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Size of the Virtual Machine which should be used as the Head Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1936,8 +1936,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Password associated with the local administrator for the Head Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Password associated with the local administrator for the Head Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1945,8 +1945,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSH Keys which should be used for the local administrator on the Head Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A list of SSH Keys which should be used for the local administrator on the Head Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1954,8 +1954,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Subnet within the Virtual Network where the Head Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Subnet within the Virtual Network where the Head Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1963,14 +1963,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network where the Head Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Network where the Head Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1979,8 +1979,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Username of the local administrator for the Head Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Username of the local administrator for the Head Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1988,8 +1988,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Size of the Virtual Machine which should be used as the Head Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Size of the Virtual Machine which should be used as the Head Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1997,8 +1997,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Password associated with the local administrator for the Head Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Password associated with the local administrator for the Head Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2006,8 +2006,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSH Keys which should be used for the local administrator on the Head Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A list of SSH Keys which should be used for the local administrator on the Head Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2015,8 +2015,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Subnet within the Virtual Network where the Head Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Subnet within the Virtual Network where the Head Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2024,14 +2024,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network where the Head Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Network where the Head Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2040,8 +2040,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Username of the local administrator for the Head Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Username of the local administrator for the Head Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2049,8 +2049,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Size of the Virtual Machine which should be used as the Head Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Size of the Virtual Machine which should be used as the Head Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2058,8 +2058,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Password associated with the local administrator for the Head Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Password associated with the local administrator for the Head Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2067,8 +2067,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSH Keys which should be used for the local administrator on the Head Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A list of SSH Keys which should be used for the local administrator on the Head Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2076,8 +2076,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Subnet within the Virtual Network where the Head Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Subnet within the Virtual Network where the Head Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2085,29 +2085,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network where the Head Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Network where the Head Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="interactivequeryclusterrolesworkernode">Interactive<wbr>Query<wbr>Cluster<wbr>Roles<wbr>Worker<wbr>Node</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#InteractiveQueryClusterRolesWorkerNode">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#InteractiveQueryClusterRolesWorkerNode">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/hdinsight?tab=doc#InteractiveQueryClusterRolesWorkerNodeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/hdinsight?tab=doc#InteractiveQueryClusterRolesWorkerNodeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2116,8 +2116,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of instances which should be run for the Worker Nodes.
-{{% /md %}}</dd>
+    <dd>The number of instances which should be run for the Worker Nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2125,8 +2125,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Username of the local administrator for the Worker Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Username of the local administrator for the Worker Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2134,8 +2134,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Size of the Virtual Machine which should be used as the Worker Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Size of the Virtual Machine which should be used as the Worker Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2143,8 +2143,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The minimum number of instances which should be run for the Worker Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The minimum number of instances which should be run for the Worker Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2152,8 +2152,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Password associated with the local administrator for the Worker Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Password associated with the local administrator for the Worker Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2161,8 +2161,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSH Keys which should be used for the local administrator on the Worker Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A list of SSH Keys which should be used for the local administrator on the Worker Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2170,8 +2170,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Subnet within the Virtual Network where the Worker Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Subnet within the Virtual Network where the Worker Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2179,14 +2179,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network where the Worker Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Network where the Worker Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2195,8 +2195,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of instances which should be run for the Worker Nodes.
-{{% /md %}}</dd>
+    <dd>The number of instances which should be run for the Worker Nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2204,8 +2204,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Username of the local administrator for the Worker Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Username of the local administrator for the Worker Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2213,8 +2213,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Size of the Virtual Machine which should be used as the Worker Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Size of the Virtual Machine which should be used as the Worker Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2222,8 +2222,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The minimum number of instances which should be run for the Worker Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The minimum number of instances which should be run for the Worker Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2231,8 +2231,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Password associated with the local administrator for the Worker Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Password associated with the local administrator for the Worker Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2240,8 +2240,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSH Keys which should be used for the local administrator on the Worker Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A list of SSH Keys which should be used for the local administrator on the Worker Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2249,8 +2249,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Subnet within the Virtual Network where the Worker Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Subnet within the Virtual Network where the Worker Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2258,14 +2258,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network where the Worker Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Network where the Worker Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2274,8 +2274,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of instances which should be run for the Worker Nodes.
-{{% /md %}}</dd>
+    <dd>The number of instances which should be run for the Worker Nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2283,8 +2283,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Username of the local administrator for the Worker Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Username of the local administrator for the Worker Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2292,8 +2292,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Size of the Virtual Machine which should be used as the Worker Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Size of the Virtual Machine which should be used as the Worker Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2301,8 +2301,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The minimum number of instances which should be run for the Worker Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The minimum number of instances which should be run for the Worker Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2310,8 +2310,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Password associated with the local administrator for the Worker Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Password associated with the local administrator for the Worker Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2319,8 +2319,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSH Keys which should be used for the local administrator on the Worker Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A list of SSH Keys which should be used for the local administrator on the Worker Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2328,8 +2328,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Subnet within the Virtual Network where the Worker Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Subnet within the Virtual Network where the Worker Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2337,14 +2337,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network where the Worker Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Network where the Worker Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2353,8 +2353,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of instances which should be run for the Worker Nodes.
-{{% /md %}}</dd>
+    <dd>The number of instances which should be run for the Worker Nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2362,8 +2362,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Username of the local administrator for the Worker Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Username of the local administrator for the Worker Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2371,8 +2371,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Size of the Virtual Machine which should be used as the Worker Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Size of the Virtual Machine which should be used as the Worker Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2380,8 +2380,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The minimum number of instances which should be run for the Worker Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The minimum number of instances which should be run for the Worker Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2389,8 +2389,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Password associated with the local administrator for the Worker Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Password associated with the local administrator for the Worker Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2398,8 +2398,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSH Keys which should be used for the local administrator on the Worker Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A list of SSH Keys which should be used for the local administrator on the Worker Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2407,8 +2407,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Subnet within the Virtual Network where the Worker Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Subnet within the Virtual Network where the Worker Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2416,29 +2416,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network where the Worker Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Network where the Worker Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="interactivequeryclusterroleszookeepernode">Interactive<wbr>Query<wbr>Cluster<wbr>Roles<wbr>Zookeeper<wbr>Node</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#InteractiveQueryClusterRolesZookeeperNode">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#InteractiveQueryClusterRolesZookeeperNode">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/hdinsight?tab=doc#InteractiveQueryClusterRolesZookeeperNodeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/hdinsight?tab=doc#InteractiveQueryClusterRolesZookeeperNodeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2447,8 +2447,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Username of the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Username of the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2456,8 +2456,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Size of the Virtual Machine which should be used as the Zookeeper Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Size of the Virtual Machine which should be used as the Zookeeper Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2465,8 +2465,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2474,8 +2474,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSH Keys which should be used for the local administrator on the Zookeeper Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A list of SSH Keys which should be used for the local administrator on the Zookeeper Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2483,8 +2483,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Subnet within the Virtual Network where the Zookeeper Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Subnet within the Virtual Network where the Zookeeper Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2492,14 +2492,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network where the Zookeeper Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Network where the Zookeeper Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2508,8 +2508,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Username of the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Username of the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2517,8 +2517,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Size of the Virtual Machine which should be used as the Zookeeper Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Size of the Virtual Machine which should be used as the Zookeeper Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2526,8 +2526,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2535,8 +2535,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSH Keys which should be used for the local administrator on the Zookeeper Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A list of SSH Keys which should be used for the local administrator on the Zookeeper Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2544,8 +2544,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Subnet within the Virtual Network where the Zookeeper Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Subnet within the Virtual Network where the Zookeeper Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2553,14 +2553,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network where the Zookeeper Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Network where the Zookeeper Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2569,8 +2569,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Username of the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Username of the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2578,8 +2578,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Size of the Virtual Machine which should be used as the Zookeeper Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Size of the Virtual Machine which should be used as the Zookeeper Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2587,8 +2587,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2596,8 +2596,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSH Keys which should be used for the local administrator on the Zookeeper Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A list of SSH Keys which should be used for the local administrator on the Zookeeper Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2605,8 +2605,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Subnet within the Virtual Network where the Zookeeper Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Subnet within the Virtual Network where the Zookeeper Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2614,14 +2614,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network where the Zookeeper Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Network where the Zookeeper Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2630,8 +2630,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Username of the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Username of the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2639,8 +2639,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Size of the Virtual Machine which should be used as the Zookeeper Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Size of the Virtual Machine which should be used as the Zookeeper Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2648,8 +2648,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Password associated with the local administrator for the Zookeeper Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2657,8 +2657,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SSH Keys which should be used for the local administrator on the Zookeeper Nodes. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A list of SSH Keys which should be used for the local administrator on the Zookeeper Nodes. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2666,8 +2666,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Subnet within the Virtual Network where the Zookeeper Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Subnet within the Virtual Network where the Zookeeper Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2675,29 +2675,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network where the Zookeeper Nodes should be provisioned within. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Virtual Network where the Zookeeper Nodes should be provisioned within. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="interactivequeryclusterstorageaccount">Interactive<wbr>Query<wbr>Cluster<wbr>Storage<wbr>Account</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#InteractiveQueryClusterStorageAccount">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#InteractiveQueryClusterStorageAccount">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/hdinsight?tab=doc#InteractiveQueryClusterStorageAccountArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/hdinsight?tab=doc#InteractiveQueryClusterStorageAccountOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2706,8 +2706,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is this the Default Storage Account for the HDInsight Hadoop Cluster? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is this the Default Storage Account for the HDInsight Hadoop Cluster? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2715,8 +2715,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Access Key which should be used to connect to the Storage Account. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Access Key which should be used to connect to the Storage Account. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2724,14 +2724,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Storage Container. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Storage Container. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2740,8 +2740,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is this the Default Storage Account for the HDInsight Hadoop Cluster? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is this the Default Storage Account for the HDInsight Hadoop Cluster? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2749,8 +2749,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Access Key which should be used to connect to the Storage Account. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Access Key which should be used to connect to the Storage Account. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2758,14 +2758,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Storage Container. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Storage Container. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2774,8 +2774,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is this the Default Storage Account for the HDInsight Hadoop Cluster? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is this the Default Storage Account for the HDInsight Hadoop Cluster? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2783,8 +2783,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Access Key which should be used to connect to the Storage Account. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Access Key which should be used to connect to the Storage Account. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2792,14 +2792,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Storage Container. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Storage Container. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2808,8 +2808,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is this the Default Storage Account for the HDInsight Hadoop Cluster? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is this the Default Storage Account for the HDInsight Hadoop Cluster? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2817,8 +2817,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Access Key which should be used to connect to the Storage Account. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The Access Key which should be used to connect to the Storage Account. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2826,29 +2826,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Storage Container. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Storage Container. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="interactivequeryclusterstorageaccountgen2">Interactive<wbr>Query<wbr>Cluster<wbr>Storage<wbr>Account<wbr>Gen2</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#InteractiveQueryClusterStorageAccountGen2">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#InteractiveQueryClusterStorageAccountGen2">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/hdinsight?tab=doc#InteractiveQueryClusterStorageAccountGen2Args">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/hdinsight?tab=doc#InteractiveQueryClusterStorageAccountGen2Output">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2857,8 +2857,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Gen2 Filesystem. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Gen2 Filesystem. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2866,8 +2866,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is this the Default Storage Account for the HDInsight Hadoop Cluster? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is this the Default Storage Account for the HDInsight Hadoop Cluster? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2875,8 +2875,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of Managed Identity to use for accessing the Gen2 filesystem. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of Managed Identity to use for accessing the Gen2 filesystem. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2884,14 +2884,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Storage Account. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Storage Account. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2900,8 +2900,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Gen2 Filesystem. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Gen2 Filesystem. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2909,8 +2909,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is this the Default Storage Account for the HDInsight Hadoop Cluster? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is this the Default Storage Account for the HDInsight Hadoop Cluster? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2918,8 +2918,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of Managed Identity to use for accessing the Gen2 filesystem. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of Managed Identity to use for accessing the Gen2 filesystem. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2927,14 +2927,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Storage Account. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Storage Account. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2943,8 +2943,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Gen2 Filesystem. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Gen2 Filesystem. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2952,8 +2952,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is this the Default Storage Account for the HDInsight Hadoop Cluster? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is this the Default Storage Account for the HDInsight Hadoop Cluster? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2961,8 +2961,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of Managed Identity to use for accessing the Gen2 filesystem. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of Managed Identity to use for accessing the Gen2 filesystem. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2970,14 +2970,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Storage Account. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Storage Account. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2986,8 +2986,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Gen2 Filesystem. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Gen2 Filesystem. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2995,8 +2995,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is this the Default Storage Account for the HDInsight Hadoop Cluster? Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is this the Default Storage Account for the HDInsight Hadoop Cluster? Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3004,8 +3004,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of Managed Identity to use for accessing the Gen2 filesystem. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of Managed Identity to use for accessing the Gen2 filesystem. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3013,11 +3013,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Storage Account. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The ID of the Storage Account. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -39,29 +39,29 @@ export const consulAclPolicies = test.policies!;
 
 ## Using GetAclToken {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getAclToken<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/consul/#GetAclTokenArgs">GetAclTokenArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/consul/#GetAclTokenResult">GetAclTokenResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_acl_token(</span>accessor_id=None<span class="p">, </span>description=None<span class="p">, </span>local=None<span class="p">, </span>namespace=None<span class="p">, </span>policies=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupAclToken<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#GetAclTokenArgs">GetAclTokenArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#LookupAclTokenResult">LookupAclTokenResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetAclToken </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Consul/Pulumi.Consul.GetAclTokenResult.html">GetAclTokenResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Consul/Pulumi.Consul.GetAclTokenArgs.html">GetAclTokenArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -69,7 +69,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -78,8 +78,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The accessor ID of the ACL token.
-{{% /md %}}</dd>
+    <dd>The accessor ID of the ACL token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -87,8 +87,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL token.
-{{% /md %}}</dd>
+    <dd>The description of the ACL token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -96,8 +96,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the ACL token is local to the datacenter it was created within.
-{{% /md %}}</dd>
+    <dd>Whether the ACL token is local to the datacenter it was created within.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -105,8 +105,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to lookup the ACL token.
-{{% /md %}}</dd>
+    <dd>The namespace to lookup the ACL token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -114,15 +114,15 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getacltokenpolicy">List&lt;Get<wbr>Acl<wbr>Token<wbr>Policy<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of policies associated with the ACL token. Each entry has
+    <dd>A list of policies associated with the ACL token. Each entry has
 an `id` and a `name` attribute.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -131,8 +131,8 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The accessor ID of the ACL token.
-{{% /md %}}</dd>
+    <dd>The accessor ID of the ACL token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -140,8 +140,8 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL token.
-{{% /md %}}</dd>
+    <dd>The description of the ACL token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -149,8 +149,8 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the ACL token is local to the datacenter it was created within.
-{{% /md %}}</dd>
+    <dd>Whether the ACL token is local to the datacenter it was created within.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -158,8 +158,8 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to lookup the ACL token.
-{{% /md %}}</dd>
+    <dd>The namespace to lookup the ACL token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -167,15 +167,15 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getacltokenpolicy">[]Get<wbr>Acl<wbr>Token<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}A list of policies associated with the ACL token. Each entry has
+    <dd>A list of policies associated with the ACL token. Each entry has
 an `id` and a `name` attribute.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -184,8 +184,8 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The accessor ID of the ACL token.
-{{% /md %}}</dd>
+    <dd>The accessor ID of the ACL token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -193,8 +193,8 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL token.
-{{% /md %}}</dd>
+    <dd>The description of the ACL token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -202,8 +202,8 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the ACL token is local to the datacenter it was created within.
-{{% /md %}}</dd>
+    <dd>Whether the ACL token is local to the datacenter it was created within.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -211,8 +211,8 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to lookup the ACL token.
-{{% /md %}}</dd>
+    <dd>The namespace to lookup the ACL token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -220,15 +220,15 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getacltokenpolicy">Get<wbr>Acl<wbr>Token<wbr>Policy[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of policies associated with the ACL token. Each entry has
+    <dd>A list of policies associated with the ACL token. Each entry has
 an `id` and a `name` attribute.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -237,8 +237,8 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The accessor ID of the ACL token.
-{{% /md %}}</dd>
+    <dd>The accessor ID of the ACL token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -246,8 +246,8 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL token.
-{{% /md %}}</dd>
+    <dd>The description of the ACL token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -255,8 +255,8 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the ACL token is local to the datacenter it was created within.
-{{% /md %}}</dd>
+    <dd>Whether the ACL token is local to the datacenter it was created within.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -264,8 +264,8 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The namespace to lookup the ACL token.
-{{% /md %}}</dd>
+    <dd>The namespace to lookup the ACL token.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -273,12 +273,12 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getacltokenpolicy">List[Get<wbr>Acl<wbr>Token<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}A list of policies associated with the ACL token. Each entry has
+    <dd>A list of policies associated with the ACL token. Each entry has
 an `id` and a `name` attribute.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -294,7 +294,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -303,7 +303,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -311,8 +311,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -320,8 +320,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL token.
-{{% /md %}}</dd>
+    <dd>The description of the ACL token.
+</dd>
 
     <dt class="property-"
             title="">
@@ -329,8 +329,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the ACL token is local to the datacenter it was created within.
-{{% /md %}}</dd>
+    <dd>Whether the ACL token is local to the datacenter it was created within.
+</dd>
 
     <dt class="property-"
             title="">
@@ -338,7 +338,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -346,15 +346,15 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getacltokenpolicy">List&lt;Get<wbr>Acl<wbr>Token<wbr>Policy&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of policies associated with the ACL token. Each entry has
+    <dd>A list of policies associated with the ACL token. Each entry has
 an `id` and a `name` attribute.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -363,7 +363,7 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -371,8 +371,8 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -380,8 +380,8 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL token.
-{{% /md %}}</dd>
+    <dd>The description of the ACL token.
+</dd>
 
     <dt class="property-"
             title="">
@@ -389,8 +389,8 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the ACL token is local to the datacenter it was created within.
-{{% /md %}}</dd>
+    <dd>Whether the ACL token is local to the datacenter it was created within.
+</dd>
 
     <dt class="property-"
             title="">
@@ -398,7 +398,7 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -406,15 +406,15 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getacltokenpolicy">[]Get<wbr>Acl<wbr>Token<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}A list of policies associated with the ACL token. Each entry has
+    <dd>A list of policies associated with the ACL token. Each entry has
 an `id` and a `name` attribute.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -423,7 +423,7 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -431,8 +431,8 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -440,8 +440,8 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL token.
-{{% /md %}}</dd>
+    <dd>The description of the ACL token.
+</dd>
 
     <dt class="property-"
             title="">
@@ -449,8 +449,8 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the ACL token is local to the datacenter it was created within.
-{{% /md %}}</dd>
+    <dd>Whether the ACL token is local to the datacenter it was created within.
+</dd>
 
     <dt class="property-"
             title="">
@@ -458,7 +458,7 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -466,15 +466,15 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getacltokenpolicy">Get<wbr>Acl<wbr>Token<wbr>Policy[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of policies associated with the ACL token. Each entry has
+    <dd>A list of policies associated with the ACL token. Each entry has
 an `id` and a `name` attribute.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -483,7 +483,7 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -491,8 +491,8 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -500,8 +500,8 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the ACL token.
-{{% /md %}}</dd>
+    <dd>The description of the ACL token.
+</dd>
 
     <dt class="property-"
             title="">
@@ -509,8 +509,8 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the ACL token is local to the datacenter it was created within.
-{{% /md %}}</dd>
+    <dd>Whether the ACL token is local to the datacenter it was created within.
+</dd>
 
     <dt class="property-"
             title="">
@@ -518,7 +518,7 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -526,12 +526,12 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getacltokenpolicy">List[Get<wbr>Acl<wbr>Token<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}A list of policies associated with the ACL token. Each entry has
+    <dd>A list of policies associated with the ACL token. Each entry has
 an `id` and a `name` attribute.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -544,18 +544,18 @@ an `id` and a `name` attribute.
 
 
 <h4 id="getacltokenpolicy">Get<wbr>Acl<wbr>Token<wbr>Policy</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/consul/types/input/#GetAclTokenPolicy">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/consul/types/output/#GetAclTokenPolicy">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#GetAclTokenPolicyArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-consul/sdk/v2/go/consul/?tab=doc#GetAclTokenPolicy">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -564,7 +564,7 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -572,13 +572,13 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -587,7 +587,7 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -595,13 +595,13 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -610,7 +610,7 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -618,13 +618,13 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -633,7 +633,7 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -641,10 +641,10 @@ an `id` and a `name` attribute.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -35,26 +35,26 @@ const monitor1 = new openstack.loadbalancer.Monitor("monitor_1", {
 
 
 ## Create a Monitor Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/loadbalancer/#Monitor">Monitor</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/loadbalancer/#MonitorArgs">MonitorArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Monitor</span><span class="p">(resource_name, opts=None, </span>admin_state_up=None<span class="p">, </span>delay=None<span class="p">, </span>expected_codes=None<span class="p">, </span>http_method=None<span class="p">, </span>max_retries=None<span class="p">, </span>max_retries_down=None<span class="p">, </span>name=None<span class="p">, </span>pool_id=None<span class="p">, </span>region=None<span class="p">, </span>tenant_id=None<span class="p">, </span>timeout=None<span class="p">, </span>type=None<span class="p">, </span>url_path=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewMonitor<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/loadbalancer?tab=doc#MonitorArgs">MonitorArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/loadbalancer?tab=doc#Monitor">Monitor</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.LoadBalancer.Monitor.html">Monitor</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.LoadBalancer.MonitorArgs.html">MonitorArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -91,9 +91,9 @@ const monitor1 = new openstack.loadbalancer.Monitor("monitor_1", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -111,9 +111,9 @@ const monitor1 = new openstack.loadbalancer.Monitor("monitor_1", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -160,9 +160,9 @@ const monitor1 = new openstack.loadbalancer.Monitor("monitor_1", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -199,7 +199,7 @@ const monitor1 = new openstack.loadbalancer.Monitor("monitor_1", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Monitor Resource Properties {#properties}
 
@@ -212,7 +212,7 @@ The Monitor resource accepts the following [input]({{< relref "/docs/intro/conce
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -221,8 +221,8 @@ The Monitor resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, between sending probes to members.
-{{% /md %}}</dd>
+    <dd>The time, in seconds, between sending probes to members.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -230,10 +230,10 @@ The Monitor resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of permissible ping failures before
+    <dd>Number of permissible ping failures before
 changing the member's status to INACTIVE. Must be a number between 1
 and 10.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -241,8 +241,8 @@ and 10.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the pool that this monitor will be assigned to.
-{{% /md %}}</dd>
+    <dd>The id of the pool that this monitor will be assigned to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -250,10 +250,10 @@ and 10.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of seconds for a monitor to wait for a
+    <dd>Maximum number of seconds for a monitor to wait for a
 ping reply before it times out. The value must be less than the delay
 value.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -261,10 +261,10 @@ value.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of probe, which is PING, TCP, HTTP, HTTPS,
+    <dd>The type of probe, which is PING, TCP, HTTP, HTTPS,
 TLS-HELLO or UDP-CONNECT (supported only in Octavia), that is sent by the load
 balancer to verify the member state. Changing this creates a new monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -272,9 +272,9 @@ balancer to verify the member state. Changing this creates a new monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the monitor.
+    <dd>The administrative state of the monitor.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -282,10 +282,10 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. Expected HTTP codes
+    <dd>Required for HTTP(S) types. Expected HTTP codes
 for a passing HTTP(S) monitor. You can either specify a single status like
 "200", or a range like "200-202".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,10 +293,10 @@ for a passing HTTP(S) monitor. You can either specify a single status like
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. The HTTP method used
+    <dd>Required for HTTP(S) types. The HTTP method used
 for requests by the monitor. If this attribute is not specified, it
 defaults to "GET".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -304,10 +304,10 @@ defaults to "GET".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of permissible ping failures befor changing the member's
+    <dd>Number of permissible ping failures befor changing the member's
 status to ERROR. Must be a number between 1 and 10 (supported only in Octavia).
 Changing this updates the max_retries_down of the existing monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -315,8 +315,8 @@ Changing this updates the max_retries_down of the existing monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Monitor.
-{{% /md %}}</dd>
+    <dd>The Name of the Monitor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -324,11 +324,11 @@ Changing this updates the max_retries_down of the existing monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -336,10 +336,10 @@ monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the monitor.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -347,15 +347,15 @@ other than their own. Changing this creates a new monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. URI path that will be
+    <dd>Required for HTTP(S) types. URI path that will be
 accessed if monitor type is HTTP or HTTPS.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -364,8 +364,8 @@ accessed if monitor type is HTTP or HTTPS.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, between sending probes to members.
-{{% /md %}}</dd>
+    <dd>The time, in seconds, between sending probes to members.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -373,10 +373,10 @@ accessed if monitor type is HTTP or HTTPS.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of permissible ping failures before
+    <dd>Number of permissible ping failures before
 changing the member's status to INACTIVE. Must be a number between 1
 and 10.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -384,8 +384,8 @@ and 10.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the pool that this monitor will be assigned to.
-{{% /md %}}</dd>
+    <dd>The id of the pool that this monitor will be assigned to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -393,10 +393,10 @@ and 10.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of seconds for a monitor to wait for a
+    <dd>Maximum number of seconds for a monitor to wait for a
 ping reply before it times out. The value must be less than the delay
 value.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -404,10 +404,10 @@ value.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of probe, which is PING, TCP, HTTP, HTTPS,
+    <dd>The type of probe, which is PING, TCP, HTTP, HTTPS,
 TLS-HELLO or UDP-CONNECT (supported only in Octavia), that is sent by the load
 balancer to verify the member state. Changing this creates a new monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -415,9 +415,9 @@ balancer to verify the member state. Changing this creates a new monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the monitor.
+    <dd>The administrative state of the monitor.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -425,10 +425,10 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. Expected HTTP codes
+    <dd>Required for HTTP(S) types. Expected HTTP codes
 for a passing HTTP(S) monitor. You can either specify a single status like
 "200", or a range like "200-202".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -436,10 +436,10 @@ for a passing HTTP(S) monitor. You can either specify a single status like
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. The HTTP method used
+    <dd>Required for HTTP(S) types. The HTTP method used
 for requests by the monitor. If this attribute is not specified, it
 defaults to "GET".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -447,10 +447,10 @@ defaults to "GET".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of permissible ping failures befor changing the member's
+    <dd>Number of permissible ping failures befor changing the member's
 status to ERROR. Must be a number between 1 and 10 (supported only in Octavia).
 Changing this updates the max_retries_down of the existing monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -458,8 +458,8 @@ Changing this updates the max_retries_down of the existing monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Monitor.
-{{% /md %}}</dd>
+    <dd>The Name of the Monitor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -467,11 +467,11 @@ Changing this updates the max_retries_down of the existing monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -479,10 +479,10 @@ monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the monitor.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -490,15 +490,15 @@ other than their own. Changing this creates a new monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. URI path that will be
+    <dd>Required for HTTP(S) types. URI path that will be
 accessed if monitor type is HTTP or HTTPS.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -507,8 +507,8 @@ accessed if monitor type is HTTP or HTTPS.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, between sending probes to members.
-{{% /md %}}</dd>
+    <dd>The time, in seconds, between sending probes to members.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -516,10 +516,10 @@ accessed if monitor type is HTTP or HTTPS.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of permissible ping failures before
+    <dd>Number of permissible ping failures before
 changing the member's status to INACTIVE. Must be a number between 1
 and 10.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -527,8 +527,8 @@ and 10.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the pool that this monitor will be assigned to.
-{{% /md %}}</dd>
+    <dd>The id of the pool that this monitor will be assigned to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -536,10 +536,10 @@ and 10.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of seconds for a monitor to wait for a
+    <dd>Maximum number of seconds for a monitor to wait for a
 ping reply before it times out. The value must be less than the delay
 value.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -547,10 +547,10 @@ value.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of probe, which is PING, TCP, HTTP, HTTPS,
+    <dd>The type of probe, which is PING, TCP, HTTP, HTTPS,
 TLS-HELLO or UDP-CONNECT (supported only in Octavia), that is sent by the load
 balancer to verify the member state. Changing this creates a new monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -558,9 +558,9 @@ balancer to verify the member state. Changing this creates a new monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the monitor.
+    <dd>The administrative state of the monitor.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -568,10 +568,10 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. Expected HTTP codes
+    <dd>Required for HTTP(S) types. Expected HTTP codes
 for a passing HTTP(S) monitor. You can either specify a single status like
 "200", or a range like "200-202".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -579,10 +579,10 @@ for a passing HTTP(S) monitor. You can either specify a single status like
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. The HTTP method used
+    <dd>Required for HTTP(S) types. The HTTP method used
 for requests by the monitor. If this attribute is not specified, it
 defaults to "GET".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -590,10 +590,10 @@ defaults to "GET".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of permissible ping failures befor changing the member's
+    <dd>Number of permissible ping failures befor changing the member's
 status to ERROR. Must be a number between 1 and 10 (supported only in Octavia).
 Changing this updates the max_retries_down of the existing monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -601,8 +601,8 @@ Changing this updates the max_retries_down of the existing monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Monitor.
-{{% /md %}}</dd>
+    <dd>The Name of the Monitor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -610,11 +610,11 @@ Changing this updates the max_retries_down of the existing monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -622,10 +622,10 @@ monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the monitor.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -633,15 +633,15 @@ other than their own. Changing this creates a new monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. URI path that will be
+    <dd>Required for HTTP(S) types. URI path that will be
 accessed if monitor type is HTTP or HTTPS.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -650,8 +650,8 @@ accessed if monitor type is HTTP or HTTPS.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, between sending probes to members.
-{{% /md %}}</dd>
+    <dd>The time, in seconds, between sending probes to members.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -659,10 +659,10 @@ accessed if monitor type is HTTP or HTTPS.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of permissible ping failures before
+    <dd>Number of permissible ping failures before
 changing the member's status to INACTIVE. Must be a number between 1
 and 10.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -670,8 +670,8 @@ and 10.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of the pool that this monitor will be assigned to.
-{{% /md %}}</dd>
+    <dd>The id of the pool that this monitor will be assigned to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -679,10 +679,10 @@ and 10.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of seconds for a monitor to wait for a
+    <dd>Maximum number of seconds for a monitor to wait for a
 ping reply before it times out. The value must be less than the delay
 value.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -690,10 +690,10 @@ value.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of probe, which is PING, TCP, HTTP, HTTPS,
+    <dd>The type of probe, which is PING, TCP, HTTP, HTTPS,
 TLS-HELLO or UDP-CONNECT (supported only in Octavia), that is sent by the load
 balancer to verify the member state. Changing this creates a new monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -701,9 +701,9 @@ balancer to verify the member state. Changing this creates a new monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the monitor.
+    <dd>The administrative state of the monitor.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -711,10 +711,10 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. Expected HTTP codes
+    <dd>Required for HTTP(S) types. Expected HTTP codes
 for a passing HTTP(S) monitor. You can either specify a single status like
 "200", or a range like "200-202".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -722,10 +722,10 @@ for a passing HTTP(S) monitor. You can either specify a single status like
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. The HTTP method used
+    <dd>Required for HTTP(S) types. The HTTP method used
 for requests by the monitor. If this attribute is not specified, it
 defaults to "GET".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -733,10 +733,10 @@ defaults to "GET".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of permissible ping failures befor changing the member's
+    <dd>Number of permissible ping failures befor changing the member's
 status to ERROR. Must be a number between 1 and 10 (supported only in Octavia).
 Changing this updates the max_retries_down of the existing monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -744,8 +744,8 @@ Changing this updates the max_retries_down of the existing monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Monitor.
-{{% /md %}}</dd>
+    <dd>The Name of the Monitor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -753,11 +753,11 @@ Changing this updates the max_retries_down of the existing monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -765,10 +765,10 @@ monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the monitor.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -776,12 +776,12 @@ other than their own. Changing this creates a new monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. URI path that will be
+    <dd>Required for HTTP(S) types. URI path that will be
 accessed if monitor type is HTTP or HTTPS.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -795,7 +795,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -804,13 +804,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -819,13 +819,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -834,13 +834,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -849,10 +849,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -863,25 +863,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Monitor Resource {#look-up}
 
 Get an existing Monitor resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/loadbalancer/#MonitorState">MonitorState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/loadbalancer/#Monitor">Monitor</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>admin_state_up=None<span class="p">, </span>delay=None<span class="p">, </span>expected_codes=None<span class="p">, </span>http_method=None<span class="p">, </span>max_retries=None<span class="p">, </span>max_retries_down=None<span class="p">, </span>name=None<span class="p">, </span>pool_id=None<span class="p">, </span>region=None<span class="p">, </span>tenant_id=None<span class="p">, </span>timeout=None<span class="p">, </span>type=None<span class="p">, </span>url_path=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetMonitor<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/loadbalancer?tab=doc#MonitorState">MonitorState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/loadbalancer?tab=doc#Monitor">Monitor</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.LoadBalancer.Monitor.html">Monitor</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.LoadBalancer.MonitorState.html">MonitorState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -906,9 +906,9 @@ Get an existing Monitor resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -921,36 +921,9 @@ Get an existing Monitor resource's state with the given name, ID, and optional e
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -975,13 +948,40 @@ Get an existing Monitor resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -990,9 +990,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the monitor.
+    <dd>The administrative state of the monitor.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1000,8 +1000,8 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, between sending probes to members.
-{{% /md %}}</dd>
+    <dd>The time, in seconds, between sending probes to members.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1009,10 +1009,10 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. Expected HTTP codes
+    <dd>Required for HTTP(S) types. Expected HTTP codes
 for a passing HTTP(S) monitor. You can either specify a single status like
 "200", or a range like "200-202".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1020,10 +1020,10 @@ for a passing HTTP(S) monitor. You can either specify a single status like
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. The HTTP method used
+    <dd>Required for HTTP(S) types. The HTTP method used
 for requests by the monitor. If this attribute is not specified, it
 defaults to "GET".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1031,10 +1031,10 @@ defaults to "GET".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of permissible ping failures before
+    <dd>Number of permissible ping failures before
 changing the member's status to INACTIVE. Must be a number between 1
 and 10.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1042,10 +1042,10 @@ and 10.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of permissible ping failures befor changing the member's
+    <dd>Number of permissible ping failures befor changing the member's
 status to ERROR. Must be a number between 1 and 10 (supported only in Octavia).
 Changing this updates the max_retries_down of the existing monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1053,8 +1053,8 @@ Changing this updates the max_retries_down of the existing monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Monitor.
-{{% /md %}}</dd>
+    <dd>The Name of the Monitor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1062,8 +1062,8 @@ Changing this updates the max_retries_down of the existing monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the pool that this monitor will be assigned to.
-{{% /md %}}</dd>
+    <dd>The id of the pool that this monitor will be assigned to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1071,11 +1071,11 @@ Changing this updates the max_retries_down of the existing monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1083,10 +1083,10 @@ monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the monitor.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1094,10 +1094,10 @@ other than their own. Changing this creates a new monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of seconds for a monitor to wait for a
+    <dd>Maximum number of seconds for a monitor to wait for a
 ping reply before it times out. The value must be less than the delay
 value.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1105,10 +1105,10 @@ value.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of probe, which is PING, TCP, HTTP, HTTPS,
+    <dd>The type of probe, which is PING, TCP, HTTP, HTTPS,
 TLS-HELLO or UDP-CONNECT (supported only in Octavia), that is sent by the load
 balancer to verify the member state. Changing this creates a new monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1116,15 +1116,15 @@ balancer to verify the member state. Changing this creates a new monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. URI path that will be
+    <dd>Required for HTTP(S) types. URI path that will be
 accessed if monitor type is HTTP or HTTPS.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1133,9 +1133,9 @@ accessed if monitor type is HTTP or HTTPS.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the monitor.
+    <dd>The administrative state of the monitor.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1143,8 +1143,8 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, between sending probes to members.
-{{% /md %}}</dd>
+    <dd>The time, in seconds, between sending probes to members.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1152,10 +1152,10 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. Expected HTTP codes
+    <dd>Required for HTTP(S) types. Expected HTTP codes
 for a passing HTTP(S) monitor. You can either specify a single status like
 "200", or a range like "200-202".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1163,10 +1163,10 @@ for a passing HTTP(S) monitor. You can either specify a single status like
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. The HTTP method used
+    <dd>Required for HTTP(S) types. The HTTP method used
 for requests by the monitor. If this attribute is not specified, it
 defaults to "GET".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1174,10 +1174,10 @@ defaults to "GET".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of permissible ping failures before
+    <dd>Number of permissible ping failures before
 changing the member's status to INACTIVE. Must be a number between 1
 and 10.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1185,10 +1185,10 @@ and 10.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of permissible ping failures befor changing the member's
+    <dd>Number of permissible ping failures befor changing the member's
 status to ERROR. Must be a number between 1 and 10 (supported only in Octavia).
 Changing this updates the max_retries_down of the existing monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1196,8 +1196,8 @@ Changing this updates the max_retries_down of the existing monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Monitor.
-{{% /md %}}</dd>
+    <dd>The Name of the Monitor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1205,8 +1205,8 @@ Changing this updates the max_retries_down of the existing monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the pool that this monitor will be assigned to.
-{{% /md %}}</dd>
+    <dd>The id of the pool that this monitor will be assigned to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1214,11 +1214,11 @@ Changing this updates the max_retries_down of the existing monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1226,10 +1226,10 @@ monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the monitor.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1237,10 +1237,10 @@ other than their own. Changing this creates a new monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of seconds for a monitor to wait for a
+    <dd>Maximum number of seconds for a monitor to wait for a
 ping reply before it times out. The value must be less than the delay
 value.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1248,10 +1248,10 @@ value.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of probe, which is PING, TCP, HTTP, HTTPS,
+    <dd>The type of probe, which is PING, TCP, HTTP, HTTPS,
 TLS-HELLO or UDP-CONNECT (supported only in Octavia), that is sent by the load
 balancer to verify the member state. Changing this creates a new monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1259,15 +1259,15 @@ balancer to verify the member state. Changing this creates a new monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. URI path that will be
+    <dd>Required for HTTP(S) types. URI path that will be
 accessed if monitor type is HTTP or HTTPS.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1276,9 +1276,9 @@ accessed if monitor type is HTTP or HTTPS.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the monitor.
+    <dd>The administrative state of the monitor.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1286,8 +1286,8 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, between sending probes to members.
-{{% /md %}}</dd>
+    <dd>The time, in seconds, between sending probes to members.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1295,10 +1295,10 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. Expected HTTP codes
+    <dd>Required for HTTP(S) types. Expected HTTP codes
 for a passing HTTP(S) monitor. You can either specify a single status like
 "200", or a range like "200-202".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1306,10 +1306,10 @@ for a passing HTTP(S) monitor. You can either specify a single status like
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. The HTTP method used
+    <dd>Required for HTTP(S) types. The HTTP method used
 for requests by the monitor. If this attribute is not specified, it
 defaults to "GET".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1317,10 +1317,10 @@ defaults to "GET".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of permissible ping failures before
+    <dd>Number of permissible ping failures before
 changing the member's status to INACTIVE. Must be a number between 1
 and 10.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1328,10 +1328,10 @@ and 10.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of permissible ping failures befor changing the member's
+    <dd>Number of permissible ping failures befor changing the member's
 status to ERROR. Must be a number between 1 and 10 (supported only in Octavia).
 Changing this updates the max_retries_down of the existing monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1339,8 +1339,8 @@ Changing this updates the max_retries_down of the existing monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Monitor.
-{{% /md %}}</dd>
+    <dd>The Name of the Monitor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1348,8 +1348,8 @@ Changing this updates the max_retries_down of the existing monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the pool that this monitor will be assigned to.
-{{% /md %}}</dd>
+    <dd>The id of the pool that this monitor will be assigned to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1357,11 +1357,11 @@ Changing this updates the max_retries_down of the existing monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1369,10 +1369,10 @@ monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the monitor.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1380,10 +1380,10 @@ other than their own. Changing this creates a new monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of seconds for a monitor to wait for a
+    <dd>Maximum number of seconds for a monitor to wait for a
 ping reply before it times out. The value must be less than the delay
 value.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1391,10 +1391,10 @@ value.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of probe, which is PING, TCP, HTTP, HTTPS,
+    <dd>The type of probe, which is PING, TCP, HTTP, HTTPS,
 TLS-HELLO or UDP-CONNECT (supported only in Octavia), that is sent by the load
 balancer to verify the member state. Changing this creates a new monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1402,15 +1402,15 @@ balancer to verify the member state. Changing this creates a new monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. URI path that will be
+    <dd>Required for HTTP(S) types. URI path that will be
 accessed if monitor type is HTTP or HTTPS.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1419,9 +1419,9 @@ accessed if monitor type is HTTP or HTTPS.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the monitor.
+    <dd>The administrative state of the monitor.
 A valid value is true (UP) or false (DOWN).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1429,8 +1429,8 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, between sending probes to members.
-{{% /md %}}</dd>
+    <dd>The time, in seconds, between sending probes to members.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1438,10 +1438,10 @@ A valid value is true (UP) or false (DOWN).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. Expected HTTP codes
+    <dd>Required for HTTP(S) types. Expected HTTP codes
 for a passing HTTP(S) monitor. You can either specify a single status like
 "200", or a range like "200-202".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1449,10 +1449,10 @@ for a passing HTTP(S) monitor. You can either specify a single status like
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. The HTTP method used
+    <dd>Required for HTTP(S) types. The HTTP method used
 for requests by the monitor. If this attribute is not specified, it
 defaults to "GET".
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1460,10 +1460,10 @@ defaults to "GET".
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of permissible ping failures before
+    <dd>Number of permissible ping failures before
 changing the member's status to INACTIVE. Must be a number between 1
 and 10.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1471,10 +1471,10 @@ and 10.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of permissible ping failures befor changing the member's
+    <dd>Number of permissible ping failures befor changing the member's
 status to ERROR. Must be a number between 1 and 10 (supported only in Octavia).
 Changing this updates the max_retries_down of the existing monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1482,8 +1482,8 @@ Changing this updates the max_retries_down of the existing monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Name of the Monitor.
-{{% /md %}}</dd>
+    <dd>The Name of the Monitor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1491,8 +1491,8 @@ Changing this updates the max_retries_down of the existing monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of the pool that this monitor will be assigned to.
-{{% /md %}}</dd>
+    <dd>The id of the pool that this monitor will be assigned to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1500,11 +1500,11 @@ Changing this updates the max_retries_down of the existing monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an . If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1512,10 +1512,10 @@ monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Required for admins. The UUID of the tenant who owns
+    <dd>Required for admins. The UUID of the tenant who owns
 the monitor.  Only administrative users can specify a tenant UUID
 other than their own. Changing this creates a new monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1523,10 +1523,10 @@ other than their own. Changing this creates a new monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Maximum number of seconds for a monitor to wait for a
+    <dd>Maximum number of seconds for a monitor to wait for a
 ping reply before it times out. The value must be less than the delay
 value.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1534,10 +1534,10 @@ value.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of probe, which is PING, TCP, HTTP, HTTPS,
+    <dd>The type of probe, which is PING, TCP, HTTP, HTTPS,
 TLS-HELLO or UDP-CONNECT (supported only in Octavia), that is sent by the load
 balancer to verify the member state. Changing this creates a new monitor.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1545,12 +1545,12 @@ balancer to verify the member state. Changing this creates a new monitor.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Required for HTTP(S) types. URI path that will be
+    <dd>Required for HTTP(S) types. URI path that will be
 accessed if monitor type is HTTP or HTTPS.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

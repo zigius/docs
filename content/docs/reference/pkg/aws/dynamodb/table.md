@@ -101,26 +101,26 @@ const example = new aws.dynamodb.Table("example", {
 
 
 ## Create a Table Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/dynamodb/#Table">Table</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/dynamodb/#TableArgs">TableArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Table</span><span class="p">(resource_name, opts=None, </span>attributes=None<span class="p">, </span>billing_mode=None<span class="p">, </span>global_secondary_indexes=None<span class="p">, </span>hash_key=None<span class="p">, </span>local_secondary_indexes=None<span class="p">, </span>name=None<span class="p">, </span>point_in_time_recovery=None<span class="p">, </span>range_key=None<span class="p">, </span>read_capacity=None<span class="p">, </span>replicas=None<span class="p">, </span>server_side_encryption=None<span class="p">, </span>stream_enabled=None<span class="p">, </span>stream_view_type=None<span class="p">, </span>tags=None<span class="p">, </span>ttl=None<span class="p">, </span>write_capacity=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewTable<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dynamodb?tab=doc#TableArgs">TableArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dynamodb?tab=doc#Table">Table</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DynamoDB.Table.html">Table</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DynamoDB.TableArgs.html">TableArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -157,9 +157,9 @@ const example = new aws.dynamodb.Table("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -177,9 +177,9 @@ const example = new aws.dynamodb.Table("example", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -226,9 +226,9 @@ const example = new aws.dynamodb.Table("example", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -265,7 +265,7 @@ const example = new aws.dynamodb.Table("example", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Table Resource Properties {#properties}
 
@@ -278,7 +278,7 @@ The Table resource accepts the following [input]({{< relref "/docs/intro/concept
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -287,8 +287,8 @@ The Table resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableattribute">List&lt;Table<wbr>Attribute<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:
-{{% /md %}}</dd>
+    <dd>List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -296,9 +296,9 @@ The Table resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the hash key in the index; must be
+    <dd>The name of the hash key in the index; must be
 defined as an attribute in the resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -306,8 +306,8 @@ defined as an attribute in the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
-{{% /md %}}</dd>
+    <dd>Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -315,10 +315,10 @@ defined as an attribute in the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableglobalsecondaryindex">List&lt;Table<wbr>Global<wbr>Secondary<wbr>Index<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Describe a GSI for the table;
+    <dd>Describe a GSI for the table;
 subject to the normal limits on the number of GSIs, projected
 attributes, etc.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -326,10 +326,10 @@ attributes, etc.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablelocalsecondaryindex">List&lt;Table<wbr>Local<wbr>Secondary<wbr>Index<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Describe an LSI on the table;
+    <dd>Describe an LSI on the table;
 these can only be allocated *at creation* so you cannot change this
 definition after you have created the resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -337,8 +337,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the index
-{{% /md %}}</dd>
+    <dd>The name of the index
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,8 +346,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablepointintimerecovery">Table<wbr>Point<wbr>In<wbr>Time<wbr>Recovery<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Point-in-time recovery options.
-{{% /md %}}</dd>
+    <dd>Point-in-time recovery options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,8 +355,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the range key; must be defined
-{{% /md %}}</dd>
+    <dd>The name of the range key; must be defined
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -364,8 +364,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -373,8 +373,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablereplica">List&lt;Table<wbr>Replica<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) with [DynamoDB Global Tables V2 (version 2019.11.21)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html) replication configurations. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) with [DynamoDB Global Tables V2 (version 2019.11.21)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html) replication configurations. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -382,8 +382,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableserversideencryption">Table<wbr>Server<wbr>Side<wbr>Encryption<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
-{{% /md %}}</dd>
+    <dd>Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -391,8 +391,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether Streams are to be enabled (true) or disabled (false).
-{{% /md %}}</dd>
+    <dd>Indicates whether Streams are to be enabled (true) or disabled (false).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -400,8 +400,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are `KEYS_ONLY`, `NEW_IMAGE`, `OLD_IMAGE`, `NEW_AND_OLD_IMAGES`.
-{{% /md %}}</dd>
+    <dd>When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are `KEYS_ONLY`, `NEW_IMAGE`, `OLD_IMAGE`, `NEW_AND_OLD_IMAGES`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -409,8 +409,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of tags to populate on the created table.
-{{% /md %}}</dd>
+    <dd>A map of tags to populate on the created table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -418,8 +418,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablettl">Table<wbr>Ttl<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Defines ttl, has two properties, and can only be specified once:
-{{% /md %}}</dd>
+    <dd>Defines ttl, has two properties, and can only be specified once:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -427,14 +427,14 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -443,8 +443,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableattribute">[]Table<wbr>Attribute</a></span>
     </dt>
-    <dd>{{% md %}}List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:
-{{% /md %}}</dd>
+    <dd>List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -452,9 +452,9 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the hash key in the index; must be
+    <dd>The name of the hash key in the index; must be
 defined as an attribute in the resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -462,8 +462,8 @@ defined as an attribute in the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
-{{% /md %}}</dd>
+    <dd>Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -471,10 +471,10 @@ defined as an attribute in the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableglobalsecondaryindex">[]Table<wbr>Global<wbr>Secondary<wbr>Index</a></span>
     </dt>
-    <dd>{{% md %}}Describe a GSI for the table;
+    <dd>Describe a GSI for the table;
 subject to the normal limits on the number of GSIs, projected
 attributes, etc.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -482,10 +482,10 @@ attributes, etc.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablelocalsecondaryindex">[]Table<wbr>Local<wbr>Secondary<wbr>Index</a></span>
     </dt>
-    <dd>{{% md %}}Describe an LSI on the table;
+    <dd>Describe an LSI on the table;
 these can only be allocated *at creation* so you cannot change this
 definition after you have created the resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -493,8 +493,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the index
-{{% /md %}}</dd>
+    <dd>The name of the index
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -502,8 +502,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablepointintimerecovery">Table<wbr>Point<wbr>In<wbr>Time<wbr>Recovery</a></span>
     </dt>
-    <dd>{{% md %}}Point-in-time recovery options.
-{{% /md %}}</dd>
+    <dd>Point-in-time recovery options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -511,8 +511,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the range key; must be defined
-{{% /md %}}</dd>
+    <dd>The name of the range key; must be defined
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -520,8 +520,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -529,8 +529,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablereplica">[]Table<wbr>Replica</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) with [DynamoDB Global Tables V2 (version 2019.11.21)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html) replication configurations. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) with [DynamoDB Global Tables V2 (version 2019.11.21)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html) replication configurations. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -538,8 +538,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableserversideencryption">Table<wbr>Server<wbr>Side<wbr>Encryption</a></span>
     </dt>
-    <dd>{{% md %}}Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
-{{% /md %}}</dd>
+    <dd>Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -547,8 +547,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether Streams are to be enabled (true) or disabled (false).
-{{% /md %}}</dd>
+    <dd>Indicates whether Streams are to be enabled (true) or disabled (false).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -556,8 +556,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are `KEYS_ONLY`, `NEW_IMAGE`, `OLD_IMAGE`, `NEW_AND_OLD_IMAGES`.
-{{% /md %}}</dd>
+    <dd>When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are `KEYS_ONLY`, `NEW_IMAGE`, `OLD_IMAGE`, `NEW_AND_OLD_IMAGES`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -565,8 +565,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of tags to populate on the created table.
-{{% /md %}}</dd>
+    <dd>A map of tags to populate on the created table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -574,8 +574,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablettl">Table<wbr>Ttl</a></span>
     </dt>
-    <dd>{{% md %}}Defines ttl, has two properties, and can only be specified once:
-{{% /md %}}</dd>
+    <dd>Defines ttl, has two properties, and can only be specified once:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -583,14 +583,14 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -599,8 +599,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableattribute">Table<wbr>Attribute[]</a></span>
     </dt>
-    <dd>{{% md %}}List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:
-{{% /md %}}</dd>
+    <dd>List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -608,9 +608,9 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the hash key in the index; must be
+    <dd>The name of the hash key in the index; must be
 defined as an attribute in the resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -618,8 +618,8 @@ defined as an attribute in the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
-{{% /md %}}</dd>
+    <dd>Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -627,10 +627,10 @@ defined as an attribute in the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableglobalsecondaryindex">Table<wbr>Global<wbr>Secondary<wbr>Index[]</a></span>
     </dt>
-    <dd>{{% md %}}Describe a GSI for the table;
+    <dd>Describe a GSI for the table;
 subject to the normal limits on the number of GSIs, projected
 attributes, etc.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -638,10 +638,10 @@ attributes, etc.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablelocalsecondaryindex">Table<wbr>Local<wbr>Secondary<wbr>Index[]</a></span>
     </dt>
-    <dd>{{% md %}}Describe an LSI on the table;
+    <dd>Describe an LSI on the table;
 these can only be allocated *at creation* so you cannot change this
 definition after you have created the resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -649,8 +649,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the index
-{{% /md %}}</dd>
+    <dd>The name of the index
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -658,8 +658,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablepointintimerecovery">Table<wbr>Point<wbr>In<wbr>Time<wbr>Recovery</a></span>
     </dt>
-    <dd>{{% md %}}Point-in-time recovery options.
-{{% /md %}}</dd>
+    <dd>Point-in-time recovery options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -667,8 +667,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the range key; must be defined
-{{% /md %}}</dd>
+    <dd>The name of the range key; must be defined
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -676,8 +676,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -685,8 +685,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablereplica">Table<wbr>Replica[]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) with [DynamoDB Global Tables V2 (version 2019.11.21)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html) replication configurations. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) with [DynamoDB Global Tables V2 (version 2019.11.21)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html) replication configurations. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -694,8 +694,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableserversideencryption">Table<wbr>Server<wbr>Side<wbr>Encryption</a></span>
     </dt>
-    <dd>{{% md %}}Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
-{{% /md %}}</dd>
+    <dd>Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -703,8 +703,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether Streams are to be enabled (true) or disabled (false).
-{{% /md %}}</dd>
+    <dd>Indicates whether Streams are to be enabled (true) or disabled (false).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -712,8 +712,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are `KEYS_ONLY`, `NEW_IMAGE`, `OLD_IMAGE`, `NEW_AND_OLD_IMAGES`.
-{{% /md %}}</dd>
+    <dd>When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are `KEYS_ONLY`, `NEW_IMAGE`, `OLD_IMAGE`, `NEW_AND_OLD_IMAGES`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -721,8 +721,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of tags to populate on the created table.
-{{% /md %}}</dd>
+    <dd>A map of tags to populate on the created table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -730,8 +730,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablettl">Table<wbr>Ttl</a></span>
     </dt>
-    <dd>{{% md %}}Defines ttl, has two properties, and can only be specified once:
-{{% /md %}}</dd>
+    <dd>Defines ttl, has two properties, and can only be specified once:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -739,14 +739,14 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -755,8 +755,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableattribute">List[Table<wbr>Attribute]</a></span>
     </dt>
-    <dd>{{% md %}}List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:
-{{% /md %}}</dd>
+    <dd>List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -764,9 +764,9 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the hash key in the index; must be
+    <dd>The name of the hash key in the index; must be
 defined as an attribute in the resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -774,8 +774,8 @@ defined as an attribute in the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
-{{% /md %}}</dd>
+    <dd>Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -783,10 +783,10 @@ defined as an attribute in the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableglobalsecondaryindex">List[Table<wbr>Global<wbr>Secondary<wbr>Index]</a></span>
     </dt>
-    <dd>{{% md %}}Describe a GSI for the table;
+    <dd>Describe a GSI for the table;
 subject to the normal limits on the number of GSIs, projected
 attributes, etc.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -794,10 +794,10 @@ attributes, etc.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablelocalsecondaryindex">List[Table<wbr>Local<wbr>Secondary<wbr>Index]</a></span>
     </dt>
-    <dd>{{% md %}}Describe an LSI on the table;
+    <dd>Describe an LSI on the table;
 these can only be allocated *at creation* so you cannot change this
 definition after you have created the resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -805,8 +805,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the index
-{{% /md %}}</dd>
+    <dd>The name of the index
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -814,8 +814,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablepointintimerecovery">Dict[Table<wbr>Point<wbr>In<wbr>Time<wbr>Recovery]</a></span>
     </dt>
-    <dd>{{% md %}}Point-in-time recovery options.
-{{% /md %}}</dd>
+    <dd>Point-in-time recovery options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -823,8 +823,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the range key; must be defined
-{{% /md %}}</dd>
+    <dd>The name of the range key; must be defined
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -832,8 +832,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -841,8 +841,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablereplica">List[Table<wbr>Replica]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) with [DynamoDB Global Tables V2 (version 2019.11.21)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html) replication configurations. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) with [DynamoDB Global Tables V2 (version 2019.11.21)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html) replication configurations. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -850,8 +850,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableserversideencryption">Dict[Table<wbr>Server<wbr>Side<wbr>Encryption]</a></span>
     </dt>
-    <dd>{{% md %}}Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
-{{% /md %}}</dd>
+    <dd>Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -859,8 +859,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether Streams are to be enabled (true) or disabled (false).
-{{% /md %}}</dd>
+    <dd>Indicates whether Streams are to be enabled (true) or disabled (false).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -868,8 +868,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are `KEYS_ONLY`, `NEW_IMAGE`, `OLD_IMAGE`, `NEW_AND_OLD_IMAGES`.
-{{% /md %}}</dd>
+    <dd>When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are `KEYS_ONLY`, `NEW_IMAGE`, `OLD_IMAGE`, `NEW_AND_OLD_IMAGES`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -877,8 +877,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of tags to populate on the created table.
-{{% /md %}}</dd>
+    <dd>A map of tags to populate on the created table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -886,8 +886,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablettl">Dict[Table<wbr>Ttl]</a></span>
     </dt>
-    <dd>{{% md %}}Defines ttl, has two properties, and can only be specified once:
-{{% /md %}}</dd>
+    <dd>Defines ttl, has two properties, and can only be specified once:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -895,11 +895,11 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -913,7 +913,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -922,8 +922,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The arn of the table
-{{% /md %}}</dd>
+    <dd>The arn of the table
+</dd>
 
     <dt class="property-"
             title="">
@@ -931,7 +931,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -939,8 +939,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Table Stream. Only available when `stream_enabled = true`
-{{% /md %}}</dd>
+    <dd>The ARN of the Table Stream. Only available when `stream_enabled = true`
+</dd>
 
     <dt class="property-"
             title="">
@@ -948,17 +948,17 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not
+    <dd>A timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not
 a unique identifier for the stream on its own. However, the combination of AWS customer ID,
 table name and this field is guaranteed to be unique.
 It can be used for creating CloudWatch Alarms. Only available when `stream_enabled = true`
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -967,8 +967,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The arn of the table
-{{% /md %}}</dd>
+    <dd>The arn of the table
+</dd>
 
     <dt class="property-"
             title="">
@@ -976,7 +976,7 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -984,8 +984,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Table Stream. Only available when `stream_enabled = true`
-{{% /md %}}</dd>
+    <dd>The ARN of the Table Stream. Only available when `stream_enabled = true`
+</dd>
 
     <dt class="property-"
             title="">
@@ -993,17 +993,17 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not
+    <dd>A timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not
 a unique identifier for the stream on its own. However, the combination of AWS customer ID,
 table name and this field is guaranteed to be unique.
 It can be used for creating CloudWatch Alarms. Only available when `stream_enabled = true`
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1012,8 +1012,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The arn of the table
-{{% /md %}}</dd>
+    <dd>The arn of the table
+</dd>
 
     <dt class="property-"
             title="">
@@ -1021,7 +1021,7 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1029,8 +1029,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Table Stream. Only available when `stream_enabled = true`
-{{% /md %}}</dd>
+    <dd>The ARN of the Table Stream. Only available when `stream_enabled = true`
+</dd>
 
     <dt class="property-"
             title="">
@@ -1038,17 +1038,17 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not
+    <dd>A timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not
 a unique identifier for the stream on its own. However, the combination of AWS customer ID,
 table name and this field is guaranteed to be unique.
 It can be used for creating CloudWatch Alarms. Only available when `stream_enabled = true`
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1057,8 +1057,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The arn of the table
-{{% /md %}}</dd>
+    <dd>The arn of the table
+</dd>
 
     <dt class="property-"
             title="">
@@ -1066,7 +1066,7 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1074,8 +1074,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Table Stream. Only available when `stream_enabled = true`
-{{% /md %}}</dd>
+    <dd>The ARN of the Table Stream. Only available when `stream_enabled = true`
+</dd>
 
     <dt class="property-"
             title="">
@@ -1083,14 +1083,14 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not
+    <dd>A timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not
 a unique identifier for the stream on its own. However, the combination of AWS customer ID,
 table name and this field is guaranteed to be unique.
 It can be used for creating CloudWatch Alarms. Only available when `stream_enabled = true`
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1101,25 +1101,25 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
 ## Look up an Existing Table Resource {#look-up}
 
 Get an existing Table resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/dynamodb/#TableState">TableState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/dynamodb/#Table">Table</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>attributes=None<span class="p">, </span>billing_mode=None<span class="p">, </span>global_secondary_indexes=None<span class="p">, </span>hash_key=None<span class="p">, </span>local_secondary_indexes=None<span class="p">, </span>name=None<span class="p">, </span>point_in_time_recovery=None<span class="p">, </span>range_key=None<span class="p">, </span>read_capacity=None<span class="p">, </span>replicas=None<span class="p">, </span>server_side_encryption=None<span class="p">, </span>stream_arn=None<span class="p">, </span>stream_enabled=None<span class="p">, </span>stream_label=None<span class="p">, </span>stream_view_type=None<span class="p">, </span>tags=None<span class="p">, </span>ttl=None<span class="p">, </span>write_capacity=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetTable<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dynamodb?tab=doc#TableState">TableState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dynamodb?tab=doc#Table">Table</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DynamoDB.Table.html">Table</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DynamoDB.TableState.html">TableState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1144,9 +1144,9 @@ Get an existing Table resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1159,36 +1159,9 @@ Get an existing Table resource's state with the given name, ID, and optional ext
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1213,13 +1186,40 @@ Get an existing Table resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1228,8 +1228,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The arn of the table
-{{% /md %}}</dd>
+    <dd>The arn of the table
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1237,8 +1237,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableattribute">List&lt;Table<wbr>Attribute<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:
-{{% /md %}}</dd>
+    <dd>List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1246,8 +1246,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
-{{% /md %}}</dd>
+    <dd>Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1255,10 +1255,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableglobalsecondaryindex">List&lt;Table<wbr>Global<wbr>Secondary<wbr>Index<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Describe a GSI for the table;
+    <dd>Describe a GSI for the table;
 subject to the normal limits on the number of GSIs, projected
 attributes, etc.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1266,9 +1266,9 @@ attributes, etc.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the hash key in the index; must be
+    <dd>The name of the hash key in the index; must be
 defined as an attribute in the resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1276,10 +1276,10 @@ defined as an attribute in the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablelocalsecondaryindex">List&lt;Table<wbr>Local<wbr>Secondary<wbr>Index<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Describe an LSI on the table;
+    <dd>Describe an LSI on the table;
 these can only be allocated *at creation* so you cannot change this
 definition after you have created the resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,8 +1287,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the index
-{{% /md %}}</dd>
+    <dd>The name of the index
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1296,8 +1296,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablepointintimerecovery">Table<wbr>Point<wbr>In<wbr>Time<wbr>Recovery<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Point-in-time recovery options.
-{{% /md %}}</dd>
+    <dd>Point-in-time recovery options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1305,8 +1305,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the range key; must be defined
-{{% /md %}}</dd>
+    <dd>The name of the range key; must be defined
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1314,8 +1314,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1323,8 +1323,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablereplica">List&lt;Table<wbr>Replica<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) with [DynamoDB Global Tables V2 (version 2019.11.21)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html) replication configurations. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) with [DynamoDB Global Tables V2 (version 2019.11.21)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html) replication configurations. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1332,8 +1332,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableserversideencryption">Table<wbr>Server<wbr>Side<wbr>Encryption<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
-{{% /md %}}</dd>
+    <dd>Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1341,8 +1341,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Table Stream. Only available when `stream_enabled = true`
-{{% /md %}}</dd>
+    <dd>The ARN of the Table Stream. Only available when `stream_enabled = true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1350,8 +1350,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether Streams are to be enabled (true) or disabled (false).
-{{% /md %}}</dd>
+    <dd>Indicates whether Streams are to be enabled (true) or disabled (false).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1359,11 +1359,11 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not
+    <dd>A timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not
 a unique identifier for the stream on its own. However, the combination of AWS customer ID,
 table name and this field is guaranteed to be unique.
 It can be used for creating CloudWatch Alarms. Only available when `stream_enabled = true`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1371,8 +1371,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are `KEYS_ONLY`, `NEW_IMAGE`, `OLD_IMAGE`, `NEW_AND_OLD_IMAGES`.
-{{% /md %}}</dd>
+    <dd>When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are `KEYS_ONLY`, `NEW_IMAGE`, `OLD_IMAGE`, `NEW_AND_OLD_IMAGES`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1380,8 +1380,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of tags to populate on the created table.
-{{% /md %}}</dd>
+    <dd>A map of tags to populate on the created table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1389,8 +1389,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablettl">Table<wbr>Ttl<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Defines ttl, has two properties, and can only be specified once:
-{{% /md %}}</dd>
+    <dd>Defines ttl, has two properties, and can only be specified once:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1398,14 +1398,14 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1414,8 +1414,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The arn of the table
-{{% /md %}}</dd>
+    <dd>The arn of the table
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1423,8 +1423,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableattribute">[]Table<wbr>Attribute</a></span>
     </dt>
-    <dd>{{% md %}}List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:
-{{% /md %}}</dd>
+    <dd>List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1432,8 +1432,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
-{{% /md %}}</dd>
+    <dd>Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1441,10 +1441,10 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableglobalsecondaryindex">[]Table<wbr>Global<wbr>Secondary<wbr>Index</a></span>
     </dt>
-    <dd>{{% md %}}Describe a GSI for the table;
+    <dd>Describe a GSI for the table;
 subject to the normal limits on the number of GSIs, projected
 attributes, etc.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1452,9 +1452,9 @@ attributes, etc.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the hash key in the index; must be
+    <dd>The name of the hash key in the index; must be
 defined as an attribute in the resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1462,10 +1462,10 @@ defined as an attribute in the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablelocalsecondaryindex">[]Table<wbr>Local<wbr>Secondary<wbr>Index</a></span>
     </dt>
-    <dd>{{% md %}}Describe an LSI on the table;
+    <dd>Describe an LSI on the table;
 these can only be allocated *at creation* so you cannot change this
 definition after you have created the resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1473,8 +1473,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the index
-{{% /md %}}</dd>
+    <dd>The name of the index
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1482,8 +1482,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablepointintimerecovery">Table<wbr>Point<wbr>In<wbr>Time<wbr>Recovery</a></span>
     </dt>
-    <dd>{{% md %}}Point-in-time recovery options.
-{{% /md %}}</dd>
+    <dd>Point-in-time recovery options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1491,8 +1491,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the range key; must be defined
-{{% /md %}}</dd>
+    <dd>The name of the range key; must be defined
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1500,8 +1500,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1509,8 +1509,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablereplica">[]Table<wbr>Replica</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) with [DynamoDB Global Tables V2 (version 2019.11.21)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html) replication configurations. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) with [DynamoDB Global Tables V2 (version 2019.11.21)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html) replication configurations. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1518,8 +1518,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableserversideencryption">Table<wbr>Server<wbr>Side<wbr>Encryption</a></span>
     </dt>
-    <dd>{{% md %}}Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
-{{% /md %}}</dd>
+    <dd>Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1527,8 +1527,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Table Stream. Only available when `stream_enabled = true`
-{{% /md %}}</dd>
+    <dd>The ARN of the Table Stream. Only available when `stream_enabled = true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1536,8 +1536,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether Streams are to be enabled (true) or disabled (false).
-{{% /md %}}</dd>
+    <dd>Indicates whether Streams are to be enabled (true) or disabled (false).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1545,11 +1545,11 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not
+    <dd>A timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not
 a unique identifier for the stream on its own. However, the combination of AWS customer ID,
 table name and this field is guaranteed to be unique.
 It can be used for creating CloudWatch Alarms. Only available when `stream_enabled = true`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1557,8 +1557,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are `KEYS_ONLY`, `NEW_IMAGE`, `OLD_IMAGE`, `NEW_AND_OLD_IMAGES`.
-{{% /md %}}</dd>
+    <dd>When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are `KEYS_ONLY`, `NEW_IMAGE`, `OLD_IMAGE`, `NEW_AND_OLD_IMAGES`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1566,8 +1566,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of tags to populate on the created table.
-{{% /md %}}</dd>
+    <dd>A map of tags to populate on the created table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1575,8 +1575,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablettl">Table<wbr>Ttl</a></span>
     </dt>
-    <dd>{{% md %}}Defines ttl, has two properties, and can only be specified once:
-{{% /md %}}</dd>
+    <dd>Defines ttl, has two properties, and can only be specified once:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1584,14 +1584,14 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1600,8 +1600,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The arn of the table
-{{% /md %}}</dd>
+    <dd>The arn of the table
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1609,8 +1609,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableattribute">Table<wbr>Attribute[]</a></span>
     </dt>
-    <dd>{{% md %}}List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:
-{{% /md %}}</dd>
+    <dd>List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1618,8 +1618,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
-{{% /md %}}</dd>
+    <dd>Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1627,10 +1627,10 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableglobalsecondaryindex">Table<wbr>Global<wbr>Secondary<wbr>Index[]</a></span>
     </dt>
-    <dd>{{% md %}}Describe a GSI for the table;
+    <dd>Describe a GSI for the table;
 subject to the normal limits on the number of GSIs, projected
 attributes, etc.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1638,9 +1638,9 @@ attributes, etc.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the hash key in the index; must be
+    <dd>The name of the hash key in the index; must be
 defined as an attribute in the resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1648,10 +1648,10 @@ defined as an attribute in the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablelocalsecondaryindex">Table<wbr>Local<wbr>Secondary<wbr>Index[]</a></span>
     </dt>
-    <dd>{{% md %}}Describe an LSI on the table;
+    <dd>Describe an LSI on the table;
 these can only be allocated *at creation* so you cannot change this
 definition after you have created the resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1659,8 +1659,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the index
-{{% /md %}}</dd>
+    <dd>The name of the index
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1668,8 +1668,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablepointintimerecovery">Table<wbr>Point<wbr>In<wbr>Time<wbr>Recovery</a></span>
     </dt>
-    <dd>{{% md %}}Point-in-time recovery options.
-{{% /md %}}</dd>
+    <dd>Point-in-time recovery options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1677,8 +1677,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the range key; must be defined
-{{% /md %}}</dd>
+    <dd>The name of the range key; must be defined
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1686,8 +1686,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1695,8 +1695,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablereplica">Table<wbr>Replica[]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) with [DynamoDB Global Tables V2 (version 2019.11.21)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html) replication configurations. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) with [DynamoDB Global Tables V2 (version 2019.11.21)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html) replication configurations. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1704,8 +1704,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableserversideencryption">Table<wbr>Server<wbr>Side<wbr>Encryption</a></span>
     </dt>
-    <dd>{{% md %}}Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
-{{% /md %}}</dd>
+    <dd>Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1713,8 +1713,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Table Stream. Only available when `stream_enabled = true`
-{{% /md %}}</dd>
+    <dd>The ARN of the Table Stream. Only available when `stream_enabled = true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1722,8 +1722,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether Streams are to be enabled (true) or disabled (false).
-{{% /md %}}</dd>
+    <dd>Indicates whether Streams are to be enabled (true) or disabled (false).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1731,11 +1731,11 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not
+    <dd>A timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not
 a unique identifier for the stream on its own. However, the combination of AWS customer ID,
 table name and this field is guaranteed to be unique.
 It can be used for creating CloudWatch Alarms. Only available when `stream_enabled = true`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1743,8 +1743,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are `KEYS_ONLY`, `NEW_IMAGE`, `OLD_IMAGE`, `NEW_AND_OLD_IMAGES`.
-{{% /md %}}</dd>
+    <dd>When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are `KEYS_ONLY`, `NEW_IMAGE`, `OLD_IMAGE`, `NEW_AND_OLD_IMAGES`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1752,8 +1752,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of tags to populate on the created table.
-{{% /md %}}</dd>
+    <dd>A map of tags to populate on the created table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1761,8 +1761,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablettl">Table<wbr>Ttl</a></span>
     </dt>
-    <dd>{{% md %}}Defines ttl, has two properties, and can only be specified once:
-{{% /md %}}</dd>
+    <dd>Defines ttl, has two properties, and can only be specified once:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1770,14 +1770,14 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1786,8 +1786,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The arn of the table
-{{% /md %}}</dd>
+    <dd>The arn of the table
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1795,8 +1795,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableattribute">List[Table<wbr>Attribute]</a></span>
     </dt>
-    <dd>{{% md %}}List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:
-{{% /md %}}</dd>
+    <dd>List of nested attribute definitions. Only required for `hash_key` and `range_key` attributes. Each attribute has two properties:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1804,8 +1804,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
-{{% /md %}}</dd>
+    <dd>Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1813,10 +1813,10 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableglobalsecondaryindex">List[Table<wbr>Global<wbr>Secondary<wbr>Index]</a></span>
     </dt>
-    <dd>{{% md %}}Describe a GSI for the table;
+    <dd>Describe a GSI for the table;
 subject to the normal limits on the number of GSIs, projected
 attributes, etc.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1824,9 +1824,9 @@ attributes, etc.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the hash key in the index; must be
+    <dd>The name of the hash key in the index; must be
 defined as an attribute in the resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1834,10 +1834,10 @@ defined as an attribute in the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablelocalsecondaryindex">List[Table<wbr>Local<wbr>Secondary<wbr>Index]</a></span>
     </dt>
-    <dd>{{% md %}}Describe an LSI on the table;
+    <dd>Describe an LSI on the table;
 these can only be allocated *at creation* so you cannot change this
 definition after you have created the resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1845,8 +1845,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the index
-{{% /md %}}</dd>
+    <dd>The name of the index
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1854,8 +1854,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablepointintimerecovery">Dict[Table<wbr>Point<wbr>In<wbr>Time<wbr>Recovery]</a></span>
     </dt>
-    <dd>{{% md %}}Point-in-time recovery options.
-{{% /md %}}</dd>
+    <dd>Point-in-time recovery options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1863,8 +1863,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the range key; must be defined
-{{% /md %}}</dd>
+    <dd>The name of the range key; must be defined
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1872,8 +1872,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1881,8 +1881,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablereplica">List[Table<wbr>Replica]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block(s) with [DynamoDB Global Tables V2 (version 2019.11.21)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html) replication configurations. Detailed below.
-{{% /md %}}</dd>
+    <dd>Configuration block(s) with [DynamoDB Global Tables V2 (version 2019.11.21)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html) replication configurations. Detailed below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1890,8 +1890,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tableserversideencryption">Dict[Table<wbr>Server<wbr>Side<wbr>Encryption]</a></span>
     </dt>
-    <dd>{{% md %}}Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
-{{% /md %}}</dd>
+    <dd>Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1899,8 +1899,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the Table Stream. Only available when `stream_enabled = true`
-{{% /md %}}</dd>
+    <dd>The ARN of the Table Stream. Only available when `stream_enabled = true`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1908,8 +1908,8 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether Streams are to be enabled (true) or disabled (false).
-{{% /md %}}</dd>
+    <dd>Indicates whether Streams are to be enabled (true) or disabled (false).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1917,11 +1917,11 @@ definition after you have created the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not
+    <dd>A timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not
 a unique identifier for the stream on its own. However, the combination of AWS customer ID,
 table name and this field is guaranteed to be unique.
 It can be used for creating CloudWatch Alarms. Only available when `stream_enabled = true`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1929,8 +1929,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are `KEYS_ONLY`, `NEW_IMAGE`, `OLD_IMAGE`, `NEW_AND_OLD_IMAGES`.
-{{% /md %}}</dd>
+    <dd>When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are `KEYS_ONLY`, `NEW_IMAGE`, `OLD_IMAGE`, `NEW_AND_OLD_IMAGES`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1938,8 +1938,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of tags to populate on the created table.
-{{% /md %}}</dd>
+    <dd>A map of tags to populate on the created table.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1947,8 +1947,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#tablettl">Dict[Table<wbr>Ttl]</a></span>
     </dt>
-    <dd>{{% md %}}Defines ttl, has two properties, and can only be specified once:
-{{% /md %}}</dd>
+    <dd>Defines ttl, has two properties, and can only be specified once:
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1956,11 +1956,11 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1975,18 +1975,18 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
 
 
 <h4 id="tableattribute">Table<wbr>Attribute</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TableAttribute">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TableAttribute">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dynamodb?tab=doc#TableAttributeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dynamodb?tab=doc#TableAttributeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1995,8 +1995,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the index
-{{% /md %}}</dd>
+    <dd>The name of the index
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2004,14 +2004,14 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Attribute type, which must be a scalar type: `S`, `N`, or `B` for (S)tring, (N)umber or (B)inary data
-{{% /md %}}</dd>
+    <dd>Attribute type, which must be a scalar type: `S`, `N`, or `B` for (S)tring, (N)umber or (B)inary data
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2020,8 +2020,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the index
-{{% /md %}}</dd>
+    <dd>The name of the index
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2029,14 +2029,14 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Attribute type, which must be a scalar type: `S`, `N`, or `B` for (S)tring, (N)umber or (B)inary data
-{{% /md %}}</dd>
+    <dd>Attribute type, which must be a scalar type: `S`, `N`, or `B` for (S)tring, (N)umber or (B)inary data
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2045,8 +2045,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the index
-{{% /md %}}</dd>
+    <dd>The name of the index
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2054,14 +2054,14 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Attribute type, which must be a scalar type: `S`, `N`, or `B` for (S)tring, (N)umber or (B)inary data
-{{% /md %}}</dd>
+    <dd>Attribute type, which must be a scalar type: `S`, `N`, or `B` for (S)tring, (N)umber or (B)inary data
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2070,8 +2070,8 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the index
-{{% /md %}}</dd>
+    <dd>The name of the index
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2079,29 +2079,29 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Attribute type, which must be a scalar type: `S`, `N`, or `B` for (S)tring, (N)umber or (B)inary data
-{{% /md %}}</dd>
+    <dd>Attribute type, which must be a scalar type: `S`, `N`, or `B` for (S)tring, (N)umber or (B)inary data
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="tableglobalsecondaryindex">Table<wbr>Global<wbr>Secondary<wbr>Index</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TableGlobalSecondaryIndex">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TableGlobalSecondaryIndex">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dynamodb?tab=doc#TableGlobalSecondaryIndexArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dynamodb?tab=doc#TableGlobalSecondaryIndexOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2110,9 +2110,9 @@ It can be used for creating CloudWatch Alarms. Only available when `stream_enabl
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the hash key in the index; must be
+    <dd>The name of the hash key in the index; must be
 defined as an attribute in the resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2120,8 +2120,8 @@ defined as an attribute in the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the index
-{{% /md %}}</dd>
+    <dd>The name of the index
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2129,12 +2129,12 @@ defined as an attribute in the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}One of `ALL`, `INCLUDE` or `KEYS_ONLY`
+    <dd>One of `ALL`, `INCLUDE` or `KEYS_ONLY`
 where `ALL` projects every attribute into the index, `KEYS_ONLY`
 projects just the hash and range key into the index, and `INCLUDE`
 projects only the keys specified in the _non_key_attributes_
 parameter.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2142,10 +2142,10 @@ parameter.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Only required with `INCLUDE` as a
+    <dd>Only required with `INCLUDE` as a
 projection type; a list of attributes to project into the index. These
 do not need to be defined as attributes on the table.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2153,8 +2153,8 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the range key; must be defined
-{{% /md %}}</dd>
+    <dd>The name of the range key; must be defined
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2162,8 +2162,8 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2171,14 +2171,14 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2187,9 +2187,9 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the hash key in the index; must be
+    <dd>The name of the hash key in the index; must be
 defined as an attribute in the resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2197,8 +2197,8 @@ defined as an attribute in the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the index
-{{% /md %}}</dd>
+    <dd>The name of the index
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2206,12 +2206,12 @@ defined as an attribute in the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}One of `ALL`, `INCLUDE` or `KEYS_ONLY`
+    <dd>One of `ALL`, `INCLUDE` or `KEYS_ONLY`
 where `ALL` projects every attribute into the index, `KEYS_ONLY`
 projects just the hash and range key into the index, and `INCLUDE`
 projects only the keys specified in the _non_key_attributes_
 parameter.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2219,10 +2219,10 @@ parameter.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Only required with `INCLUDE` as a
+    <dd>Only required with `INCLUDE` as a
 projection type; a list of attributes to project into the index. These
 do not need to be defined as attributes on the table.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2230,8 +2230,8 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the range key; must be defined
-{{% /md %}}</dd>
+    <dd>The name of the range key; must be defined
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2239,8 +2239,8 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2248,14 +2248,14 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2264,9 +2264,9 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the hash key in the index; must be
+    <dd>The name of the hash key in the index; must be
 defined as an attribute in the resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2274,8 +2274,8 @@ defined as an attribute in the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the index
-{{% /md %}}</dd>
+    <dd>The name of the index
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2283,12 +2283,12 @@ defined as an attribute in the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}One of `ALL`, `INCLUDE` or `KEYS_ONLY`
+    <dd>One of `ALL`, `INCLUDE` or `KEYS_ONLY`
 where `ALL` projects every attribute into the index, `KEYS_ONLY`
 projects just the hash and range key into the index, and `INCLUDE`
 projects only the keys specified in the _non_key_attributes_
 parameter.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2296,10 +2296,10 @@ parameter.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Only required with `INCLUDE` as a
+    <dd>Only required with `INCLUDE` as a
 projection type; a list of attributes to project into the index. These
 do not need to be defined as attributes on the table.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2307,8 +2307,8 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the range key; must be defined
-{{% /md %}}</dd>
+    <dd>The name of the range key; must be defined
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2316,8 +2316,8 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2325,14 +2325,14 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2341,9 +2341,9 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the hash key in the index; must be
+    <dd>The name of the hash key in the index; must be
 defined as an attribute in the resource.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2351,8 +2351,8 @@ defined as an attribute in the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the index
-{{% /md %}}</dd>
+    <dd>The name of the index
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2360,12 +2360,12 @@ defined as an attribute in the resource.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}One of `ALL`, `INCLUDE` or `KEYS_ONLY`
+    <dd>One of `ALL`, `INCLUDE` or `KEYS_ONLY`
 where `ALL` projects every attribute into the index, `KEYS_ONLY`
 projects just the hash and range key into the index, and `INCLUDE`
 projects only the keys specified in the _non_key_attributes_
 parameter.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2373,10 +2373,10 @@ parameter.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Only required with `INCLUDE` as a
+    <dd>Only required with `INCLUDE` as a
 projection type; a list of attributes to project into the index. These
 do not need to be defined as attributes on the table.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2384,8 +2384,8 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the range key; must be defined
-{{% /md %}}</dd>
+    <dd>The name of the range key; must be defined
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2393,8 +2393,8 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of read units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2402,29 +2402,29 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
-{{% /md %}}</dd>
+    <dd>The number of write units for this index. Must be set if billing_mode is set to PROVISIONED.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="tablelocalsecondaryindex">Table<wbr>Local<wbr>Secondary<wbr>Index</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TableLocalSecondaryIndex">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TableLocalSecondaryIndex">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dynamodb?tab=doc#TableLocalSecondaryIndexArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dynamodb?tab=doc#TableLocalSecondaryIndexOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2433,8 +2433,8 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the index
-{{% /md %}}</dd>
+    <dd>The name of the index
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2442,12 +2442,12 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}One of `ALL`, `INCLUDE` or `KEYS_ONLY`
+    <dd>One of `ALL`, `INCLUDE` or `KEYS_ONLY`
 where `ALL` projects every attribute into the index, `KEYS_ONLY`
 projects just the hash and range key into the index, and `INCLUDE`
 projects only the keys specified in the _non_key_attributes_
 parameter.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2455,8 +2455,8 @@ parameter.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the range key; must be defined
-{{% /md %}}</dd>
+    <dd>The name of the range key; must be defined
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2464,16 +2464,16 @@ parameter.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Only required with `INCLUDE` as a
+    <dd>Only required with `INCLUDE` as a
 projection type; a list of attributes to project into the index. These
 do not need to be defined as attributes on the table.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2482,8 +2482,8 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the index
-{{% /md %}}</dd>
+    <dd>The name of the index
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2491,12 +2491,12 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}One of `ALL`, `INCLUDE` or `KEYS_ONLY`
+    <dd>One of `ALL`, `INCLUDE` or `KEYS_ONLY`
 where `ALL` projects every attribute into the index, `KEYS_ONLY`
 projects just the hash and range key into the index, and `INCLUDE`
 projects only the keys specified in the _non_key_attributes_
 parameter.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2504,8 +2504,8 @@ parameter.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the range key; must be defined
-{{% /md %}}</dd>
+    <dd>The name of the range key; must be defined
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2513,16 +2513,16 @@ parameter.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Only required with `INCLUDE` as a
+    <dd>Only required with `INCLUDE` as a
 projection type; a list of attributes to project into the index. These
 do not need to be defined as attributes on the table.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2531,8 +2531,8 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the index
-{{% /md %}}</dd>
+    <dd>The name of the index
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2540,12 +2540,12 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}One of `ALL`, `INCLUDE` or `KEYS_ONLY`
+    <dd>One of `ALL`, `INCLUDE` or `KEYS_ONLY`
 where `ALL` projects every attribute into the index, `KEYS_ONLY`
 projects just the hash and range key into the index, and `INCLUDE`
 projects only the keys specified in the _non_key_attributes_
 parameter.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2553,8 +2553,8 @@ parameter.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the range key; must be defined
-{{% /md %}}</dd>
+    <dd>The name of the range key; must be defined
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2562,16 +2562,16 @@ parameter.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Only required with `INCLUDE` as a
+    <dd>Only required with `INCLUDE` as a
 projection type; a list of attributes to project into the index. These
 do not need to be defined as attributes on the table.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2580,8 +2580,8 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the index
-{{% /md %}}</dd>
+    <dd>The name of the index
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2589,12 +2589,12 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}One of `ALL`, `INCLUDE` or `KEYS_ONLY`
+    <dd>One of `ALL`, `INCLUDE` or `KEYS_ONLY`
 where `ALL` projects every attribute into the index, `KEYS_ONLY`
 projects just the hash and range key into the index, and `INCLUDE`
 projects only the keys specified in the _non_key_attributes_
 parameter.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2602,8 +2602,8 @@ parameter.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the range key; must be defined
-{{% /md %}}</dd>
+    <dd>The name of the range key; must be defined
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2611,31 +2611,31 @@ parameter.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Only required with `INCLUDE` as a
+    <dd>Only required with `INCLUDE` as a
 projection type; a list of attributes to project into the index. These
 do not need to be defined as attributes on the table.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="tablepointintimerecovery">Table<wbr>Point<wbr>In<wbr>Time<wbr>Recovery</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TablePointInTimeRecovery">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TablePointInTimeRecovery">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dynamodb?tab=doc#TablePointInTimeRecoveryArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dynamodb?tab=doc#TablePointInTimeRecoveryOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2644,14 +2644,14 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether ttl is enabled (true) or disabled (false).
-{{% /md %}}</dd>
+    <dd>Indicates whether ttl is enabled (true) or disabled (false).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2660,14 +2660,14 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether ttl is enabled (true) or disabled (false).
-{{% /md %}}</dd>
+    <dd>Indicates whether ttl is enabled (true) or disabled (false).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2676,14 +2676,14 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether ttl is enabled (true) or disabled (false).
-{{% /md %}}</dd>
+    <dd>Indicates whether ttl is enabled (true) or disabled (false).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2692,29 +2692,29 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether ttl is enabled (true) or disabled (false).
-{{% /md %}}</dd>
+    <dd>Indicates whether ttl is enabled (true) or disabled (false).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="tablereplica">Table<wbr>Replica</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TableReplica">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TableReplica">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dynamodb?tab=doc#TableReplicaArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dynamodb?tab=doc#TableReplicaOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2723,14 +2723,14 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Region name of the replica.
-{{% /md %}}</dd>
+    <dd>Region name of the replica.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2739,14 +2739,14 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Region name of the replica.
-{{% /md %}}</dd>
+    <dd>Region name of the replica.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2755,14 +2755,14 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Region name of the replica.
-{{% /md %}}</dd>
+    <dd>Region name of the replica.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2771,29 +2771,29 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Region name of the replica.
-{{% /md %}}</dd>
+    <dd>Region name of the replica.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="tableserversideencryption">Table<wbr>Server<wbr>Side<wbr>Encryption</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TableServerSideEncryption">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TableServerSideEncryption">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dynamodb?tab=doc#TableServerSideEncryptionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dynamodb?tab=doc#TableServerSideEncryptionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2802,8 +2802,8 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether ttl is enabled (true) or disabled (false).
-{{% /md %}}</dd>
+    <dd>Indicates whether ttl is enabled (true) or disabled (false).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2811,15 +2811,15 @@ do not need to be defined as attributes on the table.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the CMK that should be used for the AWS KMS encryption.
+    <dd>The ARN of the CMK that should be used for the AWS KMS encryption.
 This attribute should only be specified if the key is different from the default DynamoDB CMK, `alias/aws/dynamodb`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2828,8 +2828,8 @@ This attribute should only be specified if the key is different from the default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether ttl is enabled (true) or disabled (false).
-{{% /md %}}</dd>
+    <dd>Indicates whether ttl is enabled (true) or disabled (false).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2837,15 +2837,15 @@ This attribute should only be specified if the key is different from the default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the CMK that should be used for the AWS KMS encryption.
+    <dd>The ARN of the CMK that should be used for the AWS KMS encryption.
 This attribute should only be specified if the key is different from the default DynamoDB CMK, `alias/aws/dynamodb`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2854,8 +2854,8 @@ This attribute should only be specified if the key is different from the default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether ttl is enabled (true) or disabled (false).
-{{% /md %}}</dd>
+    <dd>Indicates whether ttl is enabled (true) or disabled (false).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2863,15 +2863,15 @@ This attribute should only be specified if the key is different from the default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the CMK that should be used for the AWS KMS encryption.
+    <dd>The ARN of the CMK that should be used for the AWS KMS encryption.
 This attribute should only be specified if the key is different from the default DynamoDB CMK, `alias/aws/dynamodb`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2880,8 +2880,8 @@ This attribute should only be specified if the key is different from the default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether ttl is enabled (true) or disabled (false).
-{{% /md %}}</dd>
+    <dd>Indicates whether ttl is enabled (true) or disabled (false).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2889,30 +2889,30 @@ This attribute should only be specified if the key is different from the default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the CMK that should be used for the AWS KMS encryption.
+    <dd>The ARN of the CMK that should be used for the AWS KMS encryption.
 This attribute should only be specified if the key is different from the default DynamoDB CMK, `alias/aws/dynamodb`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="tablettl">Table<wbr>Ttl</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#TableTtl">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#TableTtl">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dynamodb?tab=doc#TableTtlArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/dynamodb?tab=doc#TableTtlOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2921,8 +2921,8 @@ This attribute should only be specified if the key is different from the default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the table attribute to store the TTL timestamp in.
-{{% /md %}}</dd>
+    <dd>The name of the table attribute to store the TTL timestamp in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2930,14 +2930,14 @@ This attribute should only be specified if the key is different from the default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether ttl is enabled (true) or disabled (false).
-{{% /md %}}</dd>
+    <dd>Indicates whether ttl is enabled (true) or disabled (false).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2946,8 +2946,8 @@ This attribute should only be specified if the key is different from the default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the table attribute to store the TTL timestamp in.
-{{% /md %}}</dd>
+    <dd>The name of the table attribute to store the TTL timestamp in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2955,14 +2955,14 @@ This attribute should only be specified if the key is different from the default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether ttl is enabled (true) or disabled (false).
-{{% /md %}}</dd>
+    <dd>Indicates whether ttl is enabled (true) or disabled (false).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2971,8 +2971,8 @@ This attribute should only be specified if the key is different from the default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the table attribute to store the TTL timestamp in.
-{{% /md %}}</dd>
+    <dd>The name of the table attribute to store the TTL timestamp in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2980,14 +2980,14 @@ This attribute should only be specified if the key is different from the default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether ttl is enabled (true) or disabled (false).
-{{% /md %}}</dd>
+    <dd>Indicates whether ttl is enabled (true) or disabled (false).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2996,8 +2996,8 @@ This attribute should only be specified if the key is different from the default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the table attribute to store the TTL timestamp in.
-{{% /md %}}</dd>
+    <dd>The name of the table attribute to store the TTL timestamp in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3005,11 +3005,11 @@ This attribute should only be specified if the key is different from the default
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether ttl is enabled (true) or disabled (false).
-{{% /md %}}</dd>
+    <dd>Indicates whether ttl is enabled (true) or disabled (false).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

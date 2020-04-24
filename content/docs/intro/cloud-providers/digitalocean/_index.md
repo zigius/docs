@@ -23,9 +23,9 @@ The DigitalOcean provider supports several options for providing access to Digit
 
 ## Example
 
-{{< chooser language "javascript,typescript,python,go,csharp" >}}
 
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 const do = require("@pulumi/digitalocean")
@@ -36,8 +36,8 @@ const domain = new do.Domain("test", {
 });
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as do from "@pulumi/digitalocean";
@@ -48,8 +48,8 @@ const instance = new do.Domain("test", {
 });
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 import pulumi_digitalocean as do
@@ -60,8 +60,8 @@ instance = do.Domain("test",
 )
 ```
 
-{{% /choosable %}}
-{{% choosable language go %}}
+
+
 
 ```go
 import (
@@ -74,8 +74,8 @@ domain, _ := do.NewDomain(ctx, "test", &do.DomainArgs{
 })
 ```
 
-{{% /choosable %}}
-{{% choosable language csharp %}}
+
+
 
 ```csharp
 using System.Collections.Generic;
@@ -96,9 +96,9 @@ class Program
 }
 ```
 
-{{% /choosable %}}
 
-{{< /chooser >}}
+
+
 
 ## Libraries
 

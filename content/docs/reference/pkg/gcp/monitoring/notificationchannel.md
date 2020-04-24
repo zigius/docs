@@ -71,26 +71,26 @@ const defaultNotificationChannel = new gcp.monitoring.NotificationChannel("defau
 
 
 ## Create a NotificationChannel Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/monitoring/#NotificationChannel">NotificationChannel</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/monitoring/#NotificationChannelArgs">NotificationChannelArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">NotificationChannel</span><span class="p">(resource_name, opts=None, </span>description=None<span class="p">, </span>display_name=None<span class="p">, </span>enabled=None<span class="p">, </span>labels=None<span class="p">, </span>project=None<span class="p">, </span>sensitive_labels=None<span class="p">, </span>type=None<span class="p">, </span>user_labels=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewNotificationChannel<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/monitoring?tab=doc#NotificationChannelArgs">NotificationChannelArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/monitoring?tab=doc#NotificationChannel">NotificationChannel</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Monitoring.NotificationChannel.html">NotificationChannel</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Monitoring.NotificationChannelArgs.html">NotificationChannelArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -127,9 +127,9 @@ const defaultNotificationChannel = new gcp.monitoring.NotificationChannel("defau
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -147,9 +147,9 @@ const defaultNotificationChannel = new gcp.monitoring.NotificationChannel("defau
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -196,9 +196,9 @@ const defaultNotificationChannel = new gcp.monitoring.NotificationChannel("defau
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -235,7 +235,7 @@ const defaultNotificationChannel = new gcp.monitoring.NotificationChannel("defau
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## NotificationChannel Resource Properties {#properties}
 
@@ -248,7 +248,7 @@ The NotificationChannel resource accepts the following [input]({{< relref "/docs
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -257,10 +257,10 @@ The NotificationChannel resource accepts the following [input]({{< relref "/docs
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the notification channel. This field matches the value of the NotificationChannelDescriptor.type field. See
+    <dd>The type of the notification channel. This field matches the value of the NotificationChannelDescriptor.type field. See
 https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.notificationChannelDescriptors/list to get the list of
 valid values such as "email", "slack", etc...
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -268,9 +268,9 @@ valid values such as "email", "slack", etc...
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional human-readable description of this notification channel. This description may provide additional details,
+    <dd>An optional human-readable description of this notification channel. This description may provide additional details,
 beyond the display name, for the channel. This may not exceed 1024 Unicode characters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,10 +278,10 @@ beyond the display name, for the channel. This may not exceed 1024 Unicode chara
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional human-readable name for this notification channel. It is recommended that you specify a non-empty and unique
+    <dd>An optional human-readable name for this notification channel. It is recommended that you specify a non-empty and unique
 name in order to make it easier to identify the channels in your project, though this is not enforced. The display name
 is limited to 512 Unicode characters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -289,11 +289,11 @@ is limited to 512 Unicode characters.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether notifications are forwarded to the described channel. This makes it possible to disable delivery of
+    <dd>Whether notifications are forwarded to the described channel. This makes it possible to disable delivery of
 notifications to a particular channel without removing the channel from all alerting policies that reference the
 channel. This is a more convenient approach when the change is temporary and you want to receive notifications from the
 same set of alerting policies on the channel at some point in the future.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -301,11 +301,11 @@ same set of alerting policies on the channel at some point in the future.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Configuration fields that define the channel and its behavior. The permissible and required labels are specified in the
+    <dd>Configuration fields that define the channel and its behavior. The permissible and required labels are specified in the
 NotificationChannelDescriptor corresponding to the type field. Labels with sensitive data are obfuscated by the API and
 therefore Terraform cannot determine if there are upstream changes to these fields. They can also be configured via the
 sensitive_labels block, but cannot be configured in both places.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -313,9 +313,9 @@ sensitive_labels block, but cannot be configured in both places.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -323,12 +323,12 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#notificationchannelsensitivelabels">Notification<wbr>Channel<wbr>Sensitive<wbr>Labels<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Different notification type behaviors are configured primarily using the the 'labels' field on this resource. This block
+    <dd>Different notification type behaviors are configured primarily using the the 'labels' field on this resource. This block
 contains the labels which contain secrets or passwords so that they can be marked sensitive and hidden from plan output.
 The name of the field, eg: password, will be the key in the 'labels' map in the api request. Credentials may not be
 specified in both locations and will cause an error. Changing from one location to a different credential configuration
 in the config will require an apply to update state.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -336,18 +336,18 @@ in the config will require an apply to update state.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}User-supplied key/value data that does not need to conform to the corresponding NotificationChannelDescriptor's schema,
+    <dd>User-supplied key/value data that does not need to conform to the corresponding NotificationChannelDescriptor's schema,
 unlike the labels field. This field is intended to be used for organizing and identifying the NotificationChannel
 objects.The field can contain up to 64 entries. Each key and value is limited to 63 Unicode characters or 128 bytes,
 whichever is smaller. Labels and values can contain only lowercase letters, numerals, underscores, and dashes. Keys must
 begin with a letter.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -356,10 +356,10 @@ begin with a letter.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the notification channel. This field matches the value of the NotificationChannelDescriptor.type field. See
+    <dd>The type of the notification channel. This field matches the value of the NotificationChannelDescriptor.type field. See
 https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.notificationChannelDescriptors/list to get the list of
 valid values such as "email", "slack", etc...
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -367,9 +367,9 @@ valid values such as "email", "slack", etc...
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional human-readable description of this notification channel. This description may provide additional details,
+    <dd>An optional human-readable description of this notification channel. This description may provide additional details,
 beyond the display name, for the channel. This may not exceed 1024 Unicode characters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -377,10 +377,10 @@ beyond the display name, for the channel. This may not exceed 1024 Unicode chara
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional human-readable name for this notification channel. It is recommended that you specify a non-empty and unique
+    <dd>An optional human-readable name for this notification channel. It is recommended that you specify a non-empty and unique
 name in order to make it easier to identify the channels in your project, though this is not enforced. The display name
 is limited to 512 Unicode characters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -388,11 +388,11 @@ is limited to 512 Unicode characters.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether notifications are forwarded to the described channel. This makes it possible to disable delivery of
+    <dd>Whether notifications are forwarded to the described channel. This makes it possible to disable delivery of
 notifications to a particular channel without removing the channel from all alerting policies that reference the
 channel. This is a more convenient approach when the change is temporary and you want to receive notifications from the
 same set of alerting policies on the channel at some point in the future.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -400,11 +400,11 @@ same set of alerting policies on the channel at some point in the future.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Configuration fields that define the channel and its behavior. The permissible and required labels are specified in the
+    <dd>Configuration fields that define the channel and its behavior. The permissible and required labels are specified in the
 NotificationChannelDescriptor corresponding to the type field. Labels with sensitive data are obfuscated by the API and
 therefore Terraform cannot determine if there are upstream changes to these fields. They can also be configured via the
 sensitive_labels block, but cannot be configured in both places.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -412,9 +412,9 @@ sensitive_labels block, but cannot be configured in both places.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -422,12 +422,12 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#notificationchannelsensitivelabels">Notification<wbr>Channel<wbr>Sensitive<wbr>Labels</a></span>
     </dt>
-    <dd>{{% md %}}Different notification type behaviors are configured primarily using the the 'labels' field on this resource. This block
+    <dd>Different notification type behaviors are configured primarily using the the 'labels' field on this resource. This block
 contains the labels which contain secrets or passwords so that they can be marked sensitive and hidden from plan output.
 The name of the field, eg: password, will be the key in the 'labels' map in the api request. Credentials may not be
 specified in both locations and will cause an error. Changing from one location to a different credential configuration
 in the config will require an apply to update state.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -435,18 +435,18 @@ in the config will require an apply to update state.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}User-supplied key/value data that does not need to conform to the corresponding NotificationChannelDescriptor's schema,
+    <dd>User-supplied key/value data that does not need to conform to the corresponding NotificationChannelDescriptor's schema,
 unlike the labels field. This field is intended to be used for organizing and identifying the NotificationChannel
 objects.The field can contain up to 64 entries. Each key and value is limited to 63 Unicode characters or 128 bytes,
 whichever is smaller. Labels and values can contain only lowercase letters, numerals, underscores, and dashes. Keys must
 begin with a letter.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -455,10 +455,10 @@ begin with a letter.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the notification channel. This field matches the value of the NotificationChannelDescriptor.type field. See
+    <dd>The type of the notification channel. This field matches the value of the NotificationChannelDescriptor.type field. See
 https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.notificationChannelDescriptors/list to get the list of
 valid values such as "email", "slack", etc...
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -466,9 +466,9 @@ valid values such as "email", "slack", etc...
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional human-readable description of this notification channel. This description may provide additional details,
+    <dd>An optional human-readable description of this notification channel. This description may provide additional details,
 beyond the display name, for the channel. This may not exceed 1024 Unicode characters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -476,10 +476,10 @@ beyond the display name, for the channel. This may not exceed 1024 Unicode chara
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional human-readable name for this notification channel. It is recommended that you specify a non-empty and unique
+    <dd>An optional human-readable name for this notification channel. It is recommended that you specify a non-empty and unique
 name in order to make it easier to identify the channels in your project, though this is not enforced. The display name
 is limited to 512 Unicode characters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -487,11 +487,11 @@ is limited to 512 Unicode characters.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether notifications are forwarded to the described channel. This makes it possible to disable delivery of
+    <dd>Whether notifications are forwarded to the described channel. This makes it possible to disable delivery of
 notifications to a particular channel without removing the channel from all alerting policies that reference the
 channel. This is a more convenient approach when the change is temporary and you want to receive notifications from the
 same set of alerting policies on the channel at some point in the future.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -499,11 +499,11 @@ same set of alerting policies on the channel at some point in the future.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Configuration fields that define the channel and its behavior. The permissible and required labels are specified in the
+    <dd>Configuration fields that define the channel and its behavior. The permissible and required labels are specified in the
 NotificationChannelDescriptor corresponding to the type field. Labels with sensitive data are obfuscated by the API and
 therefore Terraform cannot determine if there are upstream changes to these fields. They can also be configured via the
 sensitive_labels block, but cannot be configured in both places.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -511,9 +511,9 @@ sensitive_labels block, but cannot be configured in both places.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -521,12 +521,12 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#notificationchannelsensitivelabels">Notification<wbr>Channel<wbr>Sensitive<wbr>Labels</a></span>
     </dt>
-    <dd>{{% md %}}Different notification type behaviors are configured primarily using the the 'labels' field on this resource. This block
+    <dd>Different notification type behaviors are configured primarily using the the 'labels' field on this resource. This block
 contains the labels which contain secrets or passwords so that they can be marked sensitive and hidden from plan output.
 The name of the field, eg: password, will be the key in the 'labels' map in the api request. Credentials may not be
 specified in both locations and will cause an error. Changing from one location to a different credential configuration
 in the config will require an apply to update state.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -534,18 +534,18 @@ in the config will require an apply to update state.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}User-supplied key/value data that does not need to conform to the corresponding NotificationChannelDescriptor's schema,
+    <dd>User-supplied key/value data that does not need to conform to the corresponding NotificationChannelDescriptor's schema,
 unlike the labels field. This field is intended to be used for organizing and identifying the NotificationChannel
 objects.The field can contain up to 64 entries. Each key and value is limited to 63 Unicode characters or 128 bytes,
 whichever is smaller. Labels and values can contain only lowercase letters, numerals, underscores, and dashes. Keys must
 begin with a letter.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -554,10 +554,10 @@ begin with a letter.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the notification channel. This field matches the value of the NotificationChannelDescriptor.type field. See
+    <dd>The type of the notification channel. This field matches the value of the NotificationChannelDescriptor.type field. See
 https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.notificationChannelDescriptors/list to get the list of
 valid values such as "email", "slack", etc...
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -565,9 +565,9 @@ valid values such as "email", "slack", etc...
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional human-readable description of this notification channel. This description may provide additional details,
+    <dd>An optional human-readable description of this notification channel. This description may provide additional details,
 beyond the display name, for the channel. This may not exceed 1024 Unicode characters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -575,10 +575,10 @@ beyond the display name, for the channel. This may not exceed 1024 Unicode chara
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional human-readable name for this notification channel. It is recommended that you specify a non-empty and unique
+    <dd>An optional human-readable name for this notification channel. It is recommended that you specify a non-empty and unique
 name in order to make it easier to identify the channels in your project, though this is not enforced. The display name
 is limited to 512 Unicode characters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -586,11 +586,11 @@ is limited to 512 Unicode characters.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether notifications are forwarded to the described channel. This makes it possible to disable delivery of
+    <dd>Whether notifications are forwarded to the described channel. This makes it possible to disable delivery of
 notifications to a particular channel without removing the channel from all alerting policies that reference the
 channel. This is a more convenient approach when the change is temporary and you want to receive notifications from the
 same set of alerting policies on the channel at some point in the future.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -598,11 +598,11 @@ same set of alerting policies on the channel at some point in the future.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Configuration fields that define the channel and its behavior. The permissible and required labels are specified in the
+    <dd>Configuration fields that define the channel and its behavior. The permissible and required labels are specified in the
 NotificationChannelDescriptor corresponding to the type field. Labels with sensitive data are obfuscated by the API and
 therefore Terraform cannot determine if there are upstream changes to these fields. They can also be configured via the
 sensitive_labels block, but cannot be configured in both places.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -610,9 +610,9 @@ sensitive_labels block, but cannot be configured in both places.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -620,12 +620,12 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#notificationchannelsensitivelabels">Dict[Notification<wbr>Channel<wbr>Sensitive<wbr>Labels]</a></span>
     </dt>
-    <dd>{{% md %}}Different notification type behaviors are configured primarily using the the 'labels' field on this resource. This block
+    <dd>Different notification type behaviors are configured primarily using the the 'labels' field on this resource. This block
 contains the labels which contain secrets or passwords so that they can be marked sensitive and hidden from plan output.
 The name of the field, eg: password, will be the key in the 'labels' map in the api request. Credentials may not be
 specified in both locations and will cause an error. Changing from one location to a different credential configuration
 in the config will require an apply to update state.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -633,15 +633,15 @@ in the config will require an apply to update state.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}User-supplied key/value data that does not need to conform to the corresponding NotificationChannelDescriptor's schema,
+    <dd>User-supplied key/value data that does not need to conform to the corresponding NotificationChannelDescriptor's schema,
 unlike the labels field. This field is intended to be used for organizing and identifying the NotificationChannel
 objects.The field can contain up to 64 entries. Each key and value is limited to 63 Unicode characters or 128 bytes,
 whichever is smaller. Labels and values can contain only lowercase letters, numerals, underscores, and dashes. Keys must
 begin with a letter.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -655,7 +655,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -664,7 +664,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -672,9 +672,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The full REST resource name for this channel. The syntax is: projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID] The
+    <dd>The full REST resource name for this channel. The syntax is: projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID] The
 [CHANNEL_ID] is automatically assigned by the server on creation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -682,20 +682,20 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether this channel has been verified or not. On a ListNotificationChannels or GetNotificationChannel
+    <dd>Indicates whether this channel has been verified or not. On a ListNotificationChannels or GetNotificationChannel
 operation, this field is expected to be populated.If the value is UNVERIFIED, then it indicates that the channel is
 non-functioning (it both requires verification and lacks verification); otherwise, it is assumed that the channel
 works.If the channel is neither VERIFIED nor UNVERIFIED, it implies that the channel is of a type that does not require
 verification or that this specific channel has been exempted from verification because it was created prior to
 verification being required for channels of this type.This field cannot be modified using a standard
 UpdateNotificationChannel operation. To change the value of this field, you must call VerifyNotificationChannel.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -704,7 +704,7 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -712,9 +712,9 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full REST resource name for this channel. The syntax is: projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID] The
+    <dd>The full REST resource name for this channel. The syntax is: projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID] The
 [CHANNEL_ID] is automatically assigned by the server on creation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -722,20 +722,20 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether this channel has been verified or not. On a ListNotificationChannels or GetNotificationChannel
+    <dd>Indicates whether this channel has been verified or not. On a ListNotificationChannels or GetNotificationChannel
 operation, this field is expected to be populated.If the value is UNVERIFIED, then it indicates that the channel is
 non-functioning (it both requires verification and lacks verification); otherwise, it is assumed that the channel
 works.If the channel is neither VERIFIED nor UNVERIFIED, it implies that the channel is of a type that does not require
 verification or that this specific channel has been exempted from verification because it was created prior to
 verification being required for channels of this type.This field cannot be modified using a standard
 UpdateNotificationChannel operation. To change the value of this field, you must call VerifyNotificationChannel.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -744,7 +744,7 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -752,9 +752,9 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full REST resource name for this channel. The syntax is: projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID] The
+    <dd>The full REST resource name for this channel. The syntax is: projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID] The
 [CHANNEL_ID] is automatically assigned by the server on creation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -762,20 +762,20 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether this channel has been verified or not. On a ListNotificationChannels or GetNotificationChannel
+    <dd>Indicates whether this channel has been verified or not. On a ListNotificationChannels or GetNotificationChannel
 operation, this field is expected to be populated.If the value is UNVERIFIED, then it indicates that the channel is
 non-functioning (it both requires verification and lacks verification); otherwise, it is assumed that the channel
 works.If the channel is neither VERIFIED nor UNVERIFIED, it implies that the channel is of a type that does not require
 verification or that this specific channel has been exempted from verification because it was created prior to
 verification being required for channels of this type.This field cannot be modified using a standard
 UpdateNotificationChannel operation. To change the value of this field, you must call VerifyNotificationChannel.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -784,7 +784,7 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -792,9 +792,9 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The full REST resource name for this channel. The syntax is: projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID] The
+    <dd>The full REST resource name for this channel. The syntax is: projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID] The
 [CHANNEL_ID] is automatically assigned by the server on creation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -802,17 +802,17 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether this channel has been verified or not. On a ListNotificationChannels or GetNotificationChannel
+    <dd>Indicates whether this channel has been verified or not. On a ListNotificationChannels or GetNotificationChannel
 operation, this field is expected to be populated.If the value is UNVERIFIED, then it indicates that the channel is
 non-functioning (it both requires verification and lacks verification); otherwise, it is assumed that the channel
 works.If the channel is neither VERIFIED nor UNVERIFIED, it implies that the channel is of a type that does not require
 verification or that this specific channel has been exempted from verification because it was created prior to
 verification being required for channels of this type.This field cannot be modified using a standard
 UpdateNotificationChannel operation. To change the value of this field, you must call VerifyNotificationChannel.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -823,25 +823,25 @@ UpdateNotificationChannel operation. To change the value of this field, you must
 ## Look up an Existing NotificationChannel Resource {#look-up}
 
 Get an existing NotificationChannel resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/monitoring/#NotificationChannelState">NotificationChannelState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/monitoring/#NotificationChannel">NotificationChannel</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>description=None<span class="p">, </span>display_name=None<span class="p">, </span>enabled=None<span class="p">, </span>labels=None<span class="p">, </span>name=None<span class="p">, </span>project=None<span class="p">, </span>sensitive_labels=None<span class="p">, </span>type=None<span class="p">, </span>user_labels=None<span class="p">, </span>verification_status=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetNotificationChannel<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/monitoring?tab=doc#NotificationChannelState">NotificationChannelState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/monitoring?tab=doc#NotificationChannel">NotificationChannel</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Monitoring.NotificationChannel.html">NotificationChannel</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Monitoring.NotificationChannelState.html">NotificationChannelState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -866,9 +866,9 @@ Get an existing NotificationChannel resource's state with the given name, ID, an
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -881,36 +881,9 @@ Get an existing NotificationChannel resource's state with the given name, ID, an
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -935,13 +908,40 @@ Get an existing NotificationChannel resource's state with the given name, ID, an
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -950,9 +950,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional human-readable description of this notification channel. This description may provide additional details,
+    <dd>An optional human-readable description of this notification channel. This description may provide additional details,
 beyond the display name, for the channel. This may not exceed 1024 Unicode characters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -960,10 +960,10 @@ beyond the display name, for the channel. This may not exceed 1024 Unicode chara
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional human-readable name for this notification channel. It is recommended that you specify a non-empty and unique
+    <dd>An optional human-readable name for this notification channel. It is recommended that you specify a non-empty and unique
 name in order to make it easier to identify the channels in your project, though this is not enforced. The display name
 is limited to 512 Unicode characters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -971,11 +971,11 @@ is limited to 512 Unicode characters.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether notifications are forwarded to the described channel. This makes it possible to disable delivery of
+    <dd>Whether notifications are forwarded to the described channel. This makes it possible to disable delivery of
 notifications to a particular channel without removing the channel from all alerting policies that reference the
 channel. This is a more convenient approach when the change is temporary and you want to receive notifications from the
 same set of alerting policies on the channel at some point in the future.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -983,11 +983,11 @@ same set of alerting policies on the channel at some point in the future.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Configuration fields that define the channel and its behavior. The permissible and required labels are specified in the
+    <dd>Configuration fields that define the channel and its behavior. The permissible and required labels are specified in the
 NotificationChannelDescriptor corresponding to the type field. Labels with sensitive data are obfuscated by the API and
 therefore Terraform cannot determine if there are upstream changes to these fields. They can also be configured via the
 sensitive_labels block, but cannot be configured in both places.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -995,9 +995,9 @@ sensitive_labels block, but cannot be configured in both places.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The full REST resource name for this channel. The syntax is: projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID] The
+    <dd>The full REST resource name for this channel. The syntax is: projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID] The
 [CHANNEL_ID] is automatically assigned by the server on creation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1005,9 +1005,9 @@ sensitive_labels block, but cannot be configured in both places.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1015,12 +1015,12 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#notificationchannelsensitivelabels">Notification<wbr>Channel<wbr>Sensitive<wbr>Labels<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Different notification type behaviors are configured primarily using the the 'labels' field on this resource. This block
+    <dd>Different notification type behaviors are configured primarily using the the 'labels' field on this resource. This block
 contains the labels which contain secrets or passwords so that they can be marked sensitive and hidden from plan output.
 The name of the field, eg: password, will be the key in the 'labels' map in the api request. Credentials may not be
 specified in both locations and will cause an error. Changing from one location to a different credential configuration
 in the config will require an apply to update state.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1028,10 +1028,10 @@ in the config will require an apply to update state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the notification channel. This field matches the value of the NotificationChannelDescriptor.type field. See
+    <dd>The type of the notification channel. This field matches the value of the NotificationChannelDescriptor.type field. See
 https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.notificationChannelDescriptors/list to get the list of
 valid values such as "email", "slack", etc...
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1039,12 +1039,12 @@ valid values such as "email", "slack", etc...
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}User-supplied key/value data that does not need to conform to the corresponding NotificationChannelDescriptor's schema,
+    <dd>User-supplied key/value data that does not need to conform to the corresponding NotificationChannelDescriptor's schema,
 unlike the labels field. This field is intended to be used for organizing and identifying the NotificationChannel
 objects.The field can contain up to 64 entries. Each key and value is limited to 63 Unicode characters or 128 bytes,
 whichever is smaller. Labels and values can contain only lowercase letters, numerals, underscores, and dashes. Keys must
 begin with a letter.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1052,20 +1052,20 @@ begin with a letter.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether this channel has been verified or not. On a ListNotificationChannels or GetNotificationChannel
+    <dd>Indicates whether this channel has been verified or not. On a ListNotificationChannels or GetNotificationChannel
 operation, this field is expected to be populated.If the value is UNVERIFIED, then it indicates that the channel is
 non-functioning (it both requires verification and lacks verification); otherwise, it is assumed that the channel
 works.If the channel is neither VERIFIED nor UNVERIFIED, it implies that the channel is of a type that does not require
 verification or that this specific channel has been exempted from verification because it was created prior to
 verification being required for channels of this type.This field cannot be modified using a standard
 UpdateNotificationChannel operation. To change the value of this field, you must call VerifyNotificationChannel.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1074,9 +1074,9 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional human-readable description of this notification channel. This description may provide additional details,
+    <dd>An optional human-readable description of this notification channel. This description may provide additional details,
 beyond the display name, for the channel. This may not exceed 1024 Unicode characters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1084,10 +1084,10 @@ beyond the display name, for the channel. This may not exceed 1024 Unicode chara
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional human-readable name for this notification channel. It is recommended that you specify a non-empty and unique
+    <dd>An optional human-readable name for this notification channel. It is recommended that you specify a non-empty and unique
 name in order to make it easier to identify the channels in your project, though this is not enforced. The display name
 is limited to 512 Unicode characters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1095,11 +1095,11 @@ is limited to 512 Unicode characters.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether notifications are forwarded to the described channel. This makes it possible to disable delivery of
+    <dd>Whether notifications are forwarded to the described channel. This makes it possible to disable delivery of
 notifications to a particular channel without removing the channel from all alerting policies that reference the
 channel. This is a more convenient approach when the change is temporary and you want to receive notifications from the
 same set of alerting policies on the channel at some point in the future.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1107,11 +1107,11 @@ same set of alerting policies on the channel at some point in the future.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Configuration fields that define the channel and its behavior. The permissible and required labels are specified in the
+    <dd>Configuration fields that define the channel and its behavior. The permissible and required labels are specified in the
 NotificationChannelDescriptor corresponding to the type field. Labels with sensitive data are obfuscated by the API and
 therefore Terraform cannot determine if there are upstream changes to these fields. They can also be configured via the
 sensitive_labels block, but cannot be configured in both places.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1119,9 +1119,9 @@ sensitive_labels block, but cannot be configured in both places.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full REST resource name for this channel. The syntax is: projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID] The
+    <dd>The full REST resource name for this channel. The syntax is: projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID] The
 [CHANNEL_ID] is automatically assigned by the server on creation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1129,9 +1129,9 @@ sensitive_labels block, but cannot be configured in both places.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1139,12 +1139,12 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#notificationchannelsensitivelabels">Notification<wbr>Channel<wbr>Sensitive<wbr>Labels</a></span>
     </dt>
-    <dd>{{% md %}}Different notification type behaviors are configured primarily using the the 'labels' field on this resource. This block
+    <dd>Different notification type behaviors are configured primarily using the the 'labels' field on this resource. This block
 contains the labels which contain secrets or passwords so that they can be marked sensitive and hidden from plan output.
 The name of the field, eg: password, will be the key in the 'labels' map in the api request. Credentials may not be
 specified in both locations and will cause an error. Changing from one location to a different credential configuration
 in the config will require an apply to update state.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1152,10 +1152,10 @@ in the config will require an apply to update state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the notification channel. This field matches the value of the NotificationChannelDescriptor.type field. See
+    <dd>The type of the notification channel. This field matches the value of the NotificationChannelDescriptor.type field. See
 https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.notificationChannelDescriptors/list to get the list of
 valid values such as "email", "slack", etc...
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1163,12 +1163,12 @@ valid values such as "email", "slack", etc...
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}User-supplied key/value data that does not need to conform to the corresponding NotificationChannelDescriptor's schema,
+    <dd>User-supplied key/value data that does not need to conform to the corresponding NotificationChannelDescriptor's schema,
 unlike the labels field. This field is intended to be used for organizing and identifying the NotificationChannel
 objects.The field can contain up to 64 entries. Each key and value is limited to 63 Unicode characters or 128 bytes,
 whichever is smaller. Labels and values can contain only lowercase letters, numerals, underscores, and dashes. Keys must
 begin with a letter.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1176,20 +1176,20 @@ begin with a letter.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether this channel has been verified or not. On a ListNotificationChannels or GetNotificationChannel
+    <dd>Indicates whether this channel has been verified or not. On a ListNotificationChannels or GetNotificationChannel
 operation, this field is expected to be populated.If the value is UNVERIFIED, then it indicates that the channel is
 non-functioning (it both requires verification and lacks verification); otherwise, it is assumed that the channel
 works.If the channel is neither VERIFIED nor UNVERIFIED, it implies that the channel is of a type that does not require
 verification or that this specific channel has been exempted from verification because it was created prior to
 verification being required for channels of this type.This field cannot be modified using a standard
 UpdateNotificationChannel operation. To change the value of this field, you must call VerifyNotificationChannel.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1198,9 +1198,9 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional human-readable description of this notification channel. This description may provide additional details,
+    <dd>An optional human-readable description of this notification channel. This description may provide additional details,
 beyond the display name, for the channel. This may not exceed 1024 Unicode characters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1208,10 +1208,10 @@ beyond the display name, for the channel. This may not exceed 1024 Unicode chara
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional human-readable name for this notification channel. It is recommended that you specify a non-empty and unique
+    <dd>An optional human-readable name for this notification channel. It is recommended that you specify a non-empty and unique
 name in order to make it easier to identify the channels in your project, though this is not enforced. The display name
 is limited to 512 Unicode characters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1219,11 +1219,11 @@ is limited to 512 Unicode characters.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether notifications are forwarded to the described channel. This makes it possible to disable delivery of
+    <dd>Whether notifications are forwarded to the described channel. This makes it possible to disable delivery of
 notifications to a particular channel without removing the channel from all alerting policies that reference the
 channel. This is a more convenient approach when the change is temporary and you want to receive notifications from the
 same set of alerting policies on the channel at some point in the future.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1231,11 +1231,11 @@ same set of alerting policies on the channel at some point in the future.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Configuration fields that define the channel and its behavior. The permissible and required labels are specified in the
+    <dd>Configuration fields that define the channel and its behavior. The permissible and required labels are specified in the
 NotificationChannelDescriptor corresponding to the type field. Labels with sensitive data are obfuscated by the API and
 therefore Terraform cannot determine if there are upstream changes to these fields. They can also be configured via the
 sensitive_labels block, but cannot be configured in both places.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1243,9 +1243,9 @@ sensitive_labels block, but cannot be configured in both places.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full REST resource name for this channel. The syntax is: projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID] The
+    <dd>The full REST resource name for this channel. The syntax is: projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID] The
 [CHANNEL_ID] is automatically assigned by the server on creation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1253,9 +1253,9 @@ sensitive_labels block, but cannot be configured in both places.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1263,12 +1263,12 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#notificationchannelsensitivelabels">Notification<wbr>Channel<wbr>Sensitive<wbr>Labels</a></span>
     </dt>
-    <dd>{{% md %}}Different notification type behaviors are configured primarily using the the 'labels' field on this resource. This block
+    <dd>Different notification type behaviors are configured primarily using the the 'labels' field on this resource. This block
 contains the labels which contain secrets or passwords so that they can be marked sensitive and hidden from plan output.
 The name of the field, eg: password, will be the key in the 'labels' map in the api request. Credentials may not be
 specified in both locations and will cause an error. Changing from one location to a different credential configuration
 in the config will require an apply to update state.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1276,10 +1276,10 @@ in the config will require an apply to update state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the notification channel. This field matches the value of the NotificationChannelDescriptor.type field. See
+    <dd>The type of the notification channel. This field matches the value of the NotificationChannelDescriptor.type field. See
 https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.notificationChannelDescriptors/list to get the list of
 valid values such as "email", "slack", etc...
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,12 +1287,12 @@ valid values such as "email", "slack", etc...
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}User-supplied key/value data that does not need to conform to the corresponding NotificationChannelDescriptor's schema,
+    <dd>User-supplied key/value data that does not need to conform to the corresponding NotificationChannelDescriptor's schema,
 unlike the labels field. This field is intended to be used for organizing and identifying the NotificationChannel
 objects.The field can contain up to 64 entries. Each key and value is limited to 63 Unicode characters or 128 bytes,
 whichever is smaller. Labels and values can contain only lowercase letters, numerals, underscores, and dashes. Keys must
 begin with a letter.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1300,20 +1300,20 @@ begin with a letter.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether this channel has been verified or not. On a ListNotificationChannels or GetNotificationChannel
+    <dd>Indicates whether this channel has been verified or not. On a ListNotificationChannels or GetNotificationChannel
 operation, this field is expected to be populated.If the value is UNVERIFIED, then it indicates that the channel is
 non-functioning (it both requires verification and lacks verification); otherwise, it is assumed that the channel
 works.If the channel is neither VERIFIED nor UNVERIFIED, it implies that the channel is of a type that does not require
 verification or that this specific channel has been exempted from verification because it was created prior to
 verification being required for channels of this type.This field cannot be modified using a standard
 UpdateNotificationChannel operation. To change the value of this field, you must call VerifyNotificationChannel.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1322,9 +1322,9 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional human-readable description of this notification channel. This description may provide additional details,
+    <dd>An optional human-readable description of this notification channel. This description may provide additional details,
 beyond the display name, for the channel. This may not exceed 1024 Unicode characters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1332,10 +1332,10 @@ beyond the display name, for the channel. This may not exceed 1024 Unicode chara
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional human-readable name for this notification channel. It is recommended that you specify a non-empty and unique
+    <dd>An optional human-readable name for this notification channel. It is recommended that you specify a non-empty and unique
 name in order to make it easier to identify the channels in your project, though this is not enforced. The display name
 is limited to 512 Unicode characters.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1343,11 +1343,11 @@ is limited to 512 Unicode characters.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether notifications are forwarded to the described channel. This makes it possible to disable delivery of
+    <dd>Whether notifications are forwarded to the described channel. This makes it possible to disable delivery of
 notifications to a particular channel without removing the channel from all alerting policies that reference the
 channel. This is a more convenient approach when the change is temporary and you want to receive notifications from the
 same set of alerting policies on the channel at some point in the future.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1355,11 +1355,11 @@ same set of alerting policies on the channel at some point in the future.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Configuration fields that define the channel and its behavior. The permissible and required labels are specified in the
+    <dd>Configuration fields that define the channel and its behavior. The permissible and required labels are specified in the
 NotificationChannelDescriptor corresponding to the type field. Labels with sensitive data are obfuscated by the API and
 therefore Terraform cannot determine if there are upstream changes to these fields. They can also be configured via the
 sensitive_labels block, but cannot be configured in both places.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1367,9 +1367,9 @@ sensitive_labels block, but cannot be configured in both places.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The full REST resource name for this channel. The syntax is: projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID] The
+    <dd>The full REST resource name for this channel. The syntax is: projects/[PROJECT_ID]/notificationChannels/[CHANNEL_ID] The
 [CHANNEL_ID] is automatically assigned by the server on creation.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1377,9 +1377,9 @@ sensitive_labels block, but cannot be configured in both places.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1387,12 +1387,12 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#notificationchannelsensitivelabels">Dict[Notification<wbr>Channel<wbr>Sensitive<wbr>Labels]</a></span>
     </dt>
-    <dd>{{% md %}}Different notification type behaviors are configured primarily using the the 'labels' field on this resource. This block
+    <dd>Different notification type behaviors are configured primarily using the the 'labels' field on this resource. This block
 contains the labels which contain secrets or passwords so that they can be marked sensitive and hidden from plan output.
 The name of the field, eg: password, will be the key in the 'labels' map in the api request. Credentials may not be
 specified in both locations and will cause an error. Changing from one location to a different credential configuration
 in the config will require an apply to update state.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1400,10 +1400,10 @@ in the config will require an apply to update state.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the notification channel. This field matches the value of the NotificationChannelDescriptor.type field. See
+    <dd>The type of the notification channel. This field matches the value of the NotificationChannelDescriptor.type field. See
 https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.notificationChannelDescriptors/list to get the list of
 valid values such as "email", "slack", etc...
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1411,12 +1411,12 @@ valid values such as "email", "slack", etc...
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}User-supplied key/value data that does not need to conform to the corresponding NotificationChannelDescriptor's schema,
+    <dd>User-supplied key/value data that does not need to conform to the corresponding NotificationChannelDescriptor's schema,
 unlike the labels field. This field is intended to be used for organizing and identifying the NotificationChannel
 objects.The field can contain up to 64 entries. Each key and value is limited to 63 Unicode characters or 128 bytes,
 whichever is smaller. Labels and values can contain only lowercase letters, numerals, underscores, and dashes. Keys must
 begin with a letter.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1424,17 +1424,17 @@ begin with a letter.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether this channel has been verified or not. On a ListNotificationChannels or GetNotificationChannel
+    <dd>Indicates whether this channel has been verified or not. On a ListNotificationChannels or GetNotificationChannel
 operation, this field is expected to be populated.If the value is UNVERIFIED, then it indicates that the channel is
 non-functioning (it both requires verification and lacks verification); otherwise, it is assumed that the channel
 works.If the channel is neither VERIFIED nor UNVERIFIED, it implies that the channel is of a type that does not require
 verification or that this specific channel has been exempted from verification because it was created prior to
 verification being required for channels of this type.This field cannot be modified using a standard
 UpdateNotificationChannel operation. To change the value of this field, you must call VerifyNotificationChannel.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1449,18 +1449,18 @@ UpdateNotificationChannel operation. To change the value of this field, you must
 
 
 <h4 id="notificationchannelsensitivelabels">Notification<wbr>Channel<wbr>Sensitive<wbr>Labels</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#NotificationChannelSensitiveLabels">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#NotificationChannelSensitiveLabels">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/monitoring?tab=doc#NotificationChannelSensitiveLabelsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/monitoring?tab=doc#NotificationChannelSensitiveLabelsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1469,7 +1469,7 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1477,7 +1477,7 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1485,13 +1485,13 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1500,7 +1500,7 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1508,7 +1508,7 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1516,13 +1516,13 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1531,7 +1531,7 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1539,7 +1539,7 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1547,13 +1547,13 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1562,7 +1562,7 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1570,7 +1570,7 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1578,10 +1578,10 @@ UpdateNotificationChannel operation. To change the value of this field, you must
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

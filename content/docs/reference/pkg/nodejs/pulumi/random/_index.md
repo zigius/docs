@@ -16,22 +16,22 @@ git_sha: "43ad94e18c78fcc04aceb40df0061307cf81525a"
 > please consult the source [`terraform-providers/terraform-provider-random` repo](https://github.com/terraform-providers/terraform-provider-random/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var random = require("@pulumi/random");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as random from "@pulumi/random";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 

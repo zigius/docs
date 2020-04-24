@@ -44,26 +44,26 @@ A Dataflow job which is 'destroyed' may be "cancelled" or "drained".  If "cancel
 
 
 ## Create a Job Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/dataflow/#Job">Job</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/dataflow/#JobArgs">JobArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Job</span><span class="p">(resource_name, opts=None, </span>ip_configuration=None<span class="p">, </span>labels=None<span class="p">, </span>machine_type=None<span class="p">, </span>max_workers=None<span class="p">, </span>name=None<span class="p">, </span>network=None<span class="p">, </span>on_delete=None<span class="p">, </span>parameters=None<span class="p">, </span>project=None<span class="p">, </span>region=None<span class="p">, </span>service_account_email=None<span class="p">, </span>subnetwork=None<span class="p">, </span>temp_gcs_location=None<span class="p">, </span>template_gcs_path=None<span class="p">, </span>zone=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewJob<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dataflow?tab=doc#JobArgs">JobArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dataflow?tab=doc#Job">Job</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Dataflow.Job.html">Job</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Dataflow.JobArgs.html">JobArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -100,9 +100,9 @@ A Dataflow job which is 'destroyed' may be "cancelled" or "drained".  If "cancel
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -120,9 +120,9 @@ A Dataflow job which is 'destroyed' may be "cancelled" or "drained".  If "cancel
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -169,9 +169,9 @@ A Dataflow job which is 'destroyed' may be "cancelled" or "drained".  If "cancel
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -208,7 +208,7 @@ A Dataflow job which is 'destroyed' may be "cancelled" or "drained".  If "cancel
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Job Resource Properties {#properties}
 
@@ -221,7 +221,7 @@ The Job resource accepts the following [input]({{< relref "/docs/intro/concepts/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -230,8 +230,8 @@ The Job resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A writeable location on GCS for the Dataflow job to dump its temporary data.
-{{% /md %}}</dd>
+    <dd>A writeable location on GCS for the Dataflow job to dump its temporary data.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -239,8 +239,8 @@ The Job resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The GCS path to the Dataflow job template.
-{{% /md %}}</dd>
+    <dd>The GCS path to the Dataflow job template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -248,8 +248,8 @@ The Job resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The configuration for VM IPs.  Options are `"WORKER_IP_PUBLIC"` or `"WORKER_IP_PRIVATE"`.
-{{% /md %}}</dd>
+    <dd>The configuration for VM IPs.  Options are `"WORKER_IP_PUBLIC"` or `"WORKER_IP_PRIVATE"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -257,11 +257,11 @@ The Job resource accepts the following [input]({{< relref "/docs/intro/concepts/
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}User labels to be specified for the job. Keys and values should follow the restrictions
+    <dd>User labels to be specified for the job. Keys and values should follow the restrictions
 specified in the [labeling restrictions](https://cloud.google.com/compute/docs/labeling-resources#restrictions) page.
 **NOTE**: Google-provided Dataflow templates often provide default labels that begin with `goog-dataflow-provided`.
 Unless explicitly set in config, these labels will be ignored to prevent diffs on re-apply.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -269,8 +269,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to use for the job.
-{{% /md %}}</dd>
+    <dd>The machine type to use for the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,8 +278,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of workers permitted to work on the job.  More workers may improve processing speed at additional cost.
-{{% /md %}}</dd>
+    <dd>The number of workers permitted to work on the job.  More workers may improve processing speed at additional cost.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -287,8 +287,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by Dataflow.
-{{% /md %}}</dd>
+    <dd>A unique name for the resource, required by Dataflow.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -296,8 +296,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The network to which VMs will be assigned. If it is not provided, "default" will be used.
-{{% /md %}}</dd>
+    <dd>The network to which VMs will be assigned. If it is not provided, "default" will be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -305,8 +305,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}One of "drain" or "cancel".  Specifies behavior of deletion during `pulumi destroy`.  See above note.
-{{% /md %}}</dd>
+    <dd>One of "drain" or "cancel".  Specifies behavior of deletion during `pulumi destroy`.  See above note.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -314,8 +314,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key/Value pairs to be passed to the Dataflow job (as used in the template).
-{{% /md %}}</dd>
+    <dd>Key/Value pairs to be passed to the Dataflow job (as used in the template).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -323,8 +323,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the resource belongs. If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+    <dd>The project in which the resource belongs. If it is not provided, the provider project is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,7 +332,7 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -340,8 +340,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Service Account email used to create the job.
-{{% /md %}}</dd>
+    <dd>The Service Account email used to create the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -349,8 +349,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The subnetwork to which VMs will be assigned. Should be of the form "regions/REGION/subnetworks/SUBNETWORK".
-{{% /md %}}</dd>
+    <dd>The subnetwork to which VMs will be assigned. Should be of the form "regions/REGION/subnetworks/SUBNETWORK".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -358,14 +358,14 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone in which the created job should run. If it is not provided, the provider zone is used.
-{{% /md %}}</dd>
+    <dd>The zone in which the created job should run. If it is not provided, the provider zone is used.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -374,8 +374,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A writeable location on GCS for the Dataflow job to dump its temporary data.
-{{% /md %}}</dd>
+    <dd>A writeable location on GCS for the Dataflow job to dump its temporary data.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -383,8 +383,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The GCS path to the Dataflow job template.
-{{% /md %}}</dd>
+    <dd>The GCS path to the Dataflow job template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -392,8 +392,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The configuration for VM IPs.  Options are `"WORKER_IP_PUBLIC"` or `"WORKER_IP_PRIVATE"`.
-{{% /md %}}</dd>
+    <dd>The configuration for VM IPs.  Options are `"WORKER_IP_PUBLIC"` or `"WORKER_IP_PRIVATE"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -401,11 +401,11 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}User labels to be specified for the job. Keys and values should follow the restrictions
+    <dd>User labels to be specified for the job. Keys and values should follow the restrictions
 specified in the [labeling restrictions](https://cloud.google.com/compute/docs/labeling-resources#restrictions) page.
 **NOTE**: Google-provided Dataflow templates often provide default labels that begin with `goog-dataflow-provided`.
 Unless explicitly set in config, these labels will be ignored to prevent diffs on re-apply.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -413,8 +413,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to use for the job.
-{{% /md %}}</dd>
+    <dd>The machine type to use for the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -422,8 +422,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of workers permitted to work on the job.  More workers may improve processing speed at additional cost.
-{{% /md %}}</dd>
+    <dd>The number of workers permitted to work on the job.  More workers may improve processing speed at additional cost.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -431,8 +431,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by Dataflow.
-{{% /md %}}</dd>
+    <dd>A unique name for the resource, required by Dataflow.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -440,8 +440,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network to which VMs will be assigned. If it is not provided, "default" will be used.
-{{% /md %}}</dd>
+    <dd>The network to which VMs will be assigned. If it is not provided, "default" will be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -449,8 +449,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}One of "drain" or "cancel".  Specifies behavior of deletion during `pulumi destroy`.  See above note.
-{{% /md %}}</dd>
+    <dd>One of "drain" or "cancel".  Specifies behavior of deletion during `pulumi destroy`.  See above note.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -458,8 +458,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key/Value pairs to be passed to the Dataflow job (as used in the template).
-{{% /md %}}</dd>
+    <dd>Key/Value pairs to be passed to the Dataflow job (as used in the template).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -467,8 +467,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the resource belongs. If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+    <dd>The project in which the resource belongs. If it is not provided, the provider project is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -476,7 +476,7 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -484,8 +484,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Service Account email used to create the job.
-{{% /md %}}</dd>
+    <dd>The Service Account email used to create the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -493,8 +493,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The subnetwork to which VMs will be assigned. Should be of the form "regions/REGION/subnetworks/SUBNETWORK".
-{{% /md %}}</dd>
+    <dd>The subnetwork to which VMs will be assigned. Should be of the form "regions/REGION/subnetworks/SUBNETWORK".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -502,14 +502,14 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone in which the created job should run. If it is not provided, the provider zone is used.
-{{% /md %}}</dd>
+    <dd>The zone in which the created job should run. If it is not provided, the provider zone is used.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -518,8 +518,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A writeable location on GCS for the Dataflow job to dump its temporary data.
-{{% /md %}}</dd>
+    <dd>A writeable location on GCS for the Dataflow job to dump its temporary data.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -527,8 +527,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The GCS path to the Dataflow job template.
-{{% /md %}}</dd>
+    <dd>The GCS path to the Dataflow job template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -536,8 +536,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The configuration for VM IPs.  Options are `"WORKER_IP_PUBLIC"` or `"WORKER_IP_PRIVATE"`.
-{{% /md %}}</dd>
+    <dd>The configuration for VM IPs.  Options are `"WORKER_IP_PUBLIC"` or `"WORKER_IP_PRIVATE"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -545,11 +545,11 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}User labels to be specified for the job. Keys and values should follow the restrictions
+    <dd>User labels to be specified for the job. Keys and values should follow the restrictions
 specified in the [labeling restrictions](https://cloud.google.com/compute/docs/labeling-resources#restrictions) page.
 **NOTE**: Google-provided Dataflow templates often provide default labels that begin with `goog-dataflow-provided`.
 Unless explicitly set in config, these labels will be ignored to prevent diffs on re-apply.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -557,8 +557,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to use for the job.
-{{% /md %}}</dd>
+    <dd>The machine type to use for the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -566,8 +566,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of workers permitted to work on the job.  More workers may improve processing speed at additional cost.
-{{% /md %}}</dd>
+    <dd>The number of workers permitted to work on the job.  More workers may improve processing speed at additional cost.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -575,8 +575,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by Dataflow.
-{{% /md %}}</dd>
+    <dd>A unique name for the resource, required by Dataflow.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -584,8 +584,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network to which VMs will be assigned. If it is not provided, "default" will be used.
-{{% /md %}}</dd>
+    <dd>The network to which VMs will be assigned. If it is not provided, "default" will be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -593,8 +593,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}One of "drain" or "cancel".  Specifies behavior of deletion during `pulumi destroy`.  See above note.
-{{% /md %}}</dd>
+    <dd>One of "drain" or "cancel".  Specifies behavior of deletion during `pulumi destroy`.  See above note.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -602,8 +602,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key/Value pairs to be passed to the Dataflow job (as used in the template).
-{{% /md %}}</dd>
+    <dd>Key/Value pairs to be passed to the Dataflow job (as used in the template).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -611,8 +611,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the resource belongs. If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+    <dd>The project in which the resource belongs. If it is not provided, the provider project is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -620,7 +620,7 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -628,8 +628,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Service Account email used to create the job.
-{{% /md %}}</dd>
+    <dd>The Service Account email used to create the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -637,8 +637,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The subnetwork to which VMs will be assigned. Should be of the form "regions/REGION/subnetworks/SUBNETWORK".
-{{% /md %}}</dd>
+    <dd>The subnetwork to which VMs will be assigned. Should be of the form "regions/REGION/subnetworks/SUBNETWORK".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -646,14 +646,14 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone in which the created job should run. If it is not provided, the provider zone is used.
-{{% /md %}}</dd>
+    <dd>The zone in which the created job should run. If it is not provided, the provider zone is used.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -662,8 +662,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A writeable location on GCS for the Dataflow job to dump its temporary data.
-{{% /md %}}</dd>
+    <dd>A writeable location on GCS for the Dataflow job to dump its temporary data.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -671,8 +671,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The GCS path to the Dataflow job template.
-{{% /md %}}</dd>
+    <dd>The GCS path to the Dataflow job template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -680,8 +680,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The configuration for VM IPs.  Options are `"WORKER_IP_PUBLIC"` or `"WORKER_IP_PRIVATE"`.
-{{% /md %}}</dd>
+    <dd>The configuration for VM IPs.  Options are `"WORKER_IP_PUBLIC"` or `"WORKER_IP_PRIVATE"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -689,11 +689,11 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}User labels to be specified for the job. Keys and values should follow the restrictions
+    <dd>User labels to be specified for the job. Keys and values should follow the restrictions
 specified in the [labeling restrictions](https://cloud.google.com/compute/docs/labeling-resources#restrictions) page.
 **NOTE**: Google-provided Dataflow templates often provide default labels that begin with `goog-dataflow-provided`.
 Unless explicitly set in config, these labels will be ignored to prevent diffs on re-apply.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -701,8 +701,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to use for the job.
-{{% /md %}}</dd>
+    <dd>The machine type to use for the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -710,8 +710,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of workers permitted to work on the job.  More workers may improve processing speed at additional cost.
-{{% /md %}}</dd>
+    <dd>The number of workers permitted to work on the job.  More workers may improve processing speed at additional cost.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -719,8 +719,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by Dataflow.
-{{% /md %}}</dd>
+    <dd>A unique name for the resource, required by Dataflow.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -728,8 +728,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The network to which VMs will be assigned. If it is not provided, "default" will be used.
-{{% /md %}}</dd>
+    <dd>The network to which VMs will be assigned. If it is not provided, "default" will be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -737,8 +737,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}One of "drain" or "cancel".  Specifies behavior of deletion during `pulumi destroy`.  See above note.
-{{% /md %}}</dd>
+    <dd>One of "drain" or "cancel".  Specifies behavior of deletion during `pulumi destroy`.  See above note.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -746,8 +746,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key/Value pairs to be passed to the Dataflow job (as used in the template).
-{{% /md %}}</dd>
+    <dd>Key/Value pairs to be passed to the Dataflow job (as used in the template).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -755,8 +755,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the resource belongs. If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+    <dd>The project in which the resource belongs. If it is not provided, the provider project is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -764,7 +764,7 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -772,8 +772,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Service Account email used to create the job.
-{{% /md %}}</dd>
+    <dd>The Service Account email used to create the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -781,8 +781,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The subnetwork to which VMs will be assigned. Should be of the form "regions/REGION/subnetworks/SUBNETWORK".
-{{% /md %}}</dd>
+    <dd>The subnetwork to which VMs will be assigned. Should be of the form "regions/REGION/subnetworks/SUBNETWORK".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -790,11 +790,11 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The zone in which the created job should run. If it is not provided, the provider zone is used.
-{{% /md %}}</dd>
+    <dd>The zone in which the created job should run. If it is not provided, the provider zone is used.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -808,7 +808,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -817,7 +817,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -825,8 +825,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID of this job.
-{{% /md %}}</dd>
+    <dd>The unique ID of this job.
+</dd>
 
     <dt class="property-"
             title="">
@@ -834,8 +834,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The current state of the resource, selected from the [JobState enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobState)
-{{% /md %}}</dd>
+    <dd>The current state of the resource, selected from the [JobState enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobState)
+</dd>
 
     <dt class="property-"
             title="">
@@ -843,14 +843,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of this job, selected from the [JobType enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobType)
-{{% /md %}}</dd>
+    <dd>The type of this job, selected from the [JobType enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobType)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -859,7 +859,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -867,8 +867,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID of this job.
-{{% /md %}}</dd>
+    <dd>The unique ID of this job.
+</dd>
 
     <dt class="property-"
             title="">
@@ -876,8 +876,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current state of the resource, selected from the [JobState enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobState)
-{{% /md %}}</dd>
+    <dd>The current state of the resource, selected from the [JobState enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobState)
+</dd>
 
     <dt class="property-"
             title="">
@@ -885,14 +885,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of this job, selected from the [JobType enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobType)
-{{% /md %}}</dd>
+    <dd>The type of this job, selected from the [JobType enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobType)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -901,7 +901,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -909,8 +909,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID of this job.
-{{% /md %}}</dd>
+    <dd>The unique ID of this job.
+</dd>
 
     <dt class="property-"
             title="">
@@ -918,8 +918,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current state of the resource, selected from the [JobState enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobState)
-{{% /md %}}</dd>
+    <dd>The current state of the resource, selected from the [JobState enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobState)
+</dd>
 
     <dt class="property-"
             title="">
@@ -927,14 +927,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of this job, selected from the [JobType enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobType)
-{{% /md %}}</dd>
+    <dd>The type of this job, selected from the [JobType enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobType)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -943,7 +943,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -951,8 +951,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID of this job.
-{{% /md %}}</dd>
+    <dd>The unique ID of this job.
+</dd>
 
     <dt class="property-"
             title="">
@@ -960,8 +960,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The current state of the resource, selected from the [JobState enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobState)
-{{% /md %}}</dd>
+    <dd>The current state of the resource, selected from the [JobState enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobState)
+</dd>
 
     <dt class="property-"
             title="">
@@ -969,11 +969,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of this job, selected from the [JobType enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobType)
-{{% /md %}}</dd>
+    <dd>The type of this job, selected from the [JobType enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobType)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -984,25 +984,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Job Resource {#look-up}
 
 Get an existing Job resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/dataflow/#JobState">JobState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/dataflow/#Job">Job</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>ip_configuration=None<span class="p">, </span>job_id=None<span class="p">, </span>labels=None<span class="p">, </span>machine_type=None<span class="p">, </span>max_workers=None<span class="p">, </span>name=None<span class="p">, </span>network=None<span class="p">, </span>on_delete=None<span class="p">, </span>parameters=None<span class="p">, </span>project=None<span class="p">, </span>region=None<span class="p">, </span>service_account_email=None<span class="p">, </span>state=None<span class="p">, </span>subnetwork=None<span class="p">, </span>temp_gcs_location=None<span class="p">, </span>template_gcs_path=None<span class="p">, </span>type=None<span class="p">, </span>zone=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetJob<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dataflow?tab=doc#JobState">JobState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/dataflow?tab=doc#Job">Job</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Dataflow.Job.html">Job</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Dataflow.JobState.html">JobState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1027,9 +1027,9 @@ Get an existing Job resource's state with the given name, ID, and optional extra
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1042,36 +1042,9 @@ Get an existing Job resource's state with the given name, ID, and optional extra
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1096,13 +1069,40 @@ Get an existing Job resource's state with the given name, ID, and optional extra
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1111,8 +1111,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The configuration for VM IPs.  Options are `"WORKER_IP_PUBLIC"` or `"WORKER_IP_PRIVATE"`.
-{{% /md %}}</dd>
+    <dd>The configuration for VM IPs.  Options are `"WORKER_IP_PUBLIC"` or `"WORKER_IP_PRIVATE"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1120,8 +1120,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID of this job.
-{{% /md %}}</dd>
+    <dd>The unique ID of this job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1129,11 +1129,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}User labels to be specified for the job. Keys and values should follow the restrictions
+    <dd>User labels to be specified for the job. Keys and values should follow the restrictions
 specified in the [labeling restrictions](https://cloud.google.com/compute/docs/labeling-resources#restrictions) page.
 **NOTE**: Google-provided Dataflow templates often provide default labels that begin with `goog-dataflow-provided`.
 Unless explicitly set in config, these labels will be ignored to prevent diffs on re-apply.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1141,8 +1141,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to use for the job.
-{{% /md %}}</dd>
+    <dd>The machine type to use for the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1150,8 +1150,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of workers permitted to work on the job.  More workers may improve processing speed at additional cost.
-{{% /md %}}</dd>
+    <dd>The number of workers permitted to work on the job.  More workers may improve processing speed at additional cost.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1159,8 +1159,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by Dataflow.
-{{% /md %}}</dd>
+    <dd>A unique name for the resource, required by Dataflow.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1168,8 +1168,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The network to which VMs will be assigned. If it is not provided, "default" will be used.
-{{% /md %}}</dd>
+    <dd>The network to which VMs will be assigned. If it is not provided, "default" will be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1177,8 +1177,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}One of "drain" or "cancel".  Specifies behavior of deletion during `pulumi destroy`.  See above note.
-{{% /md %}}</dd>
+    <dd>One of "drain" or "cancel".  Specifies behavior of deletion during `pulumi destroy`.  See above note.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1186,8 +1186,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Key/Value pairs to be passed to the Dataflow job (as used in the template).
-{{% /md %}}</dd>
+    <dd>Key/Value pairs to be passed to the Dataflow job (as used in the template).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1195,8 +1195,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the resource belongs. If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+    <dd>The project in which the resource belongs. If it is not provided, the provider project is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1204,7 +1204,7 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1212,8 +1212,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Service Account email used to create the job.
-{{% /md %}}</dd>
+    <dd>The Service Account email used to create the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1221,8 +1221,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The current state of the resource, selected from the [JobState enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobState)
-{{% /md %}}</dd>
+    <dd>The current state of the resource, selected from the [JobState enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobState)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1230,8 +1230,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The subnetwork to which VMs will be assigned. Should be of the form "regions/REGION/subnetworks/SUBNETWORK".
-{{% /md %}}</dd>
+    <dd>The subnetwork to which VMs will be assigned. Should be of the form "regions/REGION/subnetworks/SUBNETWORK".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1239,8 +1239,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A writeable location on GCS for the Dataflow job to dump its temporary data.
-{{% /md %}}</dd>
+    <dd>A writeable location on GCS for the Dataflow job to dump its temporary data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1248,8 +1248,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The GCS path to the Dataflow job template.
-{{% /md %}}</dd>
+    <dd>The GCS path to the Dataflow job template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1257,8 +1257,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of this job, selected from the [JobType enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobType)
-{{% /md %}}</dd>
+    <dd>The type of this job, selected from the [JobType enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobType)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1266,14 +1266,14 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone in which the created job should run. If it is not provided, the provider zone is used.
-{{% /md %}}</dd>
+    <dd>The zone in which the created job should run. If it is not provided, the provider zone is used.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1282,8 +1282,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The configuration for VM IPs.  Options are `"WORKER_IP_PUBLIC"` or `"WORKER_IP_PRIVATE"`.
-{{% /md %}}</dd>
+    <dd>The configuration for VM IPs.  Options are `"WORKER_IP_PUBLIC"` or `"WORKER_IP_PRIVATE"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1291,8 +1291,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID of this job.
-{{% /md %}}</dd>
+    <dd>The unique ID of this job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1300,11 +1300,11 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}User labels to be specified for the job. Keys and values should follow the restrictions
+    <dd>User labels to be specified for the job. Keys and values should follow the restrictions
 specified in the [labeling restrictions](https://cloud.google.com/compute/docs/labeling-resources#restrictions) page.
 **NOTE**: Google-provided Dataflow templates often provide default labels that begin with `goog-dataflow-provided`.
 Unless explicitly set in config, these labels will be ignored to prevent diffs on re-apply.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1312,8 +1312,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to use for the job.
-{{% /md %}}</dd>
+    <dd>The machine type to use for the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1321,8 +1321,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of workers permitted to work on the job.  More workers may improve processing speed at additional cost.
-{{% /md %}}</dd>
+    <dd>The number of workers permitted to work on the job.  More workers may improve processing speed at additional cost.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1330,8 +1330,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by Dataflow.
-{{% /md %}}</dd>
+    <dd>A unique name for the resource, required by Dataflow.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1339,8 +1339,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network to which VMs will be assigned. If it is not provided, "default" will be used.
-{{% /md %}}</dd>
+    <dd>The network to which VMs will be assigned. If it is not provided, "default" will be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1348,8 +1348,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}One of "drain" or "cancel".  Specifies behavior of deletion during `pulumi destroy`.  See above note.
-{{% /md %}}</dd>
+    <dd>One of "drain" or "cancel".  Specifies behavior of deletion during `pulumi destroy`.  See above note.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1357,8 +1357,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Key/Value pairs to be passed to the Dataflow job (as used in the template).
-{{% /md %}}</dd>
+    <dd>Key/Value pairs to be passed to the Dataflow job (as used in the template).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1366,8 +1366,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the resource belongs. If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+    <dd>The project in which the resource belongs. If it is not provided, the provider project is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1375,7 +1375,7 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1383,8 +1383,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Service Account email used to create the job.
-{{% /md %}}</dd>
+    <dd>The Service Account email used to create the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1392,8 +1392,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current state of the resource, selected from the [JobState enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobState)
-{{% /md %}}</dd>
+    <dd>The current state of the resource, selected from the [JobState enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobState)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1401,8 +1401,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The subnetwork to which VMs will be assigned. Should be of the form "regions/REGION/subnetworks/SUBNETWORK".
-{{% /md %}}</dd>
+    <dd>The subnetwork to which VMs will be assigned. Should be of the form "regions/REGION/subnetworks/SUBNETWORK".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1410,8 +1410,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A writeable location on GCS for the Dataflow job to dump its temporary data.
-{{% /md %}}</dd>
+    <dd>A writeable location on GCS for the Dataflow job to dump its temporary data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1419,8 +1419,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The GCS path to the Dataflow job template.
-{{% /md %}}</dd>
+    <dd>The GCS path to the Dataflow job template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1428,8 +1428,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of this job, selected from the [JobType enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobType)
-{{% /md %}}</dd>
+    <dd>The type of this job, selected from the [JobType enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobType)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1437,14 +1437,14 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone in which the created job should run. If it is not provided, the provider zone is used.
-{{% /md %}}</dd>
+    <dd>The zone in which the created job should run. If it is not provided, the provider zone is used.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1453,8 +1453,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The configuration for VM IPs.  Options are `"WORKER_IP_PUBLIC"` or `"WORKER_IP_PRIVATE"`.
-{{% /md %}}</dd>
+    <dd>The configuration for VM IPs.  Options are `"WORKER_IP_PUBLIC"` or `"WORKER_IP_PRIVATE"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1462,8 +1462,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID of this job.
-{{% /md %}}</dd>
+    <dd>The unique ID of this job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1471,11 +1471,11 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}User labels to be specified for the job. Keys and values should follow the restrictions
+    <dd>User labels to be specified for the job. Keys and values should follow the restrictions
 specified in the [labeling restrictions](https://cloud.google.com/compute/docs/labeling-resources#restrictions) page.
 **NOTE**: Google-provided Dataflow templates often provide default labels that begin with `goog-dataflow-provided`.
 Unless explicitly set in config, these labels will be ignored to prevent diffs on re-apply.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1483,8 +1483,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to use for the job.
-{{% /md %}}</dd>
+    <dd>The machine type to use for the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1492,8 +1492,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of workers permitted to work on the job.  More workers may improve processing speed at additional cost.
-{{% /md %}}</dd>
+    <dd>The number of workers permitted to work on the job.  More workers may improve processing speed at additional cost.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1501,8 +1501,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by Dataflow.
-{{% /md %}}</dd>
+    <dd>A unique name for the resource, required by Dataflow.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1510,8 +1510,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The network to which VMs will be assigned. If it is not provided, "default" will be used.
-{{% /md %}}</dd>
+    <dd>The network to which VMs will be assigned. If it is not provided, "default" will be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1519,8 +1519,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}One of "drain" or "cancel".  Specifies behavior of deletion during `pulumi destroy`.  See above note.
-{{% /md %}}</dd>
+    <dd>One of "drain" or "cancel".  Specifies behavior of deletion during `pulumi destroy`.  See above note.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1528,8 +1528,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Key/Value pairs to be passed to the Dataflow job (as used in the template).
-{{% /md %}}</dd>
+    <dd>Key/Value pairs to be passed to the Dataflow job (as used in the template).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1537,8 +1537,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the resource belongs. If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+    <dd>The project in which the resource belongs. If it is not provided, the provider project is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1546,7 +1546,7 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1554,8 +1554,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Service Account email used to create the job.
-{{% /md %}}</dd>
+    <dd>The Service Account email used to create the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1563,8 +1563,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current state of the resource, selected from the [JobState enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobState)
-{{% /md %}}</dd>
+    <dd>The current state of the resource, selected from the [JobState enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobState)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1572,8 +1572,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The subnetwork to which VMs will be assigned. Should be of the form "regions/REGION/subnetworks/SUBNETWORK".
-{{% /md %}}</dd>
+    <dd>The subnetwork to which VMs will be assigned. Should be of the form "regions/REGION/subnetworks/SUBNETWORK".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1581,8 +1581,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A writeable location on GCS for the Dataflow job to dump its temporary data.
-{{% /md %}}</dd>
+    <dd>A writeable location on GCS for the Dataflow job to dump its temporary data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1590,8 +1590,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The GCS path to the Dataflow job template.
-{{% /md %}}</dd>
+    <dd>The GCS path to the Dataflow job template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1599,8 +1599,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of this job, selected from the [JobType enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobType)
-{{% /md %}}</dd>
+    <dd>The type of this job, selected from the [JobType enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobType)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1608,14 +1608,14 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone in which the created job should run. If it is not provided, the provider zone is used.
-{{% /md %}}</dd>
+    <dd>The zone in which the created job should run. If it is not provided, the provider zone is used.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1624,8 +1624,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The configuration for VM IPs.  Options are `"WORKER_IP_PUBLIC"` or `"WORKER_IP_PRIVATE"`.
-{{% /md %}}</dd>
+    <dd>The configuration for VM IPs.  Options are `"WORKER_IP_PUBLIC"` or `"WORKER_IP_PRIVATE"`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1633,8 +1633,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique ID of this job.
-{{% /md %}}</dd>
+    <dd>The unique ID of this job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1642,11 +1642,11 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}User labels to be specified for the job. Keys and values should follow the restrictions
+    <dd>User labels to be specified for the job. Keys and values should follow the restrictions
 specified in the [labeling restrictions](https://cloud.google.com/compute/docs/labeling-resources#restrictions) page.
 **NOTE**: Google-provided Dataflow templates often provide default labels that begin with `goog-dataflow-provided`.
 Unless explicitly set in config, these labels will be ignored to prevent diffs on re-apply.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1654,8 +1654,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to use for the job.
-{{% /md %}}</dd>
+    <dd>The machine type to use for the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1663,8 +1663,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of workers permitted to work on the job.  More workers may improve processing speed at additional cost.
-{{% /md %}}</dd>
+    <dd>The number of workers permitted to work on the job.  More workers may improve processing speed at additional cost.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1672,8 +1672,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A unique name for the resource, required by Dataflow.
-{{% /md %}}</dd>
+    <dd>A unique name for the resource, required by Dataflow.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1681,8 +1681,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The network to which VMs will be assigned. If it is not provided, "default" will be used.
-{{% /md %}}</dd>
+    <dd>The network to which VMs will be assigned. If it is not provided, "default" will be used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1690,8 +1690,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}One of "drain" or "cancel".  Specifies behavior of deletion during `pulumi destroy`.  See above note.
-{{% /md %}}</dd>
+    <dd>One of "drain" or "cancel".  Specifies behavior of deletion during `pulumi destroy`.  See above note.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1699,8 +1699,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Key/Value pairs to be passed to the Dataflow job (as used in the template).
-{{% /md %}}</dd>
+    <dd>Key/Value pairs to be passed to the Dataflow job (as used in the template).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1708,8 +1708,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the resource belongs. If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+    <dd>The project in which the resource belongs. If it is not provided, the provider project is used.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1717,7 +1717,7 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1725,8 +1725,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Service Account email used to create the job.
-{{% /md %}}</dd>
+    <dd>The Service Account email used to create the job.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1734,8 +1734,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The current state of the resource, selected from the [JobState enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobState)
-{{% /md %}}</dd>
+    <dd>The current state of the resource, selected from the [JobState enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobState)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1743,8 +1743,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The subnetwork to which VMs will be assigned. Should be of the form "regions/REGION/subnetworks/SUBNETWORK".
-{{% /md %}}</dd>
+    <dd>The subnetwork to which VMs will be assigned. Should be of the form "regions/REGION/subnetworks/SUBNETWORK".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1752,8 +1752,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A writeable location on GCS for the Dataflow job to dump its temporary data.
-{{% /md %}}</dd>
+    <dd>A writeable location on GCS for the Dataflow job to dump its temporary data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1761,8 +1761,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The GCS path to the Dataflow job template.
-{{% /md %}}</dd>
+    <dd>The GCS path to the Dataflow job template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1770,8 +1770,8 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of this job, selected from the [JobType enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobType)
-{{% /md %}}</dd>
+    <dd>The type of this job, selected from the [JobType enum](https://cloud.google.com/dataflow/docs/reference/rest/v1b3/projects.jobs#Job.JobType)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1779,11 +1779,11 @@ Unless explicitly set in config, these labels will be ignored to prevent diffs o
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The zone in which the created job should run. If it is not provided, the provider zone is used.
-{{% /md %}}</dd>
+    <dd>The zone in which the created job should run. If it is not provided, the provider zone is used.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

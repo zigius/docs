@@ -37,26 +37,26 @@ const conn1 = new openstack.vpnaas.SiteConnection("conn_1", {
 
 
 ## Create a SiteConnection Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/vpnaas/#SiteConnection">SiteConnection</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/vpnaas/#SiteConnectionArgs">SiteConnectionArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">SiteConnection</span><span class="p">(resource_name, opts=None, </span>admin_state_up=None<span class="p">, </span>description=None<span class="p">, </span>dpds=None<span class="p">, </span>ikepolicy_id=None<span class="p">, </span>initiator=None<span class="p">, </span>ipsecpolicy_id=None<span class="p">, </span>local_ep_group_id=None<span class="p">, </span>local_id=None<span class="p">, </span>mtu=None<span class="p">, </span>name=None<span class="p">, </span>peer_address=None<span class="p">, </span>peer_cidrs=None<span class="p">, </span>peer_ep_group_id=None<span class="p">, </span>peer_id=None<span class="p">, </span>psk=None<span class="p">, </span>region=None<span class="p">, </span>tenant_id=None<span class="p">, </span>value_specs=None<span class="p">, </span>vpnservice_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewSiteConnection<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/vpnaas?tab=doc#SiteConnectionArgs">SiteConnectionArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/vpnaas?tab=doc#SiteConnection">SiteConnection</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.VPNaaS.SiteConnection.html">SiteConnection</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.VPNaaS.SiteConnectionArgs.html">SiteConnectionArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -93,9 +93,9 @@ const conn1 = new openstack.vpnaas.SiteConnection("conn_1", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -113,9 +113,9 @@ const conn1 = new openstack.vpnaas.SiteConnection("conn_1", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -162,9 +162,9 @@ const conn1 = new openstack.vpnaas.SiteConnection("conn_1", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -201,7 +201,7 @@ const conn1 = new openstack.vpnaas.SiteConnection("conn_1", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## SiteConnection Resource Properties {#properties}
 
@@ -214,7 +214,7 @@ The SiteConnection resource accepts the following [input]({{< relref "/docs/intr
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -223,8 +223,8 @@ The SiteConnection resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the IKE policy. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the IKE policy. Changing this creates a new connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -232,8 +232,8 @@ The SiteConnection resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the IPsec policy. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the IPsec policy. Changing this creates a new connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -241,8 +241,8 @@ The SiteConnection resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The peer gateway public IPv4 or IPv6 address or FQDN.
-{{% /md %}}</dd>
+    <dd>The peer gateway public IPv4 or IPv6 address or FQDN.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -250,10 +250,10 @@ The SiteConnection resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The peer router identity for authentication. A valid value is an IPv4 address, IPv6 address, e-mail address, key ID, or FQDN.
+    <dd>The peer router identity for authentication. A valid value is an IPv4 address, IPv6 address, e-mail address, key ID, or FQDN.
 Typically, this value matches the peer_address value.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -261,8 +261,8 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The pre-shared key. A valid value is any string.
-{{% /md %}}</dd>
+    <dd>The pre-shared key. A valid value is any string.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -270,8 +270,8 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPN service. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the VPN service. Changing this creates a new connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -279,9 +279,9 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the resource. Can either be up(true) or down(false).
+    <dd>The administrative state of the resource. Can either be up(true) or down(false).
 Changing this updates the administrative state of the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -289,9 +289,9 @@ Changing this updates the administrative state of the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the connection.
+    <dd>The human-readable description for the connection.
 Changing this updates the description of the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -299,11 +299,11 @@ Changing this updates the description of the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#siteconnectiondpd">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>VPNaa<wbr>S.<wbr>Inputs.<wbr>Site<wbr>Connection<wbr>Dpd<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A dictionary with dead peer detection (DPD) protocol controls.
+    <dd>A dictionary with dead peer detection (DPD) protocol controls.
 - `action` - (Optional) The dead peer detection (DPD) action.
 A valid value is clear, hold, restart, disabled, or restart-by-peer.
 Default value is hold.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -311,8 +311,8 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid value is response-only or bi-directional. Default is bi-directional.
-{{% /md %}}</dd>
+    <dd>A valid value is response-only or bi-directional. Default is bi-directional.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -320,11 +320,11 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID for the endpoint group that contains private subnets for the local side of the connection.
+    <dd>The ID for the endpoint group that contains private subnets for the local side of the connection.
 You must specify this parameter with the peer_ep_group_id parameter unless
 in backward- compatible mode where peer_cidrs is provided with a subnet_id for the VPN service.
 Changing this updates the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,10 +332,10 @@ Changing this updates the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An ID to be used instead of the external IP address for a virtual router used in traffic between instances on different networks in east-west traffic.
+    <dd>An ID to be used instead of the external IP address for a virtual router used in traffic between instances on different networks in east-west traffic.
 Most often, local ID would be domain name, email address, etc.
 If this is not configured then the external IP address will be used as the ID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -343,9 +343,9 @@ If this is not configured then the external IP address will be used as the ID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum transmission unit (MTU) value to address fragmentation.
+    <dd>The maximum transmission unit (MTU) value to address fragmentation.
 Minimum value is 68 for IPv4, and 1280 for IPv6.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -353,9 +353,9 @@ Minimum value is 68 for IPv4, and 1280 for IPv6.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection. Changing this updates the name of
+    <dd>The name of the connection. Changing this updates the name of
 the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -363,8 +363,8 @@ the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Unique list of valid peer private CIDRs in the form < net_address > / < prefix > .
-{{% /md %}}</dd>
+    <dd>Unique list of valid peer private CIDRs in the form < net_address > / < prefix > .
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -372,10 +372,10 @@ the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID for the endpoint group that contains private CIDRs in the form < net_address > / < prefix > for the peer side of the connection.
+    <dd>The ID for the endpoint group that contains private CIDRs in the form < net_address > / < prefix > for the peer side of the connection.
 You must specify this parameter with the local_ep_group_id parameter unless in backward-compatible mode
 where peer_cidrs is provided with a subnet_id for the VPN service.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -383,11 +383,11 @@ where peer_cidrs is provided with a subnet_id for the VPN service.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an IPSec site connection. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 site connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -395,9 +395,9 @@ site connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the connection. Required if admin wants to
+    <dd>The owner of the connection. Required if admin wants to
 create a connection for another project. Changing this creates a new connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -405,14 +405,14 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -421,8 +421,8 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the IKE policy. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the IKE policy. Changing this creates a new connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -430,8 +430,8 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the IPsec policy. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the IPsec policy. Changing this creates a new connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -439,8 +439,8 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The peer gateway public IPv4 or IPv6 address or FQDN.
-{{% /md %}}</dd>
+    <dd>The peer gateway public IPv4 or IPv6 address or FQDN.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -448,10 +448,10 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The peer router identity for authentication. A valid value is an IPv4 address, IPv6 address, e-mail address, key ID, or FQDN.
+    <dd>The peer router identity for authentication. A valid value is an IPv4 address, IPv6 address, e-mail address, key ID, or FQDN.
 Typically, this value matches the peer_address value.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -459,8 +459,8 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The pre-shared key. A valid value is any string.
-{{% /md %}}</dd>
+    <dd>The pre-shared key. A valid value is any string.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -468,8 +468,8 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPN service. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the VPN service. Changing this creates a new connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -477,9 +477,9 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the resource. Can either be up(true) or down(false).
+    <dd>The administrative state of the resource. Can either be up(true) or down(false).
 Changing this updates the administrative state of the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -487,9 +487,9 @@ Changing this updates the administrative state of the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the connection.
+    <dd>The human-readable description for the connection.
 Changing this updates the description of the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -497,11 +497,11 @@ Changing this updates the description of the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#siteconnectiondpd">[]Site<wbr>Connection<wbr>Dpd</a></span>
     </dt>
-    <dd>{{% md %}}A dictionary with dead peer detection (DPD) protocol controls.
+    <dd>A dictionary with dead peer detection (DPD) protocol controls.
 - `action` - (Optional) The dead peer detection (DPD) action.
 A valid value is clear, hold, restart, disabled, or restart-by-peer.
 Default value is hold.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -509,8 +509,8 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid value is response-only or bi-directional. Default is bi-directional.
-{{% /md %}}</dd>
+    <dd>A valid value is response-only or bi-directional. Default is bi-directional.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -518,11 +518,11 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID for the endpoint group that contains private subnets for the local side of the connection.
+    <dd>The ID for the endpoint group that contains private subnets for the local side of the connection.
 You must specify this parameter with the peer_ep_group_id parameter unless
 in backward- compatible mode where peer_cidrs is provided with a subnet_id for the VPN service.
 Changing this updates the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -530,10 +530,10 @@ Changing this updates the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An ID to be used instead of the external IP address for a virtual router used in traffic between instances on different networks in east-west traffic.
+    <dd>An ID to be used instead of the external IP address for a virtual router used in traffic between instances on different networks in east-west traffic.
 Most often, local ID would be domain name, email address, etc.
 If this is not configured then the external IP address will be used as the ID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -541,9 +541,9 @@ If this is not configured then the external IP address will be used as the ID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum transmission unit (MTU) value to address fragmentation.
+    <dd>The maximum transmission unit (MTU) value to address fragmentation.
 Minimum value is 68 for IPv4, and 1280 for IPv6.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -551,9 +551,9 @@ Minimum value is 68 for IPv4, and 1280 for IPv6.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection. Changing this updates the name of
+    <dd>The name of the connection. Changing this updates the name of
 the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -561,8 +561,8 @@ the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Unique list of valid peer private CIDRs in the form < net_address > / < prefix > .
-{{% /md %}}</dd>
+    <dd>Unique list of valid peer private CIDRs in the form < net_address > / < prefix > .
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -570,10 +570,10 @@ the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID for the endpoint group that contains private CIDRs in the form < net_address > / < prefix > for the peer side of the connection.
+    <dd>The ID for the endpoint group that contains private CIDRs in the form < net_address > / < prefix > for the peer side of the connection.
 You must specify this parameter with the local_ep_group_id parameter unless in backward-compatible mode
 where peer_cidrs is provided with a subnet_id for the VPN service.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -581,11 +581,11 @@ where peer_cidrs is provided with a subnet_id for the VPN service.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an IPSec site connection. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 site connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -593,9 +593,9 @@ site connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the connection. Required if admin wants to
+    <dd>The owner of the connection. Required if admin wants to
 create a connection for another project. Changing this creates a new connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -603,14 +603,14 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -619,8 +619,8 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the IKE policy. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the IKE policy. Changing this creates a new connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -628,8 +628,8 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the IPsec policy. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the IPsec policy. Changing this creates a new connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -637,8 +637,8 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The peer gateway public IPv4 or IPv6 address or FQDN.
-{{% /md %}}</dd>
+    <dd>The peer gateway public IPv4 or IPv6 address or FQDN.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -646,10 +646,10 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The peer router identity for authentication. A valid value is an IPv4 address, IPv6 address, e-mail address, key ID, or FQDN.
+    <dd>The peer router identity for authentication. A valid value is an IPv4 address, IPv6 address, e-mail address, key ID, or FQDN.
 Typically, this value matches the peer_address value.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -657,8 +657,8 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The pre-shared key. A valid value is any string.
-{{% /md %}}</dd>
+    <dd>The pre-shared key. A valid value is any string.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -666,8 +666,8 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPN service. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the VPN service. Changing this creates a new connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -675,9 +675,9 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the resource. Can either be up(true) or down(false).
+    <dd>The administrative state of the resource. Can either be up(true) or down(false).
 Changing this updates the administrative state of the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -685,9 +685,9 @@ Changing this updates the administrative state of the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the connection.
+    <dd>The human-readable description for the connection.
 Changing this updates the description of the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -695,11 +695,11 @@ Changing this updates the description of the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#siteconnectiondpd">Site<wbr>Connection<wbr>Dpd[]</a></span>
     </dt>
-    <dd>{{% md %}}A dictionary with dead peer detection (DPD) protocol controls.
+    <dd>A dictionary with dead peer detection (DPD) protocol controls.
 - `action` - (Optional) The dead peer detection (DPD) action.
 A valid value is clear, hold, restart, disabled, or restart-by-peer.
 Default value is hold.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -707,8 +707,8 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid value is response-only or bi-directional. Default is bi-directional.
-{{% /md %}}</dd>
+    <dd>A valid value is response-only or bi-directional. Default is bi-directional.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -716,11 +716,11 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID for the endpoint group that contains private subnets for the local side of the connection.
+    <dd>The ID for the endpoint group that contains private subnets for the local side of the connection.
 You must specify this parameter with the peer_ep_group_id parameter unless
 in backward- compatible mode where peer_cidrs is provided with a subnet_id for the VPN service.
 Changing this updates the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -728,10 +728,10 @@ Changing this updates the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An ID to be used instead of the external IP address for a virtual router used in traffic between instances on different networks in east-west traffic.
+    <dd>An ID to be used instead of the external IP address for a virtual router used in traffic between instances on different networks in east-west traffic.
 Most often, local ID would be domain name, email address, etc.
 If this is not configured then the external IP address will be used as the ID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -739,9 +739,9 @@ If this is not configured then the external IP address will be used as the ID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum transmission unit (MTU) value to address fragmentation.
+    <dd>The maximum transmission unit (MTU) value to address fragmentation.
 Minimum value is 68 for IPv4, and 1280 for IPv6.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -749,9 +749,9 @@ Minimum value is 68 for IPv4, and 1280 for IPv6.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection. Changing this updates the name of
+    <dd>The name of the connection. Changing this updates the name of
 the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -759,8 +759,8 @@ the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Unique list of valid peer private CIDRs in the form < net_address > / < prefix > .
-{{% /md %}}</dd>
+    <dd>Unique list of valid peer private CIDRs in the form < net_address > / < prefix > .
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -768,10 +768,10 @@ the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID for the endpoint group that contains private CIDRs in the form < net_address > / < prefix > for the peer side of the connection.
+    <dd>The ID for the endpoint group that contains private CIDRs in the form < net_address > / < prefix > for the peer side of the connection.
 You must specify this parameter with the local_ep_group_id parameter unless in backward-compatible mode
 where peer_cidrs is provided with a subnet_id for the VPN service.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -779,11 +779,11 @@ where peer_cidrs is provided with a subnet_id for the VPN service.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an IPSec site connection. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 site connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -791,9 +791,9 @@ site connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the connection. Required if admin wants to
+    <dd>The owner of the connection. Required if admin wants to
 create a connection for another project. Changing this creates a new connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -801,14 +801,14 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -817,8 +817,8 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the IKE policy. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the IKE policy. Changing this creates a new connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -826,8 +826,8 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the IPsec policy. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the IPsec policy. Changing this creates a new connection.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -835,8 +835,8 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The peer gateway public IPv4 or IPv6 address or FQDN.
-{{% /md %}}</dd>
+    <dd>The peer gateway public IPv4 or IPv6 address or FQDN.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -844,10 +844,10 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The peer router identity for authentication. A valid value is an IPv4 address, IPv6 address, e-mail address, key ID, or FQDN.
+    <dd>The peer router identity for authentication. A valid value is an IPv4 address, IPv6 address, e-mail address, key ID, or FQDN.
 Typically, this value matches the peer_address value.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -855,8 +855,8 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The pre-shared key. A valid value is any string.
-{{% /md %}}</dd>
+    <dd>The pre-shared key. A valid value is any string.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -864,8 +864,8 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPN service. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the VPN service. Changing this creates a new connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -873,9 +873,9 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the resource. Can either be up(true) or down(false).
+    <dd>The administrative state of the resource. Can either be up(true) or down(false).
 Changing this updates the administrative state of the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -883,9 +883,9 @@ Changing this updates the administrative state of the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the connection.
+    <dd>The human-readable description for the connection.
 Changing this updates the description of the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -893,11 +893,11 @@ Changing this updates the description of the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#siteconnectiondpd">List[Site<wbr>Connection<wbr>Dpd]</a></span>
     </dt>
-    <dd>{{% md %}}A dictionary with dead peer detection (DPD) protocol controls.
+    <dd>A dictionary with dead peer detection (DPD) protocol controls.
 - `action` - (Optional) The dead peer detection (DPD) action.
 A valid value is clear, hold, restart, disabled, or restart-by-peer.
 Default value is hold.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -905,8 +905,8 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A valid value is response-only or bi-directional. Default is bi-directional.
-{{% /md %}}</dd>
+    <dd>A valid value is response-only or bi-directional. Default is bi-directional.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -914,11 +914,11 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID for the endpoint group that contains private subnets for the local side of the connection.
+    <dd>The ID for the endpoint group that contains private subnets for the local side of the connection.
 You must specify this parameter with the peer_ep_group_id parameter unless
 in backward- compatible mode where peer_cidrs is provided with a subnet_id for the VPN service.
 Changing this updates the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -926,10 +926,10 @@ Changing this updates the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An ID to be used instead of the external IP address for a virtual router used in traffic between instances on different networks in east-west traffic.
+    <dd>An ID to be used instead of the external IP address for a virtual router used in traffic between instances on different networks in east-west traffic.
 Most often, local ID would be domain name, email address, etc.
 If this is not configured then the external IP address will be used as the ID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -937,9 +937,9 @@ If this is not configured then the external IP address will be used as the ID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum transmission unit (MTU) value to address fragmentation.
+    <dd>The maximum transmission unit (MTU) value to address fragmentation.
 Minimum value is 68 for IPv4, and 1280 for IPv6.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -947,9 +947,9 @@ Minimum value is 68 for IPv4, and 1280 for IPv6.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection. Changing this updates the name of
+    <dd>The name of the connection. Changing this updates the name of
 the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -957,8 +957,8 @@ the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Unique list of valid peer private CIDRs in the form < net_address > / < prefix > .
-{{% /md %}}</dd>
+    <dd>Unique list of valid peer private CIDRs in the form < net_address > / < prefix > .
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -966,10 +966,10 @@ the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID for the endpoint group that contains private CIDRs in the form < net_address > / < prefix > for the peer side of the connection.
+    <dd>The ID for the endpoint group that contains private CIDRs in the form < net_address > / < prefix > for the peer side of the connection.
 You must specify this parameter with the local_ep_group_id parameter unless in backward-compatible mode
 where peer_cidrs is provided with a subnet_id for the VPN service.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -977,11 +977,11 @@ where peer_cidrs is provided with a subnet_id for the VPN service.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an IPSec site connection. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 site connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -989,9 +989,9 @@ site connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the connection. Required if admin wants to
+    <dd>The owner of the connection. Required if admin wants to
 create a connection for another project. Changing this creates a new connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -999,11 +999,11 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1017,7 +1017,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1026,13 +1026,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1041,13 +1041,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1056,13 +1056,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1071,10 +1071,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1085,25 +1085,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing SiteConnection Resource {#look-up}
 
 Get an existing SiteConnection resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/vpnaas/#SiteConnectionState">SiteConnectionState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/vpnaas/#SiteConnection">SiteConnection</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>admin_state_up=None<span class="p">, </span>description=None<span class="p">, </span>dpds=None<span class="p">, </span>ikepolicy_id=None<span class="p">, </span>initiator=None<span class="p">, </span>ipsecpolicy_id=None<span class="p">, </span>local_ep_group_id=None<span class="p">, </span>local_id=None<span class="p">, </span>mtu=None<span class="p">, </span>name=None<span class="p">, </span>peer_address=None<span class="p">, </span>peer_cidrs=None<span class="p">, </span>peer_ep_group_id=None<span class="p">, </span>peer_id=None<span class="p">, </span>psk=None<span class="p">, </span>region=None<span class="p">, </span>tenant_id=None<span class="p">, </span>value_specs=None<span class="p">, </span>vpnservice_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetSiteConnection<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/vpnaas?tab=doc#SiteConnectionState">SiteConnectionState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/vpnaas?tab=doc#SiteConnection">SiteConnection</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.VPNaaS.SiteConnection.html">SiteConnection</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.VPNaaS.SiteConnectionState.html">SiteConnectionState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1128,9 +1128,9 @@ Get an existing SiteConnection resource's state with the given name, ID, and opt
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1143,36 +1143,9 @@ Get an existing SiteConnection resource's state with the given name, ID, and opt
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1197,13 +1170,40 @@ Get an existing SiteConnection resource's state with the given name, ID, and opt
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1212,9 +1212,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the resource. Can either be up(true) or down(false).
+    <dd>The administrative state of the resource. Can either be up(true) or down(false).
 Changing this updates the administrative state of the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1222,9 +1222,9 @@ Changing this updates the administrative state of the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the connection.
+    <dd>The human-readable description for the connection.
 Changing this updates the description of the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1232,11 +1232,11 @@ Changing this updates the description of the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#siteconnectiondpd">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>VPNaa<wbr>S.<wbr>Inputs.<wbr>Site<wbr>Connection<wbr>Dpd<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A dictionary with dead peer detection (DPD) protocol controls.
+    <dd>A dictionary with dead peer detection (DPD) protocol controls.
 - `action` - (Optional) The dead peer detection (DPD) action.
 A valid value is clear, hold, restart, disabled, or restart-by-peer.
 Default value is hold.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1244,8 +1244,8 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the IKE policy. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the IKE policy. Changing this creates a new connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1253,8 +1253,8 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid value is response-only or bi-directional. Default is bi-directional.
-{{% /md %}}</dd>
+    <dd>A valid value is response-only or bi-directional. Default is bi-directional.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1262,8 +1262,8 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the IPsec policy. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the IPsec policy. Changing this creates a new connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1271,11 +1271,11 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID for the endpoint group that contains private subnets for the local side of the connection.
+    <dd>The ID for the endpoint group that contains private subnets for the local side of the connection.
 You must specify this parameter with the peer_ep_group_id parameter unless
 in backward- compatible mode where peer_cidrs is provided with a subnet_id for the VPN service.
 Changing this updates the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1283,10 +1283,10 @@ Changing this updates the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An ID to be used instead of the external IP address for a virtual router used in traffic between instances on different networks in east-west traffic.
+    <dd>An ID to be used instead of the external IP address for a virtual router used in traffic between instances on different networks in east-west traffic.
 Most often, local ID would be domain name, email address, etc.
 If this is not configured then the external IP address will be used as the ID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1294,9 +1294,9 @@ If this is not configured then the external IP address will be used as the ID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum transmission unit (MTU) value to address fragmentation.
+    <dd>The maximum transmission unit (MTU) value to address fragmentation.
 Minimum value is 68 for IPv4, and 1280 for IPv6.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1304,9 +1304,9 @@ Minimum value is 68 for IPv4, and 1280 for IPv6.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection. Changing this updates the name of
+    <dd>The name of the connection. Changing this updates the name of
 the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1314,8 +1314,8 @@ the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The peer gateway public IPv4 or IPv6 address or FQDN.
-{{% /md %}}</dd>
+    <dd>The peer gateway public IPv4 or IPv6 address or FQDN.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1323,8 +1323,8 @@ the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Unique list of valid peer private CIDRs in the form < net_address > / < prefix > .
-{{% /md %}}</dd>
+    <dd>Unique list of valid peer private CIDRs in the form < net_address > / < prefix > .
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1332,10 +1332,10 @@ the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID for the endpoint group that contains private CIDRs in the form < net_address > / < prefix > for the peer side of the connection.
+    <dd>The ID for the endpoint group that contains private CIDRs in the form < net_address > / < prefix > for the peer side of the connection.
 You must specify this parameter with the local_ep_group_id parameter unless in backward-compatible mode
 where peer_cidrs is provided with a subnet_id for the VPN service.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1343,10 +1343,10 @@ where peer_cidrs is provided with a subnet_id for the VPN service.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The peer router identity for authentication. A valid value is an IPv4 address, IPv6 address, e-mail address, key ID, or FQDN.
+    <dd>The peer router identity for authentication. A valid value is an IPv4 address, IPv6 address, e-mail address, key ID, or FQDN.
 Typically, this value matches the peer_address value.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1354,8 +1354,8 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The pre-shared key. A valid value is any string.
-{{% /md %}}</dd>
+    <dd>The pre-shared key. A valid value is any string.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1363,11 +1363,11 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an IPSec site connection. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 site connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1375,9 +1375,9 @@ site connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the connection. Required if admin wants to
+    <dd>The owner of the connection. Required if admin wants to
 create a connection for another project. Changing this creates a new connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1385,8 +1385,8 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1394,14 +1394,14 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPN service. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the VPN service. Changing this creates a new connection.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1410,9 +1410,9 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the resource. Can either be up(true) or down(false).
+    <dd>The administrative state of the resource. Can either be up(true) or down(false).
 Changing this updates the administrative state of the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1420,9 +1420,9 @@ Changing this updates the administrative state of the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the connection.
+    <dd>The human-readable description for the connection.
 Changing this updates the description of the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1430,11 +1430,11 @@ Changing this updates the description of the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#siteconnectiondpd">[]Site<wbr>Connection<wbr>Dpd</a></span>
     </dt>
-    <dd>{{% md %}}A dictionary with dead peer detection (DPD) protocol controls.
+    <dd>A dictionary with dead peer detection (DPD) protocol controls.
 - `action` - (Optional) The dead peer detection (DPD) action.
 A valid value is clear, hold, restart, disabled, or restart-by-peer.
 Default value is hold.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1442,8 +1442,8 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the IKE policy. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the IKE policy. Changing this creates a new connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1451,8 +1451,8 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid value is response-only or bi-directional. Default is bi-directional.
-{{% /md %}}</dd>
+    <dd>A valid value is response-only or bi-directional. Default is bi-directional.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1460,8 +1460,8 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the IPsec policy. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the IPsec policy. Changing this creates a new connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1469,11 +1469,11 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID for the endpoint group that contains private subnets for the local side of the connection.
+    <dd>The ID for the endpoint group that contains private subnets for the local side of the connection.
 You must specify this parameter with the peer_ep_group_id parameter unless
 in backward- compatible mode where peer_cidrs is provided with a subnet_id for the VPN service.
 Changing this updates the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1481,10 +1481,10 @@ Changing this updates the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An ID to be used instead of the external IP address for a virtual router used in traffic between instances on different networks in east-west traffic.
+    <dd>An ID to be used instead of the external IP address for a virtual router used in traffic between instances on different networks in east-west traffic.
 Most often, local ID would be domain name, email address, etc.
 If this is not configured then the external IP address will be used as the ID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1492,9 +1492,9 @@ If this is not configured then the external IP address will be used as the ID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum transmission unit (MTU) value to address fragmentation.
+    <dd>The maximum transmission unit (MTU) value to address fragmentation.
 Minimum value is 68 for IPv4, and 1280 for IPv6.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1502,9 +1502,9 @@ Minimum value is 68 for IPv4, and 1280 for IPv6.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection. Changing this updates the name of
+    <dd>The name of the connection. Changing this updates the name of
 the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1512,8 +1512,8 @@ the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The peer gateway public IPv4 or IPv6 address or FQDN.
-{{% /md %}}</dd>
+    <dd>The peer gateway public IPv4 or IPv6 address or FQDN.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1521,8 +1521,8 @@ the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Unique list of valid peer private CIDRs in the form < net_address > / < prefix > .
-{{% /md %}}</dd>
+    <dd>Unique list of valid peer private CIDRs in the form < net_address > / < prefix > .
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1530,10 +1530,10 @@ the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID for the endpoint group that contains private CIDRs in the form < net_address > / < prefix > for the peer side of the connection.
+    <dd>The ID for the endpoint group that contains private CIDRs in the form < net_address > / < prefix > for the peer side of the connection.
 You must specify this parameter with the local_ep_group_id parameter unless in backward-compatible mode
 where peer_cidrs is provided with a subnet_id for the VPN service.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1541,10 +1541,10 @@ where peer_cidrs is provided with a subnet_id for the VPN service.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The peer router identity for authentication. A valid value is an IPv4 address, IPv6 address, e-mail address, key ID, or FQDN.
+    <dd>The peer router identity for authentication. A valid value is an IPv4 address, IPv6 address, e-mail address, key ID, or FQDN.
 Typically, this value matches the peer_address value.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1552,8 +1552,8 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The pre-shared key. A valid value is any string.
-{{% /md %}}</dd>
+    <dd>The pre-shared key. A valid value is any string.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1561,11 +1561,11 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an IPSec site connection. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 site connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1573,9 +1573,9 @@ site connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the connection. Required if admin wants to
+    <dd>The owner of the connection. Required if admin wants to
 create a connection for another project. Changing this creates a new connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1583,8 +1583,8 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1592,14 +1592,14 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPN service. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the VPN service. Changing this creates a new connection.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1608,9 +1608,9 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the resource. Can either be up(true) or down(false).
+    <dd>The administrative state of the resource. Can either be up(true) or down(false).
 Changing this updates the administrative state of the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1618,9 +1618,9 @@ Changing this updates the administrative state of the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the connection.
+    <dd>The human-readable description for the connection.
 Changing this updates the description of the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1628,11 +1628,11 @@ Changing this updates the description of the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#siteconnectiondpd">Site<wbr>Connection<wbr>Dpd[]</a></span>
     </dt>
-    <dd>{{% md %}}A dictionary with dead peer detection (DPD) protocol controls.
+    <dd>A dictionary with dead peer detection (DPD) protocol controls.
 - `action` - (Optional) The dead peer detection (DPD) action.
 A valid value is clear, hold, restart, disabled, or restart-by-peer.
 Default value is hold.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1640,8 +1640,8 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the IKE policy. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the IKE policy. Changing this creates a new connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1649,8 +1649,8 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A valid value is response-only or bi-directional. Default is bi-directional.
-{{% /md %}}</dd>
+    <dd>A valid value is response-only or bi-directional. Default is bi-directional.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1658,8 +1658,8 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the IPsec policy. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the IPsec policy. Changing this creates a new connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1667,11 +1667,11 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID for the endpoint group that contains private subnets for the local side of the connection.
+    <dd>The ID for the endpoint group that contains private subnets for the local side of the connection.
 You must specify this parameter with the peer_ep_group_id parameter unless
 in backward- compatible mode where peer_cidrs is provided with a subnet_id for the VPN service.
 Changing this updates the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1679,10 +1679,10 @@ Changing this updates the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An ID to be used instead of the external IP address for a virtual router used in traffic between instances on different networks in east-west traffic.
+    <dd>An ID to be used instead of the external IP address for a virtual router used in traffic between instances on different networks in east-west traffic.
 Most often, local ID would be domain name, email address, etc.
 If this is not configured then the external IP address will be used as the ID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1690,9 +1690,9 @@ If this is not configured then the external IP address will be used as the ID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum transmission unit (MTU) value to address fragmentation.
+    <dd>The maximum transmission unit (MTU) value to address fragmentation.
 Minimum value is 68 for IPv4, and 1280 for IPv6.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1700,9 +1700,9 @@ Minimum value is 68 for IPv4, and 1280 for IPv6.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection. Changing this updates the name of
+    <dd>The name of the connection. Changing this updates the name of
 the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1710,8 +1710,8 @@ the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The peer gateway public IPv4 or IPv6 address or FQDN.
-{{% /md %}}</dd>
+    <dd>The peer gateway public IPv4 or IPv6 address or FQDN.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1719,8 +1719,8 @@ the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Unique list of valid peer private CIDRs in the form < net_address > / < prefix > .
-{{% /md %}}</dd>
+    <dd>Unique list of valid peer private CIDRs in the form < net_address > / < prefix > .
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1728,10 +1728,10 @@ the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID for the endpoint group that contains private CIDRs in the form < net_address > / < prefix > for the peer side of the connection.
+    <dd>The ID for the endpoint group that contains private CIDRs in the form < net_address > / < prefix > for the peer side of the connection.
 You must specify this parameter with the local_ep_group_id parameter unless in backward-compatible mode
 where peer_cidrs is provided with a subnet_id for the VPN service.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1739,10 +1739,10 @@ where peer_cidrs is provided with a subnet_id for the VPN service.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The peer router identity for authentication. A valid value is an IPv4 address, IPv6 address, e-mail address, key ID, or FQDN.
+    <dd>The peer router identity for authentication. A valid value is an IPv4 address, IPv6 address, e-mail address, key ID, or FQDN.
 Typically, this value matches the peer_address value.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1750,8 +1750,8 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The pre-shared key. A valid value is any string.
-{{% /md %}}</dd>
+    <dd>The pre-shared key. A valid value is any string.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1759,11 +1759,11 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an IPSec site connection. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 site connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1771,9 +1771,9 @@ site connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the connection. Required if admin wants to
+    <dd>The owner of the connection. Required if admin wants to
 create a connection for another project. Changing this creates a new connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1781,8 +1781,8 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1790,14 +1790,14 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPN service. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the VPN service. Changing this creates a new connection.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1806,9 +1806,9 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}The administrative state of the resource. Can either be up(true) or down(false).
+    <dd>The administrative state of the resource. Can either be up(true) or down(false).
 Changing this updates the administrative state of the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1816,9 +1816,9 @@ Changing this updates the administrative state of the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The human-readable description for the connection.
+    <dd>The human-readable description for the connection.
 Changing this updates the description of the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1826,11 +1826,11 @@ Changing this updates the description of the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#siteconnectiondpd">List[Site<wbr>Connection<wbr>Dpd]</a></span>
     </dt>
-    <dd>{{% md %}}A dictionary with dead peer detection (DPD) protocol controls.
+    <dd>A dictionary with dead peer detection (DPD) protocol controls.
 - `action` - (Optional) The dead peer detection (DPD) action.
 A valid value is clear, hold, restart, disabled, or restart-by-peer.
 Default value is hold.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1838,8 +1838,8 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the IKE policy. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the IKE policy. Changing this creates a new connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1847,8 +1847,8 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A valid value is response-only or bi-directional. Default is bi-directional.
-{{% /md %}}</dd>
+    <dd>A valid value is response-only or bi-directional. Default is bi-directional.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1856,8 +1856,8 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the IPsec policy. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the IPsec policy. Changing this creates a new connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1865,11 +1865,11 @@ Default value is hold.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID for the endpoint group that contains private subnets for the local side of the connection.
+    <dd>The ID for the endpoint group that contains private subnets for the local side of the connection.
 You must specify this parameter with the peer_ep_group_id parameter unless
 in backward- compatible mode where peer_cidrs is provided with a subnet_id for the VPN service.
 Changing this updates the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1877,10 +1877,10 @@ Changing this updates the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An ID to be used instead of the external IP address for a virtual router used in traffic between instances on different networks in east-west traffic.
+    <dd>An ID to be used instead of the external IP address for a virtual router used in traffic between instances on different networks in east-west traffic.
 Most often, local ID would be domain name, email address, etc.
 If this is not configured then the external IP address will be used as the ID.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1888,9 +1888,9 @@ If this is not configured then the external IP address will be used as the ID.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum transmission unit (MTU) value to address fragmentation.
+    <dd>The maximum transmission unit (MTU) value to address fragmentation.
 Minimum value is 68 for IPv4, and 1280 for IPv6.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1898,9 +1898,9 @@ Minimum value is 68 for IPv4, and 1280 for IPv6.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection. Changing this updates the name of
+    <dd>The name of the connection. Changing this updates the name of
 the existing connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1908,8 +1908,8 @@ the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The peer gateway public IPv4 or IPv6 address or FQDN.
-{{% /md %}}</dd>
+    <dd>The peer gateway public IPv4 or IPv6 address or FQDN.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1917,8 +1917,8 @@ the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Unique list of valid peer private CIDRs in the form < net_address > / < prefix > .
-{{% /md %}}</dd>
+    <dd>Unique list of valid peer private CIDRs in the form < net_address > / < prefix > .
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1926,10 +1926,10 @@ the existing connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID for the endpoint group that contains private CIDRs in the form < net_address > / < prefix > for the peer side of the connection.
+    <dd>The ID for the endpoint group that contains private CIDRs in the form < net_address > / < prefix > for the peer side of the connection.
 You must specify this parameter with the local_ep_group_id parameter unless in backward-compatible mode
 where peer_cidrs is provided with a subnet_id for the VPN service.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1937,10 +1937,10 @@ where peer_cidrs is provided with a subnet_id for the VPN service.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The peer router identity for authentication. A valid value is an IPv4 address, IPv6 address, e-mail address, key ID, or FQDN.
+    <dd>The peer router identity for authentication. A valid value is an IPv4 address, IPv6 address, e-mail address, key ID, or FQDN.
 Typically, this value matches the peer_address value.
 Changing this updates the existing policy.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1948,8 +1948,8 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The pre-shared key. A valid value is any string.
-{{% /md %}}</dd>
+    <dd>The pre-shared key. A valid value is any string.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1957,11 +1957,11 @@ Changing this updates the existing policy.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Networking client.
+    <dd>The region in which to obtain the V2 Networking client.
 A Networking client is needed to create an IPSec site connection. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 site connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1969,9 +1969,9 @@ site connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the connection. Required if admin wants to
+    <dd>The owner of the connection. Required if admin wants to
 create a connection for another project. Changing this creates a new connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1979,8 +1979,8 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1988,11 +1988,11 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPN service. Changing this creates a new connection.
-{{% /md %}}</dd>
+    <dd>The ID of the VPN service. Changing this creates a new connection.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2007,18 +2007,18 @@ create a connection for another project. Changing this creates a new connection.
 
 
 <h4 id="siteconnectiondpd">Site<wbr>Connection<wbr>Dpd</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/input/#SiteConnectionDpd">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/output/#SiteConnectionDpd">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/vpnaas?tab=doc#SiteConnectionDpdArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/vpnaas?tab=doc#SiteConnectionDpdOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2027,7 +2027,7 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2035,7 +2035,7 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2043,13 +2043,13 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2058,7 +2058,7 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2066,7 +2066,7 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2074,13 +2074,13 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2089,7 +2089,7 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2097,7 +2097,7 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2105,13 +2105,13 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2120,7 +2120,7 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2128,7 +2128,7 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2136,10 +2136,10 @@ create a connection for another project. Changing this creates a new connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

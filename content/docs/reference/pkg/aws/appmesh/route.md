@@ -112,26 +112,26 @@ const serviceb = new aws.appmesh.Route("serviceb", {
 
 
 ## Create a Route Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/appmesh/#Route">Route</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/appmesh/#RouteArgs">RouteArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Route</span><span class="p">(resource_name, opts=None, </span>mesh_name=None<span class="p">, </span>name=None<span class="p">, </span>spec=None<span class="p">, </span>tags=None<span class="p">, </span>virtual_router_name=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewRoute<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteArgs">RouteArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#Route">Route</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AppMesh.Route.html">Route</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AppMesh.RouteArgs.html">RouteArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -168,9 +168,9 @@ const serviceb = new aws.appmesh.Route("serviceb", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -188,9 +188,9 @@ const serviceb = new aws.appmesh.Route("serviceb", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -237,9 +237,9 @@ const serviceb = new aws.appmesh.Route("serviceb", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -276,7 +276,7 @@ const serviceb = new aws.appmesh.Route("serviceb", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Route Resource Properties {#properties}
 
@@ -289,7 +289,7 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -298,8 +298,8 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the route.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the route.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -307,8 +307,8 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespec">Route<wbr>Spec<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The route specification to apply.
-{{% /md %}}</dd>
+    <dd>The route specification to apply.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -316,8 +316,8 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the virtual router in which to create the route.
-{{% /md %}}</dd>
+    <dd>The name of the virtual router in which to create the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -325,8 +325,8 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the route.
-{{% /md %}}</dd>
+    <dd>The name to use for the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -334,14 +334,14 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -350,8 +350,8 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the route.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the route.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -359,8 +359,8 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespec">Route<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}The route specification to apply.
-{{% /md %}}</dd>
+    <dd>The route specification to apply.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -368,8 +368,8 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the virtual router in which to create the route.
-{{% /md %}}</dd>
+    <dd>The name of the virtual router in which to create the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -377,8 +377,8 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the route.
-{{% /md %}}</dd>
+    <dd>The name to use for the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -386,14 +386,14 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -402,8 +402,8 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the route.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the route.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -411,8 +411,8 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespec">Route<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}The route specification to apply.
-{{% /md %}}</dd>
+    <dd>The route specification to apply.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -420,8 +420,8 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the virtual router in which to create the route.
-{{% /md %}}</dd>
+    <dd>The name of the virtual router in which to create the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -429,8 +429,8 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the route.
-{{% /md %}}</dd>
+    <dd>The name to use for the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -438,14 +438,14 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -454,8 +454,8 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the route.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the route.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -463,8 +463,8 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespec">Dict[Route<wbr>Spec]</a></span>
     </dt>
-    <dd>{{% md %}}The route specification to apply.
-{{% /md %}}</dd>
+    <dd>The route specification to apply.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -472,8 +472,8 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the virtual router in which to create the route.
-{{% /md %}}</dd>
+    <dd>The name of the virtual router in which to create the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -481,8 +481,8 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the route.
-{{% /md %}}</dd>
+    <dd>The name to use for the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -490,11 +490,11 @@ The Route resource accepts the following [input]({{< relref "/docs/intro/concept
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -508,7 +508,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -517,8 +517,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the route.
-{{% /md %}}</dd>
+    <dd>The ARN of the route.
+</dd>
 
     <dt class="property-"
             title="">
@@ -526,8 +526,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the route.
-{{% /md %}}</dd>
+    <dd>The creation date of the route.
+</dd>
 
     <dt class="property-"
             title="">
@@ -535,7 +535,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -543,14 +543,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the route.
-{{% /md %}}</dd>
+    <dd>The last update date of the route.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -559,8 +559,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the route.
-{{% /md %}}</dd>
+    <dd>The ARN of the route.
+</dd>
 
     <dt class="property-"
             title="">
@@ -568,8 +568,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the route.
-{{% /md %}}</dd>
+    <dd>The creation date of the route.
+</dd>
 
     <dt class="property-"
             title="">
@@ -577,7 +577,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -585,14 +585,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the route.
-{{% /md %}}</dd>
+    <dd>The last update date of the route.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -601,8 +601,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the route.
-{{% /md %}}</dd>
+    <dd>The ARN of the route.
+</dd>
 
     <dt class="property-"
             title="">
@@ -610,8 +610,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the route.
-{{% /md %}}</dd>
+    <dd>The creation date of the route.
+</dd>
 
     <dt class="property-"
             title="">
@@ -619,7 +619,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -627,14 +627,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the route.
-{{% /md %}}</dd>
+    <dd>The last update date of the route.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -643,8 +643,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the route.
-{{% /md %}}</dd>
+    <dd>The ARN of the route.
+</dd>
 
     <dt class="property-"
             title="">
@@ -652,8 +652,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the route.
-{{% /md %}}</dd>
+    <dd>The creation date of the route.
+</dd>
 
     <dt class="property-"
             title="">
@@ -661,7 +661,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -669,11 +669,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the route.
-{{% /md %}}</dd>
+    <dd>The last update date of the route.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -684,25 +684,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Route Resource {#look-up}
 
 Get an existing Route resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/appmesh/#RouteState">RouteState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/appmesh/#Route">Route</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>created_date=None<span class="p">, </span>last_updated_date=None<span class="p">, </span>mesh_name=None<span class="p">, </span>name=None<span class="p">, </span>spec=None<span class="p">, </span>tags=None<span class="p">, </span>virtual_router_name=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetRoute<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteState">RouteState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#Route">Route</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AppMesh.Route.html">Route</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.AppMesh.RouteState.html">RouteState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -727,9 +727,9 @@ Get an existing Route resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -742,36 +742,9 @@ Get an existing Route resource's state with the given name, ID, and optional ext
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -796,13 +769,40 @@ Get an existing Route resource's state with the given name, ID, and optional ext
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -811,8 +811,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the route.
-{{% /md %}}</dd>
+    <dd>The ARN of the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -820,8 +820,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the route.
-{{% /md %}}</dd>
+    <dd>The creation date of the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -829,8 +829,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the route.
-{{% /md %}}</dd>
+    <dd>The last update date of the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -838,8 +838,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the route.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -847,8 +847,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the route.
-{{% /md %}}</dd>
+    <dd>The name to use for the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -856,8 +856,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespec">Route<wbr>Spec<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The route specification to apply.
-{{% /md %}}</dd>
+    <dd>The route specification to apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -865,8 +865,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -874,14 +874,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the virtual router in which to create the route.
-{{% /md %}}</dd>
+    <dd>The name of the virtual router in which to create the route.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -890,8 +890,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the route.
-{{% /md %}}</dd>
+    <dd>The ARN of the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -899,8 +899,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the route.
-{{% /md %}}</dd>
+    <dd>The creation date of the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -908,8 +908,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the route.
-{{% /md %}}</dd>
+    <dd>The last update date of the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -917,8 +917,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the route.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -926,8 +926,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the route.
-{{% /md %}}</dd>
+    <dd>The name to use for the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -935,8 +935,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespec">Route<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}The route specification to apply.
-{{% /md %}}</dd>
+    <dd>The route specification to apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -944,8 +944,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -953,14 +953,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the virtual router in which to create the route.
-{{% /md %}}</dd>
+    <dd>The name of the virtual router in which to create the route.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -969,8 +969,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the route.
-{{% /md %}}</dd>
+    <dd>The ARN of the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -978,8 +978,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the route.
-{{% /md %}}</dd>
+    <dd>The creation date of the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -987,8 +987,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the route.
-{{% /md %}}</dd>
+    <dd>The last update date of the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -996,8 +996,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the route.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1005,8 +1005,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the route.
-{{% /md %}}</dd>
+    <dd>The name to use for the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1014,8 +1014,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespec">Route<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}The route specification to apply.
-{{% /md %}}</dd>
+    <dd>The route specification to apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1023,8 +1023,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1032,14 +1032,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the virtual router in which to create the route.
-{{% /md %}}</dd>
+    <dd>The name of the virtual router in which to create the route.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1048,8 +1048,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the route.
-{{% /md %}}</dd>
+    <dd>The ARN of the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1057,8 +1057,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The creation date of the route.
-{{% /md %}}</dd>
+    <dd>The creation date of the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1066,8 +1066,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The last update date of the route.
-{{% /md %}}</dd>
+    <dd>The last update date of the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1075,8 +1075,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the service mesh in which to create the route.
-{{% /md %}}</dd>
+    <dd>The name of the service mesh in which to create the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1084,8 +1084,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name to use for the route.
-{{% /md %}}</dd>
+    <dd>The name to use for the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1093,8 +1093,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespec">Dict[Route<wbr>Spec]</a></span>
     </dt>
-    <dd>{{% md %}}The route specification to apply.
-{{% /md %}}</dd>
+    <dd>The route specification to apply.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1102,8 +1102,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1111,11 +1111,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the virtual router in which to create the route.
-{{% /md %}}</dd>
+    <dd>The name of the virtual router in which to create the route.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1130,18 +1130,18 @@ The following state arguments are supported:
 
 
 <h4 id="routespec">Route<wbr>Spec</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#RouteSpec">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#RouteSpec">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1150,8 +1150,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttproute">Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP routing information for the route.
-{{% /md %}}</dd>
+    <dd>The HTTP routing information for the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1159,9 +1159,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The priority for the route, between `0` and `1000`.
+    <dd>The priority for the route, between `0` and `1000`.
 Routes are matched based on the specified value, where `0` is the highest priority.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1169,14 +1169,14 @@ Routes are matched based on the specified value, where `0` is the highest priori
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespectcproute">Route<wbr>Spec<wbr>Tcp<wbr>Route<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The TCP routing information for the route.
-{{% /md %}}</dd>
+    <dd>The TCP routing information for the route.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1185,8 +1185,8 @@ Routes are matched based on the specified value, where `0` is the highest priori
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttproute">Route<wbr>Spec<wbr>Http<wbr>Route</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP routing information for the route.
-{{% /md %}}</dd>
+    <dd>The HTTP routing information for the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1194,9 +1194,9 @@ Routes are matched based on the specified value, where `0` is the highest priori
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The priority for the route, between `0` and `1000`.
+    <dd>The priority for the route, between `0` and `1000`.
 Routes are matched based on the specified value, where `0` is the highest priority.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1204,14 +1204,14 @@ Routes are matched based on the specified value, where `0` is the highest priori
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespectcproute">Route<wbr>Spec<wbr>Tcp<wbr>Route</a></span>
     </dt>
-    <dd>{{% md %}}The TCP routing information for the route.
-{{% /md %}}</dd>
+    <dd>The TCP routing information for the route.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1220,8 +1220,8 @@ Routes are matched based on the specified value, where `0` is the highest priori
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttproute">Route<wbr>Spec<wbr>Http<wbr>Route</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP routing information for the route.
-{{% /md %}}</dd>
+    <dd>The HTTP routing information for the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1229,9 +1229,9 @@ Routes are matched based on the specified value, where `0` is the highest priori
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The priority for the route, between `0` and `1000`.
+    <dd>The priority for the route, between `0` and `1000`.
 Routes are matched based on the specified value, where `0` is the highest priority.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1239,14 +1239,14 @@ Routes are matched based on the specified value, where `0` is the highest priori
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespectcproute">Route<wbr>Spec<wbr>Tcp<wbr>Route</a></span>
     </dt>
-    <dd>{{% md %}}The TCP routing information for the route.
-{{% /md %}}</dd>
+    <dd>The TCP routing information for the route.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1255,8 +1255,8 @@ Routes are matched based on the specified value, where `0` is the highest priori
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttproute">Dict[Route<wbr>Spec<wbr>Http<wbr>Route]</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP routing information for the route.
-{{% /md %}}</dd>
+    <dd>The HTTP routing information for the route.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1264,9 +1264,9 @@ Routes are matched based on the specified value, where `0` is the highest priori
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The priority for the route, between `0` and `1000`.
+    <dd>The priority for the route, between `0` and `1000`.
 Routes are matched based on the specified value, where `0` is the highest priority.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1274,29 +1274,29 @@ Routes are matched based on the specified value, where `0` is the highest priori
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespectcproute">Dict[Route<wbr>Spec<wbr>Tcp<wbr>Route]</a></span>
     </dt>
-    <dd>{{% md %}}The TCP routing information for the route.
-{{% /md %}}</dd>
+    <dd>The TCP routing information for the route.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="routespechttproute">Route<wbr>Spec<wbr>Http<wbr>Route</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#RouteSpecHttpRoute">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#RouteSpecHttpRoute">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecHttpRouteArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecHttpRouteOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1305,8 +1305,8 @@ Routes are matched based on the specified value, where `0` is the highest priori
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttprouteaction">Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Action<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The action to take if a match is determined.
-{{% /md %}}</dd>
+    <dd>The action to take if a match is determined.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1314,14 +1314,14 @@ Routes are matched based on the specified value, where `0` is the highest priori
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttproutematch">Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Match<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The criteria for determining an HTTP request match.
-{{% /md %}}</dd>
+    <dd>The criteria for determining an HTTP request match.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1330,8 +1330,8 @@ Routes are matched based on the specified value, where `0` is the highest priori
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttprouteaction">Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}The action to take if a match is determined.
-{{% /md %}}</dd>
+    <dd>The action to take if a match is determined.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1339,14 +1339,14 @@ Routes are matched based on the specified value, where `0` is the highest priori
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttproutematch">Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Match</a></span>
     </dt>
-    <dd>{{% md %}}The criteria for determining an HTTP request match.
-{{% /md %}}</dd>
+    <dd>The criteria for determining an HTTP request match.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1355,8 +1355,8 @@ Routes are matched based on the specified value, where `0` is the highest priori
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttprouteaction">Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}The action to take if a match is determined.
-{{% /md %}}</dd>
+    <dd>The action to take if a match is determined.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1364,14 +1364,14 @@ Routes are matched based on the specified value, where `0` is the highest priori
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttproutematch">Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Match</a></span>
     </dt>
-    <dd>{{% md %}}The criteria for determining an HTTP request match.
-{{% /md %}}</dd>
+    <dd>The criteria for determining an HTTP request match.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1380,8 +1380,8 @@ Routes are matched based on the specified value, where `0` is the highest priori
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttprouteaction">Dict[Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}The action to take if a match is determined.
-{{% /md %}}</dd>
+    <dd>The action to take if a match is determined.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1389,29 +1389,29 @@ Routes are matched based on the specified value, where `0` is the highest priori
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttproutematch">Dict[Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Match]</a></span>
     </dt>
-    <dd>{{% md %}}The criteria for determining an HTTP request match.
-{{% /md %}}</dd>
+    <dd>The criteria for determining an HTTP request match.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="routespechttprouteaction">Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#RouteSpecHttpRouteAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#RouteSpecHttpRouteAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecHttpRouteActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecHttpRouteActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1420,15 +1420,15 @@ Routes are matched based on the specified value, where `0` is the highest priori
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttprouteactionweightedtarget">List&lt;Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Action<wbr>Weighted<wbr>Target<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The targets that traffic is routed to when a request matches the route.
+    <dd>The targets that traffic is routed to when a request matches the route.
 You can specify one or more targets and their relative weights with which to distribute traffic.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1437,15 +1437,15 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttprouteactionweightedtarget">[]Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Action<wbr>Weighted<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}The targets that traffic is routed to when a request matches the route.
+    <dd>The targets that traffic is routed to when a request matches the route.
 You can specify one or more targets and their relative weights with which to distribute traffic.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1454,15 +1454,15 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttprouteactionweightedtarget">Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Action<wbr>Weighted<wbr>Target[]</a></span>
     </dt>
-    <dd>{{% md %}}The targets that traffic is routed to when a request matches the route.
+    <dd>The targets that traffic is routed to when a request matches the route.
 You can specify one or more targets and their relative weights with which to distribute traffic.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1471,30 +1471,30 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttprouteactionweightedtarget">List[Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Action<wbr>Weighted<wbr>Target]</a></span>
     </dt>
-    <dd>{{% md %}}The targets that traffic is routed to when a request matches the route.
+    <dd>The targets that traffic is routed to when a request matches the route.
 You can specify one or more targets and their relative weights with which to distribute traffic.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="routespechttprouteactionweightedtarget">Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Action<wbr>Weighted<wbr>Target</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#RouteSpecHttpRouteActionWeightedTarget">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#RouteSpecHttpRouteActionWeightedTarget">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecHttpRouteActionWeightedTargetArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecHttpRouteActionWeightedTargetOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1503,8 +1503,8 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The virtual node to associate with the weighted target.
-{{% /md %}}</dd>
+    <dd>The virtual node to associate with the weighted target.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1512,14 +1512,14 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The relative weight of the weighted target. An integer between 0 and 100.
-{{% /md %}}</dd>
+    <dd>The relative weight of the weighted target. An integer between 0 and 100.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1528,8 +1528,8 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The virtual node to associate with the weighted target.
-{{% /md %}}</dd>
+    <dd>The virtual node to associate with the weighted target.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1537,14 +1537,14 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The relative weight of the weighted target. An integer between 0 and 100.
-{{% /md %}}</dd>
+    <dd>The relative weight of the weighted target. An integer between 0 and 100.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1553,8 +1553,8 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The virtual node to associate with the weighted target.
-{{% /md %}}</dd>
+    <dd>The virtual node to associate with the weighted target.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1562,14 +1562,14 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The relative weight of the weighted target. An integer between 0 and 100.
-{{% /md %}}</dd>
+    <dd>The relative weight of the weighted target. An integer between 0 and 100.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1578,8 +1578,8 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The virtual node to associate with the weighted target.
-{{% /md %}}</dd>
+    <dd>The virtual node to associate with the weighted target.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1587,29 +1587,29 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The relative weight of the weighted target. An integer between 0 and 100.
-{{% /md %}}</dd>
+    <dd>The relative weight of the weighted target. An integer between 0 and 100.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="routespechttproutematch">Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Match</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#RouteSpecHttpRouteMatch">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#RouteSpecHttpRouteMatch">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecHttpRouteMatchArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecHttpRouteMatchOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1618,10 +1618,10 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the path with which to match requests.
+    <dd>Specifies the path with which to match requests.
 This parameter must always start with /, which by itself matches all requests to the virtual router service name.
 * `range`- (Optional) The object that specifies the range of numbers that the header value sent by the client must be included in.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1629,8 +1629,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttproutematchheader">List&lt;Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Match<wbr>Header<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The client request headers to match on.
-{{% /md %}}</dd>
+    <dd>The client request headers to match on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1638,8 +1638,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The client request header method to match on. Valid values: `GET`, `HEAD`, `POST`, `PUT`, `DELETE`, `CONNECT`, `OPTIONS`, `TRACE`, `PATCH`.
-{{% /md %}}</dd>
+    <dd>The client request header method to match on. Valid values: `GET`, `HEAD`, `POST`, `PUT`, `DELETE`, `CONNECT`, `OPTIONS`, `TRACE`, `PATCH`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1647,14 +1647,14 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The client request header scheme to match on. Valid values: `http`, `https`.
-{{% /md %}}</dd>
+    <dd>The client request header scheme to match on. Valid values: `http`, `https`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1663,10 +1663,10 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the path with which to match requests.
+    <dd>Specifies the path with which to match requests.
 This parameter must always start with /, which by itself matches all requests to the virtual router service name.
 * `range`- (Optional) The object that specifies the range of numbers that the header value sent by the client must be included in.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1674,8 +1674,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttproutematchheader">[]Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Match<wbr>Header</a></span>
     </dt>
-    <dd>{{% md %}}The client request headers to match on.
-{{% /md %}}</dd>
+    <dd>The client request headers to match on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1683,8 +1683,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client request header method to match on. Valid values: `GET`, `HEAD`, `POST`, `PUT`, `DELETE`, `CONNECT`, `OPTIONS`, `TRACE`, `PATCH`.
-{{% /md %}}</dd>
+    <dd>The client request header method to match on. Valid values: `GET`, `HEAD`, `POST`, `PUT`, `DELETE`, `CONNECT`, `OPTIONS`, `TRACE`, `PATCH`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1692,14 +1692,14 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client request header scheme to match on. Valid values: `http`, `https`.
-{{% /md %}}</dd>
+    <dd>The client request header scheme to match on. Valid values: `http`, `https`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1708,10 +1708,10 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the path with which to match requests.
+    <dd>Specifies the path with which to match requests.
 This parameter must always start with /, which by itself matches all requests to the virtual router service name.
 * `range`- (Optional) The object that specifies the range of numbers that the header value sent by the client must be included in.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1719,8 +1719,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttproutematchheader">Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Match<wbr>Header[]</a></span>
     </dt>
-    <dd>{{% md %}}The client request headers to match on.
-{{% /md %}}</dd>
+    <dd>The client request headers to match on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1728,8 +1728,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client request header method to match on. Valid values: `GET`, `HEAD`, `POST`, `PUT`, `DELETE`, `CONNECT`, `OPTIONS`, `TRACE`, `PATCH`.
-{{% /md %}}</dd>
+    <dd>The client request header method to match on. Valid values: `GET`, `HEAD`, `POST`, `PUT`, `DELETE`, `CONNECT`, `OPTIONS`, `TRACE`, `PATCH`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1737,14 +1737,14 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The client request header scheme to match on. Valid values: `http`, `https`.
-{{% /md %}}</dd>
+    <dd>The client request header scheme to match on. Valid values: `http`, `https`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1753,10 +1753,10 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the path with which to match requests.
+    <dd>Specifies the path with which to match requests.
 This parameter must always start with /, which by itself matches all requests to the virtual router service name.
 * `range`- (Optional) The object that specifies the range of numbers that the header value sent by the client must be included in.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1764,8 +1764,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttproutematchheader">List[Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Match<wbr>Header]</a></span>
     </dt>
-    <dd>{{% md %}}The client request headers to match on.
-{{% /md %}}</dd>
+    <dd>The client request headers to match on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1773,8 +1773,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The client request header method to match on. Valid values: `GET`, `HEAD`, `POST`, `PUT`, `DELETE`, `CONNECT`, `OPTIONS`, `TRACE`, `PATCH`.
-{{% /md %}}</dd>
+    <dd>The client request header method to match on. Valid values: `GET`, `HEAD`, `POST`, `PUT`, `DELETE`, `CONNECT`, `OPTIONS`, `TRACE`, `PATCH`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1782,29 +1782,29 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The client request header scheme to match on. Valid values: `http`, `https`.
-{{% /md %}}</dd>
+    <dd>The client request header scheme to match on. Valid values: `http`, `https`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="routespechttproutematchheader">Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Match<wbr>Header</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#RouteSpecHttpRouteMatchHeader">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#RouteSpecHttpRouteMatchHeader">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecHttpRouteMatchHeaderArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecHttpRouteMatchHeaderOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1813,8 +1813,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for the HTTP header in the client request that will be matched on.
-{{% /md %}}</dd>
+    <dd>A name for the HTTP header in the client request that will be matched on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1822,8 +1822,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the match is on the opposite of the `match` method and value. Default is `false`.
-{{% /md %}}</dd>
+    <dd>If `true`, the match is on the opposite of the `match` method and value. Default is `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1831,14 +1831,14 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttproutematchheadermatch">Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Match<wbr>Header<wbr>Match<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The method and value to match the header value sent with a request. Specify one match method.
-{{% /md %}}</dd>
+    <dd>The method and value to match the header value sent with a request. Specify one match method.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1847,8 +1847,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for the HTTP header in the client request that will be matched on.
-{{% /md %}}</dd>
+    <dd>A name for the HTTP header in the client request that will be matched on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1856,8 +1856,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the match is on the opposite of the `match` method and value. Default is `false`.
-{{% /md %}}</dd>
+    <dd>If `true`, the match is on the opposite of the `match` method and value. Default is `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1865,14 +1865,14 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttproutematchheadermatch">Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Match<wbr>Header<wbr>Match</a></span>
     </dt>
-    <dd>{{% md %}}The method and value to match the header value sent with a request. Specify one match method.
-{{% /md %}}</dd>
+    <dd>The method and value to match the header value sent with a request. Specify one match method.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1881,8 +1881,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for the HTTP header in the client request that will be matched on.
-{{% /md %}}</dd>
+    <dd>A name for the HTTP header in the client request that will be matched on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1890,8 +1890,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the match is on the opposite of the `match` method and value. Default is `false`.
-{{% /md %}}</dd>
+    <dd>If `true`, the match is on the opposite of the `match` method and value. Default is `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1899,14 +1899,14 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttproutematchheadermatch">Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Match<wbr>Header<wbr>Match</a></span>
     </dt>
-    <dd>{{% md %}}The method and value to match the header value sent with a request. Specify one match method.
-{{% /md %}}</dd>
+    <dd>The method and value to match the header value sent with a request. Specify one match method.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1915,8 +1915,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A name for the HTTP header in the client request that will be matched on.
-{{% /md %}}</dd>
+    <dd>A name for the HTTP header in the client request that will be matched on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1924,8 +1924,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the match is on the opposite of the `match` method and value. Default is `false`.
-{{% /md %}}</dd>
+    <dd>If `true`, the match is on the opposite of the `match` method and value. Default is `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1933,29 +1933,29 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttproutematchheadermatch">Dict[Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Match<wbr>Header<wbr>Match]</a></span>
     </dt>
-    <dd>{{% md %}}The method and value to match the header value sent with a request. Specify one match method.
-{{% /md %}}</dd>
+    <dd>The method and value to match the header value sent with a request. Specify one match method.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="routespechttproutematchheadermatch">Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Match<wbr>Header<wbr>Match</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#RouteSpecHttpRouteMatchHeaderMatch">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#RouteSpecHttpRouteMatchHeaderMatch">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecHttpRouteMatchHeaderMatchArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecHttpRouteMatchHeaderMatchOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1964,8 +1964,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The header value sent by the client must match the specified value exactly.
-{{% /md %}}</dd>
+    <dd>The header value sent by the client must match the specified value exactly.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1973,10 +1973,10 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the path with which to match requests.
+    <dd>Specifies the path with which to match requests.
 This parameter must always start with /, which by itself matches all requests to the virtual router service name.
 * `range`- (Optional) The object that specifies the range of numbers that the header value sent by the client must be included in.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1984,7 +1984,7 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttproutematchheadermatchrange">Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Match<wbr>Header<wbr>Match<wbr>Range<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1992,8 +1992,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The header value sent by the client must include the specified characters.
-{{% /md %}}</dd>
+    <dd>The header value sent by the client must include the specified characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2001,14 +2001,14 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The header value sent by the client must end with the specified characters.
-{{% /md %}}</dd>
+    <dd>The header value sent by the client must end with the specified characters.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2017,8 +2017,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The header value sent by the client must match the specified value exactly.
-{{% /md %}}</dd>
+    <dd>The header value sent by the client must match the specified value exactly.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2026,10 +2026,10 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the path with which to match requests.
+    <dd>Specifies the path with which to match requests.
 This parameter must always start with /, which by itself matches all requests to the virtual router service name.
 * `range`- (Optional) The object that specifies the range of numbers that the header value sent by the client must be included in.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2037,7 +2037,7 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttproutematchheadermatchrange">Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Match<wbr>Header<wbr>Match<wbr>Range</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2045,8 +2045,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The header value sent by the client must include the specified characters.
-{{% /md %}}</dd>
+    <dd>The header value sent by the client must include the specified characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2054,14 +2054,14 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The header value sent by the client must end with the specified characters.
-{{% /md %}}</dd>
+    <dd>The header value sent by the client must end with the specified characters.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2070,8 +2070,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The header value sent by the client must match the specified value exactly.
-{{% /md %}}</dd>
+    <dd>The header value sent by the client must match the specified value exactly.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2079,10 +2079,10 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the path with which to match requests.
+    <dd>Specifies the path with which to match requests.
 This parameter must always start with /, which by itself matches all requests to the virtual router service name.
 * `range`- (Optional) The object that specifies the range of numbers that the header value sent by the client must be included in.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2090,7 +2090,7 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttproutematchheadermatchrange">Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Match<wbr>Header<wbr>Match<wbr>Range</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2098,8 +2098,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The header value sent by the client must include the specified characters.
-{{% /md %}}</dd>
+    <dd>The header value sent by the client must include the specified characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2107,14 +2107,14 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The header value sent by the client must end with the specified characters.
-{{% /md %}}</dd>
+    <dd>The header value sent by the client must end with the specified characters.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2123,8 +2123,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The header value sent by the client must match the specified value exactly.
-{{% /md %}}</dd>
+    <dd>The header value sent by the client must match the specified value exactly.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2132,10 +2132,10 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the path with which to match requests.
+    <dd>Specifies the path with which to match requests.
 This parameter must always start with /, which by itself matches all requests to the virtual router service name.
 * `range`- (Optional) The object that specifies the range of numbers that the header value sent by the client must be included in.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2143,7 +2143,7 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespechttproutematchheadermatchrange">Dict[Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Match<wbr>Header<wbr>Match<wbr>Range]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2151,8 +2151,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The header value sent by the client must include the specified characters.
-{{% /md %}}</dd>
+    <dd>The header value sent by the client must include the specified characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2160,29 +2160,29 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The header value sent by the client must end with the specified characters.
-{{% /md %}}</dd>
+    <dd>The header value sent by the client must end with the specified characters.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="routespechttproutematchheadermatchrange">Route<wbr>Spec<wbr>Http<wbr>Route<wbr>Match<wbr>Header<wbr>Match<wbr>Range</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#RouteSpecHttpRouteMatchHeaderMatchRange">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#RouteSpecHttpRouteMatchHeaderMatchRange">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecHttpRouteMatchHeaderMatchRangeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecHttpRouteMatchHeaderMatchRangeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2191,8 +2191,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The end of the range.
-{{% /md %}}</dd>
+    <dd>The end of the range.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2200,14 +2200,14 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The start of the range.
-{{% /md %}}</dd>
+    <dd>The start of the range.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2216,8 +2216,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The end of the range.
-{{% /md %}}</dd>
+    <dd>The end of the range.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2225,14 +2225,14 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The start of the range.
-{{% /md %}}</dd>
+    <dd>The start of the range.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2241,8 +2241,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The end of the range.
-{{% /md %}}</dd>
+    <dd>The end of the range.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2250,14 +2250,14 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The start of the range.
-{{% /md %}}</dd>
+    <dd>The start of the range.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2266,8 +2266,8 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The end of the range.
-{{% /md %}}</dd>
+    <dd>The end of the range.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2275,29 +2275,29 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The start of the range.
-{{% /md %}}</dd>
+    <dd>The start of the range.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="routespectcproute">Route<wbr>Spec<wbr>Tcp<wbr>Route</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#RouteSpecTcpRoute">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#RouteSpecTcpRoute">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecTcpRouteArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecTcpRouteOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2306,14 +2306,14 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespectcprouteaction">Route<wbr>Spec<wbr>Tcp<wbr>Route<wbr>Action<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The action to take if a match is determined.
-{{% /md %}}</dd>
+    <dd>The action to take if a match is determined.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2322,14 +2322,14 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespectcprouteaction">Route<wbr>Spec<wbr>Tcp<wbr>Route<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}The action to take if a match is determined.
-{{% /md %}}</dd>
+    <dd>The action to take if a match is determined.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2338,14 +2338,14 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespectcprouteaction">Route<wbr>Spec<wbr>Tcp<wbr>Route<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}The action to take if a match is determined.
-{{% /md %}}</dd>
+    <dd>The action to take if a match is determined.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2354,29 +2354,29 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespectcprouteaction">Dict[Route<wbr>Spec<wbr>Tcp<wbr>Route<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}The action to take if a match is determined.
-{{% /md %}}</dd>
+    <dd>The action to take if a match is determined.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="routespectcprouteaction">Route<wbr>Spec<wbr>Tcp<wbr>Route<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#RouteSpecTcpRouteAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#RouteSpecTcpRouteAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecTcpRouteActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecTcpRouteActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2385,15 +2385,15 @@ This parameter must always start with /, which by itself matches all requests to
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespectcprouteactionweightedtarget">List&lt;Route<wbr>Spec<wbr>Tcp<wbr>Route<wbr>Action<wbr>Weighted<wbr>Target<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The targets that traffic is routed to when a request matches the route.
+    <dd>The targets that traffic is routed to when a request matches the route.
 You can specify one or more targets and their relative weights with which to distribute traffic.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2402,15 +2402,15 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespectcprouteactionweightedtarget">[]Route<wbr>Spec<wbr>Tcp<wbr>Route<wbr>Action<wbr>Weighted<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}The targets that traffic is routed to when a request matches the route.
+    <dd>The targets that traffic is routed to when a request matches the route.
 You can specify one or more targets and their relative weights with which to distribute traffic.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2419,15 +2419,15 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespectcprouteactionweightedtarget">Route<wbr>Spec<wbr>Tcp<wbr>Route<wbr>Action<wbr>Weighted<wbr>Target[]</a></span>
     </dt>
-    <dd>{{% md %}}The targets that traffic is routed to when a request matches the route.
+    <dd>The targets that traffic is routed to when a request matches the route.
 You can specify one or more targets and their relative weights with which to distribute traffic.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2436,30 +2436,30 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#routespectcprouteactionweightedtarget">List[Route<wbr>Spec<wbr>Tcp<wbr>Route<wbr>Action<wbr>Weighted<wbr>Target]</a></span>
     </dt>
-    <dd>{{% md %}}The targets that traffic is routed to when a request matches the route.
+    <dd>The targets that traffic is routed to when a request matches the route.
 You can specify one or more targets and their relative weights with which to distribute traffic.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="routespectcprouteactionweightedtarget">Route<wbr>Spec<wbr>Tcp<wbr>Route<wbr>Action<wbr>Weighted<wbr>Target</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#RouteSpecTcpRouteActionWeightedTarget">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#RouteSpecTcpRouteActionWeightedTarget">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecTcpRouteActionWeightedTargetArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/appmesh?tab=doc#RouteSpecTcpRouteActionWeightedTargetOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2468,8 +2468,8 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The virtual node to associate with the weighted target.
-{{% /md %}}</dd>
+    <dd>The virtual node to associate with the weighted target.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2477,14 +2477,14 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The relative weight of the weighted target. An integer between 0 and 100.
-{{% /md %}}</dd>
+    <dd>The relative weight of the weighted target. An integer between 0 and 100.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2493,8 +2493,8 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The virtual node to associate with the weighted target.
-{{% /md %}}</dd>
+    <dd>The virtual node to associate with the weighted target.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2502,14 +2502,14 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The relative weight of the weighted target. An integer between 0 and 100.
-{{% /md %}}</dd>
+    <dd>The relative weight of the weighted target. An integer between 0 and 100.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2518,8 +2518,8 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The virtual node to associate with the weighted target.
-{{% /md %}}</dd>
+    <dd>The virtual node to associate with the weighted target.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2527,14 +2527,14 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The relative weight of the weighted target. An integer between 0 and 100.
-{{% /md %}}</dd>
+    <dd>The relative weight of the weighted target. An integer between 0 and 100.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2543,8 +2543,8 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The virtual node to associate with the weighted target.
-{{% /md %}}</dd>
+    <dd>The virtual node to associate with the weighted target.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2552,11 +2552,11 @@ You can specify one or more targets and their relative weights with which to dis
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The relative weight of the weighted target. An integer between 0 and 100.
-{{% /md %}}</dd>
+    <dd>The relative weight of the weighted target. An integer between 0 and 100.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

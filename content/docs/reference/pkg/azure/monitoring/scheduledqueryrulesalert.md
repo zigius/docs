@@ -18,26 +18,26 @@ Manages an AlertingAction Scheduled Query Rules resource within Azure Monitor.
 
 
 ## Create a ScheduledQueryRulesAlert Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/monitoring/#ScheduledQueryRulesAlert">ScheduledQueryRulesAlert</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/monitoring/#ScheduledQueryRulesAlertArgs">ScheduledQueryRulesAlertArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ScheduledQueryRulesAlert</span><span class="p">(resource_name, opts=None, </span>action=None<span class="p">, </span>authorized_resource_ids=None<span class="p">, </span>data_source_id=None<span class="p">, </span>description=None<span class="p">, </span>enabled=None<span class="p">, </span>frequency=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>query=None<span class="p">, </span>query_type=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>severity=None<span class="p">, </span>tags=None<span class="p">, </span>throttling=None<span class="p">, </span>time_window=None<span class="p">, </span>trigger=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewScheduledQueryRulesAlert<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#ScheduledQueryRulesAlertArgs">ScheduledQueryRulesAlertArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#ScheduledQueryRulesAlert">ScheduledQueryRulesAlert</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Monitoring.ScheduledQueryRulesAlert.html">ScheduledQueryRulesAlert</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Monitoring.ScheduledQueryRulesAlertArgs.html">ScheduledQueryRulesAlertArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ Manages an AlertingAction Scheduled Query Rules resource within Azure Monitor.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ Manages an AlertingAction Scheduled Query Rules resource within Azure Monitor.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ Manages an AlertingAction Scheduled Query Rules resource within Azure Monitor.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ Manages an AlertingAction Scheduled Query Rules resource within Azure Monitor.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ScheduledQueryRulesAlert Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -204,8 +204,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scheduledqueryrulesalertaction">Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Action<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}An `action` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `action` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -213,8 +213,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The resource URI over which log search query is to be run.
-{{% /md %}}</dd>
+    <dd>The resource URI over which log search query is to be run.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -222,8 +222,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Frequency (in minutes) at which rule condition should be evaluated.  Values must be between 5 and 1440 (inclusive).
-{{% /md %}}</dd>
+    <dd>Frequency (in minutes) at which rule condition should be evaluated.  Values must be between 5 and 1440 (inclusive).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -231,8 +231,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Log search query.
-{{% /md %}}</dd>
+    <dd>Log search query.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -240,8 +240,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the scheduled query rule instance.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the scheduled query rule instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -249,8 +249,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Time window for which data needs to be fetched for query (must be greater than or equal to `frequency`).  Values must be between 5 and 2880 (inclusive).
-{{% /md %}}</dd>
+    <dd>Time window for which data needs to be fetched for query (must be greater than or equal to `frequency`).  Values must be between 5 and 2880 (inclusive).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -258,8 +258,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scheduledqueryrulesalerttrigger">Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Trigger<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The condition that results in the alert rule being run.
-{{% /md %}}</dd>
+    <dd>The condition that results in the alert rule being run.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,8 +267,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of Resource IDs referred into query.
-{{% /md %}}</dd>
+    <dd>List of Resource IDs referred into query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -276,8 +276,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the scheduled query rule.
-{{% /md %}}</dd>
+    <dd>The description of the scheduled query rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -285,8 +285,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether this scheduled query rule is enabled.  Default is `true`.
-{{% /md %}}</dd>
+    <dd>Whether this scheduled query rule is enabled.  Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -294,7 +294,7 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -302,8 +302,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the scheduled query rule. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the scheduled query rule. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -311,7 +311,7 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -319,8 +319,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Severity of the alert. Possible values include: 0, 1, 2, 3, or 4.
-{{% /md %}}</dd>
+    <dd>Severity of the alert. Possible values include: 0, 1, 2, 3, or 4.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -328,7 +328,7 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -336,14 +336,14 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Time (in minutes) for which Alerts should be throttled or suppressed.  Values must be between 0 and 10000 (inclusive).
-{{% /md %}}</dd>
+    <dd>Time (in minutes) for which Alerts should be throttled or suppressed.  Values must be between 0 and 10000 (inclusive).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -352,8 +352,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scheduledqueryrulesalertaction">Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}An `action` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `action` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -361,8 +361,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The resource URI over which log search query is to be run.
-{{% /md %}}</dd>
+    <dd>The resource URI over which log search query is to be run.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -370,8 +370,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Frequency (in minutes) at which rule condition should be evaluated.  Values must be between 5 and 1440 (inclusive).
-{{% /md %}}</dd>
+    <dd>Frequency (in minutes) at which rule condition should be evaluated.  Values must be between 5 and 1440 (inclusive).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -379,8 +379,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Log search query.
-{{% /md %}}</dd>
+    <dd>Log search query.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -388,8 +388,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the scheduled query rule instance.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the scheduled query rule instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -397,8 +397,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Time window for which data needs to be fetched for query (must be greater than or equal to `frequency`).  Values must be between 5 and 2880 (inclusive).
-{{% /md %}}</dd>
+    <dd>Time window for which data needs to be fetched for query (must be greater than or equal to `frequency`).  Values must be between 5 and 2880 (inclusive).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -406,8 +406,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scheduledqueryrulesalerttrigger">Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Trigger</a></span>
     </dt>
-    <dd>{{% md %}}The condition that results in the alert rule being run.
-{{% /md %}}</dd>
+    <dd>The condition that results in the alert rule being run.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -415,8 +415,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of Resource IDs referred into query.
-{{% /md %}}</dd>
+    <dd>List of Resource IDs referred into query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -424,8 +424,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the scheduled query rule.
-{{% /md %}}</dd>
+    <dd>The description of the scheduled query rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -433,8 +433,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether this scheduled query rule is enabled.  Default is `true`.
-{{% /md %}}</dd>
+    <dd>Whether this scheduled query rule is enabled.  Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -442,7 +442,7 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -450,8 +450,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the scheduled query rule. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the scheduled query rule. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -459,7 +459,7 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -467,8 +467,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Severity of the alert. Possible values include: 0, 1, 2, 3, or 4.
-{{% /md %}}</dd>
+    <dd>Severity of the alert. Possible values include: 0, 1, 2, 3, or 4.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -476,7 +476,7 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -484,14 +484,14 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Time (in minutes) for which Alerts should be throttled or suppressed.  Values must be between 0 and 10000 (inclusive).
-{{% /md %}}</dd>
+    <dd>Time (in minutes) for which Alerts should be throttled or suppressed.  Values must be between 0 and 10000 (inclusive).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -500,8 +500,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scheduledqueryrulesalertaction">Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}An `action` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `action` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -509,8 +509,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The resource URI over which log search query is to be run.
-{{% /md %}}</dd>
+    <dd>The resource URI over which log search query is to be run.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -518,8 +518,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Frequency (in minutes) at which rule condition should be evaluated.  Values must be between 5 and 1440 (inclusive).
-{{% /md %}}</dd>
+    <dd>Frequency (in minutes) at which rule condition should be evaluated.  Values must be between 5 and 1440 (inclusive).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -527,8 +527,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Log search query.
-{{% /md %}}</dd>
+    <dd>Log search query.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -536,8 +536,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the scheduled query rule instance.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the scheduled query rule instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -545,8 +545,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Time window for which data needs to be fetched for query (must be greater than or equal to `frequency`).  Values must be between 5 and 2880 (inclusive).
-{{% /md %}}</dd>
+    <dd>Time window for which data needs to be fetched for query (must be greater than or equal to `frequency`).  Values must be between 5 and 2880 (inclusive).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -554,8 +554,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scheduledqueryrulesalerttrigger">Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Trigger</a></span>
     </dt>
-    <dd>{{% md %}}The condition that results in the alert rule being run.
-{{% /md %}}</dd>
+    <dd>The condition that results in the alert rule being run.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -563,8 +563,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of Resource IDs referred into query.
-{{% /md %}}</dd>
+    <dd>List of Resource IDs referred into query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -572,8 +572,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the scheduled query rule.
-{{% /md %}}</dd>
+    <dd>The description of the scheduled query rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -581,8 +581,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether this scheduled query rule is enabled.  Default is `true`.
-{{% /md %}}</dd>
+    <dd>Whether this scheduled query rule is enabled.  Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -590,7 +590,7 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -598,8 +598,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the scheduled query rule. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the scheduled query rule. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -607,7 +607,7 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -615,8 +615,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Severity of the alert. Possible values include: 0, 1, 2, 3, or 4.
-{{% /md %}}</dd>
+    <dd>Severity of the alert. Possible values include: 0, 1, 2, 3, or 4.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -624,7 +624,7 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -632,14 +632,14 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Time (in minutes) for which Alerts should be throttled or suppressed.  Values must be between 0 and 10000 (inclusive).
-{{% /md %}}</dd>
+    <dd>Time (in minutes) for which Alerts should be throttled or suppressed.  Values must be between 0 and 10000 (inclusive).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -648,8 +648,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scheduledqueryrulesalertaction">Dict[Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}An `action` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `action` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -657,8 +657,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The resource URI over which log search query is to be run.
-{{% /md %}}</dd>
+    <dd>The resource URI over which log search query is to be run.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -666,8 +666,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Frequency (in minutes) at which rule condition should be evaluated.  Values must be between 5 and 1440 (inclusive).
-{{% /md %}}</dd>
+    <dd>Frequency (in minutes) at which rule condition should be evaluated.  Values must be between 5 and 1440 (inclusive).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -675,8 +675,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Log search query.
-{{% /md %}}</dd>
+    <dd>Log search query.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -684,8 +684,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the scheduled query rule instance.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the scheduled query rule instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -693,8 +693,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Time window for which data needs to be fetched for query (must be greater than or equal to `frequency`).  Values must be between 5 and 2880 (inclusive).
-{{% /md %}}</dd>
+    <dd>Time window for which data needs to be fetched for query (must be greater than or equal to `frequency`).  Values must be between 5 and 2880 (inclusive).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -702,8 +702,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scheduledqueryrulesalerttrigger">Dict[Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Trigger]</a></span>
     </dt>
-    <dd>{{% md %}}The condition that results in the alert rule being run.
-{{% /md %}}</dd>
+    <dd>The condition that results in the alert rule being run.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -711,8 +711,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of Resource IDs referred into query.
-{{% /md %}}</dd>
+    <dd>List of Resource IDs referred into query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -720,8 +720,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the scheduled query rule.
-{{% /md %}}</dd>
+    <dd>The description of the scheduled query rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -729,8 +729,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether this scheduled query rule is enabled.  Default is `true`.
-{{% /md %}}</dd>
+    <dd>Whether this scheduled query rule is enabled.  Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -738,7 +738,7 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -746,8 +746,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the scheduled query rule. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the scheduled query rule. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -755,7 +755,7 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -763,8 +763,8 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Severity of the alert. Possible values include: 0, 1, 2, 3, or 4.
-{{% /md %}}</dd>
+    <dd>Severity of the alert. Possible values include: 0, 1, 2, 3, or 4.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -772,7 +772,7 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -780,11 +780,11 @@ The ScheduledQueryRulesAlert resource accepts the following [input]({{< relref "
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Time (in minutes) for which Alerts should be throttled or suppressed.  Values must be between 0 and 10000 (inclusive).
-{{% /md %}}</dd>
+    <dd>Time (in minutes) for which Alerts should be throttled or suppressed.  Values must be between 0 and 10000 (inclusive).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -798,7 +798,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -807,13 +807,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -822,13 +822,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -837,13 +837,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -852,10 +852,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -866,25 +866,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ScheduledQueryRulesAlert Resource {#look-up}
 
 Get an existing ScheduledQueryRulesAlert resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/monitoring/#ScheduledQueryRulesAlertState">ScheduledQueryRulesAlertState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/monitoring/#ScheduledQueryRulesAlert">ScheduledQueryRulesAlert</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>action=None<span class="p">, </span>authorized_resource_ids=None<span class="p">, </span>data_source_id=None<span class="p">, </span>description=None<span class="p">, </span>enabled=None<span class="p">, </span>frequency=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>query=None<span class="p">, </span>query_type=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>severity=None<span class="p">, </span>tags=None<span class="p">, </span>throttling=None<span class="p">, </span>time_window=None<span class="p">, </span>trigger=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetScheduledQueryRulesAlert<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#ScheduledQueryRulesAlertState">ScheduledQueryRulesAlertState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#ScheduledQueryRulesAlert">ScheduledQueryRulesAlert</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Monitoring.ScheduledQueryRulesAlert.html">ScheduledQueryRulesAlert</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Monitoring.ScheduledQueryRulesAlertState.html">ScheduledQueryRulesAlertState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -909,9 +909,9 @@ Get an existing ScheduledQueryRulesAlert resource's state with the given name, I
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -924,36 +924,9 @@ Get an existing ScheduledQueryRulesAlert resource's state with the given name, I
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -978,13 +951,40 @@ Get an existing ScheduledQueryRulesAlert resource's state with the given name, I
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -993,8 +993,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scheduledqueryrulesalertaction">Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Action<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}An `action` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1002,8 +1002,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of Resource IDs referred into query.
-{{% /md %}}</dd>
+    <dd>List of Resource IDs referred into query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1011,8 +1011,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The resource URI over which log search query is to be run.
-{{% /md %}}</dd>
+    <dd>The resource URI over which log search query is to be run.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1020,8 +1020,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the scheduled query rule.
-{{% /md %}}</dd>
+    <dd>The description of the scheduled query rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1029,8 +1029,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether this scheduled query rule is enabled.  Default is `true`.
-{{% /md %}}</dd>
+    <dd>Whether this scheduled query rule is enabled.  Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1038,8 +1038,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Frequency (in minutes) at which rule condition should be evaluated.  Values must be between 5 and 1440 (inclusive).
-{{% /md %}}</dd>
+    <dd>Frequency (in minutes) at which rule condition should be evaluated.  Values must be between 5 and 1440 (inclusive).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1047,7 +1047,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1055,8 +1055,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the scheduled query rule. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the scheduled query rule. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1064,8 +1064,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Log search query.
-{{% /md %}}</dd>
+    <dd>Log search query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1073,7 +1073,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1081,8 +1081,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the scheduled query rule instance.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the scheduled query rule instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1090,8 +1090,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Severity of the alert. Possible values include: 0, 1, 2, 3, or 4.
-{{% /md %}}</dd>
+    <dd>Severity of the alert. Possible values include: 0, 1, 2, 3, or 4.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1099,7 +1099,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1107,8 +1107,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Time (in minutes) for which Alerts should be throttled or suppressed.  Values must be between 0 and 10000 (inclusive).
-{{% /md %}}</dd>
+    <dd>Time (in minutes) for which Alerts should be throttled or suppressed.  Values must be between 0 and 10000 (inclusive).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1116,8 +1116,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Time window for which data needs to be fetched for query (must be greater than or equal to `frequency`).  Values must be between 5 and 2880 (inclusive).
-{{% /md %}}</dd>
+    <dd>Time window for which data needs to be fetched for query (must be greater than or equal to `frequency`).  Values must be between 5 and 2880 (inclusive).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1125,14 +1125,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scheduledqueryrulesalerttrigger">Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Trigger<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The condition that results in the alert rule being run.
-{{% /md %}}</dd>
+    <dd>The condition that results in the alert rule being run.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1141,8 +1141,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scheduledqueryrulesalertaction">Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}An `action` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1150,8 +1150,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of Resource IDs referred into query.
-{{% /md %}}</dd>
+    <dd>List of Resource IDs referred into query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1159,8 +1159,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The resource URI over which log search query is to be run.
-{{% /md %}}</dd>
+    <dd>The resource URI over which log search query is to be run.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1168,8 +1168,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the scheduled query rule.
-{{% /md %}}</dd>
+    <dd>The description of the scheduled query rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1177,8 +1177,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether this scheduled query rule is enabled.  Default is `true`.
-{{% /md %}}</dd>
+    <dd>Whether this scheduled query rule is enabled.  Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1186,8 +1186,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Frequency (in minutes) at which rule condition should be evaluated.  Values must be between 5 and 1440 (inclusive).
-{{% /md %}}</dd>
+    <dd>Frequency (in minutes) at which rule condition should be evaluated.  Values must be between 5 and 1440 (inclusive).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1195,7 +1195,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1203,8 +1203,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the scheduled query rule. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the scheduled query rule. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1212,8 +1212,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Log search query.
-{{% /md %}}</dd>
+    <dd>Log search query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1221,7 +1221,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1229,8 +1229,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the scheduled query rule instance.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the scheduled query rule instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1238,8 +1238,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Severity of the alert. Possible values include: 0, 1, 2, 3, or 4.
-{{% /md %}}</dd>
+    <dd>Severity of the alert. Possible values include: 0, 1, 2, 3, or 4.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1247,7 +1247,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1255,8 +1255,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Time (in minutes) for which Alerts should be throttled or suppressed.  Values must be between 0 and 10000 (inclusive).
-{{% /md %}}</dd>
+    <dd>Time (in minutes) for which Alerts should be throttled or suppressed.  Values must be between 0 and 10000 (inclusive).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1264,8 +1264,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Time window for which data needs to be fetched for query (must be greater than or equal to `frequency`).  Values must be between 5 and 2880 (inclusive).
-{{% /md %}}</dd>
+    <dd>Time window for which data needs to be fetched for query (must be greater than or equal to `frequency`).  Values must be between 5 and 2880 (inclusive).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1273,14 +1273,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scheduledqueryrulesalerttrigger">Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Trigger</a></span>
     </dt>
-    <dd>{{% md %}}The condition that results in the alert rule being run.
-{{% /md %}}</dd>
+    <dd>The condition that results in the alert rule being run.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1289,8 +1289,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scheduledqueryrulesalertaction">Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}An `action` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1298,8 +1298,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of Resource IDs referred into query.
-{{% /md %}}</dd>
+    <dd>List of Resource IDs referred into query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1307,8 +1307,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The resource URI over which log search query is to be run.
-{{% /md %}}</dd>
+    <dd>The resource URI over which log search query is to be run.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1316,8 +1316,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the scheduled query rule.
-{{% /md %}}</dd>
+    <dd>The description of the scheduled query rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1325,8 +1325,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether this scheduled query rule is enabled.  Default is `true`.
-{{% /md %}}</dd>
+    <dd>Whether this scheduled query rule is enabled.  Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1334,8 +1334,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Frequency (in minutes) at which rule condition should be evaluated.  Values must be between 5 and 1440 (inclusive).
-{{% /md %}}</dd>
+    <dd>Frequency (in minutes) at which rule condition should be evaluated.  Values must be between 5 and 1440 (inclusive).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1343,7 +1343,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1351,8 +1351,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the scheduled query rule. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the scheduled query rule. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1360,8 +1360,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Log search query.
-{{% /md %}}</dd>
+    <dd>Log search query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1369,7 +1369,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1377,8 +1377,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the scheduled query rule instance.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the scheduled query rule instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1386,8 +1386,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Severity of the alert. Possible values include: 0, 1, 2, 3, or 4.
-{{% /md %}}</dd>
+    <dd>Severity of the alert. Possible values include: 0, 1, 2, 3, or 4.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1395,7 +1395,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1403,8 +1403,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Time (in minutes) for which Alerts should be throttled or suppressed.  Values must be between 0 and 10000 (inclusive).
-{{% /md %}}</dd>
+    <dd>Time (in minutes) for which Alerts should be throttled or suppressed.  Values must be between 0 and 10000 (inclusive).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1412,8 +1412,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Time window for which data needs to be fetched for query (must be greater than or equal to `frequency`).  Values must be between 5 and 2880 (inclusive).
-{{% /md %}}</dd>
+    <dd>Time window for which data needs to be fetched for query (must be greater than or equal to `frequency`).  Values must be between 5 and 2880 (inclusive).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1421,14 +1421,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scheduledqueryrulesalerttrigger">Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Trigger</a></span>
     </dt>
-    <dd>{{% md %}}The condition that results in the alert rule being run.
-{{% /md %}}</dd>
+    <dd>The condition that results in the alert rule being run.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1437,8 +1437,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scheduledqueryrulesalertaction">Dict[Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}An `action` block as defined below.
-{{% /md %}}</dd>
+    <dd>An `action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1446,8 +1446,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of Resource IDs referred into query.
-{{% /md %}}</dd>
+    <dd>List of Resource IDs referred into query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1455,8 +1455,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The resource URI over which log search query is to be run.
-{{% /md %}}</dd>
+    <dd>The resource URI over which log search query is to be run.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1464,8 +1464,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the scheduled query rule.
-{{% /md %}}</dd>
+    <dd>The description of the scheduled query rule.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1473,8 +1473,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether this scheduled query rule is enabled.  Default is `true`.
-{{% /md %}}</dd>
+    <dd>Whether this scheduled query rule is enabled.  Default is `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1482,8 +1482,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Frequency (in minutes) at which rule condition should be evaluated.  Values must be between 5 and 1440 (inclusive).
-{{% /md %}}</dd>
+    <dd>Frequency (in minutes) at which rule condition should be evaluated.  Values must be between 5 and 1440 (inclusive).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1491,7 +1491,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1499,8 +1499,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the scheduled query rule. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the scheduled query rule. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1508,8 +1508,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Log search query.
-{{% /md %}}</dd>
+    <dd>Log search query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1517,7 +1517,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1525,8 +1525,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the scheduled query rule instance.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the scheduled query rule instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1534,8 +1534,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Severity of the alert. Possible values include: 0, 1, 2, 3, or 4.
-{{% /md %}}</dd>
+    <dd>Severity of the alert. Possible values include: 0, 1, 2, 3, or 4.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1543,7 +1543,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1551,8 +1551,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Time (in minutes) for which Alerts should be throttled or suppressed.  Values must be between 0 and 10000 (inclusive).
-{{% /md %}}</dd>
+    <dd>Time (in minutes) for which Alerts should be throttled or suppressed.  Values must be between 0 and 10000 (inclusive).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1560,8 +1560,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Time window for which data needs to be fetched for query (must be greater than or equal to `frequency`).  Values must be between 5 and 2880 (inclusive).
-{{% /md %}}</dd>
+    <dd>Time window for which data needs to be fetched for query (must be greater than or equal to `frequency`).  Values must be between 5 and 2880 (inclusive).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1569,11 +1569,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scheduledqueryrulesalerttrigger">Dict[Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Trigger]</a></span>
     </dt>
-    <dd>{{% md %}}The condition that results in the alert rule being run.
-{{% /md %}}</dd>
+    <dd>The condition that results in the alert rule being run.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1588,18 +1588,18 @@ The following state arguments are supported:
 
 
 <h4 id="scheduledqueryrulesalertaction">Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#ScheduledQueryRulesAlertAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#ScheduledQueryRulesAlertAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#ScheduledQueryRulesAlertActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#ScheduledQueryRulesAlertActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1608,8 +1608,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of action group reference resource IDs.
-{{% /md %}}</dd>
+    <dd>List of action group reference resource IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1617,8 +1617,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom payload to be sent for all webhook payloads in alerting action.
-{{% /md %}}</dd>
+    <dd>Custom payload to be sent for all webhook payloads in alerting action.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1626,14 +1626,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom subject override for all email ids in Azure action group.
-{{% /md %}}</dd>
+    <dd>Custom subject override for all email ids in Azure action group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1642,8 +1642,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of action group reference resource IDs.
-{{% /md %}}</dd>
+    <dd>List of action group reference resource IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1651,8 +1651,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom payload to be sent for all webhook payloads in alerting action.
-{{% /md %}}</dd>
+    <dd>Custom payload to be sent for all webhook payloads in alerting action.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1660,14 +1660,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom subject override for all email ids in Azure action group.
-{{% /md %}}</dd>
+    <dd>Custom subject override for all email ids in Azure action group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1676,8 +1676,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of action group reference resource IDs.
-{{% /md %}}</dd>
+    <dd>List of action group reference resource IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1685,8 +1685,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom payload to be sent for all webhook payloads in alerting action.
-{{% /md %}}</dd>
+    <dd>Custom payload to be sent for all webhook payloads in alerting action.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1694,14 +1694,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom subject override for all email ids in Azure action group.
-{{% /md %}}</dd>
+    <dd>Custom subject override for all email ids in Azure action group.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1710,8 +1710,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of action group reference resource IDs.
-{{% /md %}}</dd>
+    <dd>List of action group reference resource IDs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1719,8 +1719,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Custom payload to be sent for all webhook payloads in alerting action.
-{{% /md %}}</dd>
+    <dd>Custom payload to be sent for all webhook payloads in alerting action.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1728,29 +1728,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Custom subject override for all email ids in Azure action group.
-{{% /md %}}</dd>
+    <dd>Custom subject override for all email ids in Azure action group.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="scheduledqueryrulesalerttrigger">Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Trigger</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#ScheduledQueryRulesAlertTrigger">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#ScheduledQueryRulesAlertTrigger">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#ScheduledQueryRulesAlertTriggerArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#ScheduledQueryRulesAlertTriggerOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1759,8 +1759,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Evaluation operation for rule - 'Equal', 'GreaterThan' or 'LessThan'.
-{{% /md %}}</dd>
+    <dd>Evaluation operation for rule - 'Equal', 'GreaterThan' or 'LessThan'.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1768,8 +1768,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}Result or count threshold based on which rule should be triggered.  Values must be between 0 and 10000 inclusive.
-{{% /md %}}</dd>
+    <dd>Result or count threshold based on which rule should be triggered.  Values must be between 0 and 10000 inclusive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1777,13 +1777,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scheduledqueryrulesalerttriggermetrictrigger">Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Trigger<wbr>Metric<wbr>Trigger<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1792,8 +1792,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Evaluation operation for rule - 'Equal', 'GreaterThan' or 'LessThan'.
-{{% /md %}}</dd>
+    <dd>Evaluation operation for rule - 'Equal', 'GreaterThan' or 'LessThan'.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1801,8 +1801,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}Result or count threshold based on which rule should be triggered.  Values must be between 0 and 10000 inclusive.
-{{% /md %}}</dd>
+    <dd>Result or count threshold based on which rule should be triggered.  Values must be between 0 and 10000 inclusive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1810,13 +1810,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scheduledqueryrulesalerttriggermetrictrigger">Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Trigger<wbr>Metric<wbr>Trigger</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1825,8 +1825,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Evaluation operation for rule - 'Equal', 'GreaterThan' or 'LessThan'.
-{{% /md %}}</dd>
+    <dd>Evaluation operation for rule - 'Equal', 'GreaterThan' or 'LessThan'.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1834,8 +1834,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}Result or count threshold based on which rule should be triggered.  Values must be between 0 and 10000 inclusive.
-{{% /md %}}</dd>
+    <dd>Result or count threshold based on which rule should be triggered.  Values must be between 0 and 10000 inclusive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1843,13 +1843,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scheduledqueryrulesalerttriggermetrictrigger">Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Trigger<wbr>Metric<wbr>Trigger</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1858,8 +1858,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Evaluation operation for rule - 'Equal', 'GreaterThan' or 'LessThan'.
-{{% /md %}}</dd>
+    <dd>Evaluation operation for rule - 'Equal', 'GreaterThan' or 'LessThan'.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1867,8 +1867,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Result or count threshold based on which rule should be triggered.  Values must be between 0 and 10000 inclusive.
-{{% /md %}}</dd>
+    <dd>Result or count threshold based on which rule should be triggered.  Values must be between 0 and 10000 inclusive.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1876,28 +1876,28 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#scheduledqueryrulesalerttriggermetrictrigger">Dict[Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Trigger<wbr>Metric<wbr>Trigger]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="scheduledqueryrulesalerttriggermetrictrigger">Scheduled<wbr>Query<wbr>Rules<wbr>Alert<wbr>Trigger<wbr>Metric<wbr>Trigger</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#ScheduledQueryRulesAlertTriggerMetricTrigger">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#ScheduledQueryRulesAlertTriggerMetricTrigger">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#ScheduledQueryRulesAlertTriggerMetricTriggerArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/monitoring?tab=doc#ScheduledQueryRulesAlertTriggerMetricTriggerOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1906,7 +1906,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1914,7 +1914,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1922,8 +1922,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Evaluation operation for rule - 'Equal', 'GreaterThan' or 'LessThan'.
-{{% /md %}}</dd>
+    <dd>Evaluation operation for rule - 'Equal', 'GreaterThan' or 'LessThan'.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1931,14 +1931,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}The threshold of the metric trigger.    Values must be between 0 and 10000 inclusive.
-{{% /md %}}</dd>
+    <dd>The threshold of the metric trigger.    Values must be between 0 and 10000 inclusive.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1947,7 +1947,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1955,7 +1955,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1963,8 +1963,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Evaluation operation for rule - 'Equal', 'GreaterThan' or 'LessThan'.
-{{% /md %}}</dd>
+    <dd>Evaluation operation for rule - 'Equal', 'GreaterThan' or 'LessThan'.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1972,14 +1972,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}The threshold of the metric trigger.    Values must be between 0 and 10000 inclusive.
-{{% /md %}}</dd>
+    <dd>The threshold of the metric trigger.    Values must be between 0 and 10000 inclusive.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1988,7 +1988,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1996,7 +1996,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2004,8 +2004,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Evaluation operation for rule - 'Equal', 'GreaterThan' or 'LessThan'.
-{{% /md %}}</dd>
+    <dd>Evaluation operation for rule - 'Equal', 'GreaterThan' or 'LessThan'.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2013,14 +2013,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}The threshold of the metric trigger.    Values must be between 0 and 10000 inclusive.
-{{% /md %}}</dd>
+    <dd>The threshold of the metric trigger.    Values must be between 0 and 10000 inclusive.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2029,7 +2029,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2037,7 +2037,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2045,8 +2045,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Evaluation operation for rule - 'Equal', 'GreaterThan' or 'LessThan'.
-{{% /md %}}</dd>
+    <dd>Evaluation operation for rule - 'Equal', 'GreaterThan' or 'LessThan'.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2054,11 +2054,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The threshold of the metric trigger.    Values must be between 0 and 10000 inclusive.
-{{% /md %}}</dd>
+    <dd>The threshold of the metric trigger.    Values must be between 0 and 10000 inclusive.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

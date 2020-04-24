@@ -32,26 +32,26 @@ To get more information about Snapshot, see:
 
 
 ## Create a Snapshot Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#Snapshot">Snapshot</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#SnapshotArgs">SnapshotArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Snapshot</span><span class="p">(resource_name, opts=None, </span>description=None<span class="p">, </span>labels=None<span class="p">, </span>name=None<span class="p">, </span>project=None<span class="p">, </span>snapshot_encryption_key=None<span class="p">, </span>source_disk=None<span class="p">, </span>source_disk_encryption_key=None<span class="p">, </span>zone=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewSnapshot<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#SnapshotArgs">SnapshotArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#Snapshot">Snapshot</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.Snapshot.html">Snapshot</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.SnapshotArgs.html">SnapshotArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -88,9 +88,9 @@ To get more information about Snapshot, see:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -108,9 +108,9 @@ To get more information about Snapshot, see:
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -157,9 +157,9 @@ To get more information about Snapshot, see:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -196,7 +196,7 @@ To get more information about Snapshot, see:
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Snapshot Resource Properties {#properties}
 
@@ -209,7 +209,7 @@ The Snapshot resource accepts the following [input]({{< relref "/docs/intro/conc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -218,8 +218,8 @@ The Snapshot resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A reference to the disk used to create this snapshot.
-{{% /md %}}</dd>
+    <dd>A reference to the disk used to create this snapshot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -227,8 +227,8 @@ The Snapshot resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -236,8 +236,8 @@ The Snapshot resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Labels to apply to this Snapshot.
-{{% /md %}}</dd>
+    <dd>Labels to apply to this Snapshot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -245,11 +245,11 @@ The Snapshot resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource; provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource; provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -257,9 +257,9 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,9 +267,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#snapshotsnapshotencryptionkey">Snapshot<wbr>Snapshot<wbr>Encryption<wbr>Key<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The customer-supplied encryption key of the snapshot. Required if the source snapshot is protected by a
+    <dd>The customer-supplied encryption key of the snapshot. Required if the source snapshot is protected by a
 customer-supplied encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -277,9 +277,9 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#snapshotsourcediskencryptionkey">Snapshot<wbr>Source<wbr>Disk<wbr>Encryption<wbr>Key<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The customer-supplied encryption key of the source snapshot. Required if the source snapshot is protected by a
+    <dd>The customer-supplied encryption key of the source snapshot. Required if the source snapshot is protected by a
 customer-supplied encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -287,14 +287,14 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A reference to the zone where the disk is hosted.
-{{% /md %}}</dd>
+    <dd>A reference to the zone where the disk is hosted.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -303,8 +303,8 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A reference to the disk used to create this snapshot.
-{{% /md %}}</dd>
+    <dd>A reference to the disk used to create this snapshot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -312,8 +312,8 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -321,8 +321,8 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Labels to apply to this Snapshot.
-{{% /md %}}</dd>
+    <dd>Labels to apply to this Snapshot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -330,11 +330,11 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource; provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource; provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -342,9 +342,9 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -352,9 +352,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#snapshotsnapshotencryptionkey">Snapshot<wbr>Snapshot<wbr>Encryption<wbr>Key</a></span>
     </dt>
-    <dd>{{% md %}}The customer-supplied encryption key of the snapshot. Required if the source snapshot is protected by a
+    <dd>The customer-supplied encryption key of the snapshot. Required if the source snapshot is protected by a
 customer-supplied encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -362,9 +362,9 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#snapshotsourcediskencryptionkey">Snapshot<wbr>Source<wbr>Disk<wbr>Encryption<wbr>Key</a></span>
     </dt>
-    <dd>{{% md %}}The customer-supplied encryption key of the source snapshot. Required if the source snapshot is protected by a
+    <dd>The customer-supplied encryption key of the source snapshot. Required if the source snapshot is protected by a
 customer-supplied encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -372,14 +372,14 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A reference to the zone where the disk is hosted.
-{{% /md %}}</dd>
+    <dd>A reference to the zone where the disk is hosted.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -388,8 +388,8 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A reference to the disk used to create this snapshot.
-{{% /md %}}</dd>
+    <dd>A reference to the disk used to create this snapshot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -397,8 +397,8 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -406,8 +406,8 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Labels to apply to this Snapshot.
-{{% /md %}}</dd>
+    <dd>Labels to apply to this Snapshot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -415,11 +415,11 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource; provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource; provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -427,9 +427,9 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -437,9 +437,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#snapshotsnapshotencryptionkey">Snapshot<wbr>Snapshot<wbr>Encryption<wbr>Key</a></span>
     </dt>
-    <dd>{{% md %}}The customer-supplied encryption key of the snapshot. Required if the source snapshot is protected by a
+    <dd>The customer-supplied encryption key of the snapshot. Required if the source snapshot is protected by a
 customer-supplied encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -447,9 +447,9 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#snapshotsourcediskencryptionkey">Snapshot<wbr>Source<wbr>Disk<wbr>Encryption<wbr>Key</a></span>
     </dt>
-    <dd>{{% md %}}The customer-supplied encryption key of the source snapshot. Required if the source snapshot is protected by a
+    <dd>The customer-supplied encryption key of the source snapshot. Required if the source snapshot is protected by a
 customer-supplied encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -457,14 +457,14 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A reference to the zone where the disk is hosted.
-{{% /md %}}</dd>
+    <dd>A reference to the zone where the disk is hosted.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -473,8 +473,8 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A reference to the disk used to create this snapshot.
-{{% /md %}}</dd>
+    <dd>A reference to the disk used to create this snapshot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -482,8 +482,8 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -491,8 +491,8 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Labels to apply to this Snapshot.
-{{% /md %}}</dd>
+    <dd>Labels to apply to this Snapshot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -500,11 +500,11 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource; provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource; provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -512,9 +512,9 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -522,9 +522,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#snapshotsnapshotencryptionkey">Dict[Snapshot<wbr>Snapshot<wbr>Encryption<wbr>Key]</a></span>
     </dt>
-    <dd>{{% md %}}The customer-supplied encryption key of the snapshot. Required if the source snapshot is protected by a
+    <dd>The customer-supplied encryption key of the snapshot. Required if the source snapshot is protected by a
 customer-supplied encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -532,9 +532,9 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#snapshotsourcediskencryptionkey">Dict[Snapshot<wbr>Source<wbr>Disk<wbr>Encryption<wbr>Key]</a></span>
     </dt>
-    <dd>{{% md %}}The customer-supplied encryption key of the source snapshot. Required if the source snapshot is protected by a
+    <dd>The customer-supplied encryption key of the source snapshot. Required if the source snapshot is protected by a
 customer-supplied encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -542,11 +542,11 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A reference to the zone where the disk is hosted.
-{{% /md %}}</dd>
+    <dd>A reference to the zone where the disk is hosted.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -560,7 +560,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -569,8 +569,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -578,8 +578,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Size of the snapshot, specified in GB.
-{{% /md %}}</dd>
+    <dd>Size of the snapshot, specified in GB.
+</dd>
 
     <dt class="property-"
             title="">
@@ -587,7 +587,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -595,8 +595,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint used for optimistic locking of this resource. Used internally during updates.
-{{% /md %}}</dd>
+    <dd>The fingerprint used for optimistic locking of this resource. Used internally during updates.
+</dd>
 
     <dt class="property-"
             title="">
@@ -604,10 +604,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of public visible licenses that apply to this snapshot. This can be because the original image had licenses
+    <dd>A list of public visible licenses that apply to this snapshot. This can be because the original image had licenses
 attached (such as a Windows image). snapshotEncryptionKey nested object Encrypts the snapshot using a customer-supplied
 encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -615,8 +615,8 @@ encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -624,8 +624,8 @@ encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The unique identifier for the resource.
-{{% /md %}}</dd>
+    <dd>The unique identifier for the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -633,7 +633,7 @@ encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -641,15 +641,15 @@ encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}A size of the the storage used by the snapshot. As snapshots share storage, this number is expected to change with
+    <dd>A size of the the storage used by the snapshot. As snapshots share storage, this number is expected to change with
 snapshot creation/deletion.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -658,8 +658,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -667,8 +667,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Size of the snapshot, specified in GB.
-{{% /md %}}</dd>
+    <dd>Size of the snapshot, specified in GB.
+</dd>
 
     <dt class="property-"
             title="">
@@ -676,7 +676,7 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -684,8 +684,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint used for optimistic locking of this resource. Used internally during updates.
-{{% /md %}}</dd>
+    <dd>The fingerprint used for optimistic locking of this resource. Used internally during updates.
+</dd>
 
     <dt class="property-"
             title="">
@@ -693,10 +693,10 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of public visible licenses that apply to this snapshot. This can be because the original image had licenses
+    <dd>A list of public visible licenses that apply to this snapshot. This can be because the original image had licenses
 attached (such as a Windows image). snapshotEncryptionKey nested object Encrypts the snapshot using a customer-supplied
 encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -704,8 +704,8 @@ encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -713,8 +713,8 @@ encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The unique identifier for the resource.
-{{% /md %}}</dd>
+    <dd>The unique identifier for the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -722,7 +722,7 @@ encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -730,15 +730,15 @@ encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}A size of the the storage used by the snapshot. As snapshots share storage, this number is expected to change with
+    <dd>A size of the the storage used by the snapshot. As snapshots share storage, this number is expected to change with
 snapshot creation/deletion.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -747,8 +747,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -756,8 +756,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Size of the snapshot, specified in GB.
-{{% /md %}}</dd>
+    <dd>Size of the snapshot, specified in GB.
+</dd>
 
     <dt class="property-"
             title="">
@@ -765,7 +765,7 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -773,8 +773,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint used for optimistic locking of this resource. Used internally during updates.
-{{% /md %}}</dd>
+    <dd>The fingerprint used for optimistic locking of this resource. Used internally during updates.
+</dd>
 
     <dt class="property-"
             title="">
@@ -782,10 +782,10 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of public visible licenses that apply to this snapshot. This can be because the original image had licenses
+    <dd>A list of public visible licenses that apply to this snapshot. This can be because the original image had licenses
 attached (such as a Windows image). snapshotEncryptionKey nested object Encrypts the snapshot using a customer-supplied
 encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -793,8 +793,8 @@ encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -802,8 +802,8 @@ encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The unique identifier for the resource.
-{{% /md %}}</dd>
+    <dd>The unique identifier for the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -811,7 +811,7 @@ encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -819,15 +819,15 @@ encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}A size of the the storage used by the snapshot. As snapshots share storage, this number is expected to change with
+    <dd>A size of the the storage used by the snapshot. As snapshots share storage, this number is expected to change with
 snapshot creation/deletion.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -836,8 +836,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -845,8 +845,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Size of the snapshot, specified in GB.
-{{% /md %}}</dd>
+    <dd>Size of the snapshot, specified in GB.
+</dd>
 
     <dt class="property-"
             title="">
@@ -854,7 +854,7 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -862,8 +862,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint used for optimistic locking of this resource. Used internally during updates.
-{{% /md %}}</dd>
+    <dd>The fingerprint used for optimistic locking of this resource. Used internally during updates.
+</dd>
 
     <dt class="property-"
             title="">
@@ -871,10 +871,10 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of public visible licenses that apply to this snapshot. This can be because the original image had licenses
+    <dd>A list of public visible licenses that apply to this snapshot. This can be because the original image had licenses
 attached (such as a Windows image). snapshotEncryptionKey nested object Encrypts the snapshot using a customer-supplied
 encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -882,8 +882,8 @@ encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -891,8 +891,8 @@ encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The unique identifier for the resource.
-{{% /md %}}</dd>
+    <dd>The unique identifier for the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -900,7 +900,7 @@ encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -908,12 +908,12 @@ encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}A size of the the storage used by the snapshot. As snapshots share storage, this number is expected to change with
+    <dd>A size of the the storage used by the snapshot. As snapshots share storage, this number is expected to change with
 snapshot creation/deletion.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -924,25 +924,25 @@ snapshot creation/deletion.
 ## Look up an Existing Snapshot Resource {#look-up}
 
 Get an existing Snapshot resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#SnapshotState">SnapshotState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#Snapshot">Snapshot</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>creation_timestamp=None<span class="p">, </span>description=None<span class="p">, </span>disk_size_gb=None<span class="p">, </span>label_fingerprint=None<span class="p">, </span>labels=None<span class="p">, </span>licenses=None<span class="p">, </span>name=None<span class="p">, </span>project=None<span class="p">, </span>self_link=None<span class="p">, </span>snapshot_encryption_key=None<span class="p">, </span>snapshot_id=None<span class="p">, </span>source_disk=None<span class="p">, </span>source_disk_encryption_key=None<span class="p">, </span>source_disk_link=None<span class="p">, </span>storage_bytes=None<span class="p">, </span>zone=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetSnapshot<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#SnapshotState">SnapshotState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#Snapshot">Snapshot</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.Snapshot.html">Snapshot</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.SnapshotState.html">SnapshotState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -967,9 +967,9 @@ Get an existing Snapshot resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -982,36 +982,9 @@ Get an existing Snapshot resource's state with the given name, ID, and optional 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1036,13 +1009,40 @@ Get an existing Snapshot resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1051,8 +1051,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1060,8 +1060,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1069,8 +1069,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Size of the snapshot, specified in GB.
-{{% /md %}}</dd>
+    <dd>Size of the snapshot, specified in GB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1078,8 +1078,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint used for optimistic locking of this resource. Used internally during updates.
-{{% /md %}}</dd>
+    <dd>The fingerprint used for optimistic locking of this resource. Used internally during updates.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1087,8 +1087,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Labels to apply to this Snapshot.
-{{% /md %}}</dd>
+    <dd>Labels to apply to this Snapshot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1096,10 +1096,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of public visible licenses that apply to this snapshot. This can be because the original image had licenses
+    <dd>A list of public visible licenses that apply to this snapshot. This can be because the original image had licenses
 attached (such as a Windows image). snapshotEncryptionKey nested object Encrypts the snapshot using a customer-supplied
 encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1107,11 +1107,11 @@ encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource; provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource; provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1119,9 +1119,9 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1129,8 +1129,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1138,9 +1138,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#snapshotsnapshotencryptionkey">Snapshot<wbr>Snapshot<wbr>Encryption<wbr>Key<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The customer-supplied encryption key of the snapshot. Required if the source snapshot is protected by a
+    <dd>The customer-supplied encryption key of the snapshot. Required if the source snapshot is protected by a
 customer-supplied encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1148,8 +1148,8 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The unique identifier for the resource.
-{{% /md %}}</dd>
+    <dd>The unique identifier for the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1157,8 +1157,8 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A reference to the disk used to create this snapshot.
-{{% /md %}}</dd>
+    <dd>A reference to the disk used to create this snapshot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1166,9 +1166,9 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#snapshotsourcediskencryptionkey">Snapshot<wbr>Source<wbr>Disk<wbr>Encryption<wbr>Key<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The customer-supplied encryption key of the source snapshot. Required if the source snapshot is protected by a
+    <dd>The customer-supplied encryption key of the source snapshot. Required if the source snapshot is protected by a
 customer-supplied encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1176,7 +1176,7 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1184,9 +1184,9 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}A size of the the storage used by the snapshot. As snapshots share storage, this number is expected to change with
+    <dd>A size of the the storage used by the snapshot. As snapshots share storage, this number is expected to change with
 snapshot creation/deletion.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1194,14 +1194,14 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A reference to the zone where the disk is hosted.
-{{% /md %}}</dd>
+    <dd>A reference to the zone where the disk is hosted.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1210,8 +1210,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1219,8 +1219,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1228,8 +1228,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Size of the snapshot, specified in GB.
-{{% /md %}}</dd>
+    <dd>Size of the snapshot, specified in GB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1237,8 +1237,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint used for optimistic locking of this resource. Used internally during updates.
-{{% /md %}}</dd>
+    <dd>The fingerprint used for optimistic locking of this resource. Used internally during updates.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1246,8 +1246,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Labels to apply to this Snapshot.
-{{% /md %}}</dd>
+    <dd>Labels to apply to this Snapshot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1255,10 +1255,10 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of public visible licenses that apply to this snapshot. This can be because the original image had licenses
+    <dd>A list of public visible licenses that apply to this snapshot. This can be because the original image had licenses
 attached (such as a Windows image). snapshotEncryptionKey nested object Encrypts the snapshot using a customer-supplied
 encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1266,11 +1266,11 @@ encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource; provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource; provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,9 +1278,9 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1288,8 +1288,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1297,9 +1297,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#snapshotsnapshotencryptionkey">Snapshot<wbr>Snapshot<wbr>Encryption<wbr>Key</a></span>
     </dt>
-    <dd>{{% md %}}The customer-supplied encryption key of the snapshot. Required if the source snapshot is protected by a
+    <dd>The customer-supplied encryption key of the snapshot. Required if the source snapshot is protected by a
 customer-supplied encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1307,8 +1307,8 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The unique identifier for the resource.
-{{% /md %}}</dd>
+    <dd>The unique identifier for the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1316,8 +1316,8 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A reference to the disk used to create this snapshot.
-{{% /md %}}</dd>
+    <dd>A reference to the disk used to create this snapshot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1325,9 +1325,9 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#snapshotsourcediskencryptionkey">Snapshot<wbr>Source<wbr>Disk<wbr>Encryption<wbr>Key</a></span>
     </dt>
-    <dd>{{% md %}}The customer-supplied encryption key of the source snapshot. Required if the source snapshot is protected by a
+    <dd>The customer-supplied encryption key of the source snapshot. Required if the source snapshot is protected by a
 customer-supplied encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1335,7 +1335,7 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1343,9 +1343,9 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}A size of the the storage used by the snapshot. As snapshots share storage, this number is expected to change with
+    <dd>A size of the the storage used by the snapshot. As snapshots share storage, this number is expected to change with
 snapshot creation/deletion.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1353,14 +1353,14 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A reference to the zone where the disk is hosted.
-{{% /md %}}</dd>
+    <dd>A reference to the zone where the disk is hosted.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1369,8 +1369,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1378,8 +1378,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1387,8 +1387,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Size of the snapshot, specified in GB.
-{{% /md %}}</dd>
+    <dd>Size of the snapshot, specified in GB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1396,8 +1396,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint used for optimistic locking of this resource. Used internally during updates.
-{{% /md %}}</dd>
+    <dd>The fingerprint used for optimistic locking of this resource. Used internally during updates.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1405,8 +1405,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Labels to apply to this Snapshot.
-{{% /md %}}</dd>
+    <dd>Labels to apply to this Snapshot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1414,10 +1414,10 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of public visible licenses that apply to this snapshot. This can be because the original image had licenses
+    <dd>A list of public visible licenses that apply to this snapshot. This can be because the original image had licenses
 attached (such as a Windows image). snapshotEncryptionKey nested object Encrypts the snapshot using a customer-supplied
 encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1425,11 +1425,11 @@ encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource; provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource; provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1437,9 +1437,9 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1447,8 +1447,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1456,9 +1456,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#snapshotsnapshotencryptionkey">Snapshot<wbr>Snapshot<wbr>Encryption<wbr>Key</a></span>
     </dt>
-    <dd>{{% md %}}The customer-supplied encryption key of the snapshot. Required if the source snapshot is protected by a
+    <dd>The customer-supplied encryption key of the snapshot. Required if the source snapshot is protected by a
 customer-supplied encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1466,8 +1466,8 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The unique identifier for the resource.
-{{% /md %}}</dd>
+    <dd>The unique identifier for the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1475,8 +1475,8 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A reference to the disk used to create this snapshot.
-{{% /md %}}</dd>
+    <dd>A reference to the disk used to create this snapshot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1484,9 +1484,9 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#snapshotsourcediskencryptionkey">Snapshot<wbr>Source<wbr>Disk<wbr>Encryption<wbr>Key</a></span>
     </dt>
-    <dd>{{% md %}}The customer-supplied encryption key of the source snapshot. Required if the source snapshot is protected by a
+    <dd>The customer-supplied encryption key of the source snapshot. Required if the source snapshot is protected by a
 customer-supplied encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1494,7 +1494,7 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1502,9 +1502,9 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}A size of the the storage used by the snapshot. As snapshots share storage, this number is expected to change with
+    <dd>A size of the the storage used by the snapshot. As snapshots share storage, this number is expected to change with
 snapshot creation/deletion.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1512,14 +1512,14 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A reference to the zone where the disk is hosted.
-{{% /md %}}</dd>
+    <dd>A reference to the zone where the disk is hosted.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1528,8 +1528,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creation timestamp in RFC3339 text format.
-{{% /md %}}</dd>
+    <dd>Creation timestamp in RFC3339 text format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1537,8 +1537,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An optional description of this resource.
-{{% /md %}}</dd>
+    <dd>An optional description of this resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1546,8 +1546,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Size of the snapshot, specified in GB.
-{{% /md %}}</dd>
+    <dd>Size of the snapshot, specified in GB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1555,8 +1555,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The fingerprint used for optimistic locking of this resource. Used internally during updates.
-{{% /md %}}</dd>
+    <dd>The fingerprint used for optimistic locking of this resource. Used internally during updates.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1564,8 +1564,8 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Labels to apply to this Snapshot.
-{{% /md %}}</dd>
+    <dd>Labels to apply to this Snapshot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1573,10 +1573,10 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of public visible licenses that apply to this snapshot. This can be because the original image had licenses
+    <dd>A list of public visible licenses that apply to this snapshot. This can be because the original image had licenses
 attached (such as a Windows image). snapshotEncryptionKey nested object Encrypts the snapshot using a customer-supplied
 encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1584,11 +1584,11 @@ encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the resource; provided by the client when the resource is created. The name must be 1-63 characters long, and
+    <dd>Name of the resource; provided by the client when the resource is created. The name must be 1-63 characters long, and
 comply with RFC1035. Specifically, the name must be 1-63 characters long and match the regular expression
 '[a-z]([-a-z0-9]*[a-z0-9])?' which means the first character must be a lowercase letter, and all following characters
 must be a dash, lowercase letter, or digit, except the last character, which cannot be a dash.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1596,9 +1596,9 @@ must be a dash, lowercase letter, or digit, except the last character, which can
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1606,8 +1606,8 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1615,9 +1615,9 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#snapshotsnapshotencryptionkey">Dict[Snapshot<wbr>Snapshot<wbr>Encryption<wbr>Key]</a></span>
     </dt>
-    <dd>{{% md %}}The customer-supplied encryption key of the snapshot. Required if the source snapshot is protected by a
+    <dd>The customer-supplied encryption key of the snapshot. Required if the source snapshot is protected by a
 customer-supplied encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1625,8 +1625,8 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The unique identifier for the resource.
-{{% /md %}}</dd>
+    <dd>The unique identifier for the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1634,8 +1634,8 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A reference to the disk used to create this snapshot.
-{{% /md %}}</dd>
+    <dd>A reference to the disk used to create this snapshot.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1643,9 +1643,9 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#snapshotsourcediskencryptionkey">Dict[Snapshot<wbr>Source<wbr>Disk<wbr>Encryption<wbr>Key]</a></span>
     </dt>
-    <dd>{{% md %}}The customer-supplied encryption key of the source snapshot. Required if the source snapshot is protected by a
+    <dd>The customer-supplied encryption key of the source snapshot. Required if the source snapshot is protected by a
 customer-supplied encryption key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1653,7 +1653,7 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1661,9 +1661,9 @@ customer-supplied encryption key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}A size of the the storage used by the snapshot. As snapshots share storage, this number is expected to change with
+    <dd>A size of the the storage used by the snapshot. As snapshots share storage, this number is expected to change with
 snapshot creation/deletion.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1671,11 +1671,11 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A reference to the zone where the disk is hosted.
-{{% /md %}}</dd>
+    <dd>A reference to the zone where the disk is hosted.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1690,18 +1690,18 @@ snapshot creation/deletion.
 
 
 <h4 id="snapshotsnapshotencryptionkey">Snapshot<wbr>Snapshot<wbr>Encryption<wbr>Key</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#SnapshotSnapshotEncryptionKey">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#SnapshotSnapshotEncryptionKey">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#SnapshotSnapshotEncryptionKeyArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#SnapshotSnapshotEncryptionKeyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1710,7 +1710,7 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1718,13 +1718,13 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1733,7 +1733,7 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1741,13 +1741,13 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1756,7 +1756,7 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1764,13 +1764,13 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1779,7 +1779,7 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1787,28 +1787,28 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="snapshotsourcediskencryptionkey">Snapshot<wbr>Source<wbr>Disk<wbr>Encryption<wbr>Key</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#SnapshotSourceDiskEncryptionKey">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#SnapshotSourceDiskEncryptionKey">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#SnapshotSourceDiskEncryptionKeyArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#SnapshotSourceDiskEncryptionKeyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1817,13 +1817,13 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1832,13 +1832,13 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1847,13 +1847,13 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1862,10 +1862,10 @@ snapshot creation/deletion.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

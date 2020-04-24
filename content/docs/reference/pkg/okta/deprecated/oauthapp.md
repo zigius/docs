@@ -14,26 +14,26 @@ meta_desc: "Explore the OauthApp resource of the deprecated module, including ex
 
 
 ## Create a OauthApp Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/okta/deprecated/#OauthApp">OauthApp</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/okta/deprecated/#OauthAppArgs">OauthAppArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">OauthApp</span><span class="p">(resource_name, opts=None, </span>auto_key_rotation=None<span class="p">, </span>auto_submit_toolbar=None<span class="p">, </span>client_basic_secret=None<span class="p">, </span>client_uri=None<span class="p">, </span>consent_method=None<span class="p">, </span>custom_client_id=None<span class="p">, </span>grant_types=None<span class="p">, </span>groups=None<span class="p">, </span>hide_ios=None<span class="p">, </span>hide_web=None<span class="p">, </span>issuer_mode=None<span class="p">, </span>label=None<span class="p">, </span>login_uri=None<span class="p">, </span>logo_uri=None<span class="p">, </span>omit_secret=None<span class="p">, </span>policy_uri=None<span class="p">, </span>post_logout_redirect_uris=None<span class="p">, </span>profile=None<span class="p">, </span>redirect_uris=None<span class="p">, </span>response_types=None<span class="p">, </span>status=None<span class="p">, </span>token_endpoint_auth_method=None<span class="p">, </span>tos_uri=None<span class="p">, </span>type=None<span class="p">, </span>users=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewOauthApp<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/deprecated?tab=doc#OauthAppArgs">OauthAppArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/deprecated?tab=doc#OauthApp">OauthApp</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Okta/Pulumi.Okta.Deprecated.OauthApp.html">OauthApp</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Okta/Pulumi.Okta.Deprecated.OauthAppArgs.html">OauthAppArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the OauthApp resource of the deprecated module, including ex
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the OauthApp resource of the deprecated module, including ex
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the OauthApp resource of the deprecated module, including ex
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the OauthApp resource of the deprecated module, including ex
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## OauthApp Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The OauthApp resource accepts the following [input]({{< relref "/docs/intro/conc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,8 +200,8 @@ The OauthApp resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Pretty name of app.
-{{% /md %}}</dd>
+    <dd>Pretty name of app.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -209,8 +209,8 @@ The OauthApp resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of client application.
-{{% /md %}}</dd>
+    <dd>The type of client application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -218,8 +218,8 @@ The OauthApp resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Requested key rotation mode.
-{{% /md %}}</dd>
+    <dd>Requested key rotation mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -227,8 +227,8 @@ The OauthApp resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -236,8 +236,8 @@ The OauthApp resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client secret key, this can be set when token_endpoint_auth_method is client_secret_basic.
-{{% /md %}}</dd>
+    <dd>OAuth client secret key, this can be set when token_endpoint_auth_method is client_secret_basic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -245,8 +245,8 @@ The OauthApp resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}URI to a web page providing information about the client.
-{{% /md %}}</dd>
+    <dd>URI to a web page providing information about the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -254,9 +254,9 @@ The OauthApp resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED.
+    <dd>*Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED.
 Default value is TRUSTED
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -264,8 +264,8 @@ Default value is TRUSTED
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This property allows you to set your client_id.
-{{% /md %}}</dd>
+    <dd>This property allows you to set your client_id.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -273,10 +273,10 @@ Default value is TRUSTED
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of OAuth 2.0 grant types. Conditional validation params found here
+    <dd>List of OAuth 2.0 grant types. Conditional validation params found here
 https://developer.okta.com/docs/api/resources/apps#credentials-settings-details. Defaults to minimum requirements per
 app type.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -284,8 +284,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Groups associated with the application
-{{% /md %}}</dd>
+    <dd>Groups associated with the application
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,8 +293,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -302,8 +302,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -311,9 +311,9 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a
+    <dd>*Early Access Property*. Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a
 custom domain URL as the issuer of ID token for this client.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -321,8 +321,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}URI that initiates login.
-{{% /md %}}</dd>
+    <dd>URI that initiates login.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -330,8 +330,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}URI that references a logo for the client.
-{{% /md %}}</dd>
+    <dd>URI that references a logo for the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -339,9 +339,9 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}This tells the provider not to persist the application's secret to state. If this is ever changes from true => false
+    <dd>This tells the provider not to persist the application's secret to state. If this is ever changes from true => false
 your app will be recreated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -349,8 +349,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. URI to web page providing client policy document.
-{{% /md %}}</dd>
+    <dd>*Early Access Property*. URI to web page providing client policy document.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -358,8 +358,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for redirection after logout
-{{% /md %}}</dd>
+    <dd>List of URIs for redirection after logout
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -367,8 +367,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON that represents an OAuth application's profile
-{{% /md %}}</dd>
+    <dd>Custom JSON that represents an OAuth application's profile
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -376,9 +376,9 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for use in the redirect-based flow. This is required for all application types except service. Note: see
+    <dd>List of URIs for use in the redirect-based flow. This is required for all application types except service. Note: see
 okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -386,8 +386,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of OAuth 2.0 response type strings.
-{{% /md %}}</dd>
+    <dd>List of OAuth 2.0 response type strings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -395,8 +395,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of application.
-{{% /md %}}</dd>
+    <dd>Status of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -404,8 +404,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Requested authentication method for the token endpoint.
-{{% /md %}}</dd>
+    <dd>Requested authentication method for the token endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -413,8 +413,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. URI to web page providing client tos (terms of service).
-{{% /md %}}</dd>
+    <dd>*Early Access Property*. URI to web page providing client tos (terms of service).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -422,14 +422,14 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oauthappuser">List&lt;Oauth<wbr>App<wbr>User<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Users associated with the application
-{{% /md %}}</dd>
+    <dd>Users associated with the application
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -438,8 +438,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Pretty name of app.
-{{% /md %}}</dd>
+    <dd>Pretty name of app.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -447,8 +447,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of client application.
-{{% /md %}}</dd>
+    <dd>The type of client application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -456,8 +456,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Requested key rotation mode.
-{{% /md %}}</dd>
+    <dd>Requested key rotation mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -465,8 +465,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -474,8 +474,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client secret key, this can be set when token_endpoint_auth_method is client_secret_basic.
-{{% /md %}}</dd>
+    <dd>OAuth client secret key, this can be set when token_endpoint_auth_method is client_secret_basic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -483,8 +483,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}URI to a web page providing information about the client.
-{{% /md %}}</dd>
+    <dd>URI to a web page providing information about the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -492,9 +492,9 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED.
+    <dd>*Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED.
 Default value is TRUSTED
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -502,8 +502,8 @@ Default value is TRUSTED
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This property allows you to set your client_id.
-{{% /md %}}</dd>
+    <dd>This property allows you to set your client_id.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -511,10 +511,10 @@ Default value is TRUSTED
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of OAuth 2.0 grant types. Conditional validation params found here
+    <dd>List of OAuth 2.0 grant types. Conditional validation params found here
 https://developer.okta.com/docs/api/resources/apps#credentials-settings-details. Defaults to minimum requirements per
 app type.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -522,8 +522,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Groups associated with the application
-{{% /md %}}</dd>
+    <dd>Groups associated with the application
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -531,8 +531,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -540,8 +540,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -549,9 +549,9 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a
+    <dd>*Early Access Property*. Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a
 custom domain URL as the issuer of ID token for this client.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -559,8 +559,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}URI that initiates login.
-{{% /md %}}</dd>
+    <dd>URI that initiates login.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -568,8 +568,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}URI that references a logo for the client.
-{{% /md %}}</dd>
+    <dd>URI that references a logo for the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -577,9 +577,9 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}This tells the provider not to persist the application's secret to state. If this is ever changes from true => false
+    <dd>This tells the provider not to persist the application's secret to state. If this is ever changes from true => false
 your app will be recreated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -587,8 +587,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. URI to web page providing client policy document.
-{{% /md %}}</dd>
+    <dd>*Early Access Property*. URI to web page providing client policy document.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -596,8 +596,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for redirection after logout
-{{% /md %}}</dd>
+    <dd>List of URIs for redirection after logout
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -605,8 +605,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON that represents an OAuth application's profile
-{{% /md %}}</dd>
+    <dd>Custom JSON that represents an OAuth application's profile
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -614,9 +614,9 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for use in the redirect-based flow. This is required for all application types except service. Note: see
+    <dd>List of URIs for use in the redirect-based flow. This is required for all application types except service. Note: see
 okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -624,8 +624,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of OAuth 2.0 response type strings.
-{{% /md %}}</dd>
+    <dd>List of OAuth 2.0 response type strings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -633,8 +633,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of application.
-{{% /md %}}</dd>
+    <dd>Status of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -642,8 +642,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Requested authentication method for the token endpoint.
-{{% /md %}}</dd>
+    <dd>Requested authentication method for the token endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -651,8 +651,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. URI to web page providing client tos (terms of service).
-{{% /md %}}</dd>
+    <dd>*Early Access Property*. URI to web page providing client tos (terms of service).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -660,14 +660,14 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oauthappuser">[]Oauth<wbr>App<wbr>User</a></span>
     </dt>
-    <dd>{{% md %}}Users associated with the application
-{{% /md %}}</dd>
+    <dd>Users associated with the application
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -676,8 +676,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Pretty name of app.
-{{% /md %}}</dd>
+    <dd>Pretty name of app.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -685,8 +685,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of client application.
-{{% /md %}}</dd>
+    <dd>The type of client application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -694,8 +694,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Requested key rotation mode.
-{{% /md %}}</dd>
+    <dd>Requested key rotation mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -703,8 +703,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -712,8 +712,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client secret key, this can be set when token_endpoint_auth_method is client_secret_basic.
-{{% /md %}}</dd>
+    <dd>OAuth client secret key, this can be set when token_endpoint_auth_method is client_secret_basic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -721,8 +721,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}URI to a web page providing information about the client.
-{{% /md %}}</dd>
+    <dd>URI to a web page providing information about the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -730,9 +730,9 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED.
+    <dd>*Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED.
 Default value is TRUSTED
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -740,8 +740,8 @@ Default value is TRUSTED
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This property allows you to set your client_id.
-{{% /md %}}</dd>
+    <dd>This property allows you to set your client_id.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -749,10 +749,10 @@ Default value is TRUSTED
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of OAuth 2.0 grant types. Conditional validation params found here
+    <dd>List of OAuth 2.0 grant types. Conditional validation params found here
 https://developer.okta.com/docs/api/resources/apps#credentials-settings-details. Defaults to minimum requirements per
 app type.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -760,8 +760,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Groups associated with the application
-{{% /md %}}</dd>
+    <dd>Groups associated with the application
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -769,8 +769,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -778,8 +778,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -787,9 +787,9 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a
+    <dd>*Early Access Property*. Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a
 custom domain URL as the issuer of ID token for this client.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -797,8 +797,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}URI that initiates login.
-{{% /md %}}</dd>
+    <dd>URI that initiates login.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -806,8 +806,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}URI that references a logo for the client.
-{{% /md %}}</dd>
+    <dd>URI that references a logo for the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -815,9 +815,9 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}This tells the provider not to persist the application's secret to state. If this is ever changes from true => false
+    <dd>This tells the provider not to persist the application's secret to state. If this is ever changes from true => false
 your app will be recreated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -825,8 +825,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. URI to web page providing client policy document.
-{{% /md %}}</dd>
+    <dd>*Early Access Property*. URI to web page providing client policy document.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -834,8 +834,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for redirection after logout
-{{% /md %}}</dd>
+    <dd>List of URIs for redirection after logout
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -843,8 +843,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON that represents an OAuth application's profile
-{{% /md %}}</dd>
+    <dd>Custom JSON that represents an OAuth application's profile
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -852,9 +852,9 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for use in the redirect-based flow. This is required for all application types except service. Note: see
+    <dd>List of URIs for use in the redirect-based flow. This is required for all application types except service. Note: see
 okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -862,8 +862,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of OAuth 2.0 response type strings.
-{{% /md %}}</dd>
+    <dd>List of OAuth 2.0 response type strings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -871,8 +871,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of application.
-{{% /md %}}</dd>
+    <dd>Status of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -880,8 +880,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Requested authentication method for the token endpoint.
-{{% /md %}}</dd>
+    <dd>Requested authentication method for the token endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -889,8 +889,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. URI to web page providing client tos (terms of service).
-{{% /md %}}</dd>
+    <dd>*Early Access Property*. URI to web page providing client tos (terms of service).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -898,14 +898,14 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oauthappuser">Oauth<wbr>App<wbr>User[]</a></span>
     </dt>
-    <dd>{{% md %}}Users associated with the application
-{{% /md %}}</dd>
+    <dd>Users associated with the application
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -914,8 +914,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Pretty name of app.
-{{% /md %}}</dd>
+    <dd>Pretty name of app.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -923,8 +923,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of client application.
-{{% /md %}}</dd>
+    <dd>The type of client application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -932,8 +932,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Requested key rotation mode.
-{{% /md %}}</dd>
+    <dd>Requested key rotation mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -941,8 +941,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -950,8 +950,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client secret key, this can be set when token_endpoint_auth_method is client_secret_basic.
-{{% /md %}}</dd>
+    <dd>OAuth client secret key, this can be set when token_endpoint_auth_method is client_secret_basic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -959,8 +959,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}URI to a web page providing information about the client.
-{{% /md %}}</dd>
+    <dd>URI to a web page providing information about the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -968,9 +968,9 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED.
+    <dd>*Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED.
 Default value is TRUSTED
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -978,8 +978,8 @@ Default value is TRUSTED
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This property allows you to set your client_id.
-{{% /md %}}</dd>
+    <dd>This property allows you to set your client_id.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -987,10 +987,10 @@ Default value is TRUSTED
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of OAuth 2.0 grant types. Conditional validation params found here
+    <dd>List of OAuth 2.0 grant types. Conditional validation params found here
 https://developer.okta.com/docs/api/resources/apps#credentials-settings-details. Defaults to minimum requirements per
 app type.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -998,8 +998,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Groups associated with the application
-{{% /md %}}</dd>
+    <dd>Groups associated with the application
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1007,8 +1007,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1016,8 +1016,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1025,9 +1025,9 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a
+    <dd>*Early Access Property*. Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a
 custom domain URL as the issuer of ID token for this client.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1035,8 +1035,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}URI that initiates login.
-{{% /md %}}</dd>
+    <dd>URI that initiates login.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1044,8 +1044,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}URI that references a logo for the client.
-{{% /md %}}</dd>
+    <dd>URI that references a logo for the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1053,9 +1053,9 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}This tells the provider not to persist the application's secret to state. If this is ever changes from true => false
+    <dd>This tells the provider not to persist the application's secret to state. If this is ever changes from true => false
 your app will be recreated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1063,8 +1063,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. URI to web page providing client policy document.
-{{% /md %}}</dd>
+    <dd>*Early Access Property*. URI to web page providing client policy document.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1072,8 +1072,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for redirection after logout
-{{% /md %}}</dd>
+    <dd>List of URIs for redirection after logout
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1081,8 +1081,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON that represents an OAuth application's profile
-{{% /md %}}</dd>
+    <dd>Custom JSON that represents an OAuth application's profile
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1090,9 +1090,9 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for use in the redirect-based flow. This is required for all application types except service. Note: see
+    <dd>List of URIs for use in the redirect-based flow. This is required for all application types except service. Note: see
 okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1100,8 +1100,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of OAuth 2.0 response type strings.
-{{% /md %}}</dd>
+    <dd>List of OAuth 2.0 response type strings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1109,8 +1109,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Status of application.
-{{% /md %}}</dd>
+    <dd>Status of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1118,8 +1118,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Requested authentication method for the token endpoint.
-{{% /md %}}</dd>
+    <dd>Requested authentication method for the token endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1127,8 +1127,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. URI to web page providing client tos (terms of service).
-{{% /md %}}</dd>
+    <dd>*Early Access Property*. URI to web page providing client tos (terms of service).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1136,11 +1136,11 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oauthappuser">List[Oauth<wbr>App<wbr>User]</a></span>
     </dt>
-    <dd>{{% md %}}Users associated with the application
-{{% /md %}}</dd>
+    <dd>Users associated with the application
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1154,7 +1154,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1163,8 +1163,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client ID.
-{{% /md %}}</dd>
+    <dd>OAuth client ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1172,8 +1172,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client secret key. This will be in plain text in your statefile unless you set omit_secret above.
-{{% /md %}}</dd>
+    <dd>OAuth client secret key. This will be in plain text in your statefile unless you set omit_secret above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1181,7 +1181,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1189,8 +1189,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}name of app.
-{{% /md %}}</dd>
+    <dd>name of app.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1198,14 +1198,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sign on mode of application.
-{{% /md %}}</dd>
+    <dd>Sign on mode of application.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1214,8 +1214,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client ID.
-{{% /md %}}</dd>
+    <dd>OAuth client ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1223,8 +1223,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client secret key. This will be in plain text in your statefile unless you set omit_secret above.
-{{% /md %}}</dd>
+    <dd>OAuth client secret key. This will be in plain text in your statefile unless you set omit_secret above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1232,7 +1232,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1240,8 +1240,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}name of app.
-{{% /md %}}</dd>
+    <dd>name of app.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1249,14 +1249,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sign on mode of application.
-{{% /md %}}</dd>
+    <dd>Sign on mode of application.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1265,8 +1265,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client ID.
-{{% /md %}}</dd>
+    <dd>OAuth client ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1274,8 +1274,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client secret key. This will be in plain text in your statefile unless you set omit_secret above.
-{{% /md %}}</dd>
+    <dd>OAuth client secret key. This will be in plain text in your statefile unless you set omit_secret above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1283,7 +1283,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1291,8 +1291,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}name of app.
-{{% /md %}}</dd>
+    <dd>name of app.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1300,14 +1300,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sign on mode of application.
-{{% /md %}}</dd>
+    <dd>Sign on mode of application.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1316,8 +1316,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client ID.
-{{% /md %}}</dd>
+    <dd>OAuth client ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1325,8 +1325,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client secret key. This will be in plain text in your statefile unless you set omit_secret above.
-{{% /md %}}</dd>
+    <dd>OAuth client secret key. This will be in plain text in your statefile unless you set omit_secret above.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1334,7 +1334,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1342,8 +1342,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}name of app.
-{{% /md %}}</dd>
+    <dd>name of app.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1351,11 +1351,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sign on mode of application.
-{{% /md %}}</dd>
+    <dd>Sign on mode of application.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1366,25 +1366,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing OauthApp Resource {#look-up}
 
 Get an existing OauthApp resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/okta/deprecated/#OauthAppState">OauthAppState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/okta/deprecated/#OauthApp">OauthApp</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>auto_key_rotation=None<span class="p">, </span>auto_submit_toolbar=None<span class="p">, </span>client_basic_secret=None<span class="p">, </span>client_id=None<span class="p">, </span>client_secret=None<span class="p">, </span>client_uri=None<span class="p">, </span>consent_method=None<span class="p">, </span>custom_client_id=None<span class="p">, </span>grant_types=None<span class="p">, </span>groups=None<span class="p">, </span>hide_ios=None<span class="p">, </span>hide_web=None<span class="p">, </span>issuer_mode=None<span class="p">, </span>label=None<span class="p">, </span>login_uri=None<span class="p">, </span>logo_uri=None<span class="p">, </span>name=None<span class="p">, </span>omit_secret=None<span class="p">, </span>policy_uri=None<span class="p">, </span>post_logout_redirect_uris=None<span class="p">, </span>profile=None<span class="p">, </span>redirect_uris=None<span class="p">, </span>response_types=None<span class="p">, </span>sign_on_mode=None<span class="p">, </span>status=None<span class="p">, </span>token_endpoint_auth_method=None<span class="p">, </span>tos_uri=None<span class="p">, </span>type=None<span class="p">, </span>users=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetOauthApp<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/deprecated?tab=doc#OauthAppState">OauthAppState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/deprecated?tab=doc#OauthApp">OauthApp</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Okta/Pulumi.Okta.Deprecated.OauthApp.html">OauthApp</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Okta/Pulumi.Okta.Deprecated.OauthAppState.html">OauthAppState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1409,9 +1409,9 @@ Get an existing OauthApp resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1424,36 +1424,9 @@ Get an existing OauthApp resource's state with the given name, ID, and optional 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1478,13 +1451,40 @@ Get an existing OauthApp resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1493,8 +1493,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Requested key rotation mode.
-{{% /md %}}</dd>
+    <dd>Requested key rotation mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1502,8 +1502,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1511,8 +1511,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client secret key, this can be set when token_endpoint_auth_method is client_secret_basic.
-{{% /md %}}</dd>
+    <dd>OAuth client secret key, this can be set when token_endpoint_auth_method is client_secret_basic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1520,8 +1520,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client ID.
-{{% /md %}}</dd>
+    <dd>OAuth client ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1529,8 +1529,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client secret key. This will be in plain text in your statefile unless you set omit_secret above.
-{{% /md %}}</dd>
+    <dd>OAuth client secret key. This will be in plain text in your statefile unless you set omit_secret above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1538,8 +1538,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}URI to a web page providing information about the client.
-{{% /md %}}</dd>
+    <dd>URI to a web page providing information about the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1547,9 +1547,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED.
+    <dd>*Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED.
 Default value is TRUSTED
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1557,8 +1557,8 @@ Default value is TRUSTED
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This property allows you to set your client_id.
-{{% /md %}}</dd>
+    <dd>This property allows you to set your client_id.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1566,10 +1566,10 @@ Default value is TRUSTED
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of OAuth 2.0 grant types. Conditional validation params found here
+    <dd>List of OAuth 2.0 grant types. Conditional validation params found here
 https://developer.okta.com/docs/api/resources/apps#credentials-settings-details. Defaults to minimum requirements per
 app type.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1577,8 +1577,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Groups associated with the application
-{{% /md %}}</dd>
+    <dd>Groups associated with the application
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1586,8 +1586,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1595,8 +1595,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1604,9 +1604,9 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a
+    <dd>*Early Access Property*. Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a
 custom domain URL as the issuer of ID token for this client.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1614,8 +1614,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Pretty name of app.
-{{% /md %}}</dd>
+    <dd>Pretty name of app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1623,8 +1623,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}URI that initiates login.
-{{% /md %}}</dd>
+    <dd>URI that initiates login.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1632,8 +1632,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}URI that references a logo for the client.
-{{% /md %}}</dd>
+    <dd>URI that references a logo for the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1641,8 +1641,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}name of app.
-{{% /md %}}</dd>
+    <dd>name of app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1650,9 +1650,9 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}This tells the provider not to persist the application's secret to state. If this is ever changes from true => false
+    <dd>This tells the provider not to persist the application's secret to state. If this is ever changes from true => false
 your app will be recreated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1660,8 +1660,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. URI to web page providing client policy document.
-{{% /md %}}</dd>
+    <dd>*Early Access Property*. URI to web page providing client policy document.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1669,8 +1669,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for redirection after logout
-{{% /md %}}</dd>
+    <dd>List of URIs for redirection after logout
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1678,8 +1678,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON that represents an OAuth application's profile
-{{% /md %}}</dd>
+    <dd>Custom JSON that represents an OAuth application's profile
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1687,9 +1687,9 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for use in the redirect-based flow. This is required for all application types except service. Note: see
+    <dd>List of URIs for use in the redirect-based flow. This is required for all application types except service. Note: see
 okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1697,8 +1697,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of OAuth 2.0 response type strings.
-{{% /md %}}</dd>
+    <dd>List of OAuth 2.0 response type strings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1706,8 +1706,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sign on mode of application.
-{{% /md %}}</dd>
+    <dd>Sign on mode of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1715,8 +1715,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of application.
-{{% /md %}}</dd>
+    <dd>Status of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1724,8 +1724,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Requested authentication method for the token endpoint.
-{{% /md %}}</dd>
+    <dd>Requested authentication method for the token endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1733,8 +1733,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. URI to web page providing client tos (terms of service).
-{{% /md %}}</dd>
+    <dd>*Early Access Property*. URI to web page providing client tos (terms of service).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1742,8 +1742,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of client application.
-{{% /md %}}</dd>
+    <dd>The type of client application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1751,14 +1751,14 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oauthappuser">List&lt;Oauth<wbr>App<wbr>User<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Users associated with the application
-{{% /md %}}</dd>
+    <dd>Users associated with the application
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1767,8 +1767,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Requested key rotation mode.
-{{% /md %}}</dd>
+    <dd>Requested key rotation mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1776,8 +1776,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1785,8 +1785,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client secret key, this can be set when token_endpoint_auth_method is client_secret_basic.
-{{% /md %}}</dd>
+    <dd>OAuth client secret key, this can be set when token_endpoint_auth_method is client_secret_basic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1794,8 +1794,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client ID.
-{{% /md %}}</dd>
+    <dd>OAuth client ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1803,8 +1803,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client secret key. This will be in plain text in your statefile unless you set omit_secret above.
-{{% /md %}}</dd>
+    <dd>OAuth client secret key. This will be in plain text in your statefile unless you set omit_secret above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1812,8 +1812,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}URI to a web page providing information about the client.
-{{% /md %}}</dd>
+    <dd>URI to a web page providing information about the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1821,9 +1821,9 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED.
+    <dd>*Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED.
 Default value is TRUSTED
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1831,8 +1831,8 @@ Default value is TRUSTED
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This property allows you to set your client_id.
-{{% /md %}}</dd>
+    <dd>This property allows you to set your client_id.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1840,10 +1840,10 @@ Default value is TRUSTED
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of OAuth 2.0 grant types. Conditional validation params found here
+    <dd>List of OAuth 2.0 grant types. Conditional validation params found here
 https://developer.okta.com/docs/api/resources/apps#credentials-settings-details. Defaults to minimum requirements per
 app type.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1851,8 +1851,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Groups associated with the application
-{{% /md %}}</dd>
+    <dd>Groups associated with the application
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1860,8 +1860,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1869,8 +1869,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1878,9 +1878,9 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a
+    <dd>*Early Access Property*. Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a
 custom domain URL as the issuer of ID token for this client.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1888,8 +1888,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Pretty name of app.
-{{% /md %}}</dd>
+    <dd>Pretty name of app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1897,8 +1897,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}URI that initiates login.
-{{% /md %}}</dd>
+    <dd>URI that initiates login.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1906,8 +1906,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}URI that references a logo for the client.
-{{% /md %}}</dd>
+    <dd>URI that references a logo for the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1915,8 +1915,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}name of app.
-{{% /md %}}</dd>
+    <dd>name of app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1924,9 +1924,9 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}This tells the provider not to persist the application's secret to state. If this is ever changes from true => false
+    <dd>This tells the provider not to persist the application's secret to state. If this is ever changes from true => false
 your app will be recreated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1934,8 +1934,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. URI to web page providing client policy document.
-{{% /md %}}</dd>
+    <dd>*Early Access Property*. URI to web page providing client policy document.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1943,8 +1943,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for redirection after logout
-{{% /md %}}</dd>
+    <dd>List of URIs for redirection after logout
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1952,8 +1952,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON that represents an OAuth application's profile
-{{% /md %}}</dd>
+    <dd>Custom JSON that represents an OAuth application's profile
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1961,9 +1961,9 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for use in the redirect-based flow. This is required for all application types except service. Note: see
+    <dd>List of URIs for use in the redirect-based flow. This is required for all application types except service. Note: see
 okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1971,8 +1971,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of OAuth 2.0 response type strings.
-{{% /md %}}</dd>
+    <dd>List of OAuth 2.0 response type strings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1980,8 +1980,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sign on mode of application.
-{{% /md %}}</dd>
+    <dd>Sign on mode of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1989,8 +1989,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of application.
-{{% /md %}}</dd>
+    <dd>Status of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1998,8 +1998,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Requested authentication method for the token endpoint.
-{{% /md %}}</dd>
+    <dd>Requested authentication method for the token endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2007,8 +2007,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. URI to web page providing client tos (terms of service).
-{{% /md %}}</dd>
+    <dd>*Early Access Property*. URI to web page providing client tos (terms of service).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2016,8 +2016,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of client application.
-{{% /md %}}</dd>
+    <dd>The type of client application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2025,14 +2025,14 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oauthappuser">[]Oauth<wbr>App<wbr>User</a></span>
     </dt>
-    <dd>{{% md %}}Users associated with the application
-{{% /md %}}</dd>
+    <dd>Users associated with the application
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2041,8 +2041,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Requested key rotation mode.
-{{% /md %}}</dd>
+    <dd>Requested key rotation mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2050,8 +2050,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2059,8 +2059,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client secret key, this can be set when token_endpoint_auth_method is client_secret_basic.
-{{% /md %}}</dd>
+    <dd>OAuth client secret key, this can be set when token_endpoint_auth_method is client_secret_basic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2068,8 +2068,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client ID.
-{{% /md %}}</dd>
+    <dd>OAuth client ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2077,8 +2077,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client secret key. This will be in plain text in your statefile unless you set omit_secret above.
-{{% /md %}}</dd>
+    <dd>OAuth client secret key. This will be in plain text in your statefile unless you set omit_secret above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2086,8 +2086,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}URI to a web page providing information about the client.
-{{% /md %}}</dd>
+    <dd>URI to a web page providing information about the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2095,9 +2095,9 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED.
+    <dd>*Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED.
 Default value is TRUSTED
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2105,8 +2105,8 @@ Default value is TRUSTED
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This property allows you to set your client_id.
-{{% /md %}}</dd>
+    <dd>This property allows you to set your client_id.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2114,10 +2114,10 @@ Default value is TRUSTED
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of OAuth 2.0 grant types. Conditional validation params found here
+    <dd>List of OAuth 2.0 grant types. Conditional validation params found here
 https://developer.okta.com/docs/api/resources/apps#credentials-settings-details. Defaults to minimum requirements per
 app type.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2125,8 +2125,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Groups associated with the application
-{{% /md %}}</dd>
+    <dd>Groups associated with the application
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2134,8 +2134,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2143,8 +2143,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2152,9 +2152,9 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a
+    <dd>*Early Access Property*. Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a
 custom domain URL as the issuer of ID token for this client.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2162,8 +2162,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Pretty name of app.
-{{% /md %}}</dd>
+    <dd>Pretty name of app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2171,8 +2171,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}URI that initiates login.
-{{% /md %}}</dd>
+    <dd>URI that initiates login.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2180,8 +2180,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}URI that references a logo for the client.
-{{% /md %}}</dd>
+    <dd>URI that references a logo for the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2189,8 +2189,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}name of app.
-{{% /md %}}</dd>
+    <dd>name of app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2198,9 +2198,9 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}This tells the provider not to persist the application's secret to state. If this is ever changes from true => false
+    <dd>This tells the provider not to persist the application's secret to state. If this is ever changes from true => false
 your app will be recreated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2208,8 +2208,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. URI to web page providing client policy document.
-{{% /md %}}</dd>
+    <dd>*Early Access Property*. URI to web page providing client policy document.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2217,8 +2217,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for redirection after logout
-{{% /md %}}</dd>
+    <dd>List of URIs for redirection after logout
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2226,8 +2226,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON that represents an OAuth application's profile
-{{% /md %}}</dd>
+    <dd>Custom JSON that represents an OAuth application's profile
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2235,9 +2235,9 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for use in the redirect-based flow. This is required for all application types except service. Note: see
+    <dd>List of URIs for use in the redirect-based flow. This is required for all application types except service. Note: see
 okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2245,8 +2245,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of OAuth 2.0 response type strings.
-{{% /md %}}</dd>
+    <dd>List of OAuth 2.0 response type strings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2254,8 +2254,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sign on mode of application.
-{{% /md %}}</dd>
+    <dd>Sign on mode of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2263,8 +2263,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of application.
-{{% /md %}}</dd>
+    <dd>Status of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2272,8 +2272,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Requested authentication method for the token endpoint.
-{{% /md %}}</dd>
+    <dd>Requested authentication method for the token endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2281,8 +2281,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. URI to web page providing client tos (terms of service).
-{{% /md %}}</dd>
+    <dd>*Early Access Property*. URI to web page providing client tos (terms of service).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2290,8 +2290,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of client application.
-{{% /md %}}</dd>
+    <dd>The type of client application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2299,14 +2299,14 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oauthappuser">Oauth<wbr>App<wbr>User[]</a></span>
     </dt>
-    <dd>{{% md %}}Users associated with the application
-{{% /md %}}</dd>
+    <dd>Users associated with the application
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2315,8 +2315,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Requested key rotation mode.
-{{% /md %}}</dd>
+    <dd>Requested key rotation mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2324,8 +2324,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2333,8 +2333,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client secret key, this can be set when token_endpoint_auth_method is client_secret_basic.
-{{% /md %}}</dd>
+    <dd>OAuth client secret key, this can be set when token_endpoint_auth_method is client_secret_basic.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2342,8 +2342,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client ID.
-{{% /md %}}</dd>
+    <dd>OAuth client ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2351,8 +2351,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}OAuth client secret key. This will be in plain text in your statefile unless you set omit_secret above.
-{{% /md %}}</dd>
+    <dd>OAuth client secret key. This will be in plain text in your statefile unless you set omit_secret above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2360,8 +2360,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}URI to a web page providing information about the client.
-{{% /md %}}</dd>
+    <dd>URI to a web page providing information about the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2369,9 +2369,9 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED.
+    <dd>*Early Access Property*. Indicates whether user consent is required or implicit. Valid values: REQUIRED, TRUSTED.
 Default value is TRUSTED
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2379,8 +2379,8 @@ Default value is TRUSTED
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This property allows you to set your client_id.
-{{% /md %}}</dd>
+    <dd>This property allows you to set your client_id.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2388,10 +2388,10 @@ Default value is TRUSTED
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of OAuth 2.0 grant types. Conditional validation params found here
+    <dd>List of OAuth 2.0 grant types. Conditional validation params found here
 https://developer.okta.com/docs/api/resources/apps#credentials-settings-details. Defaults to minimum requirements per
 app type.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2399,8 +2399,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Groups associated with the application
-{{% /md %}}</dd>
+    <dd>Groups associated with the application
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2408,8 +2408,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2417,8 +2417,8 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2426,9 +2426,9 @@ app type.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a
+    <dd>*Early Access Property*. Indicates whether the Okta Authorization Server uses the original Okta org domain URL or a
 custom domain URL as the issuer of ID token for this client.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2436,8 +2436,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Pretty name of app.
-{{% /md %}}</dd>
+    <dd>Pretty name of app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2445,8 +2445,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}URI that initiates login.
-{{% /md %}}</dd>
+    <dd>URI that initiates login.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2454,8 +2454,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}URI that references a logo for the client.
-{{% /md %}}</dd>
+    <dd>URI that references a logo for the client.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2463,8 +2463,8 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}name of app.
-{{% /md %}}</dd>
+    <dd>name of app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2472,9 +2472,9 @@ custom domain URL as the issuer of ID token for this client.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}This tells the provider not to persist the application's secret to state. If this is ever changes from true => false
+    <dd>This tells the provider not to persist the application's secret to state. If this is ever changes from true => false
 your app will be recreated.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2482,8 +2482,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. URI to web page providing client policy document.
-{{% /md %}}</dd>
+    <dd>*Early Access Property*. URI to web page providing client policy document.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2491,8 +2491,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for redirection after logout
-{{% /md %}}</dd>
+    <dd>List of URIs for redirection after logout
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2500,8 +2500,8 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON that represents an OAuth application's profile
-{{% /md %}}</dd>
+    <dd>Custom JSON that represents an OAuth application's profile
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2509,9 +2509,9 @@ your app will be recreated.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for use in the redirect-based flow. This is required for all application types except service. Note: see
+    <dd>List of URIs for use in the redirect-based flow. This is required for all application types except service. Note: see
 okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2519,8 +2519,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of OAuth 2.0 response type strings.
-{{% /md %}}</dd>
+    <dd>List of OAuth 2.0 response type strings.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2528,8 +2528,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sign on mode of application.
-{{% /md %}}</dd>
+    <dd>Sign on mode of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2537,8 +2537,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Status of application.
-{{% /md %}}</dd>
+    <dd>Status of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2546,8 +2546,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Requested authentication method for the token endpoint.
-{{% /md %}}</dd>
+    <dd>Requested authentication method for the token endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2555,8 +2555,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}*Early Access Property*. URI to web page providing client tos (terms of service).
-{{% /md %}}</dd>
+    <dd>*Early Access Property*. URI to web page providing client tos (terms of service).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2564,8 +2564,8 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of client application.
-{{% /md %}}</dd>
+    <dd>The type of client application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2573,11 +2573,11 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#oauthappuser">List[Oauth<wbr>App<wbr>User]</a></span>
     </dt>
-    <dd>{{% md %}}Users associated with the application
-{{% /md %}}</dd>
+    <dd>Users associated with the application
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2592,18 +2592,18 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
 
 
 <h4 id="oauthappuser">Oauth<wbr>App<wbr>User</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/okta/types/input/#OauthAppUser">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/okta/types/output/#OauthAppUser">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/deprecated?tab=doc#OauthAppUserArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/deprecated?tab=doc#OauthAppUserOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2612,7 +2612,7 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2620,7 +2620,7 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2628,7 +2628,7 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2636,13 +2636,13 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2651,7 +2651,7 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2659,7 +2659,7 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2667,7 +2667,7 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2675,13 +2675,13 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2690,7 +2690,7 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2698,7 +2698,7 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2706,7 +2706,7 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2714,13 +2714,13 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2729,7 +2729,7 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2737,7 +2737,7 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2745,7 +2745,7 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2753,10 +2753,10 @@ okta_app_oauth_redirect_uri for appending to this list in a decentralized way.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

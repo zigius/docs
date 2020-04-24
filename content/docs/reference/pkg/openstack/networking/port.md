@@ -83,26 +83,26 @@ documentation.
 
 
 ## Create a Port Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/networking/#Port">Port</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/networking/#PortArgs">PortArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Port</span><span class="p">(resource_name, opts=None, </span>admin_state_up=None<span class="p">, </span>allowed_address_pairs=None<span class="p">, </span>binding=None<span class="p">, </span>description=None<span class="p">, </span>device_id=None<span class="p">, </span>device_owner=None<span class="p">, </span>dns_name=None<span class="p">, </span>extra_dhcp_options=None<span class="p">, </span>fixed_ips=None<span class="p">, </span>mac_address=None<span class="p">, </span>name=None<span class="p">, </span>network_id=None<span class="p">, </span>no_fixed_ip=None<span class="p">, </span>no_security_groups=None<span class="p">, </span>port_security_enabled=None<span class="p">, </span>qos_policy_id=None<span class="p">, </span>region=None<span class="p">, </span>security_group_ids=None<span class="p">, </span>tags=None<span class="p">, </span>tenant_id=None<span class="p">, </span>value_specs=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewPort<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#PortArgs">PortArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#Port">Port</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Networking.Port.html">Port</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.Networking.PortArgs.html">PortArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ documentation.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -159,9 +159,9 @@ documentation.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -208,9 +208,9 @@ documentation.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -247,7 +247,7 @@ documentation.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Port Resource Properties {#properties}
 
@@ -260,7 +260,7 @@ The Port resource accepts the following [input]({{< relref "/docs/intro/concepts
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -269,9 +269,9 @@ The Port resource accepts the following [input]({{< relref "/docs/intro/concepts
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network to attach the port to. Changing
+    <dd>The ID of the network to attach the port to. Changing
 this creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -279,10 +279,10 @@ this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Administrative up/down status for the port
+    <dd>Administrative up/down status for the port
 (must be "true" or "false" if provided). Changing this updates the
 `admin_state_up` of an existing port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -290,10 +290,10 @@ this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portallowedaddresspair">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>Networking.<wbr>Inputs.<wbr>Port<wbr>Allowed<wbr>Address<wbr>Pair<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An IP/MAC Address pair of additional IP
+    <dd>An IP/MAC Address pair of additional IP
 addresses that can be active on this port. The structure is described
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -301,9 +301,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portbinding">Pulumi.<wbr>Open<wbr>Stack.<wbr>Networking.<wbr>Inputs.<wbr>Port<wbr>Binding<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The port binding allows to specify binding information
+    <dd>The port binding allows to specify binding information
 for the port. The structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -311,9 +311,9 @@ for the port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description of the floating IP. Changing
+    <dd>Human-readable description of the floating IP. Changing
 this updates the `description` of an existing port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -321,9 +321,9 @@ this updates the `description` of an existing port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the device attached to the port. Changing this
+    <dd>The ID of the device attached to the port. Changing this
 creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -331,9 +331,9 @@ creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The device owner of the Port. Changing this creates
+    <dd>The device owner of the Port. Changing this creates
 a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -341,9 +341,9 @@ a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The port DNS name. Available, when Neutron DNS extension
+    <dd>The port DNS name. Available, when Neutron DNS extension
 is enabled.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -351,10 +351,10 @@ is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portextradhcpoption">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>Networking.<wbr>Inputs.<wbr>Port<wbr>Extra<wbr>Dhcp<wbr>Option<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An extra DHCP option that needs to be configured
+    <dd>An extra DHCP option that needs to be configured
 on the port. The structure is described below. Can be specified multiple
 times.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -362,9 +362,9 @@ times.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portfixedip">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>Networking.<wbr>Inputs.<wbr>Port<wbr>Fixed<wbr>Ip<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An array of desired IPs for
+    <dd>An array of desired IPs for
 this port. The structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -372,8 +372,8 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The additional MAC address.
-{{% /md %}}</dd>
+    <dd>The additional MAC address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -381,8 +381,8 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Name of the DHCP option.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -390,10 +390,10 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Create a port with no fixed
+    <dd>Create a port with no fixed
 IP address. This will also remove any fixed IPs previously set on a port. `true`
 is the only valid value for this argument.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -401,12 +401,12 @@ is the only valid value for this argument.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to
+    <dd>If set to
 `true`, then no security groups are applied to the port. If set to `false` and
 no `security_group_ids` are specified, then the Port will yield to the default
 behavior of the Networking service, which is to usually apply the "default"
 security group.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,13 +414,13 @@ security group.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to explicitly enable or disable
+    <dd>Whether to explicitly enable or disable
 port security on the port. Port Security is usually enabled by default, so
 omitting argument will usually result in a value of "true". Setting this
 explicitly to `false` will disable port security. In order to disable port
 security, the port must not have any security groups. Valid values are `true`
 and `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -428,8 +428,8 @@ and `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Reference to the associated QoS policy.
-{{% /md %}}</dd>
+    <dd>Reference to the associated QoS policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -437,11 +437,11 @@ and `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 networking client.
+    <dd>The region in which to obtain the V2 networking client.
 A networking client is needed to create a port. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -449,11 +449,11 @@ port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list
+    <dd>A list
 of security group IDs to apply to the port. The security groups must be
 specified by ID and not name (as opposed to how they are configured with
 the Compute Instance).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -461,8 +461,8 @@ the Compute Instance).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the port.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -470,9 +470,9 @@ the Compute Instance).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the Port. Required if admin wants
+    <dd>The owner of the Port. Required if admin wants
 to create a port for another tenant. Changing this creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -480,14 +480,14 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -496,9 +496,9 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network to attach the port to. Changing
+    <dd>The ID of the network to attach the port to. Changing
 this creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -506,10 +506,10 @@ this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Administrative up/down status for the port
+    <dd>Administrative up/down status for the port
 (must be "true" or "false" if provided). Changing this updates the
 `admin_state_up` of an existing port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -517,10 +517,10 @@ this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portallowedaddresspair">[]Port<wbr>Allowed<wbr>Address<wbr>Pair</a></span>
     </dt>
-    <dd>{{% md %}}An IP/MAC Address pair of additional IP
+    <dd>An IP/MAC Address pair of additional IP
 addresses that can be active on this port. The structure is described
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -528,9 +528,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portbinding">Port<wbr>Binding</a></span>
     </dt>
-    <dd>{{% md %}}The port binding allows to specify binding information
+    <dd>The port binding allows to specify binding information
 for the port. The structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -538,9 +538,9 @@ for the port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description of the floating IP. Changing
+    <dd>Human-readable description of the floating IP. Changing
 this updates the `description` of an existing port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -548,9 +548,9 @@ this updates the `description` of an existing port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the device attached to the port. Changing this
+    <dd>The ID of the device attached to the port. Changing this
 creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -558,9 +558,9 @@ creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The device owner of the Port. Changing this creates
+    <dd>The device owner of the Port. Changing this creates
 a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -568,9 +568,9 @@ a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The port DNS name. Available, when Neutron DNS extension
+    <dd>The port DNS name. Available, when Neutron DNS extension
 is enabled.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -578,10 +578,10 @@ is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portextradhcpoption">[]Port<wbr>Extra<wbr>Dhcp<wbr>Option</a></span>
     </dt>
-    <dd>{{% md %}}An extra DHCP option that needs to be configured
+    <dd>An extra DHCP option that needs to be configured
 on the port. The structure is described below. Can be specified multiple
 times.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -589,9 +589,9 @@ times.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portfixedip">[]Port<wbr>Fixed<wbr>Ip</a></span>
     </dt>
-    <dd>{{% md %}}An array of desired IPs for
+    <dd>An array of desired IPs for
 this port. The structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -599,8 +599,8 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The additional MAC address.
-{{% /md %}}</dd>
+    <dd>The additional MAC address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -608,8 +608,8 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Name of the DHCP option.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -617,10 +617,10 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Create a port with no fixed
+    <dd>Create a port with no fixed
 IP address. This will also remove any fixed IPs previously set on a port. `true`
 is the only valid value for this argument.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -628,12 +628,12 @@ is the only valid value for this argument.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to
+    <dd>If set to
 `true`, then no security groups are applied to the port. If set to `false` and
 no `security_group_ids` are specified, then the Port will yield to the default
 behavior of the Networking service, which is to usually apply the "default"
 security group.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -641,13 +641,13 @@ security group.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to explicitly enable or disable
+    <dd>Whether to explicitly enable or disable
 port security on the port. Port Security is usually enabled by default, so
 omitting argument will usually result in a value of "true". Setting this
 explicitly to `false` will disable port security. In order to disable port
 security, the port must not have any security groups. Valid values are `true`
 and `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -655,8 +655,8 @@ and `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Reference to the associated QoS policy.
-{{% /md %}}</dd>
+    <dd>Reference to the associated QoS policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -664,11 +664,11 @@ and `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 networking client.
+    <dd>The region in which to obtain the V2 networking client.
 A networking client is needed to create a port. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -676,11 +676,11 @@ port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list
+    <dd>A list
 of security group IDs to apply to the port. The security groups must be
 specified by ID and not name (as opposed to how they are configured with
 the Compute Instance).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -688,8 +688,8 @@ the Compute Instance).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the port.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -697,9 +697,9 @@ the Compute Instance).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the Port. Required if admin wants
+    <dd>The owner of the Port. Required if admin wants
 to create a port for another tenant. Changing this creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -707,14 +707,14 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -723,9 +723,9 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network to attach the port to. Changing
+    <dd>The ID of the network to attach the port to. Changing
 this creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -733,10 +733,10 @@ this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Administrative up/down status for the port
+    <dd>Administrative up/down status for the port
 (must be "true" or "false" if provided). Changing this updates the
 `admin_state_up` of an existing port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -744,10 +744,10 @@ this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portallowedaddresspair">Port<wbr>Allowed<wbr>Address<wbr>Pair[]</a></span>
     </dt>
-    <dd>{{% md %}}An IP/MAC Address pair of additional IP
+    <dd>An IP/MAC Address pair of additional IP
 addresses that can be active on this port. The structure is described
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -755,9 +755,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portbinding">Port<wbr>Binding</a></span>
     </dt>
-    <dd>{{% md %}}The port binding allows to specify binding information
+    <dd>The port binding allows to specify binding information
 for the port. The structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -765,9 +765,9 @@ for the port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description of the floating IP. Changing
+    <dd>Human-readable description of the floating IP. Changing
 this updates the `description` of an existing port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -775,9 +775,9 @@ this updates the `description` of an existing port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the device attached to the port. Changing this
+    <dd>The ID of the device attached to the port. Changing this
 creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -785,9 +785,9 @@ creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The device owner of the Port. Changing this creates
+    <dd>The device owner of the Port. Changing this creates
 a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -795,9 +795,9 @@ a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The port DNS name. Available, when Neutron DNS extension
+    <dd>The port DNS name. Available, when Neutron DNS extension
 is enabled.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -805,10 +805,10 @@ is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portextradhcpoption">Port<wbr>Extra<wbr>Dhcp<wbr>Option[]</a></span>
     </dt>
-    <dd>{{% md %}}An extra DHCP option that needs to be configured
+    <dd>An extra DHCP option that needs to be configured
 on the port. The structure is described below. Can be specified multiple
 times.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -816,9 +816,9 @@ times.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portfixedip">Port<wbr>Fixed<wbr>Ip[]</a></span>
     </dt>
-    <dd>{{% md %}}An array of desired IPs for
+    <dd>An array of desired IPs for
 this port. The structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -826,8 +826,8 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The additional MAC address.
-{{% /md %}}</dd>
+    <dd>The additional MAC address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -835,8 +835,8 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Name of the DHCP option.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -844,10 +844,10 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Create a port with no fixed
+    <dd>Create a port with no fixed
 IP address. This will also remove any fixed IPs previously set on a port. `true`
 is the only valid value for this argument.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -855,12 +855,12 @@ is the only valid value for this argument.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If set to
+    <dd>If set to
 `true`, then no security groups are applied to the port. If set to `false` and
 no `security_group_ids` are specified, then the Port will yield to the default
 behavior of the Networking service, which is to usually apply the "default"
 security group.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -868,13 +868,13 @@ security group.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to explicitly enable or disable
+    <dd>Whether to explicitly enable or disable
 port security on the port. Port Security is usually enabled by default, so
 omitting argument will usually result in a value of "true". Setting this
 explicitly to `false` will disable port security. In order to disable port
 security, the port must not have any security groups. Valid values are `true`
 and `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -882,8 +882,8 @@ and `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Reference to the associated QoS policy.
-{{% /md %}}</dd>
+    <dd>Reference to the associated QoS policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -891,11 +891,11 @@ and `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 networking client.
+    <dd>The region in which to obtain the V2 networking client.
 A networking client is needed to create a port. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -903,11 +903,11 @@ port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list
+    <dd>A list
 of security group IDs to apply to the port. The security groups must be
 specified by ID and not name (as opposed to how they are configured with
 the Compute Instance).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -915,8 +915,8 @@ the Compute Instance).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the port.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -924,9 +924,9 @@ the Compute Instance).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the Port. Required if admin wants
+    <dd>The owner of the Port. Required if admin wants
 to create a port for another tenant. Changing this creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -934,14 +934,14 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -950,9 +950,9 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network to attach the port to. Changing
+    <dd>The ID of the network to attach the port to. Changing
 this creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -960,10 +960,10 @@ this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Administrative up/down status for the port
+    <dd>Administrative up/down status for the port
 (must be "true" or "false" if provided). Changing this updates the
 `admin_state_up` of an existing port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -971,10 +971,10 @@ this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portallowedaddresspair">List[Port<wbr>Allowed<wbr>Address<wbr>Pair]</a></span>
     </dt>
-    <dd>{{% md %}}An IP/MAC Address pair of additional IP
+    <dd>An IP/MAC Address pair of additional IP
 addresses that can be active on this port. The structure is described
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -982,9 +982,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portbinding">Dict[Port<wbr>Binding]</a></span>
     </dt>
-    <dd>{{% md %}}The port binding allows to specify binding information
+    <dd>The port binding allows to specify binding information
 for the port. The structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -992,9 +992,9 @@ for the port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description of the floating IP. Changing
+    <dd>Human-readable description of the floating IP. Changing
 this updates the `description` of an existing port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1002,9 +1002,9 @@ this updates the `description` of an existing port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the device attached to the port. Changing this
+    <dd>The ID of the device attached to the port. Changing this
 creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1012,9 +1012,9 @@ creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The device owner of the Port. Changing this creates
+    <dd>The device owner of the Port. Changing this creates
 a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1022,9 +1022,9 @@ a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The port DNS name. Available, when Neutron DNS extension
+    <dd>The port DNS name. Available, when Neutron DNS extension
 is enabled.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1032,10 +1032,10 @@ is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portextradhcpoption">List[Port<wbr>Extra<wbr>Dhcp<wbr>Option]</a></span>
     </dt>
-    <dd>{{% md %}}An extra DHCP option that needs to be configured
+    <dd>An extra DHCP option that needs to be configured
 on the port. The structure is described below. Can be specified multiple
 times.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1043,9 +1043,9 @@ times.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portfixedip">List[Port<wbr>Fixed<wbr>Ip]</a></span>
     </dt>
-    <dd>{{% md %}}An array of desired IPs for
+    <dd>An array of desired IPs for
 this port. The structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1053,8 +1053,8 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The additional MAC address.
-{{% /md %}}</dd>
+    <dd>The additional MAC address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1062,8 +1062,8 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Name of the DHCP option.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1071,10 +1071,10 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Create a port with no fixed
+    <dd>Create a port with no fixed
 IP address. This will also remove any fixed IPs previously set on a port. `true`
 is the only valid value for this argument.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1082,12 +1082,12 @@ is the only valid value for this argument.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to
+    <dd>If set to
 `true`, then no security groups are applied to the port. If set to `false` and
 no `security_group_ids` are specified, then the Port will yield to the default
 behavior of the Networking service, which is to usually apply the "default"
 security group.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1095,13 +1095,13 @@ security group.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to explicitly enable or disable
+    <dd>Whether to explicitly enable or disable
 port security on the port. Port Security is usually enabled by default, so
 omitting argument will usually result in a value of "true". Setting this
 explicitly to `false` will disable port security. In order to disable port
 security, the port must not have any security groups. Valid values are `true`
 and `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1109,8 +1109,8 @@ and `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Reference to the associated QoS policy.
-{{% /md %}}</dd>
+    <dd>Reference to the associated QoS policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1118,11 +1118,11 @@ and `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 networking client.
+    <dd>The region in which to obtain the V2 networking client.
 A networking client is needed to create a port. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1130,11 +1130,11 @@ port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list
+    <dd>A list
 of security group IDs to apply to the port. The security groups must be
 specified by ID and not name (as opposed to how they are configured with
 the Compute Instance).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1142,8 +1142,8 @@ the Compute Instance).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the port.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1151,9 +1151,9 @@ the Compute Instance).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the Port. Required if admin wants
+    <dd>The owner of the Port. Required if admin wants
 to create a port for another tenant. Changing this creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1161,11 +1161,11 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1179,7 +1179,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1188,9 +1188,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Fixed IP addresses on the port in the
+    <dd>The collection of Fixed IP addresses on the port in the
 order returned by the Network v2 API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1198,9 +1198,9 @@ order returned by the Network v2 API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Security Group IDs on the port
+    <dd>The collection of Security Group IDs on the port
 which have been explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1208,9 +1208,9 @@ which have been explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the port, which have been
+    <dd>The collection of tags assigned on the port, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1218,8 +1218,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type">List&lt;Immutable<wbr>Dictionary&lt;string, object&gt;&gt;</span>
     </dt>
-    <dd>{{% md %}}The list of maps representing port DNS assignments.
-{{% /md %}}</dd>
+    <dd>The list of maps representing port DNS assignments.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1227,13 +1227,13 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1242,9 +1242,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Fixed IP addresses on the port in the
+    <dd>The collection of Fixed IP addresses on the port in the
 order returned by the Network v2 API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1252,9 +1252,9 @@ order returned by the Network v2 API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Security Group IDs on the port
+    <dd>The collection of Security Group IDs on the port
 which have been explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1262,9 +1262,9 @@ which have been explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the port, which have been
+    <dd>The collection of tags assigned on the port, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1272,8 +1272,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type">[]map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}The list of maps representing port DNS assignments.
-{{% /md %}}</dd>
+    <dd>The list of maps representing port DNS assignments.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1281,13 +1281,13 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1296,9 +1296,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Fixed IP addresses on the port in the
+    <dd>The collection of Fixed IP addresses on the port in the
 order returned by the Network v2 API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1306,9 +1306,9 @@ order returned by the Network v2 API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Security Group IDs on the port
+    <dd>The collection of Security Group IDs on the port
 which have been explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1316,9 +1316,9 @@ which have been explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the port, which have been
+    <dd>The collection of tags assigned on the port, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1326,8 +1326,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}[]</span>
     </dt>
-    <dd>{{% md %}}The list of maps representing port DNS assignments.
-{{% /md %}}</dd>
+    <dd>The list of maps representing port DNS assignments.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1335,13 +1335,13 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1350,9 +1350,9 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Fixed IP addresses on the port in the
+    <dd>The collection of Fixed IP addresses on the port in the
 order returned by the Network v2 API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1360,9 +1360,9 @@ order returned by the Network v2 API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Security Group IDs on the port
+    <dd>The collection of Security Group IDs on the port
 which have been explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1370,9 +1370,9 @@ which have been explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the port, which have been
+    <dd>The collection of tags assigned on the port, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -1380,8 +1380,8 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type">List[Any>]</span>
     </dt>
-    <dd>{{% md %}}The list of maps representing port DNS assignments.
-{{% /md %}}</dd>
+    <dd>The list of maps representing port DNS assignments.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1389,10 +1389,10 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1403,25 +1403,25 @@ explicitly and implicitly added.
 ## Look up an Existing Port Resource {#look-up}
 
 Get an existing Port resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/networking/#PortState">PortState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/networking/#Port">Port</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>admin_state_up=None<span class="p">, </span>all_fixed_ips=None<span class="p">, </span>all_security_group_ids=None<span class="p">, </span>all_tags=None<span class="p">, </span>allowed_address_pairs=None<span class="p">, </span>binding=None<span class="p">, </span>description=None<span class="p">, </span>device_id=None<span class="p">, </span>device_owner=None<span class="p">, </span>dns_assignments=None<span class="p">, </span>dns_name=None<span class="p">, </span>extra_dhcp_options=None<span class="p">, </span>fixed_ips=None<span class="p">, </span>mac_address=None<span class="p">, </span>name=None<span class="p">, </span>network_id=None<span class="p">, </span>no_fixed_ip=None<span class="p">, </span>no_security_groups=None<span class="p">, </span>port_security_enabled=None<span class="p">, </span>qos_policy_id=None<span class="p">, </span>region=None<span class="p">, </span>security_group_ids=None<span class="p">, </span>tags=None<span class="p">, </span>tenant_id=None<span class="p">, </span>value_specs=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetPort<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#PortState">PortState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#Port">Port</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Networking.Port.html">Port</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.Networking.PortState.html">PortState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1446,9 +1446,9 @@ Get an existing Port resource's state with the given name, ID, and optional extr
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1461,36 +1461,9 @@ Get an existing Port resource's state with the given name, ID, and optional extr
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1515,13 +1488,40 @@ Get an existing Port resource's state with the given name, ID, and optional extr
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1530,10 +1530,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Administrative up/down status for the port
+    <dd>Administrative up/down status for the port
 (must be "true" or "false" if provided). Changing this updates the
 `admin_state_up` of an existing port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1541,9 +1541,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Fixed IP addresses on the port in the
+    <dd>The collection of Fixed IP addresses on the port in the
 order returned by the Network v2 API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1551,9 +1551,9 @@ order returned by the Network v2 API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Security Group IDs on the port
+    <dd>The collection of Security Group IDs on the port
 which have been explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1561,9 +1561,9 @@ which have been explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the port, which have been
+    <dd>The collection of tags assigned on the port, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1571,10 +1571,10 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portallowedaddresspair">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>Networking.<wbr>Inputs.<wbr>Port<wbr>Allowed<wbr>Address<wbr>Pair<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An IP/MAC Address pair of additional IP
+    <dd>An IP/MAC Address pair of additional IP
 addresses that can be active on this port. The structure is described
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1582,9 +1582,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portbinding">Pulumi.<wbr>Open<wbr>Stack.<wbr>Networking.<wbr>Inputs.<wbr>Port<wbr>Binding<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The port binding allows to specify binding information
+    <dd>The port binding allows to specify binding information
 for the port. The structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1592,9 +1592,9 @@ for the port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description of the floating IP. Changing
+    <dd>Human-readable description of the floating IP. Changing
 this updates the `description` of an existing port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1602,9 +1602,9 @@ this updates the `description` of an existing port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the device attached to the port. Changing this
+    <dd>The ID of the device attached to the port. Changing this
 creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1612,9 +1612,9 @@ creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The device owner of the Port. Changing this creates
+    <dd>The device owner of the Port. Changing this creates
 a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1622,8 +1622,8 @@ a new port.
         <span class="property-indicator"></span>
         <span class="property-type">List&lt;Immutable<wbr>Dictionary&lt;string, object&gt;&gt;</span>
     </dt>
-    <dd>{{% md %}}The list of maps representing port DNS assignments.
-{{% /md %}}</dd>
+    <dd>The list of maps representing port DNS assignments.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1631,9 +1631,9 @@ a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The port DNS name. Available, when Neutron DNS extension
+    <dd>The port DNS name. Available, when Neutron DNS extension
 is enabled.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1641,10 +1641,10 @@ is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portextradhcpoption">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>Networking.<wbr>Inputs.<wbr>Port<wbr>Extra<wbr>Dhcp<wbr>Option<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An extra DHCP option that needs to be configured
+    <dd>An extra DHCP option that needs to be configured
 on the port. The structure is described below. Can be specified multiple
 times.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1652,9 +1652,9 @@ times.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portfixedip">List&lt;Pulumi.<wbr>Open<wbr>Stack.<wbr>Networking.<wbr>Inputs.<wbr>Port<wbr>Fixed<wbr>Ip<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An array of desired IPs for
+    <dd>An array of desired IPs for
 this port. The structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1662,8 +1662,8 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The additional MAC address.
-{{% /md %}}</dd>
+    <dd>The additional MAC address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1671,8 +1671,8 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Name of the DHCP option.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1680,9 +1680,9 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network to attach the port to. Changing
+    <dd>The ID of the network to attach the port to. Changing
 this creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1690,10 +1690,10 @@ this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Create a port with no fixed
+    <dd>Create a port with no fixed
 IP address. This will also remove any fixed IPs previously set on a port. `true`
 is the only valid value for this argument.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1701,12 +1701,12 @@ is the only valid value for this argument.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to
+    <dd>If set to
 `true`, then no security groups are applied to the port. If set to `false` and
 no `security_group_ids` are specified, then the Port will yield to the default
 behavior of the Networking service, which is to usually apply the "default"
 security group.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1714,13 +1714,13 @@ security group.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to explicitly enable or disable
+    <dd>Whether to explicitly enable or disable
 port security on the port. Port Security is usually enabled by default, so
 omitting argument will usually result in a value of "true". Setting this
 explicitly to `false` will disable port security. In order to disable port
 security, the port must not have any security groups. Valid values are `true`
 and `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1728,8 +1728,8 @@ and `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Reference to the associated QoS policy.
-{{% /md %}}</dd>
+    <dd>Reference to the associated QoS policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1737,11 +1737,11 @@ and `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 networking client.
+    <dd>The region in which to obtain the V2 networking client.
 A networking client is needed to create a port. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1749,11 +1749,11 @@ port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list
+    <dd>A list
 of security group IDs to apply to the port. The security groups must be
 specified by ID and not name (as opposed to how they are configured with
 the Compute Instance).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1761,8 +1761,8 @@ the Compute Instance).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the port.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1770,9 +1770,9 @@ the Compute Instance).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the Port. Required if admin wants
+    <dd>The owner of the Port. Required if admin wants
 to create a port for another tenant. Changing this creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1780,14 +1780,14 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1796,10 +1796,10 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Administrative up/down status for the port
+    <dd>Administrative up/down status for the port
 (must be "true" or "false" if provided). Changing this updates the
 `admin_state_up` of an existing port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1807,9 +1807,9 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Fixed IP addresses on the port in the
+    <dd>The collection of Fixed IP addresses on the port in the
 order returned by the Network v2 API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1817,9 +1817,9 @@ order returned by the Network v2 API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Security Group IDs on the port
+    <dd>The collection of Security Group IDs on the port
 which have been explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1827,9 +1827,9 @@ which have been explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the port, which have been
+    <dd>The collection of tags assigned on the port, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1837,10 +1837,10 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portallowedaddresspair">[]Port<wbr>Allowed<wbr>Address<wbr>Pair</a></span>
     </dt>
-    <dd>{{% md %}}An IP/MAC Address pair of additional IP
+    <dd>An IP/MAC Address pair of additional IP
 addresses that can be active on this port. The structure is described
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1848,9 +1848,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portbinding">Port<wbr>Binding</a></span>
     </dt>
-    <dd>{{% md %}}The port binding allows to specify binding information
+    <dd>The port binding allows to specify binding information
 for the port. The structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1858,9 +1858,9 @@ for the port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description of the floating IP. Changing
+    <dd>Human-readable description of the floating IP. Changing
 this updates the `description` of an existing port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1868,9 +1868,9 @@ this updates the `description` of an existing port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the device attached to the port. Changing this
+    <dd>The ID of the device attached to the port. Changing this
 creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1878,9 +1878,9 @@ creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The device owner of the Port. Changing this creates
+    <dd>The device owner of the Port. Changing this creates
 a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1888,8 +1888,8 @@ a new port.
         <span class="property-indicator"></span>
         <span class="property-type">[]map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}The list of maps representing port DNS assignments.
-{{% /md %}}</dd>
+    <dd>The list of maps representing port DNS assignments.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1897,9 +1897,9 @@ a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The port DNS name. Available, when Neutron DNS extension
+    <dd>The port DNS name. Available, when Neutron DNS extension
 is enabled.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1907,10 +1907,10 @@ is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portextradhcpoption">[]Port<wbr>Extra<wbr>Dhcp<wbr>Option</a></span>
     </dt>
-    <dd>{{% md %}}An extra DHCP option that needs to be configured
+    <dd>An extra DHCP option that needs to be configured
 on the port. The structure is described below. Can be specified multiple
 times.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1918,9 +1918,9 @@ times.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portfixedip">[]Port<wbr>Fixed<wbr>Ip</a></span>
     </dt>
-    <dd>{{% md %}}An array of desired IPs for
+    <dd>An array of desired IPs for
 this port. The structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1928,8 +1928,8 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The additional MAC address.
-{{% /md %}}</dd>
+    <dd>The additional MAC address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1937,8 +1937,8 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Name of the DHCP option.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1946,9 +1946,9 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network to attach the port to. Changing
+    <dd>The ID of the network to attach the port to. Changing
 this creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1956,10 +1956,10 @@ this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Create a port with no fixed
+    <dd>Create a port with no fixed
 IP address. This will also remove any fixed IPs previously set on a port. `true`
 is the only valid value for this argument.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1967,12 +1967,12 @@ is the only valid value for this argument.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to
+    <dd>If set to
 `true`, then no security groups are applied to the port. If set to `false` and
 no `security_group_ids` are specified, then the Port will yield to the default
 behavior of the Networking service, which is to usually apply the "default"
 security group.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1980,13 +1980,13 @@ security group.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to explicitly enable or disable
+    <dd>Whether to explicitly enable or disable
 port security on the port. Port Security is usually enabled by default, so
 omitting argument will usually result in a value of "true". Setting this
 explicitly to `false` will disable port security. In order to disable port
 security, the port must not have any security groups. Valid values are `true`
 and `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1994,8 +1994,8 @@ and `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Reference to the associated QoS policy.
-{{% /md %}}</dd>
+    <dd>Reference to the associated QoS policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2003,11 +2003,11 @@ and `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 networking client.
+    <dd>The region in which to obtain the V2 networking client.
 A networking client is needed to create a port. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2015,11 +2015,11 @@ port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list
+    <dd>A list
 of security group IDs to apply to the port. The security groups must be
 specified by ID and not name (as opposed to how they are configured with
 the Compute Instance).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2027,8 +2027,8 @@ the Compute Instance).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the port.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2036,9 +2036,9 @@ the Compute Instance).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the Port. Required if admin wants
+    <dd>The owner of the Port. Required if admin wants
 to create a port for another tenant. Changing this creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2046,14 +2046,14 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2062,10 +2062,10 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Administrative up/down status for the port
+    <dd>Administrative up/down status for the port
 (must be "true" or "false" if provided). Changing this updates the
 `admin_state_up` of an existing port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2073,9 +2073,9 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Fixed IP addresses on the port in the
+    <dd>The collection of Fixed IP addresses on the port in the
 order returned by the Network v2 API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2083,9 +2083,9 @@ order returned by the Network v2 API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Security Group IDs on the port
+    <dd>The collection of Security Group IDs on the port
 which have been explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2093,9 +2093,9 @@ which have been explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the port, which have been
+    <dd>The collection of tags assigned on the port, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2103,10 +2103,10 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portallowedaddresspair">Port<wbr>Allowed<wbr>Address<wbr>Pair[]</a></span>
     </dt>
-    <dd>{{% md %}}An IP/MAC Address pair of additional IP
+    <dd>An IP/MAC Address pair of additional IP
 addresses that can be active on this port. The structure is described
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2114,9 +2114,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portbinding">Port<wbr>Binding</a></span>
     </dt>
-    <dd>{{% md %}}The port binding allows to specify binding information
+    <dd>The port binding allows to specify binding information
 for the port. The structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2124,9 +2124,9 @@ for the port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description of the floating IP. Changing
+    <dd>Human-readable description of the floating IP. Changing
 this updates the `description` of an existing port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2134,9 +2134,9 @@ this updates the `description` of an existing port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the device attached to the port. Changing this
+    <dd>The ID of the device attached to the port. Changing this
 creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2144,9 +2144,9 @@ creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The device owner of the Port. Changing this creates
+    <dd>The device owner of the Port. Changing this creates
 a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2154,8 +2154,8 @@ a new port.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}[]</span>
     </dt>
-    <dd>{{% md %}}The list of maps representing port DNS assignments.
-{{% /md %}}</dd>
+    <dd>The list of maps representing port DNS assignments.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2163,9 +2163,9 @@ a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The port DNS name. Available, when Neutron DNS extension
+    <dd>The port DNS name. Available, when Neutron DNS extension
 is enabled.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2173,10 +2173,10 @@ is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portextradhcpoption">Port<wbr>Extra<wbr>Dhcp<wbr>Option[]</a></span>
     </dt>
-    <dd>{{% md %}}An extra DHCP option that needs to be configured
+    <dd>An extra DHCP option that needs to be configured
 on the port. The structure is described below. Can be specified multiple
 times.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2184,9 +2184,9 @@ times.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portfixedip">Port<wbr>Fixed<wbr>Ip[]</a></span>
     </dt>
-    <dd>{{% md %}}An array of desired IPs for
+    <dd>An array of desired IPs for
 this port. The structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2194,8 +2194,8 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The additional MAC address.
-{{% /md %}}</dd>
+    <dd>The additional MAC address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2203,8 +2203,8 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Name of the DHCP option.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2212,9 +2212,9 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network to attach the port to. Changing
+    <dd>The ID of the network to attach the port to. Changing
 this creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2222,10 +2222,10 @@ this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Create a port with no fixed
+    <dd>Create a port with no fixed
 IP address. This will also remove any fixed IPs previously set on a port. `true`
 is the only valid value for this argument.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2233,12 +2233,12 @@ is the only valid value for this argument.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If set to
+    <dd>If set to
 `true`, then no security groups are applied to the port. If set to `false` and
 no `security_group_ids` are specified, then the Port will yield to the default
 behavior of the Networking service, which is to usually apply the "default"
 security group.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2246,13 +2246,13 @@ security group.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to explicitly enable or disable
+    <dd>Whether to explicitly enable or disable
 port security on the port. Port Security is usually enabled by default, so
 omitting argument will usually result in a value of "true". Setting this
 explicitly to `false` will disable port security. In order to disable port
 security, the port must not have any security groups. Valid values are `true`
 and `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2260,8 +2260,8 @@ and `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Reference to the associated QoS policy.
-{{% /md %}}</dd>
+    <dd>Reference to the associated QoS policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2269,11 +2269,11 @@ and `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 networking client.
+    <dd>The region in which to obtain the V2 networking client.
 A networking client is needed to create a port. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2281,11 +2281,11 @@ port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list
+    <dd>A list
 of security group IDs to apply to the port. The security groups must be
 specified by ID and not name (as opposed to how they are configured with
 the Compute Instance).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2293,8 +2293,8 @@ the Compute Instance).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the port.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2302,9 +2302,9 @@ the Compute Instance).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the Port. Required if admin wants
+    <dd>The owner of the Port. Required if admin wants
 to create a port for another tenant. Changing this creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2312,14 +2312,14 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2328,10 +2328,10 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Administrative up/down status for the port
+    <dd>Administrative up/down status for the port
 (must be "true" or "false" if provided). Changing this updates the
 `admin_state_up` of an existing port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2339,9 +2339,9 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Fixed IP addresses on the port in the
+    <dd>The collection of Fixed IP addresses on the port in the
 order returned by the Network v2 API.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2349,9 +2349,9 @@ order returned by the Network v2 API.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of Security Group IDs on the port
+    <dd>The collection of Security Group IDs on the port
 which have been explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2359,9 +2359,9 @@ which have been explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The collection of tags assigned on the port, which have been
+    <dd>The collection of tags assigned on the port, which have been
 explicitly and implicitly added.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2369,10 +2369,10 @@ explicitly and implicitly added.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portallowedaddresspair">List[Port<wbr>Allowed<wbr>Address<wbr>Pair]</a></span>
     </dt>
-    <dd>{{% md %}}An IP/MAC Address pair of additional IP
+    <dd>An IP/MAC Address pair of additional IP
 addresses that can be active on this port. The structure is described
 below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2380,9 +2380,9 @@ below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portbinding">Dict[Port<wbr>Binding]</a></span>
     </dt>
-    <dd>{{% md %}}The port binding allows to specify binding information
+    <dd>The port binding allows to specify binding information
 for the port. The structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2390,9 +2390,9 @@ for the port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Human-readable description of the floating IP. Changing
+    <dd>Human-readable description of the floating IP. Changing
 this updates the `description` of an existing port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2400,9 +2400,9 @@ this updates the `description` of an existing port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the device attached to the port. Changing this
+    <dd>The ID of the device attached to the port. Changing this
 creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2410,9 +2410,9 @@ creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The device owner of the Port. Changing this creates
+    <dd>The device owner of the Port. Changing this creates
 a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2420,8 +2420,8 @@ a new port.
         <span class="property-indicator"></span>
         <span class="property-type">List[Any>]</span>
     </dt>
-    <dd>{{% md %}}The list of maps representing port DNS assignments.
-{{% /md %}}</dd>
+    <dd>The list of maps representing port DNS assignments.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2429,9 +2429,9 @@ a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The port DNS name. Available, when Neutron DNS extension
+    <dd>The port DNS name. Available, when Neutron DNS extension
 is enabled.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2439,10 +2439,10 @@ is enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portextradhcpoption">List[Port<wbr>Extra<wbr>Dhcp<wbr>Option]</a></span>
     </dt>
-    <dd>{{% md %}}An extra DHCP option that needs to be configured
+    <dd>An extra DHCP option that needs to be configured
 on the port. The structure is described below. Can be specified multiple
 times.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2450,9 +2450,9 @@ times.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#portfixedip">List[Port<wbr>Fixed<wbr>Ip]</a></span>
     </dt>
-    <dd>{{% md %}}An array of desired IPs for
+    <dd>An array of desired IPs for
 this port. The structure is described below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2460,8 +2460,8 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The additional MAC address.
-{{% /md %}}</dd>
+    <dd>The additional MAC address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2469,8 +2469,8 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Name of the DHCP option.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2478,9 +2478,9 @@ this port. The structure is described below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network to attach the port to. Changing
+    <dd>The ID of the network to attach the port to. Changing
 this creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2488,10 +2488,10 @@ this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Create a port with no fixed
+    <dd>Create a port with no fixed
 IP address. This will also remove any fixed IPs previously set on a port. `true`
 is the only valid value for this argument.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2499,12 +2499,12 @@ is the only valid value for this argument.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to
+    <dd>If set to
 `true`, then no security groups are applied to the port. If set to `false` and
 no `security_group_ids` are specified, then the Port will yield to the default
 behavior of the Networking service, which is to usually apply the "default"
 security group.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2512,13 +2512,13 @@ security group.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to explicitly enable or disable
+    <dd>Whether to explicitly enable or disable
 port security on the port. Port Security is usually enabled by default, so
 omitting argument will usually result in a value of "true". Setting this
 explicitly to `false` will disable port security. In order to disable port
 security, the port must not have any security groups. Valid values are `true`
 and `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2526,8 +2526,8 @@ and `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Reference to the associated QoS policy.
-{{% /md %}}</dd>
+    <dd>Reference to the associated QoS policy.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2535,11 +2535,11 @@ and `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 networking client.
+    <dd>The region in which to obtain the V2 networking client.
 A networking client is needed to create a port. If omitted, the
 `region` argument of the provider is used. Changing this creates a new
 port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2547,11 +2547,11 @@ port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list
+    <dd>A list
 of security group IDs to apply to the port. The security groups must be
 specified by ID and not name (as opposed to how they are configured with
 the Compute Instance).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2559,8 +2559,8 @@ the Compute Instance).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A set of string tags for the port.
-{{% /md %}}</dd>
+    <dd>A set of string tags for the port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2568,9 +2568,9 @@ the Compute Instance).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The owner of the Port. Required if admin wants
+    <dd>The owner of the Port. Required if admin wants
 to create a port for another tenant. Changing this creates a new port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2578,11 +2578,11 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}Map of additional options.
-{{% /md %}}</dd>
+    <dd>Map of additional options.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2597,18 +2597,18 @@ to create a port for another tenant. Changing this creates a new port.
 
 
 <h4 id="portallowedaddresspair">Port<wbr>Allowed<wbr>Address<wbr>Pair</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/input/#PortAllowedAddressPair">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/output/#PortAllowedAddressPair">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#PortAllowedAddressPairArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#PortAllowedAddressPairOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2617,8 +2617,8 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The additional IP address.
-{{% /md %}}</dd>
+    <dd>The additional IP address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2626,14 +2626,14 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The additional MAC address.
-{{% /md %}}</dd>
+    <dd>The additional MAC address.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2642,8 +2642,8 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The additional IP address.
-{{% /md %}}</dd>
+    <dd>The additional IP address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2651,14 +2651,14 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The additional MAC address.
-{{% /md %}}</dd>
+    <dd>The additional MAC address.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2667,8 +2667,8 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The additional IP address.
-{{% /md %}}</dd>
+    <dd>The additional IP address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2676,14 +2676,14 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The additional MAC address.
-{{% /md %}}</dd>
+    <dd>The additional MAC address.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2692,8 +2692,8 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The additional IP address.
-{{% /md %}}</dd>
+    <dd>The additional IP address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2701,29 +2701,29 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The additional MAC address.
-{{% /md %}}</dd>
+    <dd>The additional MAC address.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="portbinding">Port<wbr>Binding</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/input/#PortBinding">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/output/#PortBinding">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#PortBindingArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#PortBindingOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2732,8 +2732,8 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the host to allocate port on.
-{{% /md %}}</dd>
+    <dd>The ID of the host to allocate port on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2741,9 +2741,9 @@ to create a port for another tenant. Changing this creates a new port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom data to be passed as `binding:profile`. Data
+    <dd>Custom data to be passed as `binding:profile`. Data
 must be passed as JSON.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2751,9 +2751,9 @@ must be passed as JSON.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of JSON strings containing additional
+    <dd>A map of JSON strings containing additional
 details for this specific binding.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2761,8 +2761,8 @@ details for this specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The VNIC type of the port binding.
-{{% /md %}}</dd>
+    <dd>The VNIC type of the port binding.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2770,16 +2770,16 @@ details for this specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}VNIC type for the port. Can either be `direct`,
+    <dd>VNIC type for the port. Can either be `direct`,
 `direct-physical`, `macvtap`, `normal`, `baremetal` or `virtio-forwarder`.
 Default value is `normal`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2788,8 +2788,8 @@ Default value is `normal`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the host to allocate port on.
-{{% /md %}}</dd>
+    <dd>The ID of the host to allocate port on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2797,9 +2797,9 @@ Default value is `normal`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom data to be passed as `binding:profile`. Data
+    <dd>Custom data to be passed as `binding:profile`. Data
 must be passed as JSON.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2807,9 +2807,9 @@ must be passed as JSON.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of JSON strings containing additional
+    <dd>A map of JSON strings containing additional
 details for this specific binding.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2817,8 +2817,8 @@ details for this specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The VNIC type of the port binding.
-{{% /md %}}</dd>
+    <dd>The VNIC type of the port binding.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2826,16 +2826,16 @@ details for this specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}VNIC type for the port. Can either be `direct`,
+    <dd>VNIC type for the port. Can either be `direct`,
 `direct-physical`, `macvtap`, `normal`, `baremetal` or `virtio-forwarder`.
 Default value is `normal`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2844,8 +2844,8 @@ Default value is `normal`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the host to allocate port on.
-{{% /md %}}</dd>
+    <dd>The ID of the host to allocate port on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2853,9 +2853,9 @@ Default value is `normal`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom data to be passed as `binding:profile`. Data
+    <dd>Custom data to be passed as `binding:profile`. Data
 must be passed as JSON.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2863,9 +2863,9 @@ must be passed as JSON.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of JSON strings containing additional
+    <dd>A map of JSON strings containing additional
 details for this specific binding.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2873,8 +2873,8 @@ details for this specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The VNIC type of the port binding.
-{{% /md %}}</dd>
+    <dd>The VNIC type of the port binding.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2882,16 +2882,16 @@ details for this specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}VNIC type for the port. Can either be `direct`,
+    <dd>VNIC type for the port. Can either be `direct`,
 `direct-physical`, `macvtap`, `normal`, `baremetal` or `virtio-forwarder`.
 Default value is `normal`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2900,8 +2900,8 @@ Default value is `normal`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the host to allocate port on.
-{{% /md %}}</dd>
+    <dd>The ID of the host to allocate port on.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2909,9 +2909,9 @@ Default value is `normal`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Custom data to be passed as `binding:profile`. Data
+    <dd>Custom data to be passed as `binding:profile`. Data
 must be passed as JSON.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2919,9 +2919,9 @@ must be passed as JSON.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of JSON strings containing additional
+    <dd>A map of JSON strings containing additional
 details for this specific binding.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2929,8 +2929,8 @@ details for this specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The VNIC type of the port binding.
-{{% /md %}}</dd>
+    <dd>The VNIC type of the port binding.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2938,31 +2938,31 @@ details for this specific binding.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}VNIC type for the port. Can either be `direct`,
+    <dd>VNIC type for the port. Can either be `direct`,
 `direct-physical`, `macvtap`, `normal`, `baremetal` or `virtio-forwarder`.
 Default value is `normal`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="portextradhcpoption">Port<wbr>Extra<wbr>Dhcp<wbr>Option</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/input/#PortExtraDhcpOption">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/output/#PortExtraDhcpOption">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#PortExtraDhcpOptionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#PortExtraDhcpOptionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2971,8 +2971,8 @@ Default value is `normal`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Name of the DHCP option.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2980,8 +2980,8 @@ Default value is `normal`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Value of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Value of the DHCP option.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2989,14 +2989,14 @@ Default value is `normal`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}IP protocol version. Defaults to 4.
-{{% /md %}}</dd>
+    <dd>IP protocol version. Defaults to 4.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3005,8 +3005,8 @@ Default value is `normal`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Name of the DHCP option.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3014,8 +3014,8 @@ Default value is `normal`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Value of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Value of the DHCP option.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3023,14 +3023,14 @@ Default value is `normal`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}IP protocol version. Defaults to 4.
-{{% /md %}}</dd>
+    <dd>IP protocol version. Defaults to 4.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3039,8 +3039,8 @@ Default value is `normal`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Name of the DHCP option.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3048,8 +3048,8 @@ Default value is `normal`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Value of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Value of the DHCP option.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3057,14 +3057,14 @@ Default value is `normal`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}IP protocol version. Defaults to 4.
-{{% /md %}}</dd>
+    <dd>IP protocol version. Defaults to 4.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3073,8 +3073,8 @@ Default value is `normal`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Name of the DHCP option.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3082,8 +3082,8 @@ Default value is `normal`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Value of the DHCP option.
-{{% /md %}}</dd>
+    <dd>Value of the DHCP option.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3091,29 +3091,29 @@ Default value is `normal`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}IP protocol version. Defaults to 4.
-{{% /md %}}</dd>
+    <dd>IP protocol version. Defaults to 4.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="portfixedip">Port<wbr>Fixed<wbr>Ip</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/input/#PortFixedIp">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/openstack/types/output/#PortFixedIp">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#PortFixedIpArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/networking?tab=doc#PortFixedIpOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3122,9 +3122,9 @@ Default value is `normal`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Subnet in which to allocate IP address for
+    <dd>Subnet in which to allocate IP address for
 this port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3132,14 +3132,14 @@ this port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The additional IP address.
-{{% /md %}}</dd>
+    <dd>The additional IP address.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3148,9 +3148,9 @@ this port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Subnet in which to allocate IP address for
+    <dd>Subnet in which to allocate IP address for
 this port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3158,14 +3158,14 @@ this port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The additional IP address.
-{{% /md %}}</dd>
+    <dd>The additional IP address.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3174,9 +3174,9 @@ this port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Subnet in which to allocate IP address for
+    <dd>Subnet in which to allocate IP address for
 this port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3184,14 +3184,14 @@ this port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The additional IP address.
-{{% /md %}}</dd>
+    <dd>The additional IP address.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3200,9 +3200,9 @@ this port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Subnet in which to allocate IP address for
+    <dd>Subnet in which to allocate IP address for
 this port.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3210,11 +3210,11 @@ this port.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The additional IP address.
-{{% /md %}}</dd>
+    <dd>The additional IP address.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

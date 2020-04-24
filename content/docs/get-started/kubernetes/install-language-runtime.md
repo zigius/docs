@@ -16,23 +16,23 @@ aliases: ["/docs/quickstart/kubernetes/install-language-runtime/"]
 
 ## Choose Your Language
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language "javascript,typescript" %}}
+
+
 {{< install-node >}}
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 {{< install-python >}}
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 {{< install-go >}}
-{{% /choosable %}}
 
-{{% choosable language "csharp,fsharp,visualbasic" %}}
+
+
 {{< install-dotnet >}}
-{{% /choosable %}}
+
 
 Next, we'll configure Kubernetes.
 

@@ -38,29 +38,29 @@ export const firstPolardbClusterId = polardbClustersDs.clusters[0].id;
 
 ## Using GetClusters {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getClusters<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/polardb/#GetClustersArgs">GetClustersArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/polardb/#GetClustersResult">GetClustersResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_clusters(</span>db_type=None<span class="p">, </span>description_regex=None<span class="p">, </span>ids=None<span class="p">, </span>output_file=None<span class="p">, </span>status=None<span class="p">, </span>tags=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupClusters<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/polardb?tab=doc#LookupClustersArgs">LookupClustersArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/polardb?tab=doc#LookupClustersResult">LookupClustersResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetClusters </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Polardb.GetClustersResult.html">GetClustersResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.PolarDB.GetClustersArgs.html">GetClustersArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -68,7 +68,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -77,8 +77,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -86,8 +86,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by cluster description.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by cluster description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -95,8 +95,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of PolarDB cluster IDs. 
-{{% /md %}}</dd>
+    <dd>A list of PolarDB cluster IDs. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -104,7 +104,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -112,8 +112,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}status of the cluster.
-{{% /md %}}</dd>
+    <dd>status of the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -121,16 +121,16 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
+    <dd>A mapping of tags to assign to the resource.
 - Key: It can be up to 64 characters in length. It cannot begin with "aliyun", "acs:", "http://", or "https://". It cannot be a null string.
 - Value: It can be up to 128 characters in length. It cannot begin with "aliyun", "acs:", "http://", or "https://". It can be a null string.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -139,8 +139,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -148,8 +148,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by cluster description.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by cluster description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -157,8 +157,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of PolarDB cluster IDs. 
-{{% /md %}}</dd>
+    <dd>A list of PolarDB cluster IDs. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -166,7 +166,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -174,8 +174,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}status of the cluster.
-{{% /md %}}</dd>
+    <dd>status of the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -183,16 +183,16 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
+    <dd>A mapping of tags to assign to the resource.
 - Key: It can be up to 64 characters in length. It cannot begin with "aliyun", "acs:", "http://", or "https://". It cannot be a null string.
 - Value: It can be up to 128 characters in length. It cannot begin with "aliyun", "acs:", "http://", or "https://". It can be a null string.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -201,8 +201,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -210,8 +210,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by cluster description.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by cluster description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -219,8 +219,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of PolarDB cluster IDs. 
-{{% /md %}}</dd>
+    <dd>A list of PolarDB cluster IDs. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -228,7 +228,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -236,8 +236,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}status of the cluster.
-{{% /md %}}</dd>
+    <dd>status of the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -245,16 +245,16 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
+    <dd>A mapping of tags to assign to the resource.
 - Key: It can be up to 64 characters in length. It cannot begin with "aliyun", "acs:", "http://", or "https://". It cannot be a null string.
 - Value: It can be up to 128 characters in length. It cannot begin with "aliyun", "acs:", "http://", or "https://". It can be a null string.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -263,8 +263,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -272,8 +272,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by cluster description.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by cluster description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -281,8 +281,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of PolarDB cluster IDs. 
-{{% /md %}}</dd>
+    <dd>A list of PolarDB cluster IDs. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -290,7 +290,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -298,8 +298,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}status of the cluster.
-{{% /md %}}</dd>
+    <dd>status of the cluster.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -307,13 +307,13 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
+    <dd>A mapping of tags to assign to the resource.
 - Key: It can be up to 64 characters in length. It cannot begin with "aliyun", "acs:", "http://", or "https://". It cannot be a null string.
 - Value: It can be up to 128 characters in length. It cannot begin with "aliyun", "acs:", "http://", or "https://". It can be a null string.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -329,7 +329,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -338,8 +338,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getclusterscluster">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Polar<wbr>DB.<wbr>Outputs.<wbr>Get<wbr>Clusters<wbr>Cluster&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of PolarDB clusters. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of PolarDB clusters. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -347,8 +347,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS cluster descriptions. 
-{{% /md %}}</dd>
+    <dd>A list of RDS cluster descriptions. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -356,8 +356,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -365,8 +365,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS cluster IDs. 
-{{% /md %}}</dd>
+    <dd>A list of RDS cluster IDs. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -374,8 +374,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}`Primary` for primary cluster, `ReadOnly` for read-only cluster, `Guard` for disaster recovery cluster, and `Temp` for temporary cluster.
-{{% /md %}}</dd>
+    <dd>`Primary` for primary cluster, `ReadOnly` for read-only cluster, `Guard` for disaster recovery cluster, and `Temp` for temporary cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -383,7 +383,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -391,7 +391,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -399,8 +399,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the cluster.
-{{% /md %}}</dd>
+    <dd>Status of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -408,13 +408,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -423,8 +423,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getclusterscluster">[]Get<wbr>Clusters<wbr>Cluster</a></span>
     </dt>
-    <dd>{{% md %}}A list of PolarDB clusters. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of PolarDB clusters. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -432,8 +432,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS cluster descriptions. 
-{{% /md %}}</dd>
+    <dd>A list of RDS cluster descriptions. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -441,8 +441,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -450,8 +450,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS cluster IDs. 
-{{% /md %}}</dd>
+    <dd>A list of RDS cluster IDs. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -459,8 +459,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}`Primary` for primary cluster, `ReadOnly` for read-only cluster, `Guard` for disaster recovery cluster, and `Temp` for temporary cluster.
-{{% /md %}}</dd>
+    <dd>`Primary` for primary cluster, `ReadOnly` for read-only cluster, `Guard` for disaster recovery cluster, and `Temp` for temporary cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -468,7 +468,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -476,7 +476,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -484,8 +484,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the cluster.
-{{% /md %}}</dd>
+    <dd>Status of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -493,13 +493,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -508,8 +508,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getclusterscluster">Get<wbr>Clusters<wbr>Cluster[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of PolarDB clusters. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of PolarDB clusters. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -517,8 +517,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS cluster descriptions. 
-{{% /md %}}</dd>
+    <dd>A list of RDS cluster descriptions. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -526,8 +526,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -535,8 +535,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS cluster IDs. 
-{{% /md %}}</dd>
+    <dd>A list of RDS cluster IDs. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -544,8 +544,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}`Primary` for primary cluster, `ReadOnly` for read-only cluster, `Guard` for disaster recovery cluster, and `Temp` for temporary cluster.
-{{% /md %}}</dd>
+    <dd>`Primary` for primary cluster, `ReadOnly` for read-only cluster, `Guard` for disaster recovery cluster, and `Temp` for temporary cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -553,7 +553,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -561,7 +561,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -569,8 +569,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the cluster.
-{{% /md %}}</dd>
+    <dd>Status of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -578,13 +578,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -593,8 +593,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getclusterscluster">List[Get<wbr>Clusters<wbr>Cluster]</a></span>
     </dt>
-    <dd>{{% md %}}A list of PolarDB clusters. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of PolarDB clusters. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -602,8 +602,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS cluster descriptions. 
-{{% /md %}}</dd>
+    <dd>A list of RDS cluster descriptions. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -611,8 +611,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -620,8 +620,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS cluster IDs. 
-{{% /md %}}</dd>
+    <dd>A list of RDS cluster IDs. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -629,8 +629,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}`Primary` for primary cluster, `ReadOnly` for read-only cluster, `Guard` for disaster recovery cluster, and `Temp` for temporary cluster.
-{{% /md %}}</dd>
+    <dd>`Primary` for primary cluster, `ReadOnly` for read-only cluster, `Guard` for disaster recovery cluster, and `Temp` for temporary cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -638,7 +638,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -646,7 +646,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -654,8 +654,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Status of the cluster.
-{{% /md %}}</dd>
+    <dd>Status of the cluster.
+</dd>
 
     <dt class="property-"
             title="">
@@ -663,10 +663,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -679,18 +679,18 @@ The following output properties are available:
 
 
 <h4 id="getclusterscluster">Get<wbr>Clusters<wbr>Cluster</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetClustersCluster">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/polardb?tab=doc#GetClustersCluster">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -699,8 +699,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Billing method. Value options: `PostPaid` for Pay-As-You-Go and `PrePaid` for subscription.
-{{% /md %}}</dd>
+    <dd>Billing method. Value options: `PostPaid` for Pay-As-You-Go and `PrePaid` for subscription.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -708,8 +708,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The create_time of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The create_time of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -717,8 +717,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The db_node_class of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The db_node_class of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -726,8 +726,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The DBNodeNumber of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The DBNodeNumber of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -735,8 +735,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getclustersclusterdbnode">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Polar<wbr>DB.<wbr>Inputs.<wbr>Get<wbr>Clusters<wbr>Cluster<wbr>Db<wbr>Node<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The DBNodes of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The DBNodes of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -744,8 +744,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -753,8 +753,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The DBVersion of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The DBVersion of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -762,8 +762,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The DeleteLock of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The DeleteLock of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -771,8 +771,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The description of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -780,8 +780,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -789,8 +789,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Expiration time. Pay-As-You-Go clusters never expire.
-{{% /md %}}</dd>
+    <dd>Expiration time. Pay-As-You-Go clusters never expire.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -798,8 +798,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The expired of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The expired of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -807,8 +807,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The ID of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -816,8 +816,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The LockMode of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The LockMode of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -825,8 +825,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The DBClusterNetworkType of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The DBClusterNetworkType of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -834,8 +834,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region_id of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The region_id of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -843,8 +843,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}status of the cluster.
-{{% /md %}}</dd>
+    <dd>status of the cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -852,8 +852,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The StorageUsed of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The StorageUsed of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -861,8 +861,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC the cluster belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC the cluster belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -870,14 +870,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone_id of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The zone_id of the db_nodes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -886,8 +886,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Billing method. Value options: `PostPaid` for Pay-As-You-Go and `PrePaid` for subscription.
-{{% /md %}}</dd>
+    <dd>Billing method. Value options: `PostPaid` for Pay-As-You-Go and `PrePaid` for subscription.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -895,8 +895,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The create_time of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The create_time of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -904,8 +904,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The db_node_class of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The db_node_class of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -913,8 +913,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The DBNodeNumber of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The DBNodeNumber of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -922,8 +922,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getclustersclusterdbnode">[]Get<wbr>Clusters<wbr>Cluster<wbr>Db<wbr>Node</a></span>
     </dt>
-    <dd>{{% md %}}The DBNodes of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The DBNodes of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -931,8 +931,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -940,8 +940,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DBVersion of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The DBVersion of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -949,8 +949,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The DeleteLock of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The DeleteLock of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -958,8 +958,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The description of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -967,8 +967,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -976,8 +976,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Expiration time. Pay-As-You-Go clusters never expire.
-{{% /md %}}</dd>
+    <dd>Expiration time. Pay-As-You-Go clusters never expire.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -985,8 +985,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The expired of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The expired of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -994,8 +994,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The ID of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1003,8 +1003,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The LockMode of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The LockMode of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1012,8 +1012,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DBClusterNetworkType of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The DBClusterNetworkType of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1021,8 +1021,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region_id of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The region_id of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1030,8 +1030,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}status of the cluster.
-{{% /md %}}</dd>
+    <dd>status of the cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1039,8 +1039,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The StorageUsed of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The StorageUsed of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1048,8 +1048,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC the cluster belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC the cluster belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1057,14 +1057,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone_id of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The zone_id of the db_nodes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1073,8 +1073,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Billing method. Value options: `PostPaid` for Pay-As-You-Go and `PrePaid` for subscription.
-{{% /md %}}</dd>
+    <dd>Billing method. Value options: `PostPaid` for Pay-As-You-Go and `PrePaid` for subscription.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1082,8 +1082,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The create_time of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The create_time of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1091,8 +1091,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The db_node_class of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The db_node_class of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1100,8 +1100,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The DBNodeNumber of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The DBNodeNumber of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1109,8 +1109,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getclustersclusterdbnode">Get<wbr>Clusters<wbr>Cluster<wbr>Db<wbr>Node[]</a></span>
     </dt>
-    <dd>{{% md %}}The DBNodes of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The DBNodes of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1118,8 +1118,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1127,8 +1127,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DBVersion of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The DBVersion of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1136,8 +1136,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The DeleteLock of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The DeleteLock of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1145,8 +1145,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The description of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1154,8 +1154,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1163,8 +1163,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Expiration time. Pay-As-You-Go clusters never expire.
-{{% /md %}}</dd>
+    <dd>Expiration time. Pay-As-You-Go clusters never expire.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1172,8 +1172,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The expired of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The expired of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1181,8 +1181,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The ID of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1190,8 +1190,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The LockMode of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The LockMode of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1199,8 +1199,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DBClusterNetworkType of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The DBClusterNetworkType of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1208,8 +1208,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region_id of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The region_id of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1217,8 +1217,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}status of the cluster.
-{{% /md %}}</dd>
+    <dd>status of the cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1226,8 +1226,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The StorageUsed of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The StorageUsed of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1235,8 +1235,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC the cluster belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC the cluster belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1244,14 +1244,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone_id of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The zone_id of the db_nodes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1260,8 +1260,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Billing method. Value options: `PostPaid` for Pay-As-You-Go and `PrePaid` for subscription.
-{{% /md %}}</dd>
+    <dd>Billing method. Value options: `PostPaid` for Pay-As-You-Go and `PrePaid` for subscription.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1269,8 +1269,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The create_time of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The create_time of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1278,8 +1278,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The DBNodeNumber of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The DBNodeNumber of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1287,8 +1287,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getclustersclusterdbnode">List[Get<wbr>Clusters<wbr>Cluster<wbr>Db<wbr>Node]</a></span>
     </dt>
-    <dd>{{% md %}}The DBNodes of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The DBNodes of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1296,8 +1296,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The db_node_class of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The db_node_class of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1305,8 +1305,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1314,8 +1314,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The DBVersion of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The DBVersion of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1323,8 +1323,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The DeleteLock of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The DeleteLock of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1332,8 +1332,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The description of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1341,8 +1341,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `Oracle` and `PostgreSQL`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1350,8 +1350,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Expiration time. Pay-As-You-Go clusters never expire.
-{{% /md %}}</dd>
+    <dd>Expiration time. Pay-As-You-Go clusters never expire.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1359,8 +1359,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The expired of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The expired of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1368,8 +1368,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The ID of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1377,8 +1377,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The LockMode of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The LockMode of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1386,8 +1386,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The DBClusterNetworkType of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The DBClusterNetworkType of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1395,8 +1395,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region_id of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The region_id of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1404,8 +1404,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}status of the cluster.
-{{% /md %}}</dd>
+    <dd>status of the cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1413,8 +1413,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The StorageUsed of the PolarDB cluster.
-{{% /md %}}</dd>
+    <dd>The StorageUsed of the PolarDB cluster.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1422,8 +1422,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC the cluster belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC the cluster belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1431,29 +1431,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The zone_id of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The zone_id of the db_nodes.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getclustersclusterdbnode">Get<wbr>Clusters<wbr>Cluster<wbr>Db<wbr>Node</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetClustersClusterDbNode">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/polardb?tab=doc#GetClustersClusterDbNode">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1462,8 +1462,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The create_time of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The create_time of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1471,8 +1471,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The db_node_class of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The db_node_class of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1480,8 +1480,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The db_node_id of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The db_node_id of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1489,8 +1489,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The db_node_role of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The db_node_role of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1498,8 +1498,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The db_node_status of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The db_node_status of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1507,8 +1507,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The max_connections of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The max_connections of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1516,8 +1516,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The max_iops of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The max_iops of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1525,8 +1525,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region_id of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The region_id of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1534,14 +1534,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone_id of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The zone_id of the db_nodes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1550,8 +1550,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The create_time of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The create_time of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1559,8 +1559,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The db_node_class of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The db_node_class of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1568,8 +1568,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The db_node_id of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The db_node_id of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1577,8 +1577,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The db_node_role of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The db_node_role of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1586,8 +1586,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The db_node_status of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The db_node_status of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1595,8 +1595,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The max_connections of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The max_connections of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1604,8 +1604,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The max_iops of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The max_iops of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1613,8 +1613,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region_id of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The region_id of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1622,14 +1622,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone_id of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The zone_id of the db_nodes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1638,8 +1638,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The create_time of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The create_time of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1647,8 +1647,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The db_node_class of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The db_node_class of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1656,8 +1656,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The db_node_id of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The db_node_id of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1665,8 +1665,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The db_node_role of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The db_node_role of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1674,8 +1674,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The db_node_status of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The db_node_status of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1683,8 +1683,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The max_connections of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The max_connections of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1692,8 +1692,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The max_iops of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The max_iops of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1701,8 +1701,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region_id of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The region_id of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1710,14 +1710,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone_id of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The zone_id of the db_nodes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1726,8 +1726,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The create_time of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The create_time of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1735,8 +1735,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The db_node_id of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The db_node_id of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1744,8 +1744,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The db_node_role of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The db_node_role of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1753,8 +1753,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The db_node_status of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The db_node_status of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1762,8 +1762,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The db_node_class of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The db_node_class of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1771,8 +1771,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The max_iops of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The max_iops of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1780,8 +1780,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The max_connections of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The max_connections of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1789,8 +1789,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region_id of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The region_id of the db_nodes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1798,11 +1798,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The zone_id of the db_nodes.
-{{% /md %}}</dd>
+    <dd>The zone_id of the db_nodes.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

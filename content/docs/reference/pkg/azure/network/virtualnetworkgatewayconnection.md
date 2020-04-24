@@ -18,26 +18,26 @@ Manages a connection in an existing Virtual Network Gateway.
 
 
 ## Create a VirtualNetworkGatewayConnection Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/network/#VirtualNetworkGatewayConnection">VirtualNetworkGatewayConnection</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/network/#VirtualNetworkGatewayConnectionArgs">VirtualNetworkGatewayConnectionArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">VirtualNetworkGatewayConnection</span><span class="p">(resource_name, opts=None, </span>authorization_key=None<span class="p">, </span>connection_protocol=None<span class="p">, </span>enable_bgp=None<span class="p">, </span>express_route_circuit_id=None<span class="p">, </span>express_route_gateway_bypass=None<span class="p">, </span>ipsec_policy=None<span class="p">, </span>local_network_gateway_id=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>peer_virtual_network_gateway_id=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>routing_weight=None<span class="p">, </span>shared_key=None<span class="p">, </span>tags=None<span class="p">, </span>type=None<span class="p">, </span>use_policy_based_traffic_selectors=None<span class="p">, </span>virtual_network_gateway_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewVirtualNetworkGatewayConnection<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#VirtualNetworkGatewayConnectionArgs">VirtualNetworkGatewayConnectionArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#VirtualNetworkGatewayConnection">VirtualNetworkGatewayConnection</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Network.VirtualNetworkGatewayConnection.html">VirtualNetworkGatewayConnection</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Network.VirtualNetworkGatewayConnectionArgs.html">VirtualNetworkGatewayConnectionArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ Manages a connection in an existing Virtual Network Gateway.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ Manages a connection in an existing Virtual Network Gateway.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ Manages a connection in an existing Virtual Network Gateway.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ Manages a connection in an existing Virtual Network Gateway.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## VirtualNetworkGatewayConnection Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The VirtualNetworkGatewayConnection resource accepts the following [input]({{< r
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -204,9 +204,9 @@ The VirtualNetworkGatewayConnection resource accepts the following [input]({{< r
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the connection Changing the name forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -214,12 +214,12 @@ create the connection Changing the name forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of connection. Valid options are `IPsec`
+    <dd>The type of connection. Valid options are `IPsec`
 (Site-to-Site), `ExpressRoute` (ExpressRoute), and `Vnet2Vnet` (VNet-to-VNet).
 Each connection type requires different mandatory arguments (refer to the
 examples above). Changing the connection type will force a new connection
 to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -227,10 +227,10 @@ to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network Gateway
+    <dd>The ID of the Virtual Network Gateway
 in which the connection will be created. Changing the gateway forces a new
 resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -238,10 +238,10 @@ resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The authorization key associated with the
+    <dd>The authorization key associated with the
 Express Route Circuit. This field is required only if the type is an
 ExpressRoute connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -249,11 +249,11 @@ ExpressRoute connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE protocol version to use. Possible
+    <dd>The IKE protocol version to use. Possible
 values are `IKEv1` and `IKEv2`. Defaults to `IKEv2`.
 Changing this value will force a resource to be created.
 > **Note**: Only valid for `IPSec` connections on virtual network gateways with SKU `VpnGw1`, `VpnGw2`, `VpnGw3`, `VpnGw1AZ`, `VpnGw2AZ` or `VpnGw3AZ`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -261,9 +261,9 @@ Changing this value will force a resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, BGP (Border Gateway Protocol) is enabled
+    <dd>If `true`, BGP (Border Gateway Protocol) is enabled
 for this connection. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -271,10 +271,10 @@ for this connection. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Express Route Circuit
+    <dd>The ID of the Express Route Circuit
 when creating an ExpressRoute connection (i.e. when `type` is `ExpressRoute`).
 The Express Route Circuit can be in the same or in a different subscription.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -282,8 +282,8 @@ The Express Route Circuit can be in the same or in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, data packets will bypass ExpressRoute Gateway for data forwarding This is only valid for ExpressRoute connections.
-{{% /md %}}</dd>
+    <dd>If `true`, data packets will bypass ExpressRoute Gateway for data forwarding This is only valid for ExpressRoute connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -291,10 +291,10 @@ The Express Route Circuit can be in the same or in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnetworkgatewayconnectionipsecpolicy">Virtual<wbr>Network<wbr>Gateway<wbr>Connection<wbr>Ipsec<wbr>Policy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `ipsec_policy` block which is documented below.
+    <dd>A `ipsec_policy` block which is documented below.
 Only a single policy can be defined for a connection. For details on
 custom policies refer to [the relevant section in the Azure documentation](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-ipsecikepolicy-rm-powershell).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -302,9 +302,9 @@ custom policies refer to [the relevant section in the Azure documentation](https
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the local network gateway
+    <dd>The ID of the local network gateway
 when creating Site-to-Site connection (i.e. when `type` is `IPsec`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -312,9 +312,9 @@ when creating Site-to-Site connection (i.e. when `type` is `IPsec`).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The location/region where the connection is
+    <dd>The location/region where the connection is
 located. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -322,9 +322,9 @@ located. Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection. Changing the name forces a
+    <dd>The name of the connection. Changing the name forces a
 new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,11 +332,11 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the peer virtual
+    <dd>The ID of the peer virtual
 network gateway when creating a VNet-to-VNet connection (i.e. when `type`
 is `Vnet2Vnet`). The peer Virtual Network Gateway can be in the same or
 in a different subscription.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -344,8 +344,8 @@ in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The routing weight. Defaults to `10`.
-{{% /md %}}</dd>
+    <dd>The routing weight. Defaults to `10`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -353,10 +353,10 @@ in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The shared IPSec key. A key must be provided if a
+    <dd>The shared IPSec key. A key must be provided if a
 Site-to-Site or VNet-to-VNet connection is created whereas ExpressRoute
 connections do not need a shared key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -364,8 +364,8 @@ connections do not need a shared key.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -373,16 +373,16 @@ connections do not need a shared key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, policy-based traffic
+    <dd>If `true`, policy-based traffic
 selectors are enabled for this connection. Enabling policy-based traffic
 selectors requires an `ipsec_policy` block. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -391,9 +391,9 @@ selectors requires an `ipsec_policy` block. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the connection Changing the name forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -401,12 +401,12 @@ create the connection Changing the name forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of connection. Valid options are `IPsec`
+    <dd>The type of connection. Valid options are `IPsec`
 (Site-to-Site), `ExpressRoute` (ExpressRoute), and `Vnet2Vnet` (VNet-to-VNet).
 Each connection type requires different mandatory arguments (refer to the
 examples above). Changing the connection type will force a new connection
 to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -414,10 +414,10 @@ to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network Gateway
+    <dd>The ID of the Virtual Network Gateway
 in which the connection will be created. Changing the gateway forces a new
 resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -425,10 +425,10 @@ resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The authorization key associated with the
+    <dd>The authorization key associated with the
 Express Route Circuit. This field is required only if the type is an
 ExpressRoute connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -436,11 +436,11 @@ ExpressRoute connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE protocol version to use. Possible
+    <dd>The IKE protocol version to use. Possible
 values are `IKEv1` and `IKEv2`. Defaults to `IKEv2`.
 Changing this value will force a resource to be created.
 > **Note**: Only valid for `IPSec` connections on virtual network gateways with SKU `VpnGw1`, `VpnGw2`, `VpnGw3`, `VpnGw1AZ`, `VpnGw2AZ` or `VpnGw3AZ`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -448,9 +448,9 @@ Changing this value will force a resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, BGP (Border Gateway Protocol) is enabled
+    <dd>If `true`, BGP (Border Gateway Protocol) is enabled
 for this connection. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -458,10 +458,10 @@ for this connection. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Express Route Circuit
+    <dd>The ID of the Express Route Circuit
 when creating an ExpressRoute connection (i.e. when `type` is `ExpressRoute`).
 The Express Route Circuit can be in the same or in a different subscription.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -469,8 +469,8 @@ The Express Route Circuit can be in the same or in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, data packets will bypass ExpressRoute Gateway for data forwarding This is only valid for ExpressRoute connections.
-{{% /md %}}</dd>
+    <dd>If `true`, data packets will bypass ExpressRoute Gateway for data forwarding This is only valid for ExpressRoute connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -478,10 +478,10 @@ The Express Route Circuit can be in the same or in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnetworkgatewayconnectionipsecpolicy">Virtual<wbr>Network<wbr>Gateway<wbr>Connection<wbr>Ipsec<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}A `ipsec_policy` block which is documented below.
+    <dd>A `ipsec_policy` block which is documented below.
 Only a single policy can be defined for a connection. For details on
 custom policies refer to [the relevant section in the Azure documentation](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-ipsecikepolicy-rm-powershell).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -489,9 +489,9 @@ custom policies refer to [the relevant section in the Azure documentation](https
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the local network gateway
+    <dd>The ID of the local network gateway
 when creating Site-to-Site connection (i.e. when `type` is `IPsec`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -499,9 +499,9 @@ when creating Site-to-Site connection (i.e. when `type` is `IPsec`).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location/region where the connection is
+    <dd>The location/region where the connection is
 located. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -509,9 +509,9 @@ located. Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection. Changing the name forces a
+    <dd>The name of the connection. Changing the name forces a
 new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -519,11 +519,11 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the peer virtual
+    <dd>The ID of the peer virtual
 network gateway when creating a VNet-to-VNet connection (i.e. when `type`
 is `Vnet2Vnet`). The peer Virtual Network Gateway can be in the same or
 in a different subscription.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -531,8 +531,8 @@ in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The routing weight. Defaults to `10`.
-{{% /md %}}</dd>
+    <dd>The routing weight. Defaults to `10`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -540,10 +540,10 @@ in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The shared IPSec key. A key must be provided if a
+    <dd>The shared IPSec key. A key must be provided if a
 Site-to-Site or VNet-to-VNet connection is created whereas ExpressRoute
 connections do not need a shared key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -551,8 +551,8 @@ connections do not need a shared key.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -560,16 +560,16 @@ connections do not need a shared key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, policy-based traffic
+    <dd>If `true`, policy-based traffic
 selectors are enabled for this connection. Enabling policy-based traffic
 selectors requires an `ipsec_policy` block. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -578,9 +578,9 @@ selectors requires an `ipsec_policy` block. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the connection Changing the name forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -588,12 +588,12 @@ create the connection Changing the name forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of connection. Valid options are `IPsec`
+    <dd>The type of connection. Valid options are `IPsec`
 (Site-to-Site), `ExpressRoute` (ExpressRoute), and `Vnet2Vnet` (VNet-to-VNet).
 Each connection type requires different mandatory arguments (refer to the
 examples above). Changing the connection type will force a new connection
 to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -601,10 +601,10 @@ to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network Gateway
+    <dd>The ID of the Virtual Network Gateway
 in which the connection will be created. Changing the gateway forces a new
 resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -612,10 +612,10 @@ resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The authorization key associated with the
+    <dd>The authorization key associated with the
 Express Route Circuit. This field is required only if the type is an
 ExpressRoute connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -623,11 +623,11 @@ ExpressRoute connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE protocol version to use. Possible
+    <dd>The IKE protocol version to use. Possible
 values are `IKEv1` and `IKEv2`. Defaults to `IKEv2`.
 Changing this value will force a resource to be created.
 > **Note**: Only valid for `IPSec` connections on virtual network gateways with SKU `VpnGw1`, `VpnGw2`, `VpnGw3`, `VpnGw1AZ`, `VpnGw2AZ` or `VpnGw3AZ`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -635,9 +635,9 @@ Changing this value will force a resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, BGP (Border Gateway Protocol) is enabled
+    <dd>If `true`, BGP (Border Gateway Protocol) is enabled
 for this connection. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -645,10 +645,10 @@ for this connection. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Express Route Circuit
+    <dd>The ID of the Express Route Circuit
 when creating an ExpressRoute connection (i.e. when `type` is `ExpressRoute`).
 The Express Route Circuit can be in the same or in a different subscription.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -656,8 +656,8 @@ The Express Route Circuit can be in the same or in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, data packets will bypass ExpressRoute Gateway for data forwarding This is only valid for ExpressRoute connections.
-{{% /md %}}</dd>
+    <dd>If `true`, data packets will bypass ExpressRoute Gateway for data forwarding This is only valid for ExpressRoute connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -665,10 +665,10 @@ The Express Route Circuit can be in the same or in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnetworkgatewayconnectionipsecpolicy">Virtual<wbr>Network<wbr>Gateway<wbr>Connection<wbr>Ipsec<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}A `ipsec_policy` block which is documented below.
+    <dd>A `ipsec_policy` block which is documented below.
 Only a single policy can be defined for a connection. For details on
 custom policies refer to [the relevant section in the Azure documentation](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-ipsecikepolicy-rm-powershell).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -676,9 +676,9 @@ custom policies refer to [the relevant section in the Azure documentation](https
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the local network gateway
+    <dd>The ID of the local network gateway
 when creating Site-to-Site connection (i.e. when `type` is `IPsec`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -686,9 +686,9 @@ when creating Site-to-Site connection (i.e. when `type` is `IPsec`).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location/region where the connection is
+    <dd>The location/region where the connection is
 located. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -696,9 +696,9 @@ located. Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection. Changing the name forces a
+    <dd>The name of the connection. Changing the name forces a
 new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -706,11 +706,11 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the peer virtual
+    <dd>The ID of the peer virtual
 network gateway when creating a VNet-to-VNet connection (i.e. when `type`
 is `Vnet2Vnet`). The peer Virtual Network Gateway can be in the same or
 in a different subscription.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -718,8 +718,8 @@ in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The routing weight. Defaults to `10`.
-{{% /md %}}</dd>
+    <dd>The routing weight. Defaults to `10`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -727,10 +727,10 @@ in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The shared IPSec key. A key must be provided if a
+    <dd>The shared IPSec key. A key must be provided if a
 Site-to-Site or VNet-to-VNet connection is created whereas ExpressRoute
 connections do not need a shared key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -738,8 +738,8 @@ connections do not need a shared key.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -747,16 +747,16 @@ connections do not need a shared key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, policy-based traffic
+    <dd>If `true`, policy-based traffic
 selectors are enabled for this connection. Enabling policy-based traffic
 selectors requires an `ipsec_policy` block. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -765,9 +765,9 @@ selectors requires an `ipsec_policy` block. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the connection Changing the name forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -775,12 +775,12 @@ create the connection Changing the name forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of connection. Valid options are `IPsec`
+    <dd>The type of connection. Valid options are `IPsec`
 (Site-to-Site), `ExpressRoute` (ExpressRoute), and `Vnet2Vnet` (VNet-to-VNet).
 Each connection type requires different mandatory arguments (refer to the
 examples above). Changing the connection type will force a new connection
 to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -788,10 +788,10 @@ to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network Gateway
+    <dd>The ID of the Virtual Network Gateway
 in which the connection will be created. Changing the gateway forces a new
 resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -799,10 +799,10 @@ resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The authorization key associated with the
+    <dd>The authorization key associated with the
 Express Route Circuit. This field is required only if the type is an
 ExpressRoute connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -810,11 +810,11 @@ ExpressRoute connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IKE protocol version to use. Possible
+    <dd>The IKE protocol version to use. Possible
 values are `IKEv1` and `IKEv2`. Defaults to `IKEv2`.
 Changing this value will force a resource to be created.
 > **Note**: Only valid for `IPSec` connections on virtual network gateways with SKU `VpnGw1`, `VpnGw2`, `VpnGw3`, `VpnGw1AZ`, `VpnGw2AZ` or `VpnGw3AZ`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -822,9 +822,9 @@ Changing this value will force a resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, BGP (Border Gateway Protocol) is enabled
+    <dd>If `true`, BGP (Border Gateway Protocol) is enabled
 for this connection. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -832,10 +832,10 @@ for this connection. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Express Route Circuit
+    <dd>The ID of the Express Route Circuit
 when creating an ExpressRoute connection (i.e. when `type` is `ExpressRoute`).
 The Express Route Circuit can be in the same or in a different subscription.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -843,8 +843,8 @@ The Express Route Circuit can be in the same or in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, data packets will bypass ExpressRoute Gateway for data forwarding This is only valid for ExpressRoute connections.
-{{% /md %}}</dd>
+    <dd>If `true`, data packets will bypass ExpressRoute Gateway for data forwarding This is only valid for ExpressRoute connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -852,10 +852,10 @@ The Express Route Circuit can be in the same or in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnetworkgatewayconnectionipsecpolicy">Dict[Virtual<wbr>Network<wbr>Gateway<wbr>Connection<wbr>Ipsec<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}A `ipsec_policy` block which is documented below.
+    <dd>A `ipsec_policy` block which is documented below.
 Only a single policy can be defined for a connection. For details on
 custom policies refer to [the relevant section in the Azure documentation](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-ipsecikepolicy-rm-powershell).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -863,9 +863,9 @@ custom policies refer to [the relevant section in the Azure documentation](https
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the local network gateway
+    <dd>The ID of the local network gateway
 when creating Site-to-Site connection (i.e. when `type` is `IPsec`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -873,9 +873,9 @@ when creating Site-to-Site connection (i.e. when `type` is `IPsec`).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The location/region where the connection is
+    <dd>The location/region where the connection is
 located. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -883,9 +883,9 @@ located. Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection. Changing the name forces a
+    <dd>The name of the connection. Changing the name forces a
 new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -893,11 +893,11 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the peer virtual
+    <dd>The ID of the peer virtual
 network gateway when creating a VNet-to-VNet connection (i.e. when `type`
 is `Vnet2Vnet`). The peer Virtual Network Gateway can be in the same or
 in a different subscription.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -905,8 +905,8 @@ in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The routing weight. Defaults to `10`.
-{{% /md %}}</dd>
+    <dd>The routing weight. Defaults to `10`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -914,10 +914,10 @@ in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The shared IPSec key. A key must be provided if a
+    <dd>The shared IPSec key. A key must be provided if a
 Site-to-Site or VNet-to-VNet connection is created whereas ExpressRoute
 connections do not need a shared key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -925,8 +925,8 @@ connections do not need a shared key.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -934,13 +934,13 @@ connections do not need a shared key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, policy-based traffic
+    <dd>If `true`, policy-based traffic
 selectors are enabled for this connection. Enabling policy-based traffic
 selectors requires an `ipsec_policy` block. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -954,7 +954,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -963,13 +963,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -978,13 +978,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -993,13 +993,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1008,10 +1008,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1022,25 +1022,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing VirtualNetworkGatewayConnection Resource {#look-up}
 
 Get an existing VirtualNetworkGatewayConnection resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/network/#VirtualNetworkGatewayConnectionState">VirtualNetworkGatewayConnectionState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/network/#VirtualNetworkGatewayConnection">VirtualNetworkGatewayConnection</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>authorization_key=None<span class="p">, </span>connection_protocol=None<span class="p">, </span>enable_bgp=None<span class="p">, </span>express_route_circuit_id=None<span class="p">, </span>express_route_gateway_bypass=None<span class="p">, </span>ipsec_policy=None<span class="p">, </span>local_network_gateway_id=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>peer_virtual_network_gateway_id=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>routing_weight=None<span class="p">, </span>shared_key=None<span class="p">, </span>tags=None<span class="p">, </span>type=None<span class="p">, </span>use_policy_based_traffic_selectors=None<span class="p">, </span>virtual_network_gateway_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetVirtualNetworkGatewayConnection<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#VirtualNetworkGatewayConnectionState">VirtualNetworkGatewayConnectionState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#VirtualNetworkGatewayConnection">VirtualNetworkGatewayConnection</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Network.VirtualNetworkGatewayConnection.html">VirtualNetworkGatewayConnection</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Network.VirtualNetworkGatewayConnectionState.html">VirtualNetworkGatewayConnectionState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1065,9 +1065,9 @@ Get an existing VirtualNetworkGatewayConnection resource's state with the given 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1080,36 +1080,9 @@ Get an existing VirtualNetworkGatewayConnection resource's state with the given 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1134,13 +1107,40 @@ Get an existing VirtualNetworkGatewayConnection resource's state with the given 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1149,10 +1149,10 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The authorization key associated with the
+    <dd>The authorization key associated with the
 Express Route Circuit. This field is required only if the type is an
 ExpressRoute connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1160,11 +1160,11 @@ ExpressRoute connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE protocol version to use. Possible
+    <dd>The IKE protocol version to use. Possible
 values are `IKEv1` and `IKEv2`. Defaults to `IKEv2`.
 Changing this value will force a resource to be created.
 > **Note**: Only valid for `IPSec` connections on virtual network gateways with SKU `VpnGw1`, `VpnGw2`, `VpnGw3`, `VpnGw1AZ`, `VpnGw2AZ` or `VpnGw3AZ`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,9 +1172,9 @@ Changing this value will force a resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, BGP (Border Gateway Protocol) is enabled
+    <dd>If `true`, BGP (Border Gateway Protocol) is enabled
 for this connection. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1182,10 +1182,10 @@ for this connection. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Express Route Circuit
+    <dd>The ID of the Express Route Circuit
 when creating an ExpressRoute connection (i.e. when `type` is `ExpressRoute`).
 The Express Route Circuit can be in the same or in a different subscription.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1193,8 +1193,8 @@ The Express Route Circuit can be in the same or in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, data packets will bypass ExpressRoute Gateway for data forwarding This is only valid for ExpressRoute connections.
-{{% /md %}}</dd>
+    <dd>If `true`, data packets will bypass ExpressRoute Gateway for data forwarding This is only valid for ExpressRoute connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1202,10 +1202,10 @@ The Express Route Circuit can be in the same or in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnetworkgatewayconnectionipsecpolicy">Virtual<wbr>Network<wbr>Gateway<wbr>Connection<wbr>Ipsec<wbr>Policy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `ipsec_policy` block which is documented below.
+    <dd>A `ipsec_policy` block which is documented below.
 Only a single policy can be defined for a connection. For details on
 custom policies refer to [the relevant section in the Azure documentation](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-ipsecikepolicy-rm-powershell).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1213,9 +1213,9 @@ custom policies refer to [the relevant section in the Azure documentation](https
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the local network gateway
+    <dd>The ID of the local network gateway
 when creating Site-to-Site connection (i.e. when `type` is `IPsec`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1223,9 +1223,9 @@ when creating Site-to-Site connection (i.e. when `type` is `IPsec`).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The location/region where the connection is
+    <dd>The location/region where the connection is
 located. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1233,9 +1233,9 @@ located. Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection. Changing the name forces a
+    <dd>The name of the connection. Changing the name forces a
 new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1243,11 +1243,11 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the peer virtual
+    <dd>The ID of the peer virtual
 network gateway when creating a VNet-to-VNet connection (i.e. when `type`
 is `Vnet2Vnet`). The peer Virtual Network Gateway can be in the same or
 in a different subscription.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1255,9 +1255,9 @@ in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the connection Changing the name forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1265,8 +1265,8 @@ create the connection Changing the name forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The routing weight. Defaults to `10`.
-{{% /md %}}</dd>
+    <dd>The routing weight. Defaults to `10`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1274,10 +1274,10 @@ create the connection Changing the name forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The shared IPSec key. A key must be provided if a
+    <dd>The shared IPSec key. A key must be provided if a
 Site-to-Site or VNet-to-VNet connection is created whereas ExpressRoute
 connections do not need a shared key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1285,8 +1285,8 @@ connections do not need a shared key.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1294,12 +1294,12 @@ connections do not need a shared key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of connection. Valid options are `IPsec`
+    <dd>The type of connection. Valid options are `IPsec`
 (Site-to-Site), `ExpressRoute` (ExpressRoute), and `Vnet2Vnet` (VNet-to-VNet).
 Each connection type requires different mandatory arguments (refer to the
 examples above). Changing the connection type will force a new connection
 to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1307,10 +1307,10 @@ to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, policy-based traffic
+    <dd>If `true`, policy-based traffic
 selectors are enabled for this connection. Enabling policy-based traffic
 selectors requires an `ipsec_policy` block. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1318,16 +1318,16 @@ selectors requires an `ipsec_policy` block. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network Gateway
+    <dd>The ID of the Virtual Network Gateway
 in which the connection will be created. Changing the gateway forces a new
 resource to be created.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1336,10 +1336,10 @@ resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The authorization key associated with the
+    <dd>The authorization key associated with the
 Express Route Circuit. This field is required only if the type is an
 ExpressRoute connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1347,11 +1347,11 @@ ExpressRoute connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE protocol version to use. Possible
+    <dd>The IKE protocol version to use. Possible
 values are `IKEv1` and `IKEv2`. Defaults to `IKEv2`.
 Changing this value will force a resource to be created.
 > **Note**: Only valid for `IPSec` connections on virtual network gateways with SKU `VpnGw1`, `VpnGw2`, `VpnGw3`, `VpnGw1AZ`, `VpnGw2AZ` or `VpnGw3AZ`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1359,9 +1359,9 @@ Changing this value will force a resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, BGP (Border Gateway Protocol) is enabled
+    <dd>If `true`, BGP (Border Gateway Protocol) is enabled
 for this connection. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1369,10 +1369,10 @@ for this connection. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Express Route Circuit
+    <dd>The ID of the Express Route Circuit
 when creating an ExpressRoute connection (i.e. when `type` is `ExpressRoute`).
 The Express Route Circuit can be in the same or in a different subscription.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1380,8 +1380,8 @@ The Express Route Circuit can be in the same or in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, data packets will bypass ExpressRoute Gateway for data forwarding This is only valid for ExpressRoute connections.
-{{% /md %}}</dd>
+    <dd>If `true`, data packets will bypass ExpressRoute Gateway for data forwarding This is only valid for ExpressRoute connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1389,10 +1389,10 @@ The Express Route Circuit can be in the same or in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnetworkgatewayconnectionipsecpolicy">Virtual<wbr>Network<wbr>Gateway<wbr>Connection<wbr>Ipsec<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}A `ipsec_policy` block which is documented below.
+    <dd>A `ipsec_policy` block which is documented below.
 Only a single policy can be defined for a connection. For details on
 custom policies refer to [the relevant section in the Azure documentation](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-ipsecikepolicy-rm-powershell).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1400,9 +1400,9 @@ custom policies refer to [the relevant section in the Azure documentation](https
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the local network gateway
+    <dd>The ID of the local network gateway
 when creating Site-to-Site connection (i.e. when `type` is `IPsec`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1410,9 +1410,9 @@ when creating Site-to-Site connection (i.e. when `type` is `IPsec`).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location/region where the connection is
+    <dd>The location/region where the connection is
 located. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1420,9 +1420,9 @@ located. Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection. Changing the name forces a
+    <dd>The name of the connection. Changing the name forces a
 new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1430,11 +1430,11 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the peer virtual
+    <dd>The ID of the peer virtual
 network gateway when creating a VNet-to-VNet connection (i.e. when `type`
 is `Vnet2Vnet`). The peer Virtual Network Gateway can be in the same or
 in a different subscription.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1442,9 +1442,9 @@ in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the connection Changing the name forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1452,8 +1452,8 @@ create the connection Changing the name forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The routing weight. Defaults to `10`.
-{{% /md %}}</dd>
+    <dd>The routing weight. Defaults to `10`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1461,10 +1461,10 @@ create the connection Changing the name forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The shared IPSec key. A key must be provided if a
+    <dd>The shared IPSec key. A key must be provided if a
 Site-to-Site or VNet-to-VNet connection is created whereas ExpressRoute
 connections do not need a shared key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1472,8 +1472,8 @@ connections do not need a shared key.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1481,12 +1481,12 @@ connections do not need a shared key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of connection. Valid options are `IPsec`
+    <dd>The type of connection. Valid options are `IPsec`
 (Site-to-Site), `ExpressRoute` (ExpressRoute), and `Vnet2Vnet` (VNet-to-VNet).
 Each connection type requires different mandatory arguments (refer to the
 examples above). Changing the connection type will force a new connection
 to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1494,10 +1494,10 @@ to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, policy-based traffic
+    <dd>If `true`, policy-based traffic
 selectors are enabled for this connection. Enabling policy-based traffic
 selectors requires an `ipsec_policy` block. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1505,16 +1505,16 @@ selectors requires an `ipsec_policy` block. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network Gateway
+    <dd>The ID of the Virtual Network Gateway
 in which the connection will be created. Changing the gateway forces a new
 resource to be created.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1523,10 +1523,10 @@ resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The authorization key associated with the
+    <dd>The authorization key associated with the
 Express Route Circuit. This field is required only if the type is an
 ExpressRoute connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1534,11 +1534,11 @@ ExpressRoute connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE protocol version to use. Possible
+    <dd>The IKE protocol version to use. Possible
 values are `IKEv1` and `IKEv2`. Defaults to `IKEv2`.
 Changing this value will force a resource to be created.
 > **Note**: Only valid for `IPSec` connections on virtual network gateways with SKU `VpnGw1`, `VpnGw2`, `VpnGw3`, `VpnGw1AZ`, `VpnGw2AZ` or `VpnGw3AZ`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1546,9 +1546,9 @@ Changing this value will force a resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, BGP (Border Gateway Protocol) is enabled
+    <dd>If `true`, BGP (Border Gateway Protocol) is enabled
 for this connection. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1556,10 +1556,10 @@ for this connection. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Express Route Circuit
+    <dd>The ID of the Express Route Circuit
 when creating an ExpressRoute connection (i.e. when `type` is `ExpressRoute`).
 The Express Route Circuit can be in the same or in a different subscription.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1567,8 +1567,8 @@ The Express Route Circuit can be in the same or in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, data packets will bypass ExpressRoute Gateway for data forwarding This is only valid for ExpressRoute connections.
-{{% /md %}}</dd>
+    <dd>If `true`, data packets will bypass ExpressRoute Gateway for data forwarding This is only valid for ExpressRoute connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1576,10 +1576,10 @@ The Express Route Circuit can be in the same or in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnetworkgatewayconnectionipsecpolicy">Virtual<wbr>Network<wbr>Gateway<wbr>Connection<wbr>Ipsec<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}A `ipsec_policy` block which is documented below.
+    <dd>A `ipsec_policy` block which is documented below.
 Only a single policy can be defined for a connection. For details on
 custom policies refer to [the relevant section in the Azure documentation](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-ipsecikepolicy-rm-powershell).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1587,9 +1587,9 @@ custom policies refer to [the relevant section in the Azure documentation](https
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the local network gateway
+    <dd>The ID of the local network gateway
 when creating Site-to-Site connection (i.e. when `type` is `IPsec`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1597,9 +1597,9 @@ when creating Site-to-Site connection (i.e. when `type` is `IPsec`).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location/region where the connection is
+    <dd>The location/region where the connection is
 located. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1607,9 +1607,9 @@ located. Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection. Changing the name forces a
+    <dd>The name of the connection. Changing the name forces a
 new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1617,11 +1617,11 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the peer virtual
+    <dd>The ID of the peer virtual
 network gateway when creating a VNet-to-VNet connection (i.e. when `type`
 is `Vnet2Vnet`). The peer Virtual Network Gateway can be in the same or
 in a different subscription.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1629,9 +1629,9 @@ in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the connection Changing the name forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1639,8 +1639,8 @@ create the connection Changing the name forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The routing weight. Defaults to `10`.
-{{% /md %}}</dd>
+    <dd>The routing weight. Defaults to `10`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1648,10 +1648,10 @@ create the connection Changing the name forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The shared IPSec key. A key must be provided if a
+    <dd>The shared IPSec key. A key must be provided if a
 Site-to-Site or VNet-to-VNet connection is created whereas ExpressRoute
 connections do not need a shared key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1659,8 +1659,8 @@ connections do not need a shared key.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1668,12 +1668,12 @@ connections do not need a shared key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of connection. Valid options are `IPsec`
+    <dd>The type of connection. Valid options are `IPsec`
 (Site-to-Site), `ExpressRoute` (ExpressRoute), and `Vnet2Vnet` (VNet-to-VNet).
 Each connection type requires different mandatory arguments (refer to the
 examples above). Changing the connection type will force a new connection
 to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1681,10 +1681,10 @@ to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, policy-based traffic
+    <dd>If `true`, policy-based traffic
 selectors are enabled for this connection. Enabling policy-based traffic
 selectors requires an `ipsec_policy` block. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1692,16 +1692,16 @@ selectors requires an `ipsec_policy` block. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network Gateway
+    <dd>The ID of the Virtual Network Gateway
 in which the connection will be created. Changing the gateway forces a new
 resource to be created.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1710,10 +1710,10 @@ resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The authorization key associated with the
+    <dd>The authorization key associated with the
 Express Route Circuit. This field is required only if the type is an
 ExpressRoute connection.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1721,11 +1721,11 @@ ExpressRoute connection.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IKE protocol version to use. Possible
+    <dd>The IKE protocol version to use. Possible
 values are `IKEv1` and `IKEv2`. Defaults to `IKEv2`.
 Changing this value will force a resource to be created.
 > **Note**: Only valid for `IPSec` connections on virtual network gateways with SKU `VpnGw1`, `VpnGw2`, `VpnGw3`, `VpnGw1AZ`, `VpnGw2AZ` or `VpnGw3AZ`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1733,9 +1733,9 @@ Changing this value will force a resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, BGP (Border Gateway Protocol) is enabled
+    <dd>If `true`, BGP (Border Gateway Protocol) is enabled
 for this connection. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1743,10 +1743,10 @@ for this connection. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Express Route Circuit
+    <dd>The ID of the Express Route Circuit
 when creating an ExpressRoute connection (i.e. when `type` is `ExpressRoute`).
 The Express Route Circuit can be in the same or in a different subscription.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1754,8 +1754,8 @@ The Express Route Circuit can be in the same or in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, data packets will bypass ExpressRoute Gateway for data forwarding This is only valid for ExpressRoute connections.
-{{% /md %}}</dd>
+    <dd>If `true`, data packets will bypass ExpressRoute Gateway for data forwarding This is only valid for ExpressRoute connections.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1763,10 +1763,10 @@ The Express Route Circuit can be in the same or in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#virtualnetworkgatewayconnectionipsecpolicy">Dict[Virtual<wbr>Network<wbr>Gateway<wbr>Connection<wbr>Ipsec<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}A `ipsec_policy` block which is documented below.
+    <dd>A `ipsec_policy` block which is documented below.
 Only a single policy can be defined for a connection. For details on
 custom policies refer to [the relevant section in the Azure documentation](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-ipsecikepolicy-rm-powershell).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1774,9 +1774,9 @@ custom policies refer to [the relevant section in the Azure documentation](https
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the local network gateway
+    <dd>The ID of the local network gateway
 when creating Site-to-Site connection (i.e. when `type` is `IPsec`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1784,9 +1784,9 @@ when creating Site-to-Site connection (i.e. when `type` is `IPsec`).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The location/region where the connection is
+    <dd>The location/region where the connection is
 located. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1794,9 +1794,9 @@ located. Changing this forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the connection. Changing the name forces a
+    <dd>The name of the connection. Changing the name forces a
 new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1804,11 +1804,11 @@ new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the peer virtual
+    <dd>The ID of the peer virtual
 network gateway when creating a VNet-to-VNet connection (i.e. when `type`
 is `Vnet2Vnet`). The peer Virtual Network Gateway can be in the same or
 in a different subscription.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1816,9 +1816,9 @@ in a different subscription.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to
+    <dd>The name of the resource group in which to
 create the connection Changing the name forces a new resource to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1826,8 +1826,8 @@ create the connection Changing the name forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The routing weight. Defaults to `10`.
-{{% /md %}}</dd>
+    <dd>The routing weight. Defaults to `10`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1835,10 +1835,10 @@ create the connection Changing the name forces a new resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The shared IPSec key. A key must be provided if a
+    <dd>The shared IPSec key. A key must be provided if a
 Site-to-Site or VNet-to-VNet connection is created whereas ExpressRoute
 connections do not need a shared key.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1846,8 +1846,8 @@ connections do not need a shared key.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1855,12 +1855,12 @@ connections do not need a shared key.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of connection. Valid options are `IPsec`
+    <dd>The type of connection. Valid options are `IPsec`
 (Site-to-Site), `ExpressRoute` (ExpressRoute), and `Vnet2Vnet` (VNet-to-VNet).
 Each connection type requires different mandatory arguments (refer to the
 examples above). Changing the connection type will force a new connection
 to be created.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1868,10 +1868,10 @@ to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, policy-based traffic
+    <dd>If `true`, policy-based traffic
 selectors are enabled for this connection. Enabling policy-based traffic
 selectors requires an `ipsec_policy` block. Defaults to `false`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1879,13 +1879,13 @@ selectors requires an `ipsec_policy` block. Defaults to `false`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Virtual Network Gateway
+    <dd>The ID of the Virtual Network Gateway
 in which the connection will be created. Changing the gateway forces a new
 resource to be created.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1900,18 +1900,18 @@ resource to be created.
 
 
 <h4 id="virtualnetworkgatewayconnectionipsecpolicy">Virtual<wbr>Network<wbr>Gateway<wbr>Connection<wbr>Ipsec<wbr>Policy</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#VirtualNetworkGatewayConnectionIpsecPolicy">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#VirtualNetworkGatewayConnectionIpsecPolicy">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#VirtualNetworkGatewayConnectionIpsecPolicyArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/network?tab=doc#VirtualNetworkGatewayConnectionIpsecPolicyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1920,10 +1920,10 @@ resource to be created.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The DH group used in IKE phase 1 for initial SA. Valid
+    <dd>The DH group used in IKE phase 1 for initial SA. Valid
 options are `DHGroup1`, `DHGroup14`, `DHGroup2`, `DHGroup2048`, `DHGroup24`,
 `ECP256`, `ECP384`, or `None`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1931,9 +1931,9 @@ options are `DHGroup1`, `DHGroup14`, `DHGroup2`, `DHGroup2048`, `DHGroup24`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE encryption algorithm. Valid
+    <dd>The IKE encryption algorithm. Valid
 options are `AES128`, `AES192`, `AES256`, `DES`, or `DES3`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1941,9 +1941,9 @@ options are `AES128`, `AES192`, `AES256`, `DES`, or `DES3`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE integrity algorithm. Valid
+    <dd>The IKE integrity algorithm. Valid
 options are `MD5`, `SHA1`, `SHA256`, or `SHA384`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1951,9 +1951,9 @@ options are `MD5`, `SHA1`, `SHA256`, or `SHA384`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPSec encryption algorithm. Valid
+    <dd>The IPSec encryption algorithm. Valid
 options are `AES128`, `AES192`, `AES256`, `DES`, `DES3`, `GCMAES128`, `GCMAES192`, `GCMAES256`, or `None`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1961,9 +1961,9 @@ options are `AES128`, `AES192`, `AES256`, `DES`, `DES3`, `GCMAES128`, `GCMAES192
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPSec integrity algorithm. Valid
+    <dd>The IPSec integrity algorithm. Valid
 options are `GCMAES128`, `GCMAES192`, `GCMAES256`, `MD5`, `SHA1`, or `SHA256`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1971,10 +1971,10 @@ options are `GCMAES128`, `GCMAES192`, `GCMAES256`, `MD5`, `SHA1`, or `SHA256`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The DH group used in IKE phase 2 for new child SA.
+    <dd>The DH group used in IKE phase 2 for new child SA.
 Valid options are `ECP256`, `ECP384`, `PFS1`, `PFS2`, `PFS2048`, `PFS24`,
 or `None`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1982,9 +1982,9 @@ or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The IPSec SA payload size in KB. Must be at least
+    <dd>The IPSec SA payload size in KB. Must be at least
 `1024` KB. Defaults to `102400000` KB.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1992,15 +1992,15 @@ or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The IPSec SA lifetime in seconds. Must be at least
+    <dd>The IPSec SA lifetime in seconds. Must be at least
 `300` seconds. Defaults to `27000` seconds.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2009,10 +2009,10 @@ or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DH group used in IKE phase 1 for initial SA. Valid
+    <dd>The DH group used in IKE phase 1 for initial SA. Valid
 options are `DHGroup1`, `DHGroup14`, `DHGroup2`, `DHGroup2048`, `DHGroup24`,
 `ECP256`, `ECP384`, or `None`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2020,9 +2020,9 @@ options are `DHGroup1`, `DHGroup14`, `DHGroup2`, `DHGroup2048`, `DHGroup24`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE encryption algorithm. Valid
+    <dd>The IKE encryption algorithm. Valid
 options are `AES128`, `AES192`, `AES256`, `DES`, or `DES3`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2030,9 +2030,9 @@ options are `AES128`, `AES192`, `AES256`, `DES`, or `DES3`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE integrity algorithm. Valid
+    <dd>The IKE integrity algorithm. Valid
 options are `MD5`, `SHA1`, `SHA256`, or `SHA384`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2040,9 +2040,9 @@ options are `MD5`, `SHA1`, `SHA256`, or `SHA384`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPSec encryption algorithm. Valid
+    <dd>The IPSec encryption algorithm. Valid
 options are `AES128`, `AES192`, `AES256`, `DES`, `DES3`, `GCMAES128`, `GCMAES192`, `GCMAES256`, or `None`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2050,9 +2050,9 @@ options are `AES128`, `AES192`, `AES256`, `DES`, `DES3`, `GCMAES128`, `GCMAES192
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPSec integrity algorithm. Valid
+    <dd>The IPSec integrity algorithm. Valid
 options are `GCMAES128`, `GCMAES192`, `GCMAES256`, `MD5`, `SHA1`, or `SHA256`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2060,10 +2060,10 @@ options are `GCMAES128`, `GCMAES192`, `GCMAES256`, `MD5`, `SHA1`, or `SHA256`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DH group used in IKE phase 2 for new child SA.
+    <dd>The DH group used in IKE phase 2 for new child SA.
 Valid options are `ECP256`, `ECP384`, `PFS1`, `PFS2`, `PFS2048`, `PFS24`,
 or `None`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2071,9 +2071,9 @@ or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The IPSec SA payload size in KB. Must be at least
+    <dd>The IPSec SA payload size in KB. Must be at least
 `1024` KB. Defaults to `102400000` KB.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2081,15 +2081,15 @@ or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The IPSec SA lifetime in seconds. Must be at least
+    <dd>The IPSec SA lifetime in seconds. Must be at least
 `300` seconds. Defaults to `27000` seconds.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2098,10 +2098,10 @@ or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DH group used in IKE phase 1 for initial SA. Valid
+    <dd>The DH group used in IKE phase 1 for initial SA. Valid
 options are `DHGroup1`, `DHGroup14`, `DHGroup2`, `DHGroup2048`, `DHGroup24`,
 `ECP256`, `ECP384`, or `None`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2109,9 +2109,9 @@ options are `DHGroup1`, `DHGroup14`, `DHGroup2`, `DHGroup2048`, `DHGroup24`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE encryption algorithm. Valid
+    <dd>The IKE encryption algorithm. Valid
 options are `AES128`, `AES192`, `AES256`, `DES`, or `DES3`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2119,9 +2119,9 @@ options are `AES128`, `AES192`, `AES256`, `DES`, or `DES3`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IKE integrity algorithm. Valid
+    <dd>The IKE integrity algorithm. Valid
 options are `MD5`, `SHA1`, `SHA256`, or `SHA384`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2129,9 +2129,9 @@ options are `MD5`, `SHA1`, `SHA256`, or `SHA384`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPSec encryption algorithm. Valid
+    <dd>The IPSec encryption algorithm. Valid
 options are `AES128`, `AES192`, `AES256`, `DES`, `DES3`, `GCMAES128`, `GCMAES192`, `GCMAES256`, or `None`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2139,9 +2139,9 @@ options are `AES128`, `AES192`, `AES256`, `DES`, `DES3`, `GCMAES128`, `GCMAES192
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IPSec integrity algorithm. Valid
+    <dd>The IPSec integrity algorithm. Valid
 options are `GCMAES128`, `GCMAES192`, `GCMAES256`, `MD5`, `SHA1`, or `SHA256`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2149,10 +2149,10 @@ options are `GCMAES128`, `GCMAES192`, `GCMAES256`, `MD5`, `SHA1`, or `SHA256`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DH group used in IKE phase 2 for new child SA.
+    <dd>The DH group used in IKE phase 2 for new child SA.
 Valid options are `ECP256`, `ECP384`, `PFS1`, `PFS2`, `PFS2048`, `PFS24`,
 or `None`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2160,9 +2160,9 @@ or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The IPSec SA payload size in KB. Must be at least
+    <dd>The IPSec SA payload size in KB. Must be at least
 `1024` KB. Defaults to `102400000` KB.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2170,15 +2170,15 @@ or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The IPSec SA lifetime in seconds. Must be at least
+    <dd>The IPSec SA lifetime in seconds. Must be at least
 `300` seconds. Defaults to `27000` seconds.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2187,10 +2187,10 @@ or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The DH group used in IKE phase 1 for initial SA. Valid
+    <dd>The DH group used in IKE phase 1 for initial SA. Valid
 options are `DHGroup1`, `DHGroup14`, `DHGroup2`, `DHGroup2048`, `DHGroup24`,
 `ECP256`, `ECP384`, or `None`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2198,9 +2198,9 @@ options are `DHGroup1`, `DHGroup14`, `DHGroup2`, `DHGroup2048`, `DHGroup24`,
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IKE encryption algorithm. Valid
+    <dd>The IKE encryption algorithm. Valid
 options are `AES128`, `AES192`, `AES256`, `DES`, or `DES3`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2208,9 +2208,9 @@ options are `AES128`, `AES192`, `AES256`, `DES`, or `DES3`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IKE integrity algorithm. Valid
+    <dd>The IKE integrity algorithm. Valid
 options are `MD5`, `SHA1`, `SHA256`, or `SHA384`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2218,9 +2218,9 @@ options are `MD5`, `SHA1`, `SHA256`, or `SHA384`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IPSec encryption algorithm. Valid
+    <dd>The IPSec encryption algorithm. Valid
 options are `AES128`, `AES192`, `AES256`, `DES`, `DES3`, `GCMAES128`, `GCMAES192`, `GCMAES256`, or `None`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2228,9 +2228,9 @@ options are `AES128`, `AES192`, `AES256`, `DES`, `DES3`, `GCMAES128`, `GCMAES192
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IPSec integrity algorithm. Valid
+    <dd>The IPSec integrity algorithm. Valid
 options are `GCMAES128`, `GCMAES192`, `GCMAES256`, `MD5`, `SHA1`, or `SHA256`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2238,10 +2238,10 @@ options are `GCMAES128`, `GCMAES192`, `GCMAES256`, `MD5`, `SHA1`, or `SHA256`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The DH group used in IKE phase 2 for new child SA.
+    <dd>The DH group used in IKE phase 2 for new child SA.
 Valid options are `ECP256`, `ECP384`, `PFS1`, `PFS2`, `PFS2048`, `PFS24`,
 or `None`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2249,9 +2249,9 @@ or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The IPSec SA payload size in KB. Must be at least
+    <dd>The IPSec SA payload size in KB. Must be at least
 `1024` KB. Defaults to `102400000` KB.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2259,12 +2259,12 @@ or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The IPSec SA lifetime in seconds. Must be at least
+    <dd>The IPSec SA lifetime in seconds. Must be at least
 `300` seconds. Defaults to `27000` seconds.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -20,9 +20,9 @@ The Docker provider supports several options for interacting with Docker.  See t
 
 ## Example
 
-{{< chooser language "javascript,typescript,python,go,csharp" >}}
 
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 const docker = require("@pulumi/docker")
@@ -36,8 +36,8 @@ const container = new docker.Container("ubuntu", {
 });
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as docker from "@pulumi/docker";
@@ -51,8 +51,8 @@ const container = new docker.Container("ubuntu", {
 });
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 import pulumi_docker as docker
@@ -66,8 +66,8 @@ container = docker.Container("ubuntu",
 )
 ```
 
-{{% /choosable %}}
-{{% choosable language go %}}
+
+
 
 ```go
 import (
@@ -83,8 +83,8 @@ container, _ := docker.NewContainer(ctx, "ubuntu", &docker.ContainerArgs{
 })
 ```
 
-{{% /choosable %}}
-{{% choosable language csharp %}}
+
+
 
 ```csharp
 using System.Collections.Generic;
@@ -109,9 +109,9 @@ class Program
 }
 ```
 
-{{% /choosable %}}
 
-{{< /chooser >}}
+
+
 
 ## Libraries
 

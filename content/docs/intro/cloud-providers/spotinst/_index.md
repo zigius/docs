@@ -20,9 +20,9 @@ The Spotinst provider supports several options for interacting with Spotinst.  S
 
 ## Example
 
-{{< chooser language "javascript,typescript,python,go,csharp" >}}
 
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 const spotinst = require("@pulumi/spotinst")
@@ -30,8 +30,8 @@ const spotinst = require("@pulumi/spotinst")
 const deployment = new spotinst.multai.Deployment("myDeployment", {});
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as spotinst from "@pulumi/spotinst";
@@ -39,8 +39,8 @@ import * as spotinst from "@pulumi/spotinst";
 const deployment = new spotinst.multai.Deployment("myDeployment");
 ```
 
-{{% /choosable %}}
-{{% choosable language python %}}
+
+
 
 ```python
 import pulumi_spotinst as spotinst
@@ -48,8 +48,8 @@ import pulumi_spotinst as spotinst
 deployment = spotinst.multai.Deployment("my_deployment")
 ```
 
-{{% /choosable %}}
-{{% choosable language go %}}
+
+
 
 ```go
 import (
@@ -59,8 +59,8 @@ import (
 deployment, _ := multai.NewDeployment(ctx, "example", &multai.DeploymentArgs{})
 ```
 
-{{% /choosable %}}
-{{% choosable language csharp %}}
+
+
 
 ```csharp
 using System.Collections.Generic;
@@ -77,9 +77,9 @@ class Program
 }
 ```
 
-{{% /choosable %}}
 
-{{< /chooser >}}
+
+
 
 ## Libraries
 

@@ -16,22 +16,22 @@ git_sha: "5be6aaa1d66a1e15f8b59aef8921f89df3a57ec9"
 > please consult the source [`terraform-providers/terraform-provider-tls` repo](https://github.com/terraform-providers/terraform-provider-tls/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var tls = require("@pulumi/tls");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as tls from "@pulumi/tls";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

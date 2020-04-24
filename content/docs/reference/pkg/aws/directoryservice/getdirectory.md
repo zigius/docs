@@ -32,29 +32,29 @@ const example = aws_directory_service_directory_main.id.apply(id => aws.director
 
 ## Using GetDirectory {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getDirectory<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directoryservice/#GetDirectoryArgs">GetDirectoryArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/directoryservice/#GetDirectoryResult">GetDirectoryResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_directory(</span>directory_id=None<span class="p">, </span>tags=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupDirectory<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directoryservice?tab=doc#LookupDirectoryArgs">LookupDirectoryArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directoryservice?tab=doc#LookupDirectoryResult">LookupDirectoryResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetDirectory </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Directoryservice.GetDirectoryResult.html">GetDirectoryResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.DirectoryService.GetDirectoryArgs.html">GetDirectoryArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -62,7 +62,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -71,8 +71,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the directory.
-{{% /md %}}</dd>
+    <dd>The ID of the directory.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -80,14 +80,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the directory/connector.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the directory/connector.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -96,8 +96,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the directory.
-{{% /md %}}</dd>
+    <dd>The ID of the directory.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -105,14 +105,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the directory/connector.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the directory/connector.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -121,8 +121,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the directory.
-{{% /md %}}</dd>
+    <dd>The ID of the directory.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -130,14 +130,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the directory/connector.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the directory/connector.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -146,8 +146,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the directory.
-{{% /md %}}</dd>
+    <dd>The ID of the directory.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -155,11 +155,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the directory/connector.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the directory/connector.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -175,7 +175,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -184,8 +184,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The access URL for the directory/connector, such as http://alias.awsapps.com.
-{{% /md %}}</dd>
+    <dd>The access URL for the directory/connector, such as http://alias.awsapps.com.
+</dd>
 
     <dt class="property-"
             title="">
@@ -193,8 +193,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The alias for the directory/connector, such as `d-991708b282.awsapps.com`.
-{{% /md %}}</dd>
+    <dd>The alias for the directory/connector, such as `d-991708b282.awsapps.com`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -202,7 +202,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getdirectoryconnectsetting">List&lt;Get<wbr>Directory<wbr>Connect<wbr>Setting&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -210,8 +210,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A textual description for the directory/connector.
-{{% /md %}}</dd>
+    <dd>A textual description for the directory/connector.
+</dd>
 
     <dt class="property-"
             title="">
@@ -219,7 +219,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -227,8 +227,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of IP addresses of the DNS servers for the directory/connector.
-{{% /md %}}</dd>
+    <dd>A list of IP addresses of the DNS servers for the directory/connector.
+</dd>
 
     <dt class="property-"
             title="">
@@ -236,8 +236,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(for `MicrosoftAD`) The Microsoft AD edition (`Standard` or `Enterprise`).
-{{% /md %}}</dd>
+    <dd>(for `MicrosoftAD`) The Microsoft AD edition (`Standard` or `Enterprise`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -245,8 +245,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}The directory/connector single-sign on status.
-{{% /md %}}</dd>
+    <dd>The directory/connector single-sign on status.
+</dd>
 
     <dt class="property-"
             title="">
@@ -254,8 +254,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -263,8 +263,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The fully qualified name for the directory/connector.
-{{% /md %}}</dd>
+    <dd>The fully qualified name for the directory/connector.
+</dd>
 
     <dt class="property-"
             title="">
@@ -272,8 +272,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group created by the directory/connector.
-{{% /md %}}</dd>
+    <dd>The ID of the security group created by the directory/connector.
+</dd>
 
     <dt class="property-"
             title="">
@@ -281,8 +281,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The short name of the directory/connector, such as `CORP`.
-{{% /md %}}</dd>
+    <dd>The short name of the directory/connector, such as `CORP`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -290,8 +290,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(for `SimpleAD` and `ADConnector`) The size of the directory/connector (`Small` or `Large`).
-{{% /md %}}</dd>
+    <dd>(for `SimpleAD` and `ADConnector`) The size of the directory/connector (`Small` or `Large`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -299,8 +299,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The directory type (`SimpleAD`, `ADConnector` or `MicrosoftAD`).
-{{% /md %}}</dd>
+    <dd>The directory type (`SimpleAD`, `ADConnector` or `MicrosoftAD`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -308,7 +308,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getdirectoryvpcsetting">List&lt;Get<wbr>Directory<wbr>Vpc<wbr>Setting&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -316,14 +316,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the directory/connector.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the directory/connector.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -332,8 +332,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The access URL for the directory/connector, such as http://alias.awsapps.com.
-{{% /md %}}</dd>
+    <dd>The access URL for the directory/connector, such as http://alias.awsapps.com.
+</dd>
 
     <dt class="property-"
             title="">
@@ -341,8 +341,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The alias for the directory/connector, such as `d-991708b282.awsapps.com`.
-{{% /md %}}</dd>
+    <dd>The alias for the directory/connector, such as `d-991708b282.awsapps.com`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -350,7 +350,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getdirectoryconnectsetting">[]Get<wbr>Directory<wbr>Connect<wbr>Setting</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -358,8 +358,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A textual description for the directory/connector.
-{{% /md %}}</dd>
+    <dd>A textual description for the directory/connector.
+</dd>
 
     <dt class="property-"
             title="">
@@ -367,7 +367,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -375,8 +375,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of IP addresses of the DNS servers for the directory/connector.
-{{% /md %}}</dd>
+    <dd>A list of IP addresses of the DNS servers for the directory/connector.
+</dd>
 
     <dt class="property-"
             title="">
@@ -384,8 +384,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(for `MicrosoftAD`) The Microsoft AD edition (`Standard` or `Enterprise`).
-{{% /md %}}</dd>
+    <dd>(for `MicrosoftAD`) The Microsoft AD edition (`Standard` or `Enterprise`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -393,8 +393,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}The directory/connector single-sign on status.
-{{% /md %}}</dd>
+    <dd>The directory/connector single-sign on status.
+</dd>
 
     <dt class="property-"
             title="">
@@ -402,8 +402,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -411,8 +411,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fully qualified name for the directory/connector.
-{{% /md %}}</dd>
+    <dd>The fully qualified name for the directory/connector.
+</dd>
 
     <dt class="property-"
             title="">
@@ -420,8 +420,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group created by the directory/connector.
-{{% /md %}}</dd>
+    <dd>The ID of the security group created by the directory/connector.
+</dd>
 
     <dt class="property-"
             title="">
@@ -429,8 +429,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The short name of the directory/connector, such as `CORP`.
-{{% /md %}}</dd>
+    <dd>The short name of the directory/connector, such as `CORP`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -438,8 +438,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(for `SimpleAD` and `ADConnector`) The size of the directory/connector (`Small` or `Large`).
-{{% /md %}}</dd>
+    <dd>(for `SimpleAD` and `ADConnector`) The size of the directory/connector (`Small` or `Large`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -447,8 +447,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The directory type (`SimpleAD`, `ADConnector` or `MicrosoftAD`).
-{{% /md %}}</dd>
+    <dd>The directory type (`SimpleAD`, `ADConnector` or `MicrosoftAD`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -456,7 +456,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getdirectoryvpcsetting">[]Get<wbr>Directory<wbr>Vpc<wbr>Setting</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -464,14 +464,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the directory/connector.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the directory/connector.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -480,8 +480,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The access URL for the directory/connector, such as http://alias.awsapps.com.
-{{% /md %}}</dd>
+    <dd>The access URL for the directory/connector, such as http://alias.awsapps.com.
+</dd>
 
     <dt class="property-"
             title="">
@@ -489,8 +489,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The alias for the directory/connector, such as `d-991708b282.awsapps.com`.
-{{% /md %}}</dd>
+    <dd>The alias for the directory/connector, such as `d-991708b282.awsapps.com`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -498,7 +498,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getdirectoryconnectsetting">Get<wbr>Directory<wbr>Connect<wbr>Setting[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -506,8 +506,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A textual description for the directory/connector.
-{{% /md %}}</dd>
+    <dd>A textual description for the directory/connector.
+</dd>
 
     <dt class="property-"
             title="">
@@ -515,7 +515,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -523,8 +523,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of IP addresses of the DNS servers for the directory/connector.
-{{% /md %}}</dd>
+    <dd>A list of IP addresses of the DNS servers for the directory/connector.
+</dd>
 
     <dt class="property-"
             title="">
@@ -532,8 +532,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(for `MicrosoftAD`) The Microsoft AD edition (`Standard` or `Enterprise`).
-{{% /md %}}</dd>
+    <dd>(for `MicrosoftAD`) The Microsoft AD edition (`Standard` or `Enterprise`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -541,8 +541,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}The directory/connector single-sign on status.
-{{% /md %}}</dd>
+    <dd>The directory/connector single-sign on status.
+</dd>
 
     <dt class="property-"
             title="">
@@ -550,8 +550,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -559,8 +559,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The fully qualified name for the directory/connector.
-{{% /md %}}</dd>
+    <dd>The fully qualified name for the directory/connector.
+</dd>
 
     <dt class="property-"
             title="">
@@ -568,8 +568,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group created by the directory/connector.
-{{% /md %}}</dd>
+    <dd>The ID of the security group created by the directory/connector.
+</dd>
 
     <dt class="property-"
             title="">
@@ -577,8 +577,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The short name of the directory/connector, such as `CORP`.
-{{% /md %}}</dd>
+    <dd>The short name of the directory/connector, such as `CORP`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -586,8 +586,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(for `SimpleAD` and `ADConnector`) The size of the directory/connector (`Small` or `Large`).
-{{% /md %}}</dd>
+    <dd>(for `SimpleAD` and `ADConnector`) The size of the directory/connector (`Small` or `Large`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -595,8 +595,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The directory type (`SimpleAD`, `ADConnector` or `MicrosoftAD`).
-{{% /md %}}</dd>
+    <dd>The directory type (`SimpleAD`, `ADConnector` or `MicrosoftAD`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -604,7 +604,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getdirectoryvpcsetting">Get<wbr>Directory<wbr>Vpc<wbr>Setting[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -612,14 +612,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the directory/connector.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the directory/connector.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -628,8 +628,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The access URL for the directory/connector, such as http://alias.awsapps.com.
-{{% /md %}}</dd>
+    <dd>The access URL for the directory/connector, such as http://alias.awsapps.com.
+</dd>
 
     <dt class="property-"
             title="">
@@ -637,8 +637,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The alias for the directory/connector, such as `d-991708b282.awsapps.com`.
-{{% /md %}}</dd>
+    <dd>The alias for the directory/connector, such as `d-991708b282.awsapps.com`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -646,7 +646,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getdirectoryconnectsetting">List[Get<wbr>Directory<wbr>Connect<wbr>Setting]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -654,8 +654,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A textual description for the directory/connector.
-{{% /md %}}</dd>
+    <dd>A textual description for the directory/connector.
+</dd>
 
     <dt class="property-"
             title="">
@@ -663,7 +663,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -671,8 +671,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of IP addresses of the DNS servers for the directory/connector.
-{{% /md %}}</dd>
+    <dd>A list of IP addresses of the DNS servers for the directory/connector.
+</dd>
 
     <dt class="property-"
             title="">
@@ -680,8 +680,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(for `MicrosoftAD`) The Microsoft AD edition (`Standard` or `Enterprise`).
-{{% /md %}}</dd>
+    <dd>(for `MicrosoftAD`) The Microsoft AD edition (`Standard` or `Enterprise`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -689,8 +689,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}The directory/connector single-sign on status.
-{{% /md %}}</dd>
+    <dd>The directory/connector single-sign on status.
+</dd>
 
     <dt class="property-"
             title="">
@@ -698,8 +698,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -707,8 +707,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The fully qualified name for the directory/connector.
-{{% /md %}}</dd>
+    <dd>The fully qualified name for the directory/connector.
+</dd>
 
     <dt class="property-"
             title="">
@@ -716,8 +716,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the security group created by the directory/connector.
-{{% /md %}}</dd>
+    <dd>The ID of the security group created by the directory/connector.
+</dd>
 
     <dt class="property-"
             title="">
@@ -725,8 +725,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The short name of the directory/connector, such as `CORP`.
-{{% /md %}}</dd>
+    <dd>The short name of the directory/connector, such as `CORP`.
+</dd>
 
     <dt class="property-"
             title="">
@@ -734,8 +734,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(for `SimpleAD` and `ADConnector`) The size of the directory/connector (`Small` or `Large`).
-{{% /md %}}</dd>
+    <dd>(for `SimpleAD` and `ADConnector`) The size of the directory/connector (`Small` or `Large`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -743,8 +743,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The directory type (`SimpleAD`, `ADConnector` or `MicrosoftAD`).
-{{% /md %}}</dd>
+    <dd>The directory type (`SimpleAD`, `ADConnector` or `MicrosoftAD`).
+</dd>
 
     <dt class="property-"
             title="">
@@ -752,7 +752,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getdirectoryvpcsetting">List[Get<wbr>Directory<wbr>Vpc<wbr>Setting]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -760,11 +760,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags assigned to the directory/connector.
-{{% /md %}}</dd>
+    <dd>A mapping of tags assigned to the directory/connector.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -777,18 +777,18 @@ The following output properties are available:
 
 
 <h4 id="getdirectoryconnectsetting">Get<wbr>Directory<wbr>Connect<wbr>Setting</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetDirectoryConnectSetting">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directoryservice?tab=doc#GetDirectoryConnectSetting">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -797,8 +797,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The DNS IP addresses of the domain to connect to.
-{{% /md %}}</dd>
+    <dd>The DNS IP addresses of the domain to connect to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -806,8 +806,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The username corresponding to the password provided.
-{{% /md %}}</dd>
+    <dd>The username corresponding to the password provided.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -815,8 +815,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The identifiers of the subnets for the connector servers (2 subnets in 2 different AZs).
-{{% /md %}}</dd>
+    <dd>The identifiers of the subnets for the connector servers (2 subnets in 2 different AZs).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -824,14 +824,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC that the connector is in.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC that the connector is in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -840,8 +840,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS IP addresses of the domain to connect to.
-{{% /md %}}</dd>
+    <dd>The DNS IP addresses of the domain to connect to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -849,8 +849,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username corresponding to the password provided.
-{{% /md %}}</dd>
+    <dd>The username corresponding to the password provided.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -858,8 +858,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The identifiers of the subnets for the connector servers (2 subnets in 2 different AZs).
-{{% /md %}}</dd>
+    <dd>The identifiers of the subnets for the connector servers (2 subnets in 2 different AZs).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -867,14 +867,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC that the connector is in.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC that the connector is in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -883,8 +883,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The DNS IP addresses of the domain to connect to.
-{{% /md %}}</dd>
+    <dd>The DNS IP addresses of the domain to connect to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -892,8 +892,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username corresponding to the password provided.
-{{% /md %}}</dd>
+    <dd>The username corresponding to the password provided.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -901,8 +901,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The identifiers of the subnets for the connector servers (2 subnets in 2 different AZs).
-{{% /md %}}</dd>
+    <dd>The identifiers of the subnets for the connector servers (2 subnets in 2 different AZs).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -910,14 +910,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC that the connector is in.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC that the connector is in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -926,8 +926,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The DNS IP addresses of the domain to connect to.
-{{% /md %}}</dd>
+    <dd>The DNS IP addresses of the domain to connect to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -935,8 +935,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The username corresponding to the password provided.
-{{% /md %}}</dd>
+    <dd>The username corresponding to the password provided.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -944,8 +944,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The identifiers of the subnets for the connector servers (2 subnets in 2 different AZs).
-{{% /md %}}</dd>
+    <dd>The identifiers of the subnets for the connector servers (2 subnets in 2 different AZs).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -953,29 +953,29 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC that the connector is in.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC that the connector is in.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getdirectoryvpcsetting">Get<wbr>Directory<wbr>Vpc<wbr>Setting</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#GetDirectoryVpcSetting">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/directoryservice?tab=doc#GetDirectoryVpcSetting">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -984,8 +984,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The identifiers of the subnets for the connector servers (2 subnets in 2 different AZs).
-{{% /md %}}</dd>
+    <dd>The identifiers of the subnets for the connector servers (2 subnets in 2 different AZs).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -993,14 +993,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC that the connector is in.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC that the connector is in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1009,8 +1009,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The identifiers of the subnets for the connector servers (2 subnets in 2 different AZs).
-{{% /md %}}</dd>
+    <dd>The identifiers of the subnets for the connector servers (2 subnets in 2 different AZs).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1018,14 +1018,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC that the connector is in.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC that the connector is in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1034,8 +1034,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The identifiers of the subnets for the connector servers (2 subnets in 2 different AZs).
-{{% /md %}}</dd>
+    <dd>The identifiers of the subnets for the connector servers (2 subnets in 2 different AZs).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1043,14 +1043,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC that the connector is in.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC that the connector is in.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1059,8 +1059,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The identifiers of the subnets for the connector servers (2 subnets in 2 different AZs).
-{{% /md %}}</dd>
+    <dd>The identifiers of the subnets for the connector servers (2 subnets in 2 different AZs).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1068,11 +1068,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the VPC that the connector is in.
-{{% /md %}}</dd>
+    <dd>The ID of the VPC that the connector is in.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

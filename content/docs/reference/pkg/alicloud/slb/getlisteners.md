@@ -34,29 +34,29 @@ export const firstSlbListenerProtocol = sampleDs.slbListeners[0].protocol;
 
 ## Using GetListeners {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getListeners<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/slb/#GetListenersArgs">GetListenersArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/slb/#GetListenersResult">GetListenersResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_listeners(</span>description_regex=None<span class="p">, </span>frontend_port=None<span class="p">, </span>load_balancer_id=None<span class="p">, </span>output_file=None<span class="p">, </span>protocol=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupListeners<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/slb?tab=doc#LookupListenersArgs">LookupListenersArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/slb?tab=doc#LookupListenersResult">LookupListenersResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetListeners </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Slb.GetListenersResult.html">GetListenersResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Slb.GetListenersArgs.html">GetListenersArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -64,7 +64,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -73,8 +73,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the SLB with listeners.
-{{% /md %}}</dd>
+    <dd>ID of the SLB with listeners.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -82,8 +82,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by SLB listener description.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by SLB listener description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -91,8 +91,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Filter listeners by the specified frontend port.
-{{% /md %}}</dd>
+    <dd>Filter listeners by the specified frontend port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -100,7 +100,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -108,14 +108,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter listeners by the specified protocol. Valid values: `http`, `https`, `tcp` and `udp`.
-{{% /md %}}</dd>
+    <dd>Filter listeners by the specified protocol. Valid values: `http`, `https`, `tcp` and `udp`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -124,8 +124,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the SLB with listeners.
-{{% /md %}}</dd>
+    <dd>ID of the SLB with listeners.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -133,8 +133,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by SLB listener description.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by SLB listener description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -142,8 +142,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Filter listeners by the specified frontend port.
-{{% /md %}}</dd>
+    <dd>Filter listeners by the specified frontend port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -151,7 +151,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -159,14 +159,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter listeners by the specified protocol. Valid values: `http`, `https`, `tcp` and `udp`.
-{{% /md %}}</dd>
+    <dd>Filter listeners by the specified protocol. Valid values: `http`, `https`, `tcp` and `udp`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -175,8 +175,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the SLB with listeners.
-{{% /md %}}</dd>
+    <dd>ID of the SLB with listeners.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -184,8 +184,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by SLB listener description.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by SLB listener description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -193,8 +193,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Filter listeners by the specified frontend port.
-{{% /md %}}</dd>
+    <dd>Filter listeners by the specified frontend port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -202,7 +202,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -210,14 +210,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter listeners by the specified protocol. Valid values: `http`, `https`, `tcp` and `udp`.
-{{% /md %}}</dd>
+    <dd>Filter listeners by the specified protocol. Valid values: `http`, `https`, `tcp` and `udp`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -226,8 +226,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the SLB with listeners.
-{{% /md %}}</dd>
+    <dd>ID of the SLB with listeners.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -235,8 +235,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by SLB listener description.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by SLB listener description.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -244,8 +244,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Filter listeners by the specified frontend port.
-{{% /md %}}</dd>
+    <dd>Filter listeners by the specified frontend port.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -253,7 +253,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -261,11 +261,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter listeners by the specified protocol. Valid values: `http`, `https`, `tcp` and `udp`.
-{{% /md %}}</dd>
+    <dd>Filter listeners by the specified protocol. Valid values: `http`, `https`, `tcp` and `udp`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -281,7 +281,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -290,8 +290,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -299,7 +299,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -307,8 +307,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlistenersslblistener">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Slb.<wbr>Outputs.<wbr>Get<wbr>Listeners<wbr>Slb<wbr>Listener&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of SLB listeners. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of SLB listeners. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -316,7 +316,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -324,8 +324,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Frontend port used to receive incoming traffic and distribute it to the backend servers.
-{{% /md %}}</dd>
+    <dd>Frontend port used to receive incoming traffic and distribute it to the backend servers.
+</dd>
 
     <dt class="property-"
             title="">
@@ -333,7 +333,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -341,14 +341,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Listener protocol. Possible values: `http`, `https`, `tcp` and `udp`.
-{{% /md %}}</dd>
+    <dd>Listener protocol. Possible values: `http`, `https`, `tcp` and `udp`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -357,8 +357,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -366,7 +366,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -374,8 +374,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlistenersslblistener">[]Get<wbr>Listeners<wbr>Slb<wbr>Listener</a></span>
     </dt>
-    <dd>{{% md %}}A list of SLB listeners. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of SLB listeners. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -383,7 +383,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -391,8 +391,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Frontend port used to receive incoming traffic and distribute it to the backend servers.
-{{% /md %}}</dd>
+    <dd>Frontend port used to receive incoming traffic and distribute it to the backend servers.
+</dd>
 
     <dt class="property-"
             title="">
@@ -400,7 +400,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -408,14 +408,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Listener protocol. Possible values: `http`, `https`, `tcp` and `udp`.
-{{% /md %}}</dd>
+    <dd>Listener protocol. Possible values: `http`, `https`, `tcp` and `udp`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -424,8 +424,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -433,7 +433,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -441,8 +441,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlistenersslblistener">Get<wbr>Listeners<wbr>Slb<wbr>Listener[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SLB listeners. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of SLB listeners. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -450,7 +450,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -458,8 +458,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Frontend port used to receive incoming traffic and distribute it to the backend servers.
-{{% /md %}}</dd>
+    <dd>Frontend port used to receive incoming traffic and distribute it to the backend servers.
+</dd>
 
     <dt class="property-"
             title="">
@@ -467,7 +467,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -475,14 +475,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Listener protocol. Possible values: `http`, `https`, `tcp` and `udp`.
-{{% /md %}}</dd>
+    <dd>Listener protocol. Possible values: `http`, `https`, `tcp` and `udp`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -491,8 +491,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -500,7 +500,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -508,8 +508,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getlistenersslblistener">List[Get<wbr>Listeners<wbr>Slb<wbr>Listener]</a></span>
     </dt>
-    <dd>{{% md %}}A list of SLB listeners. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of SLB listeners. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -517,7 +517,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -525,8 +525,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Frontend port used to receive incoming traffic and distribute it to the backend servers.
-{{% /md %}}</dd>
+    <dd>Frontend port used to receive incoming traffic and distribute it to the backend servers.
+</dd>
 
     <dt class="property-"
             title="">
@@ -534,7 +534,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -542,11 +542,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Listener protocol. Possible values: `http`, `https`, `tcp` and `udp`.
-{{% /md %}}</dd>
+    <dd>Listener protocol. Possible values: `http`, `https`, `tcp` and `udp`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -559,18 +559,18 @@ The following output properties are available:
 
 
 <h4 id="getlistenersslblistener">Get<wbr>Listeners<wbr>Slb<wbr>Listener</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetListenersSlbListener">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/slb?tab=doc#GetListenersSlbListener">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -579,8 +579,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Port opened on the backend server to receive requests.
-{{% /md %}}</dd>
+    <dd>Port opened on the backend server to receive requests.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -588,8 +588,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Peak bandwidth. If the value is set to -1, the listener is not limited by bandwidth.
-{{% /md %}}</dd>
+    <dd>Peak bandwidth. If the value is set to -1, the listener is not limited by bandwidth.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -597,8 +597,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the CA certificate (only required when two-way authentication is used). Only available when the protocol is `https`.
-{{% /md %}}</dd>
+    <dd>ID of the CA certificate (only required when two-way authentication is used). Only available when the protocol is `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -606,8 +606,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Cookie configured by the backend server. Only available when the sticky_session_type is `server`.
-{{% /md %}}</dd>
+    <dd>Cookie configured by the backend server. Only available when the sticky_session_type is `server`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -615,8 +615,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Cookie timeout in seconds. Only available when the sticky_session_type is `insert`.
-{{% /md %}}</dd>
+    <dd>Cookie timeout in seconds. Only available when the sticky_session_type is `insert`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -624,8 +624,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of slb listener.
-{{% /md %}}</dd>
+    <dd>The description of slb listener.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -633,8 +633,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable https listener support http2 or not. Valid values are `on` and `off`. Default to `on`.
-{{% /md %}}</dd>
+    <dd>Whether to enable https listener support http2 or not. Valid values are `on` and `off`. Default to `on`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -642,8 +642,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Connection timeout in seconds for the Layer 4 TCP listener. Only available when the protocol is `tcp`.
-{{% /md %}}</dd>
+    <dd>Connection timeout in seconds for the Layer 4 TCP listener. Only available when the protocol is `tcp`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -651,8 +651,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Filter listeners by the specified frontend port.
-{{% /md %}}</dd>
+    <dd>Filter listeners by the specified frontend port.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -660,8 +660,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether Gzip compression is enabled or not. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether Gzip compression is enabled or not. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -669,8 +669,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether health check is enabled of not. Possible values are `on` and `off`.
-{{% /md %}}</dd>
+    <dd>Indicate whether health check is enabled of not. Possible values are `on` and `off`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -678,8 +678,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Port used for health check.
-{{% /md %}}</dd>
+    <dd>Port used for health check.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -687,8 +687,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Amount of time in seconds to wait for the response for a health check.
-{{% /md %}}</dd>
+    <dd>Amount of time in seconds to wait for the response for a health check.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -696,8 +696,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain name used for health check. The SLB sends HTTP head requests to the backend server, the domain is useful when the backend server verifies the host field in the requests. Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
-{{% /md %}}</dd>
+    <dd>Domain name used for health check. The SLB sends HTTP head requests to the backend server, the domain is useful when the backend server verifies the host field in the requests. Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -705,8 +705,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}HTTP status codes indicating that the health check is normal. It can contain several comma-separated values such as "http_2xx,http_3xx". Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
-{{% /md %}}</dd>
+    <dd>HTTP status codes indicating that the health check is normal. It can contain several comma-separated values such as "http_2xx,http_3xx". Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -714,8 +714,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Time interval between two consecutive health checks.
-{{% /md %}}</dd>
+    <dd>Time interval between two consecutive health checks.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -723,8 +723,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Amount of time in seconds to wait for the response from a health check. If an ECS instance sends no response within the specified timeout period, the health check fails. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Amount of time in seconds to wait for the response from a health check. If an ECS instance sends no response within the specified timeout period, the health check fails. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -732,8 +732,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Health check method. Possible values are `tcp` and `http`. Only available when the protocol is `tcp`.
-{{% /md %}}</dd>
+    <dd>Health check method. Possible values are `tcp` and `http`. Only available when the protocol is `tcp`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -741,8 +741,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}URI used for health check. Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
-{{% /md %}}</dd>
+    <dd>URI used for health check. Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -750,8 +750,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of consecutive successes of health check performed on the same ECS instance (from failure to success).
-{{% /md %}}</dd>
+    <dd>Number of consecutive successes of health check performed on the same ECS instance (from failure to success).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -759,8 +759,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Timeout of http or https listener established connection idle timeout. Valid value range: [1-60] in seconds. Default to 15.
-{{% /md %}}</dd>
+    <dd>Timeout of http or https listener established connection idle timeout. Valid value range: [1-60] in seconds. Default to 15.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -768,8 +768,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the active/standby server group.
-{{% /md %}}</dd>
+    <dd>ID of the active/standby server group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -777,8 +777,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Timeout value of the TCP connection in seconds. If the value is 0, the session persistence function is disabled. Only available when the protocol is `tcp`.
-{{% /md %}}</dd>
+    <dd>Timeout value of the TCP connection in seconds. If the value is 0, the session persistence function is disabled. Only available when the protocol is `tcp`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -786,8 +786,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter listeners by the specified protocol. Valid values: `http`, `https`, `tcp` and `udp`.
-{{% /md %}}</dd>
+    <dd>Filter listeners by the specified protocol. Valid values: `http`, `https`, `tcp` and `udp`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -795,8 +795,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Timeout of http or https listener request (which does not get response from backend) timeout. Valid value range: [1-180] in seconds. Default to 60.
-{{% /md %}}</dd>
+    <dd>Timeout of http or https listener request (which does not get response from backend) timeout. Valid value range: [1-180] in seconds. Default to 60.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -804,8 +804,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Algorithm used to distribute traffic. Possible values: `wrr` (weighted round robin), `wlc` (weighted least connection) and `rr` (round robin).
-{{% /md %}}</dd>
+    <dd>Algorithm used to distribute traffic. Possible values: `wrr` (weighted round robin), `wlc` (weighted least connection) and `rr` (round robin).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -813,8 +813,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Security status. Only available when the protocol is `https`.
-{{% /md %}}</dd>
+    <dd>Security status. Only available when the protocol is `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -822,7 +822,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -830,8 +830,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the linked VServer group.
-{{% /md %}}</dd>
+    <dd>ID of the linked VServer group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -839,8 +839,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the server certificate. Only available when the protocol is `https`.
-{{% /md %}}</dd>
+    <dd>ID of the server certificate. Only available when the protocol is `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -848,8 +848,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Listener status.
-{{% /md %}}</dd>
+    <dd>Listener status.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -857,8 +857,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether session persistence is enabled or not. If enabled, all session requests from the same client are sent to the same backend server. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether session persistence is enabled or not. If enabled, all session requests from the same client are sent to the same backend server. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -866,8 +866,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Method used to handle the cookie. Possible values are `insert` (cookie added to the response) and `server` (cookie set by the backend server). Only available when the protocol is `http` or `https` and sticky_session is `on`.
-{{% /md %}}</dd>
+    <dd>Method used to handle the cookie. Possible values are `insert` (cookie added to the response) and `server` (cookie set by the backend server). Only available when the protocol is `http` or `https` and sticky_session is `on`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -875,8 +875,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Https listener TLS cipher policy. Valid values are `tls_cipher_policy_1_0`, `tls_cipher_policy_1_1`, `tls_cipher_policy_1_2`, `tls_cipher_policy_1_2_strict`. Default to `tls_cipher_policy_1_0`.
-{{% /md %}}</dd>
+    <dd>Https listener TLS cipher policy. Valid values are `tls_cipher_policy_1_0`, `tls_cipher_policy_1_1`, `tls_cipher_policy_1_2`, `tls_cipher_policy_1_2_strict`. Default to `tls_cipher_policy_1_0`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -884,8 +884,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of consecutive failures of health check performed on the same ECS instance (from success to failure).
-{{% /md %}}</dd>
+    <dd>Number of consecutive failures of health check performed on the same ECS instance (from success to failure).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -893,8 +893,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the HTTP header field "X-Forwarded-For" is added or not; it allows the backend server to know about the user's IP address. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the HTTP header field "X-Forwarded-For" is added or not; it allows the backend server to know about the user's IP address. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -902,8 +902,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the HTTP header field "X-Forwarded-For_SLBID" is added or not; it allows the backend server to know about the SLB ID. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the HTTP header field "X-Forwarded-For_SLBID" is added or not; it allows the backend server to know about the SLB ID. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -911,8 +911,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the HTTP header field "X-Forwarded-For_SLBIP" is added or not; it allows the backend server to know about the SLB IP address. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the HTTP header field "X-Forwarded-For_SLBIP" is added or not; it allows the backend server to know about the SLB IP address. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -920,14 +920,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the HTTP header field "X-Forwarded-For_proto" is added or not; it allows the backend server to know about the user's protocol. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the HTTP header field "X-Forwarded-For_proto" is added or not; it allows the backend server to know about the user's protocol. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -936,8 +936,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Port opened on the backend server to receive requests.
-{{% /md %}}</dd>
+    <dd>Port opened on the backend server to receive requests.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -945,8 +945,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Peak bandwidth. If the value is set to -1, the listener is not limited by bandwidth.
-{{% /md %}}</dd>
+    <dd>Peak bandwidth. If the value is set to -1, the listener is not limited by bandwidth.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -954,8 +954,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the CA certificate (only required when two-way authentication is used). Only available when the protocol is `https`.
-{{% /md %}}</dd>
+    <dd>ID of the CA certificate (only required when two-way authentication is used). Only available when the protocol is `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -963,8 +963,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cookie configured by the backend server. Only available when the sticky_session_type is `server`.
-{{% /md %}}</dd>
+    <dd>Cookie configured by the backend server. Only available when the sticky_session_type is `server`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -972,8 +972,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Cookie timeout in seconds. Only available when the sticky_session_type is `insert`.
-{{% /md %}}</dd>
+    <dd>Cookie timeout in seconds. Only available when the sticky_session_type is `insert`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -981,8 +981,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of slb listener.
-{{% /md %}}</dd>
+    <dd>The description of slb listener.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -990,8 +990,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable https listener support http2 or not. Valid values are `on` and `off`. Default to `on`.
-{{% /md %}}</dd>
+    <dd>Whether to enable https listener support http2 or not. Valid values are `on` and `off`. Default to `on`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -999,8 +999,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Connection timeout in seconds for the Layer 4 TCP listener. Only available when the protocol is `tcp`.
-{{% /md %}}</dd>
+    <dd>Connection timeout in seconds for the Layer 4 TCP listener. Only available when the protocol is `tcp`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1008,8 +1008,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Filter listeners by the specified frontend port.
-{{% /md %}}</dd>
+    <dd>Filter listeners by the specified frontend port.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1017,8 +1017,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether Gzip compression is enabled or not. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether Gzip compression is enabled or not. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1026,8 +1026,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether health check is enabled of not. Possible values are `on` and `off`.
-{{% /md %}}</dd>
+    <dd>Indicate whether health check is enabled of not. Possible values are `on` and `off`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1035,8 +1035,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Port used for health check.
-{{% /md %}}</dd>
+    <dd>Port used for health check.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1044,8 +1044,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Amount of time in seconds to wait for the response for a health check.
-{{% /md %}}</dd>
+    <dd>Amount of time in seconds to wait for the response for a health check.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1053,8 +1053,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain name used for health check. The SLB sends HTTP head requests to the backend server, the domain is useful when the backend server verifies the host field in the requests. Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
-{{% /md %}}</dd>
+    <dd>Domain name used for health check. The SLB sends HTTP head requests to the backend server, the domain is useful when the backend server verifies the host field in the requests. Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1062,8 +1062,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}HTTP status codes indicating that the health check is normal. It can contain several comma-separated values such as "http_2xx,http_3xx". Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
-{{% /md %}}</dd>
+    <dd>HTTP status codes indicating that the health check is normal. It can contain several comma-separated values such as "http_2xx,http_3xx". Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1071,8 +1071,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Time interval between two consecutive health checks.
-{{% /md %}}</dd>
+    <dd>Time interval between two consecutive health checks.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1080,8 +1080,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Amount of time in seconds to wait for the response from a health check. If an ECS instance sends no response within the specified timeout period, the health check fails. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Amount of time in seconds to wait for the response from a health check. If an ECS instance sends no response within the specified timeout period, the health check fails. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1089,8 +1089,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Health check method. Possible values are `tcp` and `http`. Only available when the protocol is `tcp`.
-{{% /md %}}</dd>
+    <dd>Health check method. Possible values are `tcp` and `http`. Only available when the protocol is `tcp`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1098,8 +1098,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}URI used for health check. Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
-{{% /md %}}</dd>
+    <dd>URI used for health check. Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1107,8 +1107,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of consecutive successes of health check performed on the same ECS instance (from failure to success).
-{{% /md %}}</dd>
+    <dd>Number of consecutive successes of health check performed on the same ECS instance (from failure to success).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1116,8 +1116,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Timeout of http or https listener established connection idle timeout. Valid value range: [1-60] in seconds. Default to 15.
-{{% /md %}}</dd>
+    <dd>Timeout of http or https listener established connection idle timeout. Valid value range: [1-60] in seconds. Default to 15.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1125,8 +1125,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the active/standby server group.
-{{% /md %}}</dd>
+    <dd>ID of the active/standby server group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1134,8 +1134,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Timeout value of the TCP connection in seconds. If the value is 0, the session persistence function is disabled. Only available when the protocol is `tcp`.
-{{% /md %}}</dd>
+    <dd>Timeout value of the TCP connection in seconds. If the value is 0, the session persistence function is disabled. Only available when the protocol is `tcp`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1143,8 +1143,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter listeners by the specified protocol. Valid values: `http`, `https`, `tcp` and `udp`.
-{{% /md %}}</dd>
+    <dd>Filter listeners by the specified protocol. Valid values: `http`, `https`, `tcp` and `udp`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1152,8 +1152,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Timeout of http or https listener request (which does not get response from backend) timeout. Valid value range: [1-180] in seconds. Default to 60.
-{{% /md %}}</dd>
+    <dd>Timeout of http or https listener request (which does not get response from backend) timeout. Valid value range: [1-180] in seconds. Default to 60.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1161,8 +1161,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Algorithm used to distribute traffic. Possible values: `wrr` (weighted round robin), `wlc` (weighted least connection) and `rr` (round robin).
-{{% /md %}}</dd>
+    <dd>Algorithm used to distribute traffic. Possible values: `wrr` (weighted round robin), `wlc` (weighted least connection) and `rr` (round robin).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1170,8 +1170,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Security status. Only available when the protocol is `https`.
-{{% /md %}}</dd>
+    <dd>Security status. Only available when the protocol is `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1179,7 +1179,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1187,8 +1187,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the linked VServer group.
-{{% /md %}}</dd>
+    <dd>ID of the linked VServer group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1196,8 +1196,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the server certificate. Only available when the protocol is `https`.
-{{% /md %}}</dd>
+    <dd>ID of the server certificate. Only available when the protocol is `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1205,8 +1205,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Listener status.
-{{% /md %}}</dd>
+    <dd>Listener status.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1214,8 +1214,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether session persistence is enabled or not. If enabled, all session requests from the same client are sent to the same backend server. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether session persistence is enabled or not. If enabled, all session requests from the same client are sent to the same backend server. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1223,8 +1223,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Method used to handle the cookie. Possible values are `insert` (cookie added to the response) and `server` (cookie set by the backend server). Only available when the protocol is `http` or `https` and sticky_session is `on`.
-{{% /md %}}</dd>
+    <dd>Method used to handle the cookie. Possible values are `insert` (cookie added to the response) and `server` (cookie set by the backend server). Only available when the protocol is `http` or `https` and sticky_session is `on`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1232,8 +1232,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Https listener TLS cipher policy. Valid values are `tls_cipher_policy_1_0`, `tls_cipher_policy_1_1`, `tls_cipher_policy_1_2`, `tls_cipher_policy_1_2_strict`. Default to `tls_cipher_policy_1_0`.
-{{% /md %}}</dd>
+    <dd>Https listener TLS cipher policy. Valid values are `tls_cipher_policy_1_0`, `tls_cipher_policy_1_1`, `tls_cipher_policy_1_2`, `tls_cipher_policy_1_2_strict`. Default to `tls_cipher_policy_1_0`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1241,8 +1241,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of consecutive failures of health check performed on the same ECS instance (from success to failure).
-{{% /md %}}</dd>
+    <dd>Number of consecutive failures of health check performed on the same ECS instance (from success to failure).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1250,8 +1250,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the HTTP header field "X-Forwarded-For" is added or not; it allows the backend server to know about the user's IP address. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the HTTP header field "X-Forwarded-For" is added or not; it allows the backend server to know about the user's IP address. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1259,8 +1259,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the HTTP header field "X-Forwarded-For_SLBID" is added or not; it allows the backend server to know about the SLB ID. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the HTTP header field "X-Forwarded-For_SLBID" is added or not; it allows the backend server to know about the SLB ID. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1268,8 +1268,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the HTTP header field "X-Forwarded-For_SLBIP" is added or not; it allows the backend server to know about the SLB IP address. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the HTTP header field "X-Forwarded-For_SLBIP" is added or not; it allows the backend server to know about the SLB IP address. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1277,14 +1277,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the HTTP header field "X-Forwarded-For_proto" is added or not; it allows the backend server to know about the user's protocol. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the HTTP header field "X-Forwarded-For_proto" is added or not; it allows the backend server to know about the user's protocol. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1293,8 +1293,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Port opened on the backend server to receive requests.
-{{% /md %}}</dd>
+    <dd>Port opened on the backend server to receive requests.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1302,8 +1302,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Peak bandwidth. If the value is set to -1, the listener is not limited by bandwidth.
-{{% /md %}}</dd>
+    <dd>Peak bandwidth. If the value is set to -1, the listener is not limited by bandwidth.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1311,8 +1311,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the CA certificate (only required when two-way authentication is used). Only available when the protocol is `https`.
-{{% /md %}}</dd>
+    <dd>ID of the CA certificate (only required when two-way authentication is used). Only available when the protocol is `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1320,8 +1320,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Cookie configured by the backend server. Only available when the sticky_session_type is `server`.
-{{% /md %}}</dd>
+    <dd>Cookie configured by the backend server. Only available when the sticky_session_type is `server`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1329,8 +1329,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Cookie timeout in seconds. Only available when the sticky_session_type is `insert`.
-{{% /md %}}</dd>
+    <dd>Cookie timeout in seconds. Only available when the sticky_session_type is `insert`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1338,8 +1338,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description of slb listener.
-{{% /md %}}</dd>
+    <dd>The description of slb listener.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1347,8 +1347,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable https listener support http2 or not. Valid values are `on` and `off`. Default to `on`.
-{{% /md %}}</dd>
+    <dd>Whether to enable https listener support http2 or not. Valid values are `on` and `off`. Default to `on`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1356,8 +1356,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Connection timeout in seconds for the Layer 4 TCP listener. Only available when the protocol is `tcp`.
-{{% /md %}}</dd>
+    <dd>Connection timeout in seconds for the Layer 4 TCP listener. Only available when the protocol is `tcp`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1365,8 +1365,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Filter listeners by the specified frontend port.
-{{% /md %}}</dd>
+    <dd>Filter listeners by the specified frontend port.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1374,8 +1374,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether Gzip compression is enabled or not. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether Gzip compression is enabled or not. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1383,8 +1383,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether health check is enabled of not. Possible values are `on` and `off`.
-{{% /md %}}</dd>
+    <dd>Indicate whether health check is enabled of not. Possible values are `on` and `off`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1392,8 +1392,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Port used for health check.
-{{% /md %}}</dd>
+    <dd>Port used for health check.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1401,8 +1401,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Amount of time in seconds to wait for the response for a health check.
-{{% /md %}}</dd>
+    <dd>Amount of time in seconds to wait for the response for a health check.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1410,8 +1410,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Domain name used for health check. The SLB sends HTTP head requests to the backend server, the domain is useful when the backend server verifies the host field in the requests. Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
-{{% /md %}}</dd>
+    <dd>Domain name used for health check. The SLB sends HTTP head requests to the backend server, the domain is useful when the backend server verifies the host field in the requests. Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1419,8 +1419,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}HTTP status codes indicating that the health check is normal. It can contain several comma-separated values such as "http_2xx,http_3xx". Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
-{{% /md %}}</dd>
+    <dd>HTTP status codes indicating that the health check is normal. It can contain several comma-separated values such as "http_2xx,http_3xx". Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1428,8 +1428,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Time interval between two consecutive health checks.
-{{% /md %}}</dd>
+    <dd>Time interval between two consecutive health checks.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1437,8 +1437,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Amount of time in seconds to wait for the response from a health check. If an ECS instance sends no response within the specified timeout period, the health check fails. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Amount of time in seconds to wait for the response from a health check. If an ECS instance sends no response within the specified timeout period, the health check fails. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1446,8 +1446,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Health check method. Possible values are `tcp` and `http`. Only available when the protocol is `tcp`.
-{{% /md %}}</dd>
+    <dd>Health check method. Possible values are `tcp` and `http`. Only available when the protocol is `tcp`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1455,8 +1455,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}URI used for health check. Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
-{{% /md %}}</dd>
+    <dd>URI used for health check. Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1464,8 +1464,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of consecutive successes of health check performed on the same ECS instance (from failure to success).
-{{% /md %}}</dd>
+    <dd>Number of consecutive successes of health check performed on the same ECS instance (from failure to success).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1473,8 +1473,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Timeout of http or https listener established connection idle timeout. Valid value range: [1-60] in seconds. Default to 15.
-{{% /md %}}</dd>
+    <dd>Timeout of http or https listener established connection idle timeout. Valid value range: [1-60] in seconds. Default to 15.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1482,8 +1482,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the active/standby server group.
-{{% /md %}}</dd>
+    <dd>ID of the active/standby server group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1491,8 +1491,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Timeout value of the TCP connection in seconds. If the value is 0, the session persistence function is disabled. Only available when the protocol is `tcp`.
-{{% /md %}}</dd>
+    <dd>Timeout value of the TCP connection in seconds. If the value is 0, the session persistence function is disabled. Only available when the protocol is `tcp`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1500,8 +1500,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Filter listeners by the specified protocol. Valid values: `http`, `https`, `tcp` and `udp`.
-{{% /md %}}</dd>
+    <dd>Filter listeners by the specified protocol. Valid values: `http`, `https`, `tcp` and `udp`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1509,8 +1509,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Timeout of http or https listener request (which does not get response from backend) timeout. Valid value range: [1-180] in seconds. Default to 60.
-{{% /md %}}</dd>
+    <dd>Timeout of http or https listener request (which does not get response from backend) timeout. Valid value range: [1-180] in seconds. Default to 60.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1518,8 +1518,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Algorithm used to distribute traffic. Possible values: `wrr` (weighted round robin), `wlc` (weighted least connection) and `rr` (round robin).
-{{% /md %}}</dd>
+    <dd>Algorithm used to distribute traffic. Possible values: `wrr` (weighted round robin), `wlc` (weighted least connection) and `rr` (round robin).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1527,8 +1527,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Security status. Only available when the protocol is `https`.
-{{% /md %}}</dd>
+    <dd>Security status. Only available when the protocol is `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1536,7 +1536,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1544,8 +1544,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the linked VServer group.
-{{% /md %}}</dd>
+    <dd>ID of the linked VServer group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1553,8 +1553,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the server certificate. Only available when the protocol is `https`.
-{{% /md %}}</dd>
+    <dd>ID of the server certificate. Only available when the protocol is `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1562,8 +1562,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Listener status.
-{{% /md %}}</dd>
+    <dd>Listener status.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1571,8 +1571,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether session persistence is enabled or not. If enabled, all session requests from the same client are sent to the same backend server. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether session persistence is enabled or not. If enabled, all session requests from the same client are sent to the same backend server. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1580,8 +1580,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Method used to handle the cookie. Possible values are `insert` (cookie added to the response) and `server` (cookie set by the backend server). Only available when the protocol is `http` or `https` and sticky_session is `on`.
-{{% /md %}}</dd>
+    <dd>Method used to handle the cookie. Possible values are `insert` (cookie added to the response) and `server` (cookie set by the backend server). Only available when the protocol is `http` or `https` and sticky_session is `on`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1589,8 +1589,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Https listener TLS cipher policy. Valid values are `tls_cipher_policy_1_0`, `tls_cipher_policy_1_1`, `tls_cipher_policy_1_2`, `tls_cipher_policy_1_2_strict`. Default to `tls_cipher_policy_1_0`.
-{{% /md %}}</dd>
+    <dd>Https listener TLS cipher policy. Valid values are `tls_cipher_policy_1_0`, `tls_cipher_policy_1_1`, `tls_cipher_policy_1_2`, `tls_cipher_policy_1_2_strict`. Default to `tls_cipher_policy_1_0`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1598,8 +1598,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of consecutive failures of health check performed on the same ECS instance (from success to failure).
-{{% /md %}}</dd>
+    <dd>Number of consecutive failures of health check performed on the same ECS instance (from success to failure).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1607,8 +1607,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the HTTP header field "X-Forwarded-For" is added or not; it allows the backend server to know about the user's IP address. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the HTTP header field "X-Forwarded-For" is added or not; it allows the backend server to know about the user's IP address. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1616,8 +1616,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the HTTP header field "X-Forwarded-For_SLBID" is added or not; it allows the backend server to know about the SLB ID. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the HTTP header field "X-Forwarded-For_SLBID" is added or not; it allows the backend server to know about the SLB ID. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1625,8 +1625,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the HTTP header field "X-Forwarded-For_SLBIP" is added or not; it allows the backend server to know about the SLB IP address. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the HTTP header field "X-Forwarded-For_SLBIP" is added or not; it allows the backend server to know about the SLB IP address. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1634,14 +1634,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the HTTP header field "X-Forwarded-For_proto" is added or not; it allows the backend server to know about the user's protocol. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the HTTP header field "X-Forwarded-For_proto" is added or not; it allows the backend server to know about the user's protocol. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1650,8 +1650,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Port opened on the backend server to receive requests.
-{{% /md %}}</dd>
+    <dd>Port opened on the backend server to receive requests.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1659,8 +1659,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Peak bandwidth. If the value is set to -1, the listener is not limited by bandwidth.
-{{% /md %}}</dd>
+    <dd>Peak bandwidth. If the value is set to -1, the listener is not limited by bandwidth.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1668,8 +1668,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the CA certificate (only required when two-way authentication is used). Only available when the protocol is `https`.
-{{% /md %}}</dd>
+    <dd>ID of the CA certificate (only required when two-way authentication is used). Only available when the protocol is `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1677,8 +1677,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Cookie configured by the backend server. Only available when the sticky_session_type is `server`.
-{{% /md %}}</dd>
+    <dd>Cookie configured by the backend server. Only available when the sticky_session_type is `server`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1686,8 +1686,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Cookie timeout in seconds. Only available when the sticky_session_type is `insert`.
-{{% /md %}}</dd>
+    <dd>Cookie timeout in seconds. Only available when the sticky_session_type is `insert`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1695,8 +1695,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description of slb listener.
-{{% /md %}}</dd>
+    <dd>The description of slb listener.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1704,8 +1704,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable https listener support http2 or not. Valid values are `on` and `off`. Default to `on`.
-{{% /md %}}</dd>
+    <dd>Whether to enable https listener support http2 or not. Valid values are `on` and `off`. Default to `on`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1713,8 +1713,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Connection timeout in seconds for the Layer 4 TCP listener. Only available when the protocol is `tcp`.
-{{% /md %}}</dd>
+    <dd>Connection timeout in seconds for the Layer 4 TCP listener. Only available when the protocol is `tcp`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1722,8 +1722,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Filter listeners by the specified frontend port.
-{{% /md %}}</dd>
+    <dd>Filter listeners by the specified frontend port.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1731,8 +1731,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether Gzip compression is enabled or not. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether Gzip compression is enabled or not. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1740,8 +1740,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Amount of time in seconds to wait for the response for a health check.
-{{% /md %}}</dd>
+    <dd>Amount of time in seconds to wait for the response for a health check.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1749,8 +1749,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether health check is enabled of not. Possible values are `on` and `off`.
-{{% /md %}}</dd>
+    <dd>Indicate whether health check is enabled of not. Possible values are `on` and `off`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1758,8 +1758,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Port used for health check.
-{{% /md %}}</dd>
+    <dd>Port used for health check.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1767,8 +1767,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Domain name used for health check. The SLB sends HTTP head requests to the backend server, the domain is useful when the backend server verifies the host field in the requests. Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
-{{% /md %}}</dd>
+    <dd>Domain name used for health check. The SLB sends HTTP head requests to the backend server, the domain is useful when the backend server verifies the host field in the requests. Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1776,8 +1776,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}HTTP status codes indicating that the health check is normal. It can contain several comma-separated values such as "http_2xx,http_3xx". Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
-{{% /md %}}</dd>
+    <dd>HTTP status codes indicating that the health check is normal. It can contain several comma-separated values such as "http_2xx,http_3xx". Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1785,8 +1785,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Time interval between two consecutive health checks.
-{{% /md %}}</dd>
+    <dd>Time interval between two consecutive health checks.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1794,8 +1794,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Amount of time in seconds to wait for the response from a health check. If an ECS instance sends no response within the specified timeout period, the health check fails. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Amount of time in seconds to wait for the response from a health check. If an ECS instance sends no response within the specified timeout period, the health check fails. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1803,8 +1803,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Health check method. Possible values are `tcp` and `http`. Only available when the protocol is `tcp`.
-{{% /md %}}</dd>
+    <dd>Health check method. Possible values are `tcp` and `http`. Only available when the protocol is `tcp`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1812,8 +1812,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}URI used for health check. Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
-{{% /md %}}</dd>
+    <dd>URI used for health check. Only available when the protocol is `http`, `https` or `tcp` (in this case health_check_type must be `http`).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1821,8 +1821,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of consecutive successes of health check performed on the same ECS instance (from failure to success).
-{{% /md %}}</dd>
+    <dd>Number of consecutive successes of health check performed on the same ECS instance (from failure to success).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1830,8 +1830,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Timeout of http or https listener established connection idle timeout. Valid value range: [1-60] in seconds. Default to 15.
-{{% /md %}}</dd>
+    <dd>Timeout of http or https listener established connection idle timeout. Valid value range: [1-60] in seconds. Default to 15.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1839,8 +1839,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the active/standby server group.
-{{% /md %}}</dd>
+    <dd>ID of the active/standby server group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1848,8 +1848,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Timeout value of the TCP connection in seconds. If the value is 0, the session persistence function is disabled. Only available when the protocol is `tcp`.
-{{% /md %}}</dd>
+    <dd>Timeout value of the TCP connection in seconds. If the value is 0, the session persistence function is disabled. Only available when the protocol is `tcp`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1857,8 +1857,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Filter listeners by the specified protocol. Valid values: `http`, `https`, `tcp` and `udp`.
-{{% /md %}}</dd>
+    <dd>Filter listeners by the specified protocol. Valid values: `http`, `https`, `tcp` and `udp`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1866,8 +1866,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Timeout of http or https listener request (which does not get response from backend) timeout. Valid value range: [1-180] in seconds. Default to 60.
-{{% /md %}}</dd>
+    <dd>Timeout of http or https listener request (which does not get response from backend) timeout. Valid value range: [1-180] in seconds. Default to 60.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1875,8 +1875,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Algorithm used to distribute traffic. Possible values: `wrr` (weighted round robin), `wlc` (weighted least connection) and `rr` (round robin).
-{{% /md %}}</dd>
+    <dd>Algorithm used to distribute traffic. Possible values: `wrr` (weighted round robin), `wlc` (weighted least connection) and `rr` (round robin).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1884,8 +1884,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Security status. Only available when the protocol is `https`.
-{{% /md %}}</dd>
+    <dd>Security status. Only available when the protocol is `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1893,7 +1893,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1901,8 +1901,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the linked VServer group.
-{{% /md %}}</dd>
+    <dd>ID of the linked VServer group.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1910,8 +1910,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the server certificate. Only available when the protocol is `https`.
-{{% /md %}}</dd>
+    <dd>ID of the server certificate. Only available when the protocol is `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1919,8 +1919,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Listener status.
-{{% /md %}}</dd>
+    <dd>Listener status.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1928,8 +1928,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether session persistence is enabled or not. If enabled, all session requests from the same client are sent to the same backend server. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether session persistence is enabled or not. If enabled, all session requests from the same client are sent to the same backend server. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1937,8 +1937,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Method used to handle the cookie. Possible values are `insert` (cookie added to the response) and `server` (cookie set by the backend server). Only available when the protocol is `http` or `https` and sticky_session is `on`.
-{{% /md %}}</dd>
+    <dd>Method used to handle the cookie. Possible values are `insert` (cookie added to the response) and `server` (cookie set by the backend server). Only available when the protocol is `http` or `https` and sticky_session is `on`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1946,8 +1946,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Https listener TLS cipher policy. Valid values are `tls_cipher_policy_1_0`, `tls_cipher_policy_1_1`, `tls_cipher_policy_1_2`, `tls_cipher_policy_1_2_strict`. Default to `tls_cipher_policy_1_0`.
-{{% /md %}}</dd>
+    <dd>Https listener TLS cipher policy. Valid values are `tls_cipher_policy_1_0`, `tls_cipher_policy_1_1`, `tls_cipher_policy_1_2`, `tls_cipher_policy_1_2_strict`. Default to `tls_cipher_policy_1_0`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1955,8 +1955,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of consecutive failures of health check performed on the same ECS instance (from success to failure).
-{{% /md %}}</dd>
+    <dd>Number of consecutive failures of health check performed on the same ECS instance (from success to failure).
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1964,8 +1964,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the HTTP header field "X-Forwarded-For_SLBID" is added or not; it allows the backend server to know about the SLB ID. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the HTTP header field "X-Forwarded-For_SLBID" is added or not; it allows the backend server to know about the SLB ID. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1973,8 +1973,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the HTTP header field "X-Forwarded-For_SLBIP" is added or not; it allows the backend server to know about the SLB IP address. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the HTTP header field "X-Forwarded-For_SLBIP" is added or not; it allows the backend server to know about the SLB IP address. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1982,8 +1982,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the HTTP header field "X-Forwarded-For_proto" is added or not; it allows the backend server to know about the user's protocol. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the HTTP header field "X-Forwarded-For_proto" is added or not; it allows the backend server to know about the user's protocol. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1991,11 +1991,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicate whether the HTTP header field "X-Forwarded-For" is added or not; it allows the backend server to know about the user's IP address. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
-{{% /md %}}</dd>
+    <dd>Indicate whether the HTTP header field "X-Forwarded-For" is added or not; it allows the backend server to know about the user's IP address. Possible values are `on` and `off`. Only available when the protocol is `http` or `https`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

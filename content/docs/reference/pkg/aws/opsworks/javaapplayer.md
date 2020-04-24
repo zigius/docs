@@ -31,26 +31,26 @@ const app = new aws.opsworks.JavaAppLayer("app", {
 
 
 ## Create a JavaAppLayer Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#JavaAppLayer">JavaAppLayer</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#JavaAppLayerArgs">JavaAppLayerArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">JavaAppLayer</span><span class="p">(resource_name, opts=None, </span>app_server=None<span class="p">, </span>app_server_version=None<span class="p">, </span>auto_assign_elastic_ips=None<span class="p">, </span>auto_assign_public_ips=None<span class="p">, </span>auto_healing=None<span class="p">, </span>custom_configure_recipes=None<span class="p">, </span>custom_deploy_recipes=None<span class="p">, </span>custom_instance_profile_arn=None<span class="p">, </span>custom_json=None<span class="p">, </span>custom_security_group_ids=None<span class="p">, </span>custom_setup_recipes=None<span class="p">, </span>custom_shutdown_recipes=None<span class="p">, </span>custom_undeploy_recipes=None<span class="p">, </span>drain_elb_on_shutdown=None<span class="p">, </span>ebs_volumes=None<span class="p">, </span>elastic_load_balancer=None<span class="p">, </span>install_updates_on_boot=None<span class="p">, </span>instance_shutdown_timeout=None<span class="p">, </span>jvm_options=None<span class="p">, </span>jvm_type=None<span class="p">, </span>jvm_version=None<span class="p">, </span>name=None<span class="p">, </span>stack_id=None<span class="p">, </span>system_packages=None<span class="p">, </span>tags=None<span class="p">, </span>use_ebs_optimized_instances=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewJavaAppLayer<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#JavaAppLayerArgs">JavaAppLayerArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#JavaAppLayer">JavaAppLayer</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.JavaAppLayer.html">JavaAppLayer</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.JavaAppLayerArgs.html">JavaAppLayerArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -87,9 +87,9 @@ const app = new aws.opsworks.JavaAppLayer("app", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -107,9 +107,9 @@ const app = new aws.opsworks.JavaAppLayer("app", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -156,9 +156,9 @@ const app = new aws.opsworks.JavaAppLayer("app", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -195,7 +195,7 @@ const app = new aws.opsworks.JavaAppLayer("app", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## JavaAppLayer Resource Properties {#properties}
 
@@ -208,7 +208,7 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -217,8 +217,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the stack the layer will belong to.
-{{% /md %}}</dd>
+    <dd>The id of the stack the layer will belong to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -226,8 +226,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword for the application container to use. Defaults to "tomcat".
-{{% /md %}}</dd>
+    <dd>Keyword for the application container to use. Defaults to "tomcat".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -235,8 +235,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Version of the selected application container to use. Defaults to "7".
-{{% /md %}}</dd>
+    <dd>Version of the selected application container to use. Defaults to "7".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -244,8 +244,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to automatically assign an elastic IP address to the layer's instances.
-{{% /md %}}</dd>
+    <dd>Whether to automatically assign an elastic IP address to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -253,8 +253,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}For stacks belonging to a VPC, whether to automatically assign a public IP address to each of the layer's instances.
-{{% /md %}}</dd>
+    <dd>For stacks belonging to a VPC, whether to automatically assign a public IP address to each of the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -262,8 +262,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable auto-healing for the layer.
-{{% /md %}}</dd>
+    <dd>Whether to enable auto-healing for the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -271,7 +271,7 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -279,7 +279,7 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -287,8 +287,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM profile that will be used for the layer's instances.
-{{% /md %}}</dd>
+    <dd>The ARN of an IAM profile that will be used for the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -296,8 +296,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON attributes to apply to the layer.
-{{% /md %}}</dd>
+    <dd>Custom JSON attributes to apply to the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -305,8 +305,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Ids for a set of security groups to apply to the layer's instances.
-{{% /md %}}</dd>
+    <dd>Ids for a set of security groups to apply to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -314,7 +314,7 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -322,7 +322,7 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -330,7 +330,7 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -338,8 +338,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable Elastic Load Balancing connection draining.
-{{% /md %}}</dd>
+    <dd>Whether to enable Elastic Load Balancing connection draining.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -347,8 +347,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#javaapplayerebsvolume">List&lt;Java<wbr>App<wbr>Layer<wbr>Ebs<wbr>Volume<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}`ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
-{{% /md %}}</dd>
+    <dd>`ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -356,8 +356,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of an Elastic Load Balancer to attach to this layer
-{{% /md %}}</dd>
+    <dd>Name of an Elastic Load Balancer to attach to this layer
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -365,8 +365,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to install OS and package updates on each instance when it boots.
-{{% /md %}}</dd>
+    <dd>Whether to install OS and package updates on each instance when it boots.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -374,8 +374,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, that OpsWorks will wait for Chef to complete after triggering the Shutdown event.
-{{% /md %}}</dd>
+    <dd>The time, in seconds, that OpsWorks will wait for Chef to complete after triggering the Shutdown event.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -383,8 +383,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Options to set for the JVM.
-{{% /md %}}</dd>
+    <dd>Options to set for the JVM.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -392,8 +392,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword for the type of JVM to use. Defaults to `openjdk`.
-{{% /md %}}</dd>
+    <dd>Keyword for the type of JVM to use. Defaults to `openjdk`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -401,8 +401,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Version of JVM to use. Defaults to "7".
-{{% /md %}}</dd>
+    <dd>Version of JVM to use. Defaults to "7".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -410,8 +410,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A human-readable name for the layer.
-{{% /md %}}</dd>
+    <dd>A human-readable name for the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -419,8 +419,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Names of a set of system packages to install on the layer's instances.
-{{% /md %}}</dd>
+    <dd>Names of a set of system packages to install on the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -428,8 +428,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -437,14 +437,14 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use EBS-optimized instances.
-{{% /md %}}</dd>
+    <dd>Whether to use EBS-optimized instances.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -453,8 +453,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the stack the layer will belong to.
-{{% /md %}}</dd>
+    <dd>The id of the stack the layer will belong to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -462,8 +462,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword for the application container to use. Defaults to "tomcat".
-{{% /md %}}</dd>
+    <dd>Keyword for the application container to use. Defaults to "tomcat".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -471,8 +471,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Version of the selected application container to use. Defaults to "7".
-{{% /md %}}</dd>
+    <dd>Version of the selected application container to use. Defaults to "7".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -480,8 +480,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to automatically assign an elastic IP address to the layer's instances.
-{{% /md %}}</dd>
+    <dd>Whether to automatically assign an elastic IP address to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -489,8 +489,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}For stacks belonging to a VPC, whether to automatically assign a public IP address to each of the layer's instances.
-{{% /md %}}</dd>
+    <dd>For stacks belonging to a VPC, whether to automatically assign a public IP address to each of the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -498,8 +498,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable auto-healing for the layer.
-{{% /md %}}</dd>
+    <dd>Whether to enable auto-healing for the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -507,7 +507,7 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -515,7 +515,7 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -523,8 +523,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM profile that will be used for the layer's instances.
-{{% /md %}}</dd>
+    <dd>The ARN of an IAM profile that will be used for the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -532,8 +532,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON attributes to apply to the layer.
-{{% /md %}}</dd>
+    <dd>Custom JSON attributes to apply to the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -541,8 +541,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Ids for a set of security groups to apply to the layer's instances.
-{{% /md %}}</dd>
+    <dd>Ids for a set of security groups to apply to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -550,7 +550,7 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -558,7 +558,7 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -566,7 +566,7 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -574,8 +574,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable Elastic Load Balancing connection draining.
-{{% /md %}}</dd>
+    <dd>Whether to enable Elastic Load Balancing connection draining.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -583,8 +583,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#javaapplayerebsvolume">[]Java<wbr>App<wbr>Layer<wbr>Ebs<wbr>Volume</a></span>
     </dt>
-    <dd>{{% md %}}`ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
-{{% /md %}}</dd>
+    <dd>`ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -592,8 +592,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of an Elastic Load Balancer to attach to this layer
-{{% /md %}}</dd>
+    <dd>Name of an Elastic Load Balancer to attach to this layer
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -601,8 +601,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to install OS and package updates on each instance when it boots.
-{{% /md %}}</dd>
+    <dd>Whether to install OS and package updates on each instance when it boots.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -610,8 +610,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, that OpsWorks will wait for Chef to complete after triggering the Shutdown event.
-{{% /md %}}</dd>
+    <dd>The time, in seconds, that OpsWorks will wait for Chef to complete after triggering the Shutdown event.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -619,8 +619,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Options to set for the JVM.
-{{% /md %}}</dd>
+    <dd>Options to set for the JVM.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -628,8 +628,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword for the type of JVM to use. Defaults to `openjdk`.
-{{% /md %}}</dd>
+    <dd>Keyword for the type of JVM to use. Defaults to `openjdk`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -637,8 +637,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Version of JVM to use. Defaults to "7".
-{{% /md %}}</dd>
+    <dd>Version of JVM to use. Defaults to "7".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -646,8 +646,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A human-readable name for the layer.
-{{% /md %}}</dd>
+    <dd>A human-readable name for the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -655,8 +655,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Names of a set of system packages to install on the layer's instances.
-{{% /md %}}</dd>
+    <dd>Names of a set of system packages to install on the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -664,8 +664,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -673,14 +673,14 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use EBS-optimized instances.
-{{% /md %}}</dd>
+    <dd>Whether to use EBS-optimized instances.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -689,8 +689,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the stack the layer will belong to.
-{{% /md %}}</dd>
+    <dd>The id of the stack the layer will belong to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -698,8 +698,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword for the application container to use. Defaults to "tomcat".
-{{% /md %}}</dd>
+    <dd>Keyword for the application container to use. Defaults to "tomcat".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -707,8 +707,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Version of the selected application container to use. Defaults to "7".
-{{% /md %}}</dd>
+    <dd>Version of the selected application container to use. Defaults to "7".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -716,8 +716,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to automatically assign an elastic IP address to the layer's instances.
-{{% /md %}}</dd>
+    <dd>Whether to automatically assign an elastic IP address to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -725,8 +725,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}For stacks belonging to a VPC, whether to automatically assign a public IP address to each of the layer's instances.
-{{% /md %}}</dd>
+    <dd>For stacks belonging to a VPC, whether to automatically assign a public IP address to each of the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -734,8 +734,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable auto-healing for the layer.
-{{% /md %}}</dd>
+    <dd>Whether to enable auto-healing for the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -743,7 +743,7 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -751,7 +751,7 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -759,8 +759,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM profile that will be used for the layer's instances.
-{{% /md %}}</dd>
+    <dd>The ARN of an IAM profile that will be used for the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -768,8 +768,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON attributes to apply to the layer.
-{{% /md %}}</dd>
+    <dd>Custom JSON attributes to apply to the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -777,8 +777,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Ids for a set of security groups to apply to the layer's instances.
-{{% /md %}}</dd>
+    <dd>Ids for a set of security groups to apply to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -786,7 +786,7 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -794,7 +794,7 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -802,7 +802,7 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -810,8 +810,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable Elastic Load Balancing connection draining.
-{{% /md %}}</dd>
+    <dd>Whether to enable Elastic Load Balancing connection draining.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -819,8 +819,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#javaapplayerebsvolume">Java<wbr>App<wbr>Layer<wbr>Ebs<wbr>Volume[]</a></span>
     </dt>
-    <dd>{{% md %}}`ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
-{{% /md %}}</dd>
+    <dd>`ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -828,8 +828,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of an Elastic Load Balancer to attach to this layer
-{{% /md %}}</dd>
+    <dd>Name of an Elastic Load Balancer to attach to this layer
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -837,8 +837,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to install OS and package updates on each instance when it boots.
-{{% /md %}}</dd>
+    <dd>Whether to install OS and package updates on each instance when it boots.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -846,8 +846,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, that OpsWorks will wait for Chef to complete after triggering the Shutdown event.
-{{% /md %}}</dd>
+    <dd>The time, in seconds, that OpsWorks will wait for Chef to complete after triggering the Shutdown event.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -855,8 +855,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Options to set for the JVM.
-{{% /md %}}</dd>
+    <dd>Options to set for the JVM.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -864,8 +864,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword for the type of JVM to use. Defaults to `openjdk`.
-{{% /md %}}</dd>
+    <dd>Keyword for the type of JVM to use. Defaults to `openjdk`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -873,8 +873,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Version of JVM to use. Defaults to "7".
-{{% /md %}}</dd>
+    <dd>Version of JVM to use. Defaults to "7".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -882,8 +882,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A human-readable name for the layer.
-{{% /md %}}</dd>
+    <dd>A human-readable name for the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -891,8 +891,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Names of a set of system packages to install on the layer's instances.
-{{% /md %}}</dd>
+    <dd>Names of a set of system packages to install on the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -900,8 +900,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -909,14 +909,14 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use EBS-optimized instances.
-{{% /md %}}</dd>
+    <dd>Whether to use EBS-optimized instances.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -925,8 +925,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of the stack the layer will belong to.
-{{% /md %}}</dd>
+    <dd>The id of the stack the layer will belong to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -934,8 +934,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Keyword for the application container to use. Defaults to "tomcat".
-{{% /md %}}</dd>
+    <dd>Keyword for the application container to use. Defaults to "tomcat".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -943,8 +943,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Version of the selected application container to use. Defaults to "7".
-{{% /md %}}</dd>
+    <dd>Version of the selected application container to use. Defaults to "7".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -952,8 +952,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to automatically assign an elastic IP address to the layer's instances.
-{{% /md %}}</dd>
+    <dd>Whether to automatically assign an elastic IP address to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -961,8 +961,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}For stacks belonging to a VPC, whether to automatically assign a public IP address to each of the layer's instances.
-{{% /md %}}</dd>
+    <dd>For stacks belonging to a VPC, whether to automatically assign a public IP address to each of the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -970,8 +970,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable auto-healing for the layer.
-{{% /md %}}</dd>
+    <dd>Whether to enable auto-healing for the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -979,7 +979,7 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -987,7 +987,7 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -995,8 +995,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM profile that will be used for the layer's instances.
-{{% /md %}}</dd>
+    <dd>The ARN of an IAM profile that will be used for the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1004,8 +1004,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON attributes to apply to the layer.
-{{% /md %}}</dd>
+    <dd>Custom JSON attributes to apply to the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1013,8 +1013,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Ids for a set of security groups to apply to the layer's instances.
-{{% /md %}}</dd>
+    <dd>Ids for a set of security groups to apply to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1022,7 +1022,7 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1030,7 +1030,7 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1038,7 +1038,7 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1046,8 +1046,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable Elastic Load Balancing connection draining.
-{{% /md %}}</dd>
+    <dd>Whether to enable Elastic Load Balancing connection draining.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1055,8 +1055,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#javaapplayerebsvolume">List[Java<wbr>App<wbr>Layer<wbr>Ebs<wbr>Volume]</a></span>
     </dt>
-    <dd>{{% md %}}`ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
-{{% /md %}}</dd>
+    <dd>`ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1064,8 +1064,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of an Elastic Load Balancer to attach to this layer
-{{% /md %}}</dd>
+    <dd>Name of an Elastic Load Balancer to attach to this layer
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1073,8 +1073,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to install OS and package updates on each instance when it boots.
-{{% /md %}}</dd>
+    <dd>Whether to install OS and package updates on each instance when it boots.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1082,8 +1082,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, that OpsWorks will wait for Chef to complete after triggering the Shutdown event.
-{{% /md %}}</dd>
+    <dd>The time, in seconds, that OpsWorks will wait for Chef to complete after triggering the Shutdown event.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1091,8 +1091,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Options to set for the JVM.
-{{% /md %}}</dd>
+    <dd>Options to set for the JVM.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1100,8 +1100,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Keyword for the type of JVM to use. Defaults to `openjdk`.
-{{% /md %}}</dd>
+    <dd>Keyword for the type of JVM to use. Defaults to `openjdk`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1109,8 +1109,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Version of JVM to use. Defaults to "7".
-{{% /md %}}</dd>
+    <dd>Version of JVM to use. Defaults to "7".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1118,8 +1118,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A human-readable name for the layer.
-{{% /md %}}</dd>
+    <dd>A human-readable name for the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1127,8 +1127,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Names of a set of system packages to install on the layer's instances.
-{{% /md %}}</dd>
+    <dd>Names of a set of system packages to install on the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1136,8 +1136,8 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1145,11 +1145,11 @@ The JavaAppLayer resource accepts the following [input]({{< relref "/docs/intro/
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use EBS-optimized instances.
-{{% /md %}}</dd>
+    <dd>Whether to use EBS-optimized instances.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1163,7 +1163,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1172,8 +1172,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name(ARN) of the layer.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name(ARN) of the layer.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1181,13 +1181,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1196,8 +1196,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name(ARN) of the layer.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name(ARN) of the layer.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1205,13 +1205,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1220,8 +1220,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name(ARN) of the layer.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name(ARN) of the layer.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1229,13 +1229,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1244,8 +1244,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name(ARN) of the layer.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name(ARN) of the layer.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1253,10 +1253,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1267,25 +1267,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing JavaAppLayer Resource {#look-up}
 
 Get an existing JavaAppLayer resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#JavaAppLayerState">JavaAppLayerState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/opsworks/#JavaAppLayer">JavaAppLayer</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>app_server=None<span class="p">, </span>app_server_version=None<span class="p">, </span>arn=None<span class="p">, </span>auto_assign_elastic_ips=None<span class="p">, </span>auto_assign_public_ips=None<span class="p">, </span>auto_healing=None<span class="p">, </span>custom_configure_recipes=None<span class="p">, </span>custom_deploy_recipes=None<span class="p">, </span>custom_instance_profile_arn=None<span class="p">, </span>custom_json=None<span class="p">, </span>custom_security_group_ids=None<span class="p">, </span>custom_setup_recipes=None<span class="p">, </span>custom_shutdown_recipes=None<span class="p">, </span>custom_undeploy_recipes=None<span class="p">, </span>drain_elb_on_shutdown=None<span class="p">, </span>ebs_volumes=None<span class="p">, </span>elastic_load_balancer=None<span class="p">, </span>install_updates_on_boot=None<span class="p">, </span>instance_shutdown_timeout=None<span class="p">, </span>jvm_options=None<span class="p">, </span>jvm_type=None<span class="p">, </span>jvm_version=None<span class="p">, </span>name=None<span class="p">, </span>stack_id=None<span class="p">, </span>system_packages=None<span class="p">, </span>tags=None<span class="p">, </span>use_ebs_optimized_instances=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetJavaAppLayer<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#JavaAppLayerState">JavaAppLayerState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#JavaAppLayer">JavaAppLayer</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.JavaAppLayer.html">JavaAppLayer</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.OpsWorks.JavaAppLayerState.html">JavaAppLayerState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1310,9 +1310,9 @@ Get an existing JavaAppLayer resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1325,36 +1325,9 @@ Get an existing JavaAppLayer resource's state with the given name, ID, and optio
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1379,13 +1352,40 @@ Get an existing JavaAppLayer resource's state with the given name, ID, and optio
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1394,8 +1394,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword for the application container to use. Defaults to "tomcat".
-{{% /md %}}</dd>
+    <dd>Keyword for the application container to use. Defaults to "tomcat".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1403,8 +1403,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Version of the selected application container to use. Defaults to "7".
-{{% /md %}}</dd>
+    <dd>Version of the selected application container to use. Defaults to "7".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1412,8 +1412,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name(ARN) of the layer.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name(ARN) of the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1421,8 +1421,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to automatically assign an elastic IP address to the layer's instances.
-{{% /md %}}</dd>
+    <dd>Whether to automatically assign an elastic IP address to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1430,8 +1430,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}For stacks belonging to a VPC, whether to automatically assign a public IP address to each of the layer's instances.
-{{% /md %}}</dd>
+    <dd>For stacks belonging to a VPC, whether to automatically assign a public IP address to each of the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1439,8 +1439,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable auto-healing for the layer.
-{{% /md %}}</dd>
+    <dd>Whether to enable auto-healing for the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1448,7 +1448,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1456,7 +1456,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1464,8 +1464,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM profile that will be used for the layer's instances.
-{{% /md %}}</dd>
+    <dd>The ARN of an IAM profile that will be used for the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1473,8 +1473,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON attributes to apply to the layer.
-{{% /md %}}</dd>
+    <dd>Custom JSON attributes to apply to the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1482,8 +1482,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Ids for a set of security groups to apply to the layer's instances.
-{{% /md %}}</dd>
+    <dd>Ids for a set of security groups to apply to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1491,7 +1491,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1499,7 +1499,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1507,7 +1507,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1515,8 +1515,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable Elastic Load Balancing connection draining.
-{{% /md %}}</dd>
+    <dd>Whether to enable Elastic Load Balancing connection draining.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1524,8 +1524,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#javaapplayerebsvolume">List&lt;Java<wbr>App<wbr>Layer<wbr>Ebs<wbr>Volume<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}`ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
-{{% /md %}}</dd>
+    <dd>`ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1533,8 +1533,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of an Elastic Load Balancer to attach to this layer
-{{% /md %}}</dd>
+    <dd>Name of an Elastic Load Balancer to attach to this layer
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1542,8 +1542,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to install OS and package updates on each instance when it boots.
-{{% /md %}}</dd>
+    <dd>Whether to install OS and package updates on each instance when it boots.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1551,8 +1551,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, that OpsWorks will wait for Chef to complete after triggering the Shutdown event.
-{{% /md %}}</dd>
+    <dd>The time, in seconds, that OpsWorks will wait for Chef to complete after triggering the Shutdown event.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1560,8 +1560,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Options to set for the JVM.
-{{% /md %}}</dd>
+    <dd>Options to set for the JVM.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1569,8 +1569,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword for the type of JVM to use. Defaults to `openjdk`.
-{{% /md %}}</dd>
+    <dd>Keyword for the type of JVM to use. Defaults to `openjdk`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1578,8 +1578,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Version of JVM to use. Defaults to "7".
-{{% /md %}}</dd>
+    <dd>Version of JVM to use. Defaults to "7".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1587,8 +1587,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A human-readable name for the layer.
-{{% /md %}}</dd>
+    <dd>A human-readable name for the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1596,8 +1596,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the stack the layer will belong to.
-{{% /md %}}</dd>
+    <dd>The id of the stack the layer will belong to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1605,8 +1605,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Names of a set of system packages to install on the layer's instances.
-{{% /md %}}</dd>
+    <dd>Names of a set of system packages to install on the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1614,8 +1614,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1623,14 +1623,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use EBS-optimized instances.
-{{% /md %}}</dd>
+    <dd>Whether to use EBS-optimized instances.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1639,8 +1639,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword for the application container to use. Defaults to "tomcat".
-{{% /md %}}</dd>
+    <dd>Keyword for the application container to use. Defaults to "tomcat".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1648,8 +1648,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Version of the selected application container to use. Defaults to "7".
-{{% /md %}}</dd>
+    <dd>Version of the selected application container to use. Defaults to "7".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1657,8 +1657,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name(ARN) of the layer.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name(ARN) of the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1666,8 +1666,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to automatically assign an elastic IP address to the layer's instances.
-{{% /md %}}</dd>
+    <dd>Whether to automatically assign an elastic IP address to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1675,8 +1675,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}For stacks belonging to a VPC, whether to automatically assign a public IP address to each of the layer's instances.
-{{% /md %}}</dd>
+    <dd>For stacks belonging to a VPC, whether to automatically assign a public IP address to each of the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1684,8 +1684,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable auto-healing for the layer.
-{{% /md %}}</dd>
+    <dd>Whether to enable auto-healing for the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1693,7 +1693,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1701,7 +1701,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1709,8 +1709,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM profile that will be used for the layer's instances.
-{{% /md %}}</dd>
+    <dd>The ARN of an IAM profile that will be used for the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1718,8 +1718,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON attributes to apply to the layer.
-{{% /md %}}</dd>
+    <dd>Custom JSON attributes to apply to the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1727,8 +1727,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Ids for a set of security groups to apply to the layer's instances.
-{{% /md %}}</dd>
+    <dd>Ids for a set of security groups to apply to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1736,7 +1736,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1744,7 +1744,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1752,7 +1752,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1760,8 +1760,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable Elastic Load Balancing connection draining.
-{{% /md %}}</dd>
+    <dd>Whether to enable Elastic Load Balancing connection draining.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1769,8 +1769,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#javaapplayerebsvolume">[]Java<wbr>App<wbr>Layer<wbr>Ebs<wbr>Volume</a></span>
     </dt>
-    <dd>{{% md %}}`ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
-{{% /md %}}</dd>
+    <dd>`ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1778,8 +1778,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of an Elastic Load Balancer to attach to this layer
-{{% /md %}}</dd>
+    <dd>Name of an Elastic Load Balancer to attach to this layer
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1787,8 +1787,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to install OS and package updates on each instance when it boots.
-{{% /md %}}</dd>
+    <dd>Whether to install OS and package updates on each instance when it boots.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1796,8 +1796,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, that OpsWorks will wait for Chef to complete after triggering the Shutdown event.
-{{% /md %}}</dd>
+    <dd>The time, in seconds, that OpsWorks will wait for Chef to complete after triggering the Shutdown event.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1805,8 +1805,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Options to set for the JVM.
-{{% /md %}}</dd>
+    <dd>Options to set for the JVM.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1814,8 +1814,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword for the type of JVM to use. Defaults to `openjdk`.
-{{% /md %}}</dd>
+    <dd>Keyword for the type of JVM to use. Defaults to `openjdk`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1823,8 +1823,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Version of JVM to use. Defaults to "7".
-{{% /md %}}</dd>
+    <dd>Version of JVM to use. Defaults to "7".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1832,8 +1832,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A human-readable name for the layer.
-{{% /md %}}</dd>
+    <dd>A human-readable name for the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1841,8 +1841,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the stack the layer will belong to.
-{{% /md %}}</dd>
+    <dd>The id of the stack the layer will belong to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1850,8 +1850,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Names of a set of system packages to install on the layer's instances.
-{{% /md %}}</dd>
+    <dd>Names of a set of system packages to install on the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1859,8 +1859,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1868,14 +1868,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use EBS-optimized instances.
-{{% /md %}}</dd>
+    <dd>Whether to use EBS-optimized instances.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1884,8 +1884,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword for the application container to use. Defaults to "tomcat".
-{{% /md %}}</dd>
+    <dd>Keyword for the application container to use. Defaults to "tomcat".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1893,8 +1893,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Version of the selected application container to use. Defaults to "7".
-{{% /md %}}</dd>
+    <dd>Version of the selected application container to use. Defaults to "7".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1902,8 +1902,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name(ARN) of the layer.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name(ARN) of the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1911,8 +1911,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to automatically assign an elastic IP address to the layer's instances.
-{{% /md %}}</dd>
+    <dd>Whether to automatically assign an elastic IP address to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1920,8 +1920,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}For stacks belonging to a VPC, whether to automatically assign a public IP address to each of the layer's instances.
-{{% /md %}}</dd>
+    <dd>For stacks belonging to a VPC, whether to automatically assign a public IP address to each of the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1929,8 +1929,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable auto-healing for the layer.
-{{% /md %}}</dd>
+    <dd>Whether to enable auto-healing for the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1938,7 +1938,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1946,7 +1946,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1954,8 +1954,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM profile that will be used for the layer's instances.
-{{% /md %}}</dd>
+    <dd>The ARN of an IAM profile that will be used for the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1963,8 +1963,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON attributes to apply to the layer.
-{{% /md %}}</dd>
+    <dd>Custom JSON attributes to apply to the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1972,8 +1972,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Ids for a set of security groups to apply to the layer's instances.
-{{% /md %}}</dd>
+    <dd>Ids for a set of security groups to apply to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1981,7 +1981,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1989,7 +1989,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1997,7 +1997,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2005,8 +2005,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable Elastic Load Balancing connection draining.
-{{% /md %}}</dd>
+    <dd>Whether to enable Elastic Load Balancing connection draining.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2014,8 +2014,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#javaapplayerebsvolume">Java<wbr>App<wbr>Layer<wbr>Ebs<wbr>Volume[]</a></span>
     </dt>
-    <dd>{{% md %}}`ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
-{{% /md %}}</dd>
+    <dd>`ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2023,8 +2023,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of an Elastic Load Balancer to attach to this layer
-{{% /md %}}</dd>
+    <dd>Name of an Elastic Load Balancer to attach to this layer
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2032,8 +2032,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to install OS and package updates on each instance when it boots.
-{{% /md %}}</dd>
+    <dd>Whether to install OS and package updates on each instance when it boots.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2041,8 +2041,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, that OpsWorks will wait for Chef to complete after triggering the Shutdown event.
-{{% /md %}}</dd>
+    <dd>The time, in seconds, that OpsWorks will wait for Chef to complete after triggering the Shutdown event.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2050,8 +2050,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Options to set for the JVM.
-{{% /md %}}</dd>
+    <dd>Options to set for the JVM.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2059,8 +2059,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Keyword for the type of JVM to use. Defaults to `openjdk`.
-{{% /md %}}</dd>
+    <dd>Keyword for the type of JVM to use. Defaults to `openjdk`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2068,8 +2068,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Version of JVM to use. Defaults to "7".
-{{% /md %}}</dd>
+    <dd>Version of JVM to use. Defaults to "7".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2077,8 +2077,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A human-readable name for the layer.
-{{% /md %}}</dd>
+    <dd>A human-readable name for the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2086,8 +2086,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The id of the stack the layer will belong to.
-{{% /md %}}</dd>
+    <dd>The id of the stack the layer will belong to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2095,8 +2095,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Names of a set of system packages to install on the layer's instances.
-{{% /md %}}</dd>
+    <dd>Names of a set of system packages to install on the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2104,8 +2104,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2113,14 +2113,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use EBS-optimized instances.
-{{% /md %}}</dd>
+    <dd>Whether to use EBS-optimized instances.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2129,8 +2129,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Keyword for the application container to use. Defaults to "tomcat".
-{{% /md %}}</dd>
+    <dd>Keyword for the application container to use. Defaults to "tomcat".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2138,8 +2138,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Version of the selected application container to use. Defaults to "7".
-{{% /md %}}</dd>
+    <dd>Version of the selected application container to use. Defaults to "7".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2147,8 +2147,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name(ARN) of the layer.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name(ARN) of the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2156,8 +2156,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to automatically assign an elastic IP address to the layer's instances.
-{{% /md %}}</dd>
+    <dd>Whether to automatically assign an elastic IP address to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2165,8 +2165,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}For stacks belonging to a VPC, whether to automatically assign a public IP address to each of the layer's instances.
-{{% /md %}}</dd>
+    <dd>For stacks belonging to a VPC, whether to automatically assign a public IP address to each of the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2174,8 +2174,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable auto-healing for the layer.
-{{% /md %}}</dd>
+    <dd>Whether to enable auto-healing for the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2183,7 +2183,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2191,7 +2191,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2199,8 +2199,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of an IAM profile that will be used for the layer's instances.
-{{% /md %}}</dd>
+    <dd>The ARN of an IAM profile that will be used for the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2208,8 +2208,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Custom JSON attributes to apply to the layer.
-{{% /md %}}</dd>
+    <dd>Custom JSON attributes to apply to the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2217,8 +2217,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Ids for a set of security groups to apply to the layer's instances.
-{{% /md %}}</dd>
+    <dd>Ids for a set of security groups to apply to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2226,7 +2226,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2234,7 +2234,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2242,7 +2242,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2250,8 +2250,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to enable Elastic Load Balancing connection draining.
-{{% /md %}}</dd>
+    <dd>Whether to enable Elastic Load Balancing connection draining.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2259,8 +2259,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#javaapplayerebsvolume">List[Java<wbr>App<wbr>Layer<wbr>Ebs<wbr>Volume]</a></span>
     </dt>
-    <dd>{{% md %}}`ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
-{{% /md %}}</dd>
+    <dd>`ebs_volume` blocks, as described below, will each create an EBS volume and connect it to the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2268,8 +2268,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of an Elastic Load Balancer to attach to this layer
-{{% /md %}}</dd>
+    <dd>Name of an Elastic Load Balancer to attach to this layer
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2277,8 +2277,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to install OS and package updates on each instance when it boots.
-{{% /md %}}</dd>
+    <dd>Whether to install OS and package updates on each instance when it boots.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2286,8 +2286,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The time, in seconds, that OpsWorks will wait for Chef to complete after triggering the Shutdown event.
-{{% /md %}}</dd>
+    <dd>The time, in seconds, that OpsWorks will wait for Chef to complete after triggering the Shutdown event.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2295,8 +2295,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Options to set for the JVM.
-{{% /md %}}</dd>
+    <dd>Options to set for the JVM.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2304,8 +2304,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Keyword for the type of JVM to use. Defaults to `openjdk`.
-{{% /md %}}</dd>
+    <dd>Keyword for the type of JVM to use. Defaults to `openjdk`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2313,8 +2313,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Version of JVM to use. Defaults to "7".
-{{% /md %}}</dd>
+    <dd>Version of JVM to use. Defaults to "7".
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2322,8 +2322,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A human-readable name for the layer.
-{{% /md %}}</dd>
+    <dd>A human-readable name for the layer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2331,8 +2331,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The id of the stack the layer will belong to.
-{{% /md %}}</dd>
+    <dd>The id of the stack the layer will belong to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2340,8 +2340,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Names of a set of system packages to install on the layer's instances.
-{{% /md %}}</dd>
+    <dd>Names of a set of system packages to install on the layer's instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2349,8 +2349,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2358,11 +2358,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use EBS-optimized instances.
-{{% /md %}}</dd>
+    <dd>Whether to use EBS-optimized instances.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2377,18 +2377,18 @@ The following state arguments are supported:
 
 
 <h4 id="javaapplayerebsvolume">Java<wbr>App<wbr>Layer<wbr>Ebs<wbr>Volume</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#JavaAppLayerEbsVolume">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#JavaAppLayerEbsVolume">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#JavaAppLayerEbsVolumeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/opsworks?tab=doc#JavaAppLayerEbsVolumeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2397,8 +2397,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to mount the EBS volume on the layer's instances.
-{{% /md %}}</dd>
+    <dd>The path to mount the EBS volume on the layer's instances.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2406,8 +2406,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of disks to use for the EBS volume.
-{{% /md %}}</dd>
+    <dd>The number of disks to use for the EBS volume.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2415,8 +2415,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume in gigabytes.
-{{% /md %}}</dd>
+    <dd>The size of the volume in gigabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2424,7 +2424,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2432,8 +2432,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}For PIOPS volumes, the IOPS per disk.
-{{% /md %}}</dd>
+    <dd>For PIOPS volumes, the IOPS per disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2441,8 +2441,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The RAID level to use for the volume.
-{{% /md %}}</dd>
+    <dd>The RAID level to use for the volume.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2450,14 +2450,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of volume to create. This may be `standard` (the default), `io1` or `gp2`.
-{{% /md %}}</dd>
+    <dd>The type of volume to create. This may be `standard` (the default), `io1` or `gp2`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2466,8 +2466,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to mount the EBS volume on the layer's instances.
-{{% /md %}}</dd>
+    <dd>The path to mount the EBS volume on the layer's instances.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2475,8 +2475,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of disks to use for the EBS volume.
-{{% /md %}}</dd>
+    <dd>The number of disks to use for the EBS volume.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2484,8 +2484,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume in gigabytes.
-{{% /md %}}</dd>
+    <dd>The size of the volume in gigabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2493,7 +2493,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2501,8 +2501,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}For PIOPS volumes, the IOPS per disk.
-{{% /md %}}</dd>
+    <dd>For PIOPS volumes, the IOPS per disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2510,8 +2510,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RAID level to use for the volume.
-{{% /md %}}</dd>
+    <dd>The RAID level to use for the volume.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2519,14 +2519,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of volume to create. This may be `standard` (the default), `io1` or `gp2`.
-{{% /md %}}</dd>
+    <dd>The type of volume to create. This may be `standard` (the default), `io1` or `gp2`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2535,8 +2535,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to mount the EBS volume on the layer's instances.
-{{% /md %}}</dd>
+    <dd>The path to mount the EBS volume on the layer's instances.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2544,8 +2544,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of disks to use for the EBS volume.
-{{% /md %}}</dd>
+    <dd>The number of disks to use for the EBS volume.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2553,8 +2553,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume in gigabytes.
-{{% /md %}}</dd>
+    <dd>The size of the volume in gigabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2562,7 +2562,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2570,8 +2570,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}For PIOPS volumes, the IOPS per disk.
-{{% /md %}}</dd>
+    <dd>For PIOPS volumes, the IOPS per disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2579,8 +2579,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The RAID level to use for the volume.
-{{% /md %}}</dd>
+    <dd>The RAID level to use for the volume.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2588,14 +2588,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of volume to create. This may be `standard` (the default), `io1` or `gp2`.
-{{% /md %}}</dd>
+    <dd>The type of volume to create. This may be `standard` (the default), `io1` or `gp2`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2604,8 +2604,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path to mount the EBS volume on the layer's instances.
-{{% /md %}}</dd>
+    <dd>The path to mount the EBS volume on the layer's instances.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2613,8 +2613,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of disks to use for the EBS volume.
-{{% /md %}}</dd>
+    <dd>The number of disks to use for the EBS volume.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2622,8 +2622,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume in gigabytes.
-{{% /md %}}</dd>
+    <dd>The size of the volume in gigabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2631,7 +2631,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2639,8 +2639,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}For PIOPS volumes, the IOPS per disk.
-{{% /md %}}</dd>
+    <dd>For PIOPS volumes, the IOPS per disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2648,8 +2648,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The RAID level to use for the volume.
-{{% /md %}}</dd>
+    <dd>The RAID level to use for the volume.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2657,11 +2657,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of volume to create. This may be `standard` (the default), `io1` or `gp2`.
-{{% /md %}}</dd>
+    <dd>The type of volume to create. This may be `standard` (the default), `io1` or `gp2`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

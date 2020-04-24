@@ -13,26 +13,26 @@ block_external_search_index: true
 
 
 ## Create a LogsIndex Resource
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/datadog/#LogsIndex">LogsIndex</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/datadog/#LogsIndexArgs">LogsIndexArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">LogsIndex</span><span class="p">(resource_name, opts=None, </span>exclusion_filters=None<span class="p">, </span>filters=None<span class="p">, </span>name=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewLogsIndex<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsIndexArgs">LogsIndexArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsIndex">LogsIndex</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Datadog/Pulumi.Datadog.LogsIndex.html">LogsIndex</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Datadog/Pulumi.Datadog.LogsIndexArgs.html">LogsIndexArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -69,9 +69,9 @@ block_external_search_index: true
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -89,9 +89,9 @@ block_external_search_index: true
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -138,9 +138,9 @@ block_external_search_index: true
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -177,14 +177,14 @@ block_external_search_index: true
 
 </dl>
 
-{{% /choosable %}}
+
 
 #### Resource Arguments
 
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -193,7 +193,7 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logsindexfilter">List&lt;Logs<wbr>Index<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -201,8 +201,8 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the exclusion filter.
-{{% /md %}}</dd>
+    <dd>The name of the exclusion filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -210,14 +210,14 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logsindexexclusionfilter">List&lt;Logs<wbr>Index<wbr>Exclusion<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of exclusion filters.
-{{% /md %}}</dd>
+    <dd>List of exclusion filters.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -226,7 +226,7 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logsindexfilter">[]Logs<wbr>Index<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -234,8 +234,8 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the exclusion filter.
-{{% /md %}}</dd>
+    <dd>The name of the exclusion filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -243,14 +243,14 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logsindexexclusionfilter">[]Logs<wbr>Index<wbr>Exclusion<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}List of exclusion filters.
-{{% /md %}}</dd>
+    <dd>List of exclusion filters.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -259,7 +259,7 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logsindexfilter">Logs<wbr>Index<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -267,8 +267,8 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the exclusion filter.
-{{% /md %}}</dd>
+    <dd>The name of the exclusion filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -276,14 +276,14 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logsindexexclusionfilter">Logs<wbr>Index<wbr>Exclusion<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}List of exclusion filters.
-{{% /md %}}</dd>
+    <dd>List of exclusion filters.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -292,7 +292,7 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logsindexfilter">List[Logs<wbr>Index<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -300,8 +300,8 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the exclusion filter.
-{{% /md %}}</dd>
+    <dd>The name of the exclusion filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -309,11 +309,11 @@ block_external_search_index: true
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logsindexexclusionfilter">List[Logs<wbr>Index<wbr>Exclusion<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}List of exclusion filters.
-{{% /md %}}</dd>
+    <dd>List of exclusion filters.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -327,25 +327,25 @@ block_external_search_index: true
 ## Look up an Existing LogsIndex Resource
 
 Get an existing LogsIndex resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/datadog/#LogsIndexState">LogsIndexState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/datadog/#LogsIndex">LogsIndex</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>exclusion_filters=None<span class="p">, </span>filters=None<span class="p">, </span>name=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetLogsIndex<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsIndexState">LogsIndexState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsIndex">LogsIndex</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Datadog/Pulumi.Datadog.LogsIndex.html">LogsIndex</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Datadog/Pulumi.Datadog..LogsIndexState.html">LogsIndexState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -370,9 +370,9 @@ Get an existing LogsIndex resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -385,36 +385,9 @@ Get an existing LogsIndex resource's state with the given name, ID, and optional
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -439,13 +412,40 @@ Get an existing LogsIndex resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -454,8 +454,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logsindexexclusionfilter">List&lt;Logs<wbr>Index<wbr>Exclusion<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of exclusion filters.
-{{% /md %}}</dd>
+    <dd>List of exclusion filters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -463,7 +463,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logsindexfilter">List&lt;Logs<wbr>Index<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -471,14 +471,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the exclusion filter.
-{{% /md %}}</dd>
+    <dd>The name of the exclusion filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -487,8 +487,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logsindexexclusionfilter">[]Logs<wbr>Index<wbr>Exclusion<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}List of exclusion filters.
-{{% /md %}}</dd>
+    <dd>List of exclusion filters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -496,7 +496,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logsindexfilter">[]Logs<wbr>Index<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -504,14 +504,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the exclusion filter.
-{{% /md %}}</dd>
+    <dd>The name of the exclusion filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -520,8 +520,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logsindexexclusionfilter">Logs<wbr>Index<wbr>Exclusion<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}List of exclusion filters.
-{{% /md %}}</dd>
+    <dd>List of exclusion filters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -529,7 +529,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logsindexfilter">Logs<wbr>Index<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -537,14 +537,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the exclusion filter.
-{{% /md %}}</dd>
+    <dd>The name of the exclusion filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -553,8 +553,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logsindexexclusionfilter">List[Logs<wbr>Index<wbr>Exclusion<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}List of exclusion filters.
-{{% /md %}}</dd>
+    <dd>List of exclusion filters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -562,7 +562,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logsindexfilter">List[Logs<wbr>Index<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -570,11 +570,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the exclusion filter.
-{{% /md %}}</dd>
+    <dd>The name of the exclusion filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -588,18 +588,18 @@ The following state arguments are supported:
 ## Supporting Types
 
 <h4>Logs<wbr>Index<wbr>Exclusion<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsIndexExclusionFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsIndexExclusionFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsIndexExclusionFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsIndexExclusionFilterOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -608,7 +608,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logsindexexclusionfilterfilter">List&lt;Logs<wbr>Index<wbr>Exclusion<wbr>Filter<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -616,8 +616,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean stating if the exclusion is active or not.
-{{% /md %}}</dd>
+    <dd>A boolean stating if the exclusion is active or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -625,14 +625,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the exclusion filter.
-{{% /md %}}</dd>
+    <dd>The name of the exclusion filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -641,7 +641,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logsindexexclusionfilterfilter">[]Logs<wbr>Index<wbr>Exclusion<wbr>Filter<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -649,8 +649,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean stating if the exclusion is active or not.
-{{% /md %}}</dd>
+    <dd>A boolean stating if the exclusion is active or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -658,14 +658,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the exclusion filter.
-{{% /md %}}</dd>
+    <dd>The name of the exclusion filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -674,7 +674,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logsindexexclusionfilterfilter">Logs<wbr>Index<wbr>Exclusion<wbr>Filter<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -682,8 +682,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}A boolean stating if the exclusion is active or not.
-{{% /md %}}</dd>
+    <dd>A boolean stating if the exclusion is active or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -691,14 +691,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the exclusion filter.
-{{% /md %}}</dd>
+    <dd>The name of the exclusion filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -707,7 +707,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#logsindexexclusionfilterfilter">List[Logs<wbr>Index<wbr>Exclusion<wbr>Filter<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -715,8 +715,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}A boolean stating if the exclusion is active or not.
-{{% /md %}}</dd>
+    <dd>A boolean stating if the exclusion is active or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -724,29 +724,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the exclusion filter.
-{{% /md %}}</dd>
+    <dd>The name of the exclusion filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Index<wbr>Exclusion<wbr>Filter<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsIndexExclusionFilterFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsIndexExclusionFilterFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsIndexExclusionFilterFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsIndexExclusionFilterFilterOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -755,8 +755,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
-{{% /md %}}</dd>
+    <dd>Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -764,14 +764,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}The fraction of logs excluded by the exclusion filter, when active.
-{{% /md %}}</dd>
+    <dd>The fraction of logs excluded by the exclusion filter, when active.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -780,8 +780,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
-{{% /md %}}</dd>
+    <dd>Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -789,14 +789,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}The fraction of logs excluded by the exclusion filter, when active.
-{{% /md %}}</dd>
+    <dd>The fraction of logs excluded by the exclusion filter, when active.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -805,8 +805,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
-{{% /md %}}</dd>
+    <dd>Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -814,14 +814,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}The fraction of logs excluded by the exclusion filter, when active.
-{{% /md %}}</dd>
+    <dd>The fraction of logs excluded by the exclusion filter, when active.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -830,8 +830,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
-{{% /md %}}</dd>
+    <dd>Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -839,29 +839,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The fraction of logs excluded by the exclusion filter, when active.
-{{% /md %}}</dd>
+    <dd>The fraction of logs excluded by the exclusion filter, when active.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4>Logs<wbr>Index<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/input/#LogsIndexFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/datadog/types/output/#LogsIndexFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsIndexFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-datadog/sdk/v2/go/datadog/?tab=doc#LogsIndexFilterOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -870,14 +870,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
-{{% /md %}}</dd>
+    <dd>Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -886,14 +886,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
-{{% /md %}}</dd>
+    <dd>Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -902,14 +902,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
-{{% /md %}}</dd>
+    <dd>Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -918,11 +918,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
-{{% /md %}}</dd>
+    <dd>Only logs matching the filter criteria and the query of the parent index will be considered for this exclusion filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -32,29 +32,29 @@ export const firstEipId = eipsDs.eips[0].id;
 
 ## Using GetEips {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getEips<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ecs/#GetEipsArgs">GetEipsArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/ecs/#GetEipsResult">GetEipsResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_eips(</span>ids=None<span class="p">, </span>in_use=None<span class="p">, </span>ip_addresses=None<span class="p">, </span>output_file=None<span class="p">, </span>resource_group_id=None<span class="p">, </span>tags=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupEips<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#LookupEipsArgs">LookupEipsArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#LookupEipsResult">LookupEipsResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetEips </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Ecs.GetEipsResult.html">GetEipsResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Ecs.GetEipsArgs.html">GetEipsArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -62,7 +62,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -71,8 +71,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of EIP IDs.
-{{% /md %}}</dd>
+    <dd>A list of EIP IDs.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -80,8 +80,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Deprecated since the version 1.8.0 of this provider.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;in_use&#39; has been deprecated from provider version 1.8.0.{{% /md %}}</p></dd>
+    <dd>Deprecated since the version 1.8.0 of this provider.
+<p class="property-message">Deprecated: Field &#39;in_use&#39; has been deprecated from provider version 1.8.0.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -89,8 +89,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of EIP public IP addresses.
-{{% /md %}}</dd>
+    <dd>A list of EIP public IP addresses.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -98,7 +98,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -106,8 +106,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the eips belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the eips belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -115,14 +115,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -131,8 +131,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of EIP IDs.
-{{% /md %}}</dd>
+    <dd>A list of EIP IDs.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -140,8 +140,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Deprecated since the version 1.8.0 of this provider.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;in_use&#39; has been deprecated from provider version 1.8.0.{{% /md %}}</p></dd>
+    <dd>Deprecated since the version 1.8.0 of this provider.
+<p class="property-message">Deprecated: Field &#39;in_use&#39; has been deprecated from provider version 1.8.0.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -149,8 +149,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of EIP public IP addresses.
-{{% /md %}}</dd>
+    <dd>A list of EIP public IP addresses.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -158,7 +158,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -166,8 +166,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the eips belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the eips belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -175,14 +175,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -191,8 +191,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of EIP IDs.
-{{% /md %}}</dd>
+    <dd>A list of EIP IDs.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -200,8 +200,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Deprecated since the version 1.8.0 of this provider.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;in_use&#39; has been deprecated from provider version 1.8.0.{{% /md %}}</p></dd>
+    <dd>Deprecated since the version 1.8.0 of this provider.
+<p class="property-message">Deprecated: Field &#39;in_use&#39; has been deprecated from provider version 1.8.0.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -209,8 +209,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of EIP public IP addresses.
-{{% /md %}}</dd>
+    <dd>A list of EIP public IP addresses.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -218,7 +218,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -226,8 +226,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the eips belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the eips belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -235,14 +235,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -251,8 +251,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of EIP IDs.
-{{% /md %}}</dd>
+    <dd>A list of EIP IDs.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -260,8 +260,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Deprecated since the version 1.8.0 of this provider.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;in_use&#39; has been deprecated from provider version 1.8.0.{{% /md %}}</p></dd>
+    <dd>Deprecated since the version 1.8.0 of this provider.
+<p class="property-message">Deprecated: Field &#39;in_use&#39; has been deprecated from provider version 1.8.0.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -269,8 +269,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of EIP public IP addresses.
-{{% /md %}}</dd>
+    <dd>A list of EIP public IP addresses.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,7 +278,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -286,8 +286,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the eips belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the eips belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -295,11 +295,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -315,7 +315,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -324,8 +324,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#geteipseip">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Ecs.<wbr>Outputs.<wbr>Get<wbr>Eips<wbr>Eip&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of EIPs. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of EIPs. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -333,8 +333,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -342,8 +342,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) A list of EIP IDs.
-{{% /md %}}</dd>
+    <dd>(Optional) A list of EIP IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -351,8 +351,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) A list of EIP names.
-{{% /md %}}</dd>
+    <dd>(Optional) A list of EIP names.
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -360,7 +360,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;in_use&#39; has been deprecated from provider version 1.8.0.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;in_use&#39; has been deprecated from provider version 1.8.0.</p></dd>
 
     <dt class="property-"
             title="">
@@ -368,7 +368,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -376,7 +376,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -384,8 +384,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the eips belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the eips belongs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -393,13 +393,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -408,8 +408,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#geteipseip">[]Get<wbr>Eips<wbr>Eip</a></span>
     </dt>
-    <dd>{{% md %}}A list of EIPs. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of EIPs. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -417,8 +417,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -426,8 +426,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) A list of EIP IDs.
-{{% /md %}}</dd>
+    <dd>(Optional) A list of EIP IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -435,8 +435,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) A list of EIP names.
-{{% /md %}}</dd>
+    <dd>(Optional) A list of EIP names.
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -444,7 +444,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;in_use&#39; has been deprecated from provider version 1.8.0.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;in_use&#39; has been deprecated from provider version 1.8.0.</p></dd>
 
     <dt class="property-"
             title="">
@@ -452,7 +452,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -460,7 +460,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -468,8 +468,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the eips belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the eips belongs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -477,13 +477,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -492,8 +492,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#geteipseip">Get<wbr>Eips<wbr>Eip[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of EIPs. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of EIPs. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -501,8 +501,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -510,8 +510,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) A list of EIP IDs.
-{{% /md %}}</dd>
+    <dd>(Optional) A list of EIP IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -519,8 +519,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) A list of EIP names.
-{{% /md %}}</dd>
+    <dd>(Optional) A list of EIP names.
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -528,7 +528,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;in_use&#39; has been deprecated from provider version 1.8.0.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;in_use&#39; has been deprecated from provider version 1.8.0.</p></dd>
 
     <dt class="property-"
             title="">
@@ -536,7 +536,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -544,7 +544,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -552,8 +552,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the eips belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the eips belongs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -561,13 +561,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -576,8 +576,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#geteipseip">List[Get<wbr>Eips<wbr>Eip]</a></span>
     </dt>
-    <dd>{{% md %}}A list of EIPs. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of EIPs. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -585,8 +585,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -594,8 +594,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) A list of EIP IDs.
-{{% /md %}}</dd>
+    <dd>(Optional) A list of EIP IDs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -603,8 +603,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}(Optional) A list of EIP names.
-{{% /md %}}</dd>
+    <dd>(Optional) A list of EIP names.
+</dd>
 
     <dt class="property- property-deprecated"
             title=", Deprecated">
@@ -612,7 +612,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;in_use&#39; has been deprecated from provider version 1.8.0.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;in_use&#39; has been deprecated from provider version 1.8.0.</p></dd>
 
     <dt class="property-"
             title="">
@@ -620,7 +620,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -628,7 +628,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -636,8 +636,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the eips belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the eips belongs.
+</dd>
 
     <dt class="property-"
             title="">
@@ -645,10 +645,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -661,18 +661,18 @@ The following output properties are available:
 
 
 <h4 id="geteipseip">Get<wbr>Eips<wbr>Eip</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetEipsEip">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/ecs?tab=doc#GetEipsEip">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -681,8 +681,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}EIP internet max bandwidth in Mbps.
-{{% /md %}}</dd>
+    <dd>EIP internet max bandwidth in Mbps.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -690,8 +690,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Time of creation.
-{{% /md %}}</dd>
+    <dd>Time of creation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -699,8 +699,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the EIP.
-{{% /md %}}</dd>
+    <dd>ID of the EIP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -708,8 +708,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the instance that is being bound.
-{{% /md %}}</dd>
+    <dd>The ID of the instance that is being bound.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -717,8 +717,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The instance type of that the EIP is bound.
-{{% /md %}}</dd>
+    <dd>The instance type of that the EIP is bound.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -726,8 +726,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}EIP internet charge type.
-{{% /md %}}</dd>
+    <dd>EIP internet charge type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -735,8 +735,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Public IP Address of the the EIP.
-{{% /md %}}</dd>
+    <dd>Public IP Address of the the EIP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -744,14 +744,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}EIP status. Possible values are: `Associating`, `Unassociating`, `InUse` and `Available`.
-{{% /md %}}</dd>
+    <dd>EIP status. Possible values are: `Associating`, `Unassociating`, `InUse` and `Available`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -760,8 +760,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}EIP internet max bandwidth in Mbps.
-{{% /md %}}</dd>
+    <dd>EIP internet max bandwidth in Mbps.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -769,8 +769,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Time of creation.
-{{% /md %}}</dd>
+    <dd>Time of creation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -778,8 +778,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the EIP.
-{{% /md %}}</dd>
+    <dd>ID of the EIP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -787,8 +787,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the instance that is being bound.
-{{% /md %}}</dd>
+    <dd>The ID of the instance that is being bound.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -796,8 +796,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The instance type of that the EIP is bound.
-{{% /md %}}</dd>
+    <dd>The instance type of that the EIP is bound.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -805,8 +805,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}EIP internet charge type.
-{{% /md %}}</dd>
+    <dd>EIP internet charge type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -814,8 +814,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Public IP Address of the the EIP.
-{{% /md %}}</dd>
+    <dd>Public IP Address of the the EIP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -823,14 +823,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}EIP status. Possible values are: `Associating`, `Unassociating`, `InUse` and `Available`.
-{{% /md %}}</dd>
+    <dd>EIP status. Possible values are: `Associating`, `Unassociating`, `InUse` and `Available`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -839,8 +839,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}EIP internet max bandwidth in Mbps.
-{{% /md %}}</dd>
+    <dd>EIP internet max bandwidth in Mbps.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -848,8 +848,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Time of creation.
-{{% /md %}}</dd>
+    <dd>Time of creation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -857,8 +857,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the EIP.
-{{% /md %}}</dd>
+    <dd>ID of the EIP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -866,8 +866,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the instance that is being bound.
-{{% /md %}}</dd>
+    <dd>The ID of the instance that is being bound.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -875,8 +875,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The instance type of that the EIP is bound.
-{{% /md %}}</dd>
+    <dd>The instance type of that the EIP is bound.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -884,8 +884,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}EIP internet charge type.
-{{% /md %}}</dd>
+    <dd>EIP internet charge type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -893,8 +893,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Public IP Address of the the EIP.
-{{% /md %}}</dd>
+    <dd>Public IP Address of the the EIP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -902,14 +902,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}EIP status. Possible values are: `Associating`, `Unassociating`, `InUse` and `Available`.
-{{% /md %}}</dd>
+    <dd>EIP status. Possible values are: `Associating`, `Unassociating`, `InUse` and `Available`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -918,8 +918,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}EIP internet max bandwidth in Mbps.
-{{% /md %}}</dd>
+    <dd>EIP internet max bandwidth in Mbps.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -927,8 +927,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Time of creation.
-{{% /md %}}</dd>
+    <dd>Time of creation.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -936,8 +936,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the EIP.
-{{% /md %}}</dd>
+    <dd>ID of the EIP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -945,8 +945,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the instance that is being bound.
-{{% /md %}}</dd>
+    <dd>The ID of the instance that is being bound.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -954,8 +954,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The instance type of that the EIP is bound.
-{{% /md %}}</dd>
+    <dd>The instance type of that the EIP is bound.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -963,8 +963,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}EIP internet charge type.
-{{% /md %}}</dd>
+    <dd>EIP internet charge type.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -972,8 +972,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Public IP Address of the the EIP.
-{{% /md %}}</dd>
+    <dd>Public IP Address of the the EIP.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -981,11 +981,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}EIP status. Possible values are: `Associating`, `Unassociating`, `InUse` and `Available`.
-{{% /md %}}</dd>
+    <dd>EIP status. Possible values are: `Associating`, `Unassociating`, `InUse` and `Available`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

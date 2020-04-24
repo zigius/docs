@@ -33,26 +33,26 @@ const cache = new gcp.redis.Instance("cache", {
 
 
 ## Create a Instance Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/redis/#Instance">Instance</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/redis/#InstanceArgs">InstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Instance</span><span class="p">(resource_name, opts=None, </span>alternative_location_id=None<span class="p">, </span>authorized_network=None<span class="p">, </span>connect_mode=None<span class="p">, </span>display_name=None<span class="p">, </span>labels=None<span class="p">, </span>location_id=None<span class="p">, </span>memory_size_gb=None<span class="p">, </span>name=None<span class="p">, </span>project=None<span class="p">, </span>redis_configs=None<span class="p">, </span>redis_version=None<span class="p">, </span>region=None<span class="p">, </span>reserved_ip_range=None<span class="p">, </span>tier=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/redis?tab=doc#InstanceArgs">InstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/redis?tab=doc#Instance">Instance</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Redis.Instance.html">Instance</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Redis.InstanceArgs.html">InstanceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -89,9 +89,9 @@ const cache = new gcp.redis.Instance("cache", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -109,9 +109,9 @@ const cache = new gcp.redis.Instance("cache", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -158,9 +158,9 @@ const cache = new gcp.redis.Instance("cache", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -197,7 +197,7 @@ const cache = new gcp.redis.Instance("cache", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Instance Resource Properties {#properties}
 
@@ -210,7 +210,7 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -219,8 +219,8 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Redis memory size in GiB.
-{{% /md %}}</dd>
+    <dd>Redis memory size in GiB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -228,9 +228,9 @@ The Instance resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Only applicable to STANDARD_HA tier which protects the instance against zonal failures by provisioning it across two
+    <dd>Only applicable to STANDARD_HA tier which protects the instance against zonal failures by provisioning it across two
 zones. If provided, it must be a different zone from the one provided in [locationId].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -238,9 +238,9 @@ zones. If provided, it must be a different zone from the one provided in [locati
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The full name of the Google Compute Engine network to which the instance is connected. If left unspecified, the default
+    <dd>The full name of the Google Compute Engine network to which the instance is connected. If left unspecified, the default
 network will be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -248,9 +248,9 @@ network will be used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection mode of the Redis instance. Can be either 'DIRECT_PEERING' or 'PRIVATE_SERVICE_ACCESS'. The default
+    <dd>The connection mode of the Redis instance. Can be either 'DIRECT_PEERING' or 'PRIVATE_SERVICE_ACCESS'. The default
 connect mode if not provided is 'DIRECT_PEERING'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -258,8 +258,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An arbitrary and optional user-provided name for the instance.
-{{% /md %}}</dd>
+    <dd>An arbitrary and optional user-provided name for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,8 +267,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Resource labels to represent user provided metadata.
-{{% /md %}}</dd>
+    <dd>Resource labels to represent user provided metadata.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -276,10 +276,10 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone where the instance will be provisioned. If not provided, the service will choose a zone for the instance. For
+    <dd>The zone where the instance will be provisioned. If not provided, the service will choose a zone for the instance. For
 STANDARD_HA tier, instances will be created across two zones for protection against zonal failures. If
 [alternativeLocationId] is also provided, it must be different from [locationId].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -287,8 +287,8 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the instance or a fully qualified identifier for the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the instance or a fully qualified identifier for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -296,9 +296,9 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -306,10 +306,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Redis configuration parameters, according to http://redis.io/topics/config. Please check Memorystore documentation for
+    <dd>Redis configuration parameters, according to http://redis.io/topics/config. Please check Memorystore documentation for
 the list of supported parameters:
 https://cloud.google.com/memorystore/docs/redis/reference/rest/v1/projects.locations.instances#Instance.FIELDS.redis_configs
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -317,9 +317,9 @@ https://cloud.google.com/memorystore/docs/redis/reference/rest/v1/projects.locat
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of Redis software. If not provided, latest supported version will be used. Currently, the supported values
+    <dd>The version of Redis software. If not provided, latest supported version will be used. Currently, the supported values
 are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibility
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -327,8 +327,8 @@ are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Redis region of the instance.
-{{% /md %}}</dd>
+    <dd>The name of the Redis region of the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -336,10 +336,10 @@ are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR range of internal addresses that are reserved for this instance. If not provided, the service will choose an
+    <dd>The CIDR range of internal addresses that are reserved for this instance. If not provided, the service will choose an
 unused /29 block, for example, 10.0.0.0/29 or 192.168.0.0/29. Ranges must be unique and non-overlapping with existing
 subnets in an authorized network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -347,15 +347,15 @@ subnets in an authorized network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The service tier of the instance. Must be one of these values: - BASIC: standalone instance - STANDARD_HA: highly
+    <dd>The service tier of the instance. Must be one of these values: - BASIC: standalone instance - STANDARD_HA: highly
 available primary/replica instances
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -364,8 +364,8 @@ available primary/replica instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Redis memory size in GiB.
-{{% /md %}}</dd>
+    <dd>Redis memory size in GiB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -373,9 +373,9 @@ available primary/replica instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Only applicable to STANDARD_HA tier which protects the instance against zonal failures by provisioning it across two
+    <dd>Only applicable to STANDARD_HA tier which protects the instance against zonal failures by provisioning it across two
 zones. If provided, it must be a different zone from the one provided in [locationId].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -383,9 +383,9 @@ zones. If provided, it must be a different zone from the one provided in [locati
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full name of the Google Compute Engine network to which the instance is connected. If left unspecified, the default
+    <dd>The full name of the Google Compute Engine network to which the instance is connected. If left unspecified, the default
 network will be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -393,9 +393,9 @@ network will be used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection mode of the Redis instance. Can be either 'DIRECT_PEERING' or 'PRIVATE_SERVICE_ACCESS'. The default
+    <dd>The connection mode of the Redis instance. Can be either 'DIRECT_PEERING' or 'PRIVATE_SERVICE_ACCESS'. The default
 connect mode if not provided is 'DIRECT_PEERING'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -403,8 +403,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An arbitrary and optional user-provided name for the instance.
-{{% /md %}}</dd>
+    <dd>An arbitrary and optional user-provided name for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -412,8 +412,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Resource labels to represent user provided metadata.
-{{% /md %}}</dd>
+    <dd>Resource labels to represent user provided metadata.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -421,10 +421,10 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone where the instance will be provisioned. If not provided, the service will choose a zone for the instance. For
+    <dd>The zone where the instance will be provisioned. If not provided, the service will choose a zone for the instance. For
 STANDARD_HA tier, instances will be created across two zones for protection against zonal failures. If
 [alternativeLocationId] is also provided, it must be different from [locationId].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -432,8 +432,8 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the instance or a fully qualified identifier for the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the instance or a fully qualified identifier for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -441,9 +441,9 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -451,10 +451,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Redis configuration parameters, according to http://redis.io/topics/config. Please check Memorystore documentation for
+    <dd>Redis configuration parameters, according to http://redis.io/topics/config. Please check Memorystore documentation for
 the list of supported parameters:
 https://cloud.google.com/memorystore/docs/redis/reference/rest/v1/projects.locations.instances#Instance.FIELDS.redis_configs
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -462,9 +462,9 @@ https://cloud.google.com/memorystore/docs/redis/reference/rest/v1/projects.locat
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of Redis software. If not provided, latest supported version will be used. Currently, the supported values
+    <dd>The version of Redis software. If not provided, latest supported version will be used. Currently, the supported values
 are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibility
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -472,8 +472,8 @@ are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Redis region of the instance.
-{{% /md %}}</dd>
+    <dd>The name of the Redis region of the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -481,10 +481,10 @@ are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR range of internal addresses that are reserved for this instance. If not provided, the service will choose an
+    <dd>The CIDR range of internal addresses that are reserved for this instance. If not provided, the service will choose an
 unused /29 block, for example, 10.0.0.0/29 or 192.168.0.0/29. Ranges must be unique and non-overlapping with existing
 subnets in an authorized network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -492,15 +492,15 @@ subnets in an authorized network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service tier of the instance. Must be one of these values: - BASIC: standalone instance - STANDARD_HA: highly
+    <dd>The service tier of the instance. Must be one of these values: - BASIC: standalone instance - STANDARD_HA: highly
 available primary/replica instances
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -509,8 +509,8 @@ available primary/replica instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Redis memory size in GiB.
-{{% /md %}}</dd>
+    <dd>Redis memory size in GiB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -518,9 +518,9 @@ available primary/replica instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Only applicable to STANDARD_HA tier which protects the instance against zonal failures by provisioning it across two
+    <dd>Only applicable to STANDARD_HA tier which protects the instance against zonal failures by provisioning it across two
 zones. If provided, it must be a different zone from the one provided in [locationId].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -528,9 +528,9 @@ zones. If provided, it must be a different zone from the one provided in [locati
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full name of the Google Compute Engine network to which the instance is connected. If left unspecified, the default
+    <dd>The full name of the Google Compute Engine network to which the instance is connected. If left unspecified, the default
 network will be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -538,9 +538,9 @@ network will be used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection mode of the Redis instance. Can be either 'DIRECT_PEERING' or 'PRIVATE_SERVICE_ACCESS'. The default
+    <dd>The connection mode of the Redis instance. Can be either 'DIRECT_PEERING' or 'PRIVATE_SERVICE_ACCESS'. The default
 connect mode if not provided is 'DIRECT_PEERING'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -548,8 +548,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An arbitrary and optional user-provided name for the instance.
-{{% /md %}}</dd>
+    <dd>An arbitrary and optional user-provided name for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -557,8 +557,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Resource labels to represent user provided metadata.
-{{% /md %}}</dd>
+    <dd>Resource labels to represent user provided metadata.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -566,10 +566,10 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone where the instance will be provisioned. If not provided, the service will choose a zone for the instance. For
+    <dd>The zone where the instance will be provisioned. If not provided, the service will choose a zone for the instance. For
 STANDARD_HA tier, instances will be created across two zones for protection against zonal failures. If
 [alternativeLocationId] is also provided, it must be different from [locationId].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -577,8 +577,8 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the instance or a fully qualified identifier for the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the instance or a fully qualified identifier for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -586,9 +586,9 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -596,10 +596,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Redis configuration parameters, according to http://redis.io/topics/config. Please check Memorystore documentation for
+    <dd>Redis configuration parameters, according to http://redis.io/topics/config. Please check Memorystore documentation for
 the list of supported parameters:
 https://cloud.google.com/memorystore/docs/redis/reference/rest/v1/projects.locations.instances#Instance.FIELDS.redis_configs
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -607,9 +607,9 @@ https://cloud.google.com/memorystore/docs/redis/reference/rest/v1/projects.locat
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of Redis software. If not provided, latest supported version will be used. Currently, the supported values
+    <dd>The version of Redis software. If not provided, latest supported version will be used. Currently, the supported values
 are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibility
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -617,8 +617,8 @@ are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Redis region of the instance.
-{{% /md %}}</dd>
+    <dd>The name of the Redis region of the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -626,10 +626,10 @@ are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR range of internal addresses that are reserved for this instance. If not provided, the service will choose an
+    <dd>The CIDR range of internal addresses that are reserved for this instance. If not provided, the service will choose an
 unused /29 block, for example, 10.0.0.0/29 or 192.168.0.0/29. Ranges must be unique and non-overlapping with existing
 subnets in an authorized network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -637,15 +637,15 @@ subnets in an authorized network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service tier of the instance. Must be one of these values: - BASIC: standalone instance - STANDARD_HA: highly
+    <dd>The service tier of the instance. Must be one of these values: - BASIC: standalone instance - STANDARD_HA: highly
 available primary/replica instances
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -654,8 +654,8 @@ available primary/replica instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Redis memory size in GiB.
-{{% /md %}}</dd>
+    <dd>Redis memory size in GiB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -663,9 +663,9 @@ available primary/replica instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Only applicable to STANDARD_HA tier which protects the instance against zonal failures by provisioning it across two
+    <dd>Only applicable to STANDARD_HA tier which protects the instance against zonal failures by provisioning it across two
 zones. If provided, it must be a different zone from the one provided in [locationId].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -673,9 +673,9 @@ zones. If provided, it must be a different zone from the one provided in [locati
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The full name of the Google Compute Engine network to which the instance is connected. If left unspecified, the default
+    <dd>The full name of the Google Compute Engine network to which the instance is connected. If left unspecified, the default
 network will be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -683,9 +683,9 @@ network will be used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection mode of the Redis instance. Can be either 'DIRECT_PEERING' or 'PRIVATE_SERVICE_ACCESS'. The default
+    <dd>The connection mode of the Redis instance. Can be either 'DIRECT_PEERING' or 'PRIVATE_SERVICE_ACCESS'. The default
 connect mode if not provided is 'DIRECT_PEERING'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -693,8 +693,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An arbitrary and optional user-provided name for the instance.
-{{% /md %}}</dd>
+    <dd>An arbitrary and optional user-provided name for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -702,8 +702,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Resource labels to represent user provided metadata.
-{{% /md %}}</dd>
+    <dd>Resource labels to represent user provided metadata.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -711,10 +711,10 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The zone where the instance will be provisioned. If not provided, the service will choose a zone for the instance. For
+    <dd>The zone where the instance will be provisioned. If not provided, the service will choose a zone for the instance. For
 STANDARD_HA tier, instances will be created across two zones for protection against zonal failures. If
 [alternativeLocationId] is also provided, it must be different from [locationId].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -722,8 +722,8 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the instance or a fully qualified identifier for the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the instance or a fully qualified identifier for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -731,9 +731,9 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -741,10 +741,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Redis configuration parameters, according to http://redis.io/topics/config. Please check Memorystore documentation for
+    <dd>Redis configuration parameters, according to http://redis.io/topics/config. Please check Memorystore documentation for
 the list of supported parameters:
 https://cloud.google.com/memorystore/docs/redis/reference/rest/v1/projects.locations.instances#Instance.FIELDS.redis_configs
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -752,9 +752,9 @@ https://cloud.google.com/memorystore/docs/redis/reference/rest/v1/projects.locat
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of Redis software. If not provided, latest supported version will be used. Currently, the supported values
+    <dd>The version of Redis software. If not provided, latest supported version will be used. Currently, the supported values
 are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibility
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -762,8 +762,8 @@ are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Redis region of the instance.
-{{% /md %}}</dd>
+    <dd>The name of the Redis region of the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -771,10 +771,10 @@ are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR range of internal addresses that are reserved for this instance. If not provided, the service will choose an
+    <dd>The CIDR range of internal addresses that are reserved for this instance. If not provided, the service will choose an
 unused /29 block, for example, 10.0.0.0/29 or 192.168.0.0/29. Ranges must be unique and non-overlapping with existing
 subnets in an authorized network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -782,12 +782,12 @@ subnets in an authorized network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The service tier of the instance. Must be one of these values: - BASIC: standalone instance - STANDARD_HA: highly
+    <dd>The service tier of the instance. Must be one of these values: - BASIC: standalone instance - STANDARD_HA: highly
 available primary/replica instances
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -801,7 +801,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -810,8 +810,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the instance was created in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
-{{% /md %}}</dd>
+    <dd>The time the instance was created in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
+</dd>
 
     <dt class="property-"
             title="">
@@ -819,10 +819,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The current zone where the Redis endpoint is placed. For Basic Tier instances, this will always be the same as the
+    <dd>The current zone where the Redis endpoint is placed. For Basic Tier instances, this will always be the same as the
 [locationId] provided by the user at creation time. For Standard Tier instances, this can be either [locationId] or
 [alternativeLocationId] and can change after a failover event.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -830,8 +830,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Hostname or IP address of the exposed Redis endpoint used by clients to connect to the service.
-{{% /md %}}</dd>
+    <dd>Hostname or IP address of the exposed Redis endpoint used by clients to connect to the service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -839,7 +839,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -847,14 +847,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port number of the exposed Redis endpoint.
-{{% /md %}}</dd>
+    <dd>The port number of the exposed Redis endpoint.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -863,8 +863,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the instance was created in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
-{{% /md %}}</dd>
+    <dd>The time the instance was created in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
+</dd>
 
     <dt class="property-"
             title="">
@@ -872,10 +872,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current zone where the Redis endpoint is placed. For Basic Tier instances, this will always be the same as the
+    <dd>The current zone where the Redis endpoint is placed. For Basic Tier instances, this will always be the same as the
 [locationId] provided by the user at creation time. For Standard Tier instances, this can be either [locationId] or
 [alternativeLocationId] and can change after a failover event.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -883,8 +883,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Hostname or IP address of the exposed Redis endpoint used by clients to connect to the service.
-{{% /md %}}</dd>
+    <dd>Hostname or IP address of the exposed Redis endpoint used by clients to connect to the service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -892,7 +892,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -900,14 +900,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port number of the exposed Redis endpoint.
-{{% /md %}}</dd>
+    <dd>The port number of the exposed Redis endpoint.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -916,8 +916,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the instance was created in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
-{{% /md %}}</dd>
+    <dd>The time the instance was created in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
+</dd>
 
     <dt class="property-"
             title="">
@@ -925,10 +925,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current zone where the Redis endpoint is placed. For Basic Tier instances, this will always be the same as the
+    <dd>The current zone where the Redis endpoint is placed. For Basic Tier instances, this will always be the same as the
 [locationId] provided by the user at creation time. For Standard Tier instances, this can be either [locationId] or
 [alternativeLocationId] and can change after a failover event.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -936,8 +936,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Hostname or IP address of the exposed Redis endpoint used by clients to connect to the service.
-{{% /md %}}</dd>
+    <dd>Hostname or IP address of the exposed Redis endpoint used by clients to connect to the service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -945,7 +945,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -953,14 +953,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port number of the exposed Redis endpoint.
-{{% /md %}}</dd>
+    <dd>The port number of the exposed Redis endpoint.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -969,8 +969,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time the instance was created in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
-{{% /md %}}</dd>
+    <dd>The time the instance was created in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
+</dd>
 
     <dt class="property-"
             title="">
@@ -978,10 +978,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The current zone where the Redis endpoint is placed. For Basic Tier instances, this will always be the same as the
+    <dd>The current zone where the Redis endpoint is placed. For Basic Tier instances, this will always be the same as the
 [locationId] provided by the user at creation time. For Standard Tier instances, this can be either [locationId] or
 [alternativeLocationId] and can change after a failover event.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -989,8 +989,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Hostname or IP address of the exposed Redis endpoint used by clients to connect to the service.
-{{% /md %}}</dd>
+    <dd>Hostname or IP address of the exposed Redis endpoint used by clients to connect to the service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -998,7 +998,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1006,11 +1006,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port number of the exposed Redis endpoint.
-{{% /md %}}</dd>
+    <dd>The port number of the exposed Redis endpoint.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1021,25 +1021,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Instance Resource {#look-up}
 
 Get an existing Instance resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/redis/#InstanceState">InstanceState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/redis/#Instance">Instance</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>alternative_location_id=None<span class="p">, </span>authorized_network=None<span class="p">, </span>connect_mode=None<span class="p">, </span>create_time=None<span class="p">, </span>current_location_id=None<span class="p">, </span>display_name=None<span class="p">, </span>host=None<span class="p">, </span>labels=None<span class="p">, </span>location_id=None<span class="p">, </span>memory_size_gb=None<span class="p">, </span>name=None<span class="p">, </span>port=None<span class="p">, </span>project=None<span class="p">, </span>redis_configs=None<span class="p">, </span>redis_version=None<span class="p">, </span>region=None<span class="p">, </span>reserved_ip_range=None<span class="p">, </span>tier=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/redis?tab=doc#InstanceState">InstanceState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/redis?tab=doc#Instance">Instance</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Redis.Instance.html">Instance</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Redis.InstanceState.html">InstanceState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1064,9 +1064,9 @@ Get an existing Instance resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1079,36 +1079,9 @@ Get an existing Instance resource's state with the given name, ID, and optional 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1133,13 +1106,40 @@ Get an existing Instance resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1148,9 +1148,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Only applicable to STANDARD_HA tier which protects the instance against zonal failures by provisioning it across two
+    <dd>Only applicable to STANDARD_HA tier which protects the instance against zonal failures by provisioning it across two
 zones. If provided, it must be a different zone from the one provided in [locationId].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1158,9 +1158,9 @@ zones. If provided, it must be a different zone from the one provided in [locati
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The full name of the Google Compute Engine network to which the instance is connected. If left unspecified, the default
+    <dd>The full name of the Google Compute Engine network to which the instance is connected. If left unspecified, the default
 network will be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1168,9 +1168,9 @@ network will be used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection mode of the Redis instance. Can be either 'DIRECT_PEERING' or 'PRIVATE_SERVICE_ACCESS'. The default
+    <dd>The connection mode of the Redis instance. Can be either 'DIRECT_PEERING' or 'PRIVATE_SERVICE_ACCESS'. The default
 connect mode if not provided is 'DIRECT_PEERING'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1178,8 +1178,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the instance was created in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
-{{% /md %}}</dd>
+    <dd>The time the instance was created in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1187,10 +1187,10 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The current zone where the Redis endpoint is placed. For Basic Tier instances, this will always be the same as the
+    <dd>The current zone where the Redis endpoint is placed. For Basic Tier instances, this will always be the same as the
 [locationId] provided by the user at creation time. For Standard Tier instances, this can be either [locationId] or
 [alternativeLocationId] and can change after a failover event.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1198,8 +1198,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}An arbitrary and optional user-provided name for the instance.
-{{% /md %}}</dd>
+    <dd>An arbitrary and optional user-provided name for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1207,8 +1207,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Hostname or IP address of the exposed Redis endpoint used by clients to connect to the service.
-{{% /md %}}</dd>
+    <dd>Hostname or IP address of the exposed Redis endpoint used by clients to connect to the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1216,8 +1216,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Resource labels to represent user provided metadata.
-{{% /md %}}</dd>
+    <dd>Resource labels to represent user provided metadata.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1225,10 +1225,10 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone where the instance will be provisioned. If not provided, the service will choose a zone for the instance. For
+    <dd>The zone where the instance will be provisioned. If not provided, the service will choose a zone for the instance. For
 STANDARD_HA tier, instances will be created across two zones for protection against zonal failures. If
 [alternativeLocationId] is also provided, it must be different from [locationId].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1236,8 +1236,8 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Redis memory size in GiB.
-{{% /md %}}</dd>
+    <dd>Redis memory size in GiB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1245,8 +1245,8 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the instance or a fully qualified identifier for the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the instance or a fully qualified identifier for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1254,8 +1254,8 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port number of the exposed Redis endpoint.
-{{% /md %}}</dd>
+    <dd>The port number of the exposed Redis endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1263,9 +1263,9 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1273,10 +1273,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Redis configuration parameters, according to http://redis.io/topics/config. Please check Memorystore documentation for
+    <dd>Redis configuration parameters, according to http://redis.io/topics/config. Please check Memorystore documentation for
 the list of supported parameters:
 https://cloud.google.com/memorystore/docs/redis/reference/rest/v1/projects.locations.instances#Instance.FIELDS.redis_configs
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1284,9 +1284,9 @@ https://cloud.google.com/memorystore/docs/redis/reference/rest/v1/projects.locat
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of Redis software. If not provided, latest supported version will be used. Currently, the supported values
+    <dd>The version of Redis software. If not provided, latest supported version will be used. Currently, the supported values
 are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibility
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1294,8 +1294,8 @@ are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Redis region of the instance.
-{{% /md %}}</dd>
+    <dd>The name of the Redis region of the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1303,10 +1303,10 @@ are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR range of internal addresses that are reserved for this instance. If not provided, the service will choose an
+    <dd>The CIDR range of internal addresses that are reserved for this instance. If not provided, the service will choose an
 unused /29 block, for example, 10.0.0.0/29 or 192.168.0.0/29. Ranges must be unique and non-overlapping with existing
 subnets in an authorized network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1314,15 +1314,15 @@ subnets in an authorized network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The service tier of the instance. Must be one of these values: - BASIC: standalone instance - STANDARD_HA: highly
+    <dd>The service tier of the instance. Must be one of these values: - BASIC: standalone instance - STANDARD_HA: highly
 available primary/replica instances
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1331,9 +1331,9 @@ available primary/replica instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Only applicable to STANDARD_HA tier which protects the instance against zonal failures by provisioning it across two
+    <dd>Only applicable to STANDARD_HA tier which protects the instance against zonal failures by provisioning it across two
 zones. If provided, it must be a different zone from the one provided in [locationId].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1341,9 +1341,9 @@ zones. If provided, it must be a different zone from the one provided in [locati
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full name of the Google Compute Engine network to which the instance is connected. If left unspecified, the default
+    <dd>The full name of the Google Compute Engine network to which the instance is connected. If left unspecified, the default
 network will be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1351,9 +1351,9 @@ network will be used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection mode of the Redis instance. Can be either 'DIRECT_PEERING' or 'PRIVATE_SERVICE_ACCESS'. The default
+    <dd>The connection mode of the Redis instance. Can be either 'DIRECT_PEERING' or 'PRIVATE_SERVICE_ACCESS'. The default
 connect mode if not provided is 'DIRECT_PEERING'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1361,8 +1361,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the instance was created in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
-{{% /md %}}</dd>
+    <dd>The time the instance was created in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1370,10 +1370,10 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current zone where the Redis endpoint is placed. For Basic Tier instances, this will always be the same as the
+    <dd>The current zone where the Redis endpoint is placed. For Basic Tier instances, this will always be the same as the
 [locationId] provided by the user at creation time. For Standard Tier instances, this can be either [locationId] or
 [alternativeLocationId] and can change after a failover event.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1381,8 +1381,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}An arbitrary and optional user-provided name for the instance.
-{{% /md %}}</dd>
+    <dd>An arbitrary and optional user-provided name for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1390,8 +1390,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Hostname or IP address of the exposed Redis endpoint used by clients to connect to the service.
-{{% /md %}}</dd>
+    <dd>Hostname or IP address of the exposed Redis endpoint used by clients to connect to the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1399,8 +1399,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Resource labels to represent user provided metadata.
-{{% /md %}}</dd>
+    <dd>Resource labels to represent user provided metadata.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1408,10 +1408,10 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone where the instance will be provisioned. If not provided, the service will choose a zone for the instance. For
+    <dd>The zone where the instance will be provisioned. If not provided, the service will choose a zone for the instance. For
 STANDARD_HA tier, instances will be created across two zones for protection against zonal failures. If
 [alternativeLocationId] is also provided, it must be different from [locationId].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1419,8 +1419,8 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Redis memory size in GiB.
-{{% /md %}}</dd>
+    <dd>Redis memory size in GiB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1428,8 +1428,8 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the instance or a fully qualified identifier for the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the instance or a fully qualified identifier for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1437,8 +1437,8 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port number of the exposed Redis endpoint.
-{{% /md %}}</dd>
+    <dd>The port number of the exposed Redis endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1446,9 +1446,9 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1456,10 +1456,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Redis configuration parameters, according to http://redis.io/topics/config. Please check Memorystore documentation for
+    <dd>Redis configuration parameters, according to http://redis.io/topics/config. Please check Memorystore documentation for
 the list of supported parameters:
 https://cloud.google.com/memorystore/docs/redis/reference/rest/v1/projects.locations.instances#Instance.FIELDS.redis_configs
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1467,9 +1467,9 @@ https://cloud.google.com/memorystore/docs/redis/reference/rest/v1/projects.locat
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of Redis software. If not provided, latest supported version will be used. Currently, the supported values
+    <dd>The version of Redis software. If not provided, latest supported version will be used. Currently, the supported values
 are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibility
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1477,8 +1477,8 @@ are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Redis region of the instance.
-{{% /md %}}</dd>
+    <dd>The name of the Redis region of the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1486,10 +1486,10 @@ are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR range of internal addresses that are reserved for this instance. If not provided, the service will choose an
+    <dd>The CIDR range of internal addresses that are reserved for this instance. If not provided, the service will choose an
 unused /29 block, for example, 10.0.0.0/29 or 192.168.0.0/29. Ranges must be unique and non-overlapping with existing
 subnets in an authorized network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1497,15 +1497,15 @@ subnets in an authorized network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service tier of the instance. Must be one of these values: - BASIC: standalone instance - STANDARD_HA: highly
+    <dd>The service tier of the instance. Must be one of these values: - BASIC: standalone instance - STANDARD_HA: highly
 available primary/replica instances
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1514,9 +1514,9 @@ available primary/replica instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Only applicable to STANDARD_HA tier which protects the instance against zonal failures by provisioning it across two
+    <dd>Only applicable to STANDARD_HA tier which protects the instance against zonal failures by provisioning it across two
 zones. If provided, it must be a different zone from the one provided in [locationId].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1524,9 +1524,9 @@ zones. If provided, it must be a different zone from the one provided in [locati
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The full name of the Google Compute Engine network to which the instance is connected. If left unspecified, the default
+    <dd>The full name of the Google Compute Engine network to which the instance is connected. If left unspecified, the default
 network will be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1534,9 +1534,9 @@ network will be used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection mode of the Redis instance. Can be either 'DIRECT_PEERING' or 'PRIVATE_SERVICE_ACCESS'. The default
+    <dd>The connection mode of the Redis instance. Can be either 'DIRECT_PEERING' or 'PRIVATE_SERVICE_ACCESS'. The default
 connect mode if not provided is 'DIRECT_PEERING'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1544,8 +1544,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time the instance was created in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
-{{% /md %}}</dd>
+    <dd>The time the instance was created in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1553,10 +1553,10 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The current zone where the Redis endpoint is placed. For Basic Tier instances, this will always be the same as the
+    <dd>The current zone where the Redis endpoint is placed. For Basic Tier instances, this will always be the same as the
 [locationId] provided by the user at creation time. For Standard Tier instances, this can be either [locationId] or
 [alternativeLocationId] and can change after a failover event.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1564,8 +1564,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}An arbitrary and optional user-provided name for the instance.
-{{% /md %}}</dd>
+    <dd>An arbitrary and optional user-provided name for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1573,8 +1573,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Hostname or IP address of the exposed Redis endpoint used by clients to connect to the service.
-{{% /md %}}</dd>
+    <dd>Hostname or IP address of the exposed Redis endpoint used by clients to connect to the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1582,8 +1582,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Resource labels to represent user provided metadata.
-{{% /md %}}</dd>
+    <dd>Resource labels to represent user provided metadata.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1591,10 +1591,10 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone where the instance will be provisioned. If not provided, the service will choose a zone for the instance. For
+    <dd>The zone where the instance will be provisioned. If not provided, the service will choose a zone for the instance. For
 STANDARD_HA tier, instances will be created across two zones for protection against zonal failures. If
 [alternativeLocationId] is also provided, it must be different from [locationId].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1602,8 +1602,8 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Redis memory size in GiB.
-{{% /md %}}</dd>
+    <dd>Redis memory size in GiB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1611,8 +1611,8 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the instance or a fully qualified identifier for the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the instance or a fully qualified identifier for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1620,8 +1620,8 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port number of the exposed Redis endpoint.
-{{% /md %}}</dd>
+    <dd>The port number of the exposed Redis endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1629,9 +1629,9 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1639,10 +1639,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Redis configuration parameters, according to http://redis.io/topics/config. Please check Memorystore documentation for
+    <dd>Redis configuration parameters, according to http://redis.io/topics/config. Please check Memorystore documentation for
 the list of supported parameters:
 https://cloud.google.com/memorystore/docs/redis/reference/rest/v1/projects.locations.instances#Instance.FIELDS.redis_configs
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1650,9 +1650,9 @@ https://cloud.google.com/memorystore/docs/redis/reference/rest/v1/projects.locat
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of Redis software. If not provided, latest supported version will be used. Currently, the supported values
+    <dd>The version of Redis software. If not provided, latest supported version will be used. Currently, the supported values
 are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibility
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1660,8 +1660,8 @@ are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Redis region of the instance.
-{{% /md %}}</dd>
+    <dd>The name of the Redis region of the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1669,10 +1669,10 @@ are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR range of internal addresses that are reserved for this instance. If not provided, the service will choose an
+    <dd>The CIDR range of internal addresses that are reserved for this instance. If not provided, the service will choose an
 unused /29 block, for example, 10.0.0.0/29 or 192.168.0.0/29. Ranges must be unique and non-overlapping with existing
 subnets in an authorized network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1680,15 +1680,15 @@ subnets in an authorized network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service tier of the instance. Must be one of these values: - BASIC: standalone instance - STANDARD_HA: highly
+    <dd>The service tier of the instance. Must be one of these values: - BASIC: standalone instance - STANDARD_HA: highly
 available primary/replica instances
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1697,9 +1697,9 @@ available primary/replica instances
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Only applicable to STANDARD_HA tier which protects the instance against zonal failures by provisioning it across two
+    <dd>Only applicable to STANDARD_HA tier which protects the instance against zonal failures by provisioning it across two
 zones. If provided, it must be a different zone from the one provided in [locationId].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1707,9 +1707,9 @@ zones. If provided, it must be a different zone from the one provided in [locati
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The full name of the Google Compute Engine network to which the instance is connected. If left unspecified, the default
+    <dd>The full name of the Google Compute Engine network to which the instance is connected. If left unspecified, the default
 network will be used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1717,9 +1717,9 @@ network will be used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection mode of the Redis instance. Can be either 'DIRECT_PEERING' or 'PRIVATE_SERVICE_ACCESS'. The default
+    <dd>The connection mode of the Redis instance. Can be either 'DIRECT_PEERING' or 'PRIVATE_SERVICE_ACCESS'. The default
 connect mode if not provided is 'DIRECT_PEERING'.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1727,8 +1727,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time the instance was created in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
-{{% /md %}}</dd>
+    <dd>The time the instance was created in RFC3339 UTC "Zulu" format, accurate to nanoseconds.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1736,10 +1736,10 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The current zone where the Redis endpoint is placed. For Basic Tier instances, this will always be the same as the
+    <dd>The current zone where the Redis endpoint is placed. For Basic Tier instances, this will always be the same as the
 [locationId] provided by the user at creation time. For Standard Tier instances, this can be either [locationId] or
 [alternativeLocationId] and can change after a failover event.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1747,8 +1747,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}An arbitrary and optional user-provided name for the instance.
-{{% /md %}}</dd>
+    <dd>An arbitrary and optional user-provided name for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1756,8 +1756,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Hostname or IP address of the exposed Redis endpoint used by clients to connect to the service.
-{{% /md %}}</dd>
+    <dd>Hostname or IP address of the exposed Redis endpoint used by clients to connect to the service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1765,8 +1765,8 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Resource labels to represent user provided metadata.
-{{% /md %}}</dd>
+    <dd>Resource labels to represent user provided metadata.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1774,10 +1774,10 @@ connect mode if not provided is 'DIRECT_PEERING'.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The zone where the instance will be provisioned. If not provided, the service will choose a zone for the instance. For
+    <dd>The zone where the instance will be provisioned. If not provided, the service will choose a zone for the instance. For
 STANDARD_HA tier, instances will be created across two zones for protection against zonal failures. If
 [alternativeLocationId] is also provided, it must be different from [locationId].
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1785,8 +1785,8 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Redis memory size in GiB.
-{{% /md %}}</dd>
+    <dd>Redis memory size in GiB.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1794,8 +1794,8 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the instance or a fully qualified identifier for the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the instance or a fully qualified identifier for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1803,8 +1803,8 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port number of the exposed Redis endpoint.
-{{% /md %}}</dd>
+    <dd>The port number of the exposed Redis endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1812,9 +1812,9 @@ STANDARD_HA tier, instances will be created across two zones for protection agai
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If it is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1822,10 +1822,10 @@ If it is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Redis configuration parameters, according to http://redis.io/topics/config. Please check Memorystore documentation for
+    <dd>Redis configuration parameters, according to http://redis.io/topics/config. Please check Memorystore documentation for
 the list of supported parameters:
 https://cloud.google.com/memorystore/docs/redis/reference/rest/v1/projects.locations.instances#Instance.FIELDS.redis_configs
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1833,9 +1833,9 @@ https://cloud.google.com/memorystore/docs/redis/reference/rest/v1/projects.locat
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of Redis software. If not provided, latest supported version will be used. Currently, the supported values
+    <dd>The version of Redis software. If not provided, latest supported version will be used. Currently, the supported values
 are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibility
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1843,8 +1843,8 @@ are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Redis region of the instance.
-{{% /md %}}</dd>
+    <dd>The name of the Redis region of the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1852,10 +1852,10 @@ are: - REDIS_4_0 for Redis 4.0 compatibility - REDIS_3_2 for Redis 3.2 compatibi
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CIDR range of internal addresses that are reserved for this instance. If not provided, the service will choose an
+    <dd>The CIDR range of internal addresses that are reserved for this instance. If not provided, the service will choose an
 unused /29 block, for example, 10.0.0.0/29 or 192.168.0.0/29. Ranges must be unique and non-overlapping with existing
 subnets in an authorized network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1863,12 +1863,12 @@ subnets in an authorized network.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The service tier of the instance. Must be one of these values: - BASIC: standalone instance - STANDARD_HA: highly
+    <dd>The service tier of the instance. Must be one of these values: - BASIC: standalone instance - STANDARD_HA: highly
 available primary/replica instances
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

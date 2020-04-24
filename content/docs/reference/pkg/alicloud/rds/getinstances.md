@@ -40,29 +40,29 @@ export const firstDbInstanceId = dbInstancesDs.instances[0].id;
 
 ## Using GetInstances {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getInstances<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/rds/#GetInstancesArgs">GetInstancesArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/rds/#GetInstancesResult">GetInstancesResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_instances(</span>connection_mode=None<span class="p">, </span>db_type=None<span class="p">, </span>engine=None<span class="p">, </span>ids=None<span class="p">, </span>name_regex=None<span class="p">, </span>output_file=None<span class="p">, </span>status=None<span class="p">, </span>tags=None<span class="p">, </span>vpc_id=None<span class="p">, </span>vswitch_id=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupInstances<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/rds?tab=doc#LookupInstancesArgs">LookupInstancesArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/rds?tab=doc#LookupInstancesResult">LookupInstancesResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetInstances </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Rds.GetInstancesResult.html">GetInstancesResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Rds.GetInstancesArgs.html">GetInstancesArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -70,7 +70,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -79,8 +79,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}`Standard` for standard access mode and `Safe` for high security access mode.
-{{% /md %}}</dd>
+    <dd>`Standard` for standard access mode and `Safe` for high security access mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -88,8 +88,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
-{{% /md %}}</dd>
+    <dd>`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -97,8 +97,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -106,8 +106,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS instance IDs. 
-{{% /md %}}</dd>
+    <dd>A list of RDS instance IDs. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -115,8 +115,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by instance name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by instance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -124,7 +124,7 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -132,8 +132,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the instance.
-{{% /md %}}</dd>
+    <dd>Status of the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -141,9 +141,9 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the DB instances. 
+    <dd>A map of tags assigned to the DB instances. 
 Note: Before 1.60.0, the value's format is a `json` string which including `TagKey` and `TagValue`. `TagKey` cannot be null, and `TagValue` can be empty. Format example `"{\"key1\":\"value1\"}"`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -151,8 +151,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve instances belong to specified VPC.
-{{% /md %}}</dd>
+    <dd>Used to retrieve instances belong to specified VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -160,14 +160,14 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve instances belong to specified `vswitch` resources.
-{{% /md %}}</dd>
+    <dd>Used to retrieve instances belong to specified `vswitch` resources.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -176,8 +176,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}`Standard` for standard access mode and `Safe` for high security access mode.
-{{% /md %}}</dd>
+    <dd>`Standard` for standard access mode and `Safe` for high security access mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -185,8 +185,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
-{{% /md %}}</dd>
+    <dd>`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -194,8 +194,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -203,8 +203,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS instance IDs. 
-{{% /md %}}</dd>
+    <dd>A list of RDS instance IDs. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -212,8 +212,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by instance name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by instance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -221,7 +221,7 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -229,8 +229,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the instance.
-{{% /md %}}</dd>
+    <dd>Status of the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -238,9 +238,9 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the DB instances. 
+    <dd>A map of tags assigned to the DB instances. 
 Note: Before 1.60.0, the value's format is a `json` string which including `TagKey` and `TagValue`. `TagKey` cannot be null, and `TagValue` can be empty. Format example `"{\"key1\":\"value1\"}"`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -248,8 +248,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve instances belong to specified VPC.
-{{% /md %}}</dd>
+    <dd>Used to retrieve instances belong to specified VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -257,14 +257,14 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve instances belong to specified `vswitch` resources.
-{{% /md %}}</dd>
+    <dd>Used to retrieve instances belong to specified `vswitch` resources.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -273,8 +273,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}`Standard` for standard access mode and `Safe` for high security access mode.
-{{% /md %}}</dd>
+    <dd>`Standard` for standard access mode and `Safe` for high security access mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -282,8 +282,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
-{{% /md %}}</dd>
+    <dd>`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -291,8 +291,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -300,8 +300,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS instance IDs. 
-{{% /md %}}</dd>
+    <dd>A list of RDS instance IDs. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -309,8 +309,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by instance name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by instance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -318,7 +318,7 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -326,8 +326,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the instance.
-{{% /md %}}</dd>
+    <dd>Status of the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -335,9 +335,9 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the DB instances. 
+    <dd>A map of tags assigned to the DB instances. 
 Note: Before 1.60.0, the value's format is a `json` string which including `TagKey` and `TagValue`. `TagKey` cannot be null, and `TagValue` can be empty. Format example `"{\"key1\":\"value1\"}"`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -345,8 +345,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve instances belong to specified VPC.
-{{% /md %}}</dd>
+    <dd>Used to retrieve instances belong to specified VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -354,14 +354,14 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve instances belong to specified `vswitch` resources.
-{{% /md %}}</dd>
+    <dd>Used to retrieve instances belong to specified `vswitch` resources.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -370,8 +370,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}`Standard` for standard access mode and `Safe` for high security access mode.
-{{% /md %}}</dd>
+    <dd>`Standard` for standard access mode and `Safe` for high security access mode.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -379,8 +379,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
-{{% /md %}}</dd>
+    <dd>`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -388,8 +388,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -397,8 +397,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS instance IDs. 
-{{% /md %}}</dd>
+    <dd>A list of RDS instance IDs. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -406,8 +406,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A regex string to filter results by instance name.
-{{% /md %}}</dd>
+    <dd>A regex string to filter results by instance name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -415,7 +415,7 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -423,8 +423,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Status of the instance.
-{{% /md %}}</dd>
+    <dd>Status of the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -432,9 +432,9 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A map of tags assigned to the DB instances. 
+    <dd>A map of tags assigned to the DB instances. 
 Note: Before 1.60.0, the value's format is a `json` string which including `TagKey` and `TagValue`. `TagKey` cannot be null, and `TagValue` can be empty. Format example `"{\"key1\":\"value1\"}"`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -442,8 +442,8 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve instances belong to specified VPC.
-{{% /md %}}</dd>
+    <dd>Used to retrieve instances belong to specified VPC.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -451,11 +451,11 @@ Note: Before 1.60.0, the value's format is a `json` string which including `TagK
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve instances belong to specified `vswitch` resources.
-{{% /md %}}</dd>
+    <dd>Used to retrieve instances belong to specified `vswitch` resources.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -471,7 +471,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -480,8 +480,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -489,8 +489,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS instance IDs. 
-{{% /md %}}</dd>
+    <dd>A list of RDS instance IDs. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -498,8 +498,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstance">List&lt;Pulumi.<wbr>Ali<wbr>Cloud.<wbr>Rds.<wbr>Outputs.<wbr>Get<wbr>Instances<wbr>Instance&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS instances. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of RDS instances. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -507,8 +507,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS instance names. 
-{{% /md %}}</dd>
+    <dd>A list of RDS instance names. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -516,8 +516,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}`Standard` for standard access mode and `Safe` for high security access mode.
-{{% /md %}}</dd>
+    <dd>`Standard` for standard access mode and `Safe` for high security access mode.
+</dd>
 
     <dt class="property-"
             title="">
@@ -525,8 +525,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
-{{% /md %}}</dd>
+    <dd>`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -534,8 +534,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-"
             title="">
@@ -543,7 +543,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -551,7 +551,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -559,8 +559,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the instance.
-{{% /md %}}</dd>
+    <dd>Status of the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -568,7 +568,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -576,8 +576,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC the instance belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC the instance belongs to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -585,14 +585,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch the instance belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch the instance belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -601,8 +601,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -610,8 +610,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS instance IDs. 
-{{% /md %}}</dd>
+    <dd>A list of RDS instance IDs. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -619,8 +619,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstance">[]Get<wbr>Instances<wbr>Instance</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS instances. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of RDS instances. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -628,8 +628,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS instance names. 
-{{% /md %}}</dd>
+    <dd>A list of RDS instance names. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -637,8 +637,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}`Standard` for standard access mode and `Safe` for high security access mode.
-{{% /md %}}</dd>
+    <dd>`Standard` for standard access mode and `Safe` for high security access mode.
+</dd>
 
     <dt class="property-"
             title="">
@@ -646,8 +646,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
-{{% /md %}}</dd>
+    <dd>`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -655,8 +655,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-"
             title="">
@@ -664,7 +664,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -672,7 +672,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -680,8 +680,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the instance.
-{{% /md %}}</dd>
+    <dd>Status of the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -689,7 +689,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -697,8 +697,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC the instance belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC the instance belongs to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -706,14 +706,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch the instance belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch the instance belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -722,8 +722,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -731,8 +731,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS instance IDs. 
-{{% /md %}}</dd>
+    <dd>A list of RDS instance IDs. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -740,8 +740,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstance">Get<wbr>Instances<wbr>Instance[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS instances. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of RDS instances. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -749,8 +749,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS instance names. 
-{{% /md %}}</dd>
+    <dd>A list of RDS instance names. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -758,8 +758,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}`Standard` for standard access mode and `Safe` for high security access mode.
-{{% /md %}}</dd>
+    <dd>`Standard` for standard access mode and `Safe` for high security access mode.
+</dd>
 
     <dt class="property-"
             title="">
@@ -767,8 +767,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
-{{% /md %}}</dd>
+    <dd>`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -776,8 +776,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-"
             title="">
@@ -785,7 +785,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -793,7 +793,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -801,8 +801,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the instance.
-{{% /md %}}</dd>
+    <dd>Status of the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -810,7 +810,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -818,8 +818,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC the instance belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC the instance belongs to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -827,14 +827,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch the instance belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch the instance belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -843,8 +843,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -852,8 +852,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS instance IDs. 
-{{% /md %}}</dd>
+    <dd>A list of RDS instance IDs. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -861,8 +861,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancesinstance">List[Get<wbr>Instances<wbr>Instance]</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS instances. Each element contains the following attributes:
-{{% /md %}}</dd>
+    <dd>A list of RDS instances. Each element contains the following attributes:
+</dd>
 
     <dt class="property-"
             title="">
@@ -870,8 +870,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of RDS instance names. 
-{{% /md %}}</dd>
+    <dd>A list of RDS instance names. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -879,8 +879,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}`Standard` for standard access mode and `Safe` for high security access mode.
-{{% /md %}}</dd>
+    <dd>`Standard` for standard access mode and `Safe` for high security access mode.
+</dd>
 
     <dt class="property-"
             title="">
@@ -888,8 +888,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
-{{% /md %}}</dd>
+    <dd>`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -897,8 +897,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-"
             title="">
@@ -906,7 +906,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -914,7 +914,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -922,8 +922,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Status of the instance.
-{{% /md %}}</dd>
+    <dd>Status of the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -931,7 +931,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -939,8 +939,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VPC the instance belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VPC the instance belongs to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -948,11 +948,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the VSwitch the instance belongs to.
-{{% /md %}}</dd>
+    <dd>ID of the VSwitch the instance belongs to.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -965,18 +965,18 @@ The following output properties are available:
 
 
 <h4 id="getinstancesinstance">Get<wbr>Instances<wbr>Instance</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/alicloud/types/output/#GetInstancesInstance">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/rds?tab=doc#GetInstancesInstance">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -985,8 +985,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Availability zone.
-{{% /md %}}</dd>
+    <dd>Availability zone.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -994,8 +994,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Billing method. Value options: `Postpaid` for Pay-As-You-Go and `Prepaid` for subscription.
-{{% /md %}}</dd>
+    <dd>Billing method. Value options: `Postpaid` for Pay-As-You-Go and `Prepaid` for subscription.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1003,8 +1003,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}`Standard` for standard access mode and `Safe` for high security access mode.
-{{% /md %}}</dd>
+    <dd>`Standard` for standard access mode and `Safe` for high security access mode.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1012,8 +1012,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Available in 1.70.3+) RDS database connection string.
-{{% /md %}}</dd>
+    <dd>(Available in 1.70.3+) RDS database connection string.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1021,8 +1021,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the instance.
-{{% /md %}}</dd>
+    <dd>Creation time of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1030,8 +1030,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Available in 1.70.3+) The storage type of the instance.
-{{% /md %}}</dd>
+    <dd>(Available in 1.70.3+) The storage type of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1039,8 +1039,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
-{{% /md %}}</dd>
+    <dd>`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1048,8 +1048,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1057,8 +1057,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Database version.
-{{% /md %}}</dd>
+    <dd>Database version.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1066,8 +1066,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Expiration time. Pay-As-You-Go instances never expire.
-{{% /md %}}</dd>
+    <dd>Expiration time. Pay-As-You-Go instances never expire.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1075,8 +1075,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If a disaster recovery instance is attached to the current instance, the ID of the disaster recovery instance applies.
-{{% /md %}}</dd>
+    <dd>If a disaster recovery instance is attached to the current instance, the ID of the disaster recovery instance applies.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1084,8 +1084,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the RDS instance.
-{{% /md %}}</dd>
+    <dd>The ID of the RDS instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1093,8 +1093,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}(Available in 1.70.3+) User-defined DB instance storage space.
-{{% /md %}}</dd>
+    <dd>(Available in 1.70.3+) User-defined DB instance storage space.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1102,8 +1102,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sizing of the RDS instance.
-{{% /md %}}</dd>
+    <dd>Sizing of the RDS instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1111,8 +1111,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the primary instance. If this parameter is not returned, the current instance is a primary instance.
-{{% /md %}}</dd>
+    <dd>ID of the primary instance. If this parameter is not returned, the current instance is a primary instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1120,8 +1120,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the RDS instance.
-{{% /md %}}</dd>
+    <dd>The name of the RDS instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1129,8 +1129,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}`Internet` for public network or `Intranet` for private network.
-{{% /md %}}</dd>
+    <dd>`Internet` for public network or `Intranet` for private network.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1138,8 +1138,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}(Available in 1.70.3+) RDS database connection port.
-{{% /md %}}</dd>
+    <dd>(Available in 1.70.3+) RDS database connection port.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1147,8 +1147,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of IDs of read-only instances attached to the primary instance.
-{{% /md %}}</dd>
+    <dd>A list of IDs of read-only instances attached to the primary instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1156,8 +1156,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Region ID the instance belongs to.
-{{% /md %}}</dd>
+    <dd>Region ID the instance belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1165,8 +1165,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the instance.
-{{% /md %}}</dd>
+    <dd>Status of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1174,8 +1174,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If a temporary instance is attached to the current instance, the ID of the temporary instance applies.
-{{% /md %}}</dd>
+    <dd>If a temporary instance is attached to the current instance, the ID of the temporary instance applies.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1183,8 +1183,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve instances belong to specified VPC.
-{{% /md %}}</dd>
+    <dd>Used to retrieve instances belong to specified VPC.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1192,14 +1192,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve instances belong to specified `vswitch` resources.
-{{% /md %}}</dd>
+    <dd>Used to retrieve instances belong to specified `vswitch` resources.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1208,8 +1208,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Availability zone.
-{{% /md %}}</dd>
+    <dd>Availability zone.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1217,8 +1217,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Billing method. Value options: `Postpaid` for Pay-As-You-Go and `Prepaid` for subscription.
-{{% /md %}}</dd>
+    <dd>Billing method. Value options: `Postpaid` for Pay-As-You-Go and `Prepaid` for subscription.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1226,8 +1226,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}`Standard` for standard access mode and `Safe` for high security access mode.
-{{% /md %}}</dd>
+    <dd>`Standard` for standard access mode and `Safe` for high security access mode.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1235,8 +1235,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Available in 1.70.3+) RDS database connection string.
-{{% /md %}}</dd>
+    <dd>(Available in 1.70.3+) RDS database connection string.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1244,8 +1244,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the instance.
-{{% /md %}}</dd>
+    <dd>Creation time of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1253,8 +1253,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Available in 1.70.3+) The storage type of the instance.
-{{% /md %}}</dd>
+    <dd>(Available in 1.70.3+) The storage type of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1262,8 +1262,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
-{{% /md %}}</dd>
+    <dd>`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1271,8 +1271,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1280,8 +1280,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database version.
-{{% /md %}}</dd>
+    <dd>Database version.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1289,8 +1289,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Expiration time. Pay-As-You-Go instances never expire.
-{{% /md %}}</dd>
+    <dd>Expiration time. Pay-As-You-Go instances never expire.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1298,8 +1298,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If a disaster recovery instance is attached to the current instance, the ID of the disaster recovery instance applies.
-{{% /md %}}</dd>
+    <dd>If a disaster recovery instance is attached to the current instance, the ID of the disaster recovery instance applies.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1307,8 +1307,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the RDS instance.
-{{% /md %}}</dd>
+    <dd>The ID of the RDS instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1316,8 +1316,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}(Available in 1.70.3+) User-defined DB instance storage space.
-{{% /md %}}</dd>
+    <dd>(Available in 1.70.3+) User-defined DB instance storage space.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1325,8 +1325,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sizing of the RDS instance.
-{{% /md %}}</dd>
+    <dd>Sizing of the RDS instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1334,8 +1334,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the primary instance. If this parameter is not returned, the current instance is a primary instance.
-{{% /md %}}</dd>
+    <dd>ID of the primary instance. If this parameter is not returned, the current instance is a primary instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1343,8 +1343,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the RDS instance.
-{{% /md %}}</dd>
+    <dd>The name of the RDS instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1352,8 +1352,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}`Internet` for public network or `Intranet` for private network.
-{{% /md %}}</dd>
+    <dd>`Internet` for public network or `Intranet` for private network.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1361,8 +1361,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Available in 1.70.3+) RDS database connection port.
-{{% /md %}}</dd>
+    <dd>(Available in 1.70.3+) RDS database connection port.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1370,8 +1370,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of IDs of read-only instances attached to the primary instance.
-{{% /md %}}</dd>
+    <dd>A list of IDs of read-only instances attached to the primary instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1379,8 +1379,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Region ID the instance belongs to.
-{{% /md %}}</dd>
+    <dd>Region ID the instance belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1388,8 +1388,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the instance.
-{{% /md %}}</dd>
+    <dd>Status of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1397,8 +1397,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If a temporary instance is attached to the current instance, the ID of the temporary instance applies.
-{{% /md %}}</dd>
+    <dd>If a temporary instance is attached to the current instance, the ID of the temporary instance applies.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1406,8 +1406,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve instances belong to specified VPC.
-{{% /md %}}</dd>
+    <dd>Used to retrieve instances belong to specified VPC.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1415,14 +1415,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve instances belong to specified `vswitch` resources.
-{{% /md %}}</dd>
+    <dd>Used to retrieve instances belong to specified `vswitch` resources.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1431,8 +1431,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Availability zone.
-{{% /md %}}</dd>
+    <dd>Availability zone.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1440,8 +1440,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Billing method. Value options: `Postpaid` for Pay-As-You-Go and `Prepaid` for subscription.
-{{% /md %}}</dd>
+    <dd>Billing method. Value options: `Postpaid` for Pay-As-You-Go and `Prepaid` for subscription.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1449,8 +1449,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}`Standard` for standard access mode and `Safe` for high security access mode.
-{{% /md %}}</dd>
+    <dd>`Standard` for standard access mode and `Safe` for high security access mode.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1458,8 +1458,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Available in 1.70.3+) RDS database connection string.
-{{% /md %}}</dd>
+    <dd>(Available in 1.70.3+) RDS database connection string.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1467,8 +1467,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the instance.
-{{% /md %}}</dd>
+    <dd>Creation time of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1476,8 +1476,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Available in 1.70.3+) The storage type of the instance.
-{{% /md %}}</dd>
+    <dd>(Available in 1.70.3+) The storage type of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1485,8 +1485,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
-{{% /md %}}</dd>
+    <dd>`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1494,8 +1494,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1503,8 +1503,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Database version.
-{{% /md %}}</dd>
+    <dd>Database version.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1512,8 +1512,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Expiration time. Pay-As-You-Go instances never expire.
-{{% /md %}}</dd>
+    <dd>Expiration time. Pay-As-You-Go instances never expire.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1521,8 +1521,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If a disaster recovery instance is attached to the current instance, the ID of the disaster recovery instance applies.
-{{% /md %}}</dd>
+    <dd>If a disaster recovery instance is attached to the current instance, the ID of the disaster recovery instance applies.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1530,8 +1530,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the RDS instance.
-{{% /md %}}</dd>
+    <dd>The ID of the RDS instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1539,8 +1539,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}(Available in 1.70.3+) User-defined DB instance storage space.
-{{% /md %}}</dd>
+    <dd>(Available in 1.70.3+) User-defined DB instance storage space.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1548,8 +1548,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sizing of the RDS instance.
-{{% /md %}}</dd>
+    <dd>Sizing of the RDS instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1557,8 +1557,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ID of the primary instance. If this parameter is not returned, the current instance is a primary instance.
-{{% /md %}}</dd>
+    <dd>ID of the primary instance. If this parameter is not returned, the current instance is a primary instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1566,8 +1566,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the RDS instance.
-{{% /md %}}</dd>
+    <dd>The name of the RDS instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1575,8 +1575,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}`Internet` for public network or `Intranet` for private network.
-{{% /md %}}</dd>
+    <dd>`Internet` for public network or `Intranet` for private network.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1584,8 +1584,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}(Available in 1.70.3+) RDS database connection port.
-{{% /md %}}</dd>
+    <dd>(Available in 1.70.3+) RDS database connection port.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1593,8 +1593,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of IDs of read-only instances attached to the primary instance.
-{{% /md %}}</dd>
+    <dd>A list of IDs of read-only instances attached to the primary instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1602,8 +1602,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Region ID the instance belongs to.
-{{% /md %}}</dd>
+    <dd>Region ID the instance belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1611,8 +1611,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status of the instance.
-{{% /md %}}</dd>
+    <dd>Status of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1620,8 +1620,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If a temporary instance is attached to the current instance, the ID of the temporary instance applies.
-{{% /md %}}</dd>
+    <dd>If a temporary instance is attached to the current instance, the ID of the temporary instance applies.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1629,8 +1629,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve instances belong to specified VPC.
-{{% /md %}}</dd>
+    <dd>Used to retrieve instances belong to specified VPC.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1638,14 +1638,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve instances belong to specified `vswitch` resources.
-{{% /md %}}</dd>
+    <dd>Used to retrieve instances belong to specified `vswitch` resources.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1654,8 +1654,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Availability zone.
-{{% /md %}}</dd>
+    <dd>Availability zone.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1663,8 +1663,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Billing method. Value options: `Postpaid` for Pay-As-You-Go and `Prepaid` for subscription.
-{{% /md %}}</dd>
+    <dd>Billing method. Value options: `Postpaid` for Pay-As-You-Go and `Prepaid` for subscription.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1672,8 +1672,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}`Standard` for standard access mode and `Safe` for high security access mode.
-{{% /md %}}</dd>
+    <dd>`Standard` for standard access mode and `Safe` for high security access mode.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1681,8 +1681,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Available in 1.70.3+) RDS database connection string.
-{{% /md %}}</dd>
+    <dd>(Available in 1.70.3+) RDS database connection string.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1690,8 +1690,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creation time of the instance.
-{{% /md %}}</dd>
+    <dd>Creation time of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1699,8 +1699,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Available in 1.70.3+) The storage type of the instance.
-{{% /md %}}</dd>
+    <dd>(Available in 1.70.3+) The storage type of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1708,8 +1708,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
-{{% /md %}}</dd>
+    <dd>`Primary` for primary instance, `Readonly` for read-only instance, `Guard` for disaster recovery instance, and `Temp` for temporary instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1717,8 +1717,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
-{{% /md %}}</dd>
+    <dd>Database type. Options are `MySQL`, `SQLServer`, `PostgreSQL` and `PPAS`. If no value is specified, all types are returned.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1726,8 +1726,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Database version.
-{{% /md %}}</dd>
+    <dd>Database version.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1735,8 +1735,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Expiration time. Pay-As-You-Go instances never expire.
-{{% /md %}}</dd>
+    <dd>Expiration time. Pay-As-You-Go instances never expire.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1744,8 +1744,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If a disaster recovery instance is attached to the current instance, the ID of the disaster recovery instance applies.
-{{% /md %}}</dd>
+    <dd>If a disaster recovery instance is attached to the current instance, the ID of the disaster recovery instance applies.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1753,8 +1753,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the RDS instance.
-{{% /md %}}</dd>
+    <dd>The ID of the RDS instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1762,8 +1762,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}(Available in 1.70.3+) User-defined DB instance storage space.
-{{% /md %}}</dd>
+    <dd>(Available in 1.70.3+) User-defined DB instance storage space.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1771,8 +1771,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sizing of the RDS instance.
-{{% /md %}}</dd>
+    <dd>Sizing of the RDS instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1780,8 +1780,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ID of the primary instance. If this parameter is not returned, the current instance is a primary instance.
-{{% /md %}}</dd>
+    <dd>ID of the primary instance. If this parameter is not returned, the current instance is a primary instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1789,8 +1789,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the RDS instance.
-{{% /md %}}</dd>
+    <dd>The name of the RDS instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1798,8 +1798,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}`Internet` for public network or `Intranet` for private network.
-{{% /md %}}</dd>
+    <dd>`Internet` for public network or `Intranet` for private network.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1807,8 +1807,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}(Available in 1.70.3+) RDS database connection port.
-{{% /md %}}</dd>
+    <dd>(Available in 1.70.3+) RDS database connection port.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1816,8 +1816,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of IDs of read-only instances attached to the primary instance.
-{{% /md %}}</dd>
+    <dd>A list of IDs of read-only instances attached to the primary instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1825,8 +1825,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Region ID the instance belongs to.
-{{% /md %}}</dd>
+    <dd>Region ID the instance belongs to.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1834,8 +1834,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Status of the instance.
-{{% /md %}}</dd>
+    <dd>Status of the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1843,8 +1843,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If a temporary instance is attached to the current instance, the ID of the temporary instance applies.
-{{% /md %}}</dd>
+    <dd>If a temporary instance is attached to the current instance, the ID of the temporary instance applies.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1852,8 +1852,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve instances belong to specified VPC.
-{{% /md %}}</dd>
+    <dd>Used to retrieve instances belong to specified VPC.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1861,11 +1861,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Used to retrieve instances belong to specified `vswitch` resources.
-{{% /md %}}</dd>
+    <dd>Used to retrieve instances belong to specified `vswitch` resources.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

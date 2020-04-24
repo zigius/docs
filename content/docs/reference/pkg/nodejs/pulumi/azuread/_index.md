@@ -31,22 +31,22 @@ Use the navigation below to see detailed documentation, including sample code, f
 > please consult the source [`terraform-providers/terraform-provider-azuread` repo](https://github.com/terraform-providers/terraform-provider-azuread/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var azuread = require("@pulumi/azuread");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as azuread from "@pulumi/azuread";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

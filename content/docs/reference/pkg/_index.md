@@ -38,7 +38,7 @@ Reference documentation and examples for major cloud providers.
 
 Detailed documentation for general-purpose and cloud-provider packages, organized by language.
 
-{{% chooser language "javascript,typescript,python,go,csharp" / %}}
+
 
 ### General Purpose Packages
 
@@ -46,36 +46,36 @@ The Pulumi SDK package is used for accessing the core programming model around r
 configuration, and other components directly. Additional general-purpose packages can be
 used across all cloud platforms:
 
-{{% choosable language "javascript,typescript" %}}
+
 * [**Pulumi SDK** (`@pulumi/pulumi`)]({{< relref "nodejs/pulumi/pulumi" >}})
 * [**Docker** (`@pulumi/docker`)]({{< relref "nodejs/pulumi/docker" >}})
 * [**Policy** (`@pulumi/policy`)]({{< relref "nodejs/pulumi/policy" >}})
 * [**Random** (`@pulumi/random`)]({{< relref "nodejs/pulumi/random" >}})
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 * [**Pulumi SDK** (`pulumi`)]({{< relref "python/pulumi" >}})
 * [**Docker** (`pulumi_docker`)]({{< relref "python/pulumi_docker" >}})
 * [**Policy** (`pulumi_policy`) <span class="badge badge-preview">PREVIEW</span>]({{< relref "python/pulumi_policy" >}})
 * [**Random** (`pulumi_random`)]({{< relref "python/pulumi_random" >}})
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 * [**Pulumi SDK** (`pulumi`)](https://pkg.go.dev/github.com/pulumi/pulumi/sdk/go/pulumi)
 * [**Random** (`random`)](https://pkg.go.dev/github.com/pulumi/pulumi-random/sdk/go/random)
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 * [**Pulumi SDK** (`Pulumi`)](/docs/reference/pkg/dotnet/Pulumi/Pulumi.html)
 * [**Docker** (`Pulumi.Docker`)](/docs/reference/pkg/dotnet/Pulumi.Docker/Pulumi.Docker.html)
 * [**Random** (`Pulumi.Random`)](/docs/reference/pkg/dotnet/Pulumi.Random/Pulumi.Random.html)
-{{% /choosable %}}
+
 
 ### Cloud Provider Packages
 
 Each cloud vendor has a dedicated package for deploying resources to it:
 
-{{% choosable language "javascript,typescript" %}}
+
 * [**AWS** (`@pulumi/aws`)]({{< relref "nodejs/pulumi/aws" >}})
     * [**AWS Extensions** (`@pulumi/awsx`)]({{< relref "nodejs/pulumi/awsx" >}}) - simpler interfaces for common AWS patterns
     * [**AWS EKS Cluster** (`@pulumi/eks`)]({{< relref "nodejs/pulumi/eks" >}}) - simpler interface for working with AWS EKS
@@ -114,9 +114,9 @@ Each cloud vendor has a dedicated package for deploying resources to it:
 * [**TLS** (`@pulumi/tls`)]({{< relref "nodejs/pulumi/tls" >}})
 * [**Hashicorp Vault** (`@pulumi/vault`)]({{< relref "nodejs/pulumi/vault" >}})
 * [**vSphere** (`@pulumi/vsphere`)]({{< relref "nodejs/pulumi/vsphere" >}})
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 * [**AWS** (`pulumi_aws`)]({{< relref "python/pulumi_aws" >}})
 * [**Azure** (`pulumi_azure`)]({{< relref "python/pulumi_azure" >}})
     * [**Azure Active Directory** (`pulumi_azuread`)]({{< relref "python/pulumi_azuread" >}})
@@ -152,9 +152,9 @@ Each cloud vendor has a dedicated package for deploying resources to it:
 * [**TLS** (`pulumi_tls`)]({{< relref "python/pulumi_tls" >}})
 * [**Hashicorp Vault** (`pulumi_vault`)]({{< relref "python/pulumi_vault" >}})
 * [**vSphere** (`pulumi_vsphere`)]({{< relref "python/pulumi_vsphere" >}})
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 * [**AWS** (`aws`)](https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/go/aws)
 * [**Azure** (`azure`)](https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v2/go/azure)
     * [**Azure Active Directory** (`pulumi_azuread`)](https://pkg.go.dev/github.com/pulumi/pulumi-azuread/sdk/go/azuread)
@@ -189,9 +189,9 @@ Each cloud vendor has a dedicated package for deploying resources to it:
 * [**TLS** (`tls`)](https://pkg.go.dev/github.com/pulumi/pulumi-tls/sdk/go/tls)
 * [**Hashicorp Vault** (`vault`)](https://pkg.go.dev/github.com/pulumi/pulumi-vault/sdk/go/vault)
 * [**vSphere** (`vsphere`)](https://pkg.go.dev/github.com/pulumi/pulumi-vsphere/sdk/go/vsphere)
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 * [**AWS** (`Pulumi.Aws`)](/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.html)
 * [**Microsoft Azure** (`Pulumi.Azure`)](/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.html)
 * [**Google Cloud** (`Pulumi.Gcp`)](/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.html)
@@ -226,18 +226,18 @@ Each cloud vendor has a dedicated package for deploying resources to it:
 * [**TLS** (`Pulumi.Tls`)](/docs/reference/pkg/dotnet/Pulumi.Tls/Pulumi.Tls.html)
 * [**Hashicorp Vault** (`Pulumi.Vault`)](/docs/reference/pkg/dotnet/Pulumi.Vault/Pulumi.Vault.html)
 * [**vSphere** (`Pulumi.VSphere`)](/docs/reference/pkg/dotnet/Pulumi.VSphere/Pulumi.VSphere.html)
-{{% /choosable %}}
+
 
 ### Cloud-Agnostic Packages
 
-{{% choosable language "javascript,typescript" %}}
+
 Pulumi offers a highly productive, cloud-agnostic package for container and serverless
 programming in the `@pulumi/cloud` package which currently allows writing applications
 once and deploying to either AWS or Azure.
 
 * [**Pulumi Cloud Framework** (`@pulumi/cloud`) <span class="badge badge-preview">PREVIEW</span>]({{< relref "nodejs/pulumi/cloud" >}})
-{{% /choosable %}}
 
-{{% choosable language "python,go,csharp" %}}
+
+
 Coming soon!
-{{% /choosable %}}
+

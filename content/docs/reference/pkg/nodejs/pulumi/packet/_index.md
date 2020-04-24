@@ -16,22 +16,22 @@ git_sha: "0d5c97788b2410dbd56983a41041c7515f0d9bd0"
 > please consult the source [`terraform-providers/terraform-provider-packet` repo](https://github.com/terraform-providers/terraform-provider-packet/issues).
 
 
-{{< chooser language "javascript,typescript" >}}
-{{% choosable language javascript %}}
+
+
 
 ```javascript
 var packet = require("@pulumi/packet");
 ```
 
-{{% /choosable %}}
-{{% choosable language typescript %}}
+
+
 
 ```typescript
 import * as packet from "@pulumi/packet";
 ```
 
-{{% /choosable %}}
-{{% /chooser %}}
+
+
 
 
 <h3>Modules</h3>

@@ -14,26 +14,26 @@ meta_desc: "Explore the ShareAccess resource of the sharedfilesystem module, inc
 
 
 ## Create a ShareAccess Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/sharedfilesystem/#ShareAccess">ShareAccess</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/sharedfilesystem/#ShareAccessArgs">ShareAccessArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ShareAccess</span><span class="p">(resource_name, opts=None, </span>access_level=None<span class="p">, </span>access_to=None<span class="p">, </span>access_type=None<span class="p">, </span>region=None<span class="p">, </span>share_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewShareAccess<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/sharedfilesystem?tab=doc#ShareAccessArgs">ShareAccessArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/sharedfilesystem?tab=doc#ShareAccess">ShareAccess</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.SharedFileSystem.ShareAccess.html">ShareAccess</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.OpenStack.SharedFileSystem.ShareAccessArgs.html">ShareAccessArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the ShareAccess resource of the sharedfilesystem module, inc
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the ShareAccess resource of the sharedfilesystem module, inc
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the ShareAccess resource of the sharedfilesystem module, inc
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the ShareAccess resource of the sharedfilesystem module, inc
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ShareAccess Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The ShareAccess resource accepts the following [input]({{< relref "/docs/intro/c
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,8 +200,8 @@ The ShareAccess resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The access level to the share. Can either be `rw` or `ro`.
-{{% /md %}}</dd>
+    <dd>The access level to the share. Can either be `rw` or `ro`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -209,9 +209,9 @@ The ShareAccess resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The value that defines the access. Can either be an IP
+    <dd>The value that defines the access. Can either be an IP
 address or a username verified by configured Security Service of the Share Network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -219,10 +219,10 @@ address or a username verified by configured Security Service of the Share Netwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The access rule type. Can either be an ip, user,
+    <dd>The access rule type. Can either be an ip, user,
 cert, or cephx. cephx support requires an OpenStack environment that supports
 Shared Filesystem microversion 2.13 (Mitaka) or later.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -230,8 +230,8 @@ Shared Filesystem microversion 2.13 (Mitaka) or later.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share to which you are granted access.
-{{% /md %}}</dd>
+    <dd>The UUID of the share to which you are granted access.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -239,16 +239,16 @@ Shared Filesystem microversion 2.13 (Mitaka) or later.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Shared File System client.
+    <dd>The region in which to obtain the V2 Shared File System client.
 A Shared File System client is needed to create a share access. Changing this
 creates a new share access.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -257,8 +257,8 @@ creates a new share access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The access level to the share. Can either be `rw` or `ro`.
-{{% /md %}}</dd>
+    <dd>The access level to the share. Can either be `rw` or `ro`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -266,9 +266,9 @@ creates a new share access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value that defines the access. Can either be an IP
+    <dd>The value that defines the access. Can either be an IP
 address or a username verified by configured Security Service of the Share Network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -276,10 +276,10 @@ address or a username verified by configured Security Service of the Share Netwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The access rule type. Can either be an ip, user,
+    <dd>The access rule type. Can either be an ip, user,
 cert, or cephx. cephx support requires an OpenStack environment that supports
 Shared Filesystem microversion 2.13 (Mitaka) or later.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -287,8 +287,8 @@ Shared Filesystem microversion 2.13 (Mitaka) or later.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share to which you are granted access.
-{{% /md %}}</dd>
+    <dd>The UUID of the share to which you are granted access.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -296,16 +296,16 @@ Shared Filesystem microversion 2.13 (Mitaka) or later.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Shared File System client.
+    <dd>The region in which to obtain the V2 Shared File System client.
 A Shared File System client is needed to create a share access. Changing this
 creates a new share access.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -314,8 +314,8 @@ creates a new share access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The access level to the share. Can either be `rw` or `ro`.
-{{% /md %}}</dd>
+    <dd>The access level to the share. Can either be `rw` or `ro`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -323,9 +323,9 @@ creates a new share access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value that defines the access. Can either be an IP
+    <dd>The value that defines the access. Can either be an IP
 address or a username verified by configured Security Service of the Share Network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -333,10 +333,10 @@ address or a username verified by configured Security Service of the Share Netwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The access rule type. Can either be an ip, user,
+    <dd>The access rule type. Can either be an ip, user,
 cert, or cephx. cephx support requires an OpenStack environment that supports
 Shared Filesystem microversion 2.13 (Mitaka) or later.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -344,8 +344,8 @@ Shared Filesystem microversion 2.13 (Mitaka) or later.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share to which you are granted access.
-{{% /md %}}</dd>
+    <dd>The UUID of the share to which you are granted access.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -353,16 +353,16 @@ Shared Filesystem microversion 2.13 (Mitaka) or later.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Shared File System client.
+    <dd>The region in which to obtain the V2 Shared File System client.
 A Shared File System client is needed to create a share access. Changing this
 creates a new share access.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -371,8 +371,8 @@ creates a new share access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The access level to the share. Can either be `rw` or `ro`.
-{{% /md %}}</dd>
+    <dd>The access level to the share. Can either be `rw` or `ro`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -380,9 +380,9 @@ creates a new share access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The value that defines the access. Can either be an IP
+    <dd>The value that defines the access. Can either be an IP
 address or a username verified by configured Security Service of the Share Network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -390,10 +390,10 @@ address or a username verified by configured Security Service of the Share Netwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The access rule type. Can either be an ip, user,
+    <dd>The access rule type. Can either be an ip, user,
 cert, or cephx. cephx support requires an OpenStack environment that supports
 Shared Filesystem microversion 2.13 (Mitaka) or later.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -401,8 +401,8 @@ Shared Filesystem microversion 2.13 (Mitaka) or later.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share to which you are granted access.
-{{% /md %}}</dd>
+    <dd>The UUID of the share to which you are granted access.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -410,13 +410,13 @@ Shared Filesystem microversion 2.13 (Mitaka) or later.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Shared File System client.
+    <dd>The region in which to obtain the V2 Shared File System client.
 A Shared File System client is needed to create a share access. Changing this
 creates a new share access.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -430,7 +430,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -439,8 +439,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The access credential of the entity granted access.
-{{% /md %}}</dd>
+    <dd>The access credential of the entity granted access.
+</dd>
 
     <dt class="property-"
             title="">
@@ -448,13 +448,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -463,8 +463,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The access credential of the entity granted access.
-{{% /md %}}</dd>
+    <dd>The access credential of the entity granted access.
+</dd>
 
     <dt class="property-"
             title="">
@@ -472,13 +472,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -487,8 +487,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The access credential of the entity granted access.
-{{% /md %}}</dd>
+    <dd>The access credential of the entity granted access.
+</dd>
 
     <dt class="property-"
             title="">
@@ -496,13 +496,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -511,8 +511,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The access credential of the entity granted access.
-{{% /md %}}</dd>
+    <dd>The access credential of the entity granted access.
+</dd>
 
     <dt class="property-"
             title="">
@@ -520,10 +520,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -534,25 +534,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ShareAccess Resource {#look-up}
 
 Get an existing ShareAccess resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/sharedfilesystem/#ShareAccessState">ShareAccessState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/openstack/sharedfilesystem/#ShareAccess">ShareAccess</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>access_key=None<span class="p">, </span>access_level=None<span class="p">, </span>access_to=None<span class="p">, </span>access_type=None<span class="p">, </span>region=None<span class="p">, </span>share_id=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetShareAccess<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/sharedfilesystem?tab=doc#ShareAccessState">ShareAccessState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-openstack/sdk/v2/go/openstack/sharedfilesystem?tab=doc#ShareAccess">ShareAccess</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.SharedFileSystem.ShareAccess.html">ShareAccess</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Openstack/Pulumi.Openstack.SharedFileSystem.ShareAccessState.html">ShareAccessState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -577,9 +577,9 @@ Get an existing ShareAccess resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -592,36 +592,9 @@ Get an existing ShareAccess resource's state with the given name, ID, and option
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -646,13 +619,40 @@ Get an existing ShareAccess resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -661,8 +661,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The access credential of the entity granted access.
-{{% /md %}}</dd>
+    <dd>The access credential of the entity granted access.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -670,8 +670,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The access level to the share. Can either be `rw` or `ro`.
-{{% /md %}}</dd>
+    <dd>The access level to the share. Can either be `rw` or `ro`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -679,9 +679,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The value that defines the access. Can either be an IP
+    <dd>The value that defines the access. Can either be an IP
 address or a username verified by configured Security Service of the Share Network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -689,10 +689,10 @@ address or a username verified by configured Security Service of the Share Netwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The access rule type. Can either be an ip, user,
+    <dd>The access rule type. Can either be an ip, user,
 cert, or cephx. cephx support requires an OpenStack environment that supports
 Shared Filesystem microversion 2.13 (Mitaka) or later.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -700,10 +700,10 @@ Shared Filesystem microversion 2.13 (Mitaka) or later.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Shared File System client.
+    <dd>The region in which to obtain the V2 Shared File System client.
 A Shared File System client is needed to create a share access. Changing this
 creates a new share access.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -711,14 +711,14 @@ creates a new share access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share to which you are granted access.
-{{% /md %}}</dd>
+    <dd>The UUID of the share to which you are granted access.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -727,8 +727,8 @@ creates a new share access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The access credential of the entity granted access.
-{{% /md %}}</dd>
+    <dd>The access credential of the entity granted access.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -736,8 +736,8 @@ creates a new share access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The access level to the share. Can either be `rw` or `ro`.
-{{% /md %}}</dd>
+    <dd>The access level to the share. Can either be `rw` or `ro`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -745,9 +745,9 @@ creates a new share access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value that defines the access. Can either be an IP
+    <dd>The value that defines the access. Can either be an IP
 address or a username verified by configured Security Service of the Share Network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -755,10 +755,10 @@ address or a username verified by configured Security Service of the Share Netwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The access rule type. Can either be an ip, user,
+    <dd>The access rule type. Can either be an ip, user,
 cert, or cephx. cephx support requires an OpenStack environment that supports
 Shared Filesystem microversion 2.13 (Mitaka) or later.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -766,10 +766,10 @@ Shared Filesystem microversion 2.13 (Mitaka) or later.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Shared File System client.
+    <dd>The region in which to obtain the V2 Shared File System client.
 A Shared File System client is needed to create a share access. Changing this
 creates a new share access.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -777,14 +777,14 @@ creates a new share access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share to which you are granted access.
-{{% /md %}}</dd>
+    <dd>The UUID of the share to which you are granted access.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -793,8 +793,8 @@ creates a new share access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The access credential of the entity granted access.
-{{% /md %}}</dd>
+    <dd>The access credential of the entity granted access.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -802,8 +802,8 @@ creates a new share access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The access level to the share. Can either be `rw` or `ro`.
-{{% /md %}}</dd>
+    <dd>The access level to the share. Can either be `rw` or `ro`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -811,9 +811,9 @@ creates a new share access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value that defines the access. Can either be an IP
+    <dd>The value that defines the access. Can either be an IP
 address or a username verified by configured Security Service of the Share Network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -821,10 +821,10 @@ address or a username verified by configured Security Service of the Share Netwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The access rule type. Can either be an ip, user,
+    <dd>The access rule type. Can either be an ip, user,
 cert, or cephx. cephx support requires an OpenStack environment that supports
 Shared Filesystem microversion 2.13 (Mitaka) or later.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -832,10 +832,10 @@ Shared Filesystem microversion 2.13 (Mitaka) or later.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Shared File System client.
+    <dd>The region in which to obtain the V2 Shared File System client.
 A Shared File System client is needed to create a share access. Changing this
 creates a new share access.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -843,14 +843,14 @@ creates a new share access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share to which you are granted access.
-{{% /md %}}</dd>
+    <dd>The UUID of the share to which you are granted access.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -859,8 +859,8 @@ creates a new share access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The access credential of the entity granted access.
-{{% /md %}}</dd>
+    <dd>The access credential of the entity granted access.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -868,8 +868,8 @@ creates a new share access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The access level to the share. Can either be `rw` or `ro`.
-{{% /md %}}</dd>
+    <dd>The access level to the share. Can either be `rw` or `ro`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -877,9 +877,9 @@ creates a new share access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The value that defines the access. Can either be an IP
+    <dd>The value that defines the access. Can either be an IP
 address or a username verified by configured Security Service of the Share Network.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -887,10 +887,10 @@ address or a username verified by configured Security Service of the Share Netwo
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The access rule type. Can either be an ip, user,
+    <dd>The access rule type. Can either be an ip, user,
 cert, or cephx. cephx support requires an OpenStack environment that supports
 Shared Filesystem microversion 2.13 (Mitaka) or later.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -898,10 +898,10 @@ Shared Filesystem microversion 2.13 (Mitaka) or later.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region in which to obtain the V2 Shared File System client.
+    <dd>The region in which to obtain the V2 Shared File System client.
 A Shared File System client is needed to create a share access. Changing this
 creates a new share access.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -909,11 +909,11 @@ creates a new share access.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The UUID of the share to which you are granted access.
-{{% /md %}}</dd>
+    <dd>The UUID of the share to which you are granted access.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

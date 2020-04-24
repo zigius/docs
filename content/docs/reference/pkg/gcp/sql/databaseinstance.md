@@ -66,26 +66,26 @@ const master = new gcp.sql.DatabaseInstance("master", {
 
 
 ## Create a DatabaseInstance Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/sql/#DatabaseInstance">DatabaseInstance</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/sql/#DatabaseInstanceArgs">DatabaseInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">DatabaseInstance</span><span class="p">(resource_name, opts=None, </span>database_version=None<span class="p">, </span>encryption_key_name=None<span class="p">, </span>master_instance_name=None<span class="p">, </span>name=None<span class="p">, </span>project=None<span class="p">, </span>region=None<span class="p">, </span>replica_configuration=None<span class="p">, </span>root_password=None<span class="p">, </span>settings=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewDatabaseInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstanceArgs">DatabaseInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstance">DatabaseInstance</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Sql.DatabaseInstance.html">DatabaseInstance</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Sql.DatabaseInstanceArgs.html">DatabaseInstanceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -122,9 +122,9 @@ const master = new gcp.sql.DatabaseInstance("master", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -142,9 +142,9 @@ const master = new gcp.sql.DatabaseInstance("master", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -191,9 +191,9 @@ const master = new gcp.sql.DatabaseInstance("master", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -230,7 +230,7 @@ const master = new gcp.sql.DatabaseInstance("master", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## DatabaseInstance Resource Properties {#properties}
 
@@ -243,7 +243,7 @@ The DatabaseInstance resource accepts the following [input]({{< relref "/docs/in
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -252,9 +252,9 @@ The DatabaseInstance resource accepts the following [input]({{< relref "/docs/in
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettings">Database<wbr>Instance<wbr>Settings<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The settings to use for the database. The
+    <dd>The settings to use for the database. The
 configuration is detailed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -262,13 +262,13 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The MySQL, PostgreSQL or
+    <dd>The MySQL, PostgreSQL or
 SQL Server (beta) version to use. Supported values include `MYSQL_5_6`,
 `MYSQL_5_7`, `POSTGRES_9_6`,`POSTGRES_11`, `SQLSERVER_2017_STANDARD`,
 `SQLSERVER_2017_ENTERPRISE`, `SQLSERVER_2017_EXPRESS`, `SQLSERVER_2017_WEB`.
 [Database Version Policies](https://cloud.google.com/sql/docs/sqlserver/db-versions)
 includes an up-to-date reference of supported versions.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -276,7 +276,7 @@ includes an up-to-date reference of supported versions.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}
+    <dd>
 The full path to the encryption key used for the CMEK disk encryption.  Setting
 up disk encryption currently requires manual steps outside of this provider.
 The provided key must be in the same region as the SQL instance.  In order
@@ -285,7 +285,7 @@ granted permission on this key.  This step can currently only be done
 manually, please see [this step](https://cloud.google.com/sql/docs/mysql/configure-cmek#service-account).
 That service account needs the `Cloud KMS > Cloud KMS CryptoKey Encrypter/Decrypter` role on your
 key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-cmek#grantkey).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -293,10 +293,10 @@ key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance that will act as
+    <dd>The name of the instance that will act as
 the master in the replication setup. Note, this requires the master to have
 `binary_log_enabled` set, as well as existing backups.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -304,8 +304,8 @@ the master in the replication setup. Note, this requires the master to have
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for this whitelist entry.
-{{% /md %}}</dd>
+    <dd>A name for this whitelist entry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -313,9 +313,9 @@ the master in the replication setup. Note, this requires the master to have
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -323,13 +323,13 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region the instance will sit in. Note, Cloud SQL is not
+    <dd>The region the instance will sit in. Note, Cloud SQL is not
 available in all regions - choose from one of the options listed [here](https://cloud.google.com/sql/docs/mysql/instance-locations).
 A valid region must be provided to use this resource. If a region is not provided in the resource definition,
 the provider region will be used instead, but this will be an apply-time error for instances if the provider
 region is not supported with Cloud SQL. If you choose not to provide the `region` argument for this resource,
 make sure you understand this.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -337,9 +337,9 @@ make sure you understand this.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancereplicaconfiguration">Database<wbr>Instance<wbr>Replica<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The configuration for replication. The
+    <dd>The configuration for replication. The
 configuration is detailed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -347,14 +347,14 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Initial root password. Required for MS SQL Server, ignored by MySQL and PostgreSQL.
-{{% /md %}}</dd>
+    <dd>Initial root password. Required for MS SQL Server, ignored by MySQL and PostgreSQL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -363,9 +363,9 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettings">Database<wbr>Instance<wbr>Settings</a></span>
     </dt>
-    <dd>{{% md %}}The settings to use for the database. The
+    <dd>The settings to use for the database. The
 configuration is detailed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -373,13 +373,13 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The MySQL, PostgreSQL or
+    <dd>The MySQL, PostgreSQL or
 SQL Server (beta) version to use. Supported values include `MYSQL_5_6`,
 `MYSQL_5_7`, `POSTGRES_9_6`,`POSTGRES_11`, `SQLSERVER_2017_STANDARD`,
 `SQLSERVER_2017_ENTERPRISE`, `SQLSERVER_2017_EXPRESS`, `SQLSERVER_2017_WEB`.
 [Database Version Policies](https://cloud.google.com/sql/docs/sqlserver/db-versions)
 includes an up-to-date reference of supported versions.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -387,7 +387,7 @@ includes an up-to-date reference of supported versions.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}
+    <dd>
 The full path to the encryption key used for the CMEK disk encryption.  Setting
 up disk encryption currently requires manual steps outside of this provider.
 The provided key must be in the same region as the SQL instance.  In order
@@ -396,7 +396,7 @@ granted permission on this key.  This step can currently only be done
 manually, please see [this step](https://cloud.google.com/sql/docs/mysql/configure-cmek#service-account).
 That service account needs the `Cloud KMS > Cloud KMS CryptoKey Encrypter/Decrypter` role on your
 key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-cmek#grantkey).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -404,10 +404,10 @@ key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance that will act as
+    <dd>The name of the instance that will act as
 the master in the replication setup. Note, this requires the master to have
 `binary_log_enabled` set, as well as existing backups.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -415,8 +415,8 @@ the master in the replication setup. Note, this requires the master to have
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for this whitelist entry.
-{{% /md %}}</dd>
+    <dd>A name for this whitelist entry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -424,9 +424,9 @@ the master in the replication setup. Note, this requires the master to have
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -434,13 +434,13 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region the instance will sit in. Note, Cloud SQL is not
+    <dd>The region the instance will sit in. Note, Cloud SQL is not
 available in all regions - choose from one of the options listed [here](https://cloud.google.com/sql/docs/mysql/instance-locations).
 A valid region must be provided to use this resource. If a region is not provided in the resource definition,
 the provider region will be used instead, but this will be an apply-time error for instances if the provider
 region is not supported with Cloud SQL. If you choose not to provide the `region` argument for this resource,
 make sure you understand this.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -448,9 +448,9 @@ make sure you understand this.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancereplicaconfiguration">Database<wbr>Instance<wbr>Replica<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}The configuration for replication. The
+    <dd>The configuration for replication. The
 configuration is detailed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -458,14 +458,14 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Initial root password. Required for MS SQL Server, ignored by MySQL and PostgreSQL.
-{{% /md %}}</dd>
+    <dd>Initial root password. Required for MS SQL Server, ignored by MySQL and PostgreSQL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -474,9 +474,9 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettings">Database<wbr>Instance<wbr>Settings</a></span>
     </dt>
-    <dd>{{% md %}}The settings to use for the database. The
+    <dd>The settings to use for the database. The
 configuration is detailed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -484,13 +484,13 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The MySQL, PostgreSQL or
+    <dd>The MySQL, PostgreSQL or
 SQL Server (beta) version to use. Supported values include `MYSQL_5_6`,
 `MYSQL_5_7`, `POSTGRES_9_6`,`POSTGRES_11`, `SQLSERVER_2017_STANDARD`,
 `SQLSERVER_2017_ENTERPRISE`, `SQLSERVER_2017_EXPRESS`, `SQLSERVER_2017_WEB`.
 [Database Version Policies](https://cloud.google.com/sql/docs/sqlserver/db-versions)
 includes an up-to-date reference of supported versions.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -498,7 +498,7 @@ includes an up-to-date reference of supported versions.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}
+    <dd>
 The full path to the encryption key used for the CMEK disk encryption.  Setting
 up disk encryption currently requires manual steps outside of this provider.
 The provided key must be in the same region as the SQL instance.  In order
@@ -507,7 +507,7 @@ granted permission on this key.  This step can currently only be done
 manually, please see [this step](https://cloud.google.com/sql/docs/mysql/configure-cmek#service-account).
 That service account needs the `Cloud KMS > Cloud KMS CryptoKey Encrypter/Decrypter` role on your
 key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-cmek#grantkey).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -515,10 +515,10 @@ key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance that will act as
+    <dd>The name of the instance that will act as
 the master in the replication setup. Note, this requires the master to have
 `binary_log_enabled` set, as well as existing backups.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -526,8 +526,8 @@ the master in the replication setup. Note, this requires the master to have
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for this whitelist entry.
-{{% /md %}}</dd>
+    <dd>A name for this whitelist entry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -535,9 +535,9 @@ the master in the replication setup. Note, this requires the master to have
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -545,13 +545,13 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region the instance will sit in. Note, Cloud SQL is not
+    <dd>The region the instance will sit in. Note, Cloud SQL is not
 available in all regions - choose from one of the options listed [here](https://cloud.google.com/sql/docs/mysql/instance-locations).
 A valid region must be provided to use this resource. If a region is not provided in the resource definition,
 the provider region will be used instead, but this will be an apply-time error for instances if the provider
 region is not supported with Cloud SQL. If you choose not to provide the `region` argument for this resource,
 make sure you understand this.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -559,9 +559,9 @@ make sure you understand this.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancereplicaconfiguration">Database<wbr>Instance<wbr>Replica<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}The configuration for replication. The
+    <dd>The configuration for replication. The
 configuration is detailed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -569,14 +569,14 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Initial root password. Required for MS SQL Server, ignored by MySQL and PostgreSQL.
-{{% /md %}}</dd>
+    <dd>Initial root password. Required for MS SQL Server, ignored by MySQL and PostgreSQL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -585,9 +585,9 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettings">Dict[Database<wbr>Instance<wbr>Settings]</a></span>
     </dt>
-    <dd>{{% md %}}The settings to use for the database. The
+    <dd>The settings to use for the database. The
 configuration is detailed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -595,13 +595,13 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The MySQL, PostgreSQL or
+    <dd>The MySQL, PostgreSQL or
 SQL Server (beta) version to use. Supported values include `MYSQL_5_6`,
 `MYSQL_5_7`, `POSTGRES_9_6`,`POSTGRES_11`, `SQLSERVER_2017_STANDARD`,
 `SQLSERVER_2017_ENTERPRISE`, `SQLSERVER_2017_EXPRESS`, `SQLSERVER_2017_WEB`.
 [Database Version Policies](https://cloud.google.com/sql/docs/sqlserver/db-versions)
 includes an up-to-date reference of supported versions.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -609,7 +609,7 @@ includes an up-to-date reference of supported versions.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}
+    <dd>
 The full path to the encryption key used for the CMEK disk encryption.  Setting
 up disk encryption currently requires manual steps outside of this provider.
 The provided key must be in the same region as the SQL instance.  In order
@@ -618,7 +618,7 @@ granted permission on this key.  This step can currently only be done
 manually, please see [this step](https://cloud.google.com/sql/docs/mysql/configure-cmek#service-account).
 That service account needs the `Cloud KMS > Cloud KMS CryptoKey Encrypter/Decrypter` role on your
 key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-cmek#grantkey).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -626,10 +626,10 @@ key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance that will act as
+    <dd>The name of the instance that will act as
 the master in the replication setup. Note, this requires the master to have
 `binary_log_enabled` set, as well as existing backups.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -637,8 +637,8 @@ the master in the replication setup. Note, this requires the master to have
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A name for this whitelist entry.
-{{% /md %}}</dd>
+    <dd>A name for this whitelist entry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -646,9 +646,9 @@ the master in the replication setup. Note, this requires the master to have
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -656,13 +656,13 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region the instance will sit in. Note, Cloud SQL is not
+    <dd>The region the instance will sit in. Note, Cloud SQL is not
 available in all regions - choose from one of the options listed [here](https://cloud.google.com/sql/docs/mysql/instance-locations).
 A valid region must be provided to use this resource. If a region is not provided in the resource definition,
 the provider region will be used instead, but this will be an apply-time error for instances if the provider
 region is not supported with Cloud SQL. If you choose not to provide the `region` argument for this resource,
 make sure you understand this.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -670,9 +670,9 @@ make sure you understand this.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancereplicaconfiguration">Dict[Database<wbr>Instance<wbr>Replica<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}The configuration for replication. The
+    <dd>The configuration for replication. The
 configuration is detailed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -680,11 +680,11 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Initial root password. Required for MS SQL Server, ignored by MySQL and PostgreSQL.
-{{% /md %}}</dd>
+    <dd>Initial root password. Required for MS SQL Server, ignored by MySQL and PostgreSQL.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -698,7 +698,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -707,9 +707,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection name of the instance to be used in
+    <dd>The connection name of the instance to be used in
 connection strings. For example, when connecting with [Cloud SQL Proxy](https://cloud.google.com/sql/docs/mysql/connect-admin-proxy).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -717,8 +717,8 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The first IPv4 address of any type assigned.
-{{% /md %}}</dd>
+    <dd>The first IPv4 address of any type assigned.
+</dd>
 
     <dt class="property-"
             title="">
@@ -726,7 +726,7 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -734,7 +734,7 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstanceipaddress">List&lt;Database<wbr>Instance<wbr>Ip<wbr>Address&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -742,8 +742,8 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The first private (`PRIVATE`) IPv4 address assigned. 
-{{% /md %}}</dd>
+    <dd>The first private (`PRIVATE`) IPv4 address assigned. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -751,8 +751,8 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The first public (`PRIMARY`) IPv4 address assigned. 
-{{% /md %}}</dd>
+    <dd>The first public (`PRIMARY`) IPv4 address assigned. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -760,8 +760,8 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -769,7 +769,7 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstanceservercacert">Database<wbr>Instance<wbr>Server<wbr>Ca<wbr>Cert</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -777,15 +777,15 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The service account email address assigned to the
+    <dd>The service account email address assigned to the
 instance.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -794,9 +794,9 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection name of the instance to be used in
+    <dd>The connection name of the instance to be used in
 connection strings. For example, when connecting with [Cloud SQL Proxy](https://cloud.google.com/sql/docs/mysql/connect-admin-proxy).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -804,8 +804,8 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The first IPv4 address of any type assigned.
-{{% /md %}}</dd>
+    <dd>The first IPv4 address of any type assigned.
+</dd>
 
     <dt class="property-"
             title="">
@@ -813,7 +813,7 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -821,7 +821,7 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstanceipaddress">[]Database<wbr>Instance<wbr>Ip<wbr>Address</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -829,8 +829,8 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The first private (`PRIVATE`) IPv4 address assigned. 
-{{% /md %}}</dd>
+    <dd>The first private (`PRIVATE`) IPv4 address assigned. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -838,8 +838,8 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The first public (`PRIMARY`) IPv4 address assigned. 
-{{% /md %}}</dd>
+    <dd>The first public (`PRIMARY`) IPv4 address assigned. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -847,8 +847,8 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -856,7 +856,7 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstanceservercacert">Database<wbr>Instance<wbr>Server<wbr>Ca<wbr>Cert</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -864,15 +864,15 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service account email address assigned to the
+    <dd>The service account email address assigned to the
 instance.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -881,9 +881,9 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection name of the instance to be used in
+    <dd>The connection name of the instance to be used in
 connection strings. For example, when connecting with [Cloud SQL Proxy](https://cloud.google.com/sql/docs/mysql/connect-admin-proxy).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -891,8 +891,8 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The first IPv4 address of any type assigned.
-{{% /md %}}</dd>
+    <dd>The first IPv4 address of any type assigned.
+</dd>
 
     <dt class="property-"
             title="">
@@ -900,7 +900,7 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -908,7 +908,7 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstanceipaddress">Database<wbr>Instance<wbr>Ip<wbr>Address[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -916,8 +916,8 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The first private (`PRIVATE`) IPv4 address assigned. 
-{{% /md %}}</dd>
+    <dd>The first private (`PRIVATE`) IPv4 address assigned. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -925,8 +925,8 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The first public (`PRIMARY`) IPv4 address assigned. 
-{{% /md %}}</dd>
+    <dd>The first public (`PRIMARY`) IPv4 address assigned. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -934,8 +934,8 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -943,7 +943,7 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstanceservercacert">Database<wbr>Instance<wbr>Server<wbr>Ca<wbr>Cert</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -951,15 +951,15 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service account email address assigned to the
+    <dd>The service account email address assigned to the
 instance.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -968,9 +968,9 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection name of the instance to be used in
+    <dd>The connection name of the instance to be used in
 connection strings. For example, when connecting with [Cloud SQL Proxy](https://cloud.google.com/sql/docs/mysql/connect-admin-proxy).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -978,8 +978,8 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The first IPv4 address of any type assigned.
-{{% /md %}}</dd>
+    <dd>The first IPv4 address of any type assigned.
+</dd>
 
     <dt class="property-"
             title="">
@@ -987,7 +987,7 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -995,7 +995,7 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstanceipaddress">List[Database<wbr>Instance<wbr>Ip<wbr>Address]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1003,8 +1003,8 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The first private (`PRIVATE`) IPv4 address assigned. 
-{{% /md %}}</dd>
+    <dd>The first private (`PRIVATE`) IPv4 address assigned. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -1012,8 +1012,8 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The first public (`PRIMARY`) IPv4 address assigned. 
-{{% /md %}}</dd>
+    <dd>The first public (`PRIMARY`) IPv4 address assigned. 
+</dd>
 
     <dt class="property-"
             title="">
@@ -1021,8 +1021,8 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1030,7 +1030,7 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstanceservercacert">Dict[Database<wbr>Instance<wbr>Server<wbr>Ca<wbr>Cert]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1038,12 +1038,12 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The service account email address assigned to the
+    <dd>The service account email address assigned to the
 instance.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1054,25 +1054,25 @@ instance.
 ## Look up an Existing DatabaseInstance Resource {#look-up}
 
 Get an existing DatabaseInstance resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/sql/#DatabaseInstanceState">DatabaseInstanceState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/sql/#DatabaseInstance">DatabaseInstance</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>connection_name=None<span class="p">, </span>database_version=None<span class="p">, </span>encryption_key_name=None<span class="p">, </span>first_ip_address=None<span class="p">, </span>ip_addresses=None<span class="p">, </span>master_instance_name=None<span class="p">, </span>name=None<span class="p">, </span>private_ip_address=None<span class="p">, </span>project=None<span class="p">, </span>public_ip_address=None<span class="p">, </span>region=None<span class="p">, </span>replica_configuration=None<span class="p">, </span>root_password=None<span class="p">, </span>self_link=None<span class="p">, </span>server_ca_cert=None<span class="p">, </span>service_account_email_address=None<span class="p">, </span>settings=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetDatabaseInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstanceState">DatabaseInstanceState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstance">DatabaseInstance</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Sql.DatabaseInstance.html">DatabaseInstance</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Sql.DatabaseInstanceState.html">DatabaseInstanceState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1097,9 +1097,9 @@ Get an existing DatabaseInstance resource's state with the given name, ID, and o
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1112,36 +1112,9 @@ Get an existing DatabaseInstance resource's state with the given name, ID, and o
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1166,13 +1139,40 @@ Get an existing DatabaseInstance resource's state with the given name, ID, and o
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1181,9 +1181,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection name of the instance to be used in
+    <dd>The connection name of the instance to be used in
 connection strings. For example, when connecting with [Cloud SQL Proxy](https://cloud.google.com/sql/docs/mysql/connect-admin-proxy).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1191,13 +1191,13 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The MySQL, PostgreSQL or
+    <dd>The MySQL, PostgreSQL or
 SQL Server (beta) version to use. Supported values include `MYSQL_5_6`,
 `MYSQL_5_7`, `POSTGRES_9_6`,`POSTGRES_11`, `SQLSERVER_2017_STANDARD`,
 `SQLSERVER_2017_ENTERPRISE`, `SQLSERVER_2017_EXPRESS`, `SQLSERVER_2017_WEB`.
 [Database Version Policies](https://cloud.google.com/sql/docs/sqlserver/db-versions)
 includes an up-to-date reference of supported versions.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1205,7 +1205,7 @@ includes an up-to-date reference of supported versions.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}
+    <dd>
 The full path to the encryption key used for the CMEK disk encryption.  Setting
 up disk encryption currently requires manual steps outside of this provider.
 The provided key must be in the same region as the SQL instance.  In order
@@ -1214,7 +1214,7 @@ granted permission on this key.  This step can currently only be done
 manually, please see [this step](https://cloud.google.com/sql/docs/mysql/configure-cmek#service-account).
 That service account needs the `Cloud KMS > Cloud KMS CryptoKey Encrypter/Decrypter` role on your
 key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-cmek#grantkey).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1222,8 +1222,8 @@ key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The first IPv4 address of any type assigned.
-{{% /md %}}</dd>
+    <dd>The first IPv4 address of any type assigned.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1231,7 +1231,7 @@ key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstanceipaddress">List&lt;Database<wbr>Instance<wbr>Ip<wbr>Address<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1239,10 +1239,10 @@ key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance that will act as
+    <dd>The name of the instance that will act as
 the master in the replication setup. Note, this requires the master to have
 `binary_log_enabled` set, as well as existing backups.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1250,8 +1250,8 @@ the master in the replication setup. Note, this requires the master to have
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for this whitelist entry.
-{{% /md %}}</dd>
+    <dd>A name for this whitelist entry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1259,8 +1259,8 @@ the master in the replication setup. Note, this requires the master to have
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The first private (`PRIVATE`) IPv4 address assigned. 
-{{% /md %}}</dd>
+    <dd>The first private (`PRIVATE`) IPv4 address assigned. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1268,9 +1268,9 @@ the master in the replication setup. Note, this requires the master to have
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,8 +1278,8 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The first public (`PRIMARY`) IPv4 address assigned. 
-{{% /md %}}</dd>
+    <dd>The first public (`PRIMARY`) IPv4 address assigned. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,13 +1287,13 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The region the instance will sit in. Note, Cloud SQL is not
+    <dd>The region the instance will sit in. Note, Cloud SQL is not
 available in all regions - choose from one of the options listed [here](https://cloud.google.com/sql/docs/mysql/instance-locations).
 A valid region must be provided to use this resource. If a region is not provided in the resource definition,
 the provider region will be used instead, but this will be an apply-time error for instances if the provider
 region is not supported with Cloud SQL. If you choose not to provide the `region` argument for this resource,
 make sure you understand this.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1301,9 +1301,9 @@ make sure you understand this.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancereplicaconfiguration">Database<wbr>Instance<wbr>Replica<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The configuration for replication. The
+    <dd>The configuration for replication. The
 configuration is detailed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1311,8 +1311,8 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Initial root password. Required for MS SQL Server, ignored by MySQL and PostgreSQL.
-{{% /md %}}</dd>
+    <dd>Initial root password. Required for MS SQL Server, ignored by MySQL and PostgreSQL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1320,8 +1320,8 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1329,7 +1329,7 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstanceservercacert">Database<wbr>Instance<wbr>Server<wbr>Ca<wbr>Cert<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1337,9 +1337,9 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The service account email address assigned to the
+    <dd>The service account email address assigned to the
 instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1347,15 +1347,15 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettings">Database<wbr>Instance<wbr>Settings<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The settings to use for the database. The
+    <dd>The settings to use for the database. The
 configuration is detailed below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1364,9 +1364,9 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection name of the instance to be used in
+    <dd>The connection name of the instance to be used in
 connection strings. For example, when connecting with [Cloud SQL Proxy](https://cloud.google.com/sql/docs/mysql/connect-admin-proxy).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1374,13 +1374,13 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The MySQL, PostgreSQL or
+    <dd>The MySQL, PostgreSQL or
 SQL Server (beta) version to use. Supported values include `MYSQL_5_6`,
 `MYSQL_5_7`, `POSTGRES_9_6`,`POSTGRES_11`, `SQLSERVER_2017_STANDARD`,
 `SQLSERVER_2017_ENTERPRISE`, `SQLSERVER_2017_EXPRESS`, `SQLSERVER_2017_WEB`.
 [Database Version Policies](https://cloud.google.com/sql/docs/sqlserver/db-versions)
 includes an up-to-date reference of supported versions.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1388,7 +1388,7 @@ includes an up-to-date reference of supported versions.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}
+    <dd>
 The full path to the encryption key used for the CMEK disk encryption.  Setting
 up disk encryption currently requires manual steps outside of this provider.
 The provided key must be in the same region as the SQL instance.  In order
@@ -1397,7 +1397,7 @@ granted permission on this key.  This step can currently only be done
 manually, please see [this step](https://cloud.google.com/sql/docs/mysql/configure-cmek#service-account).
 That service account needs the `Cloud KMS > Cloud KMS CryptoKey Encrypter/Decrypter` role on your
 key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-cmek#grantkey).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1405,8 +1405,8 @@ key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The first IPv4 address of any type assigned.
-{{% /md %}}</dd>
+    <dd>The first IPv4 address of any type assigned.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1414,7 +1414,7 @@ key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstanceipaddress">[]Database<wbr>Instance<wbr>Ip<wbr>Address</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1422,10 +1422,10 @@ key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance that will act as
+    <dd>The name of the instance that will act as
 the master in the replication setup. Note, this requires the master to have
 `binary_log_enabled` set, as well as existing backups.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1433,8 +1433,8 @@ the master in the replication setup. Note, this requires the master to have
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for this whitelist entry.
-{{% /md %}}</dd>
+    <dd>A name for this whitelist entry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1442,8 +1442,8 @@ the master in the replication setup. Note, this requires the master to have
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The first private (`PRIVATE`) IPv4 address assigned. 
-{{% /md %}}</dd>
+    <dd>The first private (`PRIVATE`) IPv4 address assigned. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1451,9 +1451,9 @@ the master in the replication setup. Note, this requires the master to have
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1461,8 +1461,8 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The first public (`PRIMARY`) IPv4 address assigned. 
-{{% /md %}}</dd>
+    <dd>The first public (`PRIMARY`) IPv4 address assigned. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1470,13 +1470,13 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region the instance will sit in. Note, Cloud SQL is not
+    <dd>The region the instance will sit in. Note, Cloud SQL is not
 available in all regions - choose from one of the options listed [here](https://cloud.google.com/sql/docs/mysql/instance-locations).
 A valid region must be provided to use this resource. If a region is not provided in the resource definition,
 the provider region will be used instead, but this will be an apply-time error for instances if the provider
 region is not supported with Cloud SQL. If you choose not to provide the `region` argument for this resource,
 make sure you understand this.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1484,9 +1484,9 @@ make sure you understand this.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancereplicaconfiguration">Database<wbr>Instance<wbr>Replica<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}The configuration for replication. The
+    <dd>The configuration for replication. The
 configuration is detailed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1494,8 +1494,8 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Initial root password. Required for MS SQL Server, ignored by MySQL and PostgreSQL.
-{{% /md %}}</dd>
+    <dd>Initial root password. Required for MS SQL Server, ignored by MySQL and PostgreSQL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1503,8 +1503,8 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1512,7 +1512,7 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstanceservercacert">Database<wbr>Instance<wbr>Server<wbr>Ca<wbr>Cert</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1520,9 +1520,9 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service account email address assigned to the
+    <dd>The service account email address assigned to the
 instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1530,15 +1530,15 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettings">Database<wbr>Instance<wbr>Settings</a></span>
     </dt>
-    <dd>{{% md %}}The settings to use for the database. The
+    <dd>The settings to use for the database. The
 configuration is detailed below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1547,9 +1547,9 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection name of the instance to be used in
+    <dd>The connection name of the instance to be used in
 connection strings. For example, when connecting with [Cloud SQL Proxy](https://cloud.google.com/sql/docs/mysql/connect-admin-proxy).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1557,13 +1557,13 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The MySQL, PostgreSQL or
+    <dd>The MySQL, PostgreSQL or
 SQL Server (beta) version to use. Supported values include `MYSQL_5_6`,
 `MYSQL_5_7`, `POSTGRES_9_6`,`POSTGRES_11`, `SQLSERVER_2017_STANDARD`,
 `SQLSERVER_2017_ENTERPRISE`, `SQLSERVER_2017_EXPRESS`, `SQLSERVER_2017_WEB`.
 [Database Version Policies](https://cloud.google.com/sql/docs/sqlserver/db-versions)
 includes an up-to-date reference of supported versions.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1571,7 +1571,7 @@ includes an up-to-date reference of supported versions.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}
+    <dd>
 The full path to the encryption key used for the CMEK disk encryption.  Setting
 up disk encryption currently requires manual steps outside of this provider.
 The provided key must be in the same region as the SQL instance.  In order
@@ -1580,7 +1580,7 @@ granted permission on this key.  This step can currently only be done
 manually, please see [this step](https://cloud.google.com/sql/docs/mysql/configure-cmek#service-account).
 That service account needs the `Cloud KMS > Cloud KMS CryptoKey Encrypter/Decrypter` role on your
 key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-cmek#grantkey).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1588,8 +1588,8 @@ key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The first IPv4 address of any type assigned.
-{{% /md %}}</dd>
+    <dd>The first IPv4 address of any type assigned.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1597,7 +1597,7 @@ key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstanceipaddress">Database<wbr>Instance<wbr>Ip<wbr>Address[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1605,10 +1605,10 @@ key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance that will act as
+    <dd>The name of the instance that will act as
 the master in the replication setup. Note, this requires the master to have
 `binary_log_enabled` set, as well as existing backups.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1616,8 +1616,8 @@ the master in the replication setup. Note, this requires the master to have
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for this whitelist entry.
-{{% /md %}}</dd>
+    <dd>A name for this whitelist entry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1625,8 +1625,8 @@ the master in the replication setup. Note, this requires the master to have
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The first private (`PRIVATE`) IPv4 address assigned. 
-{{% /md %}}</dd>
+    <dd>The first private (`PRIVATE`) IPv4 address assigned. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1634,9 +1634,9 @@ the master in the replication setup. Note, this requires the master to have
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1644,8 +1644,8 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The first public (`PRIMARY`) IPv4 address assigned. 
-{{% /md %}}</dd>
+    <dd>The first public (`PRIMARY`) IPv4 address assigned. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1653,13 +1653,13 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The region the instance will sit in. Note, Cloud SQL is not
+    <dd>The region the instance will sit in. Note, Cloud SQL is not
 available in all regions - choose from one of the options listed [here](https://cloud.google.com/sql/docs/mysql/instance-locations).
 A valid region must be provided to use this resource. If a region is not provided in the resource definition,
 the provider region will be used instead, but this will be an apply-time error for instances if the provider
 region is not supported with Cloud SQL. If you choose not to provide the `region` argument for this resource,
 make sure you understand this.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1667,9 +1667,9 @@ make sure you understand this.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancereplicaconfiguration">Database<wbr>Instance<wbr>Replica<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}The configuration for replication. The
+    <dd>The configuration for replication. The
 configuration is detailed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1677,8 +1677,8 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Initial root password. Required for MS SQL Server, ignored by MySQL and PostgreSQL.
-{{% /md %}}</dd>
+    <dd>Initial root password. Required for MS SQL Server, ignored by MySQL and PostgreSQL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1686,8 +1686,8 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1695,7 +1695,7 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstanceservercacert">Database<wbr>Instance<wbr>Server<wbr>Ca<wbr>Cert</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1703,9 +1703,9 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service account email address assigned to the
+    <dd>The service account email address assigned to the
 instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1713,15 +1713,15 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettings">Database<wbr>Instance<wbr>Settings</a></span>
     </dt>
-    <dd>{{% md %}}The settings to use for the database. The
+    <dd>The settings to use for the database. The
 configuration is detailed below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1730,9 +1730,9 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection name of the instance to be used in
+    <dd>The connection name of the instance to be used in
 connection strings. For example, when connecting with [Cloud SQL Proxy](https://cloud.google.com/sql/docs/mysql/connect-admin-proxy).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1740,13 +1740,13 @@ connection strings. For example, when connecting with [Cloud SQL Proxy](https://
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The MySQL, PostgreSQL or
+    <dd>The MySQL, PostgreSQL or
 SQL Server (beta) version to use. Supported values include `MYSQL_5_6`,
 `MYSQL_5_7`, `POSTGRES_9_6`,`POSTGRES_11`, `SQLSERVER_2017_STANDARD`,
 `SQLSERVER_2017_ENTERPRISE`, `SQLSERVER_2017_EXPRESS`, `SQLSERVER_2017_WEB`.
 [Database Version Policies](https://cloud.google.com/sql/docs/sqlserver/db-versions)
 includes an up-to-date reference of supported versions.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1754,7 +1754,7 @@ includes an up-to-date reference of supported versions.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}
+    <dd>
 The full path to the encryption key used for the CMEK disk encryption.  Setting
 up disk encryption currently requires manual steps outside of this provider.
 The provided key must be in the same region as the SQL instance.  In order
@@ -1763,7 +1763,7 @@ granted permission on this key.  This step can currently only be done
 manually, please see [this step](https://cloud.google.com/sql/docs/mysql/configure-cmek#service-account).
 That service account needs the `Cloud KMS > Cloud KMS CryptoKey Encrypter/Decrypter` role on your
 key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-cmek#grantkey).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1771,8 +1771,8 @@ key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The first IPv4 address of any type assigned.
-{{% /md %}}</dd>
+    <dd>The first IPv4 address of any type assigned.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1780,7 +1780,7 @@ key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstanceipaddress">List[Database<wbr>Instance<wbr>Ip<wbr>Address]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1788,10 +1788,10 @@ key - please see [this step](https://cloud.google.com/sql/docs/mysql/configure-c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance that will act as
+    <dd>The name of the instance that will act as
 the master in the replication setup. Note, this requires the master to have
 `binary_log_enabled` set, as well as existing backups.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1799,8 +1799,8 @@ the master in the replication setup. Note, this requires the master to have
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A name for this whitelist entry.
-{{% /md %}}</dd>
+    <dd>A name for this whitelist entry.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1808,8 +1808,8 @@ the master in the replication setup. Note, this requires the master to have
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The first private (`PRIVATE`) IPv4 address assigned. 
-{{% /md %}}</dd>
+    <dd>The first private (`PRIVATE`) IPv4 address assigned. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1817,9 +1817,9 @@ the master in the replication setup. Note, this requires the master to have
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs. If it
+    <dd>The ID of the project in which the resource belongs. If it
 is not provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1827,8 +1827,8 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The first public (`PRIMARY`) IPv4 address assigned. 
-{{% /md %}}</dd>
+    <dd>The first public (`PRIMARY`) IPv4 address assigned. 
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1836,13 +1836,13 @@ is not provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The region the instance will sit in. Note, Cloud SQL is not
+    <dd>The region the instance will sit in. Note, Cloud SQL is not
 available in all regions - choose from one of the options listed [here](https://cloud.google.com/sql/docs/mysql/instance-locations).
 A valid region must be provided to use this resource. If a region is not provided in the resource definition,
 the provider region will be used instead, but this will be an apply-time error for instances if the provider
 region is not supported with Cloud SQL. If you choose not to provide the `region` argument for this resource,
 make sure you understand this.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1850,9 +1850,9 @@ make sure you understand this.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancereplicaconfiguration">Dict[Database<wbr>Instance<wbr>Replica<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}The configuration for replication. The
+    <dd>The configuration for replication. The
 configuration is detailed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1860,8 +1860,8 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Initial root password. Required for MS SQL Server, ignored by MySQL and PostgreSQL.
-{{% /md %}}</dd>
+    <dd>Initial root password. Required for MS SQL Server, ignored by MySQL and PostgreSQL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1869,8 +1869,8 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1878,7 +1878,7 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstanceservercacert">Dict[Database<wbr>Instance<wbr>Server<wbr>Ca<wbr>Cert]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1886,9 +1886,9 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The service account email address assigned to the
+    <dd>The service account email address assigned to the
 instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1896,12 +1896,12 @@ instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettings">Dict[Database<wbr>Instance<wbr>Settings]</a></span>
     </dt>
-    <dd>{{% md %}}The settings to use for the database. The
+    <dd>The settings to use for the database. The
 configuration is detailed below.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1916,18 +1916,18 @@ configuration is detailed below.
 
 
 <h4 id="databaseinstanceipaddress">Database<wbr>Instance<wbr>Ip<wbr>Address</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#DatabaseInstanceIpAddress">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstanceIpAddressOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1936,7 +1936,7 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1944,7 +1944,7 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1952,13 +1952,13 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1967,7 +1967,7 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1975,7 +1975,7 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1983,13 +1983,13 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1998,7 +1998,7 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2006,7 +2006,7 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2014,13 +2014,13 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2029,7 +2029,7 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2037,7 +2037,7 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2045,28 +2045,28 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="databaseinstancereplicaconfiguration">Database<wbr>Instance<wbr>Replica<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#DatabaseInstanceReplicaConfiguration">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#DatabaseInstanceReplicaConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstanceReplicaConfigurationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstanceReplicaConfigurationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2075,9 +2075,9 @@ configuration is detailed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}PEM representation of the trusted CA's x509
+    <dd>PEM representation of the trusted CA's x509
 certificate.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2085,9 +2085,9 @@ certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}PEM representation of the slave's x509
+    <dd>PEM representation of the slave's x509
 certificate.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2095,9 +2095,9 @@ certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}PEM representation of the slave's private key. The
+    <dd>PEM representation of the slave's private key. The
 corresponding public key in encoded in the `client_certificate`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2105,9 +2105,9 @@ corresponding public key in encoded in the `client_certificate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds
+    <dd>The number of seconds
 between connect retries.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2115,9 +2115,9 @@ between connect retries.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to a SQL file in GCS from which slave
+    <dd>Path to a SQL file in GCS from which slave
 instances are created. Format is `gs://bucket/filename`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2125,11 +2125,11 @@ instances are created. Format is `gs://bucket/filename`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the replica is the failover target.
+    <dd>Specifies if the replica is the failover target.
 If the field is set to true the replica will be designated as a failover replica.
 If the master instance fails, the replica instance will be promoted as
 the new master instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2137,9 +2137,9 @@ the new master instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Time in ms between replication
+    <dd>Time in ms between replication
 heartbeats.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2147,8 +2147,8 @@ heartbeats.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Password for the replication connection.
-{{% /md %}}</dd>
+    <dd>Password for the replication connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2156,7 +2156,7 @@ heartbeats.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2164,8 +2164,8 @@ heartbeats.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Username for replication connection.
-{{% /md %}}</dd>
+    <dd>Username for replication connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2173,15 +2173,15 @@ heartbeats.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}True if the master's common name
+    <dd>True if the master's common name
 value is checked during the SSL handshake.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2190,9 +2190,9 @@ value is checked during the SSL handshake.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}PEM representation of the trusted CA's x509
+    <dd>PEM representation of the trusted CA's x509
 certificate.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2200,9 +2200,9 @@ certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}PEM representation of the slave's x509
+    <dd>PEM representation of the slave's x509
 certificate.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2210,9 +2210,9 @@ certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}PEM representation of the slave's private key. The
+    <dd>PEM representation of the slave's private key. The
 corresponding public key in encoded in the `client_certificate`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2220,9 +2220,9 @@ corresponding public key in encoded in the `client_certificate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds
+    <dd>The number of seconds
 between connect retries.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2230,9 +2230,9 @@ between connect retries.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to a SQL file in GCS from which slave
+    <dd>Path to a SQL file in GCS from which slave
 instances are created. Format is `gs://bucket/filename`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2240,11 +2240,11 @@ instances are created. Format is `gs://bucket/filename`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the replica is the failover target.
+    <dd>Specifies if the replica is the failover target.
 If the field is set to true the replica will be designated as a failover replica.
 If the master instance fails, the replica instance will be promoted as
 the new master instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2252,9 +2252,9 @@ the new master instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Time in ms between replication
+    <dd>Time in ms between replication
 heartbeats.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2262,8 +2262,8 @@ heartbeats.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password for the replication connection.
-{{% /md %}}</dd>
+    <dd>Password for the replication connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2271,7 +2271,7 @@ heartbeats.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2279,8 +2279,8 @@ heartbeats.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Username for replication connection.
-{{% /md %}}</dd>
+    <dd>Username for replication connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2288,15 +2288,15 @@ heartbeats.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}True if the master's common name
+    <dd>True if the master's common name
 value is checked during the SSL handshake.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2305,9 +2305,9 @@ value is checked during the SSL handshake.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}PEM representation of the trusted CA's x509
+    <dd>PEM representation of the trusted CA's x509
 certificate.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2315,9 +2315,9 @@ certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}PEM representation of the slave's x509
+    <dd>PEM representation of the slave's x509
 certificate.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2325,9 +2325,9 @@ certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}PEM representation of the slave's private key. The
+    <dd>PEM representation of the slave's private key. The
 corresponding public key in encoded in the `client_certificate`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2335,9 +2335,9 @@ corresponding public key in encoded in the `client_certificate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds
+    <dd>The number of seconds
 between connect retries.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2345,9 +2345,9 @@ between connect retries.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to a SQL file in GCS from which slave
+    <dd>Path to a SQL file in GCS from which slave
 instances are created. Format is `gs://bucket/filename`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2355,11 +2355,11 @@ instances are created. Format is `gs://bucket/filename`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the replica is the failover target.
+    <dd>Specifies if the replica is the failover target.
 If the field is set to true the replica will be designated as a failover replica.
 If the master instance fails, the replica instance will be promoted as
 the new master instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2367,9 +2367,9 @@ the new master instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Time in ms between replication
+    <dd>Time in ms between replication
 heartbeats.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2377,8 +2377,8 @@ heartbeats.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Password for the replication connection.
-{{% /md %}}</dd>
+    <dd>Password for the replication connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2386,7 +2386,7 @@ heartbeats.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2394,8 +2394,8 @@ heartbeats.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Username for replication connection.
-{{% /md %}}</dd>
+    <dd>Username for replication connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2403,15 +2403,15 @@ heartbeats.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}True if the master's common name
+    <dd>True if the master's common name
 value is checked during the SSL handshake.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2420,9 +2420,9 @@ value is checked during the SSL handshake.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}PEM representation of the trusted CA's x509
+    <dd>PEM representation of the trusted CA's x509
 certificate.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2430,9 +2430,9 @@ certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}PEM representation of the slave's x509
+    <dd>PEM representation of the slave's x509
 certificate.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2440,9 +2440,9 @@ certificate.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}PEM representation of the slave's private key. The
+    <dd>PEM representation of the slave's private key. The
 corresponding public key in encoded in the `client_certificate`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2450,9 +2450,9 @@ corresponding public key in encoded in the `client_certificate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds
+    <dd>The number of seconds
 between connect retries.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2460,9 +2460,9 @@ between connect retries.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Path to a SQL file in GCS from which slave
+    <dd>Path to a SQL file in GCS from which slave
 instances are created. Format is `gs://bucket/filename`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2470,11 +2470,11 @@ instances are created. Format is `gs://bucket/filename`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the replica is the failover target.
+    <dd>Specifies if the replica is the failover target.
 If the field is set to true the replica will be designated as a failover replica.
 If the master instance fails, the replica instance will be promoted as
 the new master instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2482,9 +2482,9 @@ the new master instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Time in ms between replication
+    <dd>Time in ms between replication
 heartbeats.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2492,8 +2492,8 @@ heartbeats.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Password for the replication connection.
-{{% /md %}}</dd>
+    <dd>Password for the replication connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2501,7 +2501,7 @@ heartbeats.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2509,8 +2509,8 @@ heartbeats.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Username for replication connection.
-{{% /md %}}</dd>
+    <dd>Username for replication connection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2518,30 +2518,30 @@ heartbeats.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}True if the master's common name
+    <dd>True if the master's common name
 value is checked during the SSL handshake.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="databaseinstanceservercacert">Database<wbr>Instance<wbr>Server<wbr>Ca<wbr>Cert</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#DatabaseInstanceServerCaCert">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstanceServerCaCertOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2550,7 +2550,7 @@ value is checked during the SSL handshake.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2558,7 +2558,7 @@ value is checked during the SSL handshake.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2566,7 +2566,7 @@ value is checked during the SSL handshake.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2574,9 +2574,9 @@ value is checked during the SSL handshake.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The [RFC 3339](https://tools.ietf.org/html/rfc3339)
+    <dd>The [RFC 3339](https://tools.ietf.org/html/rfc3339)
 formatted date time string indicating when this whitelist expires.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2584,13 +2584,13 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2599,7 +2599,7 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2607,7 +2607,7 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2615,7 +2615,7 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2623,9 +2623,9 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [RFC 3339](https://tools.ietf.org/html/rfc3339)
+    <dd>The [RFC 3339](https://tools.ietf.org/html/rfc3339)
 formatted date time string indicating when this whitelist expires.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2633,13 +2633,13 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2648,7 +2648,7 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2656,7 +2656,7 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2664,7 +2664,7 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2672,9 +2672,9 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [RFC 3339](https://tools.ietf.org/html/rfc3339)
+    <dd>The [RFC 3339](https://tools.ietf.org/html/rfc3339)
 formatted date time string indicating when this whitelist expires.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2682,13 +2682,13 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2697,7 +2697,7 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2705,7 +2705,7 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2713,7 +2713,7 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2721,9 +2721,9 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The [RFC 3339](https://tools.ietf.org/html/rfc3339)
+    <dd>The [RFC 3339](https://tools.ietf.org/html/rfc3339)
 formatted date time string indicating when this whitelist expires.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2731,28 +2731,28 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="databaseinstancesettings">Database<wbr>Instance<wbr>Settings</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#DatabaseInstanceSettings">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#DatabaseInstanceSettings">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstanceSettingsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstanceSettingsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2761,10 +2761,10 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to use. See [tiers](https://cloud.google.com/sql/docs/admin-api/v1beta4/tiers)
+    <dd>The machine type to use. See [tiers](https://cloud.google.com/sql/docs/admin-api/v1beta4/tiers)
 for more details and supported versions. Postgres supports only shared-core machine types such as `db-f1-micro`,
 and custom machine types such as `db-custom-2-13312`. See the [Custom Machine Type Documentation](https://cloud.google.com/compute/docs/instances/creating-instance-with-custom-machine-type#create) to learn about specifying custom machine types.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2772,9 +2772,9 @@ and custom machine types such as `db-custom-2-13312`. See the [Custom Machine Ty
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This specifies when the instance should be
+    <dd>This specifies when the instance should be
 active. Can be either `ALWAYS`, `NEVER` or `ON_DEMAND`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2782,11 +2782,11 @@ active. Can be either `ALWAYS`, `NEVER` or `ON_DEMAND`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}This property is only applicable to First Generation instances.
+    <dd>This property is only applicable to First Generation instances.
 First Generation instances are now deprecated, see [here](https://cloud.google.com/sql/docs/mysql/upgrade-2nd-gen)
 for information on how to upgrade to Second Generation instances.
 A list of Google App Engine (GAE) project names that are allowed to access this instance.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}This property is only applicable to First Generation instances, and First Generation instances are now deprecated.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: This property is only applicable to First Generation instances, and First Generation instances are now deprecated.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2794,9 +2794,9 @@ A list of Google App Engine (GAE) project names that are allowed to access this 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This specifies whether a PostgreSQL instance
+    <dd>This specifies whether a PostgreSQL instance
 should be set up for high availability (`REGIONAL`) or single zone (`ZONAL`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2804,7 +2804,7 @@ should be set up for high availability (`REGIONAL`) or single zone (`ZONAL`).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingsbackupconfiguration">Database<wbr>Instance<wbr>Settings<wbr>Backup<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2812,12 +2812,12 @@ should be set up for high availability (`REGIONAL`) or single zone (`ZONAL`).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}This property is only applicable to First Generation instances.
+    <dd>This property is only applicable to First Generation instances.
 First Generation instances are now deprecated, see [here](https://cloud.google.com/sql/docs/mysql/upgrade-2nd-gen)
 for information on how to upgrade to Second Generation instances.
 Specific to read instances, indicates
 when crash-safe replication flags are enabled.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}This property is only applicable to First Generation instances, and First Generation instances are now deprecated.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: This property is only applicable to First Generation instances, and First Generation instances are now deprecated.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2825,7 +2825,7 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingsdatabaseflag">List&lt;Database<wbr>Instance<wbr>Settings<wbr>Database<wbr>Flag<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2833,8 +2833,8 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Configuration to increase storage size automatically.  Note that future `pulumi apply` calls will attempt to resize the disk to the value specified in `disk_size` - if this is set, do not set `disk_size`.
-{{% /md %}}</dd>
+    <dd>Configuration to increase storage size automatically.  Note that future `pulumi apply` calls will attempt to resize the disk to the value specified in `disk_size` - if this is set, do not set `disk_size`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2842,8 +2842,8 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of data disk, in GB. Size of a running instance cannot be reduced but can be increased.
-{{% /md %}}</dd>
+    <dd>The size of data disk, in GB. Size of a running instance cannot be reduced but can be increased.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2851,8 +2851,8 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of data disk: PD_SSD or PD_HDD.
-{{% /md %}}</dd>
+    <dd>The type of data disk: PD_SSD or PD_HDD.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2860,7 +2860,7 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingsipconfiguration">Database<wbr>Instance<wbr>Settings<wbr>Ip<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2868,7 +2868,7 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingslocationpreference">Database<wbr>Instance<wbr>Settings<wbr>Location<wbr>Preference<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2876,7 +2876,7 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingsmaintenancewindow">Database<wbr>Instance<wbr>Settings<wbr>Maintenance<wbr>Window<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2884,8 +2884,8 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Pricing plan for this instance, can only be `PER_USE`.
-{{% /md %}}</dd>
+    <dd>Pricing plan for this instance, can only be `PER_USE`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2893,11 +2893,11 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This property is only applicable to First Generation instances.
+    <dd>This property is only applicable to First Generation instances.
 First Generation instances are now deprecated, see [here](https://cloud.google.com/sql/docs/mysql/upgrade-2nd-gen)
 for information on how to upgrade to Second Generation instances.
 Replication type for this instance, can be one of `ASYNCHRONOUS` or `SYNCHRONOUS`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}This property is only applicable to First Generation instances, and First Generation instances are now deprecated.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: This property is only applicable to First Generation instances, and First Generation instances are now deprecated.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2905,8 +2905,8 @@ Replication type for this instance, can be one of `ASYNCHRONOUS` or `SYNCHRONOUS
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A set of key/value user label pairs to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A set of key/value user label pairs to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2914,13 +2914,13 @@ Replication type for this instance, can be one of `ASYNCHRONOUS` or `SYNCHRONOUS
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2929,10 +2929,10 @@ Replication type for this instance, can be one of `ASYNCHRONOUS` or `SYNCHRONOUS
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to use. See [tiers](https://cloud.google.com/sql/docs/admin-api/v1beta4/tiers)
+    <dd>The machine type to use. See [tiers](https://cloud.google.com/sql/docs/admin-api/v1beta4/tiers)
 for more details and supported versions. Postgres supports only shared-core machine types such as `db-f1-micro`,
 and custom machine types such as `db-custom-2-13312`. See the [Custom Machine Type Documentation](https://cloud.google.com/compute/docs/instances/creating-instance-with-custom-machine-type#create) to learn about specifying custom machine types.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2940,9 +2940,9 @@ and custom machine types such as `db-custom-2-13312`. See the [Custom Machine Ty
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This specifies when the instance should be
+    <dd>This specifies when the instance should be
 active. Can be either `ALWAYS`, `NEVER` or `ON_DEMAND`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2950,11 +2950,11 @@ active. Can be either `ALWAYS`, `NEVER` or `ON_DEMAND`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}This property is only applicable to First Generation instances.
+    <dd>This property is only applicable to First Generation instances.
 First Generation instances are now deprecated, see [here](https://cloud.google.com/sql/docs/mysql/upgrade-2nd-gen)
 for information on how to upgrade to Second Generation instances.
 A list of Google App Engine (GAE) project names that are allowed to access this instance.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}This property is only applicable to First Generation instances, and First Generation instances are now deprecated.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: This property is only applicable to First Generation instances, and First Generation instances are now deprecated.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2962,9 +2962,9 @@ A list of Google App Engine (GAE) project names that are allowed to access this 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This specifies whether a PostgreSQL instance
+    <dd>This specifies whether a PostgreSQL instance
 should be set up for high availability (`REGIONAL`) or single zone (`ZONAL`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2972,7 +2972,7 @@ should be set up for high availability (`REGIONAL`) or single zone (`ZONAL`).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingsbackupconfiguration">Database<wbr>Instance<wbr>Settings<wbr>Backup<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -2980,12 +2980,12 @@ should be set up for high availability (`REGIONAL`) or single zone (`ZONAL`).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}This property is only applicable to First Generation instances.
+    <dd>This property is only applicable to First Generation instances.
 First Generation instances are now deprecated, see [here](https://cloud.google.com/sql/docs/mysql/upgrade-2nd-gen)
 for information on how to upgrade to Second Generation instances.
 Specific to read instances, indicates
 when crash-safe replication flags are enabled.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}This property is only applicable to First Generation instances, and First Generation instances are now deprecated.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: This property is only applicable to First Generation instances, and First Generation instances are now deprecated.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2993,7 +2993,7 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingsdatabaseflag">[]Database<wbr>Instance<wbr>Settings<wbr>Database<wbr>Flag</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3001,8 +3001,8 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Configuration to increase storage size automatically.  Note that future `pulumi apply` calls will attempt to resize the disk to the value specified in `disk_size` - if this is set, do not set `disk_size`.
-{{% /md %}}</dd>
+    <dd>Configuration to increase storage size automatically.  Note that future `pulumi apply` calls will attempt to resize the disk to the value specified in `disk_size` - if this is set, do not set `disk_size`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3010,8 +3010,8 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of data disk, in GB. Size of a running instance cannot be reduced but can be increased.
-{{% /md %}}</dd>
+    <dd>The size of data disk, in GB. Size of a running instance cannot be reduced but can be increased.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3019,8 +3019,8 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of data disk: PD_SSD or PD_HDD.
-{{% /md %}}</dd>
+    <dd>The type of data disk: PD_SSD or PD_HDD.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3028,7 +3028,7 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingsipconfiguration">Database<wbr>Instance<wbr>Settings<wbr>Ip<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3036,7 +3036,7 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingslocationpreference">Database<wbr>Instance<wbr>Settings<wbr>Location<wbr>Preference</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3044,7 +3044,7 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingsmaintenancewindow">Database<wbr>Instance<wbr>Settings<wbr>Maintenance<wbr>Window</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3052,8 +3052,8 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Pricing plan for this instance, can only be `PER_USE`.
-{{% /md %}}</dd>
+    <dd>Pricing plan for this instance, can only be `PER_USE`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3061,11 +3061,11 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This property is only applicable to First Generation instances.
+    <dd>This property is only applicable to First Generation instances.
 First Generation instances are now deprecated, see [here](https://cloud.google.com/sql/docs/mysql/upgrade-2nd-gen)
 for information on how to upgrade to Second Generation instances.
 Replication type for this instance, can be one of `ASYNCHRONOUS` or `SYNCHRONOUS`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}This property is only applicable to First Generation instances, and First Generation instances are now deprecated.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: This property is only applicable to First Generation instances, and First Generation instances are now deprecated.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3073,8 +3073,8 @@ Replication type for this instance, can be one of `ASYNCHRONOUS` or `SYNCHRONOUS
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A set of key/value user label pairs to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A set of key/value user label pairs to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3082,13 +3082,13 @@ Replication type for this instance, can be one of `ASYNCHRONOUS` or `SYNCHRONOUS
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3097,10 +3097,10 @@ Replication type for this instance, can be one of `ASYNCHRONOUS` or `SYNCHRONOUS
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to use. See [tiers](https://cloud.google.com/sql/docs/admin-api/v1beta4/tiers)
+    <dd>The machine type to use. See [tiers](https://cloud.google.com/sql/docs/admin-api/v1beta4/tiers)
 for more details and supported versions. Postgres supports only shared-core machine types such as `db-f1-micro`,
 and custom machine types such as `db-custom-2-13312`. See the [Custom Machine Type Documentation](https://cloud.google.com/compute/docs/instances/creating-instance-with-custom-machine-type#create) to learn about specifying custom machine types.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3108,9 +3108,9 @@ and custom machine types such as `db-custom-2-13312`. See the [Custom Machine Ty
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This specifies when the instance should be
+    <dd>This specifies when the instance should be
 active. Can be either `ALWAYS`, `NEVER` or `ON_DEMAND`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3118,11 +3118,11 @@ active. Can be either `ALWAYS`, `NEVER` or `ON_DEMAND`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}This property is only applicable to First Generation instances.
+    <dd>This property is only applicable to First Generation instances.
 First Generation instances are now deprecated, see [here](https://cloud.google.com/sql/docs/mysql/upgrade-2nd-gen)
 for information on how to upgrade to Second Generation instances.
 A list of Google App Engine (GAE) project names that are allowed to access this instance.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}This property is only applicable to First Generation instances, and First Generation instances are now deprecated.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: This property is only applicable to First Generation instances, and First Generation instances are now deprecated.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3130,9 +3130,9 @@ A list of Google App Engine (GAE) project names that are allowed to access this 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This specifies whether a PostgreSQL instance
+    <dd>This specifies whether a PostgreSQL instance
 should be set up for high availability (`REGIONAL`) or single zone (`ZONAL`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3140,7 +3140,7 @@ should be set up for high availability (`REGIONAL`) or single zone (`ZONAL`).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingsbackupconfiguration">Database<wbr>Instance<wbr>Settings<wbr>Backup<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3148,12 +3148,12 @@ should be set up for high availability (`REGIONAL`) or single zone (`ZONAL`).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}This property is only applicable to First Generation instances.
+    <dd>This property is only applicable to First Generation instances.
 First Generation instances are now deprecated, see [here](https://cloud.google.com/sql/docs/mysql/upgrade-2nd-gen)
 for information on how to upgrade to Second Generation instances.
 Specific to read instances, indicates
 when crash-safe replication flags are enabled.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}This property is only applicable to First Generation instances, and First Generation instances are now deprecated.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: This property is only applicable to First Generation instances, and First Generation instances are now deprecated.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3161,7 +3161,7 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingsdatabaseflag">Database<wbr>Instance<wbr>Settings<wbr>Database<wbr>Flag[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3169,8 +3169,8 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Configuration to increase storage size automatically.  Note that future `pulumi apply` calls will attempt to resize the disk to the value specified in `disk_size` - if this is set, do not set `disk_size`.
-{{% /md %}}</dd>
+    <dd>Configuration to increase storage size automatically.  Note that future `pulumi apply` calls will attempt to resize the disk to the value specified in `disk_size` - if this is set, do not set `disk_size`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3178,8 +3178,8 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of data disk, in GB. Size of a running instance cannot be reduced but can be increased.
-{{% /md %}}</dd>
+    <dd>The size of data disk, in GB. Size of a running instance cannot be reduced but can be increased.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3187,8 +3187,8 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of data disk: PD_SSD or PD_HDD.
-{{% /md %}}</dd>
+    <dd>The type of data disk: PD_SSD or PD_HDD.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3196,7 +3196,7 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingsipconfiguration">Database<wbr>Instance<wbr>Settings<wbr>Ip<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3204,7 +3204,7 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingslocationpreference">Database<wbr>Instance<wbr>Settings<wbr>Location<wbr>Preference</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3212,7 +3212,7 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingsmaintenancewindow">Database<wbr>Instance<wbr>Settings<wbr>Maintenance<wbr>Window</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3220,8 +3220,8 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Pricing plan for this instance, can only be `PER_USE`.
-{{% /md %}}</dd>
+    <dd>Pricing plan for this instance, can only be `PER_USE`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3229,11 +3229,11 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This property is only applicable to First Generation instances.
+    <dd>This property is only applicable to First Generation instances.
 First Generation instances are now deprecated, see [here](https://cloud.google.com/sql/docs/mysql/upgrade-2nd-gen)
 for information on how to upgrade to Second Generation instances.
 Replication type for this instance, can be one of `ASYNCHRONOUS` or `SYNCHRONOUS`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}This property is only applicable to First Generation instances, and First Generation instances are now deprecated.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: This property is only applicable to First Generation instances, and First Generation instances are now deprecated.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3241,8 +3241,8 @@ Replication type for this instance, can be one of `ASYNCHRONOUS` or `SYNCHRONOUS
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A set of key/value user label pairs to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A set of key/value user label pairs to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3250,13 +3250,13 @@ Replication type for this instance, can be one of `ASYNCHRONOUS` or `SYNCHRONOUS
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3265,10 +3265,10 @@ Replication type for this instance, can be one of `ASYNCHRONOUS` or `SYNCHRONOUS
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to use. See [tiers](https://cloud.google.com/sql/docs/admin-api/v1beta4/tiers)
+    <dd>The machine type to use. See [tiers](https://cloud.google.com/sql/docs/admin-api/v1beta4/tiers)
 for more details and supported versions. Postgres supports only shared-core machine types such as `db-f1-micro`,
 and custom machine types such as `db-custom-2-13312`. See the [Custom Machine Type Documentation](https://cloud.google.com/compute/docs/instances/creating-instance-with-custom-machine-type#create) to learn about specifying custom machine types.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3276,9 +3276,9 @@ and custom machine types such as `db-custom-2-13312`. See the [Custom Machine Ty
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This specifies when the instance should be
+    <dd>This specifies when the instance should be
 active. Can be either `ALWAYS`, `NEVER` or `ON_DEMAND`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3286,11 +3286,11 @@ active. Can be either `ALWAYS`, `NEVER` or `ON_DEMAND`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}This property is only applicable to First Generation instances.
+    <dd>This property is only applicable to First Generation instances.
 First Generation instances are now deprecated, see [here](https://cloud.google.com/sql/docs/mysql/upgrade-2nd-gen)
 for information on how to upgrade to Second Generation instances.
 A list of Google App Engine (GAE) project names that are allowed to access this instance.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}This property is only applicable to First Generation instances, and First Generation instances are now deprecated.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: This property is only applicable to First Generation instances, and First Generation instances are now deprecated.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3298,9 +3298,9 @@ A list of Google App Engine (GAE) project names that are allowed to access this 
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This specifies whether a PostgreSQL instance
+    <dd>This specifies whether a PostgreSQL instance
 should be set up for high availability (`REGIONAL`) or single zone (`ZONAL`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3308,7 +3308,7 @@ should be set up for high availability (`REGIONAL`) or single zone (`ZONAL`).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingsbackupconfiguration">Dict[Database<wbr>Instance<wbr>Settings<wbr>Backup<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3316,12 +3316,12 @@ should be set up for high availability (`REGIONAL`) or single zone (`ZONAL`).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}This property is only applicable to First Generation instances.
+    <dd>This property is only applicable to First Generation instances.
 First Generation instances are now deprecated, see [here](https://cloud.google.com/sql/docs/mysql/upgrade-2nd-gen)
 for information on how to upgrade to Second Generation instances.
 Specific to read instances, indicates
 when crash-safe replication flags are enabled.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}This property is only applicable to First Generation instances, and First Generation instances are now deprecated.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: This property is only applicable to First Generation instances, and First Generation instances are now deprecated.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3329,7 +3329,7 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingsdatabaseflag">List[Database<wbr>Instance<wbr>Settings<wbr>Database<wbr>Flag]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3337,8 +3337,8 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Configuration to increase storage size automatically.  Note that future `pulumi apply` calls will attempt to resize the disk to the value specified in `disk_size` - if this is set, do not set `disk_size`.
-{{% /md %}}</dd>
+    <dd>Configuration to increase storage size automatically.  Note that future `pulumi apply` calls will attempt to resize the disk to the value specified in `disk_size` - if this is set, do not set `disk_size`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3346,8 +3346,8 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of data disk, in GB. Size of a running instance cannot be reduced but can be increased.
-{{% /md %}}</dd>
+    <dd>The size of data disk, in GB. Size of a running instance cannot be reduced but can be increased.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3355,8 +3355,8 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of data disk: PD_SSD or PD_HDD.
-{{% /md %}}</dd>
+    <dd>The type of data disk: PD_SSD or PD_HDD.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3364,7 +3364,7 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingsipconfiguration">Dict[Database<wbr>Instance<wbr>Settings<wbr>Ip<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3372,7 +3372,7 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingslocationpreference">Dict[Database<wbr>Instance<wbr>Settings<wbr>Location<wbr>Preference]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3380,7 +3380,7 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingsmaintenancewindow">Dict[Database<wbr>Instance<wbr>Settings<wbr>Maintenance<wbr>Window]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3388,8 +3388,8 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Pricing plan for this instance, can only be `PER_USE`.
-{{% /md %}}</dd>
+    <dd>Pricing plan for this instance, can only be `PER_USE`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -3397,11 +3397,11 @@ when crash-safe replication flags are enabled.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This property is only applicable to First Generation instances.
+    <dd>This property is only applicable to First Generation instances.
 First Generation instances are now deprecated, see [here](https://cloud.google.com/sql/docs/mysql/upgrade-2nd-gen)
 for information on how to upgrade to Second Generation instances.
 Replication type for this instance, can be one of `ASYNCHRONOUS` or `SYNCHRONOUS`.
-{{% /md %}}<p class="property-message">Deprecated: {{% md %}}This property is only applicable to First Generation instances, and First Generation instances are now deprecated.{{% /md %}}</p></dd>
+<p class="property-message">Deprecated: This property is only applicable to First Generation instances, and First Generation instances are now deprecated.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3409,8 +3409,8 @@ Replication type for this instance, can be one of `ASYNCHRONOUS` or `SYNCHRONOUS
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A set of key/value user label pairs to assign to the instance.
-{{% /md %}}</dd>
+    <dd>A set of key/value user label pairs to assign to the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3418,28 +3418,28 @@ Replication type for this instance, can be one of `ASYNCHRONOUS` or `SYNCHRONOUS
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="databaseinstancesettingsbackupconfiguration">Database<wbr>Instance<wbr>Settings<wbr>Backup<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#DatabaseInstanceSettingsBackupConfiguration">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#DatabaseInstanceSettingsBackupConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstanceSettingsBackupConfigurationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstanceSettingsBackupConfigurationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3448,10 +3448,10 @@ Replication type for this instance, can be one of `ASYNCHRONOUS` or `SYNCHRONOUS
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}True if binary logging is enabled. If
+    <dd>True if binary logging is enabled. If
 `settings.backup_configuration.enabled` is false, this must be as well.
 Cannot be used with Postgres.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3459,8 +3459,8 @@ Cannot be used with Postgres.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}True if backup configuration is enabled.
-{{% /md %}}</dd>
+    <dd>True if backup configuration is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3468,7 +3468,7 @@ Cannot be used with Postgres.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3476,15 +3476,15 @@ Cannot be used with Postgres.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}`HH:MM` format time indicating when backup
+    <dd>`HH:MM` format time indicating when backup
 configuration starts.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3493,10 +3493,10 @@ configuration starts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}True if binary logging is enabled. If
+    <dd>True if binary logging is enabled. If
 `settings.backup_configuration.enabled` is false, this must be as well.
 Cannot be used with Postgres.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3504,8 +3504,8 @@ Cannot be used with Postgres.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}True if backup configuration is enabled.
-{{% /md %}}</dd>
+    <dd>True if backup configuration is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3513,7 +3513,7 @@ Cannot be used with Postgres.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3521,15 +3521,15 @@ Cannot be used with Postgres.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}`HH:MM` format time indicating when backup
+    <dd>`HH:MM` format time indicating when backup
 configuration starts.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3538,10 +3538,10 @@ configuration starts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}True if binary logging is enabled. If
+    <dd>True if binary logging is enabled. If
 `settings.backup_configuration.enabled` is false, this must be as well.
 Cannot be used with Postgres.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3549,8 +3549,8 @@ Cannot be used with Postgres.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}True if backup configuration is enabled.
-{{% /md %}}</dd>
+    <dd>True if backup configuration is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3558,7 +3558,7 @@ Cannot be used with Postgres.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3566,15 +3566,15 @@ Cannot be used with Postgres.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}`HH:MM` format time indicating when backup
+    <dd>`HH:MM` format time indicating when backup
 configuration starts.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3583,10 +3583,10 @@ configuration starts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}True if binary logging is enabled. If
+    <dd>True if binary logging is enabled. If
 `settings.backup_configuration.enabled` is false, this must be as well.
 Cannot be used with Postgres.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3594,8 +3594,8 @@ Cannot be used with Postgres.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}True if backup configuration is enabled.
-{{% /md %}}</dd>
+    <dd>True if backup configuration is enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3603,7 +3603,7 @@ Cannot be used with Postgres.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3611,30 +3611,30 @@ Cannot be used with Postgres.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}`HH:MM` format time indicating when backup
+    <dd>`HH:MM` format time indicating when backup
 configuration starts.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="databaseinstancesettingsdatabaseflag">Database<wbr>Instance<wbr>Settings<wbr>Database<wbr>Flag</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#DatabaseInstanceSettingsDatabaseFlag">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#DatabaseInstanceSettingsDatabaseFlag">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstanceSettingsDatabaseFlagArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstanceSettingsDatabaseFlagOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3643,8 +3643,8 @@ configuration starts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for this whitelist entry.
-{{% /md %}}</dd>
+    <dd>A name for this whitelist entry.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3652,16 +3652,16 @@ configuration starts.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A CIDR notation IPv4 or IPv6 address that is allowed to
+    <dd>A CIDR notation IPv4 or IPv6 address that is allowed to
 access this instance. Must be set even if other two attributes are not for
 the whitelist to become active.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3670,8 +3670,8 @@ the whitelist to become active.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for this whitelist entry.
-{{% /md %}}</dd>
+    <dd>A name for this whitelist entry.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3679,16 +3679,16 @@ the whitelist to become active.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A CIDR notation IPv4 or IPv6 address that is allowed to
+    <dd>A CIDR notation IPv4 or IPv6 address that is allowed to
 access this instance. Must be set even if other two attributes are not for
 the whitelist to become active.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3697,8 +3697,8 @@ the whitelist to become active.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for this whitelist entry.
-{{% /md %}}</dd>
+    <dd>A name for this whitelist entry.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3706,16 +3706,16 @@ the whitelist to become active.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A CIDR notation IPv4 or IPv6 address that is allowed to
+    <dd>A CIDR notation IPv4 or IPv6 address that is allowed to
 access this instance. Must be set even if other two attributes are not for
 the whitelist to become active.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3724,8 +3724,8 @@ the whitelist to become active.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A name for this whitelist entry.
-{{% /md %}}</dd>
+    <dd>A name for this whitelist entry.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3733,31 +3733,31 @@ the whitelist to become active.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A CIDR notation IPv4 or IPv6 address that is allowed to
+    <dd>A CIDR notation IPv4 or IPv6 address that is allowed to
 access this instance. Must be set even if other two attributes are not for
 the whitelist to become active.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="databaseinstancesettingsipconfiguration">Database<wbr>Instance<wbr>Settings<wbr>Ip<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#DatabaseInstanceSettingsIpConfiguration">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#DatabaseInstanceSettingsIpConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstanceSettingsIpConfigurationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstanceSettingsIpConfigurationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3766,7 +3766,7 @@ the whitelist to become active.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingsipconfigurationauthorizednetwork">List&lt;Database<wbr>Instance<wbr>Settings<wbr>Ip<wbr>Configuration<wbr>Authorized<wbr>Network<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3774,10 +3774,10 @@ the whitelist to become active.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether this Cloud SQL instance should be assigned
+    <dd>Whether this Cloud SQL instance should be assigned
 a public IPV4 address. Either `ipv4_enabled` must be enabled or a
 `private_network` must be configured.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3785,12 +3785,12 @@ a public IPV4 address. Either `ipv4_enabled` must be enabled or a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The VPC network from which the Cloud SQL
+    <dd>The VPC network from which the Cloud SQL
 instance is accessible for private IP. For example, projects/myProject/global/networks/default.
 Specifying a network enables private IP.
 Either `ipv4_enabled` must be enabled or a `private_network` must be configured.
 This setting can be updated, but it cannot be removed after it is set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3798,15 +3798,15 @@ This setting can be updated, but it cannot be removed after it is set.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}True if mysqld should default to `REQUIRE X509`
+    <dd>True if mysqld should default to `REQUIRE X509`
 for users connecting over IP.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3815,7 +3815,7 @@ for users connecting over IP.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingsipconfigurationauthorizednetwork">[]Database<wbr>Instance<wbr>Settings<wbr>Ip<wbr>Configuration<wbr>Authorized<wbr>Network</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3823,10 +3823,10 @@ for users connecting over IP.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether this Cloud SQL instance should be assigned
+    <dd>Whether this Cloud SQL instance should be assigned
 a public IPV4 address. Either `ipv4_enabled` must be enabled or a
 `private_network` must be configured.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3834,12 +3834,12 @@ a public IPV4 address. Either `ipv4_enabled` must be enabled or a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The VPC network from which the Cloud SQL
+    <dd>The VPC network from which the Cloud SQL
 instance is accessible for private IP. For example, projects/myProject/global/networks/default.
 Specifying a network enables private IP.
 Either `ipv4_enabled` must be enabled or a `private_network` must be configured.
 This setting can be updated, but it cannot be removed after it is set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3847,15 +3847,15 @@ This setting can be updated, but it cannot be removed after it is set.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}True if mysqld should default to `REQUIRE X509`
+    <dd>True if mysqld should default to `REQUIRE X509`
 for users connecting over IP.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3864,7 +3864,7 @@ for users connecting over IP.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingsipconfigurationauthorizednetwork">Database<wbr>Instance<wbr>Settings<wbr>Ip<wbr>Configuration<wbr>Authorized<wbr>Network[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3872,10 +3872,10 @@ for users connecting over IP.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether this Cloud SQL instance should be assigned
+    <dd>Whether this Cloud SQL instance should be assigned
 a public IPV4 address. Either `ipv4_enabled` must be enabled or a
 `private_network` must be configured.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3883,12 +3883,12 @@ a public IPV4 address. Either `ipv4_enabled` must be enabled or a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The VPC network from which the Cloud SQL
+    <dd>The VPC network from which the Cloud SQL
 instance is accessible for private IP. For example, projects/myProject/global/networks/default.
 Specifying a network enables private IP.
 Either `ipv4_enabled` must be enabled or a `private_network` must be configured.
 This setting can be updated, but it cannot be removed after it is set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3896,15 +3896,15 @@ This setting can be updated, but it cannot be removed after it is set.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}True if mysqld should default to `REQUIRE X509`
+    <dd>True if mysqld should default to `REQUIRE X509`
 for users connecting over IP.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3913,7 +3913,7 @@ for users connecting over IP.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#databaseinstancesettingsipconfigurationauthorizednetwork">List[Database<wbr>Instance<wbr>Settings<wbr>Ip<wbr>Configuration<wbr>Authorized<wbr>Network]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3921,10 +3921,10 @@ for users connecting over IP.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether this Cloud SQL instance should be assigned
+    <dd>Whether this Cloud SQL instance should be assigned
 a public IPV4 address. Either `ipv4_enabled` must be enabled or a
 `private_network` must be configured.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3932,12 +3932,12 @@ a public IPV4 address. Either `ipv4_enabled` must be enabled or a
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The VPC network from which the Cloud SQL
+    <dd>The VPC network from which the Cloud SQL
 instance is accessible for private IP. For example, projects/myProject/global/networks/default.
 Specifying a network enables private IP.
 Either `ipv4_enabled` must be enabled or a `private_network` must be configured.
 This setting can be updated, but it cannot be removed after it is set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3945,30 +3945,30 @@ This setting can be updated, but it cannot be removed after it is set.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}True if mysqld should default to `REQUIRE X509`
+    <dd>True if mysqld should default to `REQUIRE X509`
 for users connecting over IP.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="databaseinstancesettingsipconfigurationauthorizednetwork">Database<wbr>Instance<wbr>Settings<wbr>Ip<wbr>Configuration<wbr>Authorized<wbr>Network</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#DatabaseInstanceSettingsIpConfigurationAuthorizedNetwork">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#DatabaseInstanceSettingsIpConfigurationAuthorizedNetwork">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstanceSettingsIpConfigurationAuthorizedNetworkArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstanceSettingsIpConfigurationAuthorizedNetworkOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3977,10 +3977,10 @@ for users connecting over IP.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A CIDR notation IPv4 or IPv6 address that is allowed to
+    <dd>A CIDR notation IPv4 or IPv6 address that is allowed to
 access this instance. Must be set even if other two attributes are not for
 the whitelist to become active.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3988,9 +3988,9 @@ the whitelist to become active.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The [RFC 3339](https://tools.ietf.org/html/rfc3339)
+    <dd>The [RFC 3339](https://tools.ietf.org/html/rfc3339)
 formatted date time string indicating when this whitelist expires.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3998,14 +3998,14 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for this whitelist entry.
-{{% /md %}}</dd>
+    <dd>A name for this whitelist entry.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4014,10 +4014,10 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A CIDR notation IPv4 or IPv6 address that is allowed to
+    <dd>A CIDR notation IPv4 or IPv6 address that is allowed to
 access this instance. Must be set even if other two attributes are not for
 the whitelist to become active.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4025,9 +4025,9 @@ the whitelist to become active.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [RFC 3339](https://tools.ietf.org/html/rfc3339)
+    <dd>The [RFC 3339](https://tools.ietf.org/html/rfc3339)
 formatted date time string indicating when this whitelist expires.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4035,14 +4035,14 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for this whitelist entry.
-{{% /md %}}</dd>
+    <dd>A name for this whitelist entry.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4051,10 +4051,10 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A CIDR notation IPv4 or IPv6 address that is allowed to
+    <dd>A CIDR notation IPv4 or IPv6 address that is allowed to
 access this instance. Must be set even if other two attributes are not for
 the whitelist to become active.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4062,9 +4062,9 @@ the whitelist to become active.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [RFC 3339](https://tools.ietf.org/html/rfc3339)
+    <dd>The [RFC 3339](https://tools.ietf.org/html/rfc3339)
 formatted date time string indicating when this whitelist expires.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4072,14 +4072,14 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A name for this whitelist entry.
-{{% /md %}}</dd>
+    <dd>A name for this whitelist entry.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4088,10 +4088,10 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A CIDR notation IPv4 or IPv6 address that is allowed to
+    <dd>A CIDR notation IPv4 or IPv6 address that is allowed to
 access this instance. Must be set even if other two attributes are not for
 the whitelist to become active.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4099,9 +4099,9 @@ the whitelist to become active.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The [RFC 3339](https://tools.ietf.org/html/rfc3339)
+    <dd>The [RFC 3339](https://tools.ietf.org/html/rfc3339)
 formatted date time string indicating when this whitelist expires.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4109,29 +4109,29 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A name for this whitelist entry.
-{{% /md %}}</dd>
+    <dd>A name for this whitelist entry.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="databaseinstancesettingslocationpreference">Database<wbr>Instance<wbr>Settings<wbr>Location<wbr>Preference</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#DatabaseInstanceSettingsLocationPreference">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#DatabaseInstanceSettingsLocationPreference">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstanceSettingsLocationPreferenceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstanceSettingsLocationPreferenceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4140,9 +4140,9 @@ formatted date time string indicating when this whitelist expires.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A GAE application whose zone to remain
+    <dd>A GAE application whose zone to remain
 in. Must be in the same region as this instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4150,15 +4150,15 @@ in. Must be in the same region as this instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The preferred compute engine
+    <dd>The preferred compute engine
 [zone](https://cloud.google.com/compute/docs/zones?hl=en).
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4167,9 +4167,9 @@ in. Must be in the same region as this instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A GAE application whose zone to remain
+    <dd>A GAE application whose zone to remain
 in. Must be in the same region as this instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4177,15 +4177,15 @@ in. Must be in the same region as this instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The preferred compute engine
+    <dd>The preferred compute engine
 [zone](https://cloud.google.com/compute/docs/zones?hl=en).
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4194,9 +4194,9 @@ in. Must be in the same region as this instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A GAE application whose zone to remain
+    <dd>A GAE application whose zone to remain
 in. Must be in the same region as this instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4204,15 +4204,15 @@ in. Must be in the same region as this instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The preferred compute engine
+    <dd>The preferred compute engine
 [zone](https://cloud.google.com/compute/docs/zones?hl=en).
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4221,9 +4221,9 @@ in. Must be in the same region as this instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A GAE application whose zone to remain
+    <dd>A GAE application whose zone to remain
 in. Must be in the same region as this instance.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4231,30 +4231,30 @@ in. Must be in the same region as this instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The preferred compute engine
+    <dd>The preferred compute engine
 [zone](https://cloud.google.com/compute/docs/zones?hl=en).
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="databaseinstancesettingsmaintenancewindow">Database<wbr>Instance<wbr>Settings<wbr>Maintenance<wbr>Window</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/input/#DatabaseInstanceSettingsMaintenanceWindow">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#DatabaseInstanceSettingsMaintenanceWindow">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstanceSettingsMaintenanceWindowArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/sql?tab=doc#DatabaseInstanceSettingsMaintenanceWindowOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4263,8 +4263,8 @@ in. Must be in the same region as this instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Day of week (`1-7`), starting on Monday
-{{% /md %}}</dd>
+    <dd>Day of week (`1-7`), starting on Monday
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4272,8 +4272,8 @@ in. Must be in the same region as this instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Hour of day (`0-23`), ignored if `day` not set
-{{% /md %}}</dd>
+    <dd>Hour of day (`0-23`), ignored if `day` not set
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4281,15 +4281,15 @@ in. Must be in the same region as this instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Receive updates earlier (`canary`) or later
+    <dd>Receive updates earlier (`canary`) or later
 (`stable`)
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4298,8 +4298,8 @@ in. Must be in the same region as this instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Day of week (`1-7`), starting on Monday
-{{% /md %}}</dd>
+    <dd>Day of week (`1-7`), starting on Monday
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4307,8 +4307,8 @@ in. Must be in the same region as this instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Hour of day (`0-23`), ignored if `day` not set
-{{% /md %}}</dd>
+    <dd>Hour of day (`0-23`), ignored if `day` not set
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4316,15 +4316,15 @@ in. Must be in the same region as this instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Receive updates earlier (`canary`) or later
+    <dd>Receive updates earlier (`canary`) or later
 (`stable`)
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4333,8 +4333,8 @@ in. Must be in the same region as this instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Day of week (`1-7`), starting on Monday
-{{% /md %}}</dd>
+    <dd>Day of week (`1-7`), starting on Monday
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4342,8 +4342,8 @@ in. Must be in the same region as this instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Hour of day (`0-23`), ignored if `day` not set
-{{% /md %}}</dd>
+    <dd>Hour of day (`0-23`), ignored if `day` not set
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4351,15 +4351,15 @@ in. Must be in the same region as this instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Receive updates earlier (`canary`) or later
+    <dd>Receive updates earlier (`canary`) or later
 (`stable`)
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4368,8 +4368,8 @@ in. Must be in the same region as this instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Day of week (`1-7`), starting on Monday
-{{% /md %}}</dd>
+    <dd>Day of week (`1-7`), starting on Monday
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4377,8 +4377,8 @@ in. Must be in the same region as this instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Hour of day (`0-23`), ignored if `day` not set
-{{% /md %}}</dd>
+    <dd>Hour of day (`0-23`), ignored if `day` not set
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4386,12 +4386,12 @@ in. Must be in the same region as this instance.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Receive updates earlier (`canary`) or later
+    <dd>Receive updates earlier (`canary`) or later
 (`stable`)
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

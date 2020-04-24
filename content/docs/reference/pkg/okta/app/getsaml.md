@@ -32,29 +32,29 @@ const example = pulumi.output(okta.app.getSaml({
 
 ## Using GetSaml {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getSaml<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/okta/app/#GetSamlArgs">GetSamlArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/okta/app/#GetSamlResult">GetSamlResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_saml(</span>accessibility_error_redirect_url=None<span class="p">, </span>accessibility_login_redirect_url=None<span class="p">, </span>accessibility_self_service=None<span class="p">, </span>active_only=None<span class="p">, </span>app_settings_json=None<span class="p">, </span>assertion_signed=None<span class="p">, </span>attribute_statements=None<span class="p">, </span>audience=None<span class="p">, </span>authn_context_class_ref=None<span class="p">, </span>auto_submit_toolbar=None<span class="p">, </span>default_relay_state=None<span class="p">, </span>destination=None<span class="p">, </span>digest_algorithm=None<span class="p">, </span>features=None<span class="p">, </span>hide_ios=None<span class="p">, </span>hide_web=None<span class="p">, </span>honor_force_authn=None<span class="p">, </span>id=None<span class="p">, </span>idp_issuer=None<span class="p">, </span>label=None<span class="p">, </span>label_prefix=None<span class="p">, </span>recipient=None<span class="p">, </span>request_compressed=None<span class="p">, </span>response_signed=None<span class="p">, </span>signature_algorithm=None<span class="p">, </span>sp_issuer=None<span class="p">, </span>sso_url=None<span class="p">, </span>subject_name_id_format=None<span class="p">, </span>subject_name_id_template=None<span class="p">, </span>user_name_template=None<span class="p">, </span>user_name_template_suffix=None<span class="p">, </span>user_name_template_type=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupSaml<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/app?tab=doc#LookupSamlArgs">LookupSamlArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/app?tab=doc#LookupSamlResult">LookupSamlResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetSaml </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Okta/Pulumi.Okta.App.GetSamlResult.html">GetSamlResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Okta/Pulumi.Okta.App.GetSamlArgs.html">GetSamlArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -62,7 +62,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -71,8 +71,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom error page URL.
-{{% /md %}}</dd>
+    <dd>Custom error page URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -80,8 +80,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom login page URL.
-{{% /md %}}</dd>
+    <dd>Custom login page URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -89,8 +89,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable self service.
-{{% /md %}}</dd>
+    <dd>Enable self service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -98,8 +98,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}tells the provider to query for only `ACTIVE` applications.
-{{% /md %}}</dd>
+    <dd>tells the provider to query for only `ACTIVE` applications.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -107,8 +107,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Application settings in JSON format.
-{{% /md %}}</dd>
+    <dd>Application settings in JSON format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -116,8 +116,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether the SAML assertion is digitally signed.
-{{% /md %}}</dd>
+    <dd>Determines whether the SAML assertion is digitally signed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -125,8 +125,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsamlattributestatement">List&lt;Get<wbr>Saml<wbr>Attribute<wbr>Statement<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}SAML Attribute statements.
-{{% /md %}}</dd>
+    <dd>SAML Attribute statements.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -134,8 +134,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Audience restriction.
-{{% /md %}}</dd>
+    <dd>Audience restriction.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -143,8 +143,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the SAML authentication context class for the assertion’s authentication statement.
-{{% /md %}}</dd>
+    <dd>Identifies the SAML authentication context class for the assertion’s authentication statement.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -152,8 +152,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar.
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -161,8 +161,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies a specific application resource in an IDP initiated SSO scenario.
-{{% /md %}}</dd>
+    <dd>Identifies a specific application resource in an IDP initiated SSO scenario.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -170,8 +170,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
-{{% /md %}}</dd>
+    <dd>Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -179,8 +179,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Determines the digest algorithm used to digitally sign the SAML assertion and response.
-{{% /md %}}</dd>
+    <dd>Determines the digest algorithm used to digitally sign the SAML assertion and response.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -188,8 +188,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}features enabled.
-{{% /md %}}</dd>
+    <dd>features enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -197,8 +197,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app.
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -206,8 +206,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -215,8 +215,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Prompt user to re-authenticate if SP asks for it.
-{{% /md %}}</dd>
+    <dd>Prompt user to re-authenticate if SP asks for it.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -224,8 +224,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}`id` of application to retrieve, conflicts with `label` and `label_prefix`.
-{{% /md %}}</dd>
+    <dd>`id` of application to retrieve, conflicts with `label` and `label_prefix`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -233,8 +233,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}SAML issuer ID.
-{{% /md %}}</dd>
+    <dd>SAML issuer ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -242,8 +242,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The label of the app to retrieve, conflicts with `label_prefix` and `id`.
-{{% /md %}}</dd>
+    <dd>The label of the app to retrieve, conflicts with `label_prefix` and `id`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -251,8 +251,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Label prefix of the app to retrieve, conflicts with `label` and `id`. This will tell the provider to do a `starts with` query as opposed to an `equals` query.
-{{% /md %}}</dd>
+    <dd>Label prefix of the app to retrieve, conflicts with `label` and `id`. This will tell the provider to do a `starts with` query as opposed to an `equals` query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -260,8 +260,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The location where the app may present the SAML assertion.
-{{% /md %}}</dd>
+    <dd>The location where the app may present the SAML assertion.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -269,8 +269,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Denotes whether the request is compressed or not.
-{{% /md %}}</dd>
+    <dd>Denotes whether the request is compressed or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,8 +278,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether the SAML auth response message is digitally signed.
-{{% /md %}}</dd>
+    <dd>Determines whether the SAML auth response message is digitally signed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -287,8 +287,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Signature algorithm used ot digitally sign the assertion and response.
-{{% /md %}}</dd>
+    <dd>Signature algorithm used ot digitally sign the assertion and response.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -296,8 +296,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}SAML service provider issuer.
-{{% /md %}}</dd>
+    <dd>SAML service provider issuer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -305,8 +305,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Single Sign on Url.
-{{% /md %}}</dd>
+    <dd>Single Sign on Url.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -314,8 +314,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the SAML processing rules.
-{{% /md %}}</dd>
+    <dd>Identifies the SAML processing rules.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -323,8 +323,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Template for app user's username when a user is assigned to the app.
-{{% /md %}}</dd>
+    <dd>Template for app user's username when a user is assigned to the app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -332,8 +332,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Username template.
-{{% /md %}}</dd>
+    <dd>Username template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -341,8 +341,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Username template suffix.
-{{% /md %}}</dd>
+    <dd>Username template suffix.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -350,14 +350,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Username template type.
-{{% /md %}}</dd>
+    <dd>Username template type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -366,8 +366,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom error page URL.
-{{% /md %}}</dd>
+    <dd>Custom error page URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -375,8 +375,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom login page URL.
-{{% /md %}}</dd>
+    <dd>Custom login page URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -384,8 +384,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable self service.
-{{% /md %}}</dd>
+    <dd>Enable self service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -393,8 +393,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}tells the provider to query for only `ACTIVE` applications.
-{{% /md %}}</dd>
+    <dd>tells the provider to query for only `ACTIVE` applications.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -402,8 +402,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Application settings in JSON format.
-{{% /md %}}</dd>
+    <dd>Application settings in JSON format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -411,8 +411,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether the SAML assertion is digitally signed.
-{{% /md %}}</dd>
+    <dd>Determines whether the SAML assertion is digitally signed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -420,8 +420,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsamlattributestatement">[]Get<wbr>Saml<wbr>Attribute<wbr>Statement</a></span>
     </dt>
-    <dd>{{% md %}}SAML Attribute statements.
-{{% /md %}}</dd>
+    <dd>SAML Attribute statements.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -429,8 +429,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Audience restriction.
-{{% /md %}}</dd>
+    <dd>Audience restriction.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -438,8 +438,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the SAML authentication context class for the assertion’s authentication statement.
-{{% /md %}}</dd>
+    <dd>Identifies the SAML authentication context class for the assertion’s authentication statement.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -447,8 +447,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar.
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -456,8 +456,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies a specific application resource in an IDP initiated SSO scenario.
-{{% /md %}}</dd>
+    <dd>Identifies a specific application resource in an IDP initiated SSO scenario.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -465,8 +465,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
-{{% /md %}}</dd>
+    <dd>Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -474,8 +474,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Determines the digest algorithm used to digitally sign the SAML assertion and response.
-{{% /md %}}</dd>
+    <dd>Determines the digest algorithm used to digitally sign the SAML assertion and response.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -483,8 +483,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}features enabled.
-{{% /md %}}</dd>
+    <dd>features enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -492,8 +492,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app.
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -501,8 +501,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -510,8 +510,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Prompt user to re-authenticate if SP asks for it.
-{{% /md %}}</dd>
+    <dd>Prompt user to re-authenticate if SP asks for it.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -519,8 +519,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}`id` of application to retrieve, conflicts with `label` and `label_prefix`.
-{{% /md %}}</dd>
+    <dd>`id` of application to retrieve, conflicts with `label` and `label_prefix`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -528,8 +528,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}SAML issuer ID.
-{{% /md %}}</dd>
+    <dd>SAML issuer ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -537,8 +537,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The label of the app to retrieve, conflicts with `label_prefix` and `id`.
-{{% /md %}}</dd>
+    <dd>The label of the app to retrieve, conflicts with `label_prefix` and `id`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -546,8 +546,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Label prefix of the app to retrieve, conflicts with `label` and `id`. This will tell the provider to do a `starts with` query as opposed to an `equals` query.
-{{% /md %}}</dd>
+    <dd>Label prefix of the app to retrieve, conflicts with `label` and `id`. This will tell the provider to do a `starts with` query as opposed to an `equals` query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -555,8 +555,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location where the app may present the SAML assertion.
-{{% /md %}}</dd>
+    <dd>The location where the app may present the SAML assertion.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -564,8 +564,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Denotes whether the request is compressed or not.
-{{% /md %}}</dd>
+    <dd>Denotes whether the request is compressed or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -573,8 +573,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether the SAML auth response message is digitally signed.
-{{% /md %}}</dd>
+    <dd>Determines whether the SAML auth response message is digitally signed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -582,8 +582,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Signature algorithm used ot digitally sign the assertion and response.
-{{% /md %}}</dd>
+    <dd>Signature algorithm used ot digitally sign the assertion and response.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -591,8 +591,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}SAML service provider issuer.
-{{% /md %}}</dd>
+    <dd>SAML service provider issuer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -600,8 +600,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Single Sign on Url.
-{{% /md %}}</dd>
+    <dd>Single Sign on Url.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -609,8 +609,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the SAML processing rules.
-{{% /md %}}</dd>
+    <dd>Identifies the SAML processing rules.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -618,8 +618,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Template for app user's username when a user is assigned to the app.
-{{% /md %}}</dd>
+    <dd>Template for app user's username when a user is assigned to the app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -627,8 +627,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Username template.
-{{% /md %}}</dd>
+    <dd>Username template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -636,8 +636,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Username template suffix.
-{{% /md %}}</dd>
+    <dd>Username template suffix.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -645,14 +645,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Username template type.
-{{% /md %}}</dd>
+    <dd>Username template type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -661,8 +661,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom error page URL.
-{{% /md %}}</dd>
+    <dd>Custom error page URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -670,8 +670,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom login page URL.
-{{% /md %}}</dd>
+    <dd>Custom login page URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -679,8 +679,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable self service.
-{{% /md %}}</dd>
+    <dd>Enable self service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -688,8 +688,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}tells the provider to query for only `ACTIVE` applications.
-{{% /md %}}</dd>
+    <dd>tells the provider to query for only `ACTIVE` applications.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -697,8 +697,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Application settings in JSON format.
-{{% /md %}}</dd>
+    <dd>Application settings in JSON format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -706,8 +706,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether the SAML assertion is digitally signed.
-{{% /md %}}</dd>
+    <dd>Determines whether the SAML assertion is digitally signed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -715,8 +715,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsamlattributestatement">Get<wbr>Saml<wbr>Attribute<wbr>Statement[]</a></span>
     </dt>
-    <dd>{{% md %}}SAML Attribute statements.
-{{% /md %}}</dd>
+    <dd>SAML Attribute statements.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -724,8 +724,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Audience restriction.
-{{% /md %}}</dd>
+    <dd>Audience restriction.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -733,8 +733,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the SAML authentication context class for the assertion’s authentication statement.
-{{% /md %}}</dd>
+    <dd>Identifies the SAML authentication context class for the assertion’s authentication statement.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -742,8 +742,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar.
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -751,8 +751,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies a specific application resource in an IDP initiated SSO scenario.
-{{% /md %}}</dd>
+    <dd>Identifies a specific application resource in an IDP initiated SSO scenario.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -760,8 +760,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
-{{% /md %}}</dd>
+    <dd>Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -769,8 +769,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Determines the digest algorithm used to digitally sign the SAML assertion and response.
-{{% /md %}}</dd>
+    <dd>Determines the digest algorithm used to digitally sign the SAML assertion and response.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -778,8 +778,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}features enabled.
-{{% /md %}}</dd>
+    <dd>features enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -787,8 +787,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app.
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -796,8 +796,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -805,8 +805,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Prompt user to re-authenticate if SP asks for it.
-{{% /md %}}</dd>
+    <dd>Prompt user to re-authenticate if SP asks for it.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -814,8 +814,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}`id` of application to retrieve, conflicts with `label` and `label_prefix`.
-{{% /md %}}</dd>
+    <dd>`id` of application to retrieve, conflicts with `label` and `label_prefix`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -823,8 +823,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}SAML issuer ID.
-{{% /md %}}</dd>
+    <dd>SAML issuer ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -832,8 +832,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The label of the app to retrieve, conflicts with `label_prefix` and `id`.
-{{% /md %}}</dd>
+    <dd>The label of the app to retrieve, conflicts with `label_prefix` and `id`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -841,8 +841,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Label prefix of the app to retrieve, conflicts with `label` and `id`. This will tell the provider to do a `starts with` query as opposed to an `equals` query.
-{{% /md %}}</dd>
+    <dd>Label prefix of the app to retrieve, conflicts with `label` and `id`. This will tell the provider to do a `starts with` query as opposed to an `equals` query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -850,8 +850,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location where the app may present the SAML assertion.
-{{% /md %}}</dd>
+    <dd>The location where the app may present the SAML assertion.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -859,8 +859,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Denotes whether the request is compressed or not.
-{{% /md %}}</dd>
+    <dd>Denotes whether the request is compressed or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -868,8 +868,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether the SAML auth response message is digitally signed.
-{{% /md %}}</dd>
+    <dd>Determines whether the SAML auth response message is digitally signed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -877,8 +877,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Signature algorithm used ot digitally sign the assertion and response.
-{{% /md %}}</dd>
+    <dd>Signature algorithm used ot digitally sign the assertion and response.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -886,8 +886,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}SAML service provider issuer.
-{{% /md %}}</dd>
+    <dd>SAML service provider issuer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -895,8 +895,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Single Sign on Url.
-{{% /md %}}</dd>
+    <dd>Single Sign on Url.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -904,8 +904,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the SAML processing rules.
-{{% /md %}}</dd>
+    <dd>Identifies the SAML processing rules.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -913,8 +913,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Template for app user's username when a user is assigned to the app.
-{{% /md %}}</dd>
+    <dd>Template for app user's username when a user is assigned to the app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -922,8 +922,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Username template.
-{{% /md %}}</dd>
+    <dd>Username template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -931,8 +931,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Username template suffix.
-{{% /md %}}</dd>
+    <dd>Username template suffix.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -940,14 +940,14 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Username template type.
-{{% /md %}}</dd>
+    <dd>Username template type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -956,8 +956,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Custom error page URL.
-{{% /md %}}</dd>
+    <dd>Custom error page URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -965,8 +965,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Custom login page URL.
-{{% /md %}}</dd>
+    <dd>Custom login page URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -974,8 +974,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable self service.
-{{% /md %}}</dd>
+    <dd>Enable self service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -983,8 +983,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}tells the provider to query for only `ACTIVE` applications.
-{{% /md %}}</dd>
+    <dd>tells the provider to query for only `ACTIVE` applications.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -992,8 +992,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Application settings in JSON format.
-{{% /md %}}</dd>
+    <dd>Application settings in JSON format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1001,8 +1001,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether the SAML assertion is digitally signed.
-{{% /md %}}</dd>
+    <dd>Determines whether the SAML assertion is digitally signed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1010,8 +1010,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsamlattributestatement">List[Get<wbr>Saml<wbr>Attribute<wbr>Statement]</a></span>
     </dt>
-    <dd>{{% md %}}SAML Attribute statements.
-{{% /md %}}</dd>
+    <dd>SAML Attribute statements.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1019,8 +1019,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Audience restriction.
-{{% /md %}}</dd>
+    <dd>Audience restriction.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1028,8 +1028,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the SAML authentication context class for the assertion’s authentication statement.
-{{% /md %}}</dd>
+    <dd>Identifies the SAML authentication context class for the assertion’s authentication statement.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1037,8 +1037,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar.
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1046,8 +1046,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Identifies a specific application resource in an IDP initiated SSO scenario.
-{{% /md %}}</dd>
+    <dd>Identifies a specific application resource in an IDP initiated SSO scenario.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1055,8 +1055,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
-{{% /md %}}</dd>
+    <dd>Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1064,8 +1064,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Determines the digest algorithm used to digitally sign the SAML assertion and response.
-{{% /md %}}</dd>
+    <dd>Determines the digest algorithm used to digitally sign the SAML assertion and response.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1073,8 +1073,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}features enabled.
-{{% /md %}}</dd>
+    <dd>features enabled.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1082,8 +1082,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app.
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1091,8 +1091,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1100,8 +1100,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Prompt user to re-authenticate if SP asks for it.
-{{% /md %}}</dd>
+    <dd>Prompt user to re-authenticate if SP asks for it.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1109,8 +1109,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}`id` of application to retrieve, conflicts with `label` and `label_prefix`.
-{{% /md %}}</dd>
+    <dd>`id` of application to retrieve, conflicts with `label` and `label_prefix`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1118,8 +1118,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}SAML issuer ID.
-{{% /md %}}</dd>
+    <dd>SAML issuer ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1127,8 +1127,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The label of the app to retrieve, conflicts with `label_prefix` and `id`.
-{{% /md %}}</dd>
+    <dd>The label of the app to retrieve, conflicts with `label_prefix` and `id`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1136,8 +1136,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Label prefix of the app to retrieve, conflicts with `label` and `id`. This will tell the provider to do a `starts with` query as opposed to an `equals` query.
-{{% /md %}}</dd>
+    <dd>Label prefix of the app to retrieve, conflicts with `label` and `id`. This will tell the provider to do a `starts with` query as opposed to an `equals` query.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1145,8 +1145,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The location where the app may present the SAML assertion.
-{{% /md %}}</dd>
+    <dd>The location where the app may present the SAML assertion.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1154,8 +1154,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Denotes whether the request is compressed or not.
-{{% /md %}}</dd>
+    <dd>Denotes whether the request is compressed or not.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1163,8 +1163,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether the SAML auth response message is digitally signed.
-{{% /md %}}</dd>
+    <dd>Determines whether the SAML auth response message is digitally signed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,8 +1172,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Signature algorithm used ot digitally sign the assertion and response.
-{{% /md %}}</dd>
+    <dd>Signature algorithm used ot digitally sign the assertion and response.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1181,8 +1181,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}SAML service provider issuer.
-{{% /md %}}</dd>
+    <dd>SAML service provider issuer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1190,8 +1190,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Single Sign on Url.
-{{% /md %}}</dd>
+    <dd>Single Sign on Url.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1199,8 +1199,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the SAML processing rules.
-{{% /md %}}</dd>
+    <dd>Identifies the SAML processing rules.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1208,8 +1208,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Template for app user's username when a user is assigned to the app.
-{{% /md %}}</dd>
+    <dd>Template for app user's username when a user is assigned to the app.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1217,8 +1217,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Username template.
-{{% /md %}}</dd>
+    <dd>Username template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1226,8 +1226,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Username template suffix.
-{{% /md %}}</dd>
+    <dd>Username template suffix.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1235,11 +1235,11 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Username template type.
-{{% /md %}}</dd>
+    <dd>Username template type.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1255,7 +1255,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1264,8 +1264,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}description of application.
-{{% /md %}}</dd>
+    <dd>description of application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1273,8 +1273,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Certificate key ID.
-{{% /md %}}</dd>
+    <dd>Certificate key ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1282,8 +1282,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}name of application.
-{{% /md %}}</dd>
+    <dd>name of application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1291,8 +1291,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}status of application.
-{{% /md %}}</dd>
+    <dd>status of application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1300,8 +1300,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom error page URL.
-{{% /md %}}</dd>
+    <dd>Custom error page URL.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1309,8 +1309,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom login page URL.
-{{% /md %}}</dd>
+    <dd>Custom login page URL.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1318,8 +1318,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable self service.
-{{% /md %}}</dd>
+    <dd>Enable self service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1327,7 +1327,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1335,8 +1335,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Application settings in JSON format.
-{{% /md %}}</dd>
+    <dd>Application settings in JSON format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1344,8 +1344,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether the SAML assertion is digitally signed.
-{{% /md %}}</dd>
+    <dd>Determines whether the SAML assertion is digitally signed.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1353,8 +1353,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsamlattributestatement">List&lt;Get<wbr>Saml<wbr>Attribute<wbr>Statement&gt;</a></span>
     </dt>
-    <dd>{{% md %}}SAML Attribute statements.
-{{% /md %}}</dd>
+    <dd>SAML Attribute statements.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1362,8 +1362,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Audience restriction.
-{{% /md %}}</dd>
+    <dd>Audience restriction.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1371,8 +1371,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the SAML authentication context class for the assertion’s authentication statement.
-{{% /md %}}</dd>
+    <dd>Identifies the SAML authentication context class for the assertion’s authentication statement.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1380,8 +1380,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar.
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1389,8 +1389,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies a specific application resource in an IDP initiated SSO scenario.
-{{% /md %}}</dd>
+    <dd>Identifies a specific application resource in an IDP initiated SSO scenario.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1398,8 +1398,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
-{{% /md %}}</dd>
+    <dd>Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1407,8 +1407,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Determines the digest algorithm used to digitally sign the SAML assertion and response.
-{{% /md %}}</dd>
+    <dd>Determines the digest algorithm used to digitally sign the SAML assertion and response.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1416,8 +1416,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}features enabled.
-{{% /md %}}</dd>
+    <dd>features enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1425,8 +1425,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app.
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1434,8 +1434,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-"
             title="">
@@ -1443,8 +1443,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Prompt user to re-authenticate if SP asks for it.
-{{% /md %}}</dd>
+    <dd>Prompt user to re-authenticate if SP asks for it.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1452,8 +1452,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id of application.
-{{% /md %}}</dd>
+    <dd>id of application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1461,8 +1461,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}SAML issuer ID.
-{{% /md %}}</dd>
+    <dd>SAML issuer ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1470,8 +1470,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}label of application.
-{{% /md %}}</dd>
+    <dd>label of application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1479,7 +1479,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1487,8 +1487,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The location where the app may present the SAML assertion.
-{{% /md %}}</dd>
+    <dd>The location where the app may present the SAML assertion.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1496,8 +1496,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Denotes whether the request is compressed or not.
-{{% /md %}}</dd>
+    <dd>Denotes whether the request is compressed or not.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1505,8 +1505,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether the SAML auth response message is digitally signed.
-{{% /md %}}</dd>
+    <dd>Determines whether the SAML auth response message is digitally signed.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1514,8 +1514,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Signature algorithm used ot digitally sign the assertion and response.
-{{% /md %}}</dd>
+    <dd>Signature algorithm used ot digitally sign the assertion and response.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1523,8 +1523,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}SAML service provider issuer.
-{{% /md %}}</dd>
+    <dd>SAML service provider issuer.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1532,8 +1532,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Single Sign on Url.
-{{% /md %}}</dd>
+    <dd>Single Sign on Url.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1541,8 +1541,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the SAML processing rules.
-{{% /md %}}</dd>
+    <dd>Identifies the SAML processing rules.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1550,8 +1550,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Template for app user's username when a user is assigned to the app.
-{{% /md %}}</dd>
+    <dd>Template for app user's username when a user is assigned to the app.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1559,8 +1559,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Username template.
-{{% /md %}}</dd>
+    <dd>Username template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1568,8 +1568,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Username template suffix.
-{{% /md %}}</dd>
+    <dd>Username template suffix.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1577,14 +1577,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Username template type.
-{{% /md %}}</dd>
+    <dd>Username template type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1593,8 +1593,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}description of application.
-{{% /md %}}</dd>
+    <dd>description of application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1602,8 +1602,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Certificate key ID.
-{{% /md %}}</dd>
+    <dd>Certificate key ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1611,8 +1611,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}name of application.
-{{% /md %}}</dd>
+    <dd>name of application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1620,8 +1620,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}status of application.
-{{% /md %}}</dd>
+    <dd>status of application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1629,8 +1629,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom error page URL.
-{{% /md %}}</dd>
+    <dd>Custom error page URL.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1638,8 +1638,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom login page URL.
-{{% /md %}}</dd>
+    <dd>Custom login page URL.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1647,8 +1647,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable self service.
-{{% /md %}}</dd>
+    <dd>Enable self service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1656,7 +1656,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1664,8 +1664,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Application settings in JSON format.
-{{% /md %}}</dd>
+    <dd>Application settings in JSON format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1673,8 +1673,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether the SAML assertion is digitally signed.
-{{% /md %}}</dd>
+    <dd>Determines whether the SAML assertion is digitally signed.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1682,8 +1682,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsamlattributestatement">[]Get<wbr>Saml<wbr>Attribute<wbr>Statement</a></span>
     </dt>
-    <dd>{{% md %}}SAML Attribute statements.
-{{% /md %}}</dd>
+    <dd>SAML Attribute statements.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1691,8 +1691,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Audience restriction.
-{{% /md %}}</dd>
+    <dd>Audience restriction.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1700,8 +1700,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the SAML authentication context class for the assertion’s authentication statement.
-{{% /md %}}</dd>
+    <dd>Identifies the SAML authentication context class for the assertion’s authentication statement.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1709,8 +1709,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar.
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1718,8 +1718,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies a specific application resource in an IDP initiated SSO scenario.
-{{% /md %}}</dd>
+    <dd>Identifies a specific application resource in an IDP initiated SSO scenario.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1727,8 +1727,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
-{{% /md %}}</dd>
+    <dd>Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1736,8 +1736,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Determines the digest algorithm used to digitally sign the SAML assertion and response.
-{{% /md %}}</dd>
+    <dd>Determines the digest algorithm used to digitally sign the SAML assertion and response.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1745,8 +1745,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}features enabled.
-{{% /md %}}</dd>
+    <dd>features enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1754,8 +1754,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app.
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1763,8 +1763,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-"
             title="">
@@ -1772,8 +1772,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Prompt user to re-authenticate if SP asks for it.
-{{% /md %}}</dd>
+    <dd>Prompt user to re-authenticate if SP asks for it.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1781,8 +1781,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id of application.
-{{% /md %}}</dd>
+    <dd>id of application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1790,8 +1790,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}SAML issuer ID.
-{{% /md %}}</dd>
+    <dd>SAML issuer ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1799,8 +1799,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}label of application.
-{{% /md %}}</dd>
+    <dd>label of application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1808,7 +1808,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1816,8 +1816,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location where the app may present the SAML assertion.
-{{% /md %}}</dd>
+    <dd>The location where the app may present the SAML assertion.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1825,8 +1825,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Denotes whether the request is compressed or not.
-{{% /md %}}</dd>
+    <dd>Denotes whether the request is compressed or not.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1834,8 +1834,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether the SAML auth response message is digitally signed.
-{{% /md %}}</dd>
+    <dd>Determines whether the SAML auth response message is digitally signed.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1843,8 +1843,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Signature algorithm used ot digitally sign the assertion and response.
-{{% /md %}}</dd>
+    <dd>Signature algorithm used ot digitally sign the assertion and response.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1852,8 +1852,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}SAML service provider issuer.
-{{% /md %}}</dd>
+    <dd>SAML service provider issuer.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1861,8 +1861,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Single Sign on Url.
-{{% /md %}}</dd>
+    <dd>Single Sign on Url.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1870,8 +1870,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the SAML processing rules.
-{{% /md %}}</dd>
+    <dd>Identifies the SAML processing rules.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1879,8 +1879,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Template for app user's username when a user is assigned to the app.
-{{% /md %}}</dd>
+    <dd>Template for app user's username when a user is assigned to the app.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1888,8 +1888,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Username template.
-{{% /md %}}</dd>
+    <dd>Username template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1897,8 +1897,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Username template suffix.
-{{% /md %}}</dd>
+    <dd>Username template suffix.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1906,14 +1906,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Username template type.
-{{% /md %}}</dd>
+    <dd>Username template type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1922,8 +1922,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}description of application.
-{{% /md %}}</dd>
+    <dd>description of application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1931,8 +1931,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Certificate key ID.
-{{% /md %}}</dd>
+    <dd>Certificate key ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1940,8 +1940,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}name of application.
-{{% /md %}}</dd>
+    <dd>name of application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1949,8 +1949,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}status of application.
-{{% /md %}}</dd>
+    <dd>status of application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1958,8 +1958,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom error page URL.
-{{% /md %}}</dd>
+    <dd>Custom error page URL.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1967,8 +1967,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Custom login page URL.
-{{% /md %}}</dd>
+    <dd>Custom login page URL.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1976,8 +1976,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enable self service.
-{{% /md %}}</dd>
+    <dd>Enable self service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1985,7 +1985,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1993,8 +1993,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Application settings in JSON format.
-{{% /md %}}</dd>
+    <dd>Application settings in JSON format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2002,8 +2002,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether the SAML assertion is digitally signed.
-{{% /md %}}</dd>
+    <dd>Determines whether the SAML assertion is digitally signed.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2011,8 +2011,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsamlattributestatement">Get<wbr>Saml<wbr>Attribute<wbr>Statement[]</a></span>
     </dt>
-    <dd>{{% md %}}SAML Attribute statements.
-{{% /md %}}</dd>
+    <dd>SAML Attribute statements.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2020,8 +2020,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Audience restriction.
-{{% /md %}}</dd>
+    <dd>Audience restriction.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2029,8 +2029,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the SAML authentication context class for the assertion’s authentication statement.
-{{% /md %}}</dd>
+    <dd>Identifies the SAML authentication context class for the assertion’s authentication statement.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2038,8 +2038,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar.
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2047,8 +2047,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies a specific application resource in an IDP initiated SSO scenario.
-{{% /md %}}</dd>
+    <dd>Identifies a specific application resource in an IDP initiated SSO scenario.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2056,8 +2056,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
-{{% /md %}}</dd>
+    <dd>Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2065,8 +2065,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Determines the digest algorithm used to digitally sign the SAML assertion and response.
-{{% /md %}}</dd>
+    <dd>Determines the digest algorithm used to digitally sign the SAML assertion and response.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2074,8 +2074,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}features enabled.
-{{% /md %}}</dd>
+    <dd>features enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2083,8 +2083,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app.
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2092,8 +2092,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-"
             title="">
@@ -2101,8 +2101,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Prompt user to re-authenticate if SP asks for it.
-{{% /md %}}</dd>
+    <dd>Prompt user to re-authenticate if SP asks for it.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2110,8 +2110,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id of application.
-{{% /md %}}</dd>
+    <dd>id of application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2119,8 +2119,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}SAML issuer ID.
-{{% /md %}}</dd>
+    <dd>SAML issuer ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2128,8 +2128,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}label of application.
-{{% /md %}}</dd>
+    <dd>label of application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2137,7 +2137,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -2145,8 +2145,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The location where the app may present the SAML assertion.
-{{% /md %}}</dd>
+    <dd>The location where the app may present the SAML assertion.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2154,8 +2154,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Denotes whether the request is compressed or not.
-{{% /md %}}</dd>
+    <dd>Denotes whether the request is compressed or not.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2163,8 +2163,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether the SAML auth response message is digitally signed.
-{{% /md %}}</dd>
+    <dd>Determines whether the SAML auth response message is digitally signed.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2172,8 +2172,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Signature algorithm used ot digitally sign the assertion and response.
-{{% /md %}}</dd>
+    <dd>Signature algorithm used ot digitally sign the assertion and response.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2181,8 +2181,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}SAML service provider issuer.
-{{% /md %}}</dd>
+    <dd>SAML service provider issuer.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2190,8 +2190,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Single Sign on Url.
-{{% /md %}}</dd>
+    <dd>Single Sign on Url.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2199,8 +2199,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the SAML processing rules.
-{{% /md %}}</dd>
+    <dd>Identifies the SAML processing rules.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2208,8 +2208,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Template for app user's username when a user is assigned to the app.
-{{% /md %}}</dd>
+    <dd>Template for app user's username when a user is assigned to the app.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2217,8 +2217,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Username template.
-{{% /md %}}</dd>
+    <dd>Username template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2226,8 +2226,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Username template suffix.
-{{% /md %}}</dd>
+    <dd>Username template suffix.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2235,14 +2235,14 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Username template type.
-{{% /md %}}</dd>
+    <dd>Username template type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -2251,8 +2251,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}description of application.
-{{% /md %}}</dd>
+    <dd>description of application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2260,8 +2260,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Certificate key ID.
-{{% /md %}}</dd>
+    <dd>Certificate key ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2269,8 +2269,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}name of application.
-{{% /md %}}</dd>
+    <dd>name of application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2278,8 +2278,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}status of application.
-{{% /md %}}</dd>
+    <dd>status of application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2287,8 +2287,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Custom error page URL.
-{{% /md %}}</dd>
+    <dd>Custom error page URL.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2296,8 +2296,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Custom login page URL.
-{{% /md %}}</dd>
+    <dd>Custom login page URL.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2305,8 +2305,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enable self service.
-{{% /md %}}</dd>
+    <dd>Enable self service.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2314,7 +2314,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -2322,8 +2322,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Application settings in JSON format.
-{{% /md %}}</dd>
+    <dd>Application settings in JSON format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2331,8 +2331,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether the SAML assertion is digitally signed.
-{{% /md %}}</dd>
+    <dd>Determines whether the SAML assertion is digitally signed.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2340,8 +2340,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getsamlattributestatement">List[Get<wbr>Saml<wbr>Attribute<wbr>Statement]</a></span>
     </dt>
-    <dd>{{% md %}}SAML Attribute statements.
-{{% /md %}}</dd>
+    <dd>SAML Attribute statements.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2349,8 +2349,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Audience restriction.
-{{% /md %}}</dd>
+    <dd>Audience restriction.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2358,8 +2358,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the SAML authentication context class for the assertion’s authentication statement.
-{{% /md %}}</dd>
+    <dd>Identifies the SAML authentication context class for the assertion’s authentication statement.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2367,8 +2367,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Display auto submit toolbar.
-{{% /md %}}</dd>
+    <dd>Display auto submit toolbar.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2376,8 +2376,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Identifies a specific application resource in an IDP initiated SSO scenario.
-{{% /md %}}</dd>
+    <dd>Identifies a specific application resource in an IDP initiated SSO scenario.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2385,8 +2385,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
-{{% /md %}}</dd>
+    <dd>Identifies the location where the SAML response is intended to be sent inside of the SAML assertion.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2394,8 +2394,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Determines the digest algorithm used to digitally sign the SAML assertion and response.
-{{% /md %}}</dd>
+    <dd>Determines the digest algorithm used to digitally sign the SAML assertion and response.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2403,8 +2403,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}features enabled.
-{{% /md %}}</dd>
+    <dd>features enabled.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2412,8 +2412,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon on mobile app.
-{{% /md %}}</dd>
+    <dd>Do not display application icon on mobile app.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2421,8 +2421,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Do not display application icon to users
-{{% /md %}}</dd>
+    <dd>Do not display application icon to users
+</dd>
 
     <dt class="property-"
             title="">
@@ -2430,8 +2430,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Prompt user to re-authenticate if SP asks for it.
-{{% /md %}}</dd>
+    <dd>Prompt user to re-authenticate if SP asks for it.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2439,8 +2439,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id of application.
-{{% /md %}}</dd>
+    <dd>id of application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2448,8 +2448,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}SAML issuer ID.
-{{% /md %}}</dd>
+    <dd>SAML issuer ID.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2457,8 +2457,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}label of application.
-{{% /md %}}</dd>
+    <dd>label of application.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2466,7 +2466,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -2474,8 +2474,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The location where the app may present the SAML assertion.
-{{% /md %}}</dd>
+    <dd>The location where the app may present the SAML assertion.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2483,8 +2483,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Denotes whether the request is compressed or not.
-{{% /md %}}</dd>
+    <dd>Denotes whether the request is compressed or not.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2492,8 +2492,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Determines whether the SAML auth response message is digitally signed.
-{{% /md %}}</dd>
+    <dd>Determines whether the SAML auth response message is digitally signed.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2501,8 +2501,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Signature algorithm used ot digitally sign the assertion and response.
-{{% /md %}}</dd>
+    <dd>Signature algorithm used ot digitally sign the assertion and response.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2510,8 +2510,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}SAML service provider issuer.
-{{% /md %}}</dd>
+    <dd>SAML service provider issuer.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2519,8 +2519,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Single Sign on Url.
-{{% /md %}}</dd>
+    <dd>Single Sign on Url.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2528,8 +2528,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Identifies the SAML processing rules.
-{{% /md %}}</dd>
+    <dd>Identifies the SAML processing rules.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2537,8 +2537,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Template for app user's username when a user is assigned to the app.
-{{% /md %}}</dd>
+    <dd>Template for app user's username when a user is assigned to the app.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2546,8 +2546,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Username template.
-{{% /md %}}</dd>
+    <dd>Username template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2555,8 +2555,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Username template suffix.
-{{% /md %}}</dd>
+    <dd>Username template suffix.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2564,11 +2564,11 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Username template type.
-{{% /md %}}</dd>
+    <dd>Username template type.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2581,18 +2581,18 @@ The following output properties are available:
 
 
 <h4 id="getsamlattributestatement">Get<wbr>Saml<wbr>Attribute<wbr>Statement</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/okta/types/input/#GetSamlAttributeStatement">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/okta/types/output/#GetSamlAttributeStatement">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/app?tab=doc#GetSamlAttributeStatementArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-okta/sdk/v2/go/okta/app?tab=doc#GetSamlAttributeStatement">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2601,8 +2601,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}name of application.
-{{% /md %}}</dd>
+    <dd>name of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2610,7 +2610,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2618,7 +2618,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2626,7 +2626,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2634,7 +2634,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2642,13 +2642,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2657,8 +2657,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}name of application.
-{{% /md %}}</dd>
+    <dd>name of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2666,7 +2666,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2674,7 +2674,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2682,7 +2682,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2690,7 +2690,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2698,13 +2698,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2713,8 +2713,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}name of application.
-{{% /md %}}</dd>
+    <dd>name of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2722,7 +2722,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2730,7 +2730,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2738,7 +2738,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2746,7 +2746,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2754,13 +2754,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2769,8 +2769,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}name of application.
-{{% /md %}}</dd>
+    <dd>name of application.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2778,7 +2778,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2786,7 +2786,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2794,7 +2794,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2802,7 +2802,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2810,10 +2810,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

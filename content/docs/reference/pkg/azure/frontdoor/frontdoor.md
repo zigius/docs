@@ -25,26 +25,26 @@ Below are some of the key scenarios that Azure Front Door Service addresses:
 
 
 ## Create a Frontdoor Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/frontdoor/#Frontdoor">Frontdoor</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/frontdoor/#FrontdoorArgs">FrontdoorArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Frontdoor</span><span class="p">(resource_name, opts=None, </span>backend_pool_health_probes=None<span class="p">, </span>backend_pool_load_balancings=None<span class="p">, </span>backend_pools=None<span class="p">, </span>enforce_backend_pools_certificate_name_check=None<span class="p">, </span>friendly_name=None<span class="p">, </span>frontend_endpoints=None<span class="p">, </span>load_balancer_enabled=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>routing_rules=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewFrontdoor<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#FrontdoorArgs">FrontdoorArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#Frontdoor">Frontdoor</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.FrontDoor.Frontdoor.html">Frontdoor</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.FrontDoor.FrontdoorArgs.html">FrontdoorArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -81,9 +81,9 @@ Below are some of the key scenarios that Azure Front Door Service addresses:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -101,9 +101,9 @@ Below are some of the key scenarios that Azure Front Door Service addresses:
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -150,9 +150,9 @@ Below are some of the key scenarios that Azure Front Door Service addresses:
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -189,7 +189,7 @@ Below are some of the key scenarios that Azure Front Door Service addresses:
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Frontdoor Resource Properties {#properties}
 
@@ -202,7 +202,7 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -211,8 +211,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpoolhealthprobe">List&lt;Frontdoor<wbr>Backend<wbr>Pool<wbr>Health<wbr>Probe<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool_health_probe` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool_health_probe` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -220,8 +220,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpoolloadbalancing">List&lt;Frontdoor<wbr>Backend<wbr>Pool<wbr>Load<wbr>Balancing<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool_load_balancing` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool_load_balancing` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -229,8 +229,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpool">List&lt;Frontdoor<wbr>Backend<wbr>Pool<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -238,8 +238,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enforce certificate name check on `HTTPS` requests to all backend pools, this setting will have no effect on `HTTP` requests. Permitted values are `true` or `false`.
-{{% /md %}}</dd>
+    <dd>Enforce certificate name check on `HTTPS` requests to all backend pools, this setting will have no effect on `HTTP` requests. Permitted values are `true` or `false`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -247,8 +247,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorfrontendendpoint">List&lt;Frontdoor<wbr>Frontend<wbr>Endpoint<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `frontend_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `frontend_endpoint` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -256,8 +256,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which the Front Door service should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which the Front Door service should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -265,8 +265,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorroutingrule">List&lt;Frontdoor<wbr>Routing<wbr>Rule<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `routing_rule` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `routing_rule` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -274,8 +274,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A friendly name for the Front Door service.
-{{% /md %}}</dd>
+    <dd>A friendly name for the Front Door service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -283,8 +283,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Front Door Load Balancer be Enabled? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should the Front Door Load Balancer be Enabled? Defaults to `true`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -292,7 +292,7 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Due to the service&#39;s API changing &#39;location&#39; must now always be set to &#39;Global&#39; for new resources, however if the Front Door service was created prior 2020/03/10 it may continue to exist in a specific current location{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Due to the service&#39;s API changing &#39;location&#39; must now always be set to &#39;Global&#39; for new resources, however if the Front Door service was created prior 2020/03/10 it may continue to exist in a specific current location</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -300,8 +300,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Front Door service. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Front Door service. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -309,14 +309,14 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -325,8 +325,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpoolhealthprobe">[]Frontdoor<wbr>Backend<wbr>Pool<wbr>Health<wbr>Probe</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool_health_probe` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool_health_probe` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -334,8 +334,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpoolloadbalancing">[]Frontdoor<wbr>Backend<wbr>Pool<wbr>Load<wbr>Balancing</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool_load_balancing` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool_load_balancing` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -343,8 +343,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpool">[]Frontdoor<wbr>Backend<wbr>Pool</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -352,8 +352,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enforce certificate name check on `HTTPS` requests to all backend pools, this setting will have no effect on `HTTP` requests. Permitted values are `true` or `false`.
-{{% /md %}}</dd>
+    <dd>Enforce certificate name check on `HTTPS` requests to all backend pools, this setting will have no effect on `HTTP` requests. Permitted values are `true` or `false`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -361,8 +361,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorfrontendendpoint">[]Frontdoor<wbr>Frontend<wbr>Endpoint</a></span>
     </dt>
-    <dd>{{% md %}}A `frontend_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `frontend_endpoint` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -370,8 +370,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which the Front Door service should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which the Front Door service should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -379,8 +379,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorroutingrule">[]Frontdoor<wbr>Routing<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}A `routing_rule` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `routing_rule` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -388,8 +388,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A friendly name for the Front Door service.
-{{% /md %}}</dd>
+    <dd>A friendly name for the Front Door service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -397,8 +397,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Front Door Load Balancer be Enabled? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should the Front Door Load Balancer be Enabled? Defaults to `true`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -406,7 +406,7 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Due to the service&#39;s API changing &#39;location&#39; must now always be set to &#39;Global&#39; for new resources, however if the Front Door service was created prior 2020/03/10 it may continue to exist in a specific current location{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Due to the service&#39;s API changing &#39;location&#39; must now always be set to &#39;Global&#39; for new resources, however if the Front Door service was created prior 2020/03/10 it may continue to exist in a specific current location</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,8 +414,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Front Door service. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Front Door service. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -423,14 +423,14 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -439,8 +439,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpoolhealthprobe">Frontdoor<wbr>Backend<wbr>Pool<wbr>Health<wbr>Probe[]</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool_health_probe` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool_health_probe` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -448,8 +448,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpoolloadbalancing">Frontdoor<wbr>Backend<wbr>Pool<wbr>Load<wbr>Balancing[]</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool_load_balancing` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool_load_balancing` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -457,8 +457,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpool">Frontdoor<wbr>Backend<wbr>Pool[]</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -466,8 +466,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enforce certificate name check on `HTTPS` requests to all backend pools, this setting will have no effect on `HTTP` requests. Permitted values are `true` or `false`.
-{{% /md %}}</dd>
+    <dd>Enforce certificate name check on `HTTPS` requests to all backend pools, this setting will have no effect on `HTTP` requests. Permitted values are `true` or `false`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -475,8 +475,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorfrontendendpoint">Frontdoor<wbr>Frontend<wbr>Endpoint[]</a></span>
     </dt>
-    <dd>{{% md %}}A `frontend_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `frontend_endpoint` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -484,8 +484,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which the Front Door service should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which the Front Door service should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -493,8 +493,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorroutingrule">Frontdoor<wbr>Routing<wbr>Rule[]</a></span>
     </dt>
-    <dd>{{% md %}}A `routing_rule` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `routing_rule` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -502,8 +502,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A friendly name for the Front Door service.
-{{% /md %}}</dd>
+    <dd>A friendly name for the Front Door service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -511,8 +511,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the Front Door Load Balancer be Enabled? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should the Front Door Load Balancer be Enabled? Defaults to `true`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -520,7 +520,7 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Due to the service&#39;s API changing &#39;location&#39; must now always be set to &#39;Global&#39; for new resources, however if the Front Door service was created prior 2020/03/10 it may continue to exist in a specific current location{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Due to the service&#39;s API changing &#39;location&#39; must now always be set to &#39;Global&#39; for new resources, however if the Front Door service was created prior 2020/03/10 it may continue to exist in a specific current location</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -528,8 +528,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Front Door service. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Front Door service. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -537,14 +537,14 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -553,8 +553,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpoolhealthprobe">List[Frontdoor<wbr>Backend<wbr>Pool<wbr>Health<wbr>Probe]</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool_health_probe` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool_health_probe` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -562,8 +562,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpoolloadbalancing">List[Frontdoor<wbr>Backend<wbr>Pool<wbr>Load<wbr>Balancing]</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool_load_balancing` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool_load_balancing` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -571,8 +571,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpool">List[Frontdoor<wbr>Backend<wbr>Pool]</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -580,8 +580,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enforce certificate name check on `HTTPS` requests to all backend pools, this setting will have no effect on `HTTP` requests. Permitted values are `true` or `false`.
-{{% /md %}}</dd>
+    <dd>Enforce certificate name check on `HTTPS` requests to all backend pools, this setting will have no effect on `HTTP` requests. Permitted values are `true` or `false`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -589,8 +589,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorfrontendendpoint">List[Frontdoor<wbr>Frontend<wbr>Endpoint]</a></span>
     </dt>
-    <dd>{{% md %}}A `frontend_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `frontend_endpoint` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -598,8 +598,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which the Front Door service should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which the Front Door service should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -607,8 +607,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorroutingrule">List[Frontdoor<wbr>Routing<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}A `routing_rule` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `routing_rule` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -616,8 +616,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A friendly name for the Front Door service.
-{{% /md %}}</dd>
+    <dd>A friendly name for the Front Door service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -625,8 +625,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Front Door Load Balancer be Enabled? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should the Front Door Load Balancer be Enabled? Defaults to `true`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -634,7 +634,7 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Due to the service&#39;s API changing &#39;location&#39; must now always be set to &#39;Global&#39; for new resources, however if the Front Door service was created prior 2020/03/10 it may continue to exist in a specific current location{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Due to the service&#39;s API changing &#39;location&#39; must now always be set to &#39;Global&#39; for new resources, however if the Front Door service was created prior 2020/03/10 it may continue to exist in a specific current location</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -642,8 +642,8 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Front Door service. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Front Door service. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -651,11 +651,11 @@ The Frontdoor resource accepts the following [input]({{< relref "/docs/intro/con
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -669,7 +669,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -678,8 +678,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The host that each frontendEndpoint must CNAME to.
-{{% /md %}}</dd>
+    <dd>The host that each frontendEndpoint must CNAME to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -687,13 +687,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -702,8 +702,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The host that each frontendEndpoint must CNAME to.
-{{% /md %}}</dd>
+    <dd>The host that each frontendEndpoint must CNAME to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -711,13 +711,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -726,8 +726,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The host that each frontendEndpoint must CNAME to.
-{{% /md %}}</dd>
+    <dd>The host that each frontendEndpoint must CNAME to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -735,13 +735,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -750,8 +750,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The host that each frontendEndpoint must CNAME to.
-{{% /md %}}</dd>
+    <dd>The host that each frontendEndpoint must CNAME to.
+</dd>
 
     <dt class="property-"
             title="">
@@ -759,10 +759,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -773,25 +773,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Frontdoor Resource {#look-up}
 
 Get an existing Frontdoor resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/frontdoor/#FrontdoorState">FrontdoorState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/frontdoor/#Frontdoor">Frontdoor</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>backend_pool_health_probes=None<span class="p">, </span>backend_pool_load_balancings=None<span class="p">, </span>backend_pools=None<span class="p">, </span>cname=None<span class="p">, </span>enforce_backend_pools_certificate_name_check=None<span class="p">, </span>friendly_name=None<span class="p">, </span>frontend_endpoints=None<span class="p">, </span>load_balancer_enabled=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>routing_rules=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetFrontdoor<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#FrontdoorState">FrontdoorState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#Frontdoor">Frontdoor</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.FrontDoor.Frontdoor.html">Frontdoor</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.FrontDoor.FrontdoorState.html">FrontdoorState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -816,9 +816,9 @@ Get an existing Frontdoor resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -831,36 +831,9 @@ Get an existing Frontdoor resource's state with the given name, ID, and optional
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -885,13 +858,40 @@ Get an existing Frontdoor resource's state with the given name, ID, and optional
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -900,8 +900,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpoolhealthprobe">List&lt;Frontdoor<wbr>Backend<wbr>Pool<wbr>Health<wbr>Probe<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool_health_probe` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool_health_probe` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -909,8 +909,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpoolloadbalancing">List&lt;Frontdoor<wbr>Backend<wbr>Pool<wbr>Load<wbr>Balancing<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool_load_balancing` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool_load_balancing` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -918,8 +918,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpool">List&lt;Frontdoor<wbr>Backend<wbr>Pool<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -927,8 +927,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The host that each frontendEndpoint must CNAME to.
-{{% /md %}}</dd>
+    <dd>The host that each frontendEndpoint must CNAME to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -936,8 +936,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enforce certificate name check on `HTTPS` requests to all backend pools, this setting will have no effect on `HTTP` requests. Permitted values are `true` or `false`.
-{{% /md %}}</dd>
+    <dd>Enforce certificate name check on `HTTPS` requests to all backend pools, this setting will have no effect on `HTTP` requests. Permitted values are `true` or `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -945,8 +945,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A friendly name for the Front Door service.
-{{% /md %}}</dd>
+    <dd>A friendly name for the Front Door service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -954,8 +954,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorfrontendendpoint">List&lt;Frontdoor<wbr>Frontend<wbr>Endpoint<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `frontend_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `frontend_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -963,8 +963,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Front Door Load Balancer be Enabled? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should the Front Door Load Balancer be Enabled? Defaults to `true`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -972,7 +972,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Due to the service&#39;s API changing &#39;location&#39; must now always be set to &#39;Global&#39; for new resources, however if the Front Door service was created prior 2020/03/10 it may continue to exist in a specific current location{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Due to the service&#39;s API changing &#39;location&#39; must now always be set to &#39;Global&#39; for new resources, however if the Front Door service was created prior 2020/03/10 it may continue to exist in a specific current location</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -980,8 +980,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Front Door service. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Front Door service. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -989,8 +989,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which the Front Door service should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which the Front Door service should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -998,8 +998,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorroutingrule">List&lt;Frontdoor<wbr>Routing<wbr>Rule<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `routing_rule` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `routing_rule` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1007,14 +1007,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1023,8 +1023,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpoolhealthprobe">[]Frontdoor<wbr>Backend<wbr>Pool<wbr>Health<wbr>Probe</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool_health_probe` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool_health_probe` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1032,8 +1032,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpoolloadbalancing">[]Frontdoor<wbr>Backend<wbr>Pool<wbr>Load<wbr>Balancing</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool_load_balancing` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool_load_balancing` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1041,8 +1041,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpool">[]Frontdoor<wbr>Backend<wbr>Pool</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1050,8 +1050,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The host that each frontendEndpoint must CNAME to.
-{{% /md %}}</dd>
+    <dd>The host that each frontendEndpoint must CNAME to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1059,8 +1059,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enforce certificate name check on `HTTPS` requests to all backend pools, this setting will have no effect on `HTTP` requests. Permitted values are `true` or `false`.
-{{% /md %}}</dd>
+    <dd>Enforce certificate name check on `HTTPS` requests to all backend pools, this setting will have no effect on `HTTP` requests. Permitted values are `true` or `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1068,8 +1068,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A friendly name for the Front Door service.
-{{% /md %}}</dd>
+    <dd>A friendly name for the Front Door service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1077,8 +1077,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorfrontendendpoint">[]Frontdoor<wbr>Frontend<wbr>Endpoint</a></span>
     </dt>
-    <dd>{{% md %}}A `frontend_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `frontend_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1086,8 +1086,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Front Door Load Balancer be Enabled? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should the Front Door Load Balancer be Enabled? Defaults to `true`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1095,7 +1095,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Due to the service&#39;s API changing &#39;location&#39; must now always be set to &#39;Global&#39; for new resources, however if the Front Door service was created prior 2020/03/10 it may continue to exist in a specific current location{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Due to the service&#39;s API changing &#39;location&#39; must now always be set to &#39;Global&#39; for new resources, however if the Front Door service was created prior 2020/03/10 it may continue to exist in a specific current location</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1103,8 +1103,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Front Door service. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Front Door service. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1112,8 +1112,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which the Front Door service should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which the Front Door service should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1121,8 +1121,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorroutingrule">[]Frontdoor<wbr>Routing<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}A `routing_rule` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `routing_rule` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1130,14 +1130,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1146,8 +1146,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpoolhealthprobe">Frontdoor<wbr>Backend<wbr>Pool<wbr>Health<wbr>Probe[]</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool_health_probe` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool_health_probe` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1155,8 +1155,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpoolloadbalancing">Frontdoor<wbr>Backend<wbr>Pool<wbr>Load<wbr>Balancing[]</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool_load_balancing` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool_load_balancing` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1164,8 +1164,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpool">Frontdoor<wbr>Backend<wbr>Pool[]</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1173,8 +1173,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The host that each frontendEndpoint must CNAME to.
-{{% /md %}}</dd>
+    <dd>The host that each frontendEndpoint must CNAME to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1182,8 +1182,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Enforce certificate name check on `HTTPS` requests to all backend pools, this setting will have no effect on `HTTP` requests. Permitted values are `true` or `false`.
-{{% /md %}}</dd>
+    <dd>Enforce certificate name check on `HTTPS` requests to all backend pools, this setting will have no effect on `HTTP` requests. Permitted values are `true` or `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1191,8 +1191,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A friendly name for the Front Door service.
-{{% /md %}}</dd>
+    <dd>A friendly name for the Front Door service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1200,8 +1200,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorfrontendendpoint">Frontdoor<wbr>Frontend<wbr>Endpoint[]</a></span>
     </dt>
-    <dd>{{% md %}}A `frontend_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `frontend_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1209,8 +1209,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the Front Door Load Balancer be Enabled? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should the Front Door Load Balancer be Enabled? Defaults to `true`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1218,7 +1218,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Due to the service&#39;s API changing &#39;location&#39; must now always be set to &#39;Global&#39; for new resources, however if the Front Door service was created prior 2020/03/10 it may continue to exist in a specific current location{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Due to the service&#39;s API changing &#39;location&#39; must now always be set to &#39;Global&#39; for new resources, however if the Front Door service was created prior 2020/03/10 it may continue to exist in a specific current location</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1226,8 +1226,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Front Door service. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Front Door service. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1235,8 +1235,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which the Front Door service should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which the Front Door service should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1244,8 +1244,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorroutingrule">Frontdoor<wbr>Routing<wbr>Rule[]</a></span>
     </dt>
-    <dd>{{% md %}}A `routing_rule` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `routing_rule` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1253,14 +1253,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1269,8 +1269,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpoolhealthprobe">List[Frontdoor<wbr>Backend<wbr>Pool<wbr>Health<wbr>Probe]</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool_health_probe` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool_health_probe` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,8 +1278,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpoolloadbalancing">List[Frontdoor<wbr>Backend<wbr>Pool<wbr>Load<wbr>Balancing]</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool_load_balancing` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool_load_balancing` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,8 +1287,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpool">List[Frontdoor<wbr>Backend<wbr>Pool]</a></span>
     </dt>
-    <dd>{{% md %}}A `backend_pool` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend_pool` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1296,8 +1296,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The host that each frontendEndpoint must CNAME to.
-{{% /md %}}</dd>
+    <dd>The host that each frontendEndpoint must CNAME to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1305,8 +1305,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Enforce certificate name check on `HTTPS` requests to all backend pools, this setting will have no effect on `HTTP` requests. Permitted values are `true` or `false`.
-{{% /md %}}</dd>
+    <dd>Enforce certificate name check on `HTTPS` requests to all backend pools, this setting will have no effect on `HTTP` requests. Permitted values are `true` or `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1314,8 +1314,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A friendly name for the Front Door service.
-{{% /md %}}</dd>
+    <dd>A friendly name for the Front Door service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1323,8 +1323,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorfrontendendpoint">List[Frontdoor<wbr>Frontend<wbr>Endpoint]</a></span>
     </dt>
-    <dd>{{% md %}}A `frontend_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `frontend_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1332,8 +1332,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Front Door Load Balancer be Enabled? Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Should the Front Door Load Balancer be Enabled? Defaults to `true`.
+</dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1341,7 +1341,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Due to the service&#39;s API changing &#39;location&#39; must now always be set to &#39;Global&#39; for new resources, however if the Front Door service was created prior 2020/03/10 it may continue to exist in a specific current location{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Due to the service&#39;s API changing &#39;location&#39; must now always be set to &#39;Global&#39; for new resources, however if the Front Door service was created prior 2020/03/10 it may continue to exist in a specific current location</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1349,8 +1349,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Front Door service. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Front Door service. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1358,8 +1358,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Resource Group in which the Front Door service should exist. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Resource Group in which the Front Door service should exist. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1367,8 +1367,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorroutingrule">List[Frontdoor<wbr>Routing<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}A `routing_rule` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `routing_rule` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1376,11 +1376,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1395,18 +1395,18 @@ The following state arguments are supported:
 
 
 <h4 id="frontdoorbackendpool">Frontdoor<wbr>Backend<wbr>Pool</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#FrontdoorBackendPool">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#FrontdoorBackendPool">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#FrontdoorBackendPoolArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#FrontdoorBackendPoolOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1415,8 +1415,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpoolbackend">List&lt;Frontdoor<wbr>Backend<wbr>Pool<wbr>Backend<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `backend` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1424,8 +1424,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the `backend_pool_health_probe` block whithin this resource to use for this `Backend Pool`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the `backend_pool_health_probe` block whithin this resource to use for this `Backend Pool`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1433,8 +1433,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the `backend_pool_load_balancing` block within this resource to use for this `Backend Pool`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the `backend_pool_load_balancing` block within this resource to use for this `Backend Pool`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1442,8 +1442,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Backend Pool.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Backend Pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1451,14 +1451,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FrontDoor.
-{{% /md %}}</dd>
+    <dd>The ID of the FrontDoor.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1467,8 +1467,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpoolbackend">[]Frontdoor<wbr>Backend<wbr>Pool<wbr>Backend</a></span>
     </dt>
-    <dd>{{% md %}}A `backend` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1476,8 +1476,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the `backend_pool_health_probe` block whithin this resource to use for this `Backend Pool`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the `backend_pool_health_probe` block whithin this resource to use for this `Backend Pool`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1485,8 +1485,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the `backend_pool_load_balancing` block within this resource to use for this `Backend Pool`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the `backend_pool_load_balancing` block within this resource to use for this `Backend Pool`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1494,8 +1494,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Backend Pool.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Backend Pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1503,14 +1503,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FrontDoor.
-{{% /md %}}</dd>
+    <dd>The ID of the FrontDoor.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1519,8 +1519,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpoolbackend">Frontdoor<wbr>Backend<wbr>Pool<wbr>Backend[]</a></span>
     </dt>
-    <dd>{{% md %}}A `backend` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1528,8 +1528,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the `backend_pool_health_probe` block whithin this resource to use for this `Backend Pool`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the `backend_pool_health_probe` block whithin this resource to use for this `Backend Pool`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1537,8 +1537,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the `backend_pool_load_balancing` block within this resource to use for this `Backend Pool`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the `backend_pool_load_balancing` block within this resource to use for this `Backend Pool`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1546,8 +1546,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Backend Pool.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Backend Pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1555,14 +1555,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FrontDoor.
-{{% /md %}}</dd>
+    <dd>The ID of the FrontDoor.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1571,8 +1571,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorbackendpoolbackend">List[Frontdoor<wbr>Backend<wbr>Pool<wbr>Backend]</a></span>
     </dt>
-    <dd>{{% md %}}A `backend` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `backend` block as defined below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1580,8 +1580,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the `backend_pool_health_probe` block whithin this resource to use for this `Backend Pool`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the `backend_pool_health_probe` block whithin this resource to use for this `Backend Pool`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1589,8 +1589,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the `backend_pool_load_balancing` block within this resource to use for this `Backend Pool`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the `backend_pool_load_balancing` block within this resource to use for this `Backend Pool`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1598,8 +1598,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Backend Pool.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Backend Pool.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1607,29 +1607,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FrontDoor.
-{{% /md %}}</dd>
+    <dd>The ID of the FrontDoor.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="frontdoorbackendpoolbackend">Frontdoor<wbr>Backend<wbr>Pool<wbr>Backend</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#FrontdoorBackendPoolBackend">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#FrontdoorBackendPoolBackend">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#FrontdoorBackendPoolBackendArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#FrontdoorBackendPoolBackendOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1638,8 +1638,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Location of the backend (IP address or FQDN)
-{{% /md %}}</dd>
+    <dd>Location of the backend (IP address or FQDN)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1647,8 +1647,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The value to use as the host header sent to the backend.
-{{% /md %}}</dd>
+    <dd>The value to use as the host header sent to the backend.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1656,8 +1656,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP TCP port number. Possible values are between `1` - `65535`.
-{{% /md %}}</dd>
+    <dd>The HTTP TCP port number. Possible values are between `1` - `65535`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1665,8 +1665,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The HTTPS TCP port number. Possible values are between `1` - `65535`.
-{{% /md %}}</dd>
+    <dd>The HTTPS TCP port number. Possible values are between `1` - `65535`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1674,8 +1674,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the backend is enabled or not. Valid options are `true` or `false`. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Specifies if the backend is enabled or not. Valid options are `true` or `false`. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1683,8 +1683,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Priority to use for load balancing. Higher priorities will not be used for load balancing if any lower priority backend is healthy. Defaults to `1`.
-{{% /md %}}</dd>
+    <dd>Priority to use for load balancing. Higher priorities will not be used for load balancing if any lower priority backend is healthy. Defaults to `1`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1692,14 +1692,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Weight of this endpoint for load balancing purposes. Defaults to `50`.
-{{% /md %}}</dd>
+    <dd>Weight of this endpoint for load balancing purposes. Defaults to `50`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1708,8 +1708,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Location of the backend (IP address or FQDN)
-{{% /md %}}</dd>
+    <dd>Location of the backend (IP address or FQDN)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1717,8 +1717,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value to use as the host header sent to the backend.
-{{% /md %}}</dd>
+    <dd>The value to use as the host header sent to the backend.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1726,8 +1726,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP TCP port number. Possible values are between `1` - `65535`.
-{{% /md %}}</dd>
+    <dd>The HTTP TCP port number. Possible values are between `1` - `65535`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1735,8 +1735,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The HTTPS TCP port number. Possible values are between `1` - `65535`.
-{{% /md %}}</dd>
+    <dd>The HTTPS TCP port number. Possible values are between `1` - `65535`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1744,8 +1744,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the backend is enabled or not. Valid options are `true` or `false`. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Specifies if the backend is enabled or not. Valid options are `true` or `false`. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1753,8 +1753,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Priority to use for load balancing. Higher priorities will not be used for load balancing if any lower priority backend is healthy. Defaults to `1`.
-{{% /md %}}</dd>
+    <dd>Priority to use for load balancing. Higher priorities will not be used for load balancing if any lower priority backend is healthy. Defaults to `1`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1762,14 +1762,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Weight of this endpoint for load balancing purposes. Defaults to `50`.
-{{% /md %}}</dd>
+    <dd>Weight of this endpoint for load balancing purposes. Defaults to `50`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1778,8 +1778,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Location of the backend (IP address or FQDN)
-{{% /md %}}</dd>
+    <dd>Location of the backend (IP address or FQDN)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1787,8 +1787,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value to use as the host header sent to the backend.
-{{% /md %}}</dd>
+    <dd>The value to use as the host header sent to the backend.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1796,8 +1796,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP TCP port number. Possible values are between `1` - `65535`.
-{{% /md %}}</dd>
+    <dd>The HTTP TCP port number. Possible values are between `1` - `65535`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1805,8 +1805,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The HTTPS TCP port number. Possible values are between `1` - `65535`.
-{{% /md %}}</dd>
+    <dd>The HTTPS TCP port number. Possible values are between `1` - `65535`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1814,8 +1814,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the backend is enabled or not. Valid options are `true` or `false`. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Specifies if the backend is enabled or not. Valid options are `true` or `false`. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1823,8 +1823,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Priority to use for load balancing. Higher priorities will not be used for load balancing if any lower priority backend is healthy. Defaults to `1`.
-{{% /md %}}</dd>
+    <dd>Priority to use for load balancing. Higher priorities will not be used for load balancing if any lower priority backend is healthy. Defaults to `1`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1832,14 +1832,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Weight of this endpoint for load balancing purposes. Defaults to `50`.
-{{% /md %}}</dd>
+    <dd>Weight of this endpoint for load balancing purposes. Defaults to `50`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1848,8 +1848,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Location of the backend (IP address or FQDN)
-{{% /md %}}</dd>
+    <dd>Location of the backend (IP address or FQDN)
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1857,8 +1857,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The value to use as the host header sent to the backend.
-{{% /md %}}</dd>
+    <dd>The value to use as the host header sent to the backend.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1866,8 +1866,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP TCP port number. Possible values are between `1` - `65535`.
-{{% /md %}}</dd>
+    <dd>The HTTP TCP port number. Possible values are between `1` - `65535`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1875,8 +1875,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The HTTPS TCP port number. Possible values are between `1` - `65535`.
-{{% /md %}}</dd>
+    <dd>The HTTPS TCP port number. Possible values are between `1` - `65535`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1884,8 +1884,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the backend is enabled or not. Valid options are `true` or `false`. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Specifies if the backend is enabled or not. Valid options are `true` or `false`. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1893,8 +1893,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Priority to use for load balancing. Higher priorities will not be used for load balancing if any lower priority backend is healthy. Defaults to `1`.
-{{% /md %}}</dd>
+    <dd>Priority to use for load balancing. Higher priorities will not be used for load balancing if any lower priority backend is healthy. Defaults to `1`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1902,29 +1902,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Weight of this endpoint for load balancing purposes. Defaults to `50`.
-{{% /md %}}</dd>
+    <dd>Weight of this endpoint for load balancing purposes. Defaults to `50`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="frontdoorbackendpoolhealthprobe">Frontdoor<wbr>Backend<wbr>Pool<wbr>Health<wbr>Probe</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#FrontdoorBackendPoolHealthProbe">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#FrontdoorBackendPoolHealthProbe">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#FrontdoorBackendPoolHealthProbeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#FrontdoorBackendPoolHealthProbeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1933,8 +1933,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Health Probe.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Health Probe.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1942,8 +1942,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is this health probe enabled? Dafaults to `true`.
-{{% /md %}}</dd>
+    <dd>Is this health probe enabled? Dafaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1951,8 +1951,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FrontDoor.
-{{% /md %}}</dd>
+    <dd>The ID of the FrontDoor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1960,8 +1960,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds between each Health Probe. Defaults to `120`.
-{{% /md %}}</dd>
+    <dd>The number of seconds between each Health Probe. Defaults to `120`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1969,8 +1969,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to use for the Health Probe. Default is `/`.
-{{% /md %}}</dd>
+    <dd>The path to use for the Health Probe. Default is `/`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1978,8 +1978,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies HTTP method the health probe uses when querying the backend pool instances. Possible values include: `Get` and `Head`. Defaults to `Get`.
-{{% /md %}}</dd>
+    <dd>Specifies HTTP method the health probe uses when querying the backend pool instances. Possible values include: `Get` and `Head`. Defaults to `Get`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1987,14 +1987,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Protocol scheme to use for the Health Probe. Defaults to `Http`.
-{{% /md %}}</dd>
+    <dd>Protocol scheme to use for the Health Probe. Defaults to `Http`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2003,8 +2003,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Health Probe.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Health Probe.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2012,8 +2012,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is this health probe enabled? Dafaults to `true`.
-{{% /md %}}</dd>
+    <dd>Is this health probe enabled? Dafaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2021,8 +2021,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FrontDoor.
-{{% /md %}}</dd>
+    <dd>The ID of the FrontDoor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2030,8 +2030,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds between each Health Probe. Defaults to `120`.
-{{% /md %}}</dd>
+    <dd>The number of seconds between each Health Probe. Defaults to `120`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2039,8 +2039,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to use for the Health Probe. Default is `/`.
-{{% /md %}}</dd>
+    <dd>The path to use for the Health Probe. Default is `/`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2048,8 +2048,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies HTTP method the health probe uses when querying the backend pool instances. Possible values include: `Get` and `Head`. Defaults to `Get`.
-{{% /md %}}</dd>
+    <dd>Specifies HTTP method the health probe uses when querying the backend pool instances. Possible values include: `Get` and `Head`. Defaults to `Get`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2057,14 +2057,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Protocol scheme to use for the Health Probe. Defaults to `Http`.
-{{% /md %}}</dd>
+    <dd>Protocol scheme to use for the Health Probe. Defaults to `Http`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2073,8 +2073,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Health Probe.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Health Probe.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2082,8 +2082,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is this health probe enabled? Dafaults to `true`.
-{{% /md %}}</dd>
+    <dd>Is this health probe enabled? Dafaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2091,8 +2091,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FrontDoor.
-{{% /md %}}</dd>
+    <dd>The ID of the FrontDoor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2100,8 +2100,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds between each Health Probe. Defaults to `120`.
-{{% /md %}}</dd>
+    <dd>The number of seconds between each Health Probe. Defaults to `120`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2109,8 +2109,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to use for the Health Probe. Default is `/`.
-{{% /md %}}</dd>
+    <dd>The path to use for the Health Probe. Default is `/`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2118,8 +2118,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies HTTP method the health probe uses when querying the backend pool instances. Possible values include: `Get` and `Head`. Defaults to `Get`.
-{{% /md %}}</dd>
+    <dd>Specifies HTTP method the health probe uses when querying the backend pool instances. Possible values include: `Get` and `Head`. Defaults to `Get`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2127,14 +2127,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Protocol scheme to use for the Health Probe. Defaults to `Http`.
-{{% /md %}}</dd>
+    <dd>Protocol scheme to use for the Health Probe. Defaults to `Http`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2143,8 +2143,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Health Probe.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Health Probe.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2152,8 +2152,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is this health probe enabled? Dafaults to `true`.
-{{% /md %}}</dd>
+    <dd>Is this health probe enabled? Dafaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2161,8 +2161,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FrontDoor.
-{{% /md %}}</dd>
+    <dd>The ID of the FrontDoor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2170,8 +2170,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds between each Health Probe. Defaults to `120`.
-{{% /md %}}</dd>
+    <dd>The number of seconds between each Health Probe. Defaults to `120`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2179,8 +2179,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path to use for the Health Probe. Default is `/`.
-{{% /md %}}</dd>
+    <dd>The path to use for the Health Probe. Default is `/`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2188,8 +2188,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies HTTP method the health probe uses when querying the backend pool instances. Possible values include: `Get` and `Head`. Defaults to `Get`.
-{{% /md %}}</dd>
+    <dd>Specifies HTTP method the health probe uses when querying the backend pool instances. Possible values include: `Get` and `Head`. Defaults to `Get`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2197,29 +2197,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Protocol scheme to use for the Health Probe. Defaults to `Http`.
-{{% /md %}}</dd>
+    <dd>Protocol scheme to use for the Health Probe. Defaults to `Http`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="frontdoorbackendpoolloadbalancing">Frontdoor<wbr>Backend<wbr>Pool<wbr>Load<wbr>Balancing</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#FrontdoorBackendPoolLoadBalancing">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#FrontdoorBackendPoolLoadBalancing">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#FrontdoorBackendPoolLoadBalancingArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#FrontdoorBackendPoolLoadBalancingOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2228,8 +2228,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Load Balancer.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Load Balancer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2237,8 +2237,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The additional latency in milliseconds for probes to fall into the lowest latency bucket. Defaults to `0`.
-{{% /md %}}</dd>
+    <dd>The additional latency in milliseconds for probes to fall into the lowest latency bucket. Defaults to `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2246,8 +2246,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FrontDoor.
-{{% /md %}}</dd>
+    <dd>The ID of the FrontDoor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2255,8 +2255,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of samples to consider for load balancing decisions. Defaults to `4`.
-{{% /md %}}</dd>
+    <dd>The number of samples to consider for load balancing decisions. Defaults to `4`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2264,14 +2264,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of samples within the sample period that must succeed. Defaults to `2`.
-{{% /md %}}</dd>
+    <dd>The number of samples within the sample period that must succeed. Defaults to `2`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2280,8 +2280,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Load Balancer.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Load Balancer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2289,8 +2289,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The additional latency in milliseconds for probes to fall into the lowest latency bucket. Defaults to `0`.
-{{% /md %}}</dd>
+    <dd>The additional latency in milliseconds for probes to fall into the lowest latency bucket. Defaults to `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2298,8 +2298,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FrontDoor.
-{{% /md %}}</dd>
+    <dd>The ID of the FrontDoor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2307,8 +2307,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of samples to consider for load balancing decisions. Defaults to `4`.
-{{% /md %}}</dd>
+    <dd>The number of samples to consider for load balancing decisions. Defaults to `4`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2316,14 +2316,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of samples within the sample period that must succeed. Defaults to `2`.
-{{% /md %}}</dd>
+    <dd>The number of samples within the sample period that must succeed. Defaults to `2`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2332,8 +2332,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Load Balancer.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Load Balancer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2341,8 +2341,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The additional latency in milliseconds for probes to fall into the lowest latency bucket. Defaults to `0`.
-{{% /md %}}</dd>
+    <dd>The additional latency in milliseconds for probes to fall into the lowest latency bucket. Defaults to `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2350,8 +2350,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FrontDoor.
-{{% /md %}}</dd>
+    <dd>The ID of the FrontDoor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2359,8 +2359,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of samples to consider for load balancing decisions. Defaults to `4`.
-{{% /md %}}</dd>
+    <dd>The number of samples to consider for load balancing decisions. Defaults to `4`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2368,14 +2368,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of samples within the sample period that must succeed. Defaults to `2`.
-{{% /md %}}</dd>
+    <dd>The number of samples within the sample period that must succeed. Defaults to `2`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2384,8 +2384,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Load Balancer.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Load Balancer.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2393,8 +2393,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The additional latency in milliseconds for probes to fall into the lowest latency bucket. Defaults to `0`.
-{{% /md %}}</dd>
+    <dd>The additional latency in milliseconds for probes to fall into the lowest latency bucket. Defaults to `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2402,8 +2402,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FrontDoor.
-{{% /md %}}</dd>
+    <dd>The ID of the FrontDoor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2411,8 +2411,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of samples to consider for load balancing decisions. Defaults to `4`.
-{{% /md %}}</dd>
+    <dd>The number of samples to consider for load balancing decisions. Defaults to `4`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2420,29 +2420,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of samples within the sample period that must succeed. Defaults to `2`.
-{{% /md %}}</dd>
+    <dd>The number of samples within the sample period that must succeed. Defaults to `2`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="frontdoorfrontendendpoint">Frontdoor<wbr>Frontend<wbr>Endpoint</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#FrontdoorFrontendEndpoint">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#FrontdoorFrontendEndpoint">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#FrontdoorFrontendEndpointArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#FrontdoorFrontendEndpointOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2451,8 +2451,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the HTTPS protocol be enabled for a custom domain associated with the Front Door?
-{{% /md %}}</dd>
+    <dd>Should the HTTPS protocol be enabled for a custom domain associated with the Front Door?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2460,8 +2460,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the host name of the `frontend_endpoint`. Must be a domain name.
-{{% /md %}}</dd>
+    <dd>Specifies the host name of the `frontend_endpoint`. Must be a domain name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2469,8 +2469,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the `frontend_endpoint`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the `frontend_endpoint`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2478,8 +2478,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorfrontendendpointcustomhttpsconfiguration">Frontdoor<wbr>Frontend<wbr>Endpoint<wbr>Custom<wbr>Https<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `custom_https_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `custom_https_configuration` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2487,8 +2487,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FrontDoor.
-{{% /md %}}</dd>
+    <dd>The ID of the FrontDoor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2496,8 +2496,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow session affinity on this host. Valid options are `true` or `false` Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to allow session affinity on this host. Valid options are `true` or `false` Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2505,8 +2505,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The TTL to use in seconds for session affinity, if applicable. Defaults to `0`.
-{{% /md %}}</dd>
+    <dd>The TTL to use in seconds for session affinity, if applicable. Defaults to `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2514,14 +2514,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the Web Application Firewall policy `ID` for each host.
-{{% /md %}}</dd>
+    <dd>Defines the Web Application Firewall policy `ID` for each host.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2530,8 +2530,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the HTTPS protocol be enabled for a custom domain associated with the Front Door?
-{{% /md %}}</dd>
+    <dd>Should the HTTPS protocol be enabled for a custom domain associated with the Front Door?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2539,8 +2539,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the host name of the `frontend_endpoint`. Must be a domain name.
-{{% /md %}}</dd>
+    <dd>Specifies the host name of the `frontend_endpoint`. Must be a domain name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2548,8 +2548,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the `frontend_endpoint`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the `frontend_endpoint`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2557,8 +2557,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorfrontendendpointcustomhttpsconfiguration">Frontdoor<wbr>Frontend<wbr>Endpoint<wbr>Custom<wbr>Https<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}A `custom_https_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `custom_https_configuration` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2566,8 +2566,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FrontDoor.
-{{% /md %}}</dd>
+    <dd>The ID of the FrontDoor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2575,8 +2575,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow session affinity on this host. Valid options are `true` or `false` Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to allow session affinity on this host. Valid options are `true` or `false` Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2584,8 +2584,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The TTL to use in seconds for session affinity, if applicable. Defaults to `0`.
-{{% /md %}}</dd>
+    <dd>The TTL to use in seconds for session affinity, if applicable. Defaults to `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2593,14 +2593,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the Web Application Firewall policy `ID` for each host.
-{{% /md %}}</dd>
+    <dd>Defines the Web Application Firewall policy `ID` for each host.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2609,8 +2609,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the HTTPS protocol be enabled for a custom domain associated with the Front Door?
-{{% /md %}}</dd>
+    <dd>Should the HTTPS protocol be enabled for a custom domain associated with the Front Door?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2618,8 +2618,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the host name of the `frontend_endpoint`. Must be a domain name.
-{{% /md %}}</dd>
+    <dd>Specifies the host name of the `frontend_endpoint`. Must be a domain name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2627,8 +2627,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the `frontend_endpoint`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the `frontend_endpoint`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2636,8 +2636,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorfrontendendpointcustomhttpsconfiguration">Frontdoor<wbr>Frontend<wbr>Endpoint<wbr>Custom<wbr>Https<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}A `custom_https_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `custom_https_configuration` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2645,8 +2645,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FrontDoor.
-{{% /md %}}</dd>
+    <dd>The ID of the FrontDoor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2654,8 +2654,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow session affinity on this host. Valid options are `true` or `false` Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to allow session affinity on this host. Valid options are `true` or `false` Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2663,8 +2663,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The TTL to use in seconds for session affinity, if applicable. Defaults to `0`.
-{{% /md %}}</dd>
+    <dd>The TTL to use in seconds for session affinity, if applicable. Defaults to `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2672,14 +2672,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the Web Application Firewall policy `ID` for each host.
-{{% /md %}}</dd>
+    <dd>Defines the Web Application Firewall policy `ID` for each host.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2688,8 +2688,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the HTTPS protocol be enabled for a custom domain associated with the Front Door?
-{{% /md %}}</dd>
+    <dd>Should the HTTPS protocol be enabled for a custom domain associated with the Front Door?
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2697,8 +2697,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the host name of the `frontend_endpoint`. Must be a domain name.
-{{% /md %}}</dd>
+    <dd>Specifies the host name of the `frontend_endpoint`. Must be a domain name.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2706,8 +2706,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the `frontend_endpoint`.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the `frontend_endpoint`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2715,8 +2715,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorfrontendendpointcustomhttpsconfiguration">Dict[Frontdoor<wbr>Frontend<wbr>Endpoint<wbr>Custom<wbr>Https<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}A `custom_https_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `custom_https_configuration` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2724,8 +2724,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FrontDoor.
-{{% /md %}}</dd>
+    <dd>The ID of the FrontDoor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2733,8 +2733,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to allow session affinity on this host. Valid options are `true` or `false` Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to allow session affinity on this host. Valid options are `true` or `false` Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2742,8 +2742,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The TTL to use in seconds for session affinity, if applicable. Defaults to `0`.
-{{% /md %}}</dd>
+    <dd>The TTL to use in seconds for session affinity, if applicable. Defaults to `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2751,29 +2751,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Defines the Web Application Firewall policy `ID` for each host.
-{{% /md %}}</dd>
+    <dd>Defines the Web Application Firewall policy `ID` for each host.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="frontdoorfrontendendpointcustomhttpsconfiguration">Frontdoor<wbr>Frontend<wbr>Endpoint<wbr>Custom<wbr>Https<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#FrontdoorFrontendEndpointCustomHttpsConfiguration">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#FrontdoorFrontendEndpointCustomHttpsConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#FrontdoorFrontendEndpointCustomHttpsConfigurationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#FrontdoorFrontendEndpointCustomHttpsConfigurationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2782,8 +2782,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Key Vault secret representing the full certificate PFX.
-{{% /md %}}</dd>
+    <dd>The name of the Key Vault secret representing the full certificate PFX.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2791,8 +2791,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the Key Vault secret representing the full certificate PFX.
-{{% /md %}}</dd>
+    <dd>The version of the Key Vault secret representing the full certificate PFX.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2800,8 +2800,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Key Vault containing the SSL certificate.
-{{% /md %}}</dd>
+    <dd>The ID of the Key Vault containing the SSL certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2809,8 +2809,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Certificate source to encrypted `HTTPS` traffic with. Allowed values are `FrontDoor` or `AzureKeyVault`. Defaults to `FrontDoor`.
-{{% /md %}}</dd>
+    <dd>Certificate source to encrypted `HTTPS` traffic with. Allowed values are `FrontDoor` or `AzureKeyVault`. Defaults to `FrontDoor`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2818,8 +2818,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Minimum client TLS version supported.
-{{% /md %}}</dd>
+    <dd>Minimum client TLS version supported.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2827,8 +2827,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Provisioning state of the Front Door.
-{{% /md %}}</dd>
+    <dd>Provisioning state of the Front Door.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2836,14 +2836,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Provisioning substate of the Front Door
-{{% /md %}}</dd>
+    <dd>Provisioning substate of the Front Door
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2852,8 +2852,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Key Vault secret representing the full certificate PFX.
-{{% /md %}}</dd>
+    <dd>The name of the Key Vault secret representing the full certificate PFX.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2861,8 +2861,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the Key Vault secret representing the full certificate PFX.
-{{% /md %}}</dd>
+    <dd>The version of the Key Vault secret representing the full certificate PFX.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2870,8 +2870,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Key Vault containing the SSL certificate.
-{{% /md %}}</dd>
+    <dd>The ID of the Key Vault containing the SSL certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2879,8 +2879,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Certificate source to encrypted `HTTPS` traffic with. Allowed values are `FrontDoor` or `AzureKeyVault`. Defaults to `FrontDoor`.
-{{% /md %}}</dd>
+    <dd>Certificate source to encrypted `HTTPS` traffic with. Allowed values are `FrontDoor` or `AzureKeyVault`. Defaults to `FrontDoor`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2888,8 +2888,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Minimum client TLS version supported.
-{{% /md %}}</dd>
+    <dd>Minimum client TLS version supported.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2897,8 +2897,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Provisioning state of the Front Door.
-{{% /md %}}</dd>
+    <dd>Provisioning state of the Front Door.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2906,14 +2906,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Provisioning substate of the Front Door
-{{% /md %}}</dd>
+    <dd>Provisioning substate of the Front Door
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2922,8 +2922,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Key Vault secret representing the full certificate PFX.
-{{% /md %}}</dd>
+    <dd>The name of the Key Vault secret representing the full certificate PFX.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2931,8 +2931,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of the Key Vault secret representing the full certificate PFX.
-{{% /md %}}</dd>
+    <dd>The version of the Key Vault secret representing the full certificate PFX.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2940,8 +2940,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Key Vault containing the SSL certificate.
-{{% /md %}}</dd>
+    <dd>The ID of the Key Vault containing the SSL certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2949,8 +2949,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Certificate source to encrypted `HTTPS` traffic with. Allowed values are `FrontDoor` or `AzureKeyVault`. Defaults to `FrontDoor`.
-{{% /md %}}</dd>
+    <dd>Certificate source to encrypted `HTTPS` traffic with. Allowed values are `FrontDoor` or `AzureKeyVault`. Defaults to `FrontDoor`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2958,8 +2958,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Minimum client TLS version supported.
-{{% /md %}}</dd>
+    <dd>Minimum client TLS version supported.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2967,8 +2967,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Provisioning state of the Front Door.
-{{% /md %}}</dd>
+    <dd>Provisioning state of the Front Door.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2976,14 +2976,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Provisioning substate of the Front Door
-{{% /md %}}</dd>
+    <dd>Provisioning substate of the Front Door
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2992,8 +2992,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Key Vault secret representing the full certificate PFX.
-{{% /md %}}</dd>
+    <dd>The name of the Key Vault secret representing the full certificate PFX.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3001,8 +3001,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of the Key Vault secret representing the full certificate PFX.
-{{% /md %}}</dd>
+    <dd>The version of the Key Vault secret representing the full certificate PFX.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3010,8 +3010,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Key Vault containing the SSL certificate.
-{{% /md %}}</dd>
+    <dd>The ID of the Key Vault containing the SSL certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3019,8 +3019,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Certificate source to encrypted `HTTPS` traffic with. Allowed values are `FrontDoor` or `AzureKeyVault`. Defaults to `FrontDoor`.
-{{% /md %}}</dd>
+    <dd>Certificate source to encrypted `HTTPS` traffic with. Allowed values are `FrontDoor` or `AzureKeyVault`. Defaults to `FrontDoor`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3028,8 +3028,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Minimum client TLS version supported.
-{{% /md %}}</dd>
+    <dd>Minimum client TLS version supported.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3037,8 +3037,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Provisioning state of the Front Door.
-{{% /md %}}</dd>
+    <dd>Provisioning state of the Front Door.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3046,29 +3046,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Provisioning substate of the Front Door
-{{% /md %}}</dd>
+    <dd>Provisioning substate of the Front Door
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="frontdoorroutingrule">Frontdoor<wbr>Routing<wbr>Rule</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#FrontdoorRoutingRule">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#FrontdoorRoutingRule">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#FrontdoorRoutingRuleArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#FrontdoorRoutingRuleOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3077,8 +3077,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Protocol schemes to match for the Backend Routing Rule. Defaults to `Http`.
-{{% /md %}}</dd>
+    <dd>Protocol schemes to match for the Backend Routing Rule. Defaults to `Http`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3086,8 +3086,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The names of the `frontend_endpoint` blocks whithin this resource to associate with this `routing_rule`.
-{{% /md %}}</dd>
+    <dd>The names of the `frontend_endpoint` blocks whithin this resource to associate with this `routing_rule`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3095,8 +3095,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Routing Rule.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Routing Rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3104,8 +3104,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The route patterns for the Backend Routing Rule. Defaults to `/*`.
-{{% /md %}}</dd>
+    <dd>The route patterns for the Backend Routing Rule. Defaults to `/*`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3113,8 +3113,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}`Enable` or `Disable` use of this Backend Routing Rule. Permitted values are `true` or `false`. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>`Enable` or `Disable` use of this Backend Routing Rule. Permitted values are `true` or `false`. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3122,8 +3122,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorroutingruleforwardingconfiguration">Frontdoor<wbr>Routing<wbr>Rule<wbr>Forwarding<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `forwarding_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `forwarding_configuration` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3131,8 +3131,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FrontDoor.
-{{% /md %}}</dd>
+    <dd>The ID of the FrontDoor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3140,14 +3140,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorroutingruleredirectconfiguration">Frontdoor<wbr>Routing<wbr>Rule<wbr>Redirect<wbr>Configuration<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `redirect_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `redirect_configuration` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3156,8 +3156,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Protocol schemes to match for the Backend Routing Rule. Defaults to `Http`.
-{{% /md %}}</dd>
+    <dd>Protocol schemes to match for the Backend Routing Rule. Defaults to `Http`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3165,8 +3165,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The names of the `frontend_endpoint` blocks whithin this resource to associate with this `routing_rule`.
-{{% /md %}}</dd>
+    <dd>The names of the `frontend_endpoint` blocks whithin this resource to associate with this `routing_rule`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3174,8 +3174,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Routing Rule.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Routing Rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3183,8 +3183,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The route patterns for the Backend Routing Rule. Defaults to `/*`.
-{{% /md %}}</dd>
+    <dd>The route patterns for the Backend Routing Rule. Defaults to `/*`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3192,8 +3192,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}`Enable` or `Disable` use of this Backend Routing Rule. Permitted values are `true` or `false`. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>`Enable` or `Disable` use of this Backend Routing Rule. Permitted values are `true` or `false`. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3201,8 +3201,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorroutingruleforwardingconfiguration">Frontdoor<wbr>Routing<wbr>Rule<wbr>Forwarding<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}A `forwarding_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `forwarding_configuration` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3210,8 +3210,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FrontDoor.
-{{% /md %}}</dd>
+    <dd>The ID of the FrontDoor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3219,14 +3219,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorroutingruleredirectconfiguration">Frontdoor<wbr>Routing<wbr>Rule<wbr>Redirect<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}A `redirect_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `redirect_configuration` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3235,8 +3235,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Protocol schemes to match for the Backend Routing Rule. Defaults to `Http`.
-{{% /md %}}</dd>
+    <dd>Protocol schemes to match for the Backend Routing Rule. Defaults to `Http`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3244,8 +3244,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The names of the `frontend_endpoint` blocks whithin this resource to associate with this `routing_rule`.
-{{% /md %}}</dd>
+    <dd>The names of the `frontend_endpoint` blocks whithin this resource to associate with this `routing_rule`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3253,8 +3253,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Routing Rule.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Routing Rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3262,8 +3262,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The route patterns for the Backend Routing Rule. Defaults to `/*`.
-{{% /md %}}</dd>
+    <dd>The route patterns for the Backend Routing Rule. Defaults to `/*`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3271,8 +3271,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}`Enable` or `Disable` use of this Backend Routing Rule. Permitted values are `true` or `false`. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>`Enable` or `Disable` use of this Backend Routing Rule. Permitted values are `true` or `false`. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3280,8 +3280,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorroutingruleforwardingconfiguration">Frontdoor<wbr>Routing<wbr>Rule<wbr>Forwarding<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}A `forwarding_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `forwarding_configuration` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3289,8 +3289,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FrontDoor.
-{{% /md %}}</dd>
+    <dd>The ID of the FrontDoor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3298,14 +3298,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorroutingruleredirectconfiguration">Frontdoor<wbr>Routing<wbr>Rule<wbr>Redirect<wbr>Configuration</a></span>
     </dt>
-    <dd>{{% md %}}A `redirect_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `redirect_configuration` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3314,8 +3314,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Protocol schemes to match for the Backend Routing Rule. Defaults to `Http`.
-{{% /md %}}</dd>
+    <dd>Protocol schemes to match for the Backend Routing Rule. Defaults to `Http`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3323,8 +3323,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The names of the `frontend_endpoint` blocks whithin this resource to associate with this `routing_rule`.
-{{% /md %}}</dd>
+    <dd>The names of the `frontend_endpoint` blocks whithin this resource to associate with this `routing_rule`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3332,8 +3332,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Routing Rule.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Routing Rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3341,8 +3341,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The route patterns for the Backend Routing Rule. Defaults to `/*`.
-{{% /md %}}</dd>
+    <dd>The route patterns for the Backend Routing Rule. Defaults to `/*`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3350,8 +3350,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}`Enable` or `Disable` use of this Backend Routing Rule. Permitted values are `true` or `false`. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>`Enable` or `Disable` use of this Backend Routing Rule. Permitted values are `true` or `false`. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3359,8 +3359,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorroutingruleforwardingconfiguration">Dict[Frontdoor<wbr>Routing<wbr>Rule<wbr>Forwarding<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}A `forwarding_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `forwarding_configuration` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3368,8 +3368,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the FrontDoor.
-{{% /md %}}</dd>
+    <dd>The ID of the FrontDoor.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3377,29 +3377,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#frontdoorroutingruleredirectconfiguration">Dict[Frontdoor<wbr>Routing<wbr>Rule<wbr>Redirect<wbr>Configuration]</a></span>
     </dt>
-    <dd>{{% md %}}A `redirect_configuration` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `redirect_configuration` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="frontdoorroutingruleforwardingconfiguration">Frontdoor<wbr>Routing<wbr>Rule<wbr>Forwarding<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#FrontdoorRoutingRuleForwardingConfiguration">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#FrontdoorRoutingRuleForwardingConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#FrontdoorRoutingRuleForwardingConfigurationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#FrontdoorRoutingRuleForwardingConfigurationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3408,8 +3408,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Backend Pool to forward the incoming traffic to.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Backend Pool to forward the incoming traffic to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3417,8 +3417,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to Enable caching or not. Valid options are `true` or `false`. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether to Enable caching or not. Valid options are `true` or `false`. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3426,8 +3426,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines cache behavior in releation to query string parameters. Valid options are `StripAll` or `StripNone`. Defaults to `StripAll`.
-{{% /md %}}</dd>
+    <dd>Defines cache behavior in releation to query string parameters. Valid options are `StripAll` or `StripNone`. Defaults to `StripAll`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3435,8 +3435,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use dynamic compression when caching. Valid options are `true` or `false`. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to use dynamic compression when caching. Valid options are `true` or `false`. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3444,8 +3444,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to use when constructing the request to forward to the backend. This functions as a URL Rewrite. Default behavior preserves the URL path.
-{{% /md %}}</dd>
+    <dd>Path to use when constructing the request to forward to the backend. This functions as a URL Rewrite. Default behavior preserves the URL path.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3453,14 +3453,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Protocol to use when redirecting. Valid options are `HttpOnly`, `HttpsOnly`, or `MatchRequest`. Defaults to `HttpsOnly`.
-{{% /md %}}</dd>
+    <dd>Protocol to use when redirecting. Valid options are `HttpOnly`, `HttpsOnly`, or `MatchRequest`. Defaults to `HttpsOnly`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3469,8 +3469,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Backend Pool to forward the incoming traffic to.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Backend Pool to forward the incoming traffic to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3478,8 +3478,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to Enable caching or not. Valid options are `true` or `false`. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether to Enable caching or not. Valid options are `true` or `false`. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3487,8 +3487,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines cache behavior in releation to query string parameters. Valid options are `StripAll` or `StripNone`. Defaults to `StripAll`.
-{{% /md %}}</dd>
+    <dd>Defines cache behavior in releation to query string parameters. Valid options are `StripAll` or `StripNone`. Defaults to `StripAll`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3496,8 +3496,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use dynamic compression when caching. Valid options are `true` or `false`. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to use dynamic compression when caching. Valid options are `true` or `false`. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3505,8 +3505,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to use when constructing the request to forward to the backend. This functions as a URL Rewrite. Default behavior preserves the URL path.
-{{% /md %}}</dd>
+    <dd>Path to use when constructing the request to forward to the backend. This functions as a URL Rewrite. Default behavior preserves the URL path.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3514,14 +3514,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Protocol to use when redirecting. Valid options are `HttpOnly`, `HttpsOnly`, or `MatchRequest`. Defaults to `HttpsOnly`.
-{{% /md %}}</dd>
+    <dd>Protocol to use when redirecting. Valid options are `HttpOnly`, `HttpsOnly`, or `MatchRequest`. Defaults to `HttpsOnly`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3530,8 +3530,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Backend Pool to forward the incoming traffic to.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Backend Pool to forward the incoming traffic to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3539,8 +3539,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to Enable caching or not. Valid options are `true` or `false`. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether to Enable caching or not. Valid options are `true` or `false`. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3548,8 +3548,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines cache behavior in releation to query string parameters. Valid options are `StripAll` or `StripNone`. Defaults to `StripAll`.
-{{% /md %}}</dd>
+    <dd>Defines cache behavior in releation to query string parameters. Valid options are `StripAll` or `StripNone`. Defaults to `StripAll`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3557,8 +3557,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use dynamic compression when caching. Valid options are `true` or `false`. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to use dynamic compression when caching. Valid options are `true` or `false`. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3566,8 +3566,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Path to use when constructing the request to forward to the backend. This functions as a URL Rewrite. Default behavior preserves the URL path.
-{{% /md %}}</dd>
+    <dd>Path to use when constructing the request to forward to the backend. This functions as a URL Rewrite. Default behavior preserves the URL path.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3575,14 +3575,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Protocol to use when redirecting. Valid options are `HttpOnly`, `HttpsOnly`, or `MatchRequest`. Defaults to `HttpsOnly`.
-{{% /md %}}</dd>
+    <dd>Protocol to use when redirecting. Valid options are `HttpOnly`, `HttpsOnly`, or `MatchRequest`. Defaults to `HttpsOnly`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3591,8 +3591,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Backend Pool to forward the incoming traffic to.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Backend Pool to forward the incoming traffic to.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3600,8 +3600,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether to Enable caching or not. Valid options are `true` or `false`. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies whether to Enable caching or not. Valid options are `true` or `false`. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3609,8 +3609,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Defines cache behavior in releation to query string parameters. Valid options are `StripAll` or `StripNone`. Defaults to `StripAll`.
-{{% /md %}}</dd>
+    <dd>Defines cache behavior in releation to query string parameters. Valid options are `StripAll` or `StripNone`. Defaults to `StripAll`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3618,8 +3618,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to use dynamic compression when caching. Valid options are `true` or `false`. Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Whether to use dynamic compression when caching. Valid options are `true` or `false`. Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3627,8 +3627,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Path to use when constructing the request to forward to the backend. This functions as a URL Rewrite. Default behavior preserves the URL path.
-{{% /md %}}</dd>
+    <dd>Path to use when constructing the request to forward to the backend. This functions as a URL Rewrite. Default behavior preserves the URL path.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3636,29 +3636,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Protocol to use when redirecting. Valid options are `HttpOnly`, `HttpsOnly`, or `MatchRequest`. Defaults to `HttpsOnly`.
-{{% /md %}}</dd>
+    <dd>Protocol to use when redirecting. Valid options are `HttpOnly`, `HttpsOnly`, or `MatchRequest`. Defaults to `HttpsOnly`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="frontdoorroutingruleredirectconfiguration">Frontdoor<wbr>Routing<wbr>Rule<wbr>Redirect<wbr>Configuration</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#FrontdoorRoutingRuleRedirectConfiguration">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#FrontdoorRoutingRuleRedirectConfiguration">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#FrontdoorRoutingRuleRedirectConfigurationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/frontdoor?tab=doc#FrontdoorRoutingRuleRedirectConfigurationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3667,8 +3667,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Protocol to use when redirecting. Valid options are `HttpOnly`, `HttpsOnly`, or `MatchRequest`. Defaults to `MatchRequest`
-{{% /md %}}</dd>
+    <dd>Protocol to use when redirecting. Valid options are `HttpOnly`, `HttpsOnly`, or `MatchRequest`. Defaults to `MatchRequest`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3676,8 +3676,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Status code for the redirect. Valida options are `Moved`, `Found`, `TemporaryRedirect`, `PermanentRedirect`. Defaults to `Found`
-{{% /md %}}</dd>
+    <dd>Status code for the redirect. Valida options are `Moved`, `Found`, `TemporaryRedirect`, `PermanentRedirect`. Defaults to `Found`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3685,8 +3685,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination fragment in the portion of URL after '#'. Set this to add a fragment to the redirect URL.
-{{% /md %}}</dd>
+    <dd>The destination fragment in the portion of URL after '#'. Set this to add a fragment to the redirect URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3694,8 +3694,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Set this to change the URL for the redirection.
-{{% /md %}}</dd>
+    <dd>Set this to change the URL for the redirection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3703,8 +3703,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to retain as per the incoming request, or update in the URL for the redirection.
-{{% /md %}}</dd>
+    <dd>The path to retain as per the incoming request, or update in the URL for the redirection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3712,14 +3712,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Replace any existing query string from the incoming request URL.
-{{% /md %}}</dd>
+    <dd>Replace any existing query string from the incoming request URL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3728,8 +3728,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Protocol to use when redirecting. Valid options are `HttpOnly`, `HttpsOnly`, or `MatchRequest`. Defaults to `MatchRequest`
-{{% /md %}}</dd>
+    <dd>Protocol to use when redirecting. Valid options are `HttpOnly`, `HttpsOnly`, or `MatchRequest`. Defaults to `MatchRequest`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3737,8 +3737,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status code for the redirect. Valida options are `Moved`, `Found`, `TemporaryRedirect`, `PermanentRedirect`. Defaults to `Found`
-{{% /md %}}</dd>
+    <dd>Status code for the redirect. Valida options are `Moved`, `Found`, `TemporaryRedirect`, `PermanentRedirect`. Defaults to `Found`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3746,8 +3746,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination fragment in the portion of URL after '#'. Set this to add a fragment to the redirect URL.
-{{% /md %}}</dd>
+    <dd>The destination fragment in the portion of URL after '#'. Set this to add a fragment to the redirect URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3755,8 +3755,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Set this to change the URL for the redirection.
-{{% /md %}}</dd>
+    <dd>Set this to change the URL for the redirection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3764,8 +3764,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to retain as per the incoming request, or update in the URL for the redirection.
-{{% /md %}}</dd>
+    <dd>The path to retain as per the incoming request, or update in the URL for the redirection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3773,14 +3773,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Replace any existing query string from the incoming request URL.
-{{% /md %}}</dd>
+    <dd>Replace any existing query string from the incoming request URL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3789,8 +3789,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Protocol to use when redirecting. Valid options are `HttpOnly`, `HttpsOnly`, or `MatchRequest`. Defaults to `MatchRequest`
-{{% /md %}}</dd>
+    <dd>Protocol to use when redirecting. Valid options are `HttpOnly`, `HttpsOnly`, or `MatchRequest`. Defaults to `MatchRequest`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3798,8 +3798,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Status code for the redirect. Valida options are `Moved`, `Found`, `TemporaryRedirect`, `PermanentRedirect`. Defaults to `Found`
-{{% /md %}}</dd>
+    <dd>Status code for the redirect. Valida options are `Moved`, `Found`, `TemporaryRedirect`, `PermanentRedirect`. Defaults to `Found`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3807,8 +3807,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The destination fragment in the portion of URL after '#'. Set this to add a fragment to the redirect URL.
-{{% /md %}}</dd>
+    <dd>The destination fragment in the portion of URL after '#'. Set this to add a fragment to the redirect URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3816,8 +3816,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Set this to change the URL for the redirection.
-{{% /md %}}</dd>
+    <dd>Set this to change the URL for the redirection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3825,8 +3825,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path to retain as per the incoming request, or update in the URL for the redirection.
-{{% /md %}}</dd>
+    <dd>The path to retain as per the incoming request, or update in the URL for the redirection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3834,14 +3834,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Replace any existing query string from the incoming request URL.
-{{% /md %}}</dd>
+    <dd>Replace any existing query string from the incoming request URL.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3850,8 +3850,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Protocol to use when redirecting. Valid options are `HttpOnly`, `HttpsOnly`, or `MatchRequest`. Defaults to `MatchRequest`
-{{% /md %}}</dd>
+    <dd>Protocol to use when redirecting. Valid options are `HttpOnly`, `HttpsOnly`, or `MatchRequest`. Defaults to `MatchRequest`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3859,8 +3859,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Status code for the redirect. Valida options are `Moved`, `Found`, `TemporaryRedirect`, `PermanentRedirect`. Defaults to `Found`
-{{% /md %}}</dd>
+    <dd>Status code for the redirect. Valida options are `Moved`, `Found`, `TemporaryRedirect`, `PermanentRedirect`. Defaults to `Found`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3868,8 +3868,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The destination fragment in the portion of URL after '#'. Set this to add a fragment to the redirect URL.
-{{% /md %}}</dd>
+    <dd>The destination fragment in the portion of URL after '#'. Set this to add a fragment to the redirect URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3877,8 +3877,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Set this to change the URL for the redirection.
-{{% /md %}}</dd>
+    <dd>Set this to change the URL for the redirection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3886,8 +3886,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path to retain as per the incoming request, or update in the URL for the redirection.
-{{% /md %}}</dd>
+    <dd>The path to retain as per the incoming request, or update in the URL for the redirection.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3895,11 +3895,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Replace any existing query string from the incoming request URL.
-{{% /md %}}</dd>
+    <dd>Replace any existing query string from the incoming request URL.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

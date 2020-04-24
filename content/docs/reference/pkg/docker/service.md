@@ -14,26 +14,26 @@ meta_desc: "Explore the Service resource of the Docker package, including exampl
 
 
 ## Create a Service Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/docker/#Service">Service</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/docker/#ServiceArgs">ServiceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Service</span><span class="p">(resource_name, opts=None, </span>auth=None<span class="p">, </span>converge_config=None<span class="p">, </span>endpoint_spec=None<span class="p">, </span>labels=None<span class="p">, </span>mode=None<span class="p">, </span>name=None<span class="p">, </span>rollback_config=None<span class="p">, </span>task_spec=None<span class="p">, </span>update_config=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewService<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceArgs">ServiceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#Service">Service</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Docker/Pulumi.Docker.Service.html">Service</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Docker/Pulumi.Docker.ServiceArgs.html">ServiceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the Service resource of the Docker package, including exampl
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the Service resource of the Docker package, including exampl
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the Service resource of the Docker package, including exampl
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the Service resource of the Docker package, including exampl
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Service Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,8 +200,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspec">Service<wbr>Task<wbr>Spec<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}See TaskSpec below for details.
-{{% /md %}}</dd>
+    <dd>See TaskSpec below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -209,8 +209,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceauth">Service<wbr>Auth<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}See Auth below for details.
-{{% /md %}}</dd>
+    <dd>See Auth below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -218,8 +218,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceconvergeconfig">Service<wbr>Converge<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}See Converge Config below for details.
-{{% /md %}}</dd>
+    <dd>See Converge Config below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -227,8 +227,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceendpointspec">Service<wbr>Endpoint<wbr>Spec<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}See EndpointSpec below for details.
-{{% /md %}}</dd>
+    <dd>See EndpointSpec below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -236,8 +236,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicelabel">List&lt;Service<wbr>Label<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See Labels below for details.
-{{% /md %}}</dd>
+    <dd>See Labels below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -245,8 +245,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicemode">Service<wbr>Mode<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}See Mode below for details.
-{{% /md %}}</dd>
+    <dd>See Mode below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -254,8 +254,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Docker service.
-{{% /md %}}</dd>
+    <dd>The name of the Docker service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -263,8 +263,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicerollbackconfig">Service<wbr>Rollback<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}See RollbackConfig below for details.
-{{% /md %}}</dd>
+    <dd>See RollbackConfig below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -272,14 +272,14 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceupdateconfig">Service<wbr>Update<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}See UpdateConfig below for details.
-{{% /md %}}</dd>
+    <dd>See UpdateConfig below for details.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -288,8 +288,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspec">Service<wbr>Task<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}See TaskSpec below for details.
-{{% /md %}}</dd>
+    <dd>See TaskSpec below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -297,8 +297,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceauth">Service<wbr>Auth</a></span>
     </dt>
-    <dd>{{% md %}}See Auth below for details.
-{{% /md %}}</dd>
+    <dd>See Auth below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -306,8 +306,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceconvergeconfig">Service<wbr>Converge<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}See Converge Config below for details.
-{{% /md %}}</dd>
+    <dd>See Converge Config below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -315,8 +315,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceendpointspec">Service<wbr>Endpoint<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}See EndpointSpec below for details.
-{{% /md %}}</dd>
+    <dd>See EndpointSpec below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -324,8 +324,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicelabel">[]Service<wbr>Label</a></span>
     </dt>
-    <dd>{{% md %}}See Labels below for details.
-{{% /md %}}</dd>
+    <dd>See Labels below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -333,8 +333,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicemode">Service<wbr>Mode</a></span>
     </dt>
-    <dd>{{% md %}}See Mode below for details.
-{{% /md %}}</dd>
+    <dd>See Mode below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -342,8 +342,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Docker service.
-{{% /md %}}</dd>
+    <dd>The name of the Docker service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -351,8 +351,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicerollbackconfig">Service<wbr>Rollback<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}See RollbackConfig below for details.
-{{% /md %}}</dd>
+    <dd>See RollbackConfig below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -360,14 +360,14 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceupdateconfig">Service<wbr>Update<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}See UpdateConfig below for details.
-{{% /md %}}</dd>
+    <dd>See UpdateConfig below for details.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -376,8 +376,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspec">Service<wbr>Task<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}See TaskSpec below for details.
-{{% /md %}}</dd>
+    <dd>See TaskSpec below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -385,8 +385,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceauth">Service<wbr>Auth</a></span>
     </dt>
-    <dd>{{% md %}}See Auth below for details.
-{{% /md %}}</dd>
+    <dd>See Auth below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -394,8 +394,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceconvergeconfig">Service<wbr>Converge<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}See Converge Config below for details.
-{{% /md %}}</dd>
+    <dd>See Converge Config below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -403,8 +403,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceendpointspec">Service<wbr>Endpoint<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}See EndpointSpec below for details.
-{{% /md %}}</dd>
+    <dd>See EndpointSpec below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -412,8 +412,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicelabel">Service<wbr>Label[]</a></span>
     </dt>
-    <dd>{{% md %}}See Labels below for details.
-{{% /md %}}</dd>
+    <dd>See Labels below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -421,8 +421,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicemode">Service<wbr>Mode</a></span>
     </dt>
-    <dd>{{% md %}}See Mode below for details.
-{{% /md %}}</dd>
+    <dd>See Mode below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -430,8 +430,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Docker service.
-{{% /md %}}</dd>
+    <dd>The name of the Docker service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -439,8 +439,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicerollbackconfig">Service<wbr>Rollback<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}See RollbackConfig below for details.
-{{% /md %}}</dd>
+    <dd>See RollbackConfig below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -448,14 +448,14 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceupdateconfig">Service<wbr>Update<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}See UpdateConfig below for details.
-{{% /md %}}</dd>
+    <dd>See UpdateConfig below for details.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -464,8 +464,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspec">Dict[Service<wbr>Task<wbr>Spec]</a></span>
     </dt>
-    <dd>{{% md %}}See TaskSpec below for details.
-{{% /md %}}</dd>
+    <dd>See TaskSpec below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -473,8 +473,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceauth">Dict[Service<wbr>Auth]</a></span>
     </dt>
-    <dd>{{% md %}}See Auth below for details.
-{{% /md %}}</dd>
+    <dd>See Auth below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -482,8 +482,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceconvergeconfig">Dict[Service<wbr>Converge<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}See Converge Config below for details.
-{{% /md %}}</dd>
+    <dd>See Converge Config below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -491,8 +491,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceendpointspec">Dict[Service<wbr>Endpoint<wbr>Spec]</a></span>
     </dt>
-    <dd>{{% md %}}See EndpointSpec below for details.
-{{% /md %}}</dd>
+    <dd>See EndpointSpec below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -500,8 +500,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicelabel">List[Service<wbr>Label]</a></span>
     </dt>
-    <dd>{{% md %}}See Labels below for details.
-{{% /md %}}</dd>
+    <dd>See Labels below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -509,8 +509,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicemode">Dict[Service<wbr>Mode]</a></span>
     </dt>
-    <dd>{{% md %}}See Mode below for details.
-{{% /md %}}</dd>
+    <dd>See Mode below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -518,8 +518,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Docker service.
-{{% /md %}}</dd>
+    <dd>The name of the Docker service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -527,8 +527,8 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicerollbackconfig">Dict[Service<wbr>Rollback<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}See RollbackConfig below for details.
-{{% /md %}}</dd>
+    <dd>See RollbackConfig below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -536,11 +536,11 @@ The Service resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceupdateconfig">Dict[Service<wbr>Update<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}See UpdateConfig below for details.
-{{% /md %}}</dd>
+    <dd>See UpdateConfig below for details.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -554,7 +554,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -563,13 +563,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -578,13 +578,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -593,13 +593,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -608,10 +608,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -622,25 +622,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Service Resource {#look-up}
 
 Get an existing Service resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/docker/#ServiceState">ServiceState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/docker/#Service">Service</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>auth=None<span class="p">, </span>converge_config=None<span class="p">, </span>endpoint_spec=None<span class="p">, </span>labels=None<span class="p">, </span>mode=None<span class="p">, </span>name=None<span class="p">, </span>rollback_config=None<span class="p">, </span>task_spec=None<span class="p">, </span>update_config=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetService<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceState">ServiceState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#Service">Service</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Docker/Pulumi.Docker.Service.html">Service</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Docker/Pulumi.Docker..ServiceState.html">ServiceState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -665,9 +665,9 @@ Get an existing Service resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -680,36 +680,9 @@ Get an existing Service resource's state with the given name, ID, and optional e
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -734,13 +707,40 @@ Get an existing Service resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -749,8 +749,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceauth">Service<wbr>Auth<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}See Auth below for details.
-{{% /md %}}</dd>
+    <dd>See Auth below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -758,8 +758,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceconvergeconfig">Service<wbr>Converge<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}See Converge Config below for details.
-{{% /md %}}</dd>
+    <dd>See Converge Config below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -767,8 +767,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceendpointspec">Service<wbr>Endpoint<wbr>Spec<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}See EndpointSpec below for details.
-{{% /md %}}</dd>
+    <dd>See EndpointSpec below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -776,8 +776,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicelabel">List&lt;Service<wbr>Label<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See Labels below for details.
-{{% /md %}}</dd>
+    <dd>See Labels below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -785,8 +785,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicemode">Service<wbr>Mode<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}See Mode below for details.
-{{% /md %}}</dd>
+    <dd>See Mode below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -794,8 +794,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Docker service.
-{{% /md %}}</dd>
+    <dd>The name of the Docker service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -803,8 +803,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicerollbackconfig">Service<wbr>Rollback<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}See RollbackConfig below for details.
-{{% /md %}}</dd>
+    <dd>See RollbackConfig below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -812,8 +812,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspec">Service<wbr>Task<wbr>Spec<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}See TaskSpec below for details.
-{{% /md %}}</dd>
+    <dd>See TaskSpec below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -821,14 +821,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceupdateconfig">Service<wbr>Update<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}See UpdateConfig below for details.
-{{% /md %}}</dd>
+    <dd>See UpdateConfig below for details.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -837,8 +837,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceauth">Service<wbr>Auth</a></span>
     </dt>
-    <dd>{{% md %}}See Auth below for details.
-{{% /md %}}</dd>
+    <dd>See Auth below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -846,8 +846,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceconvergeconfig">Service<wbr>Converge<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}See Converge Config below for details.
-{{% /md %}}</dd>
+    <dd>See Converge Config below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -855,8 +855,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceendpointspec">Service<wbr>Endpoint<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}See EndpointSpec below for details.
-{{% /md %}}</dd>
+    <dd>See EndpointSpec below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -864,8 +864,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicelabel">[]Service<wbr>Label</a></span>
     </dt>
-    <dd>{{% md %}}See Labels below for details.
-{{% /md %}}</dd>
+    <dd>See Labels below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -873,8 +873,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicemode">Service<wbr>Mode</a></span>
     </dt>
-    <dd>{{% md %}}See Mode below for details.
-{{% /md %}}</dd>
+    <dd>See Mode below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -882,8 +882,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Docker service.
-{{% /md %}}</dd>
+    <dd>The name of the Docker service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -891,8 +891,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicerollbackconfig">Service<wbr>Rollback<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}See RollbackConfig below for details.
-{{% /md %}}</dd>
+    <dd>See RollbackConfig below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -900,8 +900,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspec">Service<wbr>Task<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}See TaskSpec below for details.
-{{% /md %}}</dd>
+    <dd>See TaskSpec below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -909,14 +909,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceupdateconfig">Service<wbr>Update<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}See UpdateConfig below for details.
-{{% /md %}}</dd>
+    <dd>See UpdateConfig below for details.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -925,8 +925,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceauth">Service<wbr>Auth</a></span>
     </dt>
-    <dd>{{% md %}}See Auth below for details.
-{{% /md %}}</dd>
+    <dd>See Auth below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -934,8 +934,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceconvergeconfig">Service<wbr>Converge<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}See Converge Config below for details.
-{{% /md %}}</dd>
+    <dd>See Converge Config below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -943,8 +943,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceendpointspec">Service<wbr>Endpoint<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}See EndpointSpec below for details.
-{{% /md %}}</dd>
+    <dd>See EndpointSpec below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -952,8 +952,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicelabel">Service<wbr>Label[]</a></span>
     </dt>
-    <dd>{{% md %}}See Labels below for details.
-{{% /md %}}</dd>
+    <dd>See Labels below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -961,8 +961,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicemode">Service<wbr>Mode</a></span>
     </dt>
-    <dd>{{% md %}}See Mode below for details.
-{{% /md %}}</dd>
+    <dd>See Mode below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -970,8 +970,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Docker service.
-{{% /md %}}</dd>
+    <dd>The name of the Docker service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -979,8 +979,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicerollbackconfig">Service<wbr>Rollback<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}See RollbackConfig below for details.
-{{% /md %}}</dd>
+    <dd>See RollbackConfig below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -988,8 +988,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspec">Service<wbr>Task<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}See TaskSpec below for details.
-{{% /md %}}</dd>
+    <dd>See TaskSpec below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -997,14 +997,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceupdateconfig">Service<wbr>Update<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}See UpdateConfig below for details.
-{{% /md %}}</dd>
+    <dd>See UpdateConfig below for details.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1013,8 +1013,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceauth">Dict[Service<wbr>Auth]</a></span>
     </dt>
-    <dd>{{% md %}}See Auth below for details.
-{{% /md %}}</dd>
+    <dd>See Auth below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1022,8 +1022,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceconvergeconfig">Dict[Service<wbr>Converge<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}See Converge Config below for details.
-{{% /md %}}</dd>
+    <dd>See Converge Config below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1031,8 +1031,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceendpointspec">Dict[Service<wbr>Endpoint<wbr>Spec]</a></span>
     </dt>
-    <dd>{{% md %}}See EndpointSpec below for details.
-{{% /md %}}</dd>
+    <dd>See EndpointSpec below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1040,8 +1040,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicelabel">List[Service<wbr>Label]</a></span>
     </dt>
-    <dd>{{% md %}}See Labels below for details.
-{{% /md %}}</dd>
+    <dd>See Labels below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1049,8 +1049,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicemode">Dict[Service<wbr>Mode]</a></span>
     </dt>
-    <dd>{{% md %}}See Mode below for details.
-{{% /md %}}</dd>
+    <dd>See Mode below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1058,8 +1058,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Docker service.
-{{% /md %}}</dd>
+    <dd>The name of the Docker service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1067,8 +1067,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicerollbackconfig">Dict[Service<wbr>Rollback<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}See RollbackConfig below for details.
-{{% /md %}}</dd>
+    <dd>See RollbackConfig below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1076,8 +1076,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspec">Dict[Service<wbr>Task<wbr>Spec]</a></span>
     </dt>
-    <dd>{{% md %}}See TaskSpec below for details.
-{{% /md %}}</dd>
+    <dd>See TaskSpec below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1085,11 +1085,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceupdateconfig">Dict[Service<wbr>Update<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}See UpdateConfig below for details.
-{{% /md %}}</dd>
+    <dd>See UpdateConfig below for details.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1104,18 +1104,18 @@ The following state arguments are supported:
 
 
 <h4 id="serviceauth">Service<wbr>Auth</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceAuth">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceAuth">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceAuthArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceAuthOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1124,8 +1124,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of the registry server
-{{% /md %}}</dd>
+    <dd>The address of the registry server
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1133,8 +1133,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The password to use for authenticating to the registry. If this is blank, the `DOCKER_REGISTRY_PASS` is also be checked.
-{{% /md %}}</dd>
+    <dd>The password to use for authenticating to the registry. If this is blank, the `DOCKER_REGISTRY_PASS` is also be checked.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1142,14 +1142,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The username to use for authenticating to the registry. If this is blank, the `DOCKER_REGISTRY_USER` is also be checked. 
-{{% /md %}}</dd>
+    <dd>The username to use for authenticating to the registry. If this is blank, the `DOCKER_REGISTRY_USER` is also be checked. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1158,8 +1158,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of the registry server
-{{% /md %}}</dd>
+    <dd>The address of the registry server
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1167,8 +1167,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password to use for authenticating to the registry. If this is blank, the `DOCKER_REGISTRY_PASS` is also be checked.
-{{% /md %}}</dd>
+    <dd>The password to use for authenticating to the registry. If this is blank, the `DOCKER_REGISTRY_PASS` is also be checked.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1176,14 +1176,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username to use for authenticating to the registry. If this is blank, the `DOCKER_REGISTRY_USER` is also be checked. 
-{{% /md %}}</dd>
+    <dd>The username to use for authenticating to the registry. If this is blank, the `DOCKER_REGISTRY_USER` is also be checked. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1192,8 +1192,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The address of the registry server
-{{% /md %}}</dd>
+    <dd>The address of the registry server
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1201,8 +1201,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The password to use for authenticating to the registry. If this is blank, the `DOCKER_REGISTRY_PASS` is also be checked.
-{{% /md %}}</dd>
+    <dd>The password to use for authenticating to the registry. If this is blank, the `DOCKER_REGISTRY_PASS` is also be checked.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1210,14 +1210,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The username to use for authenticating to the registry. If this is blank, the `DOCKER_REGISTRY_USER` is also be checked. 
-{{% /md %}}</dd>
+    <dd>The username to use for authenticating to the registry. If this is blank, the `DOCKER_REGISTRY_USER` is also be checked. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1226,8 +1226,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The address of the registry server
-{{% /md %}}</dd>
+    <dd>The address of the registry server
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1235,8 +1235,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The password to use for authenticating to the registry. If this is blank, the `DOCKER_REGISTRY_PASS` is also be checked.
-{{% /md %}}</dd>
+    <dd>The password to use for authenticating to the registry. If this is blank, the `DOCKER_REGISTRY_PASS` is also be checked.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1244,29 +1244,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The username to use for authenticating to the registry. If this is blank, the `DOCKER_REGISTRY_USER` is also be checked. 
-{{% /md %}}</dd>
+    <dd>The username to use for authenticating to the registry. If this is blank, the `DOCKER_REGISTRY_USER` is also be checked. 
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="serviceconvergeconfig">Service<wbr>Converge<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceConvergeConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceConvergeConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceConvergeConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceConvergeConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1275,9 +1275,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Time between each the check to check docker endpoint `(ms|s|m|h)`. For example, to check if
+    <dd>Time between each the check to check docker endpoint `(ms|s|m|h)`. For example, to check if
 all tasks are up when a service is created, or to check if all tasks are successfully updated on an update. Default: `7s`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1285,14 +1285,14 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The timeout of the service to reach the desired state `(s|m)`. Default: `3m`.
-{{% /md %}}</dd>
+    <dd>The timeout of the service to reach the desired state `(s|m)`. Default: `3m`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1301,9 +1301,9 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Time between each the check to check docker endpoint `(ms|s|m|h)`. For example, to check if
+    <dd>Time between each the check to check docker endpoint `(ms|s|m|h)`. For example, to check if
 all tasks are up when a service is created, or to check if all tasks are successfully updated on an update. Default: `7s`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1311,14 +1311,14 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The timeout of the service to reach the desired state `(s|m)`. Default: `3m`.
-{{% /md %}}</dd>
+    <dd>The timeout of the service to reach the desired state `(s|m)`. Default: `3m`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1327,9 +1327,9 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Time between each the check to check docker endpoint `(ms|s|m|h)`. For example, to check if
+    <dd>Time between each the check to check docker endpoint `(ms|s|m|h)`. For example, to check if
 all tasks are up when a service is created, or to check if all tasks are successfully updated on an update. Default: `7s`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1337,14 +1337,14 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The timeout of the service to reach the desired state `(s|m)`. Default: `3m`.
-{{% /md %}}</dd>
+    <dd>The timeout of the service to reach the desired state `(s|m)`. Default: `3m`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1353,9 +1353,9 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Time between each the check to check docker endpoint `(ms|s|m|h)`. For example, to check if
+    <dd>Time between each the check to check docker endpoint `(ms|s|m|h)`. For example, to check if
 all tasks are up when a service is created, or to check if all tasks are successfully updated on an update. Default: `7s`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1363,29 +1363,29 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The timeout of the service to reach the desired state `(s|m)`. Default: `3m`.
-{{% /md %}}</dd>
+    <dd>The timeout of the service to reach the desired state `(s|m)`. Default: `3m`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="serviceendpointspec">Service<wbr>Endpoint<wbr>Spec</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceEndpointSpec">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceEndpointSpec">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceEndpointSpecArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceEndpointSpecOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1394,8 +1394,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The mode of resolution to use for internal load balancing between tasks. `(vip|dnsrr)`. Default: `vip`.
-{{% /md %}}</dd>
+    <dd>The mode of resolution to use for internal load balancing between tasks. `(vip|dnsrr)`. Default: `vip`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1403,14 +1403,14 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceendpointspecport">List&lt;Service<wbr>Endpoint<wbr>Spec<wbr>Port<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See Ports below for details.
-{{% /md %}}</dd>
+    <dd>See Ports below for details.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1419,8 +1419,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The mode of resolution to use for internal load balancing between tasks. `(vip|dnsrr)`. Default: `vip`.
-{{% /md %}}</dd>
+    <dd>The mode of resolution to use for internal load balancing between tasks. `(vip|dnsrr)`. Default: `vip`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1428,14 +1428,14 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceendpointspecport">[]Service<wbr>Endpoint<wbr>Spec<wbr>Port</a></span>
     </dt>
-    <dd>{{% md %}}See Ports below for details.
-{{% /md %}}</dd>
+    <dd>See Ports below for details.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1444,8 +1444,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The mode of resolution to use for internal load balancing between tasks. `(vip|dnsrr)`. Default: `vip`.
-{{% /md %}}</dd>
+    <dd>The mode of resolution to use for internal load balancing between tasks. `(vip|dnsrr)`. Default: `vip`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1453,14 +1453,14 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceendpointspecport">Service<wbr>Endpoint<wbr>Spec<wbr>Port[]</a></span>
     </dt>
-    <dd>{{% md %}}See Ports below for details.
-{{% /md %}}</dd>
+    <dd>See Ports below for details.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1469,8 +1469,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The mode of resolution to use for internal load balancing between tasks. `(vip|dnsrr)`. Default: `vip`.
-{{% /md %}}</dd>
+    <dd>The mode of resolution to use for internal load balancing between tasks. `(vip|dnsrr)`. Default: `vip`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1478,29 +1478,29 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#serviceendpointspecport">List[Service<wbr>Endpoint<wbr>Spec<wbr>Port]</a></span>
     </dt>
-    <dd>{{% md %}}See Ports below for details.
-{{% /md %}}</dd>
+    <dd>See Ports below for details.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="serviceendpointspecport">Service<wbr>Endpoint<wbr>Spec<wbr>Port</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceEndpointSpecPort">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceEndpointSpecPort">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceEndpointSpecPortArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceEndpointSpecPortOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1509,8 +1509,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Port inside the container.
-{{% /md %}}</dd>
+    <dd>Port inside the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1518,8 +1518,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Docker service.
-{{% /md %}}</dd>
+    <dd>The name of the Docker service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1527,8 +1527,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Protocol that can be used over this port: `tcp|udp|sctp`. Default: `tcp`.
-{{% /md %}}</dd>
+    <dd>Protocol that can be used over this port: `tcp|udp|sctp`. Default: `tcp`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1536,8 +1536,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Represents the mode in which the port is to be published: `ingress|host`
-{{% /md %}}</dd>
+    <dd>Represents the mode in which the port is to be published: `ingress|host`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1545,14 +1545,14 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The port on the swarm hosts. If not set the value of `target_port` will be used.
-{{% /md %}}</dd>
+    <dd>The port on the swarm hosts. If not set the value of `target_port` will be used.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1561,8 +1561,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Port inside the container.
-{{% /md %}}</dd>
+    <dd>Port inside the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1570,8 +1570,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Docker service.
-{{% /md %}}</dd>
+    <dd>The name of the Docker service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1579,8 +1579,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Protocol that can be used over this port: `tcp|udp|sctp`. Default: `tcp`.
-{{% /md %}}</dd>
+    <dd>Protocol that can be used over this port: `tcp|udp|sctp`. Default: `tcp`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1588,8 +1588,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Represents the mode in which the port is to be published: `ingress|host`
-{{% /md %}}</dd>
+    <dd>Represents the mode in which the port is to be published: `ingress|host`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1597,14 +1597,14 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The port on the swarm hosts. If not set the value of `target_port` will be used.
-{{% /md %}}</dd>
+    <dd>The port on the swarm hosts. If not set the value of `target_port` will be used.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1613,8 +1613,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Port inside the container.
-{{% /md %}}</dd>
+    <dd>Port inside the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1622,8 +1622,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Docker service.
-{{% /md %}}</dd>
+    <dd>The name of the Docker service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1631,8 +1631,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Protocol that can be used over this port: `tcp|udp|sctp`. Default: `tcp`.
-{{% /md %}}</dd>
+    <dd>Protocol that can be used over this port: `tcp|udp|sctp`. Default: `tcp`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1640,8 +1640,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Represents the mode in which the port is to be published: `ingress|host`
-{{% /md %}}</dd>
+    <dd>Represents the mode in which the port is to be published: `ingress|host`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1649,14 +1649,14 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The port on the swarm hosts. If not set the value of `target_port` will be used.
-{{% /md %}}</dd>
+    <dd>The port on the swarm hosts. If not set the value of `target_port` will be used.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1665,8 +1665,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Port inside the container.
-{{% /md %}}</dd>
+    <dd>Port inside the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1674,8 +1674,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the Docker service.
-{{% /md %}}</dd>
+    <dd>The name of the Docker service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1683,8 +1683,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Protocol that can be used over this port: `tcp|udp|sctp`. Default: `tcp`.
-{{% /md %}}</dd>
+    <dd>Protocol that can be used over this port: `tcp|udp|sctp`. Default: `tcp`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1692,8 +1692,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Represents the mode in which the port is to be published: `ingress|host`
-{{% /md %}}</dd>
+    <dd>Represents the mode in which the port is to be published: `ingress|host`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1701,29 +1701,29 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The port on the swarm hosts. If not set the value of `target_port` will be used.
-{{% /md %}}</dd>
+    <dd>The port on the swarm hosts. If not set the value of `target_port` will be used.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicelabel">Service<wbr>Label</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceLabel">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceLabel">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceLabelArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceLabelOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1732,9 +1732,9 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the label
+    <dd>Name of the label
 * `value` (Required, string) Value of the label
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1742,13 +1742,13 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1757,9 +1757,9 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the label
+    <dd>Name of the label
 * `value` (Required, string) Value of the label
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1767,13 +1767,13 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1782,9 +1782,9 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the label
+    <dd>Name of the label
 * `value` (Required, string) Value of the label
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1792,13 +1792,13 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1807,9 +1807,9 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the label
+    <dd>Name of the label
 * `value` (Required, string) Value of the label
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1817,28 +1817,28 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicemode">Service<wbr>Mode</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceMode">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceMode">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceModeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceModeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1847,8 +1847,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}set it to `true` to run the service in the global mode
-{{% /md %}}</dd>
+    <dd>set it to `true` to run the service in the global mode
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1856,14 +1856,14 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicemodereplicated">Service<wbr>Mode<wbr>Replicated<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}, which contains atm only the amount of `replicas`
-{{% /md %}}</dd>
+    <dd>, which contains atm only the amount of `replicas`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1872,8 +1872,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}set it to `true` to run the service in the global mode
-{{% /md %}}</dd>
+    <dd>set it to `true` to run the service in the global mode
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1881,14 +1881,14 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicemodereplicated">Service<wbr>Mode<wbr>Replicated</a></span>
     </dt>
-    <dd>{{% md %}}, which contains atm only the amount of `replicas`
-{{% /md %}}</dd>
+    <dd>, which contains atm only the amount of `replicas`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1897,8 +1897,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}set it to `true` to run the service in the global mode
-{{% /md %}}</dd>
+    <dd>set it to `true` to run the service in the global mode
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1906,14 +1906,14 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicemodereplicated">Service<wbr>Mode<wbr>Replicated</a></span>
     </dt>
-    <dd>{{% md %}}, which contains atm only the amount of `replicas`
-{{% /md %}}</dd>
+    <dd>, which contains atm only the amount of `replicas`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1922,8 +1922,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}set it to `true` to run the service in the global mode
-{{% /md %}}</dd>
+    <dd>set it to `true` to run the service in the global mode
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1931,29 +1931,29 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicemodereplicated">Dict[Service<wbr>Mode<wbr>Replicated]</a></span>
     </dt>
-    <dd>{{% md %}}, which contains atm only the amount of `replicas`
-{{% /md %}}</dd>
+    <dd>, which contains atm only the amount of `replicas`
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicemodereplicated">Service<wbr>Mode<wbr>Replicated</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceModeReplicated">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceModeReplicated">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceModeReplicatedArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceModeReplicatedOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1962,13 +1962,13 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1977,13 +1977,13 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1992,13 +1992,13 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2007,28 +2007,28 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicerollbackconfig">Service<wbr>Rollback<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceRollbackConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceRollbackConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceRollbackConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceRollbackConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2037,9 +2037,9 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
+    <dd>Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
 all tasks are up when a service is created, or to check if all tasks are successfully updated on an update. Default: `7s`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2047,8 +2047,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Action on update failure: `pause|continue|rollback`.
-{{% /md %}}</dd>
+    <dd>Action on update failure: `pause|continue|rollback`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2056,9 +2056,9 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The failure rate to tolerate during an update as `float`. **Important:** the `float`need to be wrapped in a `string` to avoid internal
+    <dd>The failure rate to tolerate during an update as `float`. **Important:** the `float`need to be wrapped in a `string` to avoid internal
 casting and precision errors.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2066,8 +2066,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Duration after each task update to monitor for failure `(ns|us|ms|s|m|h)`
-{{% /md %}}</dd>
+    <dd>Duration after each task update to monitor for failure `(ns|us|ms|s|m|h)`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2075,8 +2075,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Update order either 'stop-first' or 'start-first'.
-{{% /md %}}</dd>
+    <dd>Update order either 'stop-first' or 'start-first'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2084,14 +2084,14 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of tasks to be updated in one iteration simultaneously (0 to update all at once).
-{{% /md %}}</dd>
+    <dd>The maximum number of tasks to be updated in one iteration simultaneously (0 to update all at once).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2100,9 +2100,9 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
+    <dd>Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
 all tasks are up when a service is created, or to check if all tasks are successfully updated on an update. Default: `7s`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2110,8 +2110,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Action on update failure: `pause|continue|rollback`.
-{{% /md %}}</dd>
+    <dd>Action on update failure: `pause|continue|rollback`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2119,9 +2119,9 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The failure rate to tolerate during an update as `float`. **Important:** the `float`need to be wrapped in a `string` to avoid internal
+    <dd>The failure rate to tolerate during an update as `float`. **Important:** the `float`need to be wrapped in a `string` to avoid internal
 casting and precision errors.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2129,8 +2129,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Duration after each task update to monitor for failure `(ns|us|ms|s|m|h)`
-{{% /md %}}</dd>
+    <dd>Duration after each task update to monitor for failure `(ns|us|ms|s|m|h)`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2138,8 +2138,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Update order either 'stop-first' or 'start-first'.
-{{% /md %}}</dd>
+    <dd>Update order either 'stop-first' or 'start-first'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2147,14 +2147,14 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of tasks to be updated in one iteration simultaneously (0 to update all at once).
-{{% /md %}}</dd>
+    <dd>The maximum number of tasks to be updated in one iteration simultaneously (0 to update all at once).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2163,9 +2163,9 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
+    <dd>Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
 all tasks are up when a service is created, or to check if all tasks are successfully updated on an update. Default: `7s`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2173,8 +2173,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Action on update failure: `pause|continue|rollback`.
-{{% /md %}}</dd>
+    <dd>Action on update failure: `pause|continue|rollback`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2182,9 +2182,9 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The failure rate to tolerate during an update as `float`. **Important:** the `float`need to be wrapped in a `string` to avoid internal
+    <dd>The failure rate to tolerate during an update as `float`. **Important:** the `float`need to be wrapped in a `string` to avoid internal
 casting and precision errors.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2192,8 +2192,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Duration after each task update to monitor for failure `(ns|us|ms|s|m|h)`
-{{% /md %}}</dd>
+    <dd>Duration after each task update to monitor for failure `(ns|us|ms|s|m|h)`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2201,8 +2201,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Update order either 'stop-first' or 'start-first'.
-{{% /md %}}</dd>
+    <dd>Update order either 'stop-first' or 'start-first'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2210,14 +2210,14 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of tasks to be updated in one iteration simultaneously (0 to update all at once).
-{{% /md %}}</dd>
+    <dd>The maximum number of tasks to be updated in one iteration simultaneously (0 to update all at once).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2226,9 +2226,9 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
+    <dd>Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
 all tasks are up when a service is created, or to check if all tasks are successfully updated on an update. Default: `7s`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2236,8 +2236,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Action on update failure: `pause|continue|rollback`.
-{{% /md %}}</dd>
+    <dd>Action on update failure: `pause|continue|rollback`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2245,9 +2245,9 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The failure rate to tolerate during an update as `float`. **Important:** the `float`need to be wrapped in a `string` to avoid internal
+    <dd>The failure rate to tolerate during an update as `float`. **Important:** the `float`need to be wrapped in a `string` to avoid internal
 casting and precision errors.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2255,8 +2255,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Duration after each task update to monitor for failure `(ns|us|ms|s|m|h)`
-{{% /md %}}</dd>
+    <dd>Duration after each task update to monitor for failure `(ns|us|ms|s|m|h)`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2264,8 +2264,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Update order either 'stop-first' or 'start-first'.
-{{% /md %}}</dd>
+    <dd>Update order either 'stop-first' or 'start-first'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2273,29 +2273,29 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of tasks to be updated in one iteration simultaneously (0 to update all at once).
-{{% /md %}}</dd>
+    <dd>The maximum number of tasks to be updated in one iteration simultaneously (0 to update all at once).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspec">Service<wbr>Task<wbr>Spec</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpec">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpec">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2304,7 +2304,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspec">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2312,7 +2312,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2320,8 +2320,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeclogdriver">Service<wbr>Task<wbr>Spec<wbr>Log<wbr>Driver<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}See Log Driver below for details.
-{{% /md %}}</dd>
+    <dd>See Log Driver below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2329,8 +2329,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Ids of the networks in which the container will be put in.
-{{% /md %}}</dd>
+    <dd>Ids of the networks in which the container will be put in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2338,7 +2338,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecplacement">Service<wbr>Task<wbr>Spec<wbr>Placement<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2346,7 +2346,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecresources">Service<wbr>Task<wbr>Spec<wbr>Resources<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2354,7 +2354,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecrestartpolicy">Service<wbr>Task<wbr>Spec<wbr>Restart<wbr>Policy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2362,13 +2362,13 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2377,7 +2377,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspec">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2385,7 +2385,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2393,8 +2393,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeclogdriver">Service<wbr>Task<wbr>Spec<wbr>Log<wbr>Driver</a></span>
     </dt>
-    <dd>{{% md %}}See Log Driver below for details.
-{{% /md %}}</dd>
+    <dd>See Log Driver below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2402,8 +2402,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Ids of the networks in which the container will be put in.
-{{% /md %}}</dd>
+    <dd>Ids of the networks in which the container will be put in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2411,7 +2411,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecplacement">Service<wbr>Task<wbr>Spec<wbr>Placement</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2419,7 +2419,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecresources">Service<wbr>Task<wbr>Spec<wbr>Resources</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2427,7 +2427,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecrestartpolicy">Service<wbr>Task<wbr>Spec<wbr>Restart<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2435,13 +2435,13 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2450,7 +2450,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspec">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2458,7 +2458,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2466,8 +2466,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeclogdriver">Service<wbr>Task<wbr>Spec<wbr>Log<wbr>Driver</a></span>
     </dt>
-    <dd>{{% md %}}See Log Driver below for details.
-{{% /md %}}</dd>
+    <dd>See Log Driver below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2475,8 +2475,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Ids of the networks in which the container will be put in.
-{{% /md %}}</dd>
+    <dd>Ids of the networks in which the container will be put in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2484,7 +2484,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecplacement">Service<wbr>Task<wbr>Spec<wbr>Placement</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2492,7 +2492,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecresources">Service<wbr>Task<wbr>Spec<wbr>Resources</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2500,7 +2500,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecrestartpolicy">Service<wbr>Task<wbr>Spec<wbr>Restart<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2508,13 +2508,13 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2523,7 +2523,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspec">Dict[Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2531,7 +2531,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2539,8 +2539,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeclogdriver">Dict[Service<wbr>Task<wbr>Spec<wbr>Log<wbr>Driver]</a></span>
     </dt>
-    <dd>{{% md %}}See Log Driver below for details.
-{{% /md %}}</dd>
+    <dd>See Log Driver below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2548,8 +2548,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Ids of the networks in which the container will be put in.
-{{% /md %}}</dd>
+    <dd>Ids of the networks in which the container will be put in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2557,7 +2557,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecplacement">Dict[Service<wbr>Task<wbr>Spec<wbr>Placement]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2565,7 +2565,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecresources">Dict[Service<wbr>Task<wbr>Spec<wbr>Resources]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2573,7 +2573,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecrestartpolicy">Dict[Service<wbr>Task<wbr>Spec<wbr>Restart<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2581,28 +2581,28 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspeccontainerspec">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecContainerSpec">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecContainerSpec">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2611,8 +2611,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The image used to create the Docker service.
-{{% /md %}}</dd>
+    <dd>The image used to create the Docker service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2620,8 +2620,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Arguments to the command.
-{{% /md %}}</dd>
+    <dd>Arguments to the command.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2629,8 +2629,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The command to be run in the image.
-{{% /md %}}</dd>
+    <dd>The command to be run in the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2638,8 +2638,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecconfig">List&lt;Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Config<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See Configs below for details.
-{{% /md %}}</dd>
+    <dd>See Configs below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2647,8 +2647,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The working directory for commands to run in.
-{{% /md %}}</dd>
+    <dd>The working directory for commands to run in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2656,8 +2656,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecdnsconfig">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Dns<wbr>Config<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}See DNS Config below for details.
-{{% /md %}}</dd>
+    <dd>See DNS Config below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2665,8 +2665,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A list of environment variables in the form VAR=value.
-{{% /md %}}</dd>
+    <dd>A list of environment variables in the form VAR=value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2674,9 +2674,9 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of additional groups that the container process will run as.
+    <dd>A list of additional groups that the container process will run as.
 * `privileges` (Optional, block) See Privileges below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2684,8 +2684,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspechealthcheck">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Healthcheck<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}See Healthcheck below for details.
-{{% /md %}}</dd>
+    <dd>See Healthcheck below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2693,8 +2693,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname to use for the container, as a valid RFC 1123 hostname.
-{{% /md %}}</dd>
+    <dd>The hostname to use for the container, as a valid RFC 1123 hostname.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2702,7 +2702,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspechost">List&lt;Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Host<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2710,8 +2710,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Isolation technology of the containers running the service. (Windows only). Valid values are: `default|process|hyperv`
-{{% /md %}}</dd>
+    <dd>Isolation technology of the containers running the service. (Windows only). Valid values are: `default|process|hyperv`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2719,8 +2719,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspeclabel">List&lt;Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Label<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See Labels below for details.
-{{% /md %}}</dd>
+    <dd>See Labels below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2728,8 +2728,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecmount">List&lt;Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See Mounts below for details.
-{{% /md %}}</dd>
+    <dd>See Mounts below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2737,7 +2737,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecprivileges">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Privileges<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2745,8 +2745,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Mount the container's root filesystem as read only.
-{{% /md %}}</dd>
+    <dd>Mount the container's root filesystem as read only.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2754,8 +2754,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecsecret">List&lt;Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Secret<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See Secrets below for details.
-{{% /md %}}</dd>
+    <dd>See Secrets below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2763,8 +2763,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Amount of time to wait for the container to terminate before forcefully removing it `(ms|s|m|h)`.
-{{% /md %}}</dd>
+    <dd>Amount of time to wait for the container to terminate before forcefully removing it `(ms|s|m|h)`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2772,8 +2772,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Signal to stop the container.
-{{% /md %}}</dd>
+    <dd>Signal to stop the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2781,14 +2781,14 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The user inside the container.
-{{% /md %}}</dd>
+    <dd>The user inside the container.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2797,8 +2797,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The image used to create the Docker service.
-{{% /md %}}</dd>
+    <dd>The image used to create the Docker service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2806,8 +2806,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Arguments to the command.
-{{% /md %}}</dd>
+    <dd>Arguments to the command.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2815,8 +2815,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The command to be run in the image.
-{{% /md %}}</dd>
+    <dd>The command to be run in the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2824,8 +2824,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecconfig">[]Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}See Configs below for details.
-{{% /md %}}</dd>
+    <dd>See Configs below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2833,8 +2833,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The working directory for commands to run in.
-{{% /md %}}</dd>
+    <dd>The working directory for commands to run in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2842,8 +2842,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecdnsconfig">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Dns<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}See DNS Config below for details.
-{{% /md %}}</dd>
+    <dd>See DNS Config below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2851,8 +2851,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A list of environment variables in the form VAR=value.
-{{% /md %}}</dd>
+    <dd>A list of environment variables in the form VAR=value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2860,9 +2860,9 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of additional groups that the container process will run as.
+    <dd>A list of additional groups that the container process will run as.
 * `privileges` (Optional, block) See Privileges below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2870,8 +2870,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspechealthcheck">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Healthcheck</a></span>
     </dt>
-    <dd>{{% md %}}See Healthcheck below for details.
-{{% /md %}}</dd>
+    <dd>See Healthcheck below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2879,8 +2879,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname to use for the container, as a valid RFC 1123 hostname.
-{{% /md %}}</dd>
+    <dd>The hostname to use for the container, as a valid RFC 1123 hostname.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2888,7 +2888,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspechost">[]Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Host</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2896,8 +2896,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Isolation technology of the containers running the service. (Windows only). Valid values are: `default|process|hyperv`
-{{% /md %}}</dd>
+    <dd>Isolation technology of the containers running the service. (Windows only). Valid values are: `default|process|hyperv`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2905,8 +2905,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspeclabel">[]Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Label</a></span>
     </dt>
-    <dd>{{% md %}}See Labels below for details.
-{{% /md %}}</dd>
+    <dd>See Labels below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2914,8 +2914,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecmount">[]Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount</a></span>
     </dt>
-    <dd>{{% md %}}See Mounts below for details.
-{{% /md %}}</dd>
+    <dd>See Mounts below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2923,7 +2923,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecprivileges">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Privileges</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2931,8 +2931,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Mount the container's root filesystem as read only.
-{{% /md %}}</dd>
+    <dd>Mount the container's root filesystem as read only.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2940,8 +2940,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecsecret">[]Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Secret</a></span>
     </dt>
-    <dd>{{% md %}}See Secrets below for details.
-{{% /md %}}</dd>
+    <dd>See Secrets below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2949,8 +2949,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amount of time to wait for the container to terminate before forcefully removing it `(ms|s|m|h)`.
-{{% /md %}}</dd>
+    <dd>Amount of time to wait for the container to terminate before forcefully removing it `(ms|s|m|h)`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2958,8 +2958,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Signal to stop the container.
-{{% /md %}}</dd>
+    <dd>Signal to stop the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2967,14 +2967,14 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user inside the container.
-{{% /md %}}</dd>
+    <dd>The user inside the container.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2983,8 +2983,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The image used to create the Docker service.
-{{% /md %}}</dd>
+    <dd>The image used to create the Docker service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2992,8 +2992,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Arguments to the command.
-{{% /md %}}</dd>
+    <dd>Arguments to the command.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3001,8 +3001,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The command to be run in the image.
-{{% /md %}}</dd>
+    <dd>The command to be run in the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3010,8 +3010,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecconfig">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Config[]</a></span>
     </dt>
-    <dd>{{% md %}}See Configs below for details.
-{{% /md %}}</dd>
+    <dd>See Configs below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3019,8 +3019,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The working directory for commands to run in.
-{{% /md %}}</dd>
+    <dd>The working directory for commands to run in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3028,8 +3028,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecdnsconfig">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Dns<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}See DNS Config below for details.
-{{% /md %}}</dd>
+    <dd>See DNS Config below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3037,8 +3037,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A list of environment variables in the form VAR=value.
-{{% /md %}}</dd>
+    <dd>A list of environment variables in the form VAR=value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3046,9 +3046,9 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of additional groups that the container process will run as.
+    <dd>A list of additional groups that the container process will run as.
 * `privileges` (Optional, block) See Privileges below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3056,8 +3056,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspechealthcheck">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Healthcheck</a></span>
     </dt>
-    <dd>{{% md %}}See Healthcheck below for details.
-{{% /md %}}</dd>
+    <dd>See Healthcheck below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3065,8 +3065,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname to use for the container, as a valid RFC 1123 hostname.
-{{% /md %}}</dd>
+    <dd>The hostname to use for the container, as a valid RFC 1123 hostname.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3074,7 +3074,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspechost">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Host[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3082,8 +3082,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Isolation technology of the containers running the service. (Windows only). Valid values are: `default|process|hyperv`
-{{% /md %}}</dd>
+    <dd>Isolation technology of the containers running the service. (Windows only). Valid values are: `default|process|hyperv`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3091,8 +3091,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspeclabel">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Label[]</a></span>
     </dt>
-    <dd>{{% md %}}See Labels below for details.
-{{% /md %}}</dd>
+    <dd>See Labels below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3100,8 +3100,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecmount">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount[]</a></span>
     </dt>
-    <dd>{{% md %}}See Mounts below for details.
-{{% /md %}}</dd>
+    <dd>See Mounts below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3109,7 +3109,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecprivileges">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Privileges</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3117,8 +3117,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Mount the container's root filesystem as read only.
-{{% /md %}}</dd>
+    <dd>Mount the container's root filesystem as read only.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3126,8 +3126,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecsecret">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Secret[]</a></span>
     </dt>
-    <dd>{{% md %}}See Secrets below for details.
-{{% /md %}}</dd>
+    <dd>See Secrets below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3135,8 +3135,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Amount of time to wait for the container to terminate before forcefully removing it `(ms|s|m|h)`.
-{{% /md %}}</dd>
+    <dd>Amount of time to wait for the container to terminate before forcefully removing it `(ms|s|m|h)`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3144,8 +3144,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Signal to stop the container.
-{{% /md %}}</dd>
+    <dd>Signal to stop the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3153,14 +3153,14 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user inside the container.
-{{% /md %}}</dd>
+    <dd>The user inside the container.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3169,8 +3169,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The image used to create the Docker service.
-{{% /md %}}</dd>
+    <dd>The image used to create the Docker service.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3178,8 +3178,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Arguments to the command.
-{{% /md %}}</dd>
+    <dd>Arguments to the command.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3187,8 +3187,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The command to be run in the image.
-{{% /md %}}</dd>
+    <dd>The command to be run in the image.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3196,8 +3196,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecconfig">List[Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}See Configs below for details.
-{{% /md %}}</dd>
+    <dd>See Configs below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3205,8 +3205,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The working directory for commands to run in.
-{{% /md %}}</dd>
+    <dd>The working directory for commands to run in.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3214,8 +3214,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecdnsconfig">Dict[Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Dns<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}See DNS Config below for details.
-{{% /md %}}</dd>
+    <dd>See DNS Config below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3223,8 +3223,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A list of environment variables in the form VAR=value.
-{{% /md %}}</dd>
+    <dd>A list of environment variables in the form VAR=value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3232,9 +3232,9 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of additional groups that the container process will run as.
+    <dd>A list of additional groups that the container process will run as.
 * `privileges` (Optional, block) See Privileges below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3242,8 +3242,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspechealthcheck">Dict[Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Healthcheck]</a></span>
     </dt>
-    <dd>{{% md %}}See Healthcheck below for details.
-{{% /md %}}</dd>
+    <dd>See Healthcheck below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3251,8 +3251,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname to use for the container, as a valid RFC 1123 hostname.
-{{% /md %}}</dd>
+    <dd>The hostname to use for the container, as a valid RFC 1123 hostname.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3260,7 +3260,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspechost">List[Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Host]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3268,8 +3268,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Isolation technology of the containers running the service. (Windows only). Valid values are: `default|process|hyperv`
-{{% /md %}}</dd>
+    <dd>Isolation technology of the containers running the service. (Windows only). Valid values are: `default|process|hyperv`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3277,8 +3277,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspeclabel">List[Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Label]</a></span>
     </dt>
-    <dd>{{% md %}}See Labels below for details.
-{{% /md %}}</dd>
+    <dd>See Labels below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3286,8 +3286,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecmount">List[Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount]</a></span>
     </dt>
-    <dd>{{% md %}}See Mounts below for details.
-{{% /md %}}</dd>
+    <dd>See Mounts below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3295,7 +3295,7 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecprivileges">Dict[Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Privileges]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3303,8 +3303,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Mount the container's root filesystem as read only.
-{{% /md %}}</dd>
+    <dd>Mount the container's root filesystem as read only.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3312,8 +3312,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecsecret">List[Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Secret]</a></span>
     </dt>
-    <dd>{{% md %}}See Secrets below for details.
-{{% /md %}}</dd>
+    <dd>See Secrets below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3321,8 +3321,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Amount of time to wait for the container to terminate before forcefully removing it `(ms|s|m|h)`.
-{{% /md %}}</dd>
+    <dd>Amount of time to wait for the container to terminate before forcefully removing it `(ms|s|m|h)`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3330,8 +3330,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Signal to stop the container.
-{{% /md %}}</dd>
+    <dd>Signal to stop the container.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3339,29 +3339,29 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The user inside the container.
-{{% /md %}}</dd>
+    <dd>The user inside the container.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspeccontainerspecconfig">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecContainerSpecConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecContainerSpecConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3370,8 +3370,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ConfigID represents the ID of the specific config.
-{{% /md %}}</dd>
+    <dd>ConfigID represents the ID of the specific config.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3379,8 +3379,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Represents the final filename in the filesystem. The specific target file that the config data is written within the docker container, e.g. `/root/config/config.json`
-{{% /md %}}</dd>
+    <dd>Represents the final filename in the filesystem. The specific target file that the config data is written within the docker container, e.g. `/root/config/config.json`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3388,8 +3388,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the config that this references, but internally it is just provided for lookup/display purposes
-{{% /md %}}</dd>
+    <dd>The name of the config that this references, but internally it is just provided for lookup/display purposes
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3397,8 +3397,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Represents the file GID. Defaults: `0`
-{{% /md %}}</dd>
+    <dd>Represents the file GID. Defaults: `0`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3406,8 +3406,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Represents the FileMode of the file. Defaults: `0444`
-{{% /md %}}</dd>
+    <dd>Represents the FileMode of the file. Defaults: `0444`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3415,14 +3415,14 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Represents the file UID. Defaults: `0`
-{{% /md %}}</dd>
+    <dd>Represents the file UID. Defaults: `0`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3431,8 +3431,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ConfigID represents the ID of the specific config.
-{{% /md %}}</dd>
+    <dd>ConfigID represents the ID of the specific config.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3440,8 +3440,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Represents the final filename in the filesystem. The specific target file that the config data is written within the docker container, e.g. `/root/config/config.json`
-{{% /md %}}</dd>
+    <dd>Represents the final filename in the filesystem. The specific target file that the config data is written within the docker container, e.g. `/root/config/config.json`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3449,8 +3449,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the config that this references, but internally it is just provided for lookup/display purposes
-{{% /md %}}</dd>
+    <dd>The name of the config that this references, but internally it is just provided for lookup/display purposes
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3458,8 +3458,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Represents the file GID. Defaults: `0`
-{{% /md %}}</dd>
+    <dd>Represents the file GID. Defaults: `0`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3467,8 +3467,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Represents the FileMode of the file. Defaults: `0444`
-{{% /md %}}</dd>
+    <dd>Represents the FileMode of the file. Defaults: `0444`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3476,14 +3476,14 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Represents the file UID. Defaults: `0`
-{{% /md %}}</dd>
+    <dd>Represents the file UID. Defaults: `0`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3492,8 +3492,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ConfigID represents the ID of the specific config.
-{{% /md %}}</dd>
+    <dd>ConfigID represents the ID of the specific config.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3501,8 +3501,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Represents the final filename in the filesystem. The specific target file that the config data is written within the docker container, e.g. `/root/config/config.json`
-{{% /md %}}</dd>
+    <dd>Represents the final filename in the filesystem. The specific target file that the config data is written within the docker container, e.g. `/root/config/config.json`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3510,8 +3510,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the config that this references, but internally it is just provided for lookup/display purposes
-{{% /md %}}</dd>
+    <dd>The name of the config that this references, but internally it is just provided for lookup/display purposes
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3519,8 +3519,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Represents the file GID. Defaults: `0`
-{{% /md %}}</dd>
+    <dd>Represents the file GID. Defaults: `0`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3528,8 +3528,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Represents the FileMode of the file. Defaults: `0444`
-{{% /md %}}</dd>
+    <dd>Represents the FileMode of the file. Defaults: `0444`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3537,14 +3537,14 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Represents the file UID. Defaults: `0`
-{{% /md %}}</dd>
+    <dd>Represents the file UID. Defaults: `0`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3553,8 +3553,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ConfigID represents the ID of the specific config.
-{{% /md %}}</dd>
+    <dd>ConfigID represents the ID of the specific config.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3562,8 +3562,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Represents the final filename in the filesystem. The specific target file that the config data is written within the docker container, e.g. `/root/config/config.json`
-{{% /md %}}</dd>
+    <dd>Represents the final filename in the filesystem. The specific target file that the config data is written within the docker container, e.g. `/root/config/config.json`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3571,8 +3571,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the config that this references, but internally it is just provided for lookup/display purposes
-{{% /md %}}</dd>
+    <dd>The name of the config that this references, but internally it is just provided for lookup/display purposes
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3580,8 +3580,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Represents the file GID. Defaults: `0`
-{{% /md %}}</dd>
+    <dd>Represents the file GID. Defaults: `0`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3589,8 +3589,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Represents the FileMode of the file. Defaults: `0444`
-{{% /md %}}</dd>
+    <dd>Represents the FileMode of the file. Defaults: `0444`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3598,29 +3598,29 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Represents the file UID. Defaults: `0`
-{{% /md %}}</dd>
+    <dd>Represents the file UID. Defaults: `0`
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspeccontainerspecdnsconfig">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Dns<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecContainerSpecDnsConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecContainerSpecDnsConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecDnsConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecDnsConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3629,8 +3629,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The IP addresses of the name servers, for example, `8.8.8.8`
-{{% /md %}}</dd>
+    <dd>The IP addresses of the name servers, for example, `8.8.8.8`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3638,8 +3638,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of internal resolver variables to be modified, for example, `debug`, `ndots:3`
-{{% /md %}}</dd>
+    <dd>A list of internal resolver variables to be modified, for example, `debug`, `ndots:3`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3647,14 +3647,14 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A search list for host-name lookup.
-{{% /md %}}</dd>
+    <dd>A search list for host-name lookup.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3663,8 +3663,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The IP addresses of the name servers, for example, `8.8.8.8`
-{{% /md %}}</dd>
+    <dd>The IP addresses of the name servers, for example, `8.8.8.8`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3672,8 +3672,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of internal resolver variables to be modified, for example, `debug`, `ndots:3`
-{{% /md %}}</dd>
+    <dd>A list of internal resolver variables to be modified, for example, `debug`, `ndots:3`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3681,14 +3681,14 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A search list for host-name lookup.
-{{% /md %}}</dd>
+    <dd>A search list for host-name lookup.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3697,8 +3697,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The IP addresses of the name servers, for example, `8.8.8.8`
-{{% /md %}}</dd>
+    <dd>The IP addresses of the name servers, for example, `8.8.8.8`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3706,8 +3706,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of internal resolver variables to be modified, for example, `debug`, `ndots:3`
-{{% /md %}}</dd>
+    <dd>A list of internal resolver variables to be modified, for example, `debug`, `ndots:3`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3715,14 +3715,14 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A search list for host-name lookup.
-{{% /md %}}</dd>
+    <dd>A search list for host-name lookup.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3731,8 +3731,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The IP addresses of the name servers, for example, `8.8.8.8`
-{{% /md %}}</dd>
+    <dd>The IP addresses of the name servers, for example, `8.8.8.8`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3740,8 +3740,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of internal resolver variables to be modified, for example, `debug`, `ndots:3`
-{{% /md %}}</dd>
+    <dd>A list of internal resolver variables to be modified, for example, `debug`, `ndots:3`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3749,29 +3749,29 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A search list for host-name lookup.
-{{% /md %}}</dd>
+    <dd>A search list for host-name lookup.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspeccontainerspechealthcheck">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Healthcheck</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecContainerSpecHealthcheck">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecContainerSpecHealthcheck">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecHealthcheckArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecHealthcheckOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3780,9 +3780,9 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Command to run to check health. For example, to run `curl -f http://localhost/health` set the
+    <dd>Command to run to check health. For example, to run `curl -f http://localhost/health` set the
 command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3790,8 +3790,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Time between running the check `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Time between running the check `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3799,8 +3799,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Consecutive failures needed to report unhealthy. Default: `0`.
-{{% /md %}}</dd>
+    <dd>Consecutive failures needed to report unhealthy. Default: `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3808,8 +3808,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Start period for the container to initialize before counting retries towards unstable `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Start period for the container to initialize before counting retries towards unstable `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3817,14 +3817,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Maximum time to allow one check to run `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Maximum time to allow one check to run `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3833,9 +3833,9 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Command to run to check health. For example, to run `curl -f http://localhost/health` set the
+    <dd>Command to run to check health. For example, to run `curl -f http://localhost/health` set the
 command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3843,8 +3843,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Time between running the check `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Time between running the check `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3852,8 +3852,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Consecutive failures needed to report unhealthy. Default: `0`.
-{{% /md %}}</dd>
+    <dd>Consecutive failures needed to report unhealthy. Default: `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3861,8 +3861,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Start period for the container to initialize before counting retries towards unstable `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Start period for the container to initialize before counting retries towards unstable `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3870,14 +3870,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Maximum time to allow one check to run `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Maximum time to allow one check to run `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3886,9 +3886,9 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Command to run to check health. For example, to run `curl -f http://localhost/health` set the
+    <dd>Command to run to check health. For example, to run `curl -f http://localhost/health` set the
 command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3896,8 +3896,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Time between running the check `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Time between running the check `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3905,8 +3905,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Consecutive failures needed to report unhealthy. Default: `0`.
-{{% /md %}}</dd>
+    <dd>Consecutive failures needed to report unhealthy. Default: `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3914,8 +3914,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Start period for the container to initialize before counting retries towards unstable `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Start period for the container to initialize before counting retries towards unstable `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3923,14 +3923,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Maximum time to allow one check to run `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Maximum time to allow one check to run `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3939,9 +3939,9 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Command to run to check health. For example, to run `curl -f http://localhost/health` set the
+    <dd>Command to run to check health. For example, to run `curl -f http://localhost/health` set the
 command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3949,8 +3949,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Time between running the check `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Time between running the check `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3958,8 +3958,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Consecutive failures needed to report unhealthy. Default: `0`.
-{{% /md %}}</dd>
+    <dd>Consecutive failures needed to report unhealthy. Default: `0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3967,8 +3967,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Start period for the container to initialize before counting retries towards unstable `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Start period for the container to initialize before counting retries towards unstable `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3976,29 +3976,29 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Maximum time to allow one check to run `(ms|s|m|h)`. Default: `0s`.
-{{% /md %}}</dd>
+    <dd>Maximum time to allow one check to run `(ms|s|m|h)`. Default: `0s`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspeccontainerspechost">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Host</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecContainerSpecHost">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecContainerSpecHost">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecHostArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecHostOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4007,8 +4007,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of hostname/IP mappings to add to the container's hosts file.
-{{% /md %}}</dd>
+    <dd>A list of hostname/IP mappings to add to the container's hosts file.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4016,14 +4016,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ip
-{{% /md %}}</dd>
+    <dd>The ip
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4032,8 +4032,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of hostname/IP mappings to add to the container's hosts file.
-{{% /md %}}</dd>
+    <dd>A list of hostname/IP mappings to add to the container's hosts file.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4041,14 +4041,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ip
-{{% /md %}}</dd>
+    <dd>The ip
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4057,8 +4057,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A list of hostname/IP mappings to add to the container's hosts file.
-{{% /md %}}</dd>
+    <dd>A list of hostname/IP mappings to add to the container's hosts file.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4066,14 +4066,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ip
-{{% /md %}}</dd>
+    <dd>The ip
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4082,8 +4082,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A list of hostname/IP mappings to add to the container's hosts file.
-{{% /md %}}</dd>
+    <dd>A list of hostname/IP mappings to add to the container's hosts file.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4091,29 +4091,29 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ip
-{{% /md %}}</dd>
+    <dd>The ip
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspeccontainerspeclabel">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Label</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecContainerSpecLabel">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecContainerSpecLabel">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecLabelArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecLabelOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4122,9 +4122,9 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the label
+    <dd>Name of the label
 * `value` (Required, string) Value of the label
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4132,13 +4132,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4147,9 +4147,9 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the label
+    <dd>Name of the label
 * `value` (Required, string) Value of the label
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4157,13 +4157,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4172,9 +4172,9 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the label
+    <dd>Name of the label
 * `value` (Required, string) Value of the label
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4182,13 +4182,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4197,9 +4197,9 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the label
+    <dd>Name of the label
 * `value` (Required, string) Value of the label
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4207,28 +4207,28 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspeccontainerspecmount">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecContainerSpecMount">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecContainerSpecMount">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecMountArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecMountOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4237,8 +4237,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The container path.
-{{% /md %}}</dd>
+    <dd>The container path.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4246,8 +4246,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}SELinux type label
-{{% /md %}}</dd>
+    <dd>SELinux type label
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4255,8 +4255,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecmountbindoptions">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount<wbr>Bind<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `bind` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `bind` type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4264,8 +4264,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Mount the container's root filesystem as read only.
-{{% /md %}}</dd>
+    <dd>Mount the container's root filesystem as read only.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4273,8 +4273,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The mount source (e.g., a volume name, a host path)
-{{% /md %}}</dd>
+    <dd>The mount source (e.g., a volume name, a host path)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4282,8 +4282,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecmounttmpfsoptions">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount<wbr>Tmpfs<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `tmpf` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `tmpf` type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4291,14 +4291,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecmountvolumeoptions">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount<wbr>Volume<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `volume` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `volume` type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4307,8 +4307,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The container path.
-{{% /md %}}</dd>
+    <dd>The container path.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4316,8 +4316,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}SELinux type label
-{{% /md %}}</dd>
+    <dd>SELinux type label
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4325,8 +4325,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecmountbindoptions">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount<wbr>Bind<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `bind` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `bind` type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4334,8 +4334,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Mount the container's root filesystem as read only.
-{{% /md %}}</dd>
+    <dd>Mount the container's root filesystem as read only.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4343,8 +4343,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The mount source (e.g., a volume name, a host path)
-{{% /md %}}</dd>
+    <dd>The mount source (e.g., a volume name, a host path)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4352,8 +4352,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecmounttmpfsoptions">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount<wbr>Tmpfs<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `tmpf` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `tmpf` type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4361,14 +4361,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecmountvolumeoptions">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount<wbr>Volume<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `volume` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `volume` type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4377,8 +4377,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The container path.
-{{% /md %}}</dd>
+    <dd>The container path.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4386,8 +4386,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}SELinux type label
-{{% /md %}}</dd>
+    <dd>SELinux type label
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4395,8 +4395,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecmountbindoptions">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount<wbr>Bind<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `bind` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `bind` type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4404,8 +4404,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Mount the container's root filesystem as read only.
-{{% /md %}}</dd>
+    <dd>Mount the container's root filesystem as read only.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4413,8 +4413,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The mount source (e.g., a volume name, a host path)
-{{% /md %}}</dd>
+    <dd>The mount source (e.g., a volume name, a host path)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4422,8 +4422,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecmounttmpfsoptions">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount<wbr>Tmpfs<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `tmpf` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `tmpf` type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4431,14 +4431,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecmountvolumeoptions">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount<wbr>Volume<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `volume` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `volume` type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4447,8 +4447,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The container path.
-{{% /md %}}</dd>
+    <dd>The container path.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4456,8 +4456,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}SELinux type label
-{{% /md %}}</dd>
+    <dd>SELinux type label
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4465,8 +4465,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecmountbindoptions">Dict[Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount<wbr>Bind<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `bind` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `bind` type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4474,8 +4474,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Mount the container's root filesystem as read only.
-{{% /md %}}</dd>
+    <dd>Mount the container's root filesystem as read only.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4483,8 +4483,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The mount source (e.g., a volume name, a host path)
-{{% /md %}}</dd>
+    <dd>The mount source (e.g., a volume name, a host path)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4492,8 +4492,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecmounttmpfsoptions">Dict[Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount<wbr>Tmpfs<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `tmpf` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `tmpf` type.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4501,29 +4501,29 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecmountvolumeoptions">Dict[Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount<wbr>Volume<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}Optional configuration for the `volume` type.
-{{% /md %}}</dd>
+    <dd>Optional configuration for the `volume` type.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspeccontainerspecmountbindoptions">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount<wbr>Bind<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecContainerSpecMountBindOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecContainerSpecMountBindOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecMountBindOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecMountBindOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4532,14 +4532,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A propagation mode with the value.
-{{% /md %}}</dd>
+    <dd>A propagation mode with the value.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4548,14 +4548,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A propagation mode with the value.
-{{% /md %}}</dd>
+    <dd>A propagation mode with the value.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4564,14 +4564,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A propagation mode with the value.
-{{% /md %}}</dd>
+    <dd>A propagation mode with the value.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4580,29 +4580,29 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A propagation mode with the value.
-{{% /md %}}</dd>
+    <dd>A propagation mode with the value.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspeccontainerspecmounttmpfsoptions">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount<wbr>Tmpfs<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecContainerSpecMountTmpfsOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecContainerSpecMountTmpfsOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecMountTmpfsOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecMountTmpfsOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4611,8 +4611,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}See Mode below for details.
-{{% /md %}}</dd>
+    <dd>See Mode below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4620,14 +4620,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size for the tmpfs mount in bytes. 
-{{% /md %}}</dd>
+    <dd>The size for the tmpfs mount in bytes. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4636,8 +4636,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}See Mode below for details.
-{{% /md %}}</dd>
+    <dd>See Mode below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4645,14 +4645,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size for the tmpfs mount in bytes. 
-{{% /md %}}</dd>
+    <dd>The size for the tmpfs mount in bytes. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4661,8 +4661,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}See Mode below for details.
-{{% /md %}}</dd>
+    <dd>See Mode below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4670,14 +4670,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size for the tmpfs mount in bytes. 
-{{% /md %}}</dd>
+    <dd>The size for the tmpfs mount in bytes. 
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4686,8 +4686,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}See Mode below for details.
-{{% /md %}}</dd>
+    <dd>See Mode below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4695,29 +4695,29 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size for the tmpfs mount in bytes. 
-{{% /md %}}</dd>
+    <dd>The size for the tmpfs mount in bytes. 
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspeccontainerspecmountvolumeoptions">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount<wbr>Volume<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecContainerSpecMountVolumeOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecContainerSpecMountVolumeOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecMountVolumeOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecMountVolumeOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4726,7 +4726,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4734,7 +4734,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4742,8 +4742,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecmountvolumeoptionslabel">List&lt;Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount<wbr>Volume<wbr>Options<wbr>Label<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}See Labels below for details.
-{{% /md %}}</dd>
+    <dd>See Labels below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4751,14 +4751,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to populate volume with data from the target.
-{{% /md %}}</dd>
+    <dd>Whether to populate volume with data from the target.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4767,7 +4767,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4775,7 +4775,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4783,8 +4783,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecmountvolumeoptionslabel">[]Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount<wbr>Volume<wbr>Options<wbr>Label</a></span>
     </dt>
-    <dd>{{% md %}}See Labels below for details.
-{{% /md %}}</dd>
+    <dd>See Labels below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4792,14 +4792,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to populate volume with data from the target.
-{{% /md %}}</dd>
+    <dd>Whether to populate volume with data from the target.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4808,7 +4808,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4816,7 +4816,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4824,8 +4824,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecmountvolumeoptionslabel">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount<wbr>Volume<wbr>Options<wbr>Label[]</a></span>
     </dt>
-    <dd>{{% md %}}See Labels below for details.
-{{% /md %}}</dd>
+    <dd>See Labels below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4833,14 +4833,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether to populate volume with data from the target.
-{{% /md %}}</dd>
+    <dd>Whether to populate volume with data from the target.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4849,7 +4849,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4857,7 +4857,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4865,8 +4865,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecmountvolumeoptionslabel">List[Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount<wbr>Volume<wbr>Options<wbr>Label]</a></span>
     </dt>
-    <dd>{{% md %}}See Labels below for details.
-{{% /md %}}</dd>
+    <dd>See Labels below for details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4874,29 +4874,29 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether to populate volume with data from the target.
-{{% /md %}}</dd>
+    <dd>Whether to populate volume with data from the target.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspeccontainerspecmountvolumeoptionslabel">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Mount<wbr>Volume<wbr>Options<wbr>Label</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecContainerSpecMountVolumeOptionsLabel">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecContainerSpecMountVolumeOptionsLabel">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecMountVolumeOptionsLabelArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecMountVolumeOptionsLabelOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4905,9 +4905,9 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the label
+    <dd>Name of the label
 * `value` (Required, string) Value of the label
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4915,13 +4915,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4930,9 +4930,9 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the label
+    <dd>Name of the label
 * `value` (Required, string) Value of the label
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4940,13 +4940,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4955,9 +4955,9 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the label
+    <dd>Name of the label
 * `value` (Required, string) Value of the label
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4965,13 +4965,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4980,9 +4980,9 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the label
+    <dd>Name of the label
 * `value` (Required, string) Value of the label
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4990,28 +4990,28 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspeccontainerspecprivileges">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Privileges</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecContainerSpecPrivileges">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecContainerSpecPrivileges">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecPrivilegesArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecPrivilegesOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5020,8 +5020,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecprivilegescredentialspec">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Privileges<wbr>Credential<wbr>Spec<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}For managed service account (Windows only)
-{{% /md %}}</dd>
+    <dd>For managed service account (Windows only)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5029,14 +5029,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecprivilegesselinuxcontext">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Privileges<wbr>Se<wbr>Linux<wbr>Context<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}SELinux labels of the container
-{{% /md %}}</dd>
+    <dd>SELinux labels of the container
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5045,8 +5045,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecprivilegescredentialspec">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Privileges<wbr>Credential<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}For managed service account (Windows only)
-{{% /md %}}</dd>
+    <dd>For managed service account (Windows only)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5054,14 +5054,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecprivilegesselinuxcontext">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Privileges<wbr>Se<wbr>Linux<wbr>Context</a></span>
     </dt>
-    <dd>{{% md %}}SELinux labels of the container
-{{% /md %}}</dd>
+    <dd>SELinux labels of the container
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5070,8 +5070,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecprivilegescredentialspec">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Privileges<wbr>Credential<wbr>Spec</a></span>
     </dt>
-    <dd>{{% md %}}For managed service account (Windows only)
-{{% /md %}}</dd>
+    <dd>For managed service account (Windows only)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5079,14 +5079,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecprivilegesselinuxcontext">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Privileges<wbr>Se<wbr>Linux<wbr>Context</a></span>
     </dt>
-    <dd>{{% md %}}SELinux labels of the container
-{{% /md %}}</dd>
+    <dd>SELinux labels of the container
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5095,8 +5095,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecprivilegescredentialspec">Dict[Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Privileges<wbr>Credential<wbr>Spec]</a></span>
     </dt>
-    <dd>{{% md %}}For managed service account (Windows only)
-{{% /md %}}</dd>
+    <dd>For managed service account (Windows only)
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5104,29 +5104,29 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspeccontainerspecprivilegesselinuxcontext">Dict[Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Privileges<wbr>Se<wbr>Linux<wbr>Context]</a></span>
     </dt>
-    <dd>{{% md %}}SELinux labels of the container
-{{% /md %}}</dd>
+    <dd>SELinux labels of the container
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspeccontainerspecprivilegescredentialspec">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Privileges<wbr>Credential<wbr>Spec</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecContainerSpecPrivilegesCredentialSpec">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecContainerSpecPrivilegesCredentialSpec">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecPrivilegesCredentialSpecArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecPrivilegesCredentialSpecOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5135,8 +5135,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Load credential spec from this file.
-{{% /md %}}</dd>
+    <dd>Load credential spec from this file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5144,14 +5144,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Load credential spec from this value in the Windows registry.
-{{% /md %}}</dd>
+    <dd>Load credential spec from this value in the Windows registry.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5160,8 +5160,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Load credential spec from this file.
-{{% /md %}}</dd>
+    <dd>Load credential spec from this file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5169,14 +5169,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Load credential spec from this value in the Windows registry.
-{{% /md %}}</dd>
+    <dd>Load credential spec from this value in the Windows registry.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5185,8 +5185,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Load credential spec from this file.
-{{% /md %}}</dd>
+    <dd>Load credential spec from this file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5194,14 +5194,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Load credential spec from this value in the Windows registry.
-{{% /md %}}</dd>
+    <dd>Load credential spec from this value in the Windows registry.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5210,8 +5210,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Load credential spec from this file.
-{{% /md %}}</dd>
+    <dd>Load credential spec from this file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5219,29 +5219,29 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Load credential spec from this value in the Windows registry.
-{{% /md %}}</dd>
+    <dd>Load credential spec from this value in the Windows registry.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspeccontainerspecprivilegesselinuxcontext">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Privileges<wbr>Se<wbr>Linux<wbr>Context</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecContainerSpecPrivilegesSeLinuxContext">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecContainerSpecPrivilegesSeLinuxContext">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecPrivilegesSeLinuxContextOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5250,8 +5250,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Disable SELinux
-{{% /md %}}</dd>
+    <dd>Disable SELinux
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5259,8 +5259,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}SELinux level label
-{{% /md %}}</dd>
+    <dd>SELinux level label
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5268,8 +5268,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}SELinux role label
-{{% /md %}}</dd>
+    <dd>SELinux role label
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5277,8 +5277,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}SELinux type label
-{{% /md %}}</dd>
+    <dd>SELinux type label
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5286,14 +5286,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The user inside the container.
-{{% /md %}}</dd>
+    <dd>The user inside the container.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5302,8 +5302,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Disable SELinux
-{{% /md %}}</dd>
+    <dd>Disable SELinux
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5311,8 +5311,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}SELinux level label
-{{% /md %}}</dd>
+    <dd>SELinux level label
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5320,8 +5320,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}SELinux role label
-{{% /md %}}</dd>
+    <dd>SELinux role label
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5329,8 +5329,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}SELinux type label
-{{% /md %}}</dd>
+    <dd>SELinux type label
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5338,14 +5338,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user inside the container.
-{{% /md %}}</dd>
+    <dd>The user inside the container.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5354,8 +5354,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Disable SELinux
-{{% /md %}}</dd>
+    <dd>Disable SELinux
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5363,8 +5363,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}SELinux level label
-{{% /md %}}</dd>
+    <dd>SELinux level label
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5372,8 +5372,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}SELinux role label
-{{% /md %}}</dd>
+    <dd>SELinux role label
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5381,8 +5381,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}SELinux type label
-{{% /md %}}</dd>
+    <dd>SELinux type label
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5390,14 +5390,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The user inside the container.
-{{% /md %}}</dd>
+    <dd>The user inside the container.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5406,8 +5406,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Disable SELinux
-{{% /md %}}</dd>
+    <dd>Disable SELinux
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5415,8 +5415,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}SELinux level label
-{{% /md %}}</dd>
+    <dd>SELinux level label
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5424,8 +5424,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}SELinux role label
-{{% /md %}}</dd>
+    <dd>SELinux role label
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5433,8 +5433,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}SELinux type label
-{{% /md %}}</dd>
+    <dd>SELinux type label
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5442,29 +5442,29 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The user inside the container.
-{{% /md %}}</dd>
+    <dd>The user inside the container.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspeccontainerspecsecret">Service<wbr>Task<wbr>Spec<wbr>Container<wbr>Spec<wbr>Secret</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecContainerSpecSecret">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecContainerSpecSecret">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecSecretArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecContainerSpecSecretOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5473,8 +5473,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Represents the final filename in the filesystem. The specific target file that the secret data is written within the docker container, e.g. `/root/secret/secret.json`
-{{% /md %}}</dd>
+    <dd>Represents the final filename in the filesystem. The specific target file that the secret data is written within the docker container, e.g. `/root/secret/secret.json`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5482,8 +5482,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ConfigID represents the ID of the specific secret.
-{{% /md %}}</dd>
+    <dd>ConfigID represents the ID of the specific secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5491,8 +5491,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Represents the file GID. Defaults: `0`
-{{% /md %}}</dd>
+    <dd>Represents the file GID. Defaults: `0`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5500,8 +5500,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Represents the FileMode of the file. Defaults: `0444`
-{{% /md %}}</dd>
+    <dd>Represents the FileMode of the file. Defaults: `0444`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5509,8 +5509,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Represents the file UID. Defaults: `0`
-{{% /md %}}</dd>
+    <dd>Represents the file UID. Defaults: `0`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5518,14 +5518,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the secret that this references, but internally it is just provided for lookup/display purposes
-{{% /md %}}</dd>
+    <dd>The name of the secret that this references, but internally it is just provided for lookup/display purposes
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5534,8 +5534,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Represents the final filename in the filesystem. The specific target file that the secret data is written within the docker container, e.g. `/root/secret/secret.json`
-{{% /md %}}</dd>
+    <dd>Represents the final filename in the filesystem. The specific target file that the secret data is written within the docker container, e.g. `/root/secret/secret.json`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5543,8 +5543,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ConfigID represents the ID of the specific secret.
-{{% /md %}}</dd>
+    <dd>ConfigID represents the ID of the specific secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5552,8 +5552,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Represents the file GID. Defaults: `0`
-{{% /md %}}</dd>
+    <dd>Represents the file GID. Defaults: `0`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5561,8 +5561,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Represents the FileMode of the file. Defaults: `0444`
-{{% /md %}}</dd>
+    <dd>Represents the FileMode of the file. Defaults: `0444`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5570,8 +5570,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Represents the file UID. Defaults: `0`
-{{% /md %}}</dd>
+    <dd>Represents the file UID. Defaults: `0`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5579,14 +5579,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the secret that this references, but internally it is just provided for lookup/display purposes
-{{% /md %}}</dd>
+    <dd>The name of the secret that this references, but internally it is just provided for lookup/display purposes
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5595,8 +5595,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Represents the final filename in the filesystem. The specific target file that the secret data is written within the docker container, e.g. `/root/secret/secret.json`
-{{% /md %}}</dd>
+    <dd>Represents the final filename in the filesystem. The specific target file that the secret data is written within the docker container, e.g. `/root/secret/secret.json`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5604,8 +5604,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ConfigID represents the ID of the specific secret.
-{{% /md %}}</dd>
+    <dd>ConfigID represents the ID of the specific secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5613,8 +5613,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Represents the file GID. Defaults: `0`
-{{% /md %}}</dd>
+    <dd>Represents the file GID. Defaults: `0`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5622,8 +5622,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Represents the FileMode of the file. Defaults: `0444`
-{{% /md %}}</dd>
+    <dd>Represents the FileMode of the file. Defaults: `0444`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5631,8 +5631,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Represents the file UID. Defaults: `0`
-{{% /md %}}</dd>
+    <dd>Represents the file UID. Defaults: `0`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5640,14 +5640,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the secret that this references, but internally it is just provided for lookup/display purposes
-{{% /md %}}</dd>
+    <dd>The name of the secret that this references, but internally it is just provided for lookup/display purposes
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5656,8 +5656,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Represents the final filename in the filesystem. The specific target file that the secret data is written within the docker container, e.g. `/root/secret/secret.json`
-{{% /md %}}</dd>
+    <dd>Represents the final filename in the filesystem. The specific target file that the secret data is written within the docker container, e.g. `/root/secret/secret.json`
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5665,8 +5665,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ConfigID represents the ID of the specific secret.
-{{% /md %}}</dd>
+    <dd>ConfigID represents the ID of the specific secret.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5674,8 +5674,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Represents the file GID. Defaults: `0`
-{{% /md %}}</dd>
+    <dd>Represents the file GID. Defaults: `0`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5683,8 +5683,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Represents the FileMode of the file. Defaults: `0444`
-{{% /md %}}</dd>
+    <dd>Represents the FileMode of the file. Defaults: `0444`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5692,8 +5692,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Represents the file UID. Defaults: `0`
-{{% /md %}}</dd>
+    <dd>Represents the file UID. Defaults: `0`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5701,29 +5701,29 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the secret that this references, but internally it is just provided for lookup/display purposes
-{{% /md %}}</dd>
+    <dd>The name of the secret that this references, but internally it is just provided for lookup/display purposes
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspeclogdriver">Service<wbr>Task<wbr>Spec<wbr>Log<wbr>Driver</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecLogDriver">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecLogDriver">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecLogDriverArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecLogDriverOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5732,8 +5732,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The logging driver to use. Either `(none|json-file|syslog|journald|gelf|fluentd|awslogs|splunk|etwlogs|gcplogs)`.
-{{% /md %}}</dd>
+    <dd>The logging driver to use. Either `(none|json-file|syslog|journald|gelf|fluentd|awslogs|splunk|etwlogs|gcplogs)`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5741,14 +5741,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}The options for the logging driver, e.g.
-{{% /md %}}</dd>
+    <dd>The options for the logging driver, e.g.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5757,8 +5757,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The logging driver to use. Either `(none|json-file|syslog|journald|gelf|fluentd|awslogs|splunk|etwlogs|gcplogs)`.
-{{% /md %}}</dd>
+    <dd>The logging driver to use. Either `(none|json-file|syslog|journald|gelf|fluentd|awslogs|splunk|etwlogs|gcplogs)`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5766,14 +5766,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}The options for the logging driver, e.g.
-{{% /md %}}</dd>
+    <dd>The options for the logging driver, e.g.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5782,8 +5782,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The logging driver to use. Either `(none|json-file|syslog|journald|gelf|fluentd|awslogs|splunk|etwlogs|gcplogs)`.
-{{% /md %}}</dd>
+    <dd>The logging driver to use. Either `(none|json-file|syslog|journald|gelf|fluentd|awslogs|splunk|etwlogs|gcplogs)`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5791,14 +5791,14 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}The options for the logging driver, e.g.
-{{% /md %}}</dd>
+    <dd>The options for the logging driver, e.g.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5807,8 +5807,8 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The logging driver to use. Either `(none|json-file|syslog|journald|gelf|fluentd|awslogs|splunk|etwlogs|gcplogs)`.
-{{% /md %}}</dd>
+    <dd>The logging driver to use. Either `(none|json-file|syslog|journald|gelf|fluentd|awslogs|splunk|etwlogs|gcplogs)`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5816,29 +5816,29 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}The options for the logging driver, e.g.
-{{% /md %}}</dd>
+    <dd>The options for the logging driver, e.g.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspecplacement">Service<wbr>Task<wbr>Spec<wbr>Placement</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecPlacement">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecPlacement">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecPlacementArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecPlacementOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5847,7 +5847,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5855,7 +5855,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecplacementplatform">List&lt;Service<wbr>Task<wbr>Spec<wbr>Placement<wbr>Platform<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5863,13 +5863,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5878,7 +5878,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5886,7 +5886,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecplacementplatform">[]Service<wbr>Task<wbr>Spec<wbr>Placement<wbr>Platform</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5894,13 +5894,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5909,7 +5909,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5917,7 +5917,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecplacementplatform">Service<wbr>Task<wbr>Spec<wbr>Placement<wbr>Platform[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5925,13 +5925,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5940,7 +5940,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5948,7 +5948,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecplacementplatform">List[Service<wbr>Task<wbr>Spec<wbr>Placement<wbr>Platform]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5956,28 +5956,28 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspecplacementplatform">Service<wbr>Task<wbr>Spec<wbr>Placement<wbr>Platform</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecPlacementPlatform">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecPlacementPlatform">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecPlacementPlatformArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecPlacementPlatformOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5986,7 +5986,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -5994,13 +5994,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6009,7 +6009,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -6017,13 +6017,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6032,7 +6032,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -6040,13 +6040,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6055,7 +6055,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -6063,28 +6063,28 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspecresources">Service<wbr>Task<wbr>Spec<wbr>Resources</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecResources">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecResources">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecResourcesArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecResourcesOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6093,13 +6093,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecresourceslimits">Service<wbr>Task<wbr>Spec<wbr>Resources<wbr>Limits<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Describes the resources which can be advertised by a node and requested by a task.
+    <dd>Describes the resources which can be advertised by a node and requested by a task.
 * `nano_cpus` (Optional, int) CPU shares in units of 1/1e9 (or 10^-9) of the CPU. Should be at least 1000000
 * `memory_bytes` (Optional, int) The amount of memory in bytes the container allocates
 * `generic_resources` (Optional, map) User-defined resources can be either Integer resources (e.g, SSD=3) or String resources (e.g, GPU=UUID1)
 * `named_resources_spec` (Optional, set of string) The String resources, delimited by `=`
 * `discrete_resources_spec` (Optional, set of string) The Integer resources, delimited by `=`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6107,19 +6107,19 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecresourcesreservation">Service<wbr>Task<wbr>Spec<wbr>Resources<wbr>Reservation<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}An object describing the resources which can be advertised by a node and requested by a task.
+    <dd>An object describing the resources which can be advertised by a node and requested by a task.
 * `nano_cpus` (Optional, int) CPU shares in units of 1/1e9 (or 10^-9) of the CPU. Should be at least 1000000
 * `memory_bytes` (Optional, int) The amount of memory in bytes the container allocates
 * `generic_resources` (Optional, map) User-defined resources can be either Integer resources (e.g, SSD=3) or String resources (e.g, GPU=UUID1)
 * `named_resources_spec` (Optional, set of string) The String resources
 * `discrete_resources_spec` (Optional, set of string) The Integer resources
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6128,13 +6128,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecresourceslimits">Service<wbr>Task<wbr>Spec<wbr>Resources<wbr>Limits</a></span>
     </dt>
-    <dd>{{% md %}}Describes the resources which can be advertised by a node and requested by a task.
+    <dd>Describes the resources which can be advertised by a node and requested by a task.
 * `nano_cpus` (Optional, int) CPU shares in units of 1/1e9 (or 10^-9) of the CPU. Should be at least 1000000
 * `memory_bytes` (Optional, int) The amount of memory in bytes the container allocates
 * `generic_resources` (Optional, map) User-defined resources can be either Integer resources (e.g, SSD=3) or String resources (e.g, GPU=UUID1)
 * `named_resources_spec` (Optional, set of string) The String resources, delimited by `=`
 * `discrete_resources_spec` (Optional, set of string) The Integer resources, delimited by `=`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6142,19 +6142,19 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecresourcesreservation">Service<wbr>Task<wbr>Spec<wbr>Resources<wbr>Reservation</a></span>
     </dt>
-    <dd>{{% md %}}An object describing the resources which can be advertised by a node and requested by a task.
+    <dd>An object describing the resources which can be advertised by a node and requested by a task.
 * `nano_cpus` (Optional, int) CPU shares in units of 1/1e9 (or 10^-9) of the CPU. Should be at least 1000000
 * `memory_bytes` (Optional, int) The amount of memory in bytes the container allocates
 * `generic_resources` (Optional, map) User-defined resources can be either Integer resources (e.g, SSD=3) or String resources (e.g, GPU=UUID1)
 * `named_resources_spec` (Optional, set of string) The String resources
 * `discrete_resources_spec` (Optional, set of string) The Integer resources
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6163,13 +6163,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecresourceslimits">Service<wbr>Task<wbr>Spec<wbr>Resources<wbr>Limits</a></span>
     </dt>
-    <dd>{{% md %}}Describes the resources which can be advertised by a node and requested by a task.
+    <dd>Describes the resources which can be advertised by a node and requested by a task.
 * `nano_cpus` (Optional, int) CPU shares in units of 1/1e9 (or 10^-9) of the CPU. Should be at least 1000000
 * `memory_bytes` (Optional, int) The amount of memory in bytes the container allocates
 * `generic_resources` (Optional, map) User-defined resources can be either Integer resources (e.g, SSD=3) or String resources (e.g, GPU=UUID1)
 * `named_resources_spec` (Optional, set of string) The String resources, delimited by `=`
 * `discrete_resources_spec` (Optional, set of string) The Integer resources, delimited by `=`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6177,19 +6177,19 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecresourcesreservation">Service<wbr>Task<wbr>Spec<wbr>Resources<wbr>Reservation</a></span>
     </dt>
-    <dd>{{% md %}}An object describing the resources which can be advertised by a node and requested by a task.
+    <dd>An object describing the resources which can be advertised by a node and requested by a task.
 * `nano_cpus` (Optional, int) CPU shares in units of 1/1e9 (or 10^-9) of the CPU. Should be at least 1000000
 * `memory_bytes` (Optional, int) The amount of memory in bytes the container allocates
 * `generic_resources` (Optional, map) User-defined resources can be either Integer resources (e.g, SSD=3) or String resources (e.g, GPU=UUID1)
 * `named_resources_spec` (Optional, set of string) The String resources
 * `discrete_resources_spec` (Optional, set of string) The Integer resources
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6198,13 +6198,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecresourceslimits">Dict[Service<wbr>Task<wbr>Spec<wbr>Resources<wbr>Limits]</a></span>
     </dt>
-    <dd>{{% md %}}Describes the resources which can be advertised by a node and requested by a task.
+    <dd>Describes the resources which can be advertised by a node and requested by a task.
 * `nano_cpus` (Optional, int) CPU shares in units of 1/1e9 (or 10^-9) of the CPU. Should be at least 1000000
 * `memory_bytes` (Optional, int) The amount of memory in bytes the container allocates
 * `generic_resources` (Optional, map) User-defined resources can be either Integer resources (e.g, SSD=3) or String resources (e.g, GPU=UUID1)
 * `named_resources_spec` (Optional, set of string) The String resources, delimited by `=`
 * `discrete_resources_spec` (Optional, set of string) The Integer resources, delimited by `=`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6212,34 +6212,34 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecresourcesreservation">Dict[Service<wbr>Task<wbr>Spec<wbr>Resources<wbr>Reservation]</a></span>
     </dt>
-    <dd>{{% md %}}An object describing the resources which can be advertised by a node and requested by a task.
+    <dd>An object describing the resources which can be advertised by a node and requested by a task.
 * `nano_cpus` (Optional, int) CPU shares in units of 1/1e9 (or 10^-9) of the CPU. Should be at least 1000000
 * `memory_bytes` (Optional, int) The amount of memory in bytes the container allocates
 * `generic_resources` (Optional, map) User-defined resources can be either Integer resources (e.g, SSD=3) or String resources (e.g, GPU=UUID1)
 * `named_resources_spec` (Optional, set of string) The String resources
 * `discrete_resources_spec` (Optional, set of string) The Integer resources
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspecresourceslimits">Service<wbr>Task<wbr>Spec<wbr>Resources<wbr>Limits</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecResourcesLimits">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecResourcesLimits">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecResourcesLimitsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecResourcesLimitsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6248,7 +6248,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecresourceslimitsgenericresources">Service<wbr>Task<wbr>Spec<wbr>Resources<wbr>Limits<wbr>Generic<wbr>Resources<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6256,7 +6256,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6264,13 +6264,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6279,7 +6279,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecresourceslimitsgenericresources">Service<wbr>Task<wbr>Spec<wbr>Resources<wbr>Limits<wbr>Generic<wbr>Resources</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6287,7 +6287,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6295,13 +6295,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6310,7 +6310,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecresourceslimitsgenericresources">Service<wbr>Task<wbr>Spec<wbr>Resources<wbr>Limits<wbr>Generic<wbr>Resources</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6318,7 +6318,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6326,13 +6326,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6341,7 +6341,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecresourceslimitsgenericresources">Dict[Service<wbr>Task<wbr>Spec<wbr>Resources<wbr>Limits<wbr>Generic<wbr>Resources]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6349,7 +6349,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6357,28 +6357,28 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspecresourceslimitsgenericresources">Service<wbr>Task<wbr>Spec<wbr>Resources<wbr>Limits<wbr>Generic<wbr>Resources</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecResourcesLimitsGenericResources">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecResourcesLimitsGenericResources">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecResourcesLimitsGenericResourcesArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecResourcesLimitsGenericResourcesOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6387,7 +6387,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6395,13 +6395,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6410,7 +6410,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6418,13 +6418,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6433,7 +6433,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6441,13 +6441,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6456,7 +6456,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6464,28 +6464,28 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspecresourcesreservation">Service<wbr>Task<wbr>Spec<wbr>Resources<wbr>Reservation</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecResourcesReservation">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecResourcesReservation">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecResourcesReservationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecResourcesReservationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6494,7 +6494,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecresourcesreservationgenericresources">Service<wbr>Task<wbr>Spec<wbr>Resources<wbr>Reservation<wbr>Generic<wbr>Resources<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6502,7 +6502,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6510,13 +6510,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6525,7 +6525,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecresourcesreservationgenericresources">Service<wbr>Task<wbr>Spec<wbr>Resources<wbr>Reservation<wbr>Generic<wbr>Resources</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6533,7 +6533,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6541,13 +6541,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6556,7 +6556,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecresourcesreservationgenericresources">Service<wbr>Task<wbr>Spec<wbr>Resources<wbr>Reservation<wbr>Generic<wbr>Resources</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6564,7 +6564,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6572,13 +6572,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6587,7 +6587,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#servicetaskspecresourcesreservationgenericresources">Dict[Service<wbr>Task<wbr>Spec<wbr>Resources<wbr>Reservation<wbr>Generic<wbr>Resources]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6595,7 +6595,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6603,28 +6603,28 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspecresourcesreservationgenericresources">Service<wbr>Task<wbr>Spec<wbr>Resources<wbr>Reservation<wbr>Generic<wbr>Resources</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecResourcesReservationGenericResources">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecResourcesReservationGenericResources">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecResourcesReservationGenericResourcesArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecResourcesReservationGenericResourcesOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6633,7 +6633,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6641,13 +6641,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6656,7 +6656,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6664,13 +6664,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6679,7 +6679,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6687,13 +6687,13 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6702,7 +6702,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6710,28 +6710,28 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="servicetaskspecrestartpolicy">Service<wbr>Task<wbr>Spec<wbr>Restart<wbr>Policy</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceTaskSpecRestartPolicy">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceTaskSpecRestartPolicy">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecRestartPolicyArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceTaskSpecRestartPolicyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6740,7 +6740,7 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6748,9 +6748,9 @@ command to be `["CMD", "curl", "-f", "http://localhost/health"]`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
+    <dd>Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
 all tasks are up when a service is created, or to check if all tasks are successfully updated on an update. Default: `7s`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6758,7 +6758,7 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6766,13 +6766,13 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6781,7 +6781,7 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6789,9 +6789,9 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
+    <dd>Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
 all tasks are up when a service is created, or to check if all tasks are successfully updated on an update. Default: `7s`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6799,7 +6799,7 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6807,13 +6807,13 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6822,7 +6822,7 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6830,9 +6830,9 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
+    <dd>Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
 all tasks are up when a service is created, or to check if all tasks are successfully updated on an update. Default: `7s`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6840,7 +6840,7 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6848,13 +6848,13 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6863,7 +6863,7 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6871,9 +6871,9 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
+    <dd>Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
 all tasks are up when a service is created, or to check if all tasks are successfully updated on an update. Default: `7s`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6881,7 +6881,7 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6889,28 +6889,28 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="serviceupdateconfig">Service<wbr>Update<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/input/#ServiceUpdateConfig">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/docker/types/output/#ServiceUpdateConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceUpdateConfigArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-docker/sdk/v2/go/docker/?tab=doc#ServiceUpdateConfigOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6919,8 +6919,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
-{{% /md %}}</dd>
+    <dd>Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6928,8 +6928,8 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Action on update failure: `pause|continue|rollback`.
-{{% /md %}}</dd>
+    <dd>Action on update failure: `pause|continue|rollback`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6937,9 +6937,9 @@ all tasks are up when a service is created, or to check if all tasks are success
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The failure rate to tolerate during an update as `float`. **Important:** the `float`need to be wrapped in a `string` to avoid internal
+    <dd>The failure rate to tolerate during an update as `float`. **Important:** the `float`need to be wrapped in a `string` to avoid internal
 casting and precision errors.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6947,8 +6947,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Duration after each task update to monitor for failure `(ns|us|ms|s|m|h)`
-{{% /md %}}</dd>
+    <dd>Duration after each task update to monitor for failure `(ns|us|ms|s|m|h)`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6956,8 +6956,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Update order either 'stop-first' or 'start-first'.
-{{% /md %}}</dd>
+    <dd>Update order either 'stop-first' or 'start-first'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6965,14 +6965,14 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of tasks to be updated in one iteration simultaneously (0 to update all at once).
-{{% /md %}}</dd>
+    <dd>The maximum number of tasks to be updated in one iteration simultaneously (0 to update all at once).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6981,8 +6981,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
-{{% /md %}}</dd>
+    <dd>Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6990,8 +6990,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Action on update failure: `pause|continue|rollback`.
-{{% /md %}}</dd>
+    <dd>Action on update failure: `pause|continue|rollback`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6999,9 +6999,9 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The failure rate to tolerate during an update as `float`. **Important:** the `float`need to be wrapped in a `string` to avoid internal
+    <dd>The failure rate to tolerate during an update as `float`. **Important:** the `float`need to be wrapped in a `string` to avoid internal
 casting and precision errors.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7009,8 +7009,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Duration after each task update to monitor for failure `(ns|us|ms|s|m|h)`
-{{% /md %}}</dd>
+    <dd>Duration after each task update to monitor for failure `(ns|us|ms|s|m|h)`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7018,8 +7018,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Update order either 'stop-first' or 'start-first'.
-{{% /md %}}</dd>
+    <dd>Update order either 'stop-first' or 'start-first'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7027,14 +7027,14 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of tasks to be updated in one iteration simultaneously (0 to update all at once).
-{{% /md %}}</dd>
+    <dd>The maximum number of tasks to be updated in one iteration simultaneously (0 to update all at once).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -7043,8 +7043,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
-{{% /md %}}</dd>
+    <dd>Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7052,8 +7052,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Action on update failure: `pause|continue|rollback`.
-{{% /md %}}</dd>
+    <dd>Action on update failure: `pause|continue|rollback`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7061,9 +7061,9 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The failure rate to tolerate during an update as `float`. **Important:** the `float`need to be wrapped in a `string` to avoid internal
+    <dd>The failure rate to tolerate during an update as `float`. **Important:** the `float`need to be wrapped in a `string` to avoid internal
 casting and precision errors.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7071,8 +7071,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Duration after each task update to monitor for failure `(ns|us|ms|s|m|h)`
-{{% /md %}}</dd>
+    <dd>Duration after each task update to monitor for failure `(ns|us|ms|s|m|h)`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7080,8 +7080,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Update order either 'stop-first' or 'start-first'.
-{{% /md %}}</dd>
+    <dd>Update order either 'stop-first' or 'start-first'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7089,14 +7089,14 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of tasks to be updated in one iteration simultaneously (0 to update all at once).
-{{% /md %}}</dd>
+    <dd>The maximum number of tasks to be updated in one iteration simultaneously (0 to update all at once).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -7105,8 +7105,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
-{{% /md %}}</dd>
+    <dd>Delay between updates `(ns|us|ms|s|m|h)`, e.g. `5s`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7114,8 +7114,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Action on update failure: `pause|continue|rollback`.
-{{% /md %}}</dd>
+    <dd>Action on update failure: `pause|continue|rollback`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7123,9 +7123,9 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The failure rate to tolerate during an update as `float`. **Important:** the `float`need to be wrapped in a `string` to avoid internal
+    <dd>The failure rate to tolerate during an update as `float`. **Important:** the `float`need to be wrapped in a `string` to avoid internal
 casting and precision errors.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7133,8 +7133,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Duration after each task update to monitor for failure `(ns|us|ms|s|m|h)`
-{{% /md %}}</dd>
+    <dd>Duration after each task update to monitor for failure `(ns|us|ms|s|m|h)`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7142,8 +7142,8 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Update order either 'stop-first' or 'start-first'.
-{{% /md %}}</dd>
+    <dd>Update order either 'stop-first' or 'start-first'.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7151,11 +7151,11 @@ casting and precision errors.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The maximum number of tasks to be updated in one iteration simultaneously (0 to update all at once).
-{{% /md %}}</dd>
+    <dd>The maximum number of tasks to be updated in one iteration simultaneously (0 to update all at once).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

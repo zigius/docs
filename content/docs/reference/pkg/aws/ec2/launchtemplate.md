@@ -18,26 +18,26 @@ Provides an EC2 launch template resource. Can be used to create instances or aut
 
 
 ## Create a LaunchTemplate Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#LaunchTemplate">LaunchTemplate</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#LaunchTemplateArgs">LaunchTemplateArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">LaunchTemplate</span><span class="p">(resource_name, opts=None, </span>block_device_mappings=None<span class="p">, </span>capacity_reservation_specification=None<span class="p">, </span>cpu_options=None<span class="p">, </span>credit_specification=None<span class="p">, </span>description=None<span class="p">, </span>disable_api_termination=None<span class="p">, </span>ebs_optimized=None<span class="p">, </span>elastic_gpu_specifications=None<span class="p">, </span>elastic_inference_accelerator=None<span class="p">, </span>hibernation_options=None<span class="p">, </span>iam_instance_profile=None<span class="p">, </span>image_id=None<span class="p">, </span>instance_initiated_shutdown_behavior=None<span class="p">, </span>instance_market_options=None<span class="p">, </span>instance_type=None<span class="p">, </span>kernel_id=None<span class="p">, </span>key_name=None<span class="p">, </span>license_specifications=None<span class="p">, </span>metadata_options=None<span class="p">, </span>monitoring=None<span class="p">, </span>name=None<span class="p">, </span>name_prefix=None<span class="p">, </span>network_interfaces=None<span class="p">, </span>placement=None<span class="p">, </span>ram_disk_id=None<span class="p">, </span>security_group_names=None<span class="p">, </span>tag_specifications=None<span class="p">, </span>tags=None<span class="p">, </span>user_data=None<span class="p">, </span>vpc_security_group_ids=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewLaunchTemplate<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateArgs">LaunchTemplateArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplate">LaunchTemplate</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.LaunchTemplate.html">LaunchTemplate</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.LaunchTemplateArgs.html">LaunchTemplateArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ Provides an EC2 launch template resource. Can be used to create instances or aut
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ Provides an EC2 launch template resource. Can be used to create instances or aut
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ Provides an EC2 launch template resource. Can be used to create instances or aut
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ Provides an EC2 launch template resource. Can be used to create instances or aut
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## LaunchTemplate Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The LaunchTemplate resource accepts the following [input]({{< relref "/docs/intr
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -204,9 +204,9 @@ The LaunchTemplate resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemapping">List&lt;Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specify volumes to attach to the instance besides the volumes specified by the AMI.
+    <dd>Specify volumes to attach to the instance besides the volumes specified by the AMI.
 See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -214,8 +214,8 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecification">Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
-{{% /md %}}</dd>
+    <dd>Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -223,8 +223,8 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecpuoptions">Launch<wbr>Template<wbr>Cpu<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The CPU options for the instance. See CPU Options below for more details.
-{{% /md %}}</dd>
+    <dd>The CPU options for the instance. See CPU Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -232,9 +232,9 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecreditspecification">Launch<wbr>Template<wbr>Credit<wbr>Specification<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Customize the credit specification of the instance. See Credit
+    <dd>Customize the credit specification of the instance. See Credit
 Specification below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -242,8 +242,8 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the launch template.
-{{% /md %}}</dd>
+    <dd>Description of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -251,9 +251,9 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, enables [EC2 Instance
+    <dd>If `true`, enables [EC2 Instance
 Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -261,8 +261,8 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If `true`, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -270,9 +270,9 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticgpuspecification">List&lt;Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The elastic GPU to attach to the instance. See Elastic GPU
+    <dd>The elastic GPU to attach to the instance. See Elastic GPU
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -280,8 +280,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticinferenceaccelerator">Launch<wbr>Template<wbr>Elastic<wbr>Inference<wbr>Accelerator<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
-{{% /md %}}</dd>
+    <dd>Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -289,8 +289,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatehibernationoptions">Launch<wbr>Template<wbr>Hibernation<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The hibernation options for the instance. See Hibernation Options below for more details.
-{{% /md %}}</dd>
+    <dd>The hibernation options for the instance. See Hibernation Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -298,9 +298,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateiaminstanceprofile">Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The IAM Instance Profile to launch the instance with. See Instance Profile
+    <dd>The IAM Instance Profile to launch the instance with. See Instance Profile
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -308,8 +308,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The AMI from which to launch the instance.
-{{% /md %}}</dd>
+    <dd>The AMI from which to launch the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -317,9 +317,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Shutdown behavior for the instance. Can be `stop` or `terminate`.
+    <dd>Shutdown behavior for the instance. Can be `stop` or `terminate`.
 (Default: `stop`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -327,9 +327,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptions">Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The market (purchasing) option for the instance. See Market Options
+    <dd>The market (purchasing) option for the instance. See Market Options
 below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -337,8 +337,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the instance.
-{{% /md %}}</dd>
+    <dd>The type of the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,8 +346,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The kernel ID.
-{{% /md %}}</dd>
+    <dd>The kernel ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,8 +355,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The key name to use for the instance.
-{{% /md %}}</dd>
+    <dd>The key name to use for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -364,8 +364,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatelicensespecification">List&lt;Launch<wbr>Template<wbr>License<wbr>Specification<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of license specifications to associate with. See License Specification below for more details.
-{{% /md %}}</dd>
+    <dd>A list of license specifications to associate with. See License Specification below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -373,8 +373,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemetadataoptions">Launch<wbr>Template<wbr>Metadata<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Customize the metadata options for the instance. See Metadata Options below for more details.
-{{% /md %}}</dd>
+    <dd>Customize the metadata options for the instance. See Metadata Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -382,8 +382,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemonitoring">Launch<wbr>Template<wbr>Monitoring<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The monitoring option for the instance. See Monitoring below for more details.
-{{% /md %}}</dd>
+    <dd>The monitoring option for the instance. See Monitoring below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -391,8 +391,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
-{{% /md %}}</dd>
+    <dd>The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -400,8 +400,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+    <dd>Creates a unique name beginning with the specified prefix. Conflicts with `name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -409,9 +409,9 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatenetworkinterface">List&lt;Launch<wbr>Template<wbr>Network<wbr>Interface<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Customize network interfaces to be attached at instance boot time. See Network
+    <dd>Customize network interfaces to be attached at instance boot time. See Network
 Interfaces below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -419,8 +419,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateplacement">Launch<wbr>Template<wbr>Placement<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The placement of the instance. See Placement below for more details.
-{{% /md %}}</dd>
+    <dd>The placement of the instance. See Placement below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -428,8 +428,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the RAM disk.
-{{% /md %}}</dd>
+    <dd>The ID of the RAM disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -437,9 +437,9 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group names to associate with. If you are creating Instances in a VPC, use
+    <dd>A list of security group names to associate with. If you are creating Instances in a VPC, use
 `vpc_security_group_ids` instead.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -447,8 +447,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatetagspecification">List&lt;Launch<wbr>Template<wbr>Tag<wbr>Specification<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The tags to apply to the resources during launch. See Tag Specifications below for more details.
-{{% /md %}}</dd>
+    <dd>The tags to apply to the resources during launch. See Tag Specifications below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -456,8 +456,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the launch template.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -465,8 +465,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded user data to provide when launching the instance.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded user data to provide when launching the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -474,14 +474,14 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to associate with.
-{{% /md %}}</dd>
+    <dd>A list of security group IDs to associate with.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -490,9 +490,9 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemapping">[]Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping</a></span>
     </dt>
-    <dd>{{% md %}}Specify volumes to attach to the instance besides the volumes specified by the AMI.
+    <dd>Specify volumes to attach to the instance besides the volumes specified by the AMI.
 See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -500,8 +500,8 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecification">Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
-{{% /md %}}</dd>
+    <dd>Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -509,8 +509,8 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecpuoptions">Launch<wbr>Template<wbr>Cpu<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}The CPU options for the instance. See CPU Options below for more details.
-{{% /md %}}</dd>
+    <dd>The CPU options for the instance. See CPU Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -518,9 +518,9 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecreditspecification">Launch<wbr>Template<wbr>Credit<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}Customize the credit specification of the instance. See Credit
+    <dd>Customize the credit specification of the instance. See Credit
 Specification below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -528,8 +528,8 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the launch template.
-{{% /md %}}</dd>
+    <dd>Description of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -537,9 +537,9 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, enables [EC2 Instance
+    <dd>If `true`, enables [EC2 Instance
 Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -547,8 +547,8 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If `true`, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -556,9 +556,9 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticgpuspecification">[]Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}The elastic GPU to attach to the instance. See Elastic GPU
+    <dd>The elastic GPU to attach to the instance. See Elastic GPU
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -566,8 +566,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticinferenceaccelerator">Launch<wbr>Template<wbr>Elastic<wbr>Inference<wbr>Accelerator</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
-{{% /md %}}</dd>
+    <dd>Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -575,8 +575,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatehibernationoptions">Launch<wbr>Template<wbr>Hibernation<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}The hibernation options for the instance. See Hibernation Options below for more details.
-{{% /md %}}</dd>
+    <dd>The hibernation options for the instance. See Hibernation Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -584,9 +584,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateiaminstanceprofile">Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile</a></span>
     </dt>
-    <dd>{{% md %}}The IAM Instance Profile to launch the instance with. See Instance Profile
+    <dd>The IAM Instance Profile to launch the instance with. See Instance Profile
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -594,8 +594,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AMI from which to launch the instance.
-{{% /md %}}</dd>
+    <dd>The AMI from which to launch the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -603,9 +603,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Shutdown behavior for the instance. Can be `stop` or `terminate`.
+    <dd>Shutdown behavior for the instance. Can be `stop` or `terminate`.
 (Default: `stop`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -613,9 +613,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptions">Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}The market (purchasing) option for the instance. See Market Options
+    <dd>The market (purchasing) option for the instance. See Market Options
 below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -623,8 +623,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the instance.
-{{% /md %}}</dd>
+    <dd>The type of the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -632,8 +632,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The kernel ID.
-{{% /md %}}</dd>
+    <dd>The kernel ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -641,8 +641,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The key name to use for the instance.
-{{% /md %}}</dd>
+    <dd>The key name to use for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -650,8 +650,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatelicensespecification">[]Launch<wbr>Template<wbr>License<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}A list of license specifications to associate with. See License Specification below for more details.
-{{% /md %}}</dd>
+    <dd>A list of license specifications to associate with. See License Specification below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -659,8 +659,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemetadataoptions">Launch<wbr>Template<wbr>Metadata<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Customize the metadata options for the instance. See Metadata Options below for more details.
-{{% /md %}}</dd>
+    <dd>Customize the metadata options for the instance. See Metadata Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -668,8 +668,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemonitoring">Launch<wbr>Template<wbr>Monitoring</a></span>
     </dt>
-    <dd>{{% md %}}The monitoring option for the instance. See Monitoring below for more details.
-{{% /md %}}</dd>
+    <dd>The monitoring option for the instance. See Monitoring below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -677,8 +677,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
-{{% /md %}}</dd>
+    <dd>The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -686,8 +686,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+    <dd>Creates a unique name beginning with the specified prefix. Conflicts with `name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -695,9 +695,9 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatenetworkinterface">[]Launch<wbr>Template<wbr>Network<wbr>Interface</a></span>
     </dt>
-    <dd>{{% md %}}Customize network interfaces to be attached at instance boot time. See Network
+    <dd>Customize network interfaces to be attached at instance boot time. See Network
 Interfaces below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -705,8 +705,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateplacement">Launch<wbr>Template<wbr>Placement</a></span>
     </dt>
-    <dd>{{% md %}}The placement of the instance. See Placement below for more details.
-{{% /md %}}</dd>
+    <dd>The placement of the instance. See Placement below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -714,8 +714,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the RAM disk.
-{{% /md %}}</dd>
+    <dd>The ID of the RAM disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -723,9 +723,9 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group names to associate with. If you are creating Instances in a VPC, use
+    <dd>A list of security group names to associate with. If you are creating Instances in a VPC, use
 `vpc_security_group_ids` instead.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -733,8 +733,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatetagspecification">[]Launch<wbr>Template<wbr>Tag<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}The tags to apply to the resources during launch. See Tag Specifications below for more details.
-{{% /md %}}</dd>
+    <dd>The tags to apply to the resources during launch. See Tag Specifications below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -742,8 +742,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the launch template.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -751,8 +751,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded user data to provide when launching the instance.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded user data to provide when launching the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -760,14 +760,14 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to associate with.
-{{% /md %}}</dd>
+    <dd>A list of security group IDs to associate with.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -776,9 +776,9 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemapping">Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping[]</a></span>
     </dt>
-    <dd>{{% md %}}Specify volumes to attach to the instance besides the volumes specified by the AMI.
+    <dd>Specify volumes to attach to the instance besides the volumes specified by the AMI.
 See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -786,8 +786,8 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecification">Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
-{{% /md %}}</dd>
+    <dd>Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -795,8 +795,8 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecpuoptions">Launch<wbr>Template<wbr>Cpu<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}The CPU options for the instance. See CPU Options below for more details.
-{{% /md %}}</dd>
+    <dd>The CPU options for the instance. See CPU Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -804,9 +804,9 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecreditspecification">Launch<wbr>Template<wbr>Credit<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}Customize the credit specification of the instance. See Credit
+    <dd>Customize the credit specification of the instance. See Credit
 Specification below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -814,8 +814,8 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the launch template.
-{{% /md %}}</dd>
+    <dd>Description of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -823,9 +823,9 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, enables [EC2 Instance
+    <dd>If `true`, enables [EC2 Instance
 Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -833,8 +833,8 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If `true`, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -842,9 +842,9 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticgpuspecification">Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification[]</a></span>
     </dt>
-    <dd>{{% md %}}The elastic GPU to attach to the instance. See Elastic GPU
+    <dd>The elastic GPU to attach to the instance. See Elastic GPU
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -852,8 +852,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticinferenceaccelerator">Launch<wbr>Template<wbr>Elastic<wbr>Inference<wbr>Accelerator</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
-{{% /md %}}</dd>
+    <dd>Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -861,8 +861,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatehibernationoptions">Launch<wbr>Template<wbr>Hibernation<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}The hibernation options for the instance. See Hibernation Options below for more details.
-{{% /md %}}</dd>
+    <dd>The hibernation options for the instance. See Hibernation Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -870,9 +870,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateiaminstanceprofile">Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile</a></span>
     </dt>
-    <dd>{{% md %}}The IAM Instance Profile to launch the instance with. See Instance Profile
+    <dd>The IAM Instance Profile to launch the instance with. See Instance Profile
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -880,8 +880,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AMI from which to launch the instance.
-{{% /md %}}</dd>
+    <dd>The AMI from which to launch the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -889,9 +889,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Shutdown behavior for the instance. Can be `stop` or `terminate`.
+    <dd>Shutdown behavior for the instance. Can be `stop` or `terminate`.
 (Default: `stop`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -899,9 +899,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptions">Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}The market (purchasing) option for the instance. See Market Options
+    <dd>The market (purchasing) option for the instance. See Market Options
 below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -909,8 +909,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the instance.
-{{% /md %}}</dd>
+    <dd>The type of the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -918,8 +918,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The kernel ID.
-{{% /md %}}</dd>
+    <dd>The kernel ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -927,8 +927,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The key name to use for the instance.
-{{% /md %}}</dd>
+    <dd>The key name to use for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -936,8 +936,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatelicensespecification">Launch<wbr>Template<wbr>License<wbr>Specification[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of license specifications to associate with. See License Specification below for more details.
-{{% /md %}}</dd>
+    <dd>A list of license specifications to associate with. See License Specification below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -945,8 +945,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemetadataoptions">Launch<wbr>Template<wbr>Metadata<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Customize the metadata options for the instance. See Metadata Options below for more details.
-{{% /md %}}</dd>
+    <dd>Customize the metadata options for the instance. See Metadata Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -954,8 +954,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemonitoring">Launch<wbr>Template<wbr>Monitoring</a></span>
     </dt>
-    <dd>{{% md %}}The monitoring option for the instance. See Monitoring below for more details.
-{{% /md %}}</dd>
+    <dd>The monitoring option for the instance. See Monitoring below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -963,8 +963,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
-{{% /md %}}</dd>
+    <dd>The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -972,8 +972,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+    <dd>Creates a unique name beginning with the specified prefix. Conflicts with `name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -981,9 +981,9 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatenetworkinterface">Launch<wbr>Template<wbr>Network<wbr>Interface[]</a></span>
     </dt>
-    <dd>{{% md %}}Customize network interfaces to be attached at instance boot time. See Network
+    <dd>Customize network interfaces to be attached at instance boot time. See Network
 Interfaces below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -991,8 +991,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateplacement">Launch<wbr>Template<wbr>Placement</a></span>
     </dt>
-    <dd>{{% md %}}The placement of the instance. See Placement below for more details.
-{{% /md %}}</dd>
+    <dd>The placement of the instance. See Placement below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1000,8 +1000,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the RAM disk.
-{{% /md %}}</dd>
+    <dd>The ID of the RAM disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1009,9 +1009,9 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group names to associate with. If you are creating Instances in a VPC, use
+    <dd>A list of security group names to associate with. If you are creating Instances in a VPC, use
 `vpc_security_group_ids` instead.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1019,8 +1019,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatetagspecification">Launch<wbr>Template<wbr>Tag<wbr>Specification[]</a></span>
     </dt>
-    <dd>{{% md %}}The tags to apply to the resources during launch. See Tag Specifications below for more details.
-{{% /md %}}</dd>
+    <dd>The tags to apply to the resources during launch. See Tag Specifications below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1028,8 +1028,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the launch template.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1037,8 +1037,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded user data to provide when launching the instance.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded user data to provide when launching the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1046,14 +1046,14 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to associate with.
-{{% /md %}}</dd>
+    <dd>A list of security group IDs to associate with.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1062,9 +1062,9 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemapping">List[Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping]</a></span>
     </dt>
-    <dd>{{% md %}}Specify volumes to attach to the instance besides the volumes specified by the AMI.
+    <dd>Specify volumes to attach to the instance besides the volumes specified by the AMI.
 See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1072,8 +1072,8 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecification">Dict[Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification]</a></span>
     </dt>
-    <dd>{{% md %}}Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
-{{% /md %}}</dd>
+    <dd>Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1081,8 +1081,8 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecpuoptions">Dict[Launch<wbr>Template<wbr>Cpu<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}The CPU options for the instance. See CPU Options below for more details.
-{{% /md %}}</dd>
+    <dd>The CPU options for the instance. See CPU Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1090,9 +1090,9 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecreditspecification">Dict[Launch<wbr>Template<wbr>Credit<wbr>Specification]</a></span>
     </dt>
-    <dd>{{% md %}}Customize the credit specification of the instance. See Credit
+    <dd>Customize the credit specification of the instance. See Credit
 Specification below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1100,8 +1100,8 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description of the launch template.
-{{% /md %}}</dd>
+    <dd>Description of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1109,9 +1109,9 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, enables [EC2 Instance
+    <dd>If `true`, enables [EC2 Instance
 Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1119,8 +1119,8 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If `true`, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1128,9 +1128,9 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticgpuspecification">List[Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification]</a></span>
     </dt>
-    <dd>{{% md %}}The elastic GPU to attach to the instance. See Elastic GPU
+    <dd>The elastic GPU to attach to the instance. See Elastic GPU
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1138,8 +1138,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticinferenceaccelerator">Dict[Launch<wbr>Template<wbr>Elastic<wbr>Inference<wbr>Accelerator]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
-{{% /md %}}</dd>
+    <dd>Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1147,8 +1147,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatehibernationoptions">Dict[Launch<wbr>Template<wbr>Hibernation<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}The hibernation options for the instance. See Hibernation Options below for more details.
-{{% /md %}}</dd>
+    <dd>The hibernation options for the instance. See Hibernation Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1156,9 +1156,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateiaminstanceprofile">Dict[Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile]</a></span>
     </dt>
-    <dd>{{% md %}}The IAM Instance Profile to launch the instance with. See Instance Profile
+    <dd>The IAM Instance Profile to launch the instance with. See Instance Profile
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1166,8 +1166,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The AMI from which to launch the instance.
-{{% /md %}}</dd>
+    <dd>The AMI from which to launch the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1175,9 +1175,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Shutdown behavior for the instance. Can be `stop` or `terminate`.
+    <dd>Shutdown behavior for the instance. Can be `stop` or `terminate`.
 (Default: `stop`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1185,9 +1185,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptions">Dict[Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}The market (purchasing) option for the instance. See Market Options
+    <dd>The market (purchasing) option for the instance. See Market Options
 below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1195,8 +1195,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the instance.
-{{% /md %}}</dd>
+    <dd>The type of the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1204,8 +1204,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The kernel ID.
-{{% /md %}}</dd>
+    <dd>The kernel ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1213,8 +1213,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The key name to use for the instance.
-{{% /md %}}</dd>
+    <dd>The key name to use for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1222,8 +1222,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatelicensespecification">List[Launch<wbr>Template<wbr>License<wbr>Specification]</a></span>
     </dt>
-    <dd>{{% md %}}A list of license specifications to associate with. See License Specification below for more details.
-{{% /md %}}</dd>
+    <dd>A list of license specifications to associate with. See License Specification below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1231,8 +1231,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemetadataoptions">Dict[Launch<wbr>Template<wbr>Metadata<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}Customize the metadata options for the instance. See Metadata Options below for more details.
-{{% /md %}}</dd>
+    <dd>Customize the metadata options for the instance. See Metadata Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1240,8 +1240,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemonitoring">Dict[Launch<wbr>Template<wbr>Monitoring]</a></span>
     </dt>
-    <dd>{{% md %}}The monitoring option for the instance. See Monitoring below for more details.
-{{% /md %}}</dd>
+    <dd>The monitoring option for the instance. See Monitoring below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1249,8 +1249,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
-{{% /md %}}</dd>
+    <dd>The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1258,8 +1258,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+    <dd>Creates a unique name beginning with the specified prefix. Conflicts with `name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1267,9 +1267,9 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatenetworkinterface">List[Launch<wbr>Template<wbr>Network<wbr>Interface]</a></span>
     </dt>
-    <dd>{{% md %}}Customize network interfaces to be attached at instance boot time. See Network
+    <dd>Customize network interfaces to be attached at instance boot time. See Network
 Interfaces below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1277,8 +1277,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateplacement">Dict[Launch<wbr>Template<wbr>Placement]</a></span>
     </dt>
-    <dd>{{% md %}}The placement of the instance. See Placement below for more details.
-{{% /md %}}</dd>
+    <dd>The placement of the instance. See Placement below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1286,8 +1286,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the RAM disk.
-{{% /md %}}</dd>
+    <dd>The ID of the RAM disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1295,9 +1295,9 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group names to associate with. If you are creating Instances in a VPC, use
+    <dd>A list of security group names to associate with. If you are creating Instances in a VPC, use
 `vpc_security_group_ids` instead.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1305,8 +1305,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatetagspecification">List[Launch<wbr>Template<wbr>Tag<wbr>Specification]</a></span>
     </dt>
-    <dd>{{% md %}}The tags to apply to the resources during launch. See Tag Specifications below for more details.
-{{% /md %}}</dd>
+    <dd>The tags to apply to the resources during launch. See Tag Specifications below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1314,8 +1314,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the launch template.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1323,8 +1323,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded user data to provide when launching the instance.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded user data to provide when launching the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1332,11 +1332,11 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to associate with.
-{{% /md %}}</dd>
+    <dd>A list of security group IDs to associate with.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1350,7 +1350,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1359,8 +1359,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the instance profile.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the instance profile.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1368,8 +1368,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The default version of the launch template.
-{{% /md %}}</dd>
+    <dd>The default version of the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1377,7 +1377,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1385,14 +1385,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The latest version of the launch template.
-{{% /md %}}</dd>
+    <dd>The latest version of the launch template.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1401,8 +1401,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the instance profile.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the instance profile.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1410,8 +1410,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The default version of the launch template.
-{{% /md %}}</dd>
+    <dd>The default version of the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1419,7 +1419,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1427,14 +1427,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The latest version of the launch template.
-{{% /md %}}</dd>
+    <dd>The latest version of the launch template.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1443,8 +1443,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the instance profile.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the instance profile.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1452,8 +1452,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The default version of the launch template.
-{{% /md %}}</dd>
+    <dd>The default version of the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1461,7 +1461,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1469,14 +1469,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The latest version of the launch template.
-{{% /md %}}</dd>
+    <dd>The latest version of the launch template.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1485,8 +1485,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the instance profile.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the instance profile.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1494,8 +1494,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The default version of the launch template.
-{{% /md %}}</dd>
+    <dd>The default version of the launch template.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1503,7 +1503,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1511,11 +1511,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The latest version of the launch template.
-{{% /md %}}</dd>
+    <dd>The latest version of the launch template.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1526,25 +1526,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing LaunchTemplate Resource {#look-up}
 
 Get an existing LaunchTemplate resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#LaunchTemplateState">LaunchTemplateState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/ec2/#LaunchTemplate">LaunchTemplate</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>arn=None<span class="p">, </span>block_device_mappings=None<span class="p">, </span>capacity_reservation_specification=None<span class="p">, </span>cpu_options=None<span class="p">, </span>credit_specification=None<span class="p">, </span>default_version=None<span class="p">, </span>description=None<span class="p">, </span>disable_api_termination=None<span class="p">, </span>ebs_optimized=None<span class="p">, </span>elastic_gpu_specifications=None<span class="p">, </span>elastic_inference_accelerator=None<span class="p">, </span>hibernation_options=None<span class="p">, </span>iam_instance_profile=None<span class="p">, </span>image_id=None<span class="p">, </span>instance_initiated_shutdown_behavior=None<span class="p">, </span>instance_market_options=None<span class="p">, </span>instance_type=None<span class="p">, </span>kernel_id=None<span class="p">, </span>key_name=None<span class="p">, </span>latest_version=None<span class="p">, </span>license_specifications=None<span class="p">, </span>metadata_options=None<span class="p">, </span>monitoring=None<span class="p">, </span>name=None<span class="p">, </span>name_prefix=None<span class="p">, </span>network_interfaces=None<span class="p">, </span>placement=None<span class="p">, </span>ram_disk_id=None<span class="p">, </span>security_group_names=None<span class="p">, </span>tag_specifications=None<span class="p">, </span>tags=None<span class="p">, </span>user_data=None<span class="p">, </span>vpc_security_group_ids=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetLaunchTemplate<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateState">LaunchTemplateState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplate">LaunchTemplate</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.LaunchTemplate.html">LaunchTemplate</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.Ec2.LaunchTemplateState.html">LaunchTemplateState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1569,9 +1569,9 @@ Get an existing LaunchTemplate resource's state with the given name, ID, and opt
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1584,36 +1584,9 @@ Get an existing LaunchTemplate resource's state with the given name, ID, and opt
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1638,13 +1611,40 @@ Get an existing LaunchTemplate resource's state with the given name, ID, and opt
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1653,8 +1653,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the instance profile.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the instance profile.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1662,9 +1662,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemapping">List&lt;Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specify volumes to attach to the instance besides the volumes specified by the AMI.
+    <dd>Specify volumes to attach to the instance besides the volumes specified by the AMI.
 See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1672,8 +1672,8 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecification">Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
-{{% /md %}}</dd>
+    <dd>Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1681,8 +1681,8 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecpuoptions">Launch<wbr>Template<wbr>Cpu<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The CPU options for the instance. See CPU Options below for more details.
-{{% /md %}}</dd>
+    <dd>The CPU options for the instance. See CPU Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1690,9 +1690,9 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecreditspecification">Launch<wbr>Template<wbr>Credit<wbr>Specification<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Customize the credit specification of the instance. See Credit
+    <dd>Customize the credit specification of the instance. See Credit
 Specification below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1700,8 +1700,8 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The default version of the launch template.
-{{% /md %}}</dd>
+    <dd>The default version of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1709,8 +1709,8 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the launch template.
-{{% /md %}}</dd>
+    <dd>Description of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1718,9 +1718,9 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, enables [EC2 Instance
+    <dd>If `true`, enables [EC2 Instance
 Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1728,8 +1728,8 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If `true`, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1737,9 +1737,9 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticgpuspecification">List&lt;Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The elastic GPU to attach to the instance. See Elastic GPU
+    <dd>The elastic GPU to attach to the instance. See Elastic GPU
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1747,8 +1747,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticinferenceaccelerator">Launch<wbr>Template<wbr>Elastic<wbr>Inference<wbr>Accelerator<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
-{{% /md %}}</dd>
+    <dd>Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1756,8 +1756,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatehibernationoptions">Launch<wbr>Template<wbr>Hibernation<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The hibernation options for the instance. See Hibernation Options below for more details.
-{{% /md %}}</dd>
+    <dd>The hibernation options for the instance. See Hibernation Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1765,9 +1765,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateiaminstanceprofile">Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The IAM Instance Profile to launch the instance with. See Instance Profile
+    <dd>The IAM Instance Profile to launch the instance with. See Instance Profile
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1775,8 +1775,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The AMI from which to launch the instance.
-{{% /md %}}</dd>
+    <dd>The AMI from which to launch the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1784,9 +1784,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Shutdown behavior for the instance. Can be `stop` or `terminate`.
+    <dd>Shutdown behavior for the instance. Can be `stop` or `terminate`.
 (Default: `stop`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1794,9 +1794,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptions">Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The market (purchasing) option for the instance. See Market Options
+    <dd>The market (purchasing) option for the instance. See Market Options
 below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1804,8 +1804,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the instance.
-{{% /md %}}</dd>
+    <dd>The type of the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1813,8 +1813,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The kernel ID.
-{{% /md %}}</dd>
+    <dd>The kernel ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1822,8 +1822,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The key name to use for the instance.
-{{% /md %}}</dd>
+    <dd>The key name to use for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1831,8 +1831,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The latest version of the launch template.
-{{% /md %}}</dd>
+    <dd>The latest version of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1840,8 +1840,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatelicensespecification">List&lt;Launch<wbr>Template<wbr>License<wbr>Specification<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of license specifications to associate with. See License Specification below for more details.
-{{% /md %}}</dd>
+    <dd>A list of license specifications to associate with. See License Specification below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1849,8 +1849,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemetadataoptions">Launch<wbr>Template<wbr>Metadata<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Customize the metadata options for the instance. See Metadata Options below for more details.
-{{% /md %}}</dd>
+    <dd>Customize the metadata options for the instance. See Metadata Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1858,8 +1858,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemonitoring">Launch<wbr>Template<wbr>Monitoring<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The monitoring option for the instance. See Monitoring below for more details.
-{{% /md %}}</dd>
+    <dd>The monitoring option for the instance. See Monitoring below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1867,8 +1867,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
-{{% /md %}}</dd>
+    <dd>The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1876,8 +1876,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+    <dd>Creates a unique name beginning with the specified prefix. Conflicts with `name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1885,9 +1885,9 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatenetworkinterface">List&lt;Launch<wbr>Template<wbr>Network<wbr>Interface<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Customize network interfaces to be attached at instance boot time. See Network
+    <dd>Customize network interfaces to be attached at instance boot time. See Network
 Interfaces below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1895,8 +1895,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateplacement">Launch<wbr>Template<wbr>Placement<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The placement of the instance. See Placement below for more details.
-{{% /md %}}</dd>
+    <dd>The placement of the instance. See Placement below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1904,8 +1904,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the RAM disk.
-{{% /md %}}</dd>
+    <dd>The ID of the RAM disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1913,9 +1913,9 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group names to associate with. If you are creating Instances in a VPC, use
+    <dd>A list of security group names to associate with. If you are creating Instances in a VPC, use
 `vpc_security_group_ids` instead.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1923,8 +1923,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatetagspecification">List&lt;Launch<wbr>Template<wbr>Tag<wbr>Specification<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The tags to apply to the resources during launch. See Tag Specifications below for more details.
-{{% /md %}}</dd>
+    <dd>The tags to apply to the resources during launch. See Tag Specifications below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1932,8 +1932,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the launch template.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1941,8 +1941,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded user data to provide when launching the instance.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded user data to provide when launching the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1950,14 +1950,14 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to associate with.
-{{% /md %}}</dd>
+    <dd>A list of security group IDs to associate with.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1966,8 +1966,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the instance profile.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the instance profile.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1975,9 +1975,9 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemapping">[]Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping</a></span>
     </dt>
-    <dd>{{% md %}}Specify volumes to attach to the instance besides the volumes specified by the AMI.
+    <dd>Specify volumes to attach to the instance besides the volumes specified by the AMI.
 See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1985,8 +1985,8 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecification">Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
-{{% /md %}}</dd>
+    <dd>Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1994,8 +1994,8 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecpuoptions">Launch<wbr>Template<wbr>Cpu<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}The CPU options for the instance. See CPU Options below for more details.
-{{% /md %}}</dd>
+    <dd>The CPU options for the instance. See CPU Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2003,9 +2003,9 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecreditspecification">Launch<wbr>Template<wbr>Credit<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}Customize the credit specification of the instance. See Credit
+    <dd>Customize the credit specification of the instance. See Credit
 Specification below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2013,8 +2013,8 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The default version of the launch template.
-{{% /md %}}</dd>
+    <dd>The default version of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2022,8 +2022,8 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the launch template.
-{{% /md %}}</dd>
+    <dd>Description of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2031,9 +2031,9 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, enables [EC2 Instance
+    <dd>If `true`, enables [EC2 Instance
 Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2041,8 +2041,8 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If `true`, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2050,9 +2050,9 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticgpuspecification">[]Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}The elastic GPU to attach to the instance. See Elastic GPU
+    <dd>The elastic GPU to attach to the instance. See Elastic GPU
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2060,8 +2060,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticinferenceaccelerator">Launch<wbr>Template<wbr>Elastic<wbr>Inference<wbr>Accelerator</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
-{{% /md %}}</dd>
+    <dd>Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2069,8 +2069,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatehibernationoptions">Launch<wbr>Template<wbr>Hibernation<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}The hibernation options for the instance. See Hibernation Options below for more details.
-{{% /md %}}</dd>
+    <dd>The hibernation options for the instance. See Hibernation Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2078,9 +2078,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateiaminstanceprofile">Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile</a></span>
     </dt>
-    <dd>{{% md %}}The IAM Instance Profile to launch the instance with. See Instance Profile
+    <dd>The IAM Instance Profile to launch the instance with. See Instance Profile
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2088,8 +2088,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AMI from which to launch the instance.
-{{% /md %}}</dd>
+    <dd>The AMI from which to launch the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2097,9 +2097,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Shutdown behavior for the instance. Can be `stop` or `terminate`.
+    <dd>Shutdown behavior for the instance. Can be `stop` or `terminate`.
 (Default: `stop`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2107,9 +2107,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptions">Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}The market (purchasing) option for the instance. See Market Options
+    <dd>The market (purchasing) option for the instance. See Market Options
 below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2117,8 +2117,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the instance.
-{{% /md %}}</dd>
+    <dd>The type of the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2126,8 +2126,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The kernel ID.
-{{% /md %}}</dd>
+    <dd>The kernel ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2135,8 +2135,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The key name to use for the instance.
-{{% /md %}}</dd>
+    <dd>The key name to use for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2144,8 +2144,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The latest version of the launch template.
-{{% /md %}}</dd>
+    <dd>The latest version of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2153,8 +2153,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatelicensespecification">[]Launch<wbr>Template<wbr>License<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}A list of license specifications to associate with. See License Specification below for more details.
-{{% /md %}}</dd>
+    <dd>A list of license specifications to associate with. See License Specification below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2162,8 +2162,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemetadataoptions">Launch<wbr>Template<wbr>Metadata<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Customize the metadata options for the instance. See Metadata Options below for more details.
-{{% /md %}}</dd>
+    <dd>Customize the metadata options for the instance. See Metadata Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2171,8 +2171,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemonitoring">Launch<wbr>Template<wbr>Monitoring</a></span>
     </dt>
-    <dd>{{% md %}}The monitoring option for the instance. See Monitoring below for more details.
-{{% /md %}}</dd>
+    <dd>The monitoring option for the instance. See Monitoring below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2180,8 +2180,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
-{{% /md %}}</dd>
+    <dd>The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2189,8 +2189,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+    <dd>Creates a unique name beginning with the specified prefix. Conflicts with `name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2198,9 +2198,9 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatenetworkinterface">[]Launch<wbr>Template<wbr>Network<wbr>Interface</a></span>
     </dt>
-    <dd>{{% md %}}Customize network interfaces to be attached at instance boot time. See Network
+    <dd>Customize network interfaces to be attached at instance boot time. See Network
 Interfaces below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2208,8 +2208,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateplacement">Launch<wbr>Template<wbr>Placement</a></span>
     </dt>
-    <dd>{{% md %}}The placement of the instance. See Placement below for more details.
-{{% /md %}}</dd>
+    <dd>The placement of the instance. See Placement below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2217,8 +2217,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the RAM disk.
-{{% /md %}}</dd>
+    <dd>The ID of the RAM disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2226,9 +2226,9 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group names to associate with. If you are creating Instances in a VPC, use
+    <dd>A list of security group names to associate with. If you are creating Instances in a VPC, use
 `vpc_security_group_ids` instead.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2236,8 +2236,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatetagspecification">[]Launch<wbr>Template<wbr>Tag<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}The tags to apply to the resources during launch. See Tag Specifications below for more details.
-{{% /md %}}</dd>
+    <dd>The tags to apply to the resources during launch. See Tag Specifications below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2245,8 +2245,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the launch template.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2254,8 +2254,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded user data to provide when launching the instance.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded user data to provide when launching the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2263,14 +2263,14 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to associate with.
-{{% /md %}}</dd>
+    <dd>A list of security group IDs to associate with.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2279,8 +2279,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the instance profile.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the instance profile.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2288,9 +2288,9 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemapping">Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping[]</a></span>
     </dt>
-    <dd>{{% md %}}Specify volumes to attach to the instance besides the volumes specified by the AMI.
+    <dd>Specify volumes to attach to the instance besides the volumes specified by the AMI.
 See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2298,8 +2298,8 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecification">Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
-{{% /md %}}</dd>
+    <dd>Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2307,8 +2307,8 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecpuoptions">Launch<wbr>Template<wbr>Cpu<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}The CPU options for the instance. See CPU Options below for more details.
-{{% /md %}}</dd>
+    <dd>The CPU options for the instance. See CPU Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2316,9 +2316,9 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecreditspecification">Launch<wbr>Template<wbr>Credit<wbr>Specification</a></span>
     </dt>
-    <dd>{{% md %}}Customize the credit specification of the instance. See Credit
+    <dd>Customize the credit specification of the instance. See Credit
 Specification below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2326,8 +2326,8 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The default version of the launch template.
-{{% /md %}}</dd>
+    <dd>The default version of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2335,8 +2335,8 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the launch template.
-{{% /md %}}</dd>
+    <dd>Description of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2344,9 +2344,9 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, enables [EC2 Instance
+    <dd>If `true`, enables [EC2 Instance
 Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2354,8 +2354,8 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If `true`, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2363,9 +2363,9 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticgpuspecification">Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification[]</a></span>
     </dt>
-    <dd>{{% md %}}The elastic GPU to attach to the instance. See Elastic GPU
+    <dd>The elastic GPU to attach to the instance. See Elastic GPU
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2373,8 +2373,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticinferenceaccelerator">Launch<wbr>Template<wbr>Elastic<wbr>Inference<wbr>Accelerator</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
-{{% /md %}}</dd>
+    <dd>Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2382,8 +2382,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatehibernationoptions">Launch<wbr>Template<wbr>Hibernation<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}The hibernation options for the instance. See Hibernation Options below for more details.
-{{% /md %}}</dd>
+    <dd>The hibernation options for the instance. See Hibernation Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2391,9 +2391,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateiaminstanceprofile">Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile</a></span>
     </dt>
-    <dd>{{% md %}}The IAM Instance Profile to launch the instance with. See Instance Profile
+    <dd>The IAM Instance Profile to launch the instance with. See Instance Profile
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2401,8 +2401,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The AMI from which to launch the instance.
-{{% /md %}}</dd>
+    <dd>The AMI from which to launch the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2410,9 +2410,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Shutdown behavior for the instance. Can be `stop` or `terminate`.
+    <dd>Shutdown behavior for the instance. Can be `stop` or `terminate`.
 (Default: `stop`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2420,9 +2420,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptions">Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}The market (purchasing) option for the instance. See Market Options
+    <dd>The market (purchasing) option for the instance. See Market Options
 below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2430,8 +2430,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of the instance.
-{{% /md %}}</dd>
+    <dd>The type of the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2439,8 +2439,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The kernel ID.
-{{% /md %}}</dd>
+    <dd>The kernel ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2448,8 +2448,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The key name to use for the instance.
-{{% /md %}}</dd>
+    <dd>The key name to use for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2457,8 +2457,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The latest version of the launch template.
-{{% /md %}}</dd>
+    <dd>The latest version of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2466,8 +2466,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatelicensespecification">Launch<wbr>Template<wbr>License<wbr>Specification[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of license specifications to associate with. See License Specification below for more details.
-{{% /md %}}</dd>
+    <dd>A list of license specifications to associate with. See License Specification below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2475,8 +2475,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemetadataoptions">Launch<wbr>Template<wbr>Metadata<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}Customize the metadata options for the instance. See Metadata Options below for more details.
-{{% /md %}}</dd>
+    <dd>Customize the metadata options for the instance. See Metadata Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2484,8 +2484,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemonitoring">Launch<wbr>Template<wbr>Monitoring</a></span>
     </dt>
-    <dd>{{% md %}}The monitoring option for the instance. See Monitoring below for more details.
-{{% /md %}}</dd>
+    <dd>The monitoring option for the instance. See Monitoring below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2493,8 +2493,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
-{{% /md %}}</dd>
+    <dd>The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2502,8 +2502,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+    <dd>Creates a unique name beginning with the specified prefix. Conflicts with `name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2511,9 +2511,9 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatenetworkinterface">Launch<wbr>Template<wbr>Network<wbr>Interface[]</a></span>
     </dt>
-    <dd>{{% md %}}Customize network interfaces to be attached at instance boot time. See Network
+    <dd>Customize network interfaces to be attached at instance boot time. See Network
 Interfaces below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2521,8 +2521,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateplacement">Launch<wbr>Template<wbr>Placement</a></span>
     </dt>
-    <dd>{{% md %}}The placement of the instance. See Placement below for more details.
-{{% /md %}}</dd>
+    <dd>The placement of the instance. See Placement below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2530,8 +2530,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the RAM disk.
-{{% /md %}}</dd>
+    <dd>The ID of the RAM disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2539,9 +2539,9 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group names to associate with. If you are creating Instances in a VPC, use
+    <dd>A list of security group names to associate with. If you are creating Instances in a VPC, use
 `vpc_security_group_ids` instead.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2549,8 +2549,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatetagspecification">Launch<wbr>Template<wbr>Tag<wbr>Specification[]</a></span>
     </dt>
-    <dd>{{% md %}}The tags to apply to the resources during launch. See Tag Specifications below for more details.
-{{% /md %}}</dd>
+    <dd>The tags to apply to the resources during launch. See Tag Specifications below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2558,8 +2558,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the launch template.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2567,8 +2567,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded user data to provide when launching the instance.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded user data to provide when launching the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2576,14 +2576,14 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to associate with.
-{{% /md %}}</dd>
+    <dd>A list of security group IDs to associate with.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2592,8 +2592,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the instance profile.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the instance profile.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2601,9 +2601,9 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemapping">List[Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping]</a></span>
     </dt>
-    <dd>{{% md %}}Specify volumes to attach to the instance besides the volumes specified by the AMI.
+    <dd>Specify volumes to attach to the instance besides the volumes specified by the AMI.
 See Block Devices below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2611,8 +2611,8 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecification">Dict[Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification]</a></span>
     </dt>
-    <dd>{{% md %}}Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
-{{% /md %}}</dd>
+    <dd>Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2620,8 +2620,8 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecpuoptions">Dict[Launch<wbr>Template<wbr>Cpu<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}The CPU options for the instance. See CPU Options below for more details.
-{{% /md %}}</dd>
+    <dd>The CPU options for the instance. See CPU Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2629,9 +2629,9 @@ See Block Devices below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecreditspecification">Dict[Launch<wbr>Template<wbr>Credit<wbr>Specification]</a></span>
     </dt>
-    <dd>{{% md %}}Customize the credit specification of the instance. See Credit
+    <dd>Customize the credit specification of the instance. See Credit
 Specification below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2639,8 +2639,8 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The default version of the launch template.
-{{% /md %}}</dd>
+    <dd>The default version of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2648,8 +2648,8 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description of the launch template.
-{{% /md %}}</dd>
+    <dd>Description of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2657,9 +2657,9 @@ Specification below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, enables [EC2 Instance
+    <dd>If `true`, enables [EC2 Instance
 Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2667,8 +2667,8 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the launched EC2 instance will be EBS-optimized.
-{{% /md %}}</dd>
+    <dd>If `true`, the launched EC2 instance will be EBS-optimized.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2676,9 +2676,9 @@ Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/term
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticgpuspecification">List[Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification]</a></span>
     </dt>
-    <dd>{{% md %}}The elastic GPU to attach to the instance. See Elastic GPU
+    <dd>The elastic GPU to attach to the instance. See Elastic GPU
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2686,8 +2686,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateelasticinferenceaccelerator">Dict[Launch<wbr>Template<wbr>Elastic<wbr>Inference<wbr>Accelerator]</a></span>
     </dt>
-    <dd>{{% md %}}Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
-{{% /md %}}</dd>
+    <dd>Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2695,8 +2695,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatehibernationoptions">Dict[Launch<wbr>Template<wbr>Hibernation<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}The hibernation options for the instance. See Hibernation Options below for more details.
-{{% /md %}}</dd>
+    <dd>The hibernation options for the instance. See Hibernation Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2704,9 +2704,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateiaminstanceprofile">Dict[Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile]</a></span>
     </dt>
-    <dd>{{% md %}}The IAM Instance Profile to launch the instance with. See Instance Profile
+    <dd>The IAM Instance Profile to launch the instance with. See Instance Profile
 below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2714,8 +2714,8 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The AMI from which to launch the instance.
-{{% /md %}}</dd>
+    <dd>The AMI from which to launch the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2723,9 +2723,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Shutdown behavior for the instance. Can be `stop` or `terminate`.
+    <dd>Shutdown behavior for the instance. Can be `stop` or `terminate`.
 (Default: `stop`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2733,9 +2733,9 @@ below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptions">Dict[Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}The market (purchasing) option for the instance. See Market Options
+    <dd>The market (purchasing) option for the instance. See Market Options
 below for details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2743,8 +2743,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of the instance.
-{{% /md %}}</dd>
+    <dd>The type of the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2752,8 +2752,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The kernel ID.
-{{% /md %}}</dd>
+    <dd>The kernel ID.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2761,8 +2761,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The key name to use for the instance.
-{{% /md %}}</dd>
+    <dd>The key name to use for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2770,8 +2770,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The latest version of the launch template.
-{{% /md %}}</dd>
+    <dd>The latest version of the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2779,8 +2779,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatelicensespecification">List[Launch<wbr>Template<wbr>License<wbr>Specification]</a></span>
     </dt>
-    <dd>{{% md %}}A list of license specifications to associate with. See License Specification below for more details.
-{{% /md %}}</dd>
+    <dd>A list of license specifications to associate with. See License Specification below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2788,8 +2788,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemetadataoptions">Dict[Launch<wbr>Template<wbr>Metadata<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}Customize the metadata options for the instance. See Metadata Options below for more details.
-{{% /md %}}</dd>
+    <dd>Customize the metadata options for the instance. See Metadata Options below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2797,8 +2797,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatemonitoring">Dict[Launch<wbr>Template<wbr>Monitoring]</a></span>
     </dt>
-    <dd>{{% md %}}The monitoring option for the instance. See Monitoring below for more details.
-{{% /md %}}</dd>
+    <dd>The monitoring option for the instance. See Monitoring below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2806,8 +2806,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
-{{% /md %}}</dd>
+    <dd>The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2815,8 +2815,8 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Creates a unique name beginning with the specified prefix. Conflicts with `name`.
-{{% /md %}}</dd>
+    <dd>Creates a unique name beginning with the specified prefix. Conflicts with `name`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2824,9 +2824,9 @@ below for details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatenetworkinterface">List[Launch<wbr>Template<wbr>Network<wbr>Interface]</a></span>
     </dt>
-    <dd>{{% md %}}Customize network interfaces to be attached at instance boot time. See Network
+    <dd>Customize network interfaces to be attached at instance boot time. See Network
 Interfaces below for more details.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2834,8 +2834,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateplacement">Dict[Launch<wbr>Template<wbr>Placement]</a></span>
     </dt>
-    <dd>{{% md %}}The placement of the instance. See Placement below for more details.
-{{% /md %}}</dd>
+    <dd>The placement of the instance. See Placement below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2843,8 +2843,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the RAM disk.
-{{% /md %}}</dd>
+    <dd>The ID of the RAM disk.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2852,9 +2852,9 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group names to associate with. If you are creating Instances in a VPC, use
+    <dd>A list of security group names to associate with. If you are creating Instances in a VPC, use
 `vpc_security_group_ids` instead.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2862,8 +2862,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatetagspecification">List[Launch<wbr>Template<wbr>Tag<wbr>Specification]</a></span>
     </dt>
-    <dd>{{% md %}}The tags to apply to the resources during launch. See Tag Specifications below for more details.
-{{% /md %}}</dd>
+    <dd>The tags to apply to the resources during launch. See Tag Specifications below for more details.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2871,8 +2871,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the launch template.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the launch template.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2880,8 +2880,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Base64-encoded user data to provide when launching the instance.
-{{% /md %}}</dd>
+    <dd>The Base64-encoded user data to provide when launching the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2889,11 +2889,11 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to associate with.
-{{% /md %}}</dd>
+    <dd>A list of security group IDs to associate with.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2908,18 +2908,18 @@ Interfaces below for more details.
 
 
 <h4 id="launchtemplateblockdevicemapping">Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LaunchTemplateBlockDeviceMapping">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LaunchTemplateBlockDeviceMapping">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateBlockDeviceMappingArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateBlockDeviceMappingOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2928,8 +2928,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the device to mount.
-{{% /md %}}</dd>
+    <dd>The name of the device to mount.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2937,8 +2937,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemappingebs">Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping<wbr>Ebs<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Configure EBS volume properties.
-{{% /md %}}</dd>
+    <dd>Configure EBS volume properties.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2946,8 +2946,8 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Suppresses the specified device included in the AMI's block device mapping.
-{{% /md %}}</dd>
+    <dd>Suppresses the specified device included in the AMI's block device mapping.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2955,16 +2955,16 @@ Interfaces below for more details.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The [Instance Store Device
+    <dd>The [Instance Store Device
 Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#InstanceStoreDeviceNames)
 (e.g. `"ephemeral0"`).
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2973,8 +2973,8 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the device to mount.
-{{% /md %}}</dd>
+    <dd>The name of the device to mount.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2982,8 +2982,8 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemappingebs">Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping<wbr>Ebs</a></span>
     </dt>
-    <dd>{{% md %}}Configure EBS volume properties.
-{{% /md %}}</dd>
+    <dd>Configure EBS volume properties.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2991,8 +2991,8 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Suppresses the specified device included in the AMI's block device mapping.
-{{% /md %}}</dd>
+    <dd>Suppresses the specified device included in the AMI's block device mapping.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3000,16 +3000,16 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [Instance Store Device
+    <dd>The [Instance Store Device
 Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#InstanceStoreDeviceNames)
 (e.g. `"ephemeral0"`).
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3018,8 +3018,8 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the device to mount.
-{{% /md %}}</dd>
+    <dd>The name of the device to mount.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3027,8 +3027,8 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemappingebs">Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping<wbr>Ebs</a></span>
     </dt>
-    <dd>{{% md %}}Configure EBS volume properties.
-{{% /md %}}</dd>
+    <dd>Configure EBS volume properties.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3036,8 +3036,8 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Suppresses the specified device included in the AMI's block device mapping.
-{{% /md %}}</dd>
+    <dd>Suppresses the specified device included in the AMI's block device mapping.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3045,16 +3045,16 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [Instance Store Device
+    <dd>The [Instance Store Device
 Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#InstanceStoreDeviceNames)
 (e.g. `"ephemeral0"`).
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3063,8 +3063,8 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the device to mount.
-{{% /md %}}</dd>
+    <dd>The name of the device to mount.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3072,8 +3072,8 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateblockdevicemappingebs">Dict[Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping<wbr>Ebs]</a></span>
     </dt>
-    <dd>{{% md %}}Configure EBS volume properties.
-{{% /md %}}</dd>
+    <dd>Configure EBS volume properties.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3081,8 +3081,8 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Suppresses the specified device included in the AMI's block device mapping.
-{{% /md %}}</dd>
+    <dd>Suppresses the specified device included in the AMI's block device mapping.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3090,31 +3090,31 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The [Instance Store Device
+    <dd>The [Instance Store Device
 Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#InstanceStoreDeviceNames)
 (e.g. `"ephemeral0"`).
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="launchtemplateblockdevicemappingebs">Launch<wbr>Template<wbr>Block<wbr>Device<wbr>Mapping<wbr>Ebs</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LaunchTemplateBlockDeviceMappingEbs">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LaunchTemplateBlockDeviceMappingEbs">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateBlockDeviceMappingEbsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateBlockDeviceMappingEbsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3123,8 +3123,8 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether the volume should be destroyed on instance termination (Default: `false`). See [Preserving Amazon EBS Volumes on Instance Termination](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#preserving-volumes-on-termination) for more information.
-{{% /md %}}</dd>
+    <dd>Whether the volume should be destroyed on instance termination (Default: `false`). See [Preserving Amazon EBS Volumes on Instance Termination](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#preserving-volumes-on-termination) for more information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3132,9 +3132,9 @@ Name](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html#I
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Enables [EBS encryption](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html)
+    <dd>Enables [EBS encryption](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html)
 on the volume (Default: `false`). Cannot be used with `snapshot_id`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3142,10 +3142,10 @@ on the volume (Default: `false`). Cannot be used with `snapshot_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of provisioned
+    <dd>The amount of provisioned
 [IOPS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html).
 This must be set with a `volume_type` of `"io1"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3153,9 +3153,9 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) to use when creating the encrypted volume.
+    <dd>The ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) to use when creating the encrypted volume.
 `encrypted` must be set to `true` when this is set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3163,8 +3163,8 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Snapshot ID to mount.
-{{% /md %}}</dd>
+    <dd>The Snapshot ID to mount.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3172,8 +3172,8 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume in gigabytes.
-{{% /md %}}</dd>
+    <dd>The size of the volume in gigabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3181,14 +3181,14 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of volume. Can be `"standard"`, `"gp2"`, or `"io1"`. (Default: `"standard"`).
-{{% /md %}}</dd>
+    <dd>The type of volume. Can be `"standard"`, `"gp2"`, or `"io1"`. (Default: `"standard"`).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3197,8 +3197,8 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether the volume should be destroyed on instance termination (Default: `false`). See [Preserving Amazon EBS Volumes on Instance Termination](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#preserving-volumes-on-termination) for more information.
-{{% /md %}}</dd>
+    <dd>Whether the volume should be destroyed on instance termination (Default: `false`). See [Preserving Amazon EBS Volumes on Instance Termination](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#preserving-volumes-on-termination) for more information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3206,9 +3206,9 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enables [EBS encryption](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html)
+    <dd>Enables [EBS encryption](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html)
 on the volume (Default: `false`). Cannot be used with `snapshot_id`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3216,10 +3216,10 @@ on the volume (Default: `false`). Cannot be used with `snapshot_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The amount of provisioned
+    <dd>The amount of provisioned
 [IOPS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html).
 This must be set with a `volume_type` of `"io1"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3227,9 +3227,9 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) to use when creating the encrypted volume.
+    <dd>The ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) to use when creating the encrypted volume.
 `encrypted` must be set to `true` when this is set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3237,8 +3237,8 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Snapshot ID to mount.
-{{% /md %}}</dd>
+    <dd>The Snapshot ID to mount.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3246,8 +3246,8 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume in gigabytes.
-{{% /md %}}</dd>
+    <dd>The size of the volume in gigabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3255,14 +3255,14 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of volume. Can be `"standard"`, `"gp2"`, or `"io1"`. (Default: `"standard"`).
-{{% /md %}}</dd>
+    <dd>The type of volume. Can be `"standard"`, `"gp2"`, or `"io1"`. (Default: `"standard"`).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3271,8 +3271,8 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether the volume should be destroyed on instance termination (Default: `false`). See [Preserving Amazon EBS Volumes on Instance Termination](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#preserving-volumes-on-termination) for more information.
-{{% /md %}}</dd>
+    <dd>Whether the volume should be destroyed on instance termination (Default: `false`). See [Preserving Amazon EBS Volumes on Instance Termination](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#preserving-volumes-on-termination) for more information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3280,9 +3280,9 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Enables [EBS encryption](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html)
+    <dd>Enables [EBS encryption](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html)
 on the volume (Default: `false`). Cannot be used with `snapshot_id`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3290,10 +3290,10 @@ on the volume (Default: `false`). Cannot be used with `snapshot_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The amount of provisioned
+    <dd>The amount of provisioned
 [IOPS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html).
 This must be set with a `volume_type` of `"io1"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3301,9 +3301,9 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) to use when creating the encrypted volume.
+    <dd>The ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) to use when creating the encrypted volume.
 `encrypted` must be set to `true` when this is set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3311,8 +3311,8 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Snapshot ID to mount.
-{{% /md %}}</dd>
+    <dd>The Snapshot ID to mount.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3320,8 +3320,8 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume in gigabytes.
-{{% /md %}}</dd>
+    <dd>The size of the volume in gigabytes.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3329,14 +3329,14 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of volume. Can be `"standard"`, `"gp2"`, or `"io1"`. (Default: `"standard"`).
-{{% /md %}}</dd>
+    <dd>The type of volume. Can be `"standard"`, `"gp2"`, or `"io1"`. (Default: `"standard"`).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3345,8 +3345,8 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Whether the volume should be destroyed on instance termination (Default: `false`). See [Preserving Amazon EBS Volumes on Instance Termination](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#preserving-volumes-on-termination) for more information.
-{{% /md %}}</dd>
+    <dd>Whether the volume should be destroyed on instance termination (Default: `false`). See [Preserving Amazon EBS Volumes on Instance Termination](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#preserving-volumes-on-termination) for more information.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3354,9 +3354,9 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Enables [EBS encryption](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html)
+    <dd>Enables [EBS encryption](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html)
 on the volume (Default: `false`). Cannot be used with `snapshot_id`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3364,10 +3364,10 @@ on the volume (Default: `false`). Cannot be used with `snapshot_id`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The amount of provisioned
+    <dd>The amount of provisioned
 [IOPS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html).
 This must be set with a `volume_type` of `"io1"`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3375,9 +3375,9 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) to use when creating the encrypted volume.
+    <dd>The ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) to use when creating the encrypted volume.
 `encrypted` must be set to `true` when this is set.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3385,8 +3385,8 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Snapshot ID to mount.
-{{% /md %}}</dd>
+    <dd>The Snapshot ID to mount.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3394,8 +3394,8 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of volume. Can be `"standard"`, `"gp2"`, or `"io1"`. (Default: `"standard"`).
-{{% /md %}}</dd>
+    <dd>The type of volume. Can be `"standard"`, `"gp2"`, or `"io1"`. (Default: `"standard"`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3403,29 +3403,29 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of the volume in gigabytes.
-{{% /md %}}</dd>
+    <dd>The size of the volume in gigabytes.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="launchtemplatecapacityreservationspecification">Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LaunchTemplateCapacityReservationSpecification">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LaunchTemplateCapacityReservationSpecification">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateCapacityReservationSpecificationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateCapacityReservationSpecificationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3434,8 +3434,8 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the instance's Capacity Reservation preferences. Can be `open` or `none`. (Default `none`).
-{{% /md %}}</dd>
+    <dd>Indicates the instance's Capacity Reservation preferences. Can be `open` or `none`. (Default `none`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3443,14 +3443,14 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecificationcapacityreservationtarget">Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification<wbr>Capacity<wbr>Reservation<wbr>Target<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Used to target a specific Capacity Reservation:
-{{% /md %}}</dd>
+    <dd>Used to target a specific Capacity Reservation:
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3459,8 +3459,8 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the instance's Capacity Reservation preferences. Can be `open` or `none`. (Default `none`).
-{{% /md %}}</dd>
+    <dd>Indicates the instance's Capacity Reservation preferences. Can be `open` or `none`. (Default `none`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3468,14 +3468,14 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecificationcapacityreservationtarget">Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification<wbr>Capacity<wbr>Reservation<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}Used to target a specific Capacity Reservation:
-{{% /md %}}</dd>
+    <dd>Used to target a specific Capacity Reservation:
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3484,8 +3484,8 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the instance's Capacity Reservation preferences. Can be `open` or `none`. (Default `none`).
-{{% /md %}}</dd>
+    <dd>Indicates the instance's Capacity Reservation preferences. Can be `open` or `none`. (Default `none`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3493,14 +3493,14 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecificationcapacityreservationtarget">Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification<wbr>Capacity<wbr>Reservation<wbr>Target</a></span>
     </dt>
-    <dd>{{% md %}}Used to target a specific Capacity Reservation:
-{{% /md %}}</dd>
+    <dd>Used to target a specific Capacity Reservation:
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3509,8 +3509,8 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Indicates the instance's Capacity Reservation preferences. Can be `open` or `none`. (Default `none`).
-{{% /md %}}</dd>
+    <dd>Indicates the instance's Capacity Reservation preferences. Can be `open` or `none`. (Default `none`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3518,29 +3518,29 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplatecapacityreservationspecificationcapacityreservationtarget">Dict[Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification<wbr>Capacity<wbr>Reservation<wbr>Target]</a></span>
     </dt>
-    <dd>{{% md %}}Used to target a specific Capacity Reservation:
-{{% /md %}}</dd>
+    <dd>Used to target a specific Capacity Reservation:
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="launchtemplatecapacityreservationspecificationcapacityreservationtarget">Launch<wbr>Template<wbr>Capacity<wbr>Reservation<wbr>Specification<wbr>Capacity<wbr>Reservation<wbr>Target</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3549,14 +3549,14 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Capacity Reservation to target.
-{{% /md %}}</dd>
+    <dd>The ID of the Capacity Reservation to target.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3565,14 +3565,14 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Capacity Reservation to target.
-{{% /md %}}</dd>
+    <dd>The ID of the Capacity Reservation to target.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3581,14 +3581,14 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Capacity Reservation to target.
-{{% /md %}}</dd>
+    <dd>The ID of the Capacity Reservation to target.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3597,29 +3597,29 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Capacity Reservation to target.
-{{% /md %}}</dd>
+    <dd>The ID of the Capacity Reservation to target.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="launchtemplatecpuoptions">Launch<wbr>Template<wbr>Cpu<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LaunchTemplateCpuOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LaunchTemplateCpuOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateCpuOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateCpuOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3628,8 +3628,8 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of CPU cores for the instance.
-{{% /md %}}</dd>
+    <dd>The number of CPU cores for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3637,15 +3637,15 @@ This must be set with a `volume_type` of `"io1"`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of threads per CPU core. To disable Intel Hyper-Threading Technology for the instance, specify a value of 1.
+    <dd>The number of threads per CPU core. To disable Intel Hyper-Threading Technology for the instance, specify a value of 1.
 Otherwise, specify the default value of 2.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3654,8 +3654,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of CPU cores for the instance.
-{{% /md %}}</dd>
+    <dd>The number of CPU cores for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3663,15 +3663,15 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of threads per CPU core. To disable Intel Hyper-Threading Technology for the instance, specify a value of 1.
+    <dd>The number of threads per CPU core. To disable Intel Hyper-Threading Technology for the instance, specify a value of 1.
 Otherwise, specify the default value of 2.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3680,8 +3680,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of CPU cores for the instance.
-{{% /md %}}</dd>
+    <dd>The number of CPU cores for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3689,15 +3689,15 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of threads per CPU core. To disable Intel Hyper-Threading Technology for the instance, specify a value of 1.
+    <dd>The number of threads per CPU core. To disable Intel Hyper-Threading Technology for the instance, specify a value of 1.
 Otherwise, specify the default value of 2.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3706,8 +3706,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of CPU cores for the instance.
-{{% /md %}}</dd>
+    <dd>The number of CPU cores for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3715,30 +3715,30 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of threads per CPU core. To disable Intel Hyper-Threading Technology for the instance, specify a value of 1.
+    <dd>The number of threads per CPU core. To disable Intel Hyper-Threading Technology for the instance, specify a value of 1.
 Otherwise, specify the default value of 2.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="launchtemplatecreditspecification">Launch<wbr>Template<wbr>Credit<wbr>Specification</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LaunchTemplateCreditSpecification">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LaunchTemplateCreditSpecification">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateCreditSpecificationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateCreditSpecificationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3747,14 +3747,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The credit option for CPU usage. Can be `"standard"` or `"unlimited"`. T3 instances are launched as unlimited by default. T2 instances are launched as standard by default.
-{{% /md %}}</dd>
+    <dd>The credit option for CPU usage. Can be `"standard"` or `"unlimited"`. T3 instances are launched as unlimited by default. T2 instances are launched as standard by default.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3763,14 +3763,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The credit option for CPU usage. Can be `"standard"` or `"unlimited"`. T3 instances are launched as unlimited by default. T2 instances are launched as standard by default.
-{{% /md %}}</dd>
+    <dd>The credit option for CPU usage. Can be `"standard"` or `"unlimited"`. T3 instances are launched as unlimited by default. T2 instances are launched as standard by default.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3779,14 +3779,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The credit option for CPU usage. Can be `"standard"` or `"unlimited"`. T3 instances are launched as unlimited by default. T2 instances are launched as standard by default.
-{{% /md %}}</dd>
+    <dd>The credit option for CPU usage. Can be `"standard"` or `"unlimited"`. T3 instances are launched as unlimited by default. T2 instances are launched as standard by default.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3795,29 +3795,29 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The credit option for CPU usage. Can be `"standard"` or `"unlimited"`. T3 instances are launched as unlimited by default. T2 instances are launched as standard by default.
-{{% /md %}}</dd>
+    <dd>The credit option for CPU usage. Can be `"standard"` or `"unlimited"`. T3 instances are launched as unlimited by default. T2 instances are launched as standard by default.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="launchtemplateelasticgpuspecification">Launch<wbr>Template<wbr>Elastic<wbr>Gpu<wbr>Specification</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LaunchTemplateElasticGpuSpecification">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LaunchTemplateElasticGpuSpecification">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateElasticGpuSpecificationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateElasticGpuSpecificationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3826,14 +3826,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The [Elastic GPU Type](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/elastic-gpus.html#elastic-gpus-basics)
-{{% /md %}}</dd>
+    <dd>The [Elastic GPU Type](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/elastic-gpus.html#elastic-gpus-basics)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3842,14 +3842,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [Elastic GPU Type](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/elastic-gpus.html#elastic-gpus-basics)
-{{% /md %}}</dd>
+    <dd>The [Elastic GPU Type](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/elastic-gpus.html#elastic-gpus-basics)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3858,14 +3858,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [Elastic GPU Type](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/elastic-gpus.html#elastic-gpus-basics)
-{{% /md %}}</dd>
+    <dd>The [Elastic GPU Type](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/elastic-gpus.html#elastic-gpus-basics)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3874,29 +3874,29 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The [Elastic GPU Type](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/elastic-gpus.html#elastic-gpus-basics)
-{{% /md %}}</dd>
+    <dd>The [Elastic GPU Type](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/elastic-gpus.html#elastic-gpus-basics)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="launchtemplateelasticinferenceaccelerator">Launch<wbr>Template<wbr>Elastic<wbr>Inference<wbr>Accelerator</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LaunchTemplateElasticInferenceAccelerator">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LaunchTemplateElasticInferenceAccelerator">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateElasticInferenceAcceleratorArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateElasticInferenceAcceleratorOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3905,14 +3905,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Accelerator type.
-{{% /md %}}</dd>
+    <dd>Accelerator type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3921,14 +3921,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Accelerator type.
-{{% /md %}}</dd>
+    <dd>Accelerator type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3937,14 +3937,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Accelerator type.
-{{% /md %}}</dd>
+    <dd>Accelerator type.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3953,29 +3953,29 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Accelerator type.
-{{% /md %}}</dd>
+    <dd>Accelerator type.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="launchtemplatehibernationoptions">Launch<wbr>Template<wbr>Hibernation<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LaunchTemplateHibernationOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LaunchTemplateHibernationOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateHibernationOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateHibernationOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3984,14 +3984,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, the launched EC2 instance will hibernation enabled.
-{{% /md %}}</dd>
+    <dd>If set to `true`, the launched EC2 instance will hibernation enabled.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4000,14 +4000,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, the launched EC2 instance will hibernation enabled.
-{{% /md %}}</dd>
+    <dd>If set to `true`, the launched EC2 instance will hibernation enabled.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4016,14 +4016,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, the launched EC2 instance will hibernation enabled.
-{{% /md %}}</dd>
+    <dd>If set to `true`, the launched EC2 instance will hibernation enabled.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4032,29 +4032,29 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If set to `true`, the launched EC2 instance will hibernation enabled.
-{{% /md %}}</dd>
+    <dd>If set to `true`, the launched EC2 instance will hibernation enabled.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="launchtemplateiaminstanceprofile">Launch<wbr>Template<wbr>Iam<wbr>Instance<wbr>Profile</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LaunchTemplateIamInstanceProfile">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LaunchTemplateIamInstanceProfile">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateIamInstanceProfileArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateIamInstanceProfileOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4063,8 +4063,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the instance profile.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the instance profile.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4072,14 +4072,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance profile.
-{{% /md %}}</dd>
+    <dd>The name of the instance profile.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4088,8 +4088,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the instance profile.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the instance profile.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4097,14 +4097,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance profile.
-{{% /md %}}</dd>
+    <dd>The name of the instance profile.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4113,8 +4113,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the instance profile.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the instance profile.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4122,14 +4122,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance profile.
-{{% /md %}}</dd>
+    <dd>The name of the instance profile.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4138,8 +4138,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Amazon Resource Name (ARN) of the instance profile.
-{{% /md %}}</dd>
+    <dd>The Amazon Resource Name (ARN) of the instance profile.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4147,29 +4147,29 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance profile.
-{{% /md %}}</dd>
+    <dd>The name of the instance profile.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="launchtemplateinstancemarketoptions">Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LaunchTemplateInstanceMarketOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LaunchTemplateInstanceMarketOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateInstanceMarketOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateInstanceMarketOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4178,8 +4178,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The market type. Can be `spot`.
-{{% /md %}}</dd>
+    <dd>The market type. Can be `spot`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4187,14 +4187,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptionsspotoptions">Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options<wbr>Spot<wbr>Options<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The options for [Spot Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html)
-{{% /md %}}</dd>
+    <dd>The options for [Spot Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4203,8 +4203,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The market type. Can be `spot`.
-{{% /md %}}</dd>
+    <dd>The market type. Can be `spot`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4212,14 +4212,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptionsspotoptions">Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options<wbr>Spot<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}The options for [Spot Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html)
-{{% /md %}}</dd>
+    <dd>The options for [Spot Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4228,8 +4228,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The market type. Can be `spot`.
-{{% /md %}}</dd>
+    <dd>The market type. Can be `spot`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4237,14 +4237,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptionsspotoptions">Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options<wbr>Spot<wbr>Options</a></span>
     </dt>
-    <dd>{{% md %}}The options for [Spot Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html)
-{{% /md %}}</dd>
+    <dd>The options for [Spot Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html)
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4253,8 +4253,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The market type. Can be `spot`.
-{{% /md %}}</dd>
+    <dd>The market type. Can be `spot`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4262,29 +4262,29 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#launchtemplateinstancemarketoptionsspotoptions">Dict[Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options<wbr>Spot<wbr>Options]</a></span>
     </dt>
-    <dd>{{% md %}}The options for [Spot Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html)
-{{% /md %}}</dd>
+    <dd>The options for [Spot Instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html)
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="launchtemplateinstancemarketoptionsspotoptions">Launch<wbr>Template<wbr>Instance<wbr>Market<wbr>Options<wbr>Spot<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LaunchTemplateInstanceMarketOptionsSpotOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LaunchTemplateInstanceMarketOptionsSpotOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateInstanceMarketOptionsSpotOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateInstanceMarketOptionsSpotOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4293,8 +4293,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The required duration in minutes. This value must be a multiple of 60.
-{{% /md %}}</dd>
+    <dd>The required duration in minutes. This value must be a multiple of 60.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4302,9 +4302,9 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The behavior when a Spot Instance is interrupted. Can be `hibernate`,
+    <dd>The behavior when a Spot Instance is interrupted. Can be `hibernate`,
 `stop`, or `terminate`. (Default: `terminate`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4312,8 +4312,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum hourly price you're willing to pay for the Spot Instances.
-{{% /md %}}</dd>
+    <dd>The maximum hourly price you're willing to pay for the Spot Instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4321,8 +4321,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Spot Instance request type. Can be `one-time`, or `persistent`.
-{{% /md %}}</dd>
+    <dd>The Spot Instance request type. Can be `one-time`, or `persistent`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4330,14 +4330,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The end date of the request.
-{{% /md %}}</dd>
+    <dd>The end date of the request.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4346,8 +4346,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The required duration in minutes. This value must be a multiple of 60.
-{{% /md %}}</dd>
+    <dd>The required duration in minutes. This value must be a multiple of 60.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4355,9 +4355,9 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The behavior when a Spot Instance is interrupted. Can be `hibernate`,
+    <dd>The behavior when a Spot Instance is interrupted. Can be `hibernate`,
 `stop`, or `terminate`. (Default: `terminate`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4365,8 +4365,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum hourly price you're willing to pay for the Spot Instances.
-{{% /md %}}</dd>
+    <dd>The maximum hourly price you're willing to pay for the Spot Instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4374,8 +4374,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Spot Instance request type. Can be `one-time`, or `persistent`.
-{{% /md %}}</dd>
+    <dd>The Spot Instance request type. Can be `one-time`, or `persistent`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4383,14 +4383,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The end date of the request.
-{{% /md %}}</dd>
+    <dd>The end date of the request.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4399,8 +4399,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The required duration in minutes. This value must be a multiple of 60.
-{{% /md %}}</dd>
+    <dd>The required duration in minutes. This value must be a multiple of 60.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4408,9 +4408,9 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The behavior when a Spot Instance is interrupted. Can be `hibernate`,
+    <dd>The behavior when a Spot Instance is interrupted. Can be `hibernate`,
 `stop`, or `terminate`. (Default: `terminate`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4418,8 +4418,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The maximum hourly price you're willing to pay for the Spot Instances.
-{{% /md %}}</dd>
+    <dd>The maximum hourly price you're willing to pay for the Spot Instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4427,8 +4427,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Spot Instance request type. Can be `one-time`, or `persistent`.
-{{% /md %}}</dd>
+    <dd>The Spot Instance request type. Can be `one-time`, or `persistent`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4436,14 +4436,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The end date of the request.
-{{% /md %}}</dd>
+    <dd>The end date of the request.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4452,8 +4452,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The required duration in minutes. This value must be a multiple of 60.
-{{% /md %}}</dd>
+    <dd>The required duration in minutes. This value must be a multiple of 60.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4461,9 +4461,9 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The behavior when a Spot Instance is interrupted. Can be `hibernate`,
+    <dd>The behavior when a Spot Instance is interrupted. Can be `hibernate`,
 `stop`, or `terminate`. (Default: `terminate`).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4471,8 +4471,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The maximum hourly price you're willing to pay for the Spot Instances.
-{{% /md %}}</dd>
+    <dd>The maximum hourly price you're willing to pay for the Spot Instances.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4480,8 +4480,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Spot Instance request type. Can be `one-time`, or `persistent`.
-{{% /md %}}</dd>
+    <dd>The Spot Instance request type. Can be `one-time`, or `persistent`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4489,29 +4489,29 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The end date of the request.
-{{% /md %}}</dd>
+    <dd>The end date of the request.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="launchtemplatelicensespecification">Launch<wbr>Template<wbr>License<wbr>Specification</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LaunchTemplateLicenseSpecification">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LaunchTemplateLicenseSpecification">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateLicenseSpecificationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateLicenseSpecificationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4520,14 +4520,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the license configuration.
-{{% /md %}}</dd>
+    <dd>ARN of the license configuration.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4536,14 +4536,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the license configuration.
-{{% /md %}}</dd>
+    <dd>ARN of the license configuration.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4552,14 +4552,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the license configuration.
-{{% /md %}}</dd>
+    <dd>ARN of the license configuration.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4568,29 +4568,29 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}ARN of the license configuration.
-{{% /md %}}</dd>
+    <dd>ARN of the license configuration.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="launchtemplatemetadataoptions">Launch<wbr>Template<wbr>Metadata<wbr>Options</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LaunchTemplateMetadataOptions">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LaunchTemplateMetadataOptions">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateMetadataOptionsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateMetadataOptionsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4599,8 +4599,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether the metadata service is available. Can be `"enabled"` or `"disabled"`. (Default: `"enabled"`).
-{{% /md %}}</dd>
+    <dd>Whether the metadata service is available. Can be `"enabled"` or `"disabled"`. (Default: `"enabled"`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4608,8 +4608,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The desired HTTP PUT response hop limit for instance metadata requests. The larger the number, the further instance metadata requests can travel. Can be an integer from `1` to `64`. (Default: `1`).
-{{% /md %}}</dd>
+    <dd>The desired HTTP PUT response hop limit for instance metadata requests. The larger the number, the further instance metadata requests can travel. Can be an integer from `1` to `64`. (Default: `1`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4617,14 +4617,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not the metadata service requires session tokens, also referred to as _Instance Metadata Service Version 2_. Can be `"optional"` or `"required"`. (Default: `"optional"`).
-{{% /md %}}</dd>
+    <dd>Whether or not the metadata service requires session tokens, also referred to as _Instance Metadata Service Version 2_. Can be `"optional"` or `"required"`. (Default: `"optional"`).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4633,8 +4633,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether the metadata service is available. Can be `"enabled"` or `"disabled"`. (Default: `"enabled"`).
-{{% /md %}}</dd>
+    <dd>Whether the metadata service is available. Can be `"enabled"` or `"disabled"`. (Default: `"enabled"`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4642,8 +4642,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The desired HTTP PUT response hop limit for instance metadata requests. The larger the number, the further instance metadata requests can travel. Can be an integer from `1` to `64`. (Default: `1`).
-{{% /md %}}</dd>
+    <dd>The desired HTTP PUT response hop limit for instance metadata requests. The larger the number, the further instance metadata requests can travel. Can be an integer from `1` to `64`. (Default: `1`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4651,14 +4651,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not the metadata service requires session tokens, also referred to as _Instance Metadata Service Version 2_. Can be `"optional"` or `"required"`. (Default: `"optional"`).
-{{% /md %}}</dd>
+    <dd>Whether or not the metadata service requires session tokens, also referred to as _Instance Metadata Service Version 2_. Can be `"optional"` or `"required"`. (Default: `"optional"`).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4667,8 +4667,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether the metadata service is available. Can be `"enabled"` or `"disabled"`. (Default: `"enabled"`).
-{{% /md %}}</dd>
+    <dd>Whether the metadata service is available. Can be `"enabled"` or `"disabled"`. (Default: `"enabled"`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4676,8 +4676,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The desired HTTP PUT response hop limit for instance metadata requests. The larger the number, the further instance metadata requests can travel. Can be an integer from `1` to `64`. (Default: `1`).
-{{% /md %}}</dd>
+    <dd>The desired HTTP PUT response hop limit for instance metadata requests. The larger the number, the further instance metadata requests can travel. Can be an integer from `1` to `64`. (Default: `1`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4685,14 +4685,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not the metadata service requires session tokens, also referred to as _Instance Metadata Service Version 2_. Can be `"optional"` or `"required"`. (Default: `"optional"`).
-{{% /md %}}</dd>
+    <dd>Whether or not the metadata service requires session tokens, also referred to as _Instance Metadata Service Version 2_. Can be `"optional"` or `"required"`. (Default: `"optional"`).
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4701,8 +4701,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Whether the metadata service is available. Can be `"enabled"` or `"disabled"`. (Default: `"enabled"`).
-{{% /md %}}</dd>
+    <dd>Whether the metadata service is available. Can be `"enabled"` or `"disabled"`. (Default: `"enabled"`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4710,8 +4710,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The desired HTTP PUT response hop limit for instance metadata requests. The larger the number, the further instance metadata requests can travel. Can be an integer from `1` to `64`. (Default: `1`).
-{{% /md %}}</dd>
+    <dd>The desired HTTP PUT response hop limit for instance metadata requests. The larger the number, the further instance metadata requests can travel. Can be an integer from `1` to `64`. (Default: `1`).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4719,29 +4719,29 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Whether or not the metadata service requires session tokens, also referred to as _Instance Metadata Service Version 2_. Can be `"optional"` or `"required"`. (Default: `"optional"`).
-{{% /md %}}</dd>
+    <dd>Whether or not the metadata service requires session tokens, also referred to as _Instance Metadata Service Version 2_. Can be `"optional"` or `"required"`. (Default: `"optional"`).
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="launchtemplatemonitoring">Launch<wbr>Template<wbr>Monitoring</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LaunchTemplateMonitoring">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LaunchTemplateMonitoring">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateMonitoringArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateMonitoringOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4750,14 +4750,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the launched EC2 instance will have detailed monitoring enabled.
-{{% /md %}}</dd>
+    <dd>If `true`, the launched EC2 instance will have detailed monitoring enabled.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4766,14 +4766,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the launched EC2 instance will have detailed monitoring enabled.
-{{% /md %}}</dd>
+    <dd>If `true`, the launched EC2 instance will have detailed monitoring enabled.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4782,14 +4782,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the launched EC2 instance will have detailed monitoring enabled.
-{{% /md %}}</dd>
+    <dd>If `true`, the launched EC2 instance will have detailed monitoring enabled.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4798,29 +4798,29 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the launched EC2 instance will have detailed monitoring enabled.
-{{% /md %}}</dd>
+    <dd>If `true`, the launched EC2 instance will have detailed monitoring enabled.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="launchtemplatenetworkinterface">Launch<wbr>Template<wbr>Network<wbr>Interface</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LaunchTemplateNetworkInterface">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LaunchTemplateNetworkInterface">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateNetworkInterfaceArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateNetworkInterfaceOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4829,8 +4829,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Associate a public ip address with the network interface.  Boolean value.
-{{% /md %}}</dd>
+    <dd>Associate a public ip address with the network interface.  Boolean value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4838,8 +4838,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the network interface should be destroyed on instance termination.
-{{% /md %}}</dd>
+    <dd>Whether the network interface should be destroyed on instance termination.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4847,8 +4847,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the network interface.
-{{% /md %}}</dd>
+    <dd>Description of the network interface.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4856,8 +4856,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The integer index of the network interface attachment.
-{{% /md %}}</dd>
+    <dd>The integer index of the network interface attachment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4865,8 +4865,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of secondary private IPv4 addresses to assign to a network interface. Conflicts with `ipv4_addresses`
-{{% /md %}}</dd>
+    <dd>The number of secondary private IPv4 addresses to assign to a network interface. Conflicts with `ipv4_addresses`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4874,8 +4874,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more private IPv4 addresses to associate. Conflicts with `ipv4_address_count`
-{{% /md %}}</dd>
+    <dd>One or more private IPv4 addresses to associate. Conflicts with `ipv4_address_count`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4883,8 +4883,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of IPv6 addresses to assign to a network interface. Conflicts with `ipv6_addresses`
-{{% /md %}}</dd>
+    <dd>The number of IPv6 addresses to assign to a network interface. Conflicts with `ipv6_addresses`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4892,8 +4892,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}One or more specific IPv6 addresses from the IPv6 CIDR block range of your subnet. Conflicts with `ipv6_address_count`
-{{% /md %}}</dd>
+    <dd>One or more specific IPv6 addresses from the IPv6 CIDR block range of your subnet. Conflicts with `ipv6_address_count`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4901,8 +4901,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network interface to attach.
-{{% /md %}}</dd>
+    <dd>The ID of the network interface to attach.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4910,8 +4910,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary private IPv4 address.
-{{% /md %}}</dd>
+    <dd>The primary private IPv4 address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4919,8 +4919,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to associate.
-{{% /md %}}</dd>
+    <dd>A list of security group IDs to associate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4928,14 +4928,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The VPC Subnet ID to associate.
-{{% /md %}}</dd>
+    <dd>The VPC Subnet ID to associate.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4944,8 +4944,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Associate a public ip address with the network interface.  Boolean value.
-{{% /md %}}</dd>
+    <dd>Associate a public ip address with the network interface.  Boolean value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4953,8 +4953,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the network interface should be destroyed on instance termination.
-{{% /md %}}</dd>
+    <dd>Whether the network interface should be destroyed on instance termination.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4962,8 +4962,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the network interface.
-{{% /md %}}</dd>
+    <dd>Description of the network interface.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4971,8 +4971,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The integer index of the network interface attachment.
-{{% /md %}}</dd>
+    <dd>The integer index of the network interface attachment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4980,8 +4980,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of secondary private IPv4 addresses to assign to a network interface. Conflicts with `ipv4_addresses`
-{{% /md %}}</dd>
+    <dd>The number of secondary private IPv4 addresses to assign to a network interface. Conflicts with `ipv4_addresses`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4989,8 +4989,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}One or more private IPv4 addresses to associate. Conflicts with `ipv4_address_count`
-{{% /md %}}</dd>
+    <dd>One or more private IPv4 addresses to associate. Conflicts with `ipv4_address_count`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4998,8 +4998,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of IPv6 addresses to assign to a network interface. Conflicts with `ipv6_addresses`
-{{% /md %}}</dd>
+    <dd>The number of IPv6 addresses to assign to a network interface. Conflicts with `ipv6_addresses`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5007,8 +5007,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}One or more specific IPv6 addresses from the IPv6 CIDR block range of your subnet. Conflicts with `ipv6_address_count`
-{{% /md %}}</dd>
+    <dd>One or more specific IPv6 addresses from the IPv6 CIDR block range of your subnet. Conflicts with `ipv6_address_count`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5016,8 +5016,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network interface to attach.
-{{% /md %}}</dd>
+    <dd>The ID of the network interface to attach.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5025,8 +5025,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary private IPv4 address.
-{{% /md %}}</dd>
+    <dd>The primary private IPv4 address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5034,8 +5034,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to associate.
-{{% /md %}}</dd>
+    <dd>A list of security group IDs to associate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5043,14 +5043,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The VPC Subnet ID to associate.
-{{% /md %}}</dd>
+    <dd>The VPC Subnet ID to associate.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5059,8 +5059,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Associate a public ip address with the network interface.  Boolean value.
-{{% /md %}}</dd>
+    <dd>Associate a public ip address with the network interface.  Boolean value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5068,8 +5068,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the network interface should be destroyed on instance termination.
-{{% /md %}}</dd>
+    <dd>Whether the network interface should be destroyed on instance termination.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5077,8 +5077,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Description of the network interface.
-{{% /md %}}</dd>
+    <dd>Description of the network interface.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5086,8 +5086,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The integer index of the network interface attachment.
-{{% /md %}}</dd>
+    <dd>The integer index of the network interface attachment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5095,8 +5095,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of secondary private IPv4 addresses to assign to a network interface. Conflicts with `ipv4_addresses`
-{{% /md %}}</dd>
+    <dd>The number of secondary private IPv4 addresses to assign to a network interface. Conflicts with `ipv4_addresses`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5104,8 +5104,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more private IPv4 addresses to associate. Conflicts with `ipv4_address_count`
-{{% /md %}}</dd>
+    <dd>One or more private IPv4 addresses to associate. Conflicts with `ipv4_address_count`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5113,8 +5113,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of IPv6 addresses to assign to a network interface. Conflicts with `ipv6_addresses`
-{{% /md %}}</dd>
+    <dd>The number of IPv6 addresses to assign to a network interface. Conflicts with `ipv6_addresses`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5122,8 +5122,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}One or more specific IPv6 addresses from the IPv6 CIDR block range of your subnet. Conflicts with `ipv6_address_count`
-{{% /md %}}</dd>
+    <dd>One or more specific IPv6 addresses from the IPv6 CIDR block range of your subnet. Conflicts with `ipv6_address_count`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5131,8 +5131,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network interface to attach.
-{{% /md %}}</dd>
+    <dd>The ID of the network interface to attach.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5140,8 +5140,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary private IPv4 address.
-{{% /md %}}</dd>
+    <dd>The primary private IPv4 address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5149,8 +5149,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to associate.
-{{% /md %}}</dd>
+    <dd>A list of security group IDs to associate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5158,14 +5158,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The VPC Subnet ID to associate.
-{{% /md %}}</dd>
+    <dd>The VPC Subnet ID to associate.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5174,8 +5174,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Associate a public ip address with the network interface.  Boolean value.
-{{% /md %}}</dd>
+    <dd>Associate a public ip address with the network interface.  Boolean value.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5183,8 +5183,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the network interface should be destroyed on instance termination.
-{{% /md %}}</dd>
+    <dd>Whether the network interface should be destroyed on instance termination.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5192,8 +5192,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Description of the network interface.
-{{% /md %}}</dd>
+    <dd>Description of the network interface.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5201,8 +5201,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The integer index of the network interface attachment.
-{{% /md %}}</dd>
+    <dd>The integer index of the network interface attachment.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5210,8 +5210,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of secondary private IPv4 addresses to assign to a network interface. Conflicts with `ipv4_addresses`
-{{% /md %}}</dd>
+    <dd>The number of secondary private IPv4 addresses to assign to a network interface. Conflicts with `ipv4_addresses`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5219,8 +5219,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}One or more private IPv4 addresses to associate. Conflicts with `ipv4_address_count`
-{{% /md %}}</dd>
+    <dd>One or more private IPv4 addresses to associate. Conflicts with `ipv4_address_count`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5228,8 +5228,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of IPv6 addresses to assign to a network interface. Conflicts with `ipv6_addresses`
-{{% /md %}}</dd>
+    <dd>The number of IPv6 addresses to assign to a network interface. Conflicts with `ipv6_addresses`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5237,8 +5237,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}One or more specific IPv6 addresses from the IPv6 CIDR block range of your subnet. Conflicts with `ipv6_address_count`
-{{% /md %}}</dd>
+    <dd>One or more specific IPv6 addresses from the IPv6 CIDR block range of your subnet. Conflicts with `ipv6_address_count`
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5246,8 +5246,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the network interface to attach.
-{{% /md %}}</dd>
+    <dd>The ID of the network interface to attach.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5255,8 +5255,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The primary private IPv4 address.
-{{% /md %}}</dd>
+    <dd>The primary private IPv4 address.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5264,8 +5264,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of security group IDs to associate.
-{{% /md %}}</dd>
+    <dd>A list of security group IDs to associate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5273,29 +5273,29 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The VPC Subnet ID to associate.
-{{% /md %}}</dd>
+    <dd>The VPC Subnet ID to associate.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="launchtemplateplacement">Launch<wbr>Template<wbr>Placement</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LaunchTemplatePlacement">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LaunchTemplatePlacement">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplatePlacementArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplatePlacementOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5304,8 +5304,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The affinity setting for an instance on a Dedicated Host.
-{{% /md %}}</dd>
+    <dd>The affinity setting for an instance on a Dedicated Host.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5313,8 +5313,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Availability Zone for the instance.
-{{% /md %}}</dd>
+    <dd>The Availability Zone for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5322,8 +5322,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the placement group for the instance.
-{{% /md %}}</dd>
+    <dd>The name of the placement group for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5331,8 +5331,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Dedicated Host for the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the Dedicated Host for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5340,8 +5340,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Reserved for future use.
-{{% /md %}}</dd>
+    <dd>Reserved for future use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5349,14 +5349,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The tenancy of the instance (if the instance is running in a VPC). Can be `default`, `dedicated`, or `host`.
-{{% /md %}}</dd>
+    <dd>The tenancy of the instance (if the instance is running in a VPC). Can be `default`, `dedicated`, or `host`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5365,8 +5365,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The affinity setting for an instance on a Dedicated Host.
-{{% /md %}}</dd>
+    <dd>The affinity setting for an instance on a Dedicated Host.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5374,8 +5374,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Availability Zone for the instance.
-{{% /md %}}</dd>
+    <dd>The Availability Zone for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5383,8 +5383,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the placement group for the instance.
-{{% /md %}}</dd>
+    <dd>The name of the placement group for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5392,8 +5392,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Dedicated Host for the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the Dedicated Host for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5401,8 +5401,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Reserved for future use.
-{{% /md %}}</dd>
+    <dd>Reserved for future use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5410,14 +5410,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tenancy of the instance (if the instance is running in a VPC). Can be `default`, `dedicated`, or `host`.
-{{% /md %}}</dd>
+    <dd>The tenancy of the instance (if the instance is running in a VPC). Can be `default`, `dedicated`, or `host`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5426,8 +5426,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The affinity setting for an instance on a Dedicated Host.
-{{% /md %}}</dd>
+    <dd>The affinity setting for an instance on a Dedicated Host.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5435,8 +5435,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Availability Zone for the instance.
-{{% /md %}}</dd>
+    <dd>The Availability Zone for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5444,8 +5444,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the placement group for the instance.
-{{% /md %}}</dd>
+    <dd>The name of the placement group for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5453,8 +5453,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Dedicated Host for the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the Dedicated Host for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5462,8 +5462,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Reserved for future use.
-{{% /md %}}</dd>
+    <dd>Reserved for future use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5471,14 +5471,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The tenancy of the instance (if the instance is running in a VPC). Can be `default`, `dedicated`, or `host`.
-{{% /md %}}</dd>
+    <dd>The tenancy of the instance (if the instance is running in a VPC). Can be `default`, `dedicated`, or `host`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5487,8 +5487,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The affinity setting for an instance on a Dedicated Host.
-{{% /md %}}</dd>
+    <dd>The affinity setting for an instance on a Dedicated Host.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5496,8 +5496,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Availability Zone for the instance.
-{{% /md %}}</dd>
+    <dd>The Availability Zone for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5505,8 +5505,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the placement group for the instance.
-{{% /md %}}</dd>
+    <dd>The name of the placement group for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5514,8 +5514,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the Dedicated Host for the instance.
-{{% /md %}}</dd>
+    <dd>The ID of the Dedicated Host for the instance.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5523,8 +5523,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Reserved for future use.
-{{% /md %}}</dd>
+    <dd>Reserved for future use.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5532,29 +5532,29 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The tenancy of the instance (if the instance is running in a VPC). Can be `default`, `dedicated`, or `host`.
-{{% /md %}}</dd>
+    <dd>The tenancy of the instance (if the instance is running in a VPC). Can be `default`, `dedicated`, or `host`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="launchtemplatetagspecification">Launch<wbr>Template<wbr>Tag<wbr>Specification</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#LaunchTemplateTagSpecification">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#LaunchTemplateTagSpecification">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateTagSpecificationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/ec2?tab=doc#LaunchTemplateTagSpecificationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5563,8 +5563,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of resource to tag. Valid values are `instance` and `volume`.
-{{% /md %}}</dd>
+    <dd>The type of resource to tag. Valid values are `instance` and `volume`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5572,14 +5572,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5588,8 +5588,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of resource to tag. Valid values are `instance` and `volume`.
-{{% /md %}}</dd>
+    <dd>The type of resource to tag. Valid values are `instance` and `volume`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5597,14 +5597,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5613,8 +5613,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The type of resource to tag. Valid values are `instance` and `volume`.
-{{% /md %}}</dd>
+    <dd>The type of resource to tag. Valid values are `instance` and `volume`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5622,14 +5622,14 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5638,8 +5638,8 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The type of resource to tag. Valid values are `instance` and `volume`.
-{{% /md %}}</dd>
+    <dd>The type of resource to tag. Valid values are `instance` and `volume`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5647,11 +5647,11 @@ Otherwise, specify the default value of 2.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

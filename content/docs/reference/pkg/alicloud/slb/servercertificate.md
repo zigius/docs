@@ -58,26 +58,26 @@ const foo = new alicloud.slb.ServerCertificate("foo", {
 
 
 ## Create a ServerCertificate Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/slb/#ServerCertificate">ServerCertificate</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/slb/#ServerCertificateArgs">ServerCertificateArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">ServerCertificate</span><span class="p">(resource_name, opts=None, </span>alicloud_certifacte_id=None<span class="p">, </span>alicloud_certifacte_name=None<span class="p">, </span>alicloud_certificate_id=None<span class="p">, </span>alicloud_certificate_name=None<span class="p">, </span>alicloud_certificate_region_id=None<span class="p">, </span>name=None<span class="p">, </span>private_key=None<span class="p">, </span>resource_group_id=None<span class="p">, </span>server_certificate=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewServerCertificate<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/slb?tab=doc#ServerCertificateArgs">ServerCertificateArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/slb?tab=doc#ServerCertificate">ServerCertificate</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Slb.ServerCertificate.html">ServerCertificate</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.AliCloud.Slb.ServerCertificateArgs.html">ServerCertificateArgs</a></span>? <span class="nx">args = null<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -114,9 +114,9 @@ const foo = new alicloud.slb.ServerCertificate("foo", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -134,9 +134,9 @@ const foo = new alicloud.slb.ServerCertificate("foo", {
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -183,9 +183,9 @@ const foo = new alicloud.slb.ServerCertificate("foo", {
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -222,7 +222,7 @@ const foo = new alicloud.slb.ServerCertificate("foo", {
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## ServerCertificate Resource Properties {#properties}
 
@@ -235,7 +235,7 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -244,7 +244,7 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;alicloud_certifacte_id&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_id&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;alicloud_certifacte_id&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_id&#39; replaces it.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -252,7 +252,7 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;alicloud_certifacte_name&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_name&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;alicloud_certifacte_name&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_name&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -260,8 +260,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}an id of server certificate ssued/proxied by alibaba cloud. but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>an id of server certificate ssued/proxied by alibaba cloud. but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -269,8 +269,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the name of the certificate specified by `alicloud_certificate_id`.but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>the name of the certificate specified by `alicloud_certificate_id`.but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -278,8 +278,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the region of the certificate specified by `alicloud_certificate_id`. but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>the region of the certificate specified by `alicloud_certificate_id`. but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -287,8 +287,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the content of the ssl certificate. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
-{{% /md %}}</dd>
+    <dd>the content of the ssl certificate. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -296,8 +296,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Server Certificate.
-{{% /md %}}</dd>
+    <dd>Name of the Server Certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -305,8 +305,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the content of privat key of the ssl certificate specified by `server_certificate`. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
-{{% /md %}}</dd>
+    <dd>the content of privat key of the ssl certificate specified by `server_certificate`. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -314,8 +314,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the slb server certificate belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the slb server certificate belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -323,14 +323,14 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -339,7 +339,7 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;alicloud_certifacte_id&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_id&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;alicloud_certifacte_id&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_id&#39; replaces it.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -347,7 +347,7 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;alicloud_certifacte_name&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_name&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;alicloud_certifacte_name&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_name&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,8 +355,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}an id of server certificate ssued/proxied by alibaba cloud. but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>an id of server certificate ssued/proxied by alibaba cloud. but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -364,8 +364,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the name of the certificate specified by `alicloud_certificate_id`.but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>the name of the certificate specified by `alicloud_certificate_id`.but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -373,8 +373,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the region of the certificate specified by `alicloud_certificate_id`. but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>the region of the certificate specified by `alicloud_certificate_id`. but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -382,8 +382,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Server Certificate.
-{{% /md %}}</dd>
+    <dd>Name of the Server Certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -391,8 +391,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the content of privat key of the ssl certificate specified by `server_certificate`. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
-{{% /md %}}</dd>
+    <dd>the content of privat key of the ssl certificate specified by `server_certificate`. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -400,8 +400,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the slb server certificate belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the slb server certificate belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -409,8 +409,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the content of the ssl certificate. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
-{{% /md %}}</dd>
+    <dd>the content of the ssl certificate. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -418,14 +418,14 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -434,7 +434,7 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;alicloud_certifacte_id&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_id&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;alicloud_certifacte_id&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_id&#39; replaces it.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -442,7 +442,7 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;alicloud_certifacte_name&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_name&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;alicloud_certifacte_name&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_name&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -450,8 +450,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}an id of server certificate ssued/proxied by alibaba cloud. but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>an id of server certificate ssued/proxied by alibaba cloud. but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -459,8 +459,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the name of the certificate specified by `alicloud_certificate_id`.but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>the name of the certificate specified by `alicloud_certificate_id`.but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -468,8 +468,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the region of the certificate specified by `alicloud_certificate_id`. but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>the region of the certificate specified by `alicloud_certificate_id`. but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -477,8 +477,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Server Certificate.
-{{% /md %}}</dd>
+    <dd>Name of the Server Certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -486,8 +486,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the content of privat key of the ssl certificate specified by `server_certificate`. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
-{{% /md %}}</dd>
+    <dd>the content of privat key of the ssl certificate specified by `server_certificate`. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -495,8 +495,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the slb server certificate belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the slb server certificate belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -504,8 +504,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the content of the ssl certificate. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
-{{% /md %}}</dd>
+    <dd>the content of the ssl certificate. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -513,14 +513,14 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -529,7 +529,7 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;alicloud_certifacte_id&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_id&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;alicloud_certifacte_id&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_id&#39; replaces it.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -537,7 +537,7 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;alicloud_certifacte_name&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_name&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;alicloud_certifacte_name&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_name&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -545,8 +545,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}an id of server certificate ssued/proxied by alibaba cloud. but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>an id of server certificate ssued/proxied by alibaba cloud. but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -554,8 +554,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the name of the certificate specified by `alicloud_certificate_id`.but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>the name of the certificate specified by `alicloud_certificate_id`.but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -563,8 +563,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the region of the certificate specified by `alicloud_certificate_id`. but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>the region of the certificate specified by `alicloud_certificate_id`. but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -572,8 +572,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Server Certificate.
-{{% /md %}}</dd>
+    <dd>Name of the Server Certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -581,8 +581,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the content of privat key of the ssl certificate specified by `server_certificate`. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
-{{% /md %}}</dd>
+    <dd>the content of privat key of the ssl certificate specified by `server_certificate`. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -590,8 +590,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the slb server certificate belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the slb server certificate belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -599,8 +599,8 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the content of the ssl certificate. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
-{{% /md %}}</dd>
+    <dd>the content of the ssl certificate. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -608,11 +608,11 @@ The ServerCertificate resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -626,7 +626,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -635,13 +635,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -650,13 +650,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -665,13 +665,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -680,10 +680,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -694,25 +694,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing ServerCertificate Resource {#look-up}
 
 Get an existing ServerCertificate resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/slb/#ServerCertificateState">ServerCertificateState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/alicloud/slb/#ServerCertificate">ServerCertificate</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>alicloud_certifacte_id=None<span class="p">, </span>alicloud_certifacte_name=None<span class="p">, </span>alicloud_certificate_id=None<span class="p">, </span>alicloud_certificate_name=None<span class="p">, </span>alicloud_certificate_region_id=None<span class="p">, </span>name=None<span class="p">, </span>private_key=None<span class="p">, </span>resource_group_id=None<span class="p">, </span>server_certificate=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetServerCertificate<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/slb?tab=doc#ServerCertificateState">ServerCertificateState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-alicloud/sdk/v2/go/alicloud/slb?tab=doc#ServerCertificate">ServerCertificate</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Slb.ServerCertificate.html">ServerCertificate</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Alicloud/Pulumi.Alicloud.Slb.ServerCertificateState.html">ServerCertificateState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -737,9 +737,9 @@ Get an existing ServerCertificate resource's state with the given name, ID, and 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -752,36 +752,9 @@ Get an existing ServerCertificate resource's state with the given name, ID, and 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -806,13 +779,40 @@ Get an existing ServerCertificate resource's state with the given name, ID, and 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -821,7 +821,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;alicloud_certifacte_id&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_id&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;alicloud_certifacte_id&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_id&#39; replaces it.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -829,7 +829,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;alicloud_certifacte_name&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_name&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;alicloud_certifacte_name&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_name&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -837,8 +837,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}an id of server certificate ssued/proxied by alibaba cloud. but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>an id of server certificate ssued/proxied by alibaba cloud. but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -846,8 +846,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the name of the certificate specified by `alicloud_certificate_id`.but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>the name of the certificate specified by `alicloud_certificate_id`.but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -855,8 +855,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the region of the certificate specified by `alicloud_certificate_id`. but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>the region of the certificate specified by `alicloud_certificate_id`. but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -864,8 +864,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the content of the ssl certificate. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
-{{% /md %}}</dd>
+    <dd>the content of the ssl certificate. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -873,8 +873,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Server Certificate.
-{{% /md %}}</dd>
+    <dd>Name of the Server Certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -882,8 +882,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the content of privat key of the ssl certificate specified by `server_certificate`. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
-{{% /md %}}</dd>
+    <dd>the content of privat key of the ssl certificate specified by `server_certificate`. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -891,8 +891,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the slb server certificate belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the slb server certificate belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -900,14 +900,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -916,7 +916,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;alicloud_certifacte_id&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_id&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;alicloud_certifacte_id&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_id&#39; replaces it.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -924,7 +924,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;alicloud_certifacte_name&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_name&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;alicloud_certifacte_name&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_name&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -932,8 +932,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}an id of server certificate ssued/proxied by alibaba cloud. but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>an id of server certificate ssued/proxied by alibaba cloud. but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -941,8 +941,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the name of the certificate specified by `alicloud_certificate_id`.but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>the name of the certificate specified by `alicloud_certificate_id`.but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -950,8 +950,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the region of the certificate specified by `alicloud_certificate_id`. but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>the region of the certificate specified by `alicloud_certificate_id`. but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -959,8 +959,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Server Certificate.
-{{% /md %}}</dd>
+    <dd>Name of the Server Certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -968,8 +968,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the content of privat key of the ssl certificate specified by `server_certificate`. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
-{{% /md %}}</dd>
+    <dd>the content of privat key of the ssl certificate specified by `server_certificate`. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -977,8 +977,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the slb server certificate belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the slb server certificate belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -986,8 +986,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the content of the ssl certificate. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
-{{% /md %}}</dd>
+    <dd>the content of the ssl certificate. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -995,14 +995,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -1011,7 +1011,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;alicloud_certifacte_id&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_id&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;alicloud_certifacte_id&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_id&#39; replaces it.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1019,7 +1019,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;alicloud_certifacte_name&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_name&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;alicloud_certifacte_name&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_name&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1027,8 +1027,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}an id of server certificate ssued/proxied by alibaba cloud. but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>an id of server certificate ssued/proxied by alibaba cloud. but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1036,8 +1036,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the name of the certificate specified by `alicloud_certificate_id`.but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>the name of the certificate specified by `alicloud_certificate_id`.but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1045,8 +1045,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the region of the certificate specified by `alicloud_certificate_id`. but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>the region of the certificate specified by `alicloud_certificate_id`. but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1054,8 +1054,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Server Certificate.
-{{% /md %}}</dd>
+    <dd>Name of the Server Certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1063,8 +1063,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the content of privat key of the ssl certificate specified by `server_certificate`. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
-{{% /md %}}</dd>
+    <dd>the content of privat key of the ssl certificate specified by `server_certificate`. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1072,8 +1072,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the slb server certificate belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the slb server certificate belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1081,8 +1081,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the content of the ssl certificate. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
-{{% /md %}}</dd>
+    <dd>the content of the ssl certificate. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1090,14 +1090,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional property-deprecated"
@@ -1106,7 +1106,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;alicloud_certifacte_id&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_id&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;alicloud_certifacte_id&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_id&#39; replaces it.</p></dd>
 
     <dt class="property-optional property-deprecated"
             title="Optional, Deprecated">
@@ -1114,7 +1114,7 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}<p class="property-message">Deprecated: {{% md %}}Field &#39;alicloud_certifacte_name&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_name&#39; replaces it.{{% /md %}}</p></dd>
+    <dd><p class="property-message">Deprecated: Field &#39;alicloud_certifacte_name&#39; has been deprecated from provider version 1.68.0. Use &#39;alicloud_certificate_name&#39; replaces it.</p></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1122,8 +1122,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}an id of server certificate ssued/proxied by alibaba cloud. but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>an id of server certificate ssued/proxied by alibaba cloud. but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1131,8 +1131,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the name of the certificate specified by `alicloud_certificate_id`.but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>the name of the certificate specified by `alicloud_certificate_id`.but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1140,8 +1140,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the region of the certificate specified by `alicloud_certificate_id`. but it is not supported on the international site of alibaba cloud now.
-{{% /md %}}</dd>
+    <dd>the region of the certificate specified by `alicloud_certificate_id`. but it is not supported on the international site of alibaba cloud now.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1149,8 +1149,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the Server Certificate.
-{{% /md %}}</dd>
+    <dd>Name of the Server Certificate.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1158,8 +1158,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the content of privat key of the ssl certificate specified by `server_certificate`. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
-{{% /md %}}</dd>
+    <dd>the content of privat key of the ssl certificate specified by `server_certificate`. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1167,8 +1167,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Id of resource group which the slb server certificate belongs.
-{{% /md %}}</dd>
+    <dd>The Id of resource group which the slb server certificate belongs.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1176,8 +1176,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the content of the ssl certificate. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
-{{% /md %}}</dd>
+    <dd>the content of the ssl certificate. where `alicloud_certificate_id` is null, it is required, otherwise it is ignored.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1185,11 +1185,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -18,26 +18,26 @@ A CDN Endpoint is the entity within a CDN Profile containing configuration infor
 
 
 ## Create a Endpoint Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/cdn/#Endpoint">Endpoint</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/cdn/#EndpointArgs">EndpointArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Endpoint</span><span class="p">(resource_name, opts=None, </span>content_types_to_compresses=None<span class="p">, </span>delivery_rules=None<span class="p">, </span>geo_filters=None<span class="p">, </span>global_delivery_rule=None<span class="p">, </span>is_compression_enabled=None<span class="p">, </span>is_http_allowed=None<span class="p">, </span>is_https_allowed=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>optimization_type=None<span class="p">, </span>origin_host_header=None<span class="p">, </span>origin_path=None<span class="p">, </span>origins=None<span class="p">, </span>probe_path=None<span class="p">, </span>profile_name=None<span class="p">, </span>querystring_caching_behaviour=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewEndpoint<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointArgs">EndpointArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#Endpoint">Endpoint</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Cdn.Endpoint.html">Endpoint</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Cdn.EndpointArgs.html">EndpointArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ A CDN Endpoint is the entity within a CDN Profile containing configuration infor
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ A CDN Endpoint is the entity within a CDN Profile containing configuration infor
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ A CDN Endpoint is the entity within a CDN Profile containing configuration infor
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ A CDN Endpoint is the entity within a CDN Profile containing configuration infor
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Endpoint Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -204,8 +204,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointorigin">List&lt;Endpoint<wbr>Origin<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The set of origins of the CDN endpoint. When multiple origins exist, the first origin will be used as primary and rest will be used as failover options. Each `origin` block supports fields documented below.
-{{% /md %}}</dd>
+    <dd>The set of origins of the CDN endpoint. When multiple origins exist, the first origin will be used as primary and rest will be used as failover options. Each `origin` block supports fields documented below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -213,8 +213,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CDN Profile to which to attach the CDN Endpoint.
-{{% /md %}}</dd>
+    <dd>The CDN Profile to which to attach the CDN Endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -222,8 +222,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the CDN Endpoint.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the CDN Endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -231,8 +231,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings that indicates a content types on which compression will be applied. The value for the elements should be MIME types.
-{{% /md %}}</dd>
+    <dd>An array of strings that indicates a content types on which compression will be applied. The value for the elements should be MIME types.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -240,8 +240,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrule">List&lt;Endpoint<wbr>Delivery<wbr>Rule<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Rules for the rules engine. An endpoint can contain up until 4 of those rules that consist of conditions and actions. A `delivery_rule` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>Rules for the rules engine. An endpoint can contain up until 4 of those rules that consist of conditions and actions. A `delivery_rule` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -249,8 +249,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointgeofilter">List&lt;Endpoint<wbr>Geo<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of Geo Filters for this CDN Endpoint. Each `geo_filter` block supports fields documented below.
-{{% /md %}}</dd>
+    <dd>A set of Geo Filters for this CDN Endpoint. Each `geo_filter` block supports fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -258,8 +258,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrule">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Actions that are valid for all resources regardless of any conditions. A `global_delivery_rule` block as defined below.
-{{% /md %}}</dd>
+    <dd>Actions that are valid for all resources regardless of any conditions. A `global_delivery_rule` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,8 +267,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether compression is to be enabled. Defaults to false.
-{{% /md %}}</dd>
+    <dd>Indicates whether compression is to be enabled. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -276,8 +276,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -285,8 +285,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -294,8 +294,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -303,8 +303,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -312,8 +312,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}What types of optimization should this CDN Endpoint optimize for? Possible values include `DynamicSiteAcceleration`, `GeneralMediaStreaming`, `GeneralWebDelivery`, `LargeFileDownload` and `VideoOnDemandMediaStreaming`.
-{{% /md %}}</dd>
+    <dd>What types of optimization should this CDN Endpoint optimize for? Possible values include `DynamicSiteAcceleration`, `GeneralMediaStreaming`, `GeneralWebDelivery`, `LargeFileDownload` and `VideoOnDemandMediaStreaming`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -321,8 +321,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The host header CDN provider will send along with content requests to origins. Defaults to the host name of the origin.
-{{% /md %}}</dd>
+    <dd>The host header CDN provider will send along with content requests to origins. Defaults to the host name of the origin.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -330,8 +330,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path used at for origin requests.
-{{% /md %}}</dd>
+    <dd>The path used at for origin requests.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -339,8 +339,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the path to a file hosted on the origin which helps accelerate delivery of the dynamic content and calculate the most optimal routes for the CDN. This is relative to the `origin_path`.
-{{% /md %}}</dd>
+    <dd>the path to a file hosted on the origin which helps accelerate delivery of the dynamic content and calculate the most optimal routes for the CDN. This is relative to the `origin_path`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -348,8 +348,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets query string caching behavior. Allowed values are `IgnoreQueryString`, `BypassCaching` and `UseQueryString`. Defaults to `IgnoreQueryString`.
-{{% /md %}}</dd>
+    <dd>Sets query string caching behavior. Allowed values are `IgnoreQueryString`, `BypassCaching` and `UseQueryString`. Defaults to `IgnoreQueryString`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -357,14 +357,14 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -373,8 +373,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointorigin">[]Endpoint<wbr>Origin</a></span>
     </dt>
-    <dd>{{% md %}}The set of origins of the CDN endpoint. When multiple origins exist, the first origin will be used as primary and rest will be used as failover options. Each `origin` block supports fields documented below.
-{{% /md %}}</dd>
+    <dd>The set of origins of the CDN endpoint. When multiple origins exist, the first origin will be used as primary and rest will be used as failover options. Each `origin` block supports fields documented below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -382,8 +382,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CDN Profile to which to attach the CDN Endpoint.
-{{% /md %}}</dd>
+    <dd>The CDN Profile to which to attach the CDN Endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -391,8 +391,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the CDN Endpoint.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the CDN Endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -400,8 +400,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings that indicates a content types on which compression will be applied. The value for the elements should be MIME types.
-{{% /md %}}</dd>
+    <dd>An array of strings that indicates a content types on which compression will be applied. The value for the elements should be MIME types.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -409,8 +409,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrule">[]Endpoint<wbr>Delivery<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}Rules for the rules engine. An endpoint can contain up until 4 of those rules that consist of conditions and actions. A `delivery_rule` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>Rules for the rules engine. An endpoint can contain up until 4 of those rules that consist of conditions and actions. A `delivery_rule` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -418,8 +418,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointgeofilter">[]Endpoint<wbr>Geo<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}A set of Geo Filters for this CDN Endpoint. Each `geo_filter` block supports fields documented below.
-{{% /md %}}</dd>
+    <dd>A set of Geo Filters for this CDN Endpoint. Each `geo_filter` block supports fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -427,8 +427,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrule">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}Actions that are valid for all resources regardless of any conditions. A `global_delivery_rule` block as defined below.
-{{% /md %}}</dd>
+    <dd>Actions that are valid for all resources regardless of any conditions. A `global_delivery_rule` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -436,8 +436,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether compression is to be enabled. Defaults to false.
-{{% /md %}}</dd>
+    <dd>Indicates whether compression is to be enabled. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -445,8 +445,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -454,8 +454,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -463,8 +463,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -472,8 +472,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -481,8 +481,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}What types of optimization should this CDN Endpoint optimize for? Possible values include `DynamicSiteAcceleration`, `GeneralMediaStreaming`, `GeneralWebDelivery`, `LargeFileDownload` and `VideoOnDemandMediaStreaming`.
-{{% /md %}}</dd>
+    <dd>What types of optimization should this CDN Endpoint optimize for? Possible values include `DynamicSiteAcceleration`, `GeneralMediaStreaming`, `GeneralWebDelivery`, `LargeFileDownload` and `VideoOnDemandMediaStreaming`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -490,8 +490,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The host header CDN provider will send along with content requests to origins. Defaults to the host name of the origin.
-{{% /md %}}</dd>
+    <dd>The host header CDN provider will send along with content requests to origins. Defaults to the host name of the origin.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -499,8 +499,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path used at for origin requests.
-{{% /md %}}</dd>
+    <dd>The path used at for origin requests.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -508,8 +508,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the path to a file hosted on the origin which helps accelerate delivery of the dynamic content and calculate the most optimal routes for the CDN. This is relative to the `origin_path`.
-{{% /md %}}</dd>
+    <dd>the path to a file hosted on the origin which helps accelerate delivery of the dynamic content and calculate the most optimal routes for the CDN. This is relative to the `origin_path`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -517,8 +517,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets query string caching behavior. Allowed values are `IgnoreQueryString`, `BypassCaching` and `UseQueryString`. Defaults to `IgnoreQueryString`.
-{{% /md %}}</dd>
+    <dd>Sets query string caching behavior. Allowed values are `IgnoreQueryString`, `BypassCaching` and `UseQueryString`. Defaults to `IgnoreQueryString`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -526,14 +526,14 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -542,8 +542,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointorigin">Endpoint<wbr>Origin[]</a></span>
     </dt>
-    <dd>{{% md %}}The set of origins of the CDN endpoint. When multiple origins exist, the first origin will be used as primary and rest will be used as failover options. Each `origin` block supports fields documented below.
-{{% /md %}}</dd>
+    <dd>The set of origins of the CDN endpoint. When multiple origins exist, the first origin will be used as primary and rest will be used as failover options. Each `origin` block supports fields documented below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -551,8 +551,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CDN Profile to which to attach the CDN Endpoint.
-{{% /md %}}</dd>
+    <dd>The CDN Profile to which to attach the CDN Endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -560,8 +560,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the CDN Endpoint.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the CDN Endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -569,8 +569,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings that indicates a content types on which compression will be applied. The value for the elements should be MIME types.
-{{% /md %}}</dd>
+    <dd>An array of strings that indicates a content types on which compression will be applied. The value for the elements should be MIME types.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -578,8 +578,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrule">Endpoint<wbr>Delivery<wbr>Rule[]</a></span>
     </dt>
-    <dd>{{% md %}}Rules for the rules engine. An endpoint can contain up until 4 of those rules that consist of conditions and actions. A `delivery_rule` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>Rules for the rules engine. An endpoint can contain up until 4 of those rules that consist of conditions and actions. A `delivery_rule` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -587,8 +587,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointgeofilter">Endpoint<wbr>Geo<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of Geo Filters for this CDN Endpoint. Each `geo_filter` block supports fields documented below.
-{{% /md %}}</dd>
+    <dd>A set of Geo Filters for this CDN Endpoint. Each `geo_filter` block supports fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -596,8 +596,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrule">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}Actions that are valid for all resources regardless of any conditions. A `global_delivery_rule` block as defined below.
-{{% /md %}}</dd>
+    <dd>Actions that are valid for all resources regardless of any conditions. A `global_delivery_rule` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -605,8 +605,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether compression is to be enabled. Defaults to false.
-{{% /md %}}</dd>
+    <dd>Indicates whether compression is to be enabled. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -614,8 +614,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -623,8 +623,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -632,8 +632,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -641,8 +641,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -650,8 +650,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}What types of optimization should this CDN Endpoint optimize for? Possible values include `DynamicSiteAcceleration`, `GeneralMediaStreaming`, `GeneralWebDelivery`, `LargeFileDownload` and `VideoOnDemandMediaStreaming`.
-{{% /md %}}</dd>
+    <dd>What types of optimization should this CDN Endpoint optimize for? Possible values include `DynamicSiteAcceleration`, `GeneralMediaStreaming`, `GeneralWebDelivery`, `LargeFileDownload` and `VideoOnDemandMediaStreaming`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -659,8 +659,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The host header CDN provider will send along with content requests to origins. Defaults to the host name of the origin.
-{{% /md %}}</dd>
+    <dd>The host header CDN provider will send along with content requests to origins. Defaults to the host name of the origin.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -668,8 +668,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path used at for origin requests.
-{{% /md %}}</dd>
+    <dd>The path used at for origin requests.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -677,8 +677,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the path to a file hosted on the origin which helps accelerate delivery of the dynamic content and calculate the most optimal routes for the CDN. This is relative to the `origin_path`.
-{{% /md %}}</dd>
+    <dd>the path to a file hosted on the origin which helps accelerate delivery of the dynamic content and calculate the most optimal routes for the CDN. This is relative to the `origin_path`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -686,8 +686,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets query string caching behavior. Allowed values are `IgnoreQueryString`, `BypassCaching` and `UseQueryString`. Defaults to `IgnoreQueryString`.
-{{% /md %}}</dd>
+    <dd>Sets query string caching behavior. Allowed values are `IgnoreQueryString`, `BypassCaching` and `UseQueryString`. Defaults to `IgnoreQueryString`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -695,14 +695,14 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -711,8 +711,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointorigin">List[Endpoint<wbr>Origin]</a></span>
     </dt>
-    <dd>{{% md %}}The set of origins of the CDN endpoint. When multiple origins exist, the first origin will be used as primary and rest will be used as failover options. Each `origin` block supports fields documented below.
-{{% /md %}}</dd>
+    <dd>The set of origins of the CDN endpoint. When multiple origins exist, the first origin will be used as primary and rest will be used as failover options. Each `origin` block supports fields documented below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -720,8 +720,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CDN Profile to which to attach the CDN Endpoint.
-{{% /md %}}</dd>
+    <dd>The CDN Profile to which to attach the CDN Endpoint.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -729,8 +729,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the CDN Endpoint.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the CDN Endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -738,8 +738,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings that indicates a content types on which compression will be applied. The value for the elements should be MIME types.
-{{% /md %}}</dd>
+    <dd>An array of strings that indicates a content types on which compression will be applied. The value for the elements should be MIME types.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -747,8 +747,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrule">List[Endpoint<wbr>Delivery<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}Rules for the rules engine. An endpoint can contain up until 4 of those rules that consist of conditions and actions. A `delivery_rule` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>Rules for the rules engine. An endpoint can contain up until 4 of those rules that consist of conditions and actions. A `delivery_rule` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -756,8 +756,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointgeofilter">List[Endpoint<wbr>Geo<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}A set of Geo Filters for this CDN Endpoint. Each `geo_filter` block supports fields documented below.
-{{% /md %}}</dd>
+    <dd>A set of Geo Filters for this CDN Endpoint. Each `geo_filter` block supports fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -765,8 +765,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrule">Dict[Endpoint<wbr>Global<wbr>Delivery<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}Actions that are valid for all resources regardless of any conditions. A `global_delivery_rule` block as defined below.
-{{% /md %}}</dd>
+    <dd>Actions that are valid for all resources regardless of any conditions. A `global_delivery_rule` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -774,8 +774,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether compression is to be enabled. Defaults to false.
-{{% /md %}}</dd>
+    <dd>Indicates whether compression is to be enabled. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -783,8 +783,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -792,8 +792,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -801,8 +801,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -810,8 +810,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -819,8 +819,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}What types of optimization should this CDN Endpoint optimize for? Possible values include `DynamicSiteAcceleration`, `GeneralMediaStreaming`, `GeneralWebDelivery`, `LargeFileDownload` and `VideoOnDemandMediaStreaming`.
-{{% /md %}}</dd>
+    <dd>What types of optimization should this CDN Endpoint optimize for? Possible values include `DynamicSiteAcceleration`, `GeneralMediaStreaming`, `GeneralWebDelivery`, `LargeFileDownload` and `VideoOnDemandMediaStreaming`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -828,8 +828,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The host header CDN provider will send along with content requests to origins. Defaults to the host name of the origin.
-{{% /md %}}</dd>
+    <dd>The host header CDN provider will send along with content requests to origins. Defaults to the host name of the origin.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -837,8 +837,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path used at for origin requests.
-{{% /md %}}</dd>
+    <dd>The path used at for origin requests.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -846,8 +846,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the path to a file hosted on the origin which helps accelerate delivery of the dynamic content and calculate the most optimal routes for the CDN. This is relative to the `origin_path`.
-{{% /md %}}</dd>
+    <dd>the path to a file hosted on the origin which helps accelerate delivery of the dynamic content and calculate the most optimal routes for the CDN. This is relative to the `origin_path`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -855,8 +855,8 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sets query string caching behavior. Allowed values are `IgnoreQueryString`, `BypassCaching` and `UseQueryString`. Defaults to `IgnoreQueryString`.
-{{% /md %}}</dd>
+    <dd>Sets query string caching behavior. Allowed values are `IgnoreQueryString`, `BypassCaching` and `UseQueryString`. Defaults to `IgnoreQueryString`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -864,11 +864,11 @@ The Endpoint resource accepts the following [input]({{< relref "/docs/intro/conc
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -882,7 +882,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -891,8 +891,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -900,13 +900,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -915,8 +915,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -924,13 +924,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -939,8 +939,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -948,13 +948,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -963,8 +963,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-"
             title="">
@@ -972,10 +972,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -986,25 +986,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Endpoint Resource {#look-up}
 
 Get an existing Endpoint resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/cdn/#EndpointState">EndpointState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/cdn/#Endpoint">Endpoint</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>content_types_to_compresses=None<span class="p">, </span>delivery_rules=None<span class="p">, </span>geo_filters=None<span class="p">, </span>global_delivery_rule=None<span class="p">, </span>host_name=None<span class="p">, </span>is_compression_enabled=None<span class="p">, </span>is_http_allowed=None<span class="p">, </span>is_https_allowed=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>optimization_type=None<span class="p">, </span>origin_host_header=None<span class="p">, </span>origin_path=None<span class="p">, </span>origins=None<span class="p">, </span>probe_path=None<span class="p">, </span>profile_name=None<span class="p">, </span>querystring_caching_behaviour=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetEndpoint<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointState">EndpointState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#Endpoint">Endpoint</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Cdn.Endpoint.html">Endpoint</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Cdn.EndpointState.html">EndpointState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1029,9 +1029,9 @@ Get an existing Endpoint resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1044,36 +1044,9 @@ Get an existing Endpoint resource's state with the given name, ID, and optional 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1098,13 +1071,40 @@ Get an existing Endpoint resource's state with the given name, ID, and optional 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1113,8 +1113,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings that indicates a content types on which compression will be applied. The value for the elements should be MIME types.
-{{% /md %}}</dd>
+    <dd>An array of strings that indicates a content types on which compression will be applied. The value for the elements should be MIME types.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1122,8 +1122,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrule">List&lt;Endpoint<wbr>Delivery<wbr>Rule<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Rules for the rules engine. An endpoint can contain up until 4 of those rules that consist of conditions and actions. A `delivery_rule` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>Rules for the rules engine. An endpoint can contain up until 4 of those rules that consist of conditions and actions. A `delivery_rule` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1131,8 +1131,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointgeofilter">List&lt;Endpoint<wbr>Geo<wbr>Filter<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A set of Geo Filters for this CDN Endpoint. Each `geo_filter` block supports fields documented below.
-{{% /md %}}</dd>
+    <dd>A set of Geo Filters for this CDN Endpoint. Each `geo_filter` block supports fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1140,8 +1140,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrule">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}Actions that are valid for all resources regardless of any conditions. A `global_delivery_rule` block as defined below.
-{{% /md %}}</dd>
+    <dd>Actions that are valid for all resources regardless of any conditions. A `global_delivery_rule` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1149,8 +1149,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1158,8 +1158,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether compression is to be enabled. Defaults to false.
-{{% /md %}}</dd>
+    <dd>Indicates whether compression is to be enabled. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1167,8 +1167,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1176,8 +1176,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1185,8 +1185,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1194,8 +1194,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1203,8 +1203,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}What types of optimization should this CDN Endpoint optimize for? Possible values include `DynamicSiteAcceleration`, `GeneralMediaStreaming`, `GeneralWebDelivery`, `LargeFileDownload` and `VideoOnDemandMediaStreaming`.
-{{% /md %}}</dd>
+    <dd>What types of optimization should this CDN Endpoint optimize for? Possible values include `DynamicSiteAcceleration`, `GeneralMediaStreaming`, `GeneralWebDelivery`, `LargeFileDownload` and `VideoOnDemandMediaStreaming`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1212,8 +1212,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The host header CDN provider will send along with content requests to origins. Defaults to the host name of the origin.
-{{% /md %}}</dd>
+    <dd>The host header CDN provider will send along with content requests to origins. Defaults to the host name of the origin.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1221,8 +1221,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The path used at for origin requests.
-{{% /md %}}</dd>
+    <dd>The path used at for origin requests.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1230,8 +1230,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointorigin">List&lt;Endpoint<wbr>Origin<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The set of origins of the CDN endpoint. When multiple origins exist, the first origin will be used as primary and rest will be used as failover options. Each `origin` block supports fields documented below.
-{{% /md %}}</dd>
+    <dd>The set of origins of the CDN endpoint. When multiple origins exist, the first origin will be used as primary and rest will be used as failover options. Each `origin` block supports fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1239,8 +1239,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}the path to a file hosted on the origin which helps accelerate delivery of the dynamic content and calculate the most optimal routes for the CDN. This is relative to the `origin_path`.
-{{% /md %}}</dd>
+    <dd>the path to a file hosted on the origin which helps accelerate delivery of the dynamic content and calculate the most optimal routes for the CDN. This is relative to the `origin_path`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1248,8 +1248,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CDN Profile to which to attach the CDN Endpoint.
-{{% /md %}}</dd>
+    <dd>The CDN Profile to which to attach the CDN Endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1257,8 +1257,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets query string caching behavior. Allowed values are `IgnoreQueryString`, `BypassCaching` and `UseQueryString`. Defaults to `IgnoreQueryString`.
-{{% /md %}}</dd>
+    <dd>Sets query string caching behavior. Allowed values are `IgnoreQueryString`, `BypassCaching` and `UseQueryString`. Defaults to `IgnoreQueryString`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1266,8 +1266,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the CDN Endpoint.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the CDN Endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1275,14 +1275,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1291,8 +1291,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings that indicates a content types on which compression will be applied. The value for the elements should be MIME types.
-{{% /md %}}</dd>
+    <dd>An array of strings that indicates a content types on which compression will be applied. The value for the elements should be MIME types.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1300,8 +1300,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrule">[]Endpoint<wbr>Delivery<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}Rules for the rules engine. An endpoint can contain up until 4 of those rules that consist of conditions and actions. A `delivery_rule` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>Rules for the rules engine. An endpoint can contain up until 4 of those rules that consist of conditions and actions. A `delivery_rule` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1309,8 +1309,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointgeofilter">[]Endpoint<wbr>Geo<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}A set of Geo Filters for this CDN Endpoint. Each `geo_filter` block supports fields documented below.
-{{% /md %}}</dd>
+    <dd>A set of Geo Filters for this CDN Endpoint. Each `geo_filter` block supports fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1318,8 +1318,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrule">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}Actions that are valid for all resources regardless of any conditions. A `global_delivery_rule` block as defined below.
-{{% /md %}}</dd>
+    <dd>Actions that are valid for all resources regardless of any conditions. A `global_delivery_rule` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1327,8 +1327,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1336,8 +1336,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether compression is to be enabled. Defaults to false.
-{{% /md %}}</dd>
+    <dd>Indicates whether compression is to be enabled. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1345,8 +1345,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1354,8 +1354,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1363,8 +1363,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1372,8 +1372,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1381,8 +1381,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}What types of optimization should this CDN Endpoint optimize for? Possible values include `DynamicSiteAcceleration`, `GeneralMediaStreaming`, `GeneralWebDelivery`, `LargeFileDownload` and `VideoOnDemandMediaStreaming`.
-{{% /md %}}</dd>
+    <dd>What types of optimization should this CDN Endpoint optimize for? Possible values include `DynamicSiteAcceleration`, `GeneralMediaStreaming`, `GeneralWebDelivery`, `LargeFileDownload` and `VideoOnDemandMediaStreaming`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1390,8 +1390,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The host header CDN provider will send along with content requests to origins. Defaults to the host name of the origin.
-{{% /md %}}</dd>
+    <dd>The host header CDN provider will send along with content requests to origins. Defaults to the host name of the origin.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1399,8 +1399,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path used at for origin requests.
-{{% /md %}}</dd>
+    <dd>The path used at for origin requests.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1408,8 +1408,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointorigin">[]Endpoint<wbr>Origin</a></span>
     </dt>
-    <dd>{{% md %}}The set of origins of the CDN endpoint. When multiple origins exist, the first origin will be used as primary and rest will be used as failover options. Each `origin` block supports fields documented below.
-{{% /md %}}</dd>
+    <dd>The set of origins of the CDN endpoint. When multiple origins exist, the first origin will be used as primary and rest will be used as failover options. Each `origin` block supports fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1417,8 +1417,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}the path to a file hosted on the origin which helps accelerate delivery of the dynamic content and calculate the most optimal routes for the CDN. This is relative to the `origin_path`.
-{{% /md %}}</dd>
+    <dd>the path to a file hosted on the origin which helps accelerate delivery of the dynamic content and calculate the most optimal routes for the CDN. This is relative to the `origin_path`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1426,8 +1426,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CDN Profile to which to attach the CDN Endpoint.
-{{% /md %}}</dd>
+    <dd>The CDN Profile to which to attach the CDN Endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1435,8 +1435,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets query string caching behavior. Allowed values are `IgnoreQueryString`, `BypassCaching` and `UseQueryString`. Defaults to `IgnoreQueryString`.
-{{% /md %}}</dd>
+    <dd>Sets query string caching behavior. Allowed values are `IgnoreQueryString`, `BypassCaching` and `UseQueryString`. Defaults to `IgnoreQueryString`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1444,8 +1444,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the CDN Endpoint.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the CDN Endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1453,14 +1453,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1469,8 +1469,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings that indicates a content types on which compression will be applied. The value for the elements should be MIME types.
-{{% /md %}}</dd>
+    <dd>An array of strings that indicates a content types on which compression will be applied. The value for the elements should be MIME types.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1478,8 +1478,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrule">Endpoint<wbr>Delivery<wbr>Rule[]</a></span>
     </dt>
-    <dd>{{% md %}}Rules for the rules engine. An endpoint can contain up until 4 of those rules that consist of conditions and actions. A `delivery_rule` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>Rules for the rules engine. An endpoint can contain up until 4 of those rules that consist of conditions and actions. A `delivery_rule` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1487,8 +1487,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointgeofilter">Endpoint<wbr>Geo<wbr>Filter[]</a></span>
     </dt>
-    <dd>{{% md %}}A set of Geo Filters for this CDN Endpoint. Each `geo_filter` block supports fields documented below.
-{{% /md %}}</dd>
+    <dd>A set of Geo Filters for this CDN Endpoint. Each `geo_filter` block supports fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1496,8 +1496,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrule">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}Actions that are valid for all resources regardless of any conditions. A `global_delivery_rule` block as defined below.
-{{% /md %}}</dd>
+    <dd>Actions that are valid for all resources regardless of any conditions. A `global_delivery_rule` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1505,8 +1505,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1514,8 +1514,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether compression is to be enabled. Defaults to false.
-{{% /md %}}</dd>
+    <dd>Indicates whether compression is to be enabled. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1523,8 +1523,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1532,8 +1532,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1541,8 +1541,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1550,8 +1550,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1559,8 +1559,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}What types of optimization should this CDN Endpoint optimize for? Possible values include `DynamicSiteAcceleration`, `GeneralMediaStreaming`, `GeneralWebDelivery`, `LargeFileDownload` and `VideoOnDemandMediaStreaming`.
-{{% /md %}}</dd>
+    <dd>What types of optimization should this CDN Endpoint optimize for? Possible values include `DynamicSiteAcceleration`, `GeneralMediaStreaming`, `GeneralWebDelivery`, `LargeFileDownload` and `VideoOnDemandMediaStreaming`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1568,8 +1568,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The host header CDN provider will send along with content requests to origins. Defaults to the host name of the origin.
-{{% /md %}}</dd>
+    <dd>The host header CDN provider will send along with content requests to origins. Defaults to the host name of the origin.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1577,8 +1577,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The path used at for origin requests.
-{{% /md %}}</dd>
+    <dd>The path used at for origin requests.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1586,8 +1586,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointorigin">Endpoint<wbr>Origin[]</a></span>
     </dt>
-    <dd>{{% md %}}The set of origins of the CDN endpoint. When multiple origins exist, the first origin will be used as primary and rest will be used as failover options. Each `origin` block supports fields documented below.
-{{% /md %}}</dd>
+    <dd>The set of origins of the CDN endpoint. When multiple origins exist, the first origin will be used as primary and rest will be used as failover options. Each `origin` block supports fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1595,8 +1595,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}the path to a file hosted on the origin which helps accelerate delivery of the dynamic content and calculate the most optimal routes for the CDN. This is relative to the `origin_path`.
-{{% /md %}}</dd>
+    <dd>the path to a file hosted on the origin which helps accelerate delivery of the dynamic content and calculate the most optimal routes for the CDN. This is relative to the `origin_path`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1604,8 +1604,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CDN Profile to which to attach the CDN Endpoint.
-{{% /md %}}</dd>
+    <dd>The CDN Profile to which to attach the CDN Endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1613,8 +1613,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets query string caching behavior. Allowed values are `IgnoreQueryString`, `BypassCaching` and `UseQueryString`. Defaults to `IgnoreQueryString`.
-{{% /md %}}</dd>
+    <dd>Sets query string caching behavior. Allowed values are `IgnoreQueryString`, `BypassCaching` and `UseQueryString`. Defaults to `IgnoreQueryString`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1622,8 +1622,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the CDN Endpoint.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the CDN Endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1631,14 +1631,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1647,8 +1647,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}An array of strings that indicates a content types on which compression will be applied. The value for the elements should be MIME types.
-{{% /md %}}</dd>
+    <dd>An array of strings that indicates a content types on which compression will be applied. The value for the elements should be MIME types.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1656,8 +1656,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrule">List[Endpoint<wbr>Delivery<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}Rules for the rules engine. An endpoint can contain up until 4 of those rules that consist of conditions and actions. A `delivery_rule` blocks as defined below.
-{{% /md %}}</dd>
+    <dd>Rules for the rules engine. An endpoint can contain up until 4 of those rules that consist of conditions and actions. A `delivery_rule` blocks as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1665,8 +1665,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointgeofilter">List[Endpoint<wbr>Geo<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}A set of Geo Filters for this CDN Endpoint. Each `geo_filter` block supports fields documented below.
-{{% /md %}}</dd>
+    <dd>A set of Geo Filters for this CDN Endpoint. Each `geo_filter` block supports fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1674,8 +1674,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrule">Dict[Endpoint<wbr>Global<wbr>Delivery<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}Actions that are valid for all resources regardless of any conditions. A `global_delivery_rule` block as defined below.
-{{% /md %}}</dd>
+    <dd>Actions that are valid for all resources regardless of any conditions. A `global_delivery_rule` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1683,8 +1683,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1692,8 +1692,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether compression is to be enabled. Defaults to false.
-{{% /md %}}</dd>
+    <dd>Indicates whether compression is to be enabled. Defaults to false.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1701,8 +1701,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1710,8 +1710,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1719,8 +1719,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1728,8 +1728,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1737,8 +1737,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}What types of optimization should this CDN Endpoint optimize for? Possible values include `DynamicSiteAcceleration`, `GeneralMediaStreaming`, `GeneralWebDelivery`, `LargeFileDownload` and `VideoOnDemandMediaStreaming`.
-{{% /md %}}</dd>
+    <dd>What types of optimization should this CDN Endpoint optimize for? Possible values include `DynamicSiteAcceleration`, `GeneralMediaStreaming`, `GeneralWebDelivery`, `LargeFileDownload` and `VideoOnDemandMediaStreaming`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1746,8 +1746,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The host header CDN provider will send along with content requests to origins. Defaults to the host name of the origin.
-{{% /md %}}</dd>
+    <dd>The host header CDN provider will send along with content requests to origins. Defaults to the host name of the origin.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1755,8 +1755,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The path used at for origin requests.
-{{% /md %}}</dd>
+    <dd>The path used at for origin requests.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1764,8 +1764,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointorigin">List[Endpoint<wbr>Origin]</a></span>
     </dt>
-    <dd>{{% md %}}The set of origins of the CDN endpoint. When multiple origins exist, the first origin will be used as primary and rest will be used as failover options. Each `origin` block supports fields documented below.
-{{% /md %}}</dd>
+    <dd>The set of origins of the CDN endpoint. When multiple origins exist, the first origin will be used as primary and rest will be used as failover options. Each `origin` block supports fields documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1773,8 +1773,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}the path to a file hosted on the origin which helps accelerate delivery of the dynamic content and calculate the most optimal routes for the CDN. This is relative to the `origin_path`.
-{{% /md %}}</dd>
+    <dd>the path to a file hosted on the origin which helps accelerate delivery of the dynamic content and calculate the most optimal routes for the CDN. This is relative to the `origin_path`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1782,8 +1782,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CDN Profile to which to attach the CDN Endpoint.
-{{% /md %}}</dd>
+    <dd>The CDN Profile to which to attach the CDN Endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1791,8 +1791,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sets query string caching behavior. Allowed values are `IgnoreQueryString`, `BypassCaching` and `UseQueryString`. Defaults to `IgnoreQueryString`.
-{{% /md %}}</dd>
+    <dd>Sets query string caching behavior. Allowed values are `IgnoreQueryString`, `BypassCaching` and `UseQueryString`. Defaults to `IgnoreQueryString`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1800,8 +1800,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the CDN Endpoint.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the CDN Endpoint.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1809,11 +1809,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1828,18 +1828,18 @@ The following state arguments are supported:
 
 
 <h4 id="endpointdeliveryrule">Endpoint<wbr>Delivery<wbr>Rule</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointDeliveryRule">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointDeliveryRule">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1848,8 +1848,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name which should be used for this Delivery Rule.
-{{% /md %}}</dd>
+    <dd>The Name which should be used for this Delivery Rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1857,8 +1857,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The order used for this rule, which must be larger than 1.
-{{% /md %}}</dd>
+    <dd>The order used for this rule, which must be larger than 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1866,8 +1866,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulecacheexpirationaction">Endpoint<wbr>Delivery<wbr>Rule<wbr>Cache<wbr>Expiration<wbr>Action<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `cache_expiration_action` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cache_expiration_action` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1875,8 +1875,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulecachekeyquerystringaction">Endpoint<wbr>Delivery<wbr>Rule<wbr>Cache<wbr>Key<wbr>Query<wbr>String<wbr>Action<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `cache_key_query_string_action` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cache_key_query_string_action` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1884,8 +1884,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulecookiescondition">List&lt;Endpoint<wbr>Delivery<wbr>Rule<wbr>Cookies<wbr>Condition<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `cookies_condition` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cookies_condition` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1893,8 +1893,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruledevicecondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Device<wbr>Condition<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `device_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `device_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1902,8 +1902,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulehttpversioncondition">List&lt;Endpoint<wbr>Delivery<wbr>Rule<wbr>Http<wbr>Version<wbr>Condition<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `http_version_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `http_version_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1911,8 +1911,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulemodifyrequestheaderaction">List&lt;Endpoint<wbr>Delivery<wbr>Rule<wbr>Modify<wbr>Request<wbr>Header<wbr>Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `modify_request_header_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `modify_request_header_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1920,8 +1920,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulemodifyresponseheaderaction">List&lt;Endpoint<wbr>Delivery<wbr>Rule<wbr>Modify<wbr>Response<wbr>Header<wbr>Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `modify_response_header_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `modify_response_header_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1929,8 +1929,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulepostargcondition">List&lt;Endpoint<wbr>Delivery<wbr>Rule<wbr>Post<wbr>Arg<wbr>Condition<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `post_arg_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `post_arg_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1938,8 +1938,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulequerystringcondition">List&lt;Endpoint<wbr>Delivery<wbr>Rule<wbr>Query<wbr>String<wbr>Condition<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `query_string_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `query_string_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1947,8 +1947,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleremoteaddresscondition">List&lt;Endpoint<wbr>Delivery<wbr>Rule<wbr>Remote<wbr>Address<wbr>Condition<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `remote_address_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `remote_address_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1956,8 +1956,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulerequestbodycondition">List&lt;Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Body<wbr>Condition<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `request_body_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `request_body_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1965,8 +1965,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulerequestheadercondition">List&lt;Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Header<wbr>Condition<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `request_header_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `request_header_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1974,8 +1974,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulerequestmethodcondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Method<wbr>Condition<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `request_method_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `request_method_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1983,8 +1983,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulerequestschemecondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Scheme<wbr>Condition<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `request_scheme_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `request_scheme_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1992,8 +1992,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulerequesturicondition">List&lt;Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Uri<wbr>Condition<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `request_uri_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `request_uri_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2001,8 +2001,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleurlfileextensioncondition">List&lt;Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>File<wbr>Extension<wbr>Condition<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `url_file_extension_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_file_extension_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2010,8 +2010,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleurlfilenamecondition">List&lt;Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>File<wbr>Name<wbr>Condition<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `url_file_name_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_file_name_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2019,8 +2019,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleurlpathcondition">List&lt;Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Path<wbr>Condition<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `url_path_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_path_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2028,8 +2028,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleurlredirectaction">Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Redirect<wbr>Action<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `url_redirect_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_redirect_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2037,14 +2037,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleurlrewriteaction">Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Rewrite<wbr>Action<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `url_rewrite_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_rewrite_action` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2053,8 +2053,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name which should be used for this Delivery Rule.
-{{% /md %}}</dd>
+    <dd>The Name which should be used for this Delivery Rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2062,8 +2062,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The order used for this rule, which must be larger than 1.
-{{% /md %}}</dd>
+    <dd>The order used for this rule, which must be larger than 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2071,8 +2071,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulecacheexpirationaction">Endpoint<wbr>Delivery<wbr>Rule<wbr>Cache<wbr>Expiration<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A `cache_expiration_action` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cache_expiration_action` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2080,8 +2080,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulecachekeyquerystringaction">Endpoint<wbr>Delivery<wbr>Rule<wbr>Cache<wbr>Key<wbr>Query<wbr>String<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A `cache_key_query_string_action` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cache_key_query_string_action` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2089,8 +2089,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulecookiescondition">[]Endpoint<wbr>Delivery<wbr>Rule<wbr>Cookies<wbr>Condition</a></span>
     </dt>
-    <dd>{{% md %}}A `cookies_condition` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cookies_condition` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2098,8 +2098,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruledevicecondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Device<wbr>Condition</a></span>
     </dt>
-    <dd>{{% md %}}A `device_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `device_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2107,8 +2107,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulehttpversioncondition">[]Endpoint<wbr>Delivery<wbr>Rule<wbr>Http<wbr>Version<wbr>Condition</a></span>
     </dt>
-    <dd>{{% md %}}A `http_version_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `http_version_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2116,8 +2116,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulemodifyrequestheaderaction">[]Endpoint<wbr>Delivery<wbr>Rule<wbr>Modify<wbr>Request<wbr>Header<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A `modify_request_header_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `modify_request_header_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2125,8 +2125,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulemodifyresponseheaderaction">[]Endpoint<wbr>Delivery<wbr>Rule<wbr>Modify<wbr>Response<wbr>Header<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A `modify_response_header_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `modify_response_header_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2134,8 +2134,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulepostargcondition">[]Endpoint<wbr>Delivery<wbr>Rule<wbr>Post<wbr>Arg<wbr>Condition</a></span>
     </dt>
-    <dd>{{% md %}}A `post_arg_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `post_arg_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2143,8 +2143,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulequerystringcondition">[]Endpoint<wbr>Delivery<wbr>Rule<wbr>Query<wbr>String<wbr>Condition</a></span>
     </dt>
-    <dd>{{% md %}}A `query_string_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `query_string_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2152,8 +2152,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleremoteaddresscondition">[]Endpoint<wbr>Delivery<wbr>Rule<wbr>Remote<wbr>Address<wbr>Condition</a></span>
     </dt>
-    <dd>{{% md %}}A `remote_address_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `remote_address_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2161,8 +2161,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulerequestbodycondition">[]Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Body<wbr>Condition</a></span>
     </dt>
-    <dd>{{% md %}}A `request_body_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `request_body_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2170,8 +2170,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulerequestheadercondition">[]Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Header<wbr>Condition</a></span>
     </dt>
-    <dd>{{% md %}}A `request_header_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `request_header_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2179,8 +2179,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulerequestmethodcondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Method<wbr>Condition</a></span>
     </dt>
-    <dd>{{% md %}}A `request_method_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `request_method_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2188,8 +2188,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulerequestschemecondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Scheme<wbr>Condition</a></span>
     </dt>
-    <dd>{{% md %}}A `request_scheme_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `request_scheme_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2197,8 +2197,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulerequesturicondition">[]Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Uri<wbr>Condition</a></span>
     </dt>
-    <dd>{{% md %}}A `request_uri_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `request_uri_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2206,8 +2206,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleurlfileextensioncondition">[]Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>File<wbr>Extension<wbr>Condition</a></span>
     </dt>
-    <dd>{{% md %}}A `url_file_extension_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_file_extension_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2215,8 +2215,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleurlfilenamecondition">[]Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>File<wbr>Name<wbr>Condition</a></span>
     </dt>
-    <dd>{{% md %}}A `url_file_name_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_file_name_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2224,8 +2224,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleurlpathcondition">[]Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Path<wbr>Condition</a></span>
     </dt>
-    <dd>{{% md %}}A `url_path_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_path_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2233,8 +2233,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleurlredirectaction">Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Redirect<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A `url_redirect_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_redirect_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2242,14 +2242,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleurlrewriteaction">Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Rewrite<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A `url_rewrite_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_rewrite_action` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2258,8 +2258,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Name which should be used for this Delivery Rule.
-{{% /md %}}</dd>
+    <dd>The Name which should be used for this Delivery Rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2267,8 +2267,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The order used for this rule, which must be larger than 1.
-{{% /md %}}</dd>
+    <dd>The order used for this rule, which must be larger than 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2276,8 +2276,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulecacheexpirationaction">Endpoint<wbr>Delivery<wbr>Rule<wbr>Cache<wbr>Expiration<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A `cache_expiration_action` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cache_expiration_action` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2285,8 +2285,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulecachekeyquerystringaction">Endpoint<wbr>Delivery<wbr>Rule<wbr>Cache<wbr>Key<wbr>Query<wbr>String<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A `cache_key_query_string_action` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cache_key_query_string_action` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2294,8 +2294,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulecookiescondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Cookies<wbr>Condition[]</a></span>
     </dt>
-    <dd>{{% md %}}A `cookies_condition` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cookies_condition` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2303,8 +2303,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruledevicecondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Device<wbr>Condition</a></span>
     </dt>
-    <dd>{{% md %}}A `device_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `device_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2312,8 +2312,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulehttpversioncondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Http<wbr>Version<wbr>Condition[]</a></span>
     </dt>
-    <dd>{{% md %}}A `http_version_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `http_version_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2321,8 +2321,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulemodifyrequestheaderaction">Endpoint<wbr>Delivery<wbr>Rule<wbr>Modify<wbr>Request<wbr>Header<wbr>Action[]</a></span>
     </dt>
-    <dd>{{% md %}}A `modify_request_header_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `modify_request_header_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2330,8 +2330,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulemodifyresponseheaderaction">Endpoint<wbr>Delivery<wbr>Rule<wbr>Modify<wbr>Response<wbr>Header<wbr>Action[]</a></span>
     </dt>
-    <dd>{{% md %}}A `modify_response_header_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `modify_response_header_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2339,8 +2339,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulepostargcondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Post<wbr>Arg<wbr>Condition[]</a></span>
     </dt>
-    <dd>{{% md %}}A `post_arg_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `post_arg_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2348,8 +2348,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulequerystringcondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Query<wbr>String<wbr>Condition[]</a></span>
     </dt>
-    <dd>{{% md %}}A `query_string_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `query_string_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2357,8 +2357,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleremoteaddresscondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Remote<wbr>Address<wbr>Condition[]</a></span>
     </dt>
-    <dd>{{% md %}}A `remote_address_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `remote_address_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2366,8 +2366,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulerequestbodycondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Body<wbr>Condition[]</a></span>
     </dt>
-    <dd>{{% md %}}A `request_body_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `request_body_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2375,8 +2375,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulerequestheadercondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Header<wbr>Condition[]</a></span>
     </dt>
-    <dd>{{% md %}}A `request_header_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `request_header_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2384,8 +2384,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulerequestmethodcondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Method<wbr>Condition</a></span>
     </dt>
-    <dd>{{% md %}}A `request_method_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `request_method_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2393,8 +2393,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulerequestschemecondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Scheme<wbr>Condition</a></span>
     </dt>
-    <dd>{{% md %}}A `request_scheme_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `request_scheme_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2402,8 +2402,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulerequesturicondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Uri<wbr>Condition[]</a></span>
     </dt>
-    <dd>{{% md %}}A `request_uri_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `request_uri_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2411,8 +2411,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleurlfileextensioncondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>File<wbr>Extension<wbr>Condition[]</a></span>
     </dt>
-    <dd>{{% md %}}A `url_file_extension_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_file_extension_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2420,8 +2420,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleurlfilenamecondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>File<wbr>Name<wbr>Condition[]</a></span>
     </dt>
-    <dd>{{% md %}}A `url_file_name_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_file_name_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2429,8 +2429,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleurlpathcondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Path<wbr>Condition[]</a></span>
     </dt>
-    <dd>{{% md %}}A `url_path_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_path_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2438,8 +2438,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleurlredirectaction">Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Redirect<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A `url_redirect_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_redirect_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2447,14 +2447,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleurlrewriteaction">Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Rewrite<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A `url_rewrite_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_rewrite_action` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2463,8 +2463,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Name which should be used for this Delivery Rule.
-{{% /md %}}</dd>
+    <dd>The Name which should be used for this Delivery Rule.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2472,8 +2472,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The order used for this rule, which must be larger than 1.
-{{% /md %}}</dd>
+    <dd>The order used for this rule, which must be larger than 1.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2481,8 +2481,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulecacheexpirationaction">Dict[Endpoint<wbr>Delivery<wbr>Rule<wbr>Cache<wbr>Expiration<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A `cache_expiration_action` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cache_expiration_action` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2490,8 +2490,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulecachekeyquerystringaction">Dict[Endpoint<wbr>Delivery<wbr>Rule<wbr>Cache<wbr>Key<wbr>Query<wbr>String<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A `cache_key_query_string_action` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cache_key_query_string_action` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2499,8 +2499,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulecookiescondition">List[Endpoint<wbr>Delivery<wbr>Rule<wbr>Cookies<wbr>Condition]</a></span>
     </dt>
-    <dd>{{% md %}}A `cookies_condition` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cookies_condition` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2508,8 +2508,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruledevicecondition">Dict[Endpoint<wbr>Delivery<wbr>Rule<wbr>Device<wbr>Condition]</a></span>
     </dt>
-    <dd>{{% md %}}A `device_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `device_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2517,8 +2517,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulehttpversioncondition">List[Endpoint<wbr>Delivery<wbr>Rule<wbr>Http<wbr>Version<wbr>Condition]</a></span>
     </dt>
-    <dd>{{% md %}}A `http_version_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `http_version_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2526,8 +2526,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulemodifyrequestheaderaction">List[Endpoint<wbr>Delivery<wbr>Rule<wbr>Modify<wbr>Request<wbr>Header<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A `modify_request_header_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `modify_request_header_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2535,8 +2535,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulemodifyresponseheaderaction">List[Endpoint<wbr>Delivery<wbr>Rule<wbr>Modify<wbr>Response<wbr>Header<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A `modify_response_header_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `modify_response_header_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2544,8 +2544,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulepostargcondition">List[Endpoint<wbr>Delivery<wbr>Rule<wbr>Post<wbr>Arg<wbr>Condition]</a></span>
     </dt>
-    <dd>{{% md %}}A `post_arg_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `post_arg_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2553,8 +2553,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulequerystringcondition">List[Endpoint<wbr>Delivery<wbr>Rule<wbr>Query<wbr>String<wbr>Condition]</a></span>
     </dt>
-    <dd>{{% md %}}A `query_string_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `query_string_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2562,8 +2562,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleremoteaddresscondition">List[Endpoint<wbr>Delivery<wbr>Rule<wbr>Remote<wbr>Address<wbr>Condition]</a></span>
     </dt>
-    <dd>{{% md %}}A `remote_address_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `remote_address_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2571,8 +2571,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulerequestbodycondition">List[Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Body<wbr>Condition]</a></span>
     </dt>
-    <dd>{{% md %}}A `request_body_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `request_body_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2580,8 +2580,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulerequestheadercondition">List[Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Header<wbr>Condition]</a></span>
     </dt>
-    <dd>{{% md %}}A `request_header_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `request_header_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2589,8 +2589,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulerequestmethodcondition">Dict[Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Method<wbr>Condition]</a></span>
     </dt>
-    <dd>{{% md %}}A `request_method_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `request_method_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2598,8 +2598,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulerequestschemecondition">Dict[Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Scheme<wbr>Condition]</a></span>
     </dt>
-    <dd>{{% md %}}A `request_scheme_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `request_scheme_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2607,8 +2607,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryrulerequesturicondition">List[Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Uri<wbr>Condition]</a></span>
     </dt>
-    <dd>{{% md %}}A `request_uri_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `request_uri_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2616,8 +2616,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleurlfileextensioncondition">List[Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>File<wbr>Extension<wbr>Condition]</a></span>
     </dt>
-    <dd>{{% md %}}A `url_file_extension_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_file_extension_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2625,8 +2625,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleurlfilenamecondition">List[Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>File<wbr>Name<wbr>Condition]</a></span>
     </dt>
-    <dd>{{% md %}}A `url_file_name_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_file_name_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2634,8 +2634,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleurlpathcondition">List[Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Path<wbr>Condition]</a></span>
     </dt>
-    <dd>{{% md %}}A `url_path_condition` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_path_condition` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2643,8 +2643,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleurlredirectaction">Dict[Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Redirect<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A `url_redirect_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_redirect_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2652,29 +2652,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointdeliveryruleurlrewriteaction">Dict[Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Rewrite<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A `url_rewrite_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_rewrite_action` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointdeliveryrulecacheexpirationaction">Endpoint<wbr>Delivery<wbr>Rule<wbr>Cache<wbr>Expiration<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointDeliveryRuleCacheExpirationAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointDeliveryRuleCacheExpirationAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleCacheExpirationActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleCacheExpirationActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2683,8 +2683,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The behavior of the cache. Valid values are `BypassCache`, `Override` and `SetIfMissing`.
-{{% /md %}}</dd>
+    <dd>The behavior of the cache. Valid values are `BypassCache`, `Override` and `SetIfMissing`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2692,14 +2692,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Duration of the cache. Only allowed when `behavior` is set to `Override` or `SetIfMissing`. Format: `[d.]hh:mm:ss`
-{{% /md %}}</dd>
+    <dd>Duration of the cache. Only allowed when `behavior` is set to `Override` or `SetIfMissing`. Format: `[d.]hh:mm:ss`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2708,8 +2708,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The behavior of the cache. Valid values are `BypassCache`, `Override` and `SetIfMissing`.
-{{% /md %}}</dd>
+    <dd>The behavior of the cache. Valid values are `BypassCache`, `Override` and `SetIfMissing`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2717,14 +2717,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Duration of the cache. Only allowed when `behavior` is set to `Override` or `SetIfMissing`. Format: `[d.]hh:mm:ss`
-{{% /md %}}</dd>
+    <dd>Duration of the cache. Only allowed when `behavior` is set to `Override` or `SetIfMissing`. Format: `[d.]hh:mm:ss`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2733,8 +2733,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The behavior of the cache. Valid values are `BypassCache`, `Override` and `SetIfMissing`.
-{{% /md %}}</dd>
+    <dd>The behavior of the cache. Valid values are `BypassCache`, `Override` and `SetIfMissing`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2742,14 +2742,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Duration of the cache. Only allowed when `behavior` is set to `Override` or `SetIfMissing`. Format: `[d.]hh:mm:ss`
-{{% /md %}}</dd>
+    <dd>Duration of the cache. Only allowed when `behavior` is set to `Override` or `SetIfMissing`. Format: `[d.]hh:mm:ss`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2758,8 +2758,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The behavior of the cache. Valid values are `BypassCache`, `Override` and `SetIfMissing`.
-{{% /md %}}</dd>
+    <dd>The behavior of the cache. Valid values are `BypassCache`, `Override` and `SetIfMissing`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2767,29 +2767,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Duration of the cache. Only allowed when `behavior` is set to `Override` or `SetIfMissing`. Format: `[d.]hh:mm:ss`
-{{% /md %}}</dd>
+    <dd>Duration of the cache. Only allowed when `behavior` is set to `Override` or `SetIfMissing`. Format: `[d.]hh:mm:ss`
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointdeliveryrulecachekeyquerystringaction">Endpoint<wbr>Delivery<wbr>Rule<wbr>Cache<wbr>Key<wbr>Query<wbr>String<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointDeliveryRuleCacheKeyQueryStringAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointDeliveryRuleCacheKeyQueryStringAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleCacheKeyQueryStringActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleCacheKeyQueryStringActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2798,8 +2798,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The behavior of the cache key for query strings. Valid values are `Exclude`, `ExcludeAll`, `Include` and `IncludeAll`.
-{{% /md %}}</dd>
+    <dd>The behavior of the cache key for query strings. Valid values are `Exclude`, `ExcludeAll`, `Include` and `IncludeAll`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2807,14 +2807,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of parameter values.
-{{% /md %}}</dd>
+    <dd>Comma separated list of parameter values.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2823,8 +2823,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The behavior of the cache key for query strings. Valid values are `Exclude`, `ExcludeAll`, `Include` and `IncludeAll`.
-{{% /md %}}</dd>
+    <dd>The behavior of the cache key for query strings. Valid values are `Exclude`, `ExcludeAll`, `Include` and `IncludeAll`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2832,14 +2832,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of parameter values.
-{{% /md %}}</dd>
+    <dd>Comma separated list of parameter values.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2848,8 +2848,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The behavior of the cache key for query strings. Valid values are `Exclude`, `ExcludeAll`, `Include` and `IncludeAll`.
-{{% /md %}}</dd>
+    <dd>The behavior of the cache key for query strings. Valid values are `Exclude`, `ExcludeAll`, `Include` and `IncludeAll`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2857,14 +2857,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of parameter values.
-{{% /md %}}</dd>
+    <dd>Comma separated list of parameter values.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2873,8 +2873,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The behavior of the cache key for query strings. Valid values are `Exclude`, `ExcludeAll`, `Include` and `IncludeAll`.
-{{% /md %}}</dd>
+    <dd>The behavior of the cache key for query strings. Valid values are `Exclude`, `ExcludeAll`, `Include` and `IncludeAll`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2882,29 +2882,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of parameter values.
-{{% /md %}}</dd>
+    <dd>Comma separated list of parameter values.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointdeliveryrulecookiescondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Cookies<wbr>Condition</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointDeliveryRuleCookiesCondition">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointDeliveryRuleCookiesCondition">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleCookiesConditionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleCookiesConditionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2913,8 +2913,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of values for the cookie.
-{{% /md %}}</dd>
+    <dd>List of values for the cookie.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2922,8 +2922,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2931,8 +2931,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the cookie.
-{{% /md %}}</dd>
+    <dd>Name of the cookie.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2940,8 +2940,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2949,14 +2949,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2965,8 +2965,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of values for the cookie.
-{{% /md %}}</dd>
+    <dd>List of values for the cookie.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2974,8 +2974,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2983,8 +2983,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the cookie.
-{{% /md %}}</dd>
+    <dd>Name of the cookie.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2992,8 +2992,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3001,14 +3001,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3017,8 +3017,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of values for the cookie.
-{{% /md %}}</dd>
+    <dd>List of values for the cookie.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3026,8 +3026,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3035,8 +3035,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the cookie.
-{{% /md %}}</dd>
+    <dd>Name of the cookie.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3044,8 +3044,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3053,14 +3053,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3069,8 +3069,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of values for the cookie.
-{{% /md %}}</dd>
+    <dd>List of values for the cookie.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3078,8 +3078,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3087,8 +3087,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the cookie.
-{{% /md %}}</dd>
+    <dd>Name of the cookie.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3096,8 +3096,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3105,29 +3105,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointdeliveryruledevicecondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Device<wbr>Condition</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointDeliveryRuleDeviceCondition">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointDeliveryRuleDeviceCondition">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleDeviceConditionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleDeviceConditionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3136,8 +3136,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Desktop` and `Mobile`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Desktop` and `Mobile`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3145,8 +3145,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3154,14 +3154,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Equal`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Equal`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3170,8 +3170,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Desktop` and `Mobile`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Desktop` and `Mobile`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3179,8 +3179,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3188,14 +3188,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Equal`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Equal`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3204,8 +3204,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Desktop` and `Mobile`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Desktop` and `Mobile`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3213,8 +3213,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3222,14 +3222,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Equal`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Equal`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3238,8 +3238,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Desktop` and `Mobile`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Desktop` and `Mobile`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3247,8 +3247,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3256,29 +3256,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Equal`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Equal`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointdeliveryrulehttpversioncondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Http<wbr>Version<wbr>Condition</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointDeliveryRuleHttpVersionCondition">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointDeliveryRuleHttpVersionCondition">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleHttpVersionConditionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleHttpVersionConditionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3287,8 +3287,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `0.9`, `1.0`, `1.1` and `2.0`.
-{{% /md %}}</dd>
+    <dd>Valid values are `0.9`, `1.0`, `1.1` and `2.0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3296,8 +3296,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3305,14 +3305,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Equal`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Equal`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3321,8 +3321,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `0.9`, `1.0`, `1.1` and `2.0`.
-{{% /md %}}</dd>
+    <dd>Valid values are `0.9`, `1.0`, `1.1` and `2.0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3330,8 +3330,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3339,14 +3339,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Equal`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Equal`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3355,8 +3355,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `0.9`, `1.0`, `1.1` and `2.0`.
-{{% /md %}}</dd>
+    <dd>Valid values are `0.9`, `1.0`, `1.1` and `2.0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3364,8 +3364,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3373,14 +3373,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Equal`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Equal`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3389,8 +3389,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `0.9`, `1.0`, `1.1` and `2.0`.
-{{% /md %}}</dd>
+    <dd>Valid values are `0.9`, `1.0`, `1.1` and `2.0`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3398,8 +3398,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3407,29 +3407,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Equal`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Equal`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointdeliveryrulemodifyrequestheaderaction">Endpoint<wbr>Delivery<wbr>Rule<wbr>Modify<wbr>Request<wbr>Header<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointDeliveryRuleModifyRequestHeaderAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointDeliveryRuleModifyRequestHeaderAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleModifyRequestHeaderActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleModifyRequestHeaderActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3438,8 +3438,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
-{{% /md %}}</dd>
+    <dd>Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3447,8 +3447,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The header name.
-{{% /md %}}</dd>
+    <dd>The header name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3456,14 +3456,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
-{{% /md %}}</dd>
+    <dd>The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3472,8 +3472,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
-{{% /md %}}</dd>
+    <dd>Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3481,8 +3481,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The header name.
-{{% /md %}}</dd>
+    <dd>The header name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3490,14 +3490,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
-{{% /md %}}</dd>
+    <dd>The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3506,8 +3506,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
-{{% /md %}}</dd>
+    <dd>Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3515,8 +3515,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The header name.
-{{% /md %}}</dd>
+    <dd>The header name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3524,14 +3524,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
-{{% /md %}}</dd>
+    <dd>The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3540,8 +3540,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
-{{% /md %}}</dd>
+    <dd>Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3549,8 +3549,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The header name.
-{{% /md %}}</dd>
+    <dd>The header name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3558,29 +3558,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
-{{% /md %}}</dd>
+    <dd>The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointdeliveryrulemodifyresponseheaderaction">Endpoint<wbr>Delivery<wbr>Rule<wbr>Modify<wbr>Response<wbr>Header<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointDeliveryRuleModifyResponseHeaderAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointDeliveryRuleModifyResponseHeaderAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleModifyResponseHeaderActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleModifyResponseHeaderActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3589,8 +3589,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
-{{% /md %}}</dd>
+    <dd>Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3598,8 +3598,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The header name.
-{{% /md %}}</dd>
+    <dd>The header name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3607,14 +3607,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
-{{% /md %}}</dd>
+    <dd>The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3623,8 +3623,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
-{{% /md %}}</dd>
+    <dd>Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3632,8 +3632,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The header name.
-{{% /md %}}</dd>
+    <dd>The header name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3641,14 +3641,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
-{{% /md %}}</dd>
+    <dd>The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3657,8 +3657,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
-{{% /md %}}</dd>
+    <dd>Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3666,8 +3666,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The header name.
-{{% /md %}}</dd>
+    <dd>The header name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3675,14 +3675,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
-{{% /md %}}</dd>
+    <dd>The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3691,8 +3691,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
-{{% /md %}}</dd>
+    <dd>Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3700,8 +3700,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The header name.
-{{% /md %}}</dd>
+    <dd>The header name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3709,29 +3709,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
-{{% /md %}}</dd>
+    <dd>The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointdeliveryrulepostargcondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Post<wbr>Arg<wbr>Condition</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointDeliveryRulePostArgCondition">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointDeliveryRulePostArgCondition">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRulePostArgConditionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRulePostArgConditionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3740,8 +3740,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3749,8 +3749,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3758,8 +3758,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the post arg.
-{{% /md %}}</dd>
+    <dd>Name of the post arg.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3767,8 +3767,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3776,14 +3776,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3792,8 +3792,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3801,8 +3801,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3810,8 +3810,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the post arg.
-{{% /md %}}</dd>
+    <dd>Name of the post arg.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3819,8 +3819,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3828,14 +3828,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3844,8 +3844,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3853,8 +3853,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3862,8 +3862,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name of the post arg.
-{{% /md %}}</dd>
+    <dd>Name of the post arg.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3871,8 +3871,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3880,14 +3880,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3896,8 +3896,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3905,8 +3905,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3914,8 +3914,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name of the post arg.
-{{% /md %}}</dd>
+    <dd>Name of the post arg.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3923,8 +3923,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3932,29 +3932,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointdeliveryrulequerystringcondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Query<wbr>String<wbr>Condition</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointDeliveryRuleQueryStringCondition">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointDeliveryRuleQueryStringCondition">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleQueryStringConditionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleQueryStringConditionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3963,8 +3963,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3972,8 +3972,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3981,8 +3981,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3990,14 +3990,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4006,8 +4006,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4015,8 +4015,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4024,8 +4024,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4033,14 +4033,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4049,8 +4049,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4058,8 +4058,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4067,8 +4067,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4076,14 +4076,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4092,8 +4092,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4101,8 +4101,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4110,8 +4110,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4119,29 +4119,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointdeliveryruleremoteaddresscondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Remote<wbr>Address<wbr>Condition</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointDeliveryRuleRemoteAddressCondition">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointDeliveryRuleRemoteAddressCondition">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleRemoteAddressConditionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleRemoteAddressConditionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4150,8 +4150,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of string values. For `GeoMatch` `operator` this should be a list of country codes (e.g. `US` or `DE`). List of IP address if `operator` equals to `IPMatch`.
-{{% /md %}}</dd>
+    <dd>List of string values. For `GeoMatch` `operator` this should be a list of country codes (e.g. `US` or `DE`). List of IP address if `operator` equals to `IPMatch`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4159,8 +4159,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `GeoMatch` and `IPMatch`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `GeoMatch` and `IPMatch`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4168,14 +4168,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4184,8 +4184,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of string values. For `GeoMatch` `operator` this should be a list of country codes (e.g. `US` or `DE`). List of IP address if `operator` equals to `IPMatch`.
-{{% /md %}}</dd>
+    <dd>List of string values. For `GeoMatch` `operator` this should be a list of country codes (e.g. `US` or `DE`). List of IP address if `operator` equals to `IPMatch`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4193,8 +4193,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `GeoMatch` and `IPMatch`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `GeoMatch` and `IPMatch`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4202,14 +4202,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4218,8 +4218,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of string values. For `GeoMatch` `operator` this should be a list of country codes (e.g. `US` or `DE`). List of IP address if `operator` equals to `IPMatch`.
-{{% /md %}}</dd>
+    <dd>List of string values. For `GeoMatch` `operator` this should be a list of country codes (e.g. `US` or `DE`). List of IP address if `operator` equals to `IPMatch`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4227,8 +4227,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `GeoMatch` and `IPMatch`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `GeoMatch` and `IPMatch`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4236,14 +4236,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4252,8 +4252,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of string values. For `GeoMatch` `operator` this should be a list of country codes (e.g. `US` or `DE`). List of IP address if `operator` equals to `IPMatch`.
-{{% /md %}}</dd>
+    <dd>List of string values. For `GeoMatch` `operator` this should be a list of country codes (e.g. `US` or `DE`). List of IP address if `operator` equals to `IPMatch`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4261,8 +4261,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `GeoMatch` and `IPMatch`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `GeoMatch` and `IPMatch`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4270,29 +4270,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointdeliveryrulerequestbodycondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Body<wbr>Condition</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointDeliveryRuleRequestBodyCondition">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointDeliveryRuleRequestBodyCondition">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleRequestBodyConditionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleRequestBodyConditionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4301,8 +4301,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4310,8 +4310,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4319,8 +4319,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4328,14 +4328,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4344,8 +4344,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4353,8 +4353,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4362,8 +4362,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4371,14 +4371,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4387,8 +4387,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4396,8 +4396,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4405,8 +4405,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4414,14 +4414,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4430,8 +4430,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4439,8 +4439,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4448,8 +4448,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4457,29 +4457,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointdeliveryrulerequestheadercondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Header<wbr>Condition</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointDeliveryRuleRequestHeaderCondition">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointDeliveryRuleRequestHeaderCondition">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleRequestHeaderConditionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleRequestHeaderConditionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4488,8 +4488,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of header values.
-{{% /md %}}</dd>
+    <dd>List of header values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4497,8 +4497,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4506,8 +4506,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Header name.
-{{% /md %}}</dd>
+    <dd>Header name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4515,8 +4515,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4524,14 +4524,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4540,8 +4540,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of header values.
-{{% /md %}}</dd>
+    <dd>List of header values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4549,8 +4549,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4558,8 +4558,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Header name.
-{{% /md %}}</dd>
+    <dd>Header name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4567,8 +4567,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4576,14 +4576,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4592,8 +4592,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of header values.
-{{% /md %}}</dd>
+    <dd>List of header values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4601,8 +4601,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4610,8 +4610,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Header name.
-{{% /md %}}</dd>
+    <dd>Header name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4619,8 +4619,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4628,14 +4628,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4644,8 +4644,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of header values.
-{{% /md %}}</dd>
+    <dd>List of header values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4653,8 +4653,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4662,8 +4662,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Header name.
-{{% /md %}}</dd>
+    <dd>Header name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4671,8 +4671,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4680,29 +4680,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointdeliveryrulerequestmethodcondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Method<wbr>Condition</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointDeliveryRuleRequestMethodCondition">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointDeliveryRuleRequestMethodCondition">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleRequestMethodConditionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleRequestMethodConditionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4711,8 +4711,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `DELETE`, `GET`, `HEAD`, `OPTIONS`, `POST` and `PUT`.
-{{% /md %}}</dd>
+    <dd>Valid values are `DELETE`, `GET`, `HEAD`, `OPTIONS`, `POST` and `PUT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4720,8 +4720,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4729,14 +4729,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Equal`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Equal`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4745,8 +4745,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `DELETE`, `GET`, `HEAD`, `OPTIONS`, `POST` and `PUT`.
-{{% /md %}}</dd>
+    <dd>Valid values are `DELETE`, `GET`, `HEAD`, `OPTIONS`, `POST` and `PUT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4754,8 +4754,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4763,14 +4763,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Equal`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Equal`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4779,8 +4779,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `DELETE`, `GET`, `HEAD`, `OPTIONS`, `POST` and `PUT`.
-{{% /md %}}</dd>
+    <dd>Valid values are `DELETE`, `GET`, `HEAD`, `OPTIONS`, `POST` and `PUT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4788,8 +4788,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4797,14 +4797,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Equal`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Equal`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4813,8 +4813,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `DELETE`, `GET`, `HEAD`, `OPTIONS`, `POST` and `PUT`.
-{{% /md %}}</dd>
+    <dd>Valid values are `DELETE`, `GET`, `HEAD`, `OPTIONS`, `POST` and `PUT`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4822,8 +4822,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4831,29 +4831,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Equal`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Equal`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointdeliveryrulerequestschemecondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Scheme<wbr>Condition</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointDeliveryRuleRequestSchemeCondition">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointDeliveryRuleRequestSchemeCondition">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleRequestSchemeConditionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleRequestSchemeConditionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4862,8 +4862,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `HTTP` and `HTTPS`.
-{{% /md %}}</dd>
+    <dd>Valid values are `HTTP` and `HTTPS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4871,8 +4871,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4880,14 +4880,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Equal`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Equal`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4896,8 +4896,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `HTTP` and `HTTPS`.
-{{% /md %}}</dd>
+    <dd>Valid values are `HTTP` and `HTTPS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4905,8 +4905,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4914,14 +4914,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Equal`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Equal`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4930,8 +4930,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `HTTP` and `HTTPS`.
-{{% /md %}}</dd>
+    <dd>Valid values are `HTTP` and `HTTPS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4939,8 +4939,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4948,14 +4948,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Equal`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Equal`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4964,8 +4964,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `HTTP` and `HTTPS`.
-{{% /md %}}</dd>
+    <dd>Valid values are `HTTP` and `HTTPS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4973,8 +4973,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4982,29 +4982,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Equal`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Equal`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointdeliveryrulerequesturicondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Request<wbr>Uri<wbr>Condition</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointDeliveryRuleRequestUriCondition">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointDeliveryRuleRequestUriCondition">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleRequestUriConditionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleRequestUriConditionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5013,8 +5013,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5022,8 +5022,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5031,8 +5031,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5040,14 +5040,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5056,8 +5056,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5065,8 +5065,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5074,8 +5074,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5083,14 +5083,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5099,8 +5099,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5108,8 +5108,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5117,8 +5117,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5126,14 +5126,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5142,8 +5142,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5151,8 +5151,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5160,8 +5160,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5169,29 +5169,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointdeliveryruleurlfileextensioncondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>File<wbr>Extension<wbr>Condition</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointDeliveryRuleUrlFileExtensionCondition">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointDeliveryRuleUrlFileExtensionCondition">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleUrlFileExtensionConditionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleUrlFileExtensionConditionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5200,8 +5200,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5209,8 +5209,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5218,8 +5218,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5227,14 +5227,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5243,8 +5243,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5252,8 +5252,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5261,8 +5261,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5270,14 +5270,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5286,8 +5286,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5295,8 +5295,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5304,8 +5304,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5313,14 +5313,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5329,8 +5329,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5338,8 +5338,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5347,8 +5347,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5356,29 +5356,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointdeliveryruleurlfilenamecondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>File<wbr>Name<wbr>Condition</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointDeliveryRuleUrlFileNameCondition">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointDeliveryRuleUrlFileNameCondition">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleUrlFileNameConditionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleUrlFileNameConditionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5387,8 +5387,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5396,8 +5396,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5405,8 +5405,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5414,14 +5414,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5430,8 +5430,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5439,8 +5439,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5448,8 +5448,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5457,14 +5457,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5473,8 +5473,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5482,8 +5482,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5491,8 +5491,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5500,14 +5500,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5516,8 +5516,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5525,8 +5525,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5534,8 +5534,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5543,29 +5543,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointdeliveryruleurlpathcondition">Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Path<wbr>Condition</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointDeliveryRuleUrlPathCondition">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointDeliveryRuleUrlPathCondition">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleUrlPathConditionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleUrlPathConditionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5574,8 +5574,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5583,8 +5583,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5592,8 +5592,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5601,14 +5601,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5617,8 +5617,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5626,8 +5626,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5635,8 +5635,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5644,14 +5644,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5660,8 +5660,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5669,8 +5669,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5678,8 +5678,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5687,14 +5687,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5703,8 +5703,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of string values.
-{{% /md %}}</dd>
+    <dd>List of string values.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5712,8 +5712,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Any`, `BeginsWith`, `Contains`, `EndsWith`, `Equal`, `GreaterThan`, `GreaterThanOrEqual`, `LessThan` and `LessThanOrEqual`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5721,8 +5721,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5730,29 +5730,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Valid values are `Lowercase` and `Uppercase`.
-{{% /md %}}</dd>
+    <dd>Valid values are `Lowercase` and `Uppercase`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointdeliveryruleurlredirectaction">Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Redirect<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointDeliveryRuleUrlRedirectAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointDeliveryRuleUrlRedirectAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleUrlRedirectActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleUrlRedirectActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5761,8 +5761,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of the redirect. Valid values are `Found`, `Moved`, `PermanentRedirect` and `TemporaryRedirect`.
-{{% /md %}}</dd>
+    <dd>Type of the redirect. Valid values are `Found`, `Moved`, `PermanentRedirect` and `TemporaryRedirect`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5770,8 +5770,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the fragment part of the URL. This value must not start with a `#`.
-{{% /md %}}</dd>
+    <dd>Specifies the fragment part of the URL. This value must not start with a `#`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5779,8 +5779,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the hostname part of the URL.
-{{% /md %}}</dd>
+    <dd>Specifies the hostname part of the URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5788,8 +5788,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the path part of the URL. This value must begin with a `/`.
-{{% /md %}}</dd>
+    <dd>Specifies the path part of the URL. This value must begin with a `/`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5797,8 +5797,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the protocol part of the URL. Valid values are `Http` and `Https`.
-{{% /md %}}</dd>
+    <dd>Specifies the protocol part of the URL. Valid values are `Http` and `Https`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5806,14 +5806,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the query string part of the URL. This value must not start with a `?` or `&` and must be in `<key>=<value>` format separated by `&`.
-{{% /md %}}</dd>
+    <dd>Specifies the query string part of the URL. This value must not start with a `?` or `&` and must be in `<key>=<value>` format separated by `&`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5822,8 +5822,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of the redirect. Valid values are `Found`, `Moved`, `PermanentRedirect` and `TemporaryRedirect`.
-{{% /md %}}</dd>
+    <dd>Type of the redirect. Valid values are `Found`, `Moved`, `PermanentRedirect` and `TemporaryRedirect`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5831,8 +5831,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the fragment part of the URL. This value must not start with a `#`.
-{{% /md %}}</dd>
+    <dd>Specifies the fragment part of the URL. This value must not start with a `#`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5840,8 +5840,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the hostname part of the URL.
-{{% /md %}}</dd>
+    <dd>Specifies the hostname part of the URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5849,8 +5849,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the path part of the URL. This value must begin with a `/`.
-{{% /md %}}</dd>
+    <dd>Specifies the path part of the URL. This value must begin with a `/`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5858,8 +5858,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the protocol part of the URL. Valid values are `Http` and `Https`.
-{{% /md %}}</dd>
+    <dd>Specifies the protocol part of the URL. Valid values are `Http` and `Https`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5867,14 +5867,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the query string part of the URL. This value must not start with a `?` or `&` and must be in `<key>=<value>` format separated by `&`.
-{{% /md %}}</dd>
+    <dd>Specifies the query string part of the URL. This value must not start with a `?` or `&` and must be in `<key>=<value>` format separated by `&`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5883,8 +5883,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of the redirect. Valid values are `Found`, `Moved`, `PermanentRedirect` and `TemporaryRedirect`.
-{{% /md %}}</dd>
+    <dd>Type of the redirect. Valid values are `Found`, `Moved`, `PermanentRedirect` and `TemporaryRedirect`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5892,8 +5892,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the fragment part of the URL. This value must not start with a `#`.
-{{% /md %}}</dd>
+    <dd>Specifies the fragment part of the URL. This value must not start with a `#`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5901,8 +5901,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the hostname part of the URL.
-{{% /md %}}</dd>
+    <dd>Specifies the hostname part of the URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5910,8 +5910,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the path part of the URL. This value must begin with a `/`.
-{{% /md %}}</dd>
+    <dd>Specifies the path part of the URL. This value must begin with a `/`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5919,8 +5919,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the protocol part of the URL. Valid values are `Http` and `Https`.
-{{% /md %}}</dd>
+    <dd>Specifies the protocol part of the URL. Valid values are `Http` and `Https`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5928,14 +5928,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the query string part of the URL. This value must not start with a `?` or `&` and must be in `<key>=<value>` format separated by `&`.
-{{% /md %}}</dd>
+    <dd>Specifies the query string part of the URL. This value must not start with a `?` or `&` and must be in `<key>=<value>` format separated by `&`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5944,8 +5944,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Type of the redirect. Valid values are `Found`, `Moved`, `PermanentRedirect` and `TemporaryRedirect`.
-{{% /md %}}</dd>
+    <dd>Type of the redirect. Valid values are `Found`, `Moved`, `PermanentRedirect` and `TemporaryRedirect`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5953,8 +5953,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the fragment part of the URL. This value must not start with a `#`.
-{{% /md %}}</dd>
+    <dd>Specifies the fragment part of the URL. This value must not start with a `#`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5962,8 +5962,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the hostname part of the URL.
-{{% /md %}}</dd>
+    <dd>Specifies the hostname part of the URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5971,8 +5971,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the path part of the URL. This value must begin with a `/`.
-{{% /md %}}</dd>
+    <dd>Specifies the path part of the URL. This value must begin with a `/`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5980,8 +5980,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the protocol part of the URL. Valid values are `Http` and `Https`.
-{{% /md %}}</dd>
+    <dd>Specifies the protocol part of the URL. Valid values are `Http` and `Https`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5989,29 +5989,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the query string part of the URL. This value must not start with a `?` or `&` and must be in `<key>=<value>` format separated by `&`.
-{{% /md %}}</dd>
+    <dd>Specifies the query string part of the URL. This value must not start with a `?` or `&` and must be in `<key>=<value>` format separated by `&`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointdeliveryruleurlrewriteaction">Endpoint<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Rewrite<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointDeliveryRuleUrlRewriteAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointDeliveryRuleUrlRewriteAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleUrlRewriteActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointDeliveryRuleUrlRewriteActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6020,8 +6020,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This value must start with a `/` and can't be longer than 260 characters.
-{{% /md %}}</dd>
+    <dd>This value must start with a `/` and can't be longer than 260 characters.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6029,8 +6029,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This value must start with a `/` and can't be longer than 260 characters.
-{{% /md %}}</dd>
+    <dd>This value must start with a `/` and can't be longer than 260 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6038,14 +6038,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6054,8 +6054,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This value must start with a `/` and can't be longer than 260 characters.
-{{% /md %}}</dd>
+    <dd>This value must start with a `/` and can't be longer than 260 characters.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6063,8 +6063,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This value must start with a `/` and can't be longer than 260 characters.
-{{% /md %}}</dd>
+    <dd>This value must start with a `/` and can't be longer than 260 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6072,14 +6072,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6088,8 +6088,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This value must start with a `/` and can't be longer than 260 characters.
-{{% /md %}}</dd>
+    <dd>This value must start with a `/` and can't be longer than 260 characters.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6097,8 +6097,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This value must start with a `/` and can't be longer than 260 characters.
-{{% /md %}}</dd>
+    <dd>This value must start with a `/` and can't be longer than 260 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6106,14 +6106,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6122,8 +6122,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This value must start with a `/` and can't be longer than 260 characters.
-{{% /md %}}</dd>
+    <dd>This value must start with a `/` and can't be longer than 260 characters.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6131,8 +6131,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This value must start with a `/` and can't be longer than 260 characters.
-{{% /md %}}</dd>
+    <dd>This value must start with a `/` and can't be longer than 260 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6140,29 +6140,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointgeofilter">Endpoint<wbr>Geo<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointGeoFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointGeoFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointGeoFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointGeoFilterOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6171,8 +6171,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Action of the Geo Filter. Possible values include `Allow` and `Block`.
-{{% /md %}}</dd>
+    <dd>The Action of the Geo Filter. Possible values include `Allow` and `Block`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6180,8 +6180,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A List of two letter country codes (e.g. `US`, `GB`) to be associated with this Geo Filter.
-{{% /md %}}</dd>
+    <dd>A List of two letter country codes (e.g. `US`, `GB`) to be associated with this Geo Filter.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6189,14 +6189,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The relative path applicable to geo filter.
-{{% /md %}}</dd>
+    <dd>The relative path applicable to geo filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6205,8 +6205,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Action of the Geo Filter. Possible values include `Allow` and `Block`.
-{{% /md %}}</dd>
+    <dd>The Action of the Geo Filter. Possible values include `Allow` and `Block`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6214,8 +6214,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A List of two letter country codes (e.g. `US`, `GB`) to be associated with this Geo Filter.
-{{% /md %}}</dd>
+    <dd>A List of two letter country codes (e.g. `US`, `GB`) to be associated with this Geo Filter.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6223,14 +6223,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The relative path applicable to geo filter.
-{{% /md %}}</dd>
+    <dd>The relative path applicable to geo filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6239,8 +6239,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Action of the Geo Filter. Possible values include `Allow` and `Block`.
-{{% /md %}}</dd>
+    <dd>The Action of the Geo Filter. Possible values include `Allow` and `Block`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6248,8 +6248,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A List of two letter country codes (e.g. `US`, `GB`) to be associated with this Geo Filter.
-{{% /md %}}</dd>
+    <dd>A List of two letter country codes (e.g. `US`, `GB`) to be associated with this Geo Filter.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6257,14 +6257,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The relative path applicable to geo filter.
-{{% /md %}}</dd>
+    <dd>The relative path applicable to geo filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6273,8 +6273,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Action of the Geo Filter. Possible values include `Allow` and `Block`.
-{{% /md %}}</dd>
+    <dd>The Action of the Geo Filter. Possible values include `Allow` and `Block`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6282,8 +6282,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A List of two letter country codes (e.g. `US`, `GB`) to be associated with this Geo Filter.
-{{% /md %}}</dd>
+    <dd>A List of two letter country codes (e.g. `US`, `GB`) to be associated with this Geo Filter.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6291,29 +6291,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The relative path applicable to geo filter.
-{{% /md %}}</dd>
+    <dd>The relative path applicable to geo filter.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointglobaldeliveryrule">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointGlobalDeliveryRule">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointGlobalDeliveryRule">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointGlobalDeliveryRuleArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointGlobalDeliveryRuleOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6322,8 +6322,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrulecacheexpirationaction">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Cache<wbr>Expiration<wbr>Action<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `cache_expiration_action` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cache_expiration_action` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6331,8 +6331,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrulecachekeyquerystringaction">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Cache<wbr>Key<wbr>Query<wbr>String<wbr>Action<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `cache_key_query_string_action` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cache_key_query_string_action` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6340,8 +6340,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrulemodifyrequestheaderaction">List&lt;Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Modify<wbr>Request<wbr>Header<wbr>Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `modify_request_header_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `modify_request_header_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6349,8 +6349,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrulemodifyresponseheaderaction">List&lt;Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Modify<wbr>Response<wbr>Header<wbr>Action<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `modify_response_header_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `modify_response_header_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6358,8 +6358,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryruleurlredirectaction">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Redirect<wbr>Action<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `url_redirect_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_redirect_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6367,14 +6367,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryruleurlrewriteaction">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Rewrite<wbr>Action<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `url_rewrite_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_rewrite_action` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6383,8 +6383,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrulecacheexpirationaction">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Cache<wbr>Expiration<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A `cache_expiration_action` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cache_expiration_action` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6392,8 +6392,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrulecachekeyquerystringaction">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Cache<wbr>Key<wbr>Query<wbr>String<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A `cache_key_query_string_action` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cache_key_query_string_action` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6401,8 +6401,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrulemodifyrequestheaderaction">[]Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Modify<wbr>Request<wbr>Header<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A `modify_request_header_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `modify_request_header_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6410,8 +6410,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrulemodifyresponseheaderaction">[]Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Modify<wbr>Response<wbr>Header<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A `modify_response_header_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `modify_response_header_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6419,8 +6419,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryruleurlredirectaction">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Redirect<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A `url_redirect_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_redirect_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6428,14 +6428,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryruleurlrewriteaction">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Rewrite<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A `url_rewrite_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_rewrite_action` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6444,8 +6444,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrulecacheexpirationaction">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Cache<wbr>Expiration<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A `cache_expiration_action` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cache_expiration_action` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6453,8 +6453,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrulecachekeyquerystringaction">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Cache<wbr>Key<wbr>Query<wbr>String<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A `cache_key_query_string_action` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cache_key_query_string_action` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6462,8 +6462,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrulemodifyrequestheaderaction">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Modify<wbr>Request<wbr>Header<wbr>Action[]</a></span>
     </dt>
-    <dd>{{% md %}}A `modify_request_header_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `modify_request_header_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6471,8 +6471,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrulemodifyresponseheaderaction">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Modify<wbr>Response<wbr>Header<wbr>Action[]</a></span>
     </dt>
-    <dd>{{% md %}}A `modify_response_header_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `modify_response_header_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6480,8 +6480,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryruleurlredirectaction">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Redirect<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A `url_redirect_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_redirect_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6489,14 +6489,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryruleurlrewriteaction">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Rewrite<wbr>Action</a></span>
     </dt>
-    <dd>{{% md %}}A `url_rewrite_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_rewrite_action` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -6505,8 +6505,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrulecacheexpirationaction">Dict[Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Cache<wbr>Expiration<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A `cache_expiration_action` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cache_expiration_action` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6514,8 +6514,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrulecachekeyquerystringaction">Dict[Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Cache<wbr>Key<wbr>Query<wbr>String<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A `cache_key_query_string_action` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cache_key_query_string_action` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6523,8 +6523,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrulemodifyrequestheaderaction">List[Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Modify<wbr>Request<wbr>Header<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A `modify_request_header_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `modify_request_header_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6532,8 +6532,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryrulemodifyresponseheaderaction">List[Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Modify<wbr>Response<wbr>Header<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A `modify_response_header_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `modify_response_header_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6541,8 +6541,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryruleurlredirectaction">Dict[Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Redirect<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A `url_redirect_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_redirect_action` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6550,29 +6550,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#endpointglobaldeliveryruleurlrewriteaction">Dict[Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Rewrite<wbr>Action]</a></span>
     </dt>
-    <dd>{{% md %}}A `url_rewrite_action` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `url_rewrite_action` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointglobaldeliveryrulecacheexpirationaction">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Cache<wbr>Expiration<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointGlobalDeliveryRuleCacheExpirationAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointGlobalDeliveryRuleCacheExpirationAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointGlobalDeliveryRuleCacheExpirationActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointGlobalDeliveryRuleCacheExpirationActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6581,8 +6581,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The behavior of the cache. Valid values are `BypassCache`, `Override` and `SetIfMissing`.
-{{% /md %}}</dd>
+    <dd>The behavior of the cache. Valid values are `BypassCache`, `Override` and `SetIfMissing`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6590,14 +6590,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Duration of the cache. Only allowed when `behavior` is set to `Override` or `SetIfMissing`. Format: `[d.]hh:mm:ss`
-{{% /md %}}</dd>
+    <dd>Duration of the cache. Only allowed when `behavior` is set to `Override` or `SetIfMissing`. Format: `[d.]hh:mm:ss`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6606,8 +6606,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The behavior of the cache. Valid values are `BypassCache`, `Override` and `SetIfMissing`.
-{{% /md %}}</dd>
+    <dd>The behavior of the cache. Valid values are `BypassCache`, `Override` and `SetIfMissing`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6615,14 +6615,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Duration of the cache. Only allowed when `behavior` is set to `Override` or `SetIfMissing`. Format: `[d.]hh:mm:ss`
-{{% /md %}}</dd>
+    <dd>Duration of the cache. Only allowed when `behavior` is set to `Override` or `SetIfMissing`. Format: `[d.]hh:mm:ss`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6631,8 +6631,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The behavior of the cache. Valid values are `BypassCache`, `Override` and `SetIfMissing`.
-{{% /md %}}</dd>
+    <dd>The behavior of the cache. Valid values are `BypassCache`, `Override` and `SetIfMissing`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6640,14 +6640,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Duration of the cache. Only allowed when `behavior` is set to `Override` or `SetIfMissing`. Format: `[d.]hh:mm:ss`
-{{% /md %}}</dd>
+    <dd>Duration of the cache. Only allowed when `behavior` is set to `Override` or `SetIfMissing`. Format: `[d.]hh:mm:ss`
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6656,8 +6656,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The behavior of the cache. Valid values are `BypassCache`, `Override` and `SetIfMissing`.
-{{% /md %}}</dd>
+    <dd>The behavior of the cache. Valid values are `BypassCache`, `Override` and `SetIfMissing`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6665,29 +6665,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Duration of the cache. Only allowed when `behavior` is set to `Override` or `SetIfMissing`. Format: `[d.]hh:mm:ss`
-{{% /md %}}</dd>
+    <dd>Duration of the cache. Only allowed when `behavior` is set to `Override` or `SetIfMissing`. Format: `[d.]hh:mm:ss`
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointglobaldeliveryrulecachekeyquerystringaction">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Cache<wbr>Key<wbr>Query<wbr>String<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointGlobalDeliveryRuleCacheKeyQueryStringAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointGlobalDeliveryRuleCacheKeyQueryStringAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointGlobalDeliveryRuleCacheKeyQueryStringActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointGlobalDeliveryRuleCacheKeyQueryStringActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6696,8 +6696,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The behavior of the cache key for query strings. Valid values are `Exclude`, `ExcludeAll`, `Include` and `IncludeAll`.
-{{% /md %}}</dd>
+    <dd>The behavior of the cache key for query strings. Valid values are `Exclude`, `ExcludeAll`, `Include` and `IncludeAll`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6705,14 +6705,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of parameter values.
-{{% /md %}}</dd>
+    <dd>Comma separated list of parameter values.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6721,8 +6721,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The behavior of the cache key for query strings. Valid values are `Exclude`, `ExcludeAll`, `Include` and `IncludeAll`.
-{{% /md %}}</dd>
+    <dd>The behavior of the cache key for query strings. Valid values are `Exclude`, `ExcludeAll`, `Include` and `IncludeAll`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6730,14 +6730,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of parameter values.
-{{% /md %}}</dd>
+    <dd>Comma separated list of parameter values.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6746,8 +6746,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The behavior of the cache key for query strings. Valid values are `Exclude`, `ExcludeAll`, `Include` and `IncludeAll`.
-{{% /md %}}</dd>
+    <dd>The behavior of the cache key for query strings. Valid values are `Exclude`, `ExcludeAll`, `Include` and `IncludeAll`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6755,14 +6755,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of parameter values.
-{{% /md %}}</dd>
+    <dd>Comma separated list of parameter values.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6771,8 +6771,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The behavior of the cache key for query strings. Valid values are `Exclude`, `ExcludeAll`, `Include` and `IncludeAll`.
-{{% /md %}}</dd>
+    <dd>The behavior of the cache key for query strings. Valid values are `Exclude`, `ExcludeAll`, `Include` and `IncludeAll`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6780,29 +6780,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Comma separated list of parameter values.
-{{% /md %}}</dd>
+    <dd>Comma separated list of parameter values.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointglobaldeliveryrulemodifyrequestheaderaction">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Modify<wbr>Request<wbr>Header<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointGlobalDeliveryRuleModifyRequestHeaderAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointGlobalDeliveryRuleModifyRequestHeaderAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointGlobalDeliveryRuleModifyRequestHeaderActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointGlobalDeliveryRuleModifyRequestHeaderActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6811,8 +6811,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
-{{% /md %}}</dd>
+    <dd>Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6820,8 +6820,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The header name.
-{{% /md %}}</dd>
+    <dd>The header name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6829,14 +6829,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
-{{% /md %}}</dd>
+    <dd>The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6845,8 +6845,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
-{{% /md %}}</dd>
+    <dd>Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6854,8 +6854,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The header name.
-{{% /md %}}</dd>
+    <dd>The header name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6863,14 +6863,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
-{{% /md %}}</dd>
+    <dd>The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6879,8 +6879,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
-{{% /md %}}</dd>
+    <dd>Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6888,8 +6888,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The header name.
-{{% /md %}}</dd>
+    <dd>The header name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6897,14 +6897,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
-{{% /md %}}</dd>
+    <dd>The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6913,8 +6913,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
-{{% /md %}}</dd>
+    <dd>Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6922,8 +6922,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The header name.
-{{% /md %}}</dd>
+    <dd>The header name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6931,29 +6931,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
-{{% /md %}}</dd>
+    <dd>The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointglobaldeliveryrulemodifyresponseheaderaction">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Modify<wbr>Response<wbr>Header<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointGlobalDeliveryRuleModifyResponseHeaderAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointGlobalDeliveryRuleModifyResponseHeaderAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointGlobalDeliveryRuleModifyResponseHeaderActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointGlobalDeliveryRuleModifyResponseHeaderActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6962,8 +6962,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
-{{% /md %}}</dd>
+    <dd>Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -6971,8 +6971,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The header name.
-{{% /md %}}</dd>
+    <dd>The header name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -6980,14 +6980,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
-{{% /md %}}</dd>
+    <dd>The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -6996,8 +6996,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
-{{% /md %}}</dd>
+    <dd>Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7005,8 +7005,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The header name.
-{{% /md %}}</dd>
+    <dd>The header name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7014,14 +7014,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
-{{% /md %}}</dd>
+    <dd>The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7030,8 +7030,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
-{{% /md %}}</dd>
+    <dd>Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7039,8 +7039,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The header name.
-{{% /md %}}</dd>
+    <dd>The header name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7048,14 +7048,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
-{{% /md %}}</dd>
+    <dd>The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7064,8 +7064,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
-{{% /md %}}</dd>
+    <dd>Action to be executed on a header value. Valid values are `Append`, `Delete` and `Overwrite`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7073,8 +7073,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The header name.
-{{% /md %}}</dd>
+    <dd>The header name.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7082,29 +7082,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
-{{% /md %}}</dd>
+    <dd>The value of the header. Only needed when `action` is set to `Append` or `overwrite`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointglobaldeliveryruleurlredirectaction">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Redirect<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointGlobalDeliveryRuleUrlRedirectAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointGlobalDeliveryRuleUrlRedirectAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointGlobalDeliveryRuleUrlRedirectActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointGlobalDeliveryRuleUrlRedirectActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7113,8 +7113,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of the redirect. Valid values are `Found`, `Moved`, `PermanentRedirect` and `TemporaryRedirect`.
-{{% /md %}}</dd>
+    <dd>Type of the redirect. Valid values are `Found`, `Moved`, `PermanentRedirect` and `TemporaryRedirect`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7122,8 +7122,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the fragment part of the URL. This value must not start with a `#`.
-{{% /md %}}</dd>
+    <dd>Specifies the fragment part of the URL. This value must not start with a `#`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7131,8 +7131,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the hostname part of the URL.
-{{% /md %}}</dd>
+    <dd>Specifies the hostname part of the URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7140,8 +7140,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the path part of the URL. This value must begin with a `/`.
-{{% /md %}}</dd>
+    <dd>Specifies the path part of the URL. This value must begin with a `/`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7149,8 +7149,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the protocol part of the URL. Valid values are `Http` and `Https`.
-{{% /md %}}</dd>
+    <dd>Specifies the protocol part of the URL. Valid values are `Http` and `Https`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7158,14 +7158,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the query string part of the URL. This value must not start with a `?` or `&` and must be in `<key>=<value>` format separated by `&`.
-{{% /md %}}</dd>
+    <dd>Specifies the query string part of the URL. This value must not start with a `?` or `&` and must be in `<key>=<value>` format separated by `&`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7174,8 +7174,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of the redirect. Valid values are `Found`, `Moved`, `PermanentRedirect` and `TemporaryRedirect`.
-{{% /md %}}</dd>
+    <dd>Type of the redirect. Valid values are `Found`, `Moved`, `PermanentRedirect` and `TemporaryRedirect`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7183,8 +7183,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the fragment part of the URL. This value must not start with a `#`.
-{{% /md %}}</dd>
+    <dd>Specifies the fragment part of the URL. This value must not start with a `#`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7192,8 +7192,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the hostname part of the URL.
-{{% /md %}}</dd>
+    <dd>Specifies the hostname part of the URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7201,8 +7201,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the path part of the URL. This value must begin with a `/`.
-{{% /md %}}</dd>
+    <dd>Specifies the path part of the URL. This value must begin with a `/`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7210,8 +7210,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the protocol part of the URL. Valid values are `Http` and `Https`.
-{{% /md %}}</dd>
+    <dd>Specifies the protocol part of the URL. Valid values are `Http` and `Https`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7219,14 +7219,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the query string part of the URL. This value must not start with a `?` or `&` and must be in `<key>=<value>` format separated by `&`.
-{{% /md %}}</dd>
+    <dd>Specifies the query string part of the URL. This value must not start with a `?` or `&` and must be in `<key>=<value>` format separated by `&`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7235,8 +7235,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Type of the redirect. Valid values are `Found`, `Moved`, `PermanentRedirect` and `TemporaryRedirect`.
-{{% /md %}}</dd>
+    <dd>Type of the redirect. Valid values are `Found`, `Moved`, `PermanentRedirect` and `TemporaryRedirect`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7244,8 +7244,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the fragment part of the URL. This value must not start with a `#`.
-{{% /md %}}</dd>
+    <dd>Specifies the fragment part of the URL. This value must not start with a `#`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7253,8 +7253,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the hostname part of the URL.
-{{% /md %}}</dd>
+    <dd>Specifies the hostname part of the URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7262,8 +7262,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the path part of the URL. This value must begin with a `/`.
-{{% /md %}}</dd>
+    <dd>Specifies the path part of the URL. This value must begin with a `/`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7271,8 +7271,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the protocol part of the URL. Valid values are `Http` and `Https`.
-{{% /md %}}</dd>
+    <dd>Specifies the protocol part of the URL. Valid values are `Http` and `Https`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7280,14 +7280,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the query string part of the URL. This value must not start with a `?` or `&` and must be in `<key>=<value>` format separated by `&`.
-{{% /md %}}</dd>
+    <dd>Specifies the query string part of the URL. This value must not start with a `?` or `&` and must be in `<key>=<value>` format separated by `&`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7296,8 +7296,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Type of the redirect. Valid values are `Found`, `Moved`, `PermanentRedirect` and `TemporaryRedirect`.
-{{% /md %}}</dd>
+    <dd>Type of the redirect. Valid values are `Found`, `Moved`, `PermanentRedirect` and `TemporaryRedirect`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7305,8 +7305,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the fragment part of the URL. This value must not start with a `#`.
-{{% /md %}}</dd>
+    <dd>Specifies the fragment part of the URL. This value must not start with a `#`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7314,8 +7314,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the hostname part of the URL.
-{{% /md %}}</dd>
+    <dd>Specifies the hostname part of the URL.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7323,8 +7323,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the path part of the URL. This value must begin with a `/`.
-{{% /md %}}</dd>
+    <dd>Specifies the path part of the URL. This value must begin with a `/`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7332,8 +7332,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the protocol part of the URL. Valid values are `Http` and `Https`.
-{{% /md %}}</dd>
+    <dd>Specifies the protocol part of the URL. Valid values are `Http` and `Https`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7341,29 +7341,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the query string part of the URL. This value must not start with a `?` or `&` and must be in `<key>=<value>` format separated by `&`.
-{{% /md %}}</dd>
+    <dd>Specifies the query string part of the URL. This value must not start with a `?` or `&` and must be in `<key>=<value>` format separated by `&`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointglobaldeliveryruleurlrewriteaction">Endpoint<wbr>Global<wbr>Delivery<wbr>Rule<wbr>Url<wbr>Rewrite<wbr>Action</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointGlobalDeliveryRuleUrlRewriteAction">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointGlobalDeliveryRuleUrlRewriteAction">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointGlobalDeliveryRuleUrlRewriteActionArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointGlobalDeliveryRuleUrlRewriteActionOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7372,8 +7372,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This value must start with a `/` and can't be longer than 260 characters.
-{{% /md %}}</dd>
+    <dd>This value must start with a `/` and can't be longer than 260 characters.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7381,8 +7381,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}This value must start with a `/` and can't be longer than 260 characters.
-{{% /md %}}</dd>
+    <dd>This value must start with a `/` and can't be longer than 260 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7390,14 +7390,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7406,8 +7406,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This value must start with a `/` and can't be longer than 260 characters.
-{{% /md %}}</dd>
+    <dd>This value must start with a `/` and can't be longer than 260 characters.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7415,8 +7415,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}This value must start with a `/` and can't be longer than 260 characters.
-{{% /md %}}</dd>
+    <dd>This value must start with a `/` and can't be longer than 260 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7424,14 +7424,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7440,8 +7440,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This value must start with a `/` and can't be longer than 260 characters.
-{{% /md %}}</dd>
+    <dd>This value must start with a `/` and can't be longer than 260 characters.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7449,8 +7449,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}This value must start with a `/` and can't be longer than 260 characters.
-{{% /md %}}</dd>
+    <dd>This value must start with a `/` and can't be longer than 260 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7458,14 +7458,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7474,8 +7474,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This value must start with a `/` and can't be longer than 260 characters.
-{{% /md %}}</dd>
+    <dd>This value must start with a `/` and can't be longer than 260 characters.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7483,8 +7483,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}This value must start with a `/` and can't be longer than 260 characters.
-{{% /md %}}</dd>
+    <dd>This value must start with a `/` and can't be longer than 260 characters.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7492,29 +7492,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Defaults to `true`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="endpointorigin">Endpoint<wbr>Origin</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EndpointOrigin">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EndpointOrigin">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointOriginArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/cdn?tab=doc#EndpointOriginOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7523,8 +7523,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7532,8 +7532,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7541,8 +7541,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP port of the origin. Defaults to `80`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The HTTP port of the origin. Defaults to `80`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7550,14 +7550,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The HTTPS port of the origin. Defaults to `443`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The HTTPS port of the origin. Defaults to `443`. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7566,8 +7566,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7575,8 +7575,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7584,8 +7584,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP port of the origin. Defaults to `80`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The HTTP port of the origin. Defaults to `80`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7593,14 +7593,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The HTTPS port of the origin. Defaults to `443`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The HTTPS port of the origin. Defaults to `443`. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7609,8 +7609,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7618,8 +7618,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7627,8 +7627,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP port of the origin. Defaults to `80`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The HTTP port of the origin. Defaults to `80`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7636,14 +7636,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The HTTPS port of the origin. Defaults to `443`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The HTTPS port of the origin. Defaults to `443`. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -7652,8 +7652,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>A string that determines the hostname/IP address of the origin server. This string can be a domain name, Storage Account endpoint, Web App endpoint, IPv4 address or IPv6 address. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -7661,8 +7661,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the origin. This is an arbitrary value. However, this value needs to be unique under the endpoint. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7670,8 +7670,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The HTTP port of the origin. Defaults to `80`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The HTTP port of the origin. Defaults to `80`. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -7679,11 +7679,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The HTTPS port of the origin. Defaults to `443`. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The HTTPS port of the origin. Defaults to `443`. Changing this forces a new resource to be created.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -35,29 +35,29 @@ const appserver = gcp.compute.getInstance({
 
 ## Using GetInstance {#using}
 
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language typescript %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">function </span>getInstance<span class="p">(</span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#GetInstanceArgs">GetInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#InvokeOptions">InvokeOptions</a></span><span class="p">): Promise&lt;<span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/gcp/compute/#GetInstanceResult">GetInstanceResult</a></span>></span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">function </span> get_instance(</span>name=None<span class="p">, </span>project=None<span class="p">, </span>self_link=None<span class="p">, </span>zone=None<span class="p">, </span>opts=None<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>LookupInstance<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">pulumi.Context</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#LookupInstanceArgs">LookupInstanceArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#InvokeOption">pulumi.InvokeOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#LookupInstanceResult">LookupInstanceResult</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static class </span><span class="nx">GetInstance </span><span class="p">{</span><span class="k">
     public static </span>Task&lt;<span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.GetInstanceResult.html">GetInstanceResult</a></span>> <span class="p">InvokeAsync(</span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Gcp/Pulumi.Gcp.Compute.GetInstanceArgs.html">GetInstanceArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.InvokeOptions.html">InvokeOptions</a></span>? <span class="nx">opts = null<span class="p">)</span><span class="p">
 }</span></code></pre></div>
-{{% /choosable %}}
+
 
 
 
@@ -65,7 +65,7 @@ The following arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -74,8 +74,8 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance. One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The name of the instance. One of `name` or `self_link` must be provided.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -83,10 +83,10 @@ The following arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If `self_link` is provided, this value is ignored.  If neither `self_link`
 nor `project` are provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -94,8 +94,8 @@ nor `project` are provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The self link of the instance. One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The self link of the instance. One of `name` or `self_link` must be provided.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -103,16 +103,16 @@ nor `project` are provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone of the instance. If `self_link` is provided, this
+    <dd>The zone of the instance. If `self_link` is provided, this
 value is ignored.  If neither `self_link` nor `zone` are provided, the
 provider zone is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -121,8 +121,8 @@ provider zone is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance. One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The name of the instance. One of `name` or `self_link` must be provided.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -130,10 +130,10 @@ provider zone is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If `self_link` is provided, this value is ignored.  If neither `self_link`
 nor `project` are provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -141,8 +141,8 @@ nor `project` are provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The self link of the instance. One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The self link of the instance. One of `name` or `self_link` must be provided.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -150,16 +150,16 @@ nor `project` are provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone of the instance. If `self_link` is provided, this
+    <dd>The zone of the instance. If `self_link` is provided, this
 value is ignored.  If neither `self_link` nor `zone` are provided, the
 provider zone is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -168,8 +168,8 @@ provider zone is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance. One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The name of the instance. One of `name` or `self_link` must be provided.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -177,10 +177,10 @@ provider zone is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If `self_link` is provided, this value is ignored.  If neither `self_link`
 nor `project` are provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -188,8 +188,8 @@ nor `project` are provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The self link of the instance. One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The self link of the instance. One of `name` or `self_link` must be provided.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -197,16 +197,16 @@ nor `project` are provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The zone of the instance. If `self_link` is provided, this
+    <dd>The zone of the instance. If `self_link` is provided, this
 value is ignored.  If neither `self_link` nor `zone` are provided, the
 provider zone is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -215,8 +215,8 @@ provider zone is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance. One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The name of the instance. One of `name` or `self_link` must be provided.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -224,10 +224,10 @@ provider zone is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ID of the project in which the resource belongs.
+    <dd>The ID of the project in which the resource belongs.
 If `self_link` is provided, this value is ignored.  If neither `self_link`
 nor `project` are provided, the provider project is used.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -235,8 +235,8 @@ nor `project` are provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The self link of the instance. One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The self link of the instance. One of `name` or `self_link` must be provided.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -244,13 +244,13 @@ nor `project` are provided, the provider project is used.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The zone of the instance. If `self_link` is provided, this
+    <dd>The zone of the instance. If `self_link` is provided, this
 value is ignored.  If neither `self_link` nor `zone` are provided, the
 provider zone is used.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -266,7 +266,7 @@ The following output properties are available:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -275,7 +275,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -283,8 +283,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceattacheddisk">List&lt;Get<wbr>Instance<wbr>Attached<wbr>Disk&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of disks attached to the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>List of disks attached to the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -292,8 +292,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancebootdisk">List&lt;Get<wbr>Instance<wbr>Boot<wbr>Disk&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The boot disk for the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>The boot disk for the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -301,8 +301,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether sending and receiving of packets with non-matching source or destination IPs is allowed.
-{{% /md %}}</dd>
+    <dd>Whether sending and receiving of packets with non-matching source or destination IPs is allowed.
+</dd>
 
     <dt class="property-"
             title="">
@@ -310,8 +310,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The CPU platform used by this instance.
-{{% /md %}}</dd>
+    <dd>The CPU platform used by this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -319,7 +319,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -327,8 +327,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether deletion protection is enabled on this instance.
-{{% /md %}}</dd>
+    <dd>Whether deletion protection is enabled on this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -336,8 +336,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A brief description of the resource.
-{{% /md %}}</dd>
+    <dd>A brief description of the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -345,7 +345,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -353,7 +353,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -361,8 +361,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceguestaccelerator">List&lt;Get<wbr>Instance<wbr>Guest<wbr>Accelerator&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of the type and count of accelerator cards attached to the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>List of the type and count of accelerator cards attached to the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -370,7 +370,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -378,8 +378,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -387,8 +387,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The server-assigned unique identifier of this instance.
-{{% /md %}}</dd>
+    <dd>The server-assigned unique identifier of this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -396,8 +396,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the labels.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the labels.
+</dd>
 
     <dt class="property-"
             title="">
@@ -405,8 +405,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A set of key/value label pairs assigned to the instance.
-{{% /md %}}</dd>
+    <dd>A set of key/value label pairs assigned to the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -414,8 +414,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to create.
-{{% /md %}}</dd>
+    <dd>The machine type to create.
+</dd>
 
     <dt class="property-"
             title="">
@@ -423,8 +423,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}Metadata key/value pairs made available within the instance.
-{{% /md %}}</dd>
+    <dd>Metadata key/value pairs made available within the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -432,8 +432,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the metadata.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the metadata.
+</dd>
 
     <dt class="property-"
             title="">
@@ -441,7 +441,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -449,8 +449,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum CPU platform specified for the VM instance.
-{{% /md %}}</dd>
+    <dd>The minimum CPU platform specified for the VM instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -458,8 +458,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancenetworkinterface">List&lt;Get<wbr>Instance<wbr>Network<wbr>Interface&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The networks attached to the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>The networks attached to the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -467,8 +467,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancescheduling">List&lt;Get<wbr>Instance<wbr>Scheduling&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The scheduling strategy being used by the instance.
-{{% /md %}}</dd>
+    <dd>The scheduling strategy being used by the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -476,8 +476,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancescratchdisk">List&lt;Get<wbr>Instance<wbr>Scratch<wbr>Disk&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The scratch disks attached to the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>The scratch disks attached to the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -485,8 +485,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceserviceaccount">List&lt;Get<wbr>Instance<wbr>Service<wbr>Account&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The service account to attach to the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>The service account to attach to the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -494,8 +494,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceshieldedinstanceconfig">List&lt;Get<wbr>Instance<wbr>Shielded<wbr>Instance<wbr>Config&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The shielded vm config being used by the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>The shielded vm config being used by the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -503,8 +503,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The list of tags attached to the instance.
-{{% /md %}}</dd>
+    <dd>The list of tags attached to the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -512,8 +512,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the tags.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the tags.
+</dd>
 
     <dt class="property-"
             title="">
@@ -521,7 +521,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -529,7 +529,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -537,8 +537,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -546,13 +546,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -561,7 +561,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -569,8 +569,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceattacheddisk">[]Get<wbr>Instance<wbr>Attached<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}List of disks attached to the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>List of disks attached to the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -578,8 +578,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancebootdisk">[]Get<wbr>Instance<wbr>Boot<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}The boot disk for the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>The boot disk for the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -587,8 +587,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether sending and receiving of packets with non-matching source or destination IPs is allowed.
-{{% /md %}}</dd>
+    <dd>Whether sending and receiving of packets with non-matching source or destination IPs is allowed.
+</dd>
 
     <dt class="property-"
             title="">
@@ -596,8 +596,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CPU platform used by this instance.
-{{% /md %}}</dd>
+    <dd>The CPU platform used by this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -605,7 +605,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -613,8 +613,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether deletion protection is enabled on this instance.
-{{% /md %}}</dd>
+    <dd>Whether deletion protection is enabled on this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -622,8 +622,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A brief description of the resource.
-{{% /md %}}</dd>
+    <dd>A brief description of the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -631,7 +631,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -639,7 +639,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -647,8 +647,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceguestaccelerator">[]Get<wbr>Instance<wbr>Guest<wbr>Accelerator</a></span>
     </dt>
-    <dd>{{% md %}}List of the type and count of accelerator cards attached to the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>List of the type and count of accelerator cards attached to the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -656,7 +656,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -664,8 +664,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -673,8 +673,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The server-assigned unique identifier of this instance.
-{{% /md %}}</dd>
+    <dd>The server-assigned unique identifier of this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -682,8 +682,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the labels.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the labels.
+</dd>
 
     <dt class="property-"
             title="">
@@ -691,8 +691,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A set of key/value label pairs assigned to the instance.
-{{% /md %}}</dd>
+    <dd>A set of key/value label pairs assigned to the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -700,8 +700,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to create.
-{{% /md %}}</dd>
+    <dd>The machine type to create.
+</dd>
 
     <dt class="property-"
             title="">
@@ -709,8 +709,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}Metadata key/value pairs made available within the instance.
-{{% /md %}}</dd>
+    <dd>Metadata key/value pairs made available within the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -718,8 +718,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the metadata.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the metadata.
+</dd>
 
     <dt class="property-"
             title="">
@@ -727,7 +727,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -735,8 +735,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum CPU platform specified for the VM instance.
-{{% /md %}}</dd>
+    <dd>The minimum CPU platform specified for the VM instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -744,8 +744,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancenetworkinterface">[]Get<wbr>Instance<wbr>Network<wbr>Interface</a></span>
     </dt>
-    <dd>{{% md %}}The networks attached to the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>The networks attached to the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -753,8 +753,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancescheduling">[]Get<wbr>Instance<wbr>Scheduling</a></span>
     </dt>
-    <dd>{{% md %}}The scheduling strategy being used by the instance.
-{{% /md %}}</dd>
+    <dd>The scheduling strategy being used by the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -762,8 +762,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancescratchdisk">[]Get<wbr>Instance<wbr>Scratch<wbr>Disk</a></span>
     </dt>
-    <dd>{{% md %}}The scratch disks attached to the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>The scratch disks attached to the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -771,8 +771,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceserviceaccount">[]Get<wbr>Instance<wbr>Service<wbr>Account</a></span>
     </dt>
-    <dd>{{% md %}}The service account to attach to the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>The service account to attach to the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -780,8 +780,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceshieldedinstanceconfig">[]Get<wbr>Instance<wbr>Shielded<wbr>Instance<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}The shielded vm config being used by the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>The shielded vm config being used by the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -789,8 +789,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}The list of tags attached to the instance.
-{{% /md %}}</dd>
+    <dd>The list of tags attached to the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -798,8 +798,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the tags.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the tags.
+</dd>
 
     <dt class="property-"
             title="">
@@ -807,7 +807,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -815,7 +815,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -823,8 +823,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -832,13 +832,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -847,7 +847,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -855,8 +855,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceattacheddisk">Get<wbr>Instance<wbr>Attached<wbr>Disk[]</a></span>
     </dt>
-    <dd>{{% md %}}List of disks attached to the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>List of disks attached to the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -864,8 +864,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancebootdisk">Get<wbr>Instance<wbr>Boot<wbr>Disk[]</a></span>
     </dt>
-    <dd>{{% md %}}The boot disk for the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>The boot disk for the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -873,8 +873,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether sending and receiving of packets with non-matching source or destination IPs is allowed.
-{{% /md %}}</dd>
+    <dd>Whether sending and receiving of packets with non-matching source or destination IPs is allowed.
+</dd>
 
     <dt class="property-"
             title="">
@@ -882,8 +882,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The CPU platform used by this instance.
-{{% /md %}}</dd>
+    <dd>The CPU platform used by this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -891,7 +891,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -899,8 +899,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether deletion protection is enabled on this instance.
-{{% /md %}}</dd>
+    <dd>Whether deletion protection is enabled on this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -908,8 +908,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A brief description of the resource.
-{{% /md %}}</dd>
+    <dd>A brief description of the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -917,7 +917,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -925,7 +925,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -933,8 +933,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceguestaccelerator">Get<wbr>Instance<wbr>Guest<wbr>Accelerator[]</a></span>
     </dt>
-    <dd>{{% md %}}List of the type and count of accelerator cards attached to the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>List of the type and count of accelerator cards attached to the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -942,7 +942,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -950,8 +950,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -959,8 +959,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The server-assigned unique identifier of this instance.
-{{% /md %}}</dd>
+    <dd>The server-assigned unique identifier of this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -968,8 +968,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the labels.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the labels.
+</dd>
 
     <dt class="property-"
             title="">
@@ -977,8 +977,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A set of key/value label pairs assigned to the instance.
-{{% /md %}}</dd>
+    <dd>A set of key/value label pairs assigned to the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -986,8 +986,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to create.
-{{% /md %}}</dd>
+    <dd>The machine type to create.
+</dd>
 
     <dt class="property-"
             title="">
@@ -995,8 +995,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}Metadata key/value pairs made available within the instance.
-{{% /md %}}</dd>
+    <dd>Metadata key/value pairs made available within the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1004,8 +1004,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the metadata.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the metadata.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1013,7 +1013,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1021,8 +1021,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The minimum CPU platform specified for the VM instance.
-{{% /md %}}</dd>
+    <dd>The minimum CPU platform specified for the VM instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1030,8 +1030,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancenetworkinterface">Get<wbr>Instance<wbr>Network<wbr>Interface[]</a></span>
     </dt>
-    <dd>{{% md %}}The networks attached to the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>The networks attached to the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1039,8 +1039,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancescheduling">Get<wbr>Instance<wbr>Scheduling[]</a></span>
     </dt>
-    <dd>{{% md %}}The scheduling strategy being used by the instance.
-{{% /md %}}</dd>
+    <dd>The scheduling strategy being used by the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1048,8 +1048,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancescratchdisk">Get<wbr>Instance<wbr>Scratch<wbr>Disk[]</a></span>
     </dt>
-    <dd>{{% md %}}The scratch disks attached to the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>The scratch disks attached to the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1057,8 +1057,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceserviceaccount">Get<wbr>Instance<wbr>Service<wbr>Account[]</a></span>
     </dt>
-    <dd>{{% md %}}The service account to attach to the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>The service account to attach to the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1066,8 +1066,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceshieldedinstanceconfig">Get<wbr>Instance<wbr>Shielded<wbr>Instance<wbr>Config[]</a></span>
     </dt>
-    <dd>{{% md %}}The shielded vm config being used by the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>The shielded vm config being used by the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1075,8 +1075,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}The list of tags attached to the instance.
-{{% /md %}}</dd>
+    <dd>The list of tags attached to the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1084,8 +1084,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the tags.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the tags.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1093,7 +1093,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1101,7 +1101,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1109,8 +1109,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1118,13 +1118,13 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1133,7 +1133,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1141,8 +1141,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceattacheddisk">List[Get<wbr>Instance<wbr>Attached<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}List of disks attached to the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>List of disks attached to the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1150,8 +1150,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancebootdisk">List[Get<wbr>Instance<wbr>Boot<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}The boot disk for the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>The boot disk for the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1159,8 +1159,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether sending and receiving of packets with non-matching source or destination IPs is allowed.
-{{% /md %}}</dd>
+    <dd>Whether sending and receiving of packets with non-matching source or destination IPs is allowed.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1168,8 +1168,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The CPU platform used by this instance.
-{{% /md %}}</dd>
+    <dd>The CPU platform used by this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1177,7 +1177,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1185,8 +1185,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether deletion protection is enabled on this instance.
-{{% /md %}}</dd>
+    <dd>Whether deletion protection is enabled on this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1194,8 +1194,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A brief description of the resource.
-{{% /md %}}</dd>
+    <dd>A brief description of the resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1203,7 +1203,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1211,7 +1211,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1219,8 +1219,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceguestaccelerator">List[Get<wbr>Instance<wbr>Guest<wbr>Accelerator]</a></span>
     </dt>
-    <dd>{{% md %}}List of the type and count of accelerator cards attached to the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>List of the type and count of accelerator cards attached to the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1228,7 +1228,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1236,8 +1236,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}id is the provider-assigned unique ID for this managed resource.
-{{% /md %}}</dd>
+    <dd>id is the provider-assigned unique ID for this managed resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1245,8 +1245,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The server-assigned unique identifier of this instance.
-{{% /md %}}</dd>
+    <dd>The server-assigned unique identifier of this instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1254,8 +1254,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the labels.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the labels.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1263,8 +1263,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A set of key/value label pairs assigned to the instance.
-{{% /md %}}</dd>
+    <dd>A set of key/value label pairs assigned to the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1272,8 +1272,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The machine type to create.
-{{% /md %}}</dd>
+    <dd>The machine type to create.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1281,8 +1281,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}Metadata key/value pairs made available within the instance.
-{{% /md %}}</dd>
+    <dd>Metadata key/value pairs made available within the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1290,8 +1290,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the metadata.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the metadata.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1299,7 +1299,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1307,8 +1307,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The minimum CPU platform specified for the VM instance.
-{{% /md %}}</dd>
+    <dd>The minimum CPU platform specified for the VM instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1316,8 +1316,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancenetworkinterface">List[Get<wbr>Instance<wbr>Network<wbr>Interface]</a></span>
     </dt>
-    <dd>{{% md %}}The networks attached to the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>The networks attached to the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1325,8 +1325,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancescheduling">List[Get<wbr>Instance<wbr>Scheduling]</a></span>
     </dt>
-    <dd>{{% md %}}The scheduling strategy being used by the instance.
-{{% /md %}}</dd>
+    <dd>The scheduling strategy being used by the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1334,8 +1334,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancescratchdisk">List[Get<wbr>Instance<wbr>Scratch<wbr>Disk]</a></span>
     </dt>
-    <dd>{{% md %}}The scratch disks attached to the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>The scratch disks attached to the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1343,8 +1343,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceserviceaccount">List[Get<wbr>Instance<wbr>Service<wbr>Account]</a></span>
     </dt>
-    <dd>{{% md %}}The service account to attach to the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>The service account to attach to the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1352,8 +1352,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceshieldedinstanceconfig">List[Get<wbr>Instance<wbr>Shielded<wbr>Instance<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}The shielded vm config being used by the instance. Structure is documented below.
-{{% /md %}}</dd>
+    <dd>The shielded vm config being used by the instance. Structure is documented below.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1361,8 +1361,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}The list of tags attached to the instance.
-{{% /md %}}</dd>
+    <dd>The list of tags attached to the instance.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1370,8 +1370,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unique fingerprint of the tags.
-{{% /md %}}</dd>
+    <dd>The unique fingerprint of the tags.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1379,7 +1379,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1387,7 +1387,7 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -1395,8 +1395,8 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The URI of the created resource.
-{{% /md %}}</dd>
+    <dd>The URI of the created resource.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1404,10 +1404,10 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1420,18 +1420,18 @@ The following output properties are available:
 
 
 <h4 id="getinstanceattacheddisk">Get<wbr>Instance<wbr>Attached<wbr>Disk</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#GetInstanceAttachedDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#GetInstanceAttachedDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1440,9 +1440,9 @@ The following output properties are available:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name with which the attached disk is accessible
+    <dd>Name with which the attached disk is accessible
 under `/dev/disk/by-id/`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1450,7 +1450,7 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1458,7 +1458,7 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1466,7 +1466,7 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1474,8 +1474,8 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Read/write mode for the disk. One of `"READ_ONLY"` or `"READ_WRITE"`.
-{{% /md %}}</dd>
+    <dd>Read/write mode for the disk. One of `"READ_ONLY"` or `"READ_WRITE"`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1483,14 +1483,14 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the disk attached to this instance.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the disk attached to this instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1499,9 +1499,9 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name with which the attached disk is accessible
+    <dd>Name with which the attached disk is accessible
 under `/dev/disk/by-id/`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1509,7 +1509,7 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1517,7 +1517,7 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1525,7 +1525,7 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1533,8 +1533,8 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Read/write mode for the disk. One of `"READ_ONLY"` or `"READ_WRITE"`.
-{{% /md %}}</dd>
+    <dd>Read/write mode for the disk. One of `"READ_ONLY"` or `"READ_WRITE"`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1542,14 +1542,14 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the disk attached to this instance.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the disk attached to this instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1558,9 +1558,9 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name with which the attached disk is accessible
+    <dd>Name with which the attached disk is accessible
 under `/dev/disk/by-id/`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1568,7 +1568,7 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1576,7 +1576,7 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1584,7 +1584,7 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1592,8 +1592,8 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Read/write mode for the disk. One of `"READ_ONLY"` or `"READ_WRITE"`.
-{{% /md %}}</dd>
+    <dd>Read/write mode for the disk. One of `"READ_ONLY"` or `"READ_WRITE"`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1601,14 +1601,14 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the disk attached to this instance.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the disk attached to this instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1617,9 +1617,9 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name with which the attached disk is accessible
+    <dd>Name with which the attached disk is accessible
 under `/dev/disk/by-id/`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1627,7 +1627,7 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1635,7 +1635,7 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1643,7 +1643,7 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1651,8 +1651,8 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Read/write mode for the disk. One of `"READ_ONLY"` or `"READ_WRITE"`.
-{{% /md %}}</dd>
+    <dd>Read/write mode for the disk. One of `"READ_ONLY"` or `"READ_WRITE"`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1660,29 +1660,29 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the disk attached to this instance.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the disk attached to this instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstancebootdisk">Get<wbr>Instance<wbr>Boot<wbr>Disk</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#GetInstanceBootDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#GetInstanceBootDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1691,8 +1691,8 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the disk will be auto-deleted when the instance is deleted.
-{{% /md %}}</dd>
+    <dd>Whether the disk will be auto-deleted when the instance is deleted.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1700,9 +1700,9 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Name with which the attached disk is accessible
+    <dd>Name with which the attached disk is accessible
 under `/dev/disk/by-id/`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1710,7 +1710,7 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1718,7 +1718,7 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1726,9 +1726,9 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancebootdiskinitializeparam">List&lt;Get<wbr>Instance<wbr>Boot<wbr>Disk<wbr>Initialize<wbr>Param<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Parameters with which a disk was created alongside the instance.
+    <dd>Parameters with which a disk was created alongside the instance.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1736,7 +1736,7 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1744,8 +1744,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Read/write mode for the disk. One of `"READ_ONLY"` or `"READ_WRITE"`.
-{{% /md %}}</dd>
+    <dd>Read/write mode for the disk. One of `"READ_ONLY"` or `"READ_WRITE"`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1753,14 +1753,14 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the disk attached to this instance.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the disk attached to this instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1769,8 +1769,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the disk will be auto-deleted when the instance is deleted.
-{{% /md %}}</dd>
+    <dd>Whether the disk will be auto-deleted when the instance is deleted.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1778,9 +1778,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name with which the attached disk is accessible
+    <dd>Name with which the attached disk is accessible
 under `/dev/disk/by-id/`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1788,7 +1788,7 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1796,7 +1796,7 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1804,9 +1804,9 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancebootdiskinitializeparam">[]Get<wbr>Instance<wbr>Boot<wbr>Disk<wbr>Initialize<wbr>Param</a></span>
     </dt>
-    <dd>{{% md %}}Parameters with which a disk was created alongside the instance.
+    <dd>Parameters with which a disk was created alongside the instance.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1814,7 +1814,7 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1822,8 +1822,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Read/write mode for the disk. One of `"READ_ONLY"` or `"READ_WRITE"`.
-{{% /md %}}</dd>
+    <dd>Read/write mode for the disk. One of `"READ_ONLY"` or `"READ_WRITE"`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1831,14 +1831,14 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the disk attached to this instance.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the disk attached to this instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1847,8 +1847,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the disk will be auto-deleted when the instance is deleted.
-{{% /md %}}</dd>
+    <dd>Whether the disk will be auto-deleted when the instance is deleted.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1856,9 +1856,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Name with which the attached disk is accessible
+    <dd>Name with which the attached disk is accessible
 under `/dev/disk/by-id/`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1866,7 +1866,7 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1874,7 +1874,7 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1882,9 +1882,9 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancebootdiskinitializeparam">Get<wbr>Instance<wbr>Boot<wbr>Disk<wbr>Initialize<wbr>Param[]</a></span>
     </dt>
-    <dd>{{% md %}}Parameters with which a disk was created alongside the instance.
+    <dd>Parameters with which a disk was created alongside the instance.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1892,7 +1892,7 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1900,8 +1900,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Read/write mode for the disk. One of `"READ_ONLY"` or `"READ_WRITE"`.
-{{% /md %}}</dd>
+    <dd>Read/write mode for the disk. One of `"READ_ONLY"` or `"READ_WRITE"`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1909,14 +1909,14 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the disk attached to this instance.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the disk attached to this instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1925,8 +1925,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the disk will be auto-deleted when the instance is deleted.
-{{% /md %}}</dd>
+    <dd>Whether the disk will be auto-deleted when the instance is deleted.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1934,9 +1934,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Name with which the attached disk is accessible
+    <dd>Name with which the attached disk is accessible
 under `/dev/disk/by-id/`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1944,7 +1944,7 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1952,7 +1952,7 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1960,9 +1960,9 @@ under `/dev/disk/by-id/`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancebootdiskinitializeparam">List[Get<wbr>Instance<wbr>Boot<wbr>Disk<wbr>Initialize<wbr>Param]</a></span>
     </dt>
-    <dd>{{% md %}}Parameters with which a disk was created alongside the instance.
+    <dd>Parameters with which a disk was created alongside the instance.
 Structure is documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1970,7 +1970,7 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -1978,8 +1978,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Read/write mode for the disk. One of `"READ_ONLY"` or `"READ_WRITE"`.
-{{% /md %}}</dd>
+    <dd>Read/write mode for the disk. One of `"READ_ONLY"` or `"READ_WRITE"`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1987,29 +1987,29 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the disk attached to this instance.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the disk attached to this instance.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstancebootdiskinitializeparam">Get<wbr>Instance<wbr>Boot<wbr>Disk<wbr>Initialize<wbr>Param</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#GetInstanceBootDiskInitializeParam">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#GetInstanceBootDiskInitializeParam">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2018,8 +2018,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The image from which this disk was initialised.
-{{% /md %}}</dd>
+    <dd>The image from which this disk was initialised.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2027,8 +2027,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A set of key/value label pairs assigned to the instance.
-{{% /md %}}</dd>
+    <dd>A set of key/value label pairs assigned to the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2036,8 +2036,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the image in gigabytes.
-{{% /md %}}</dd>
+    <dd>The size of the image in gigabytes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2045,14 +2045,14 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The accelerator type resource exposed to this instance. E.g. `nvidia-tesla-k80`.
-{{% /md %}}</dd>
+    <dd>The accelerator type resource exposed to this instance. E.g. `nvidia-tesla-k80`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2061,8 +2061,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The image from which this disk was initialised.
-{{% /md %}}</dd>
+    <dd>The image from which this disk was initialised.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2070,8 +2070,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A set of key/value label pairs assigned to the instance.
-{{% /md %}}</dd>
+    <dd>A set of key/value label pairs assigned to the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2079,8 +2079,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The size of the image in gigabytes.
-{{% /md %}}</dd>
+    <dd>The size of the image in gigabytes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2088,14 +2088,14 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The accelerator type resource exposed to this instance. E.g. `nvidia-tesla-k80`.
-{{% /md %}}</dd>
+    <dd>The accelerator type resource exposed to this instance. E.g. `nvidia-tesla-k80`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2104,8 +2104,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The image from which this disk was initialised.
-{{% /md %}}</dd>
+    <dd>The image from which this disk was initialised.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2113,8 +2113,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A set of key/value label pairs assigned to the instance.
-{{% /md %}}</dd>
+    <dd>A set of key/value label pairs assigned to the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2122,8 +2122,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The size of the image in gigabytes.
-{{% /md %}}</dd>
+    <dd>The size of the image in gigabytes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2131,14 +2131,14 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The accelerator type resource exposed to this instance. E.g. `nvidia-tesla-k80`.
-{{% /md %}}</dd>
+    <dd>The accelerator type resource exposed to this instance. E.g. `nvidia-tesla-k80`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2147,8 +2147,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The image from which this disk was initialised.
-{{% /md %}}</dd>
+    <dd>The image from which this disk was initialised.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2156,8 +2156,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A set of key/value label pairs assigned to the instance.
-{{% /md %}}</dd>
+    <dd>A set of key/value label pairs assigned to the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2165,8 +2165,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The size of the image in gigabytes.
-{{% /md %}}</dd>
+    <dd>The size of the image in gigabytes.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2174,29 +2174,29 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The accelerator type resource exposed to this instance. E.g. `nvidia-tesla-k80`.
-{{% /md %}}</dd>
+    <dd>The accelerator type resource exposed to this instance. E.g. `nvidia-tesla-k80`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstanceguestaccelerator">Get<wbr>Instance<wbr>Guest<wbr>Accelerator</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#GetInstanceGuestAccelerator">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#GetInstanceGuestAccelerator">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2205,8 +2205,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of the guest accelerator cards exposed to this instance.
-{{% /md %}}</dd>
+    <dd>The number of the guest accelerator cards exposed to this instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2214,14 +2214,14 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The accelerator type resource exposed to this instance. E.g. `nvidia-tesla-k80`.
-{{% /md %}}</dd>
+    <dd>The accelerator type resource exposed to this instance. E.g. `nvidia-tesla-k80`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2230,8 +2230,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of the guest accelerator cards exposed to this instance.
-{{% /md %}}</dd>
+    <dd>The number of the guest accelerator cards exposed to this instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2239,14 +2239,14 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The accelerator type resource exposed to this instance. E.g. `nvidia-tesla-k80`.
-{{% /md %}}</dd>
+    <dd>The accelerator type resource exposed to this instance. E.g. `nvidia-tesla-k80`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2255,8 +2255,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of the guest accelerator cards exposed to this instance.
-{{% /md %}}</dd>
+    <dd>The number of the guest accelerator cards exposed to this instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2264,14 +2264,14 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The accelerator type resource exposed to this instance. E.g. `nvidia-tesla-k80`.
-{{% /md %}}</dd>
+    <dd>The accelerator type resource exposed to this instance. E.g. `nvidia-tesla-k80`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2280,8 +2280,8 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of the guest accelerator cards exposed to this instance.
-{{% /md %}}</dd>
+    <dd>The number of the guest accelerator cards exposed to this instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2289,29 +2289,29 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The accelerator type resource exposed to this instance. E.g. `nvidia-tesla-k80`.
-{{% /md %}}</dd>
+    <dd>The accelerator type resource exposed to this instance. E.g. `nvidia-tesla-k80`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstancenetworkinterface">Get<wbr>Instance<wbr>Network<wbr>Interface</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#GetInstanceNetworkInterface">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#GetInstanceNetworkInterface">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2320,9 +2320,9 @@ Structure is documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancenetworkinterfaceaccessconfig">List&lt;Get<wbr>Instance<wbr>Network<wbr>Interface<wbr>Access<wbr>Config<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Access configurations, i.e. IPs via which this
+    <dd>Access configurations, i.e. IPs via which this
 instance can be accessed via the Internet. Structure documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2330,8 +2330,8 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancenetworkinterfacealiasiprange">List&lt;Get<wbr>Instance<wbr>Network<wbr>Interface<wbr>Alias<wbr>Ip<wbr>Range<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}An array of alias IP ranges for this network interface. Structure documented below.
-{{% /md %}}</dd>
+    <dd>An array of alias IP ranges for this network interface. Structure documented below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2339,8 +2339,8 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance. One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The name of the instance. One of `name` or `self_link` must be provided.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2348,8 +2348,8 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the network attached to this interface.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the network attached to this interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2357,8 +2357,8 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address assigned to the instance.
-{{% /md %}}</dd>
+    <dd>The private IP address assigned to the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2366,8 +2366,8 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the subnetwork attached to this interface.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the subnetwork attached to this interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2375,14 +2375,14 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the subnetwork belongs.
-{{% /md %}}</dd>
+    <dd>The project in which the subnetwork belongs.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2391,9 +2391,9 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancenetworkinterfaceaccessconfig">[]Get<wbr>Instance<wbr>Network<wbr>Interface<wbr>Access<wbr>Config</a></span>
     </dt>
-    <dd>{{% md %}}Access configurations, i.e. IPs via which this
+    <dd>Access configurations, i.e. IPs via which this
 instance can be accessed via the Internet. Structure documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2401,8 +2401,8 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancenetworkinterfacealiasiprange">[]Get<wbr>Instance<wbr>Network<wbr>Interface<wbr>Alias<wbr>Ip<wbr>Range</a></span>
     </dt>
-    <dd>{{% md %}}An array of alias IP ranges for this network interface. Structure documented below.
-{{% /md %}}</dd>
+    <dd>An array of alias IP ranges for this network interface. Structure documented below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2410,8 +2410,8 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance. One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The name of the instance. One of `name` or `self_link` must be provided.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2419,8 +2419,8 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the network attached to this interface.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the network attached to this interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2428,8 +2428,8 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address assigned to the instance.
-{{% /md %}}</dd>
+    <dd>The private IP address assigned to the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2437,8 +2437,8 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the subnetwork attached to this interface.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the subnetwork attached to this interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2446,14 +2446,14 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the subnetwork belongs.
-{{% /md %}}</dd>
+    <dd>The project in which the subnetwork belongs.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2462,9 +2462,9 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancenetworkinterfaceaccessconfig">Get<wbr>Instance<wbr>Network<wbr>Interface<wbr>Access<wbr>Config[]</a></span>
     </dt>
-    <dd>{{% md %}}Access configurations, i.e. IPs via which this
+    <dd>Access configurations, i.e. IPs via which this
 instance can be accessed via the Internet. Structure documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2472,8 +2472,8 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancenetworkinterfacealiasiprange">Get<wbr>Instance<wbr>Network<wbr>Interface<wbr>Alias<wbr>Ip<wbr>Range[]</a></span>
     </dt>
-    <dd>{{% md %}}An array of alias IP ranges for this network interface. Structure documented below.
-{{% /md %}}</dd>
+    <dd>An array of alias IP ranges for this network interface. Structure documented below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2481,8 +2481,8 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance. One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The name of the instance. One of `name` or `self_link` must be provided.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2490,8 +2490,8 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the network attached to this interface.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the network attached to this interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2499,8 +2499,8 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address assigned to the instance.
-{{% /md %}}</dd>
+    <dd>The private IP address assigned to the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2508,8 +2508,8 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the subnetwork attached to this interface.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the subnetwork attached to this interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2517,14 +2517,14 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the subnetwork belongs.
-{{% /md %}}</dd>
+    <dd>The project in which the subnetwork belongs.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2533,9 +2533,9 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancenetworkinterfaceaccessconfig">List[Get<wbr>Instance<wbr>Network<wbr>Interface<wbr>Access<wbr>Config]</a></span>
     </dt>
-    <dd>{{% md %}}Access configurations, i.e. IPs via which this
+    <dd>Access configurations, i.e. IPs via which this
 instance can be accessed via the Internet. Structure documented below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2543,8 +2543,8 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstancenetworkinterfacealiasiprange">List[Get<wbr>Instance<wbr>Network<wbr>Interface<wbr>Alias<wbr>Ip<wbr>Range]</a></span>
     </dt>
-    <dd>{{% md %}}An array of alias IP ranges for this network interface. Structure documented below.
-{{% /md %}}</dd>
+    <dd>An array of alias IP ranges for this network interface. Structure documented below.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2552,8 +2552,8 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the instance. One of `name` or `self_link` must be provided.
-{{% /md %}}</dd>
+    <dd>The name of the instance. One of `name` or `self_link` must be provided.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2561,8 +2561,8 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the network attached to this interface.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the network attached to this interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2570,8 +2570,8 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The private IP address assigned to the instance.
-{{% /md %}}</dd>
+    <dd>The private IP address assigned to the instance.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2579,8 +2579,8 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name or self_link of the subnetwork attached to this interface.
-{{% /md %}}</dd>
+    <dd>The name or self_link of the subnetwork attached to this interface.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2588,29 +2588,29 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The project in which the subnetwork belongs.
-{{% /md %}}</dd>
+    <dd>The project in which the subnetwork belongs.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstancenetworkinterfaceaccessconfig">Get<wbr>Instance<wbr>Network<wbr>Interface<wbr>Access<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#GetInstanceNetworkInterfaceAccessConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#GetInstanceNetworkInterfaceAccessConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2619,9 +2619,9 @@ instance can be accessed via the Internet. Structure documented below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP address that is be 1:1 mapped to the instance's
+    <dd>The IP address that is be 1:1 mapped to the instance's
 network ip.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2629,8 +2629,8 @@ network ip.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The [networking tier][network-tier] used for configuring this instance. One of `PREMIUM` or `STANDARD`.
-{{% /md %}}</dd>
+    <dd>The [networking tier][network-tier] used for configuring this instance. One of `PREMIUM` or `STANDARD`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2638,14 +2638,14 @@ network ip.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS domain name for the public PTR record.
-{{% /md %}}</dd>
+    <dd>The DNS domain name for the public PTR record.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2654,9 +2654,9 @@ network ip.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP address that is be 1:1 mapped to the instance's
+    <dd>The IP address that is be 1:1 mapped to the instance's
 network ip.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2664,8 +2664,8 @@ network ip.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [networking tier][network-tier] used for configuring this instance. One of `PREMIUM` or `STANDARD`.
-{{% /md %}}</dd>
+    <dd>The [networking tier][network-tier] used for configuring this instance. One of `PREMIUM` or `STANDARD`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2673,14 +2673,14 @@ network ip.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS domain name for the public PTR record.
-{{% /md %}}</dd>
+    <dd>The DNS domain name for the public PTR record.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2689,9 +2689,9 @@ network ip.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP address that is be 1:1 mapped to the instance's
+    <dd>The IP address that is be 1:1 mapped to the instance's
 network ip.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2699,8 +2699,8 @@ network ip.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The [networking tier][network-tier] used for configuring this instance. One of `PREMIUM` or `STANDARD`.
-{{% /md %}}</dd>
+    <dd>The [networking tier][network-tier] used for configuring this instance. One of `PREMIUM` or `STANDARD`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2708,14 +2708,14 @@ network ip.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The DNS domain name for the public PTR record.
-{{% /md %}}</dd>
+    <dd>The DNS domain name for the public PTR record.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2724,9 +2724,9 @@ network ip.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IP address that is be 1:1 mapped to the instance's
+    <dd>The IP address that is be 1:1 mapped to the instance's
 network ip.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2734,8 +2734,8 @@ network ip.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The [networking tier][network-tier] used for configuring this instance. One of `PREMIUM` or `STANDARD`.
-{{% /md %}}</dd>
+    <dd>The [networking tier][network-tier] used for configuring this instance. One of `PREMIUM` or `STANDARD`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2743,29 +2743,29 @@ network ip.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The DNS domain name for the public PTR record.
-{{% /md %}}</dd>
+    <dd>The DNS domain name for the public PTR record.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstancenetworkinterfacealiasiprange">Get<wbr>Instance<wbr>Network<wbr>Interface<wbr>Alias<wbr>Ip<wbr>Range</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#GetInstanceNetworkInterfaceAliasIpRange">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#GetInstanceNetworkInterfaceAliasIpRange">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2774,8 +2774,8 @@ network ip.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP CIDR range represented by this alias IP range.
-{{% /md %}}</dd>
+    <dd>The IP CIDR range represented by this alias IP range.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2783,16 +2783,16 @@ network ip.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The subnetwork secondary range name specifying
+    <dd>The subnetwork secondary range name specifying
 the secondary range from which to allocate the IP CIDR range for this alias IP
 range.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2801,8 +2801,8 @@ range.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP CIDR range represented by this alias IP range.
-{{% /md %}}</dd>
+    <dd>The IP CIDR range represented by this alias IP range.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2810,16 +2810,16 @@ range.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The subnetwork secondary range name specifying
+    <dd>The subnetwork secondary range name specifying
 the secondary range from which to allocate the IP CIDR range for this alias IP
 range.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2828,8 +2828,8 @@ range.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The IP CIDR range represented by this alias IP range.
-{{% /md %}}</dd>
+    <dd>The IP CIDR range represented by this alias IP range.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2837,16 +2837,16 @@ range.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The subnetwork secondary range name specifying
+    <dd>The subnetwork secondary range name specifying
 the secondary range from which to allocate the IP CIDR range for this alias IP
 range.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2855,8 +2855,8 @@ range.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The IP CIDR range represented by this alias IP range.
-{{% /md %}}</dd>
+    <dd>The IP CIDR range represented by this alias IP range.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2864,31 +2864,31 @@ range.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The subnetwork secondary range name specifying
+    <dd>The subnetwork secondary range name specifying
 the secondary range from which to allocate the IP CIDR range for this alias IP
 range.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstancescheduling">Get<wbr>Instance<wbr>Scheduling</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#GetInstanceScheduling">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#GetInstanceScheduling">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2897,9 +2897,9 @@ range.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the instance should be
+    <dd>Specifies if the instance should be
 restarted if it was terminated by Compute Engine (not a user).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2907,7 +2907,7 @@ restarted if it was terminated by Compute Engine (not a user).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceschedulingnodeaffinity">List&lt;Get<wbr>Instance<wbr>Scheduling<wbr>Node<wbr>Affinity<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2915,10 +2915,10 @@ restarted if it was terminated by Compute Engine (not a user).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Describes maintenance behavior for the
+    <dd>Describes maintenance behavior for the
 instance. One of `MIGRATE` or `TERMINATE`, for more info, read
 [here](https://cloud.google.com/compute/docs/instances/setting-instance-scheduling-options)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2926,14 +2926,14 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the instance is preemptible.
-{{% /md %}}</dd>
+    <dd>Whether the instance is preemptible.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2942,9 +2942,9 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the instance should be
+    <dd>Specifies if the instance should be
 restarted if it was terminated by Compute Engine (not a user).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2952,7 +2952,7 @@ restarted if it was terminated by Compute Engine (not a user).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceschedulingnodeaffinity">[]Get<wbr>Instance<wbr>Scheduling<wbr>Node<wbr>Affinity</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -2960,10 +2960,10 @@ restarted if it was terminated by Compute Engine (not a user).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Describes maintenance behavior for the
+    <dd>Describes maintenance behavior for the
 instance. One of `MIGRATE` or `TERMINATE`, for more info, read
 [here](https://cloud.google.com/compute/docs/instances/setting-instance-scheduling-options)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2971,14 +2971,14 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the instance is preemptible.
-{{% /md %}}</dd>
+    <dd>Whether the instance is preemptible.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2987,9 +2987,9 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the instance should be
+    <dd>Specifies if the instance should be
 restarted if it was terminated by Compute Engine (not a user).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2997,7 +2997,7 @@ restarted if it was terminated by Compute Engine (not a user).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceschedulingnodeaffinity">Get<wbr>Instance<wbr>Scheduling<wbr>Node<wbr>Affinity[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3005,10 +3005,10 @@ restarted if it was terminated by Compute Engine (not a user).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Describes maintenance behavior for the
+    <dd>Describes maintenance behavior for the
 instance. One of `MIGRATE` or `TERMINATE`, for more info, read
 [here](https://cloud.google.com/compute/docs/instances/setting-instance-scheduling-options)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3016,14 +3016,14 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Whether the instance is preemptible.
-{{% /md %}}</dd>
+    <dd>Whether the instance is preemptible.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3032,9 +3032,9 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if the instance should be
+    <dd>Specifies if the instance should be
 restarted if it was terminated by Compute Engine (not a user).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3042,7 +3042,7 @@ restarted if it was terminated by Compute Engine (not a user).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#getinstanceschedulingnodeaffinity">List[Get<wbr>Instance<wbr>Scheduling<wbr>Node<wbr>Affinity]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3050,10 +3050,10 @@ restarted if it was terminated by Compute Engine (not a user).
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Describes maintenance behavior for the
+    <dd>Describes maintenance behavior for the
 instance. One of `MIGRATE` or `TERMINATE`, for more info, read
 [here](https://cloud.google.com/compute/docs/instances/setting-instance-scheduling-options)
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3061,29 +3061,29 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Whether the instance is preemptible.
-{{% /md %}}</dd>
+    <dd>Whether the instance is preemptible.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstanceschedulingnodeaffinity">Get<wbr>Instance<wbr>Scheduling<wbr>Node<wbr>Affinity</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#GetInstanceSchedulingNodeAffinity">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#GetInstanceSchedulingNodeAffinity">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3092,7 +3092,7 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3100,7 +3100,7 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3108,13 +3108,13 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3123,7 +3123,7 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3131,7 +3131,7 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3139,13 +3139,13 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3154,7 +3154,7 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3162,7 +3162,7 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3170,13 +3170,13 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3185,7 +3185,7 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3193,7 +3193,7 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3201,28 +3201,28 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstancescratchdisk">Get<wbr>Instance<wbr>Scratch<wbr>Disk</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#GetInstanceScratchDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#GetInstanceScratchDisk">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3231,14 +3231,14 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The disk interface used for attaching this disk. One of `SCSI` or `NVME`.
-{{% /md %}}</dd>
+    <dd>The disk interface used for attaching this disk. One of `SCSI` or `NVME`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3247,14 +3247,14 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The disk interface used for attaching this disk. One of `SCSI` or `NVME`.
-{{% /md %}}</dd>
+    <dd>The disk interface used for attaching this disk. One of `SCSI` or `NVME`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3263,14 +3263,14 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The disk interface used for attaching this disk. One of `SCSI` or `NVME`.
-{{% /md %}}</dd>
+    <dd>The disk interface used for attaching this disk. One of `SCSI` or `NVME`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3279,29 +3279,29 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The disk interface used for attaching this disk. One of `SCSI` or `NVME`.
-{{% /md %}}</dd>
+    <dd>The disk interface used for attaching this disk. One of `SCSI` or `NVME`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstanceserviceaccount">Get<wbr>Instance<wbr>Service<wbr>Account</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#GetInstanceServiceAccount">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#GetInstanceServiceAccount">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3310,8 +3310,8 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The service account e-mail address.
-{{% /md %}}</dd>
+    <dd>The service account e-mail address.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3319,14 +3319,14 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of service scopes.
-{{% /md %}}</dd>
+    <dd>A list of service scopes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3335,8 +3335,8 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service account e-mail address.
-{{% /md %}}</dd>
+    <dd>The service account e-mail address.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3344,14 +3344,14 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of service scopes.
-{{% /md %}}</dd>
+    <dd>A list of service scopes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3360,8 +3360,8 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The service account e-mail address.
-{{% /md %}}</dd>
+    <dd>The service account e-mail address.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3369,14 +3369,14 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of service scopes.
-{{% /md %}}</dd>
+    <dd>A list of service scopes.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3385,8 +3385,8 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The service account e-mail address.
-{{% /md %}}</dd>
+    <dd>The service account e-mail address.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -3394,29 +3394,29 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of service scopes.
-{{% /md %}}</dd>
+    <dd>A list of service scopes.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="getinstanceshieldedinstanceconfig">Get<wbr>Instance<wbr>Shielded<wbr>Instance<wbr>Config</h4>
-{{% choosable language nodejs %}}
+
 > See the   <a href="/docs/reference/pkg/nodejs/pulumi/gcp/types/output/#GetInstanceShieldedInstanceConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the   <a href="https://pkg.go.dev/github.com/pulumi/pulumi-gcp/sdk/v3/go/gcp/compute?tab=doc#GetInstanceShieldedInstanceConfig">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3425,7 +3425,7 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3433,7 +3433,7 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3441,13 +3441,13 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3456,7 +3456,7 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3464,7 +3464,7 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3472,13 +3472,13 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3487,7 +3487,7 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3495,7 +3495,7 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3503,13 +3503,13 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -3518,7 +3518,7 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3526,7 +3526,7 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-required"
             title="Required">
@@ -3534,10 +3534,10 @@ instance. One of `MIGRATE` or `TERMINATE`, for more info, read
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

@@ -14,26 +14,26 @@ meta_desc: "Explore the SelfSignedCert resource of the TLS package, including ex
 
 
 ## Create a SelfSignedCert Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/tls/#SelfSignedCert">SelfSignedCert</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/tls/#SelfSignedCertArgs">SelfSignedCertArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">SelfSignedCert</span><span class="p">(resource_name, opts=None, </span>allowed_uses=None<span class="p">, </span>dns_names=None<span class="p">, </span>early_renewal_hours=None<span class="p">, </span>ip_addresses=None<span class="p">, </span>is_ca_certificate=None<span class="p">, </span>key_algorithm=None<span class="p">, </span>private_key_pem=None<span class="p">, </span>set_subject_key_id=None<span class="p">, </span>subjects=None<span class="p">, </span>uris=None<span class="p">, </span>validity_period_hours=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewSelfSignedCert<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-tls/sdk/v2/go/tls/?tab=doc#SelfSignedCertArgs">SelfSignedCertArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-tls/sdk/v2/go/tls/?tab=doc#SelfSignedCert">SelfSignedCert</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Tls/Pulumi.Tls.SelfSignedCert.html">SelfSignedCert</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Tls/Pulumi.Tls.SelfSignedCertArgs.html">SelfSignedCertArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -70,9 +70,9 @@ meta_desc: "Explore the SelfSignedCert resource of the TLS package, including ex
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -90,9 +90,9 @@ meta_desc: "Explore the SelfSignedCert resource of the TLS package, including ex
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -139,9 +139,9 @@ meta_desc: "Explore the SelfSignedCert resource of the TLS package, including ex
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -178,7 +178,7 @@ meta_desc: "Explore the SelfSignedCert resource of the TLS package, including ex
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## SelfSignedCert Resource Properties {#properties}
 
@@ -191,7 +191,7 @@ The SelfSignedCert resource accepts the following [input]({{< relref "/docs/intr
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -200,9 +200,9 @@ The SelfSignedCert resource accepts the following [input]({{< relref "/docs/intr
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of keywords each describing a use that is permitted
+    <dd>List of keywords each describing a use that is permitted
 for the issued certificate. The valid keywords are listed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -210,9 +210,9 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the algorithm for the key provided
+    <dd>The name of the algorithm for the key provided
 in `private_key_pem`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -220,8 +220,8 @@ in `private_key_pem`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}PEM-encoded private key that the certificate will belong to
-{{% /md %}}</dd>
+    <dd>PEM-encoded private key that the certificate will belong to
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -229,10 +229,10 @@ in `private_key_pem`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#selfsignedcertsubject">List&lt;Self<wbr>Signed<wbr>Cert<wbr>Subject<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The subject for which a certificate is being requested.
+    <dd>The subject for which a certificate is being requested.
 This is a nested configuration block whose structure matches the
 corresponding block for `tls..CertRequest`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -240,9 +240,9 @@ corresponding block for `tls..CertRequest`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of hours after initial issuing that the
+    <dd>The number of hours after initial issuing that the
 certificate will become invalid.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -250,8 +250,8 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of DNS names for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of DNS names for which a certificate is being requested.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -259,8 +259,8 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of hours before the certificates expiry when a new certificate will be generated
-{{% /md %}}</dd>
+    <dd>Number of hours before the certificates expiry when a new certificate will be generated
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -268,8 +268,8 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of IP addresses for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of IP addresses for which a certificate is being requested.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -277,10 +277,10 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether the CA flag will be set in the
+    <dd>Boolean controlling whether the CA flag will be set in the
 generated certificate. Defaults to `false`, meaning that the certificate does not represent
 a certificate authority.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -288,10 +288,10 @@ a certificate authority.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the certificate will include
+    <dd>If `true`, the certificate will include
 the subject key identifier. Defaults to `false`, in which case the subject
 key identifier is not set at all.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -299,14 +299,14 @@ key identifier is not set at all.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of URIs for which a certificate is being requested.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -315,9 +315,9 @@ key identifier is not set at all.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of keywords each describing a use that is permitted
+    <dd>List of keywords each describing a use that is permitted
 for the issued certificate. The valid keywords are listed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -325,9 +325,9 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the algorithm for the key provided
+    <dd>The name of the algorithm for the key provided
 in `private_key_pem`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -335,8 +335,8 @@ in `private_key_pem`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}PEM-encoded private key that the certificate will belong to
-{{% /md %}}</dd>
+    <dd>PEM-encoded private key that the certificate will belong to
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -344,10 +344,10 @@ in `private_key_pem`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#selfsignedcertsubject">[]Self<wbr>Signed<wbr>Cert<wbr>Subject</a></span>
     </dt>
-    <dd>{{% md %}}The subject for which a certificate is being requested.
+    <dd>The subject for which a certificate is being requested.
 This is a nested configuration block whose structure matches the
 corresponding block for `tls..CertRequest`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -355,9 +355,9 @@ corresponding block for `tls..CertRequest`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of hours after initial issuing that the
+    <dd>The number of hours after initial issuing that the
 certificate will become invalid.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -365,8 +365,8 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of DNS names for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of DNS names for which a certificate is being requested.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -374,8 +374,8 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of hours before the certificates expiry when a new certificate will be generated
-{{% /md %}}</dd>
+    <dd>Number of hours before the certificates expiry when a new certificate will be generated
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -383,8 +383,8 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of IP addresses for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of IP addresses for which a certificate is being requested.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -392,10 +392,10 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether the CA flag will be set in the
+    <dd>Boolean controlling whether the CA flag will be set in the
 generated certificate. Defaults to `false`, meaning that the certificate does not represent
 a certificate authority.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -403,10 +403,10 @@ a certificate authority.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the certificate will include
+    <dd>If `true`, the certificate will include
 the subject key identifier. Defaults to `false`, in which case the subject
 key identifier is not set at all.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -414,14 +414,14 @@ key identifier is not set at all.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of URIs for which a certificate is being requested.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -430,9 +430,9 @@ key identifier is not set at all.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of keywords each describing a use that is permitted
+    <dd>List of keywords each describing a use that is permitted
 for the issued certificate. The valid keywords are listed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -440,9 +440,9 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the algorithm for the key provided
+    <dd>The name of the algorithm for the key provided
 in `private_key_pem`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -450,8 +450,8 @@ in `private_key_pem`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}PEM-encoded private key that the certificate will belong to
-{{% /md %}}</dd>
+    <dd>PEM-encoded private key that the certificate will belong to
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -459,10 +459,10 @@ in `private_key_pem`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#selfsignedcertsubject">Self<wbr>Signed<wbr>Cert<wbr>Subject[]</a></span>
     </dt>
-    <dd>{{% md %}}The subject for which a certificate is being requested.
+    <dd>The subject for which a certificate is being requested.
 This is a nested configuration block whose structure matches the
 corresponding block for `tls..CertRequest`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -470,9 +470,9 @@ corresponding block for `tls..CertRequest`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of hours after initial issuing that the
+    <dd>The number of hours after initial issuing that the
 certificate will become invalid.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -480,8 +480,8 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of DNS names for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of DNS names for which a certificate is being requested.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -489,8 +489,8 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of hours before the certificates expiry when a new certificate will be generated
-{{% /md %}}</dd>
+    <dd>Number of hours before the certificates expiry when a new certificate will be generated
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -498,8 +498,8 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of IP addresses for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of IP addresses for which a certificate is being requested.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -507,10 +507,10 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether the CA flag will be set in the
+    <dd>Boolean controlling whether the CA flag will be set in the
 generated certificate. Defaults to `false`, meaning that the certificate does not represent
 a certificate authority.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -518,10 +518,10 @@ a certificate authority.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the certificate will include
+    <dd>If `true`, the certificate will include
 the subject key identifier. Defaults to `false`, in which case the subject
 key identifier is not set at all.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -529,14 +529,14 @@ key identifier is not set at all.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of URIs for which a certificate is being requested.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -545,9 +545,9 @@ key identifier is not set at all.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of keywords each describing a use that is permitted
+    <dd>List of keywords each describing a use that is permitted
 for the issued certificate. The valid keywords are listed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -555,9 +555,9 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the algorithm for the key provided
+    <dd>The name of the algorithm for the key provided
 in `private_key_pem`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -565,8 +565,8 @@ in `private_key_pem`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}PEM-encoded private key that the certificate will belong to
-{{% /md %}}</dd>
+    <dd>PEM-encoded private key that the certificate will belong to
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -574,10 +574,10 @@ in `private_key_pem`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#selfsignedcertsubject">List[Self<wbr>Signed<wbr>Cert<wbr>Subject]</a></span>
     </dt>
-    <dd>{{% md %}}The subject for which a certificate is being requested.
+    <dd>The subject for which a certificate is being requested.
 This is a nested configuration block whose structure matches the
 corresponding block for `tls..CertRequest`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -585,9 +585,9 @@ corresponding block for `tls..CertRequest`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of hours after initial issuing that the
+    <dd>The number of hours after initial issuing that the
 certificate will become invalid.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -595,8 +595,8 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of DNS names for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of DNS names for which a certificate is being requested.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -604,8 +604,8 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of hours before the certificates expiry when a new certificate will be generated
-{{% /md %}}</dd>
+    <dd>Number of hours before the certificates expiry when a new certificate will be generated
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -613,8 +613,8 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of IP addresses for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of IP addresses for which a certificate is being requested.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -622,10 +622,10 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether the CA flag will be set in the
+    <dd>Boolean controlling whether the CA flag will be set in the
 generated certificate. Defaults to `false`, meaning that the certificate does not represent
 a certificate authority.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -633,10 +633,10 @@ a certificate authority.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the certificate will include
+    <dd>If `true`, the certificate will include
 the subject key identifier. Defaults to `false`, in which case the subject
 key identifier is not set at all.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -644,11 +644,11 @@ key identifier is not set at all.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of URIs for which a certificate is being requested.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -662,7 +662,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -671,8 +671,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate data in PEM format.
-{{% /md %}}</dd>
+    <dd>The certificate data in PEM format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -680,7 +680,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -688,7 +688,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -696,9 +696,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time until which the certificate is invalid, as an
+    <dd>The time until which the certificate is invalid, as an
 [RFC3339](https://tools.ietf.org/html/rfc3339) timestamp.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -706,15 +706,15 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time after which the certificate is valid, as an
+    <dd>The time after which the certificate is valid, as an
 [RFC3339](https://tools.ietf.org/html/rfc3339) timestamp.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -723,8 +723,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate data in PEM format.
-{{% /md %}}</dd>
+    <dd>The certificate data in PEM format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -732,7 +732,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -740,7 +740,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -748,9 +748,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time until which the certificate is invalid, as an
+    <dd>The time until which the certificate is invalid, as an
 [RFC3339](https://tools.ietf.org/html/rfc3339) timestamp.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -758,15 +758,15 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time after which the certificate is valid, as an
+    <dd>The time after which the certificate is valid, as an
 [RFC3339](https://tools.ietf.org/html/rfc3339) timestamp.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -775,8 +775,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate data in PEM format.
-{{% /md %}}</dd>
+    <dd>The certificate data in PEM format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -784,7 +784,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -792,7 +792,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -800,9 +800,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time until which the certificate is invalid, as an
+    <dd>The time until which the certificate is invalid, as an
 [RFC3339](https://tools.ietf.org/html/rfc3339) timestamp.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -810,15 +810,15 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time after which the certificate is valid, as an
+    <dd>The time after which the certificate is valid, as an
 [RFC3339](https://tools.ietf.org/html/rfc3339) timestamp.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -827,8 +827,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The certificate data in PEM format.
-{{% /md %}}</dd>
+    <dd>The certificate data in PEM format.
+</dd>
 
     <dt class="property-"
             title="">
@@ -836,7 +836,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -844,7 +844,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-"
             title="">
@@ -852,9 +852,9 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time until which the certificate is invalid, as an
+    <dd>The time until which the certificate is invalid, as an
 [RFC3339](https://tools.ietf.org/html/rfc3339) timestamp.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-"
             title="">
@@ -862,12 +862,12 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time after which the certificate is valid, as an
+    <dd>The time after which the certificate is valid, as an
 [RFC3339](https://tools.ietf.org/html/rfc3339) timestamp.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -878,25 +878,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing SelfSignedCert Resource {#look-up}
 
 Get an existing SelfSignedCert resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/tls/#SelfSignedCertState">SelfSignedCertState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/tls/#SelfSignedCert">SelfSignedCert</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>allowed_uses=None<span class="p">, </span>cert_pem=None<span class="p">, </span>dns_names=None<span class="p">, </span>early_renewal_hours=None<span class="p">, </span>ip_addresses=None<span class="p">, </span>is_ca_certificate=None<span class="p">, </span>key_algorithm=None<span class="p">, </span>private_key_pem=None<span class="p">, </span>ready_for_renewal=None<span class="p">, </span>set_subject_key_id=None<span class="p">, </span>subjects=None<span class="p">, </span>uris=None<span class="p">, </span>validity_end_time=None<span class="p">, </span>validity_period_hours=None<span class="p">, </span>validity_start_time=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetSelfSignedCert<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-tls/sdk/v2/go/tls/?tab=doc#SelfSignedCertState">SelfSignedCertState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-tls/sdk/v2/go/tls/?tab=doc#SelfSignedCert">SelfSignedCert</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Tls/Pulumi.Tls.SelfSignedCert.html">SelfSignedCert</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Tls/Pulumi.Tls..SelfSignedCertState.html">SelfSignedCertState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -921,9 +921,9 @@ Get an existing SelfSignedCert resource's state with the given name, ID, and opt
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -936,36 +936,9 @@ Get an existing SelfSignedCert resource's state with the given name, ID, and opt
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -990,13 +963,40 @@ Get an existing SelfSignedCert resource's state with the given name, ID, and opt
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1005,9 +1005,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of keywords each describing a use that is permitted
+    <dd>List of keywords each describing a use that is permitted
 for the issued certificate. The valid keywords are listed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1015,8 +1015,8 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate data in PEM format.
-{{% /md %}}</dd>
+    <dd>The certificate data in PEM format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1024,8 +1024,8 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of DNS names for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of DNS names for which a certificate is being requested.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1033,8 +1033,8 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of hours before the certificates expiry when a new certificate will be generated
-{{% /md %}}</dd>
+    <dd>Number of hours before the certificates expiry when a new certificate will be generated
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1042,8 +1042,8 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of IP addresses for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of IP addresses for which a certificate is being requested.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1051,10 +1051,10 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether the CA flag will be set in the
+    <dd>Boolean controlling whether the CA flag will be set in the
 generated certificate. Defaults to `false`, meaning that the certificate does not represent
 a certificate authority.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1062,9 +1062,9 @@ a certificate authority.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the algorithm for the key provided
+    <dd>The name of the algorithm for the key provided
 in `private_key_pem`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1072,8 +1072,8 @@ in `private_key_pem`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}PEM-encoded private key that the certificate will belong to
-{{% /md %}}</dd>
+    <dd>PEM-encoded private key that the certificate will belong to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1081,7 +1081,7 @@ in `private_key_pem`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1089,10 +1089,10 @@ in `private_key_pem`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the certificate will include
+    <dd>If `true`, the certificate will include
 the subject key identifier. Defaults to `false`, in which case the subject
 key identifier is not set at all.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1100,10 +1100,10 @@ key identifier is not set at all.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#selfsignedcertsubject">List&lt;Self<wbr>Signed<wbr>Cert<wbr>Subject<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}The subject for which a certificate is being requested.
+    <dd>The subject for which a certificate is being requested.
 This is a nested configuration block whose structure matches the
 corresponding block for `tls..CertRequest`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1111,8 +1111,8 @@ corresponding block for `tls..CertRequest`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of URIs for which a certificate is being requested.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1120,9 +1120,9 @@ corresponding block for `tls..CertRequest`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time until which the certificate is invalid, as an
+    <dd>The time until which the certificate is invalid, as an
 [RFC3339](https://tools.ietf.org/html/rfc3339) timestamp.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1130,9 +1130,9 @@ corresponding block for `tls..CertRequest`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of hours after initial issuing that the
+    <dd>The number of hours after initial issuing that the
 certificate will become invalid.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1140,15 +1140,15 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The time after which the certificate is valid, as an
+    <dd>The time after which the certificate is valid, as an
 [RFC3339](https://tools.ietf.org/html/rfc3339) timestamp.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1157,9 +1157,9 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of keywords each describing a use that is permitted
+    <dd>List of keywords each describing a use that is permitted
 for the issued certificate. The valid keywords are listed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1167,8 +1167,8 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate data in PEM format.
-{{% /md %}}</dd>
+    <dd>The certificate data in PEM format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1176,8 +1176,8 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of DNS names for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of DNS names for which a certificate is being requested.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1185,8 +1185,8 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Number of hours before the certificates expiry when a new certificate will be generated
-{{% /md %}}</dd>
+    <dd>Number of hours before the certificates expiry when a new certificate will be generated
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1194,8 +1194,8 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of IP addresses for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of IP addresses for which a certificate is being requested.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1203,10 +1203,10 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether the CA flag will be set in the
+    <dd>Boolean controlling whether the CA flag will be set in the
 generated certificate. Defaults to `false`, meaning that the certificate does not represent
 a certificate authority.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1214,9 +1214,9 @@ a certificate authority.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the algorithm for the key provided
+    <dd>The name of the algorithm for the key provided
 in `private_key_pem`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1224,8 +1224,8 @@ in `private_key_pem`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}PEM-encoded private key that the certificate will belong to
-{{% /md %}}</dd>
+    <dd>PEM-encoded private key that the certificate will belong to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1233,7 +1233,7 @@ in `private_key_pem`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1241,10 +1241,10 @@ in `private_key_pem`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the certificate will include
+    <dd>If `true`, the certificate will include
 the subject key identifier. Defaults to `false`, in which case the subject
 key identifier is not set at all.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1252,10 +1252,10 @@ key identifier is not set at all.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#selfsignedcertsubject">[]Self<wbr>Signed<wbr>Cert<wbr>Subject</a></span>
     </dt>
-    <dd>{{% md %}}The subject for which a certificate is being requested.
+    <dd>The subject for which a certificate is being requested.
 This is a nested configuration block whose structure matches the
 corresponding block for `tls..CertRequest`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1263,8 +1263,8 @@ corresponding block for `tls..CertRequest`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of URIs for which a certificate is being requested.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1272,9 +1272,9 @@ corresponding block for `tls..CertRequest`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time until which the certificate is invalid, as an
+    <dd>The time until which the certificate is invalid, as an
 [RFC3339](https://tools.ietf.org/html/rfc3339) timestamp.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1282,9 +1282,9 @@ corresponding block for `tls..CertRequest`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of hours after initial issuing that the
+    <dd>The number of hours after initial issuing that the
 certificate will become invalid.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1292,15 +1292,15 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time after which the certificate is valid, as an
+    <dd>The time after which the certificate is valid, as an
 [RFC3339](https://tools.ietf.org/html/rfc3339) timestamp.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1309,9 +1309,9 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of keywords each describing a use that is permitted
+    <dd>List of keywords each describing a use that is permitted
 for the issued certificate. The valid keywords are listed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1319,8 +1319,8 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The certificate data in PEM format.
-{{% /md %}}</dd>
+    <dd>The certificate data in PEM format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1328,8 +1328,8 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of DNS names for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of DNS names for which a certificate is being requested.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1337,8 +1337,8 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Number of hours before the certificates expiry when a new certificate will be generated
-{{% /md %}}</dd>
+    <dd>Number of hours before the certificates expiry when a new certificate will be generated
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1346,8 +1346,8 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of IP addresses for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of IP addresses for which a certificate is being requested.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1355,10 +1355,10 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether the CA flag will be set in the
+    <dd>Boolean controlling whether the CA flag will be set in the
 generated certificate. Defaults to `false`, meaning that the certificate does not represent
 a certificate authority.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1366,9 +1366,9 @@ a certificate authority.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the algorithm for the key provided
+    <dd>The name of the algorithm for the key provided
 in `private_key_pem`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1376,8 +1376,8 @@ in `private_key_pem`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}PEM-encoded private key that the certificate will belong to
-{{% /md %}}</dd>
+    <dd>PEM-encoded private key that the certificate will belong to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1385,7 +1385,7 @@ in `private_key_pem`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1393,10 +1393,10 @@ in `private_key_pem`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the certificate will include
+    <dd>If `true`, the certificate will include
 the subject key identifier. Defaults to `false`, in which case the subject
 key identifier is not set at all.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1404,10 +1404,10 @@ key identifier is not set at all.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#selfsignedcertsubject">Self<wbr>Signed<wbr>Cert<wbr>Subject[]</a></span>
     </dt>
-    <dd>{{% md %}}The subject for which a certificate is being requested.
+    <dd>The subject for which a certificate is being requested.
 This is a nested configuration block whose structure matches the
 corresponding block for `tls..CertRequest`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1415,8 +1415,8 @@ corresponding block for `tls..CertRequest`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of URIs for which a certificate is being requested.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1424,9 +1424,9 @@ corresponding block for `tls..CertRequest`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time until which the certificate is invalid, as an
+    <dd>The time until which the certificate is invalid, as an
 [RFC3339](https://tools.ietf.org/html/rfc3339) timestamp.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1434,9 +1434,9 @@ corresponding block for `tls..CertRequest`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of hours after initial issuing that the
+    <dd>The number of hours after initial issuing that the
 certificate will become invalid.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1444,15 +1444,15 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The time after which the certificate is valid, as an
+    <dd>The time after which the certificate is valid, as an
 [RFC3339](https://tools.ietf.org/html/rfc3339) timestamp.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1461,9 +1461,9 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of keywords each describing a use that is permitted
+    <dd>List of keywords each describing a use that is permitted
 for the issued certificate. The valid keywords are listed below.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1471,8 +1471,8 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The certificate data in PEM format.
-{{% /md %}}</dd>
+    <dd>The certificate data in PEM format.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1480,8 +1480,8 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of DNS names for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of DNS names for which a certificate is being requested.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1489,8 +1489,8 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Number of hours before the certificates expiry when a new certificate will be generated
-{{% /md %}}</dd>
+    <dd>Number of hours before the certificates expiry when a new certificate will be generated
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1498,8 +1498,8 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of IP addresses for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of IP addresses for which a certificate is being requested.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1507,10 +1507,10 @@ for the issued certificate. The valid keywords are listed below.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean controlling whether the CA flag will be set in the
+    <dd>Boolean controlling whether the CA flag will be set in the
 generated certificate. Defaults to `false`, meaning that the certificate does not represent
 a certificate authority.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1518,9 +1518,9 @@ a certificate authority.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the algorithm for the key provided
+    <dd>The name of the algorithm for the key provided
 in `private_key_pem`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1528,8 +1528,8 @@ in `private_key_pem`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}PEM-encoded private key that the certificate will belong to
-{{% /md %}}</dd>
+    <dd>PEM-encoded private key that the certificate will belong to
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1537,7 +1537,7 @@ in `private_key_pem`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1545,10 +1545,10 @@ in `private_key_pem`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}If `true`, the certificate will include
+    <dd>If `true`, the certificate will include
 the subject key identifier. Defaults to `false`, in which case the subject
 key identifier is not set at all.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1556,10 +1556,10 @@ key identifier is not set at all.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#selfsignedcertsubject">List[Self<wbr>Signed<wbr>Cert<wbr>Subject]</a></span>
     </dt>
-    <dd>{{% md %}}The subject for which a certificate is being requested.
+    <dd>The subject for which a certificate is being requested.
 This is a nested configuration block whose structure matches the
 corresponding block for `tls..CertRequest`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1567,8 +1567,8 @@ corresponding block for `tls..CertRequest`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of URIs for which a certificate is being requested.
-{{% /md %}}</dd>
+    <dd>List of URIs for which a certificate is being requested.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1576,9 +1576,9 @@ corresponding block for `tls..CertRequest`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time until which the certificate is invalid, as an
+    <dd>The time until which the certificate is invalid, as an
 [RFC3339](https://tools.ietf.org/html/rfc3339) timestamp.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1586,9 +1586,9 @@ corresponding block for `tls..CertRequest`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of hours after initial issuing that the
+    <dd>The number of hours after initial issuing that the
 certificate will become invalid.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1596,12 +1596,12 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The time after which the certificate is valid, as an
+    <dd>The time after which the certificate is valid, as an
 [RFC3339](https://tools.ietf.org/html/rfc3339) timestamp.
-{{% /md %}}</dd>
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1616,18 +1616,18 @@ certificate will become invalid.
 
 
 <h4 id="selfsignedcertsubject">Self<wbr>Signed<wbr>Cert<wbr>Subject</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/tls/types/input/#SelfSignedCertSubject">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/tls/types/output/#SelfSignedCertSubject">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-tls/sdk/v2/go/tls/?tab=doc#SelfSignedCertSubjectArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-tls/sdk/v2/go/tls/?tab=doc#SelfSignedCertSubjectOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1636,7 +1636,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1644,7 +1644,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1652,7 +1652,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1660,7 +1660,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1668,7 +1668,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1676,7 +1676,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1684,7 +1684,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1692,7 +1692,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1700,13 +1700,13 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1715,7 +1715,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1723,7 +1723,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1731,7 +1731,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1739,7 +1739,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1747,7 +1747,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1755,7 +1755,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1763,7 +1763,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1771,7 +1771,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1779,13 +1779,13 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1794,7 +1794,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1802,7 +1802,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1810,7 +1810,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1818,7 +1818,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1826,7 +1826,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1834,7 +1834,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1842,7 +1842,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1850,7 +1850,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1858,13 +1858,13 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1873,7 +1873,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1881,7 +1881,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1889,7 +1889,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1897,7 +1897,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1905,7 +1905,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1913,7 +1913,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1921,7 +1921,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1929,7 +1929,7 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1937,10 +1937,10 @@ certificate will become invalid.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}{{% /md %}}</dd>
+    <dd></dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

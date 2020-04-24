@@ -18,26 +18,26 @@ Manages an EventGrid Event Subscription
 
 
 ## Create a EventSubscription Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/eventgrid/#EventSubscription">EventSubscription</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/eventgrid/#EventSubscriptionArgs">EventSubscriptionArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">EventSubscription</span><span class="p">(resource_name, opts=None, </span>event_delivery_schema=None<span class="p">, </span>eventhub_endpoint=None<span class="p">, </span>hybrid_connection_endpoint=None<span class="p">, </span>included_event_types=None<span class="p">, </span>labels=None<span class="p">, </span>name=None<span class="p">, </span>retry_policy=None<span class="p">, </span>scope=None<span class="p">, </span>storage_blob_dead_letter_destination=None<span class="p">, </span>storage_queue_endpoint=None<span class="p">, </span>subject_filter=None<span class="p">, </span>topic_name=None<span class="p">, </span>webhook_endpoint=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewEventSubscription<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/eventgrid?tab=doc#EventSubscriptionArgs">EventSubscriptionArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/eventgrid?tab=doc#EventSubscription">EventSubscription</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.EventGrid.EventSubscription.html">EventSubscription</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.EventGrid.EventSubscriptionArgs.html">EventSubscriptionArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ Manages an EventGrid Event Subscription
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ Manages an EventGrid Event Subscription
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ Manages an EventGrid Event Subscription
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ Manages an EventGrid Event Subscription
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## EventSubscription Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -204,8 +204,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the scope at which the EventGrid Event Subscription should be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the scope at which the EventGrid Event Subscription should be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -213,8 +213,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the event delivery schema for the event subscription. Possible values include: `EventGridSchema`, `CloudEventV01Schema`, `CustomInputSchema`.
-{{% /md %}}</dd>
+    <dd>Specifies the event delivery schema for the event subscription. Possible values include: `EventGridSchema`, `CloudEventV01Schema`, `CustomInputSchema`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -222,8 +222,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptioneventhubendpoint">Event<wbr>Subscription<wbr>Eventhub<wbr>Endpoint<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `eventhub_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `eventhub_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -231,8 +231,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionhybridconnectionendpoint">Event<wbr>Subscription<wbr>Hybrid<wbr>Connection<wbr>Endpoint<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `hybrid_connection_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `hybrid_connection_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -240,8 +240,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of applicable event types that need to be part of the event subscription.
-{{% /md %}}</dd>
+    <dd>A list of applicable event types that need to be part of the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -249,8 +249,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of labels to assign to the event subscription.
-{{% /md %}}</dd>
+    <dd>A list of labels to assign to the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -258,8 +258,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the EventGrid Event Subscription resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the EventGrid Event Subscription resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,8 +267,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionretrypolicy">Event<wbr>Subscription<wbr>Retry<wbr>Policy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `retry_policy` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `retry_policy` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -276,8 +276,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionstorageblobdeadletterdestination">Event<wbr>Subscription<wbr>Storage<wbr>Blob<wbr>Dead<wbr>Letter<wbr>Destination<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_blob_dead_letter_destination` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_blob_dead_letter_destination` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -285,8 +285,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionstoragequeueendpoint">Event<wbr>Subscription<wbr>Storage<wbr>Queue<wbr>Endpoint<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_queue_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_queue_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -294,8 +294,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionsubjectfilter">Event<wbr>Subscription<wbr>Subject<wbr>Filter<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `subject_filter` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `subject_filter` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -303,8 +303,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the topic to associate with the event subscription.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the topic to associate with the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -312,14 +312,14 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionwebhookendpoint">Event<wbr>Subscription<wbr>Webhook<wbr>Endpoint<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `webhook_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `webhook_endpoint` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -328,8 +328,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the scope at which the EventGrid Event Subscription should be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the scope at which the EventGrid Event Subscription should be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -337,8 +337,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the event delivery schema for the event subscription. Possible values include: `EventGridSchema`, `CloudEventV01Schema`, `CustomInputSchema`.
-{{% /md %}}</dd>
+    <dd>Specifies the event delivery schema for the event subscription. Possible values include: `EventGridSchema`, `CloudEventV01Schema`, `CustomInputSchema`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -346,8 +346,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptioneventhubendpoint">Event<wbr>Subscription<wbr>Eventhub<wbr>Endpoint</a></span>
     </dt>
-    <dd>{{% md %}}A `eventhub_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `eventhub_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -355,8 +355,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionhybridconnectionendpoint">Event<wbr>Subscription<wbr>Hybrid<wbr>Connection<wbr>Endpoint</a></span>
     </dt>
-    <dd>{{% md %}}A `hybrid_connection_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `hybrid_connection_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -364,8 +364,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of applicable event types that need to be part of the event subscription.
-{{% /md %}}</dd>
+    <dd>A list of applicable event types that need to be part of the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -373,8 +373,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of labels to assign to the event subscription.
-{{% /md %}}</dd>
+    <dd>A list of labels to assign to the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -382,8 +382,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the EventGrid Event Subscription resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the EventGrid Event Subscription resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -391,8 +391,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionretrypolicy">Event<wbr>Subscription<wbr>Retry<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}A `retry_policy` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `retry_policy` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -400,8 +400,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionstorageblobdeadletterdestination">Event<wbr>Subscription<wbr>Storage<wbr>Blob<wbr>Dead<wbr>Letter<wbr>Destination</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_blob_dead_letter_destination` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_blob_dead_letter_destination` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -409,8 +409,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionstoragequeueendpoint">Event<wbr>Subscription<wbr>Storage<wbr>Queue<wbr>Endpoint</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_queue_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_queue_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -418,8 +418,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionsubjectfilter">Event<wbr>Subscription<wbr>Subject<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}A `subject_filter` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `subject_filter` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -427,8 +427,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the topic to associate with the event subscription.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the topic to associate with the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -436,14 +436,14 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionwebhookendpoint">Event<wbr>Subscription<wbr>Webhook<wbr>Endpoint</a></span>
     </dt>
-    <dd>{{% md %}}A `webhook_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `webhook_endpoint` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -452,8 +452,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the scope at which the EventGrid Event Subscription should be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the scope at which the EventGrid Event Subscription should be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -461,8 +461,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the event delivery schema for the event subscription. Possible values include: `EventGridSchema`, `CloudEventV01Schema`, `CustomInputSchema`.
-{{% /md %}}</dd>
+    <dd>Specifies the event delivery schema for the event subscription. Possible values include: `EventGridSchema`, `CloudEventV01Schema`, `CustomInputSchema`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -470,8 +470,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptioneventhubendpoint">Event<wbr>Subscription<wbr>Eventhub<wbr>Endpoint</a></span>
     </dt>
-    <dd>{{% md %}}A `eventhub_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `eventhub_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -479,8 +479,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionhybridconnectionendpoint">Event<wbr>Subscription<wbr>Hybrid<wbr>Connection<wbr>Endpoint</a></span>
     </dt>
-    <dd>{{% md %}}A `hybrid_connection_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `hybrid_connection_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -488,8 +488,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of applicable event types that need to be part of the event subscription.
-{{% /md %}}</dd>
+    <dd>A list of applicable event types that need to be part of the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -497,8 +497,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of labels to assign to the event subscription.
-{{% /md %}}</dd>
+    <dd>A list of labels to assign to the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -506,8 +506,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the EventGrid Event Subscription resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the EventGrid Event Subscription resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -515,8 +515,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionretrypolicy">Event<wbr>Subscription<wbr>Retry<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}A `retry_policy` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `retry_policy` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -524,8 +524,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionstorageblobdeadletterdestination">Event<wbr>Subscription<wbr>Storage<wbr>Blob<wbr>Dead<wbr>Letter<wbr>Destination</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_blob_dead_letter_destination` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_blob_dead_letter_destination` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -533,8 +533,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionstoragequeueendpoint">Event<wbr>Subscription<wbr>Storage<wbr>Queue<wbr>Endpoint</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_queue_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_queue_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -542,8 +542,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionsubjectfilter">Event<wbr>Subscription<wbr>Subject<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}A `subject_filter` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `subject_filter` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -551,8 +551,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the topic to associate with the event subscription.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the topic to associate with the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -560,14 +560,14 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionwebhookendpoint">Event<wbr>Subscription<wbr>Webhook<wbr>Endpoint</a></span>
     </dt>
-    <dd>{{% md %}}A `webhook_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `webhook_endpoint` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -576,8 +576,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the scope at which the EventGrid Event Subscription should be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the scope at which the EventGrid Event Subscription should be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -585,8 +585,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the event delivery schema for the event subscription. Possible values include: `EventGridSchema`, `CloudEventV01Schema`, `CustomInputSchema`.
-{{% /md %}}</dd>
+    <dd>Specifies the event delivery schema for the event subscription. Possible values include: `EventGridSchema`, `CloudEventV01Schema`, `CustomInputSchema`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -594,8 +594,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptioneventhubendpoint">Dict[Event<wbr>Subscription<wbr>Eventhub<wbr>Endpoint]</a></span>
     </dt>
-    <dd>{{% md %}}A `eventhub_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `eventhub_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -603,8 +603,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionhybridconnectionendpoint">Dict[Event<wbr>Subscription<wbr>Hybrid<wbr>Connection<wbr>Endpoint]</a></span>
     </dt>
-    <dd>{{% md %}}A `hybrid_connection_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `hybrid_connection_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -612,8 +612,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of applicable event types that need to be part of the event subscription.
-{{% /md %}}</dd>
+    <dd>A list of applicable event types that need to be part of the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -621,8 +621,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of labels to assign to the event subscription.
-{{% /md %}}</dd>
+    <dd>A list of labels to assign to the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -630,8 +630,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the EventGrid Event Subscription resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the EventGrid Event Subscription resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -639,8 +639,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionretrypolicy">Dict[Event<wbr>Subscription<wbr>Retry<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}A `retry_policy` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `retry_policy` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -648,8 +648,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionstorageblobdeadletterdestination">Dict[Event<wbr>Subscription<wbr>Storage<wbr>Blob<wbr>Dead<wbr>Letter<wbr>Destination]</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_blob_dead_letter_destination` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_blob_dead_letter_destination` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -657,8 +657,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionstoragequeueendpoint">Dict[Event<wbr>Subscription<wbr>Storage<wbr>Queue<wbr>Endpoint]</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_queue_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_queue_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -666,8 +666,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionsubjectfilter">Dict[Event<wbr>Subscription<wbr>Subject<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}A `subject_filter` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `subject_filter` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -675,8 +675,8 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the topic to associate with the event subscription.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the topic to associate with the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -684,11 +684,11 @@ The EventSubscription resource accepts the following [input]({{< relref "/docs/i
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionwebhookendpoint">Dict[Event<wbr>Subscription<wbr>Webhook<wbr>Endpoint]</a></span>
     </dt>
-    <dd>{{% md %}}A `webhook_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `webhook_endpoint` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -702,7 +702,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -711,13 +711,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -726,13 +726,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -741,13 +741,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -756,10 +756,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -770,25 +770,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing EventSubscription Resource {#look-up}
 
 Get an existing EventSubscription resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/eventgrid/#EventSubscriptionState">EventSubscriptionState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/eventgrid/#EventSubscription">EventSubscription</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>event_delivery_schema=None<span class="p">, </span>eventhub_endpoint=None<span class="p">, </span>hybrid_connection_endpoint=None<span class="p">, </span>included_event_types=None<span class="p">, </span>labels=None<span class="p">, </span>name=None<span class="p">, </span>retry_policy=None<span class="p">, </span>scope=None<span class="p">, </span>storage_blob_dead_letter_destination=None<span class="p">, </span>storage_queue_endpoint=None<span class="p">, </span>subject_filter=None<span class="p">, </span>topic_name=None<span class="p">, </span>webhook_endpoint=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetEventSubscription<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/eventgrid?tab=doc#EventSubscriptionState">EventSubscriptionState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/eventgrid?tab=doc#EventSubscription">EventSubscription</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.EventGrid.EventSubscription.html">EventSubscription</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.EventGrid.EventSubscriptionState.html">EventSubscriptionState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -813,9 +813,9 @@ Get an existing EventSubscription resource's state with the given name, ID, and 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -828,36 +828,9 @@ Get an existing EventSubscription resource's state with the given name, ID, and 
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -882,13 +855,40 @@ Get an existing EventSubscription resource's state with the given name, ID, and 
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -897,8 +897,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the event delivery schema for the event subscription. Possible values include: `EventGridSchema`, `CloudEventV01Schema`, `CustomInputSchema`.
-{{% /md %}}</dd>
+    <dd>Specifies the event delivery schema for the event subscription. Possible values include: `EventGridSchema`, `CloudEventV01Schema`, `CustomInputSchema`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -906,8 +906,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptioneventhubendpoint">Event<wbr>Subscription<wbr>Eventhub<wbr>Endpoint<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `eventhub_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `eventhub_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -915,8 +915,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionhybridconnectionendpoint">Event<wbr>Subscription<wbr>Hybrid<wbr>Connection<wbr>Endpoint<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `hybrid_connection_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `hybrid_connection_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -924,8 +924,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of applicable event types that need to be part of the event subscription.
-{{% /md %}}</dd>
+    <dd>A list of applicable event types that need to be part of the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -933,8 +933,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of labels to assign to the event subscription.
-{{% /md %}}</dd>
+    <dd>A list of labels to assign to the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -942,8 +942,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the EventGrid Event Subscription resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the EventGrid Event Subscription resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -951,8 +951,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionretrypolicy">Event<wbr>Subscription<wbr>Retry<wbr>Policy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `retry_policy` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `retry_policy` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -960,8 +960,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the scope at which the EventGrid Event Subscription should be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the scope at which the EventGrid Event Subscription should be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -969,8 +969,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionstorageblobdeadletterdestination">Event<wbr>Subscription<wbr>Storage<wbr>Blob<wbr>Dead<wbr>Letter<wbr>Destination<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_blob_dead_letter_destination` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_blob_dead_letter_destination` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -978,8 +978,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionstoragequeueendpoint">Event<wbr>Subscription<wbr>Storage<wbr>Queue<wbr>Endpoint<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_queue_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_queue_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -987,8 +987,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionsubjectfilter">Event<wbr>Subscription<wbr>Subject<wbr>Filter<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `subject_filter` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `subject_filter` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -996,8 +996,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the topic to associate with the event subscription.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the topic to associate with the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1005,14 +1005,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionwebhookendpoint">Event<wbr>Subscription<wbr>Webhook<wbr>Endpoint<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `webhook_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `webhook_endpoint` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1021,8 +1021,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the event delivery schema for the event subscription. Possible values include: `EventGridSchema`, `CloudEventV01Schema`, `CustomInputSchema`.
-{{% /md %}}</dd>
+    <dd>Specifies the event delivery schema for the event subscription. Possible values include: `EventGridSchema`, `CloudEventV01Schema`, `CustomInputSchema`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1030,8 +1030,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptioneventhubendpoint">Event<wbr>Subscription<wbr>Eventhub<wbr>Endpoint</a></span>
     </dt>
-    <dd>{{% md %}}A `eventhub_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `eventhub_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1039,8 +1039,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionhybridconnectionendpoint">Event<wbr>Subscription<wbr>Hybrid<wbr>Connection<wbr>Endpoint</a></span>
     </dt>
-    <dd>{{% md %}}A `hybrid_connection_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `hybrid_connection_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1048,8 +1048,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of applicable event types that need to be part of the event subscription.
-{{% /md %}}</dd>
+    <dd>A list of applicable event types that need to be part of the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1057,8 +1057,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of labels to assign to the event subscription.
-{{% /md %}}</dd>
+    <dd>A list of labels to assign to the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1066,8 +1066,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the EventGrid Event Subscription resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the EventGrid Event Subscription resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1075,8 +1075,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionretrypolicy">Event<wbr>Subscription<wbr>Retry<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}A `retry_policy` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `retry_policy` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1084,8 +1084,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the scope at which the EventGrid Event Subscription should be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the scope at which the EventGrid Event Subscription should be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1093,8 +1093,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionstorageblobdeadletterdestination">Event<wbr>Subscription<wbr>Storage<wbr>Blob<wbr>Dead<wbr>Letter<wbr>Destination</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_blob_dead_letter_destination` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_blob_dead_letter_destination` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1102,8 +1102,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionstoragequeueendpoint">Event<wbr>Subscription<wbr>Storage<wbr>Queue<wbr>Endpoint</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_queue_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_queue_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1111,8 +1111,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionsubjectfilter">Event<wbr>Subscription<wbr>Subject<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}A `subject_filter` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `subject_filter` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1120,8 +1120,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the topic to associate with the event subscription.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the topic to associate with the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1129,14 +1129,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionwebhookendpoint">Event<wbr>Subscription<wbr>Webhook<wbr>Endpoint</a></span>
     </dt>
-    <dd>{{% md %}}A `webhook_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `webhook_endpoint` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1145,8 +1145,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the event delivery schema for the event subscription. Possible values include: `EventGridSchema`, `CloudEventV01Schema`, `CustomInputSchema`.
-{{% /md %}}</dd>
+    <dd>Specifies the event delivery schema for the event subscription. Possible values include: `EventGridSchema`, `CloudEventV01Schema`, `CustomInputSchema`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1154,8 +1154,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptioneventhubendpoint">Event<wbr>Subscription<wbr>Eventhub<wbr>Endpoint</a></span>
     </dt>
-    <dd>{{% md %}}A `eventhub_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `eventhub_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1163,8 +1163,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionhybridconnectionendpoint">Event<wbr>Subscription<wbr>Hybrid<wbr>Connection<wbr>Endpoint</a></span>
     </dt>
-    <dd>{{% md %}}A `hybrid_connection_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `hybrid_connection_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,8 +1172,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of applicable event types that need to be part of the event subscription.
-{{% /md %}}</dd>
+    <dd>A list of applicable event types that need to be part of the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1181,8 +1181,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of labels to assign to the event subscription.
-{{% /md %}}</dd>
+    <dd>A list of labels to assign to the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1190,8 +1190,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the EventGrid Event Subscription resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the EventGrid Event Subscription resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1199,8 +1199,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionretrypolicy">Event<wbr>Subscription<wbr>Retry<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}A `retry_policy` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `retry_policy` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1208,8 +1208,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the scope at which the EventGrid Event Subscription should be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the scope at which the EventGrid Event Subscription should be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1217,8 +1217,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionstorageblobdeadletterdestination">Event<wbr>Subscription<wbr>Storage<wbr>Blob<wbr>Dead<wbr>Letter<wbr>Destination</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_blob_dead_letter_destination` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_blob_dead_letter_destination` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1226,8 +1226,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionstoragequeueendpoint">Event<wbr>Subscription<wbr>Storage<wbr>Queue<wbr>Endpoint</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_queue_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_queue_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1235,8 +1235,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionsubjectfilter">Event<wbr>Subscription<wbr>Subject<wbr>Filter</a></span>
     </dt>
-    <dd>{{% md %}}A `subject_filter` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `subject_filter` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1244,8 +1244,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the topic to associate with the event subscription.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the topic to associate with the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1253,14 +1253,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionwebhookendpoint">Event<wbr>Subscription<wbr>Webhook<wbr>Endpoint</a></span>
     </dt>
-    <dd>{{% md %}}A `webhook_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `webhook_endpoint` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1269,8 +1269,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the event delivery schema for the event subscription. Possible values include: `EventGridSchema`, `CloudEventV01Schema`, `CustomInputSchema`.
-{{% /md %}}</dd>
+    <dd>Specifies the event delivery schema for the event subscription. Possible values include: `EventGridSchema`, `CloudEventV01Schema`, `CustomInputSchema`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1278,8 +1278,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptioneventhubendpoint">Dict[Event<wbr>Subscription<wbr>Eventhub<wbr>Endpoint]</a></span>
     </dt>
-    <dd>{{% md %}}A `eventhub_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `eventhub_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1287,8 +1287,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionhybridconnectionendpoint">Dict[Event<wbr>Subscription<wbr>Hybrid<wbr>Connection<wbr>Endpoint]</a></span>
     </dt>
-    <dd>{{% md %}}A `hybrid_connection_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `hybrid_connection_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1296,8 +1296,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of applicable event types that need to be part of the event subscription.
-{{% /md %}}</dd>
+    <dd>A list of applicable event types that need to be part of the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1305,8 +1305,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of labels to assign to the event subscription.
-{{% /md %}}</dd>
+    <dd>A list of labels to assign to the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1314,8 +1314,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the EventGrid Event Subscription resource. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the EventGrid Event Subscription resource. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1323,8 +1323,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionretrypolicy">Dict[Event<wbr>Subscription<wbr>Retry<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}A `retry_policy` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `retry_policy` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1332,8 +1332,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the scope at which the EventGrid Event Subscription should be created. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the scope at which the EventGrid Event Subscription should be created. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1341,8 +1341,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionstorageblobdeadletterdestination">Dict[Event<wbr>Subscription<wbr>Storage<wbr>Blob<wbr>Dead<wbr>Letter<wbr>Destination]</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_blob_dead_letter_destination` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_blob_dead_letter_destination` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1350,8 +1350,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionstoragequeueendpoint">Dict[Event<wbr>Subscription<wbr>Storage<wbr>Queue<wbr>Endpoint]</a></span>
     </dt>
-    <dd>{{% md %}}A `storage_queue_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `storage_queue_endpoint` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1359,8 +1359,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionsubjectfilter">Dict[Event<wbr>Subscription<wbr>Subject<wbr>Filter]</a></span>
     </dt>
-    <dd>{{% md %}}A `subject_filter` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `subject_filter` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1368,8 +1368,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the topic to associate with the event subscription.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the topic to associate with the event subscription.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1377,11 +1377,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#eventsubscriptionwebhookendpoint">Dict[Event<wbr>Subscription<wbr>Webhook<wbr>Endpoint]</a></span>
     </dt>
-    <dd>{{% md %}}A `webhook_endpoint` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `webhook_endpoint` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1396,18 +1396,18 @@ The following state arguments are supported:
 
 
 <h4 id="eventsubscriptioneventhubendpoint">Event<wbr>Subscription<wbr>Eventhub<wbr>Endpoint</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EventSubscriptionEventhubEndpoint">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EventSubscriptionEventhubEndpoint">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/eventgrid?tab=doc#EventSubscriptionEventhubEndpointArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/eventgrid?tab=doc#EventSubscriptionEventhubEndpointOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1416,14 +1416,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the id of the eventhub where the Event Subscription will receive events.
-{{% /md %}}</dd>
+    <dd>Specifies the id of the eventhub where the Event Subscription will receive events.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1432,14 +1432,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the id of the eventhub where the Event Subscription will receive events.
-{{% /md %}}</dd>
+    <dd>Specifies the id of the eventhub where the Event Subscription will receive events.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1448,14 +1448,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the id of the eventhub where the Event Subscription will receive events.
-{{% /md %}}</dd>
+    <dd>Specifies the id of the eventhub where the Event Subscription will receive events.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1464,29 +1464,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the id of the eventhub where the Event Subscription will receive events.
-{{% /md %}}</dd>
+    <dd>Specifies the id of the eventhub where the Event Subscription will receive events.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="eventsubscriptionhybridconnectionendpoint">Event<wbr>Subscription<wbr>Hybrid<wbr>Connection<wbr>Endpoint</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EventSubscriptionHybridConnectionEndpoint">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EventSubscriptionHybridConnectionEndpoint">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/eventgrid?tab=doc#EventSubscriptionHybridConnectionEndpointArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/eventgrid?tab=doc#EventSubscriptionHybridConnectionEndpointOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1495,14 +1495,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the id of the hybrid connection where the Event Subscription will receive events.
-{{% /md %}}</dd>
+    <dd>Specifies the id of the hybrid connection where the Event Subscription will receive events.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1511,14 +1511,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the id of the hybrid connection where the Event Subscription will receive events.
-{{% /md %}}</dd>
+    <dd>Specifies the id of the hybrid connection where the Event Subscription will receive events.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1527,14 +1527,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the id of the hybrid connection where the Event Subscription will receive events.
-{{% /md %}}</dd>
+    <dd>Specifies the id of the hybrid connection where the Event Subscription will receive events.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1543,29 +1543,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the id of the hybrid connection where the Event Subscription will receive events.
-{{% /md %}}</dd>
+    <dd>Specifies the id of the hybrid connection where the Event Subscription will receive events.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="eventsubscriptionretrypolicy">Event<wbr>Subscription<wbr>Retry<wbr>Policy</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EventSubscriptionRetryPolicy">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EventSubscriptionRetryPolicy">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/eventgrid?tab=doc#EventSubscriptionRetryPolicyArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/eventgrid?tab=doc#EventSubscriptionRetryPolicyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1574,8 +1574,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time to live (in minutes) for events.
-{{% /md %}}</dd>
+    <dd>Specifies the time to live (in minutes) for events.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1583,14 +1583,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the maximum number of delivery retry attempts for events.
-{{% /md %}}</dd>
+    <dd>Specifies the maximum number of delivery retry attempts for events.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1599,8 +1599,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time to live (in minutes) for events.
-{{% /md %}}</dd>
+    <dd>Specifies the time to live (in minutes) for events.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1608,14 +1608,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the maximum number of delivery retry attempts for events.
-{{% /md %}}</dd>
+    <dd>Specifies the maximum number of delivery retry attempts for events.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1624,8 +1624,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time to live (in minutes) for events.
-{{% /md %}}</dd>
+    <dd>Specifies the time to live (in minutes) for events.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1633,14 +1633,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the maximum number of delivery retry attempts for events.
-{{% /md %}}</dd>
+    <dd>Specifies the maximum number of delivery retry attempts for events.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1649,8 +1649,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the time to live (in minutes) for events.
-{{% /md %}}</dd>
+    <dd>Specifies the time to live (in minutes) for events.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1658,29 +1658,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the maximum number of delivery retry attempts for events.
-{{% /md %}}</dd>
+    <dd>Specifies the maximum number of delivery retry attempts for events.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="eventsubscriptionstorageblobdeadletterdestination">Event<wbr>Subscription<wbr>Storage<wbr>Blob<wbr>Dead<wbr>Letter<wbr>Destination</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EventSubscriptionStorageBlobDeadLetterDestination">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EventSubscriptionStorageBlobDeadLetterDestination">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/eventgrid?tab=doc#EventSubscriptionStorageBlobDeadLetterDestinationArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/eventgrid?tab=doc#EventSubscriptionStorageBlobDeadLetterDestinationOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1689,8 +1689,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the id of the storage account id where the storage blob is located.
-{{% /md %}}</dd>
+    <dd>Specifies the id of the storage account id where the storage blob is located.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1698,14 +1698,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Storage blob container that is the destination of the deadletter events
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Storage blob container that is the destination of the deadletter events
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1714,8 +1714,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the id of the storage account id where the storage blob is located.
-{{% /md %}}</dd>
+    <dd>Specifies the id of the storage account id where the storage blob is located.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1723,14 +1723,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Storage blob container that is the destination of the deadletter events
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Storage blob container that is the destination of the deadletter events
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1739,8 +1739,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the id of the storage account id where the storage blob is located.
-{{% /md %}}</dd>
+    <dd>Specifies the id of the storage account id where the storage blob is located.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1748,14 +1748,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Storage blob container that is the destination of the deadletter events
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Storage blob container that is the destination of the deadletter events
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1764,8 +1764,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the Storage blob container that is the destination of the deadletter events
-{{% /md %}}</dd>
+    <dd>Specifies the name of the Storage blob container that is the destination of the deadletter events
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1773,29 +1773,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the id of the storage account id where the storage blob is located.
-{{% /md %}}</dd>
+    <dd>Specifies the id of the storage account id where the storage blob is located.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="eventsubscriptionstoragequeueendpoint">Event<wbr>Subscription<wbr>Storage<wbr>Queue<wbr>Endpoint</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EventSubscriptionStorageQueueEndpoint">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EventSubscriptionStorageQueueEndpoint">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/eventgrid?tab=doc#EventSubscriptionStorageQueueEndpointArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/eventgrid?tab=doc#EventSubscriptionStorageQueueEndpointOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1804,8 +1804,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the storage queue where the Event Subscriptio will receive events.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the storage queue where the Event Subscriptio will receive events.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1813,14 +1813,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the id of the storage account id where the storage queue is located.
-{{% /md %}}</dd>
+    <dd>Specifies the id of the storage account id where the storage queue is located.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1829,8 +1829,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the storage queue where the Event Subscriptio will receive events.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the storage queue where the Event Subscriptio will receive events.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1838,14 +1838,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the id of the storage account id where the storage queue is located.
-{{% /md %}}</dd>
+    <dd>Specifies the id of the storage account id where the storage queue is located.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1854,8 +1854,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the storage queue where the Event Subscriptio will receive events.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the storage queue where the Event Subscriptio will receive events.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1863,14 +1863,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the id of the storage account id where the storage queue is located.
-{{% /md %}}</dd>
+    <dd>Specifies the id of the storage account id where the storage queue is located.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -1879,8 +1879,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the storage queue where the Event Subscriptio will receive events.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the storage queue where the Event Subscriptio will receive events.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -1888,29 +1888,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the id of the storage account id where the storage queue is located.
-{{% /md %}}</dd>
+    <dd>Specifies the id of the storage account id where the storage queue is located.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="eventsubscriptionsubjectfilter">Event<wbr>Subscription<wbr>Subject<wbr>Filter</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EventSubscriptionSubjectFilter">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EventSubscriptionSubjectFilter">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/eventgrid?tab=doc#EventSubscriptionSubjectFilterArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/eventgrid?tab=doc#EventSubscriptionSubjectFilterOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1919,8 +1919,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if `subject_begins_with` and `subject_ends_with` case sensitive. This value defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies if `subject_begins_with` and `subject_ends_with` case sensitive. This value defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1928,8 +1928,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A string to filter events for an event subscription based on a resource path prefix.
-{{% /md %}}</dd>
+    <dd>A string to filter events for an event subscription based on a resource path prefix.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1937,14 +1937,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A string to filter events for an event subscription based on a resource path suffix.
-{{% /md %}}</dd>
+    <dd>A string to filter events for an event subscription based on a resource path suffix.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1953,8 +1953,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if `subject_begins_with` and `subject_ends_with` case sensitive. This value defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies if `subject_begins_with` and `subject_ends_with` case sensitive. This value defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1962,8 +1962,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A string to filter events for an event subscription based on a resource path prefix.
-{{% /md %}}</dd>
+    <dd>A string to filter events for an event subscription based on a resource path prefix.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1971,14 +1971,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A string to filter events for an event subscription based on a resource path suffix.
-{{% /md %}}</dd>
+    <dd>A string to filter events for an event subscription based on a resource path suffix.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1987,8 +1987,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if `subject_begins_with` and `subject_ends_with` case sensitive. This value defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies if `subject_begins_with` and `subject_ends_with` case sensitive. This value defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1996,8 +1996,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A string to filter events for an event subscription based on a resource path prefix.
-{{% /md %}}</dd>
+    <dd>A string to filter events for an event subscription based on a resource path prefix.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2005,14 +2005,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A string to filter events for an event subscription based on a resource path suffix.
-{{% /md %}}</dd>
+    <dd>A string to filter events for an event subscription based on a resource path suffix.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2021,8 +2021,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specifies if `subject_begins_with` and `subject_ends_with` case sensitive. This value defaults to `false`.
-{{% /md %}}</dd>
+    <dd>Specifies if `subject_begins_with` and `subject_ends_with` case sensitive. This value defaults to `false`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2030,8 +2030,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A string to filter events for an event subscription based on a resource path prefix.
-{{% /md %}}</dd>
+    <dd>A string to filter events for an event subscription based on a resource path prefix.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2039,29 +2039,29 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A string to filter events for an event subscription based on a resource path suffix.
-{{% /md %}}</dd>
+    <dd>A string to filter events for an event subscription based on a resource path suffix.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="eventsubscriptionwebhookendpoint">Event<wbr>Subscription<wbr>Webhook<wbr>Endpoint</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#EventSubscriptionWebhookEndpoint">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#EventSubscriptionWebhookEndpoint">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/eventgrid?tab=doc#EventSubscriptionWebhookEndpointArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/eventgrid?tab=doc#EventSubscriptionWebhookEndpointOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2070,14 +2070,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the url of the webhook where the Event Subscription will receive events.
-{{% /md %}}</dd>
+    <dd>Specifies the url of the webhook where the Event Subscription will receive events.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2086,14 +2086,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the url of the webhook where the Event Subscription will receive events.
-{{% /md %}}</dd>
+    <dd>Specifies the url of the webhook where the Event Subscription will receive events.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2102,14 +2102,14 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the url of the webhook where the Event Subscription will receive events.
-{{% /md %}}</dd>
+    <dd>Specifies the url of the webhook where the Event Subscription will receive events.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2118,11 +2118,11 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the url of the webhook where the Event Subscription will receive events.
-{{% /md %}}</dd>
+    <dd>Specifies the url of the webhook where the Event Subscription will receive events.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

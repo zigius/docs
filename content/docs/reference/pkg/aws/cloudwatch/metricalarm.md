@@ -150,26 +150,26 @@ const xxAnomalyDetection = new aws.cloudwatch.MetricAlarm("xx_anomaly_detection"
 
 
 ## Create a MetricAlarm Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudwatch/#MetricAlarm">MetricAlarm</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudwatch/#MetricAlarmArgs">MetricAlarmArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">MetricAlarm</span><span class="p">(resource_name, opts=None, </span>actions_enabled=None<span class="p">, </span>alarm_actions=None<span class="p">, </span>alarm_description=None<span class="p">, </span>comparison_operator=None<span class="p">, </span>datapoints_to_alarm=None<span class="p">, </span>dimensions=None<span class="p">, </span>evaluate_low_sample_count_percentiles=None<span class="p">, </span>evaluation_periods=None<span class="p">, </span>extended_statistic=None<span class="p">, </span>insufficient_data_actions=None<span class="p">, </span>metric_name=None<span class="p">, </span>metric_queries=None<span class="p">, </span>name=None<span class="p">, </span>namespace=None<span class="p">, </span>ok_actions=None<span class="p">, </span>period=None<span class="p">, </span>statistic=None<span class="p">, </span>tags=None<span class="p">, </span>threshold=None<span class="p">, </span>threshold_metric_id=None<span class="p">, </span>treat_missing_data=None<span class="p">, </span>unit=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewMetricAlarm<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#MetricAlarmArgs">MetricAlarmArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#MetricAlarm">MetricAlarm</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudWatch.MetricAlarm.html">MetricAlarm</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudWatch.MetricAlarmArgs.html">MetricAlarmArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -206,9 +206,9 @@ const xxAnomalyDetection = new aws.cloudwatch.MetricAlarm("xx_anomaly_detection"
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -226,9 +226,9 @@ const xxAnomalyDetection = new aws.cloudwatch.MetricAlarm("xx_anomaly_detection"
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -275,9 +275,9 @@ const xxAnomalyDetection = new aws.cloudwatch.MetricAlarm("xx_anomaly_detection"
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -314,7 +314,7 @@ const xxAnomalyDetection = new aws.cloudwatch.MetricAlarm("xx_anomaly_detection"
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## MetricAlarm Resource Properties {#properties}
 
@@ -327,7 +327,7 @@ The MetricAlarm resource accepts the following [input]({{< relref "/docs/intro/c
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -336,8 +336,8 @@ The MetricAlarm resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`. Additionally, the values  `LessThanLowerOrGreaterThanUpperThreshold`, `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used only for alarms based on anomaly detection models.
-{{% /md %}}</dd>
+    <dd>The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`. Additionally, the values  `LessThanLowerOrGreaterThanUpperThreshold`, `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used only for alarms based on anomaly detection models.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -345,8 +345,8 @@ The MetricAlarm resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of periods over which data is compared to the specified threshold.
-{{% /md %}}</dd>
+    <dd>The number of periods over which data is compared to the specified threshold.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -354,8 +354,8 @@ The MetricAlarm resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether or not actions should be executed during any changes to the alarm's state. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Indicates whether or not actions should be executed during any changes to the alarm's state. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -363,8 +363,8 @@ The MetricAlarm resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type">List&lt;string&gt;</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -372,8 +372,8 @@ The MetricAlarm resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description for the alarm.
-{{% /md %}}</dd>
+    <dd>The description for the alarm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -381,8 +381,8 @@ The MetricAlarm resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of datapoints that must be breaching to trigger the alarm.
-{{% /md %}}</dd>
+    <dd>The number of datapoints that must be breaching to trigger the alarm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -390,8 +390,8 @@ The MetricAlarm resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+    <dd>The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -399,13 +399,13 @@ The MetricAlarm resource accepts the following [input]({{< relref "/docs/intro/c
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Used only for alarms
+    <dd>Used only for alarms
 based on percentiles. If you specify `ignore`, the alarm state will not
 change during periods with too few data points to be statistically significant.
 If you specify `evaluate` or omit this parameter, the alarm will always be
 evaluated and possibly change state no matter how many data points are available.
 The following values are supported: `ignore`, and `evaluate`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -413,8 +413,8 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.
-{{% /md %}}</dd>
+    <dd>The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -422,8 +422,8 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type">List&lt;string&gt;</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -431,9 +431,9 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for this metric.
+    <dd>The name for this metric.
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -441,8 +441,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquery">List&lt;Metric<wbr>Alarm<wbr>Metric<wbr>Query<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Enables you to create an alarm based on a metric math expression. You may specify at most 20.
-{{% /md %}}</dd>
+    <dd>Enables you to create an alarm based on a metric math expression. You may specify at most 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -450,8 +450,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The descriptive name for the alarm. This name must be unique within the user's AWS account
-{{% /md %}}</dd>
+    <dd>The descriptive name for the alarm. This name must be unique within the user's AWS account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -459,9 +459,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
+    <dd>The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -469,8 +469,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type">List&lt;string&gt;</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -478,8 +478,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The period in seconds over which the specified `stat` is applied.
-{{% /md %}}</dd>
+    <dd>The period in seconds over which the specified `stat` is applied.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -487,9 +487,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The statistic to apply to the alarm's associated metric.
+    <dd>The statistic to apply to the alarm's associated metric.
 Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`, `Maximum`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -497,8 +497,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -506,8 +506,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
-{{% /md %}}</dd>
+    <dd>The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -515,8 +515,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If this is an alarm based on an anomaly detection model, make this value match the ID of the ANOMALY_DETECTION_BAND function.
-{{% /md %}}</dd>
+    <dd>If this is an alarm based on an anomaly detection model, make this value match the ID of the ANOMALY_DETECTION_BAND function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -524,8 +524,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets how this alarm is to handle missing data points. The following values are supported: `missing`, `ignore`, `breaching` and `notBreaching`. Defaults to `missing`.
-{{% /md %}}</dd>
+    <dd>Sets how this alarm is to handle missing data points. The following values are supported: `missing`, `ignore`, `breaching` and `notBreaching`. Defaults to `missing`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -533,14 +533,14 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unit for this metric.
-{{% /md %}}</dd>
+    <dd>The unit for this metric.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -549,8 +549,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`. Additionally, the values  `LessThanLowerOrGreaterThanUpperThreshold`, `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used only for alarms based on anomaly detection models.
-{{% /md %}}</dd>
+    <dd>The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`. Additionally, the values  `LessThanLowerOrGreaterThanUpperThreshold`, `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used only for alarms based on anomaly detection models.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -558,8 +558,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of periods over which data is compared to the specified threshold.
-{{% /md %}}</dd>
+    <dd>The number of periods over which data is compared to the specified threshold.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -567,8 +567,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether or not actions should be executed during any changes to the alarm's state. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Indicates whether or not actions should be executed during any changes to the alarm's state. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -576,8 +576,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">[]interface{}</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -585,8 +585,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description for the alarm.
-{{% /md %}}</dd>
+    <dd>The description for the alarm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -594,8 +594,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of datapoints that must be breaching to trigger the alarm.
-{{% /md %}}</dd>
+    <dd>The number of datapoints that must be breaching to trigger the alarm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -603,8 +603,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+    <dd>The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -612,13 +612,13 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used only for alarms
+    <dd>Used only for alarms
 based on percentiles. If you specify `ignore`, the alarm state will not
 change during periods with too few data points to be statistically significant.
 If you specify `evaluate` or omit this parameter, the alarm will always be
 evaluated and possibly change state no matter how many data points are available.
 The following values are supported: `ignore`, and `evaluate`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -626,8 +626,8 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.
-{{% /md %}}</dd>
+    <dd>The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -635,8 +635,8 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type">[]interface{}</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -644,9 +644,9 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for this metric.
+    <dd>The name for this metric.
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -654,8 +654,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquery">[]Metric<wbr>Alarm<wbr>Metric<wbr>Query</a></span>
     </dt>
-    <dd>{{% md %}}Enables you to create an alarm based on a metric math expression. You may specify at most 20.
-{{% /md %}}</dd>
+    <dd>Enables you to create an alarm based on a metric math expression. You may specify at most 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -663,8 +663,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The descriptive name for the alarm. This name must be unique within the user's AWS account
-{{% /md %}}</dd>
+    <dd>The descriptive name for the alarm. This name must be unique within the user's AWS account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -672,9 +672,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
+    <dd>The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -682,8 +682,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type">[]interface{}</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -691,8 +691,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The period in seconds over which the specified `stat` is applied.
-{{% /md %}}</dd>
+    <dd>The period in seconds over which the specified `stat` is applied.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -700,9 +700,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The statistic to apply to the alarm's associated metric.
+    <dd>The statistic to apply to the alarm's associated metric.
 Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`, `Maximum`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -710,8 +710,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -719,8 +719,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
-{{% /md %}}</dd>
+    <dd>The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -728,8 +728,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If this is an alarm based on an anomaly detection model, make this value match the ID of the ANOMALY_DETECTION_BAND function.
-{{% /md %}}</dd>
+    <dd>If this is an alarm based on an anomaly detection model, make this value match the ID of the ANOMALY_DETECTION_BAND function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -737,8 +737,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets how this alarm is to handle missing data points. The following values are supported: `missing`, `ignore`, `breaching` and `notBreaching`. Defaults to `missing`.
-{{% /md %}}</dd>
+    <dd>Sets how this alarm is to handle missing data points. The following values are supported: `missing`, `ignore`, `breaching` and `notBreaching`. Defaults to `missing`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -746,14 +746,14 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unit for this metric.
-{{% /md %}}</dd>
+    <dd>The unit for this metric.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -762,8 +762,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`. Additionally, the values  `LessThanLowerOrGreaterThanUpperThreshold`, `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used only for alarms based on anomaly detection models.
-{{% /md %}}</dd>
+    <dd>The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`. Additionally, the values  `LessThanLowerOrGreaterThanUpperThreshold`, `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used only for alarms based on anomaly detection models.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -771,8 +771,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of periods over which data is compared to the specified threshold.
-{{% /md %}}</dd>
+    <dd>The number of periods over which data is compared to the specified threshold.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -780,8 +780,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether or not actions should be executed during any changes to the alarm's state. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Indicates whether or not actions should be executed during any changes to the alarm's state. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -789,8 +789,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">string | Topic[]</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -798,8 +798,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description for the alarm.
-{{% /md %}}</dd>
+    <dd>The description for the alarm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -807,8 +807,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of datapoints that must be breaching to trigger the alarm.
-{{% /md %}}</dd>
+    <dd>The number of datapoints that must be breaching to trigger the alarm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -816,8 +816,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+    <dd>The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -825,13 +825,13 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used only for alarms
+    <dd>Used only for alarms
 based on percentiles. If you specify `ignore`, the alarm state will not
 change during periods with too few data points to be statistically significant.
 If you specify `evaluate` or omit this parameter, the alarm will always be
 evaluated and possibly change state no matter how many data points are available.
 The following values are supported: `ignore`, and `evaluate`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -839,8 +839,8 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.
-{{% /md %}}</dd>
+    <dd>The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -848,8 +848,8 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type">string | Topic[]</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -857,9 +857,9 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for this metric.
+    <dd>The name for this metric.
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -867,8 +867,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquery">Metric<wbr>Alarm<wbr>Metric<wbr>Query[]</a></span>
     </dt>
-    <dd>{{% md %}}Enables you to create an alarm based on a metric math expression. You may specify at most 20.
-{{% /md %}}</dd>
+    <dd>Enables you to create an alarm based on a metric math expression. You may specify at most 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -876,8 +876,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The descriptive name for the alarm. This name must be unique within the user's AWS account
-{{% /md %}}</dd>
+    <dd>The descriptive name for the alarm. This name must be unique within the user's AWS account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -885,9 +885,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
+    <dd>The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -895,8 +895,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type">string | Topic[]</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -904,8 +904,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The period in seconds over which the specified `stat` is applied.
-{{% /md %}}</dd>
+    <dd>The period in seconds over which the specified `stat` is applied.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -913,9 +913,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The statistic to apply to the alarm's associated metric.
+    <dd>The statistic to apply to the alarm's associated metric.
 Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`, `Maximum`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -923,8 +923,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -932,8 +932,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
-{{% /md %}}</dd>
+    <dd>The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -941,8 +941,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If this is an alarm based on an anomaly detection model, make this value match the ID of the ANOMALY_DETECTION_BAND function.
-{{% /md %}}</dd>
+    <dd>If this is an alarm based on an anomaly detection model, make this value match the ID of the ANOMALY_DETECTION_BAND function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -950,8 +950,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets how this alarm is to handle missing data points. The following values are supported: `missing`, `ignore`, `breaching` and `notBreaching`. Defaults to `missing`.
-{{% /md %}}</dd>
+    <dd>Sets how this alarm is to handle missing data points. The following values are supported: `missing`, `ignore`, `breaching` and `notBreaching`. Defaults to `missing`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -959,14 +959,14 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unit for this metric.
-{{% /md %}}</dd>
+    <dd>The unit for this metric.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -975,8 +975,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`. Additionally, the values  `LessThanLowerOrGreaterThanUpperThreshold`, `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used only for alarms based on anomaly detection models.
-{{% /md %}}</dd>
+    <dd>The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`. Additionally, the values  `LessThanLowerOrGreaterThanUpperThreshold`, `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used only for alarms based on anomaly detection models.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -984,8 +984,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of periods over which data is compared to the specified threshold.
-{{% /md %}}</dd>
+    <dd>The number of periods over which data is compared to the specified threshold.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -993,8 +993,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether or not actions should be executed during any changes to the alarm's state. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Indicates whether or not actions should be executed during any changes to the alarm's state. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1002,8 +1002,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">List[Topic>]</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1011,8 +1011,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description for the alarm.
-{{% /md %}}</dd>
+    <dd>The description for the alarm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1020,8 +1020,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of datapoints that must be breaching to trigger the alarm.
-{{% /md %}}</dd>
+    <dd>The number of datapoints that must be breaching to trigger the alarm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1029,8 +1029,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+    <dd>The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1038,13 +1038,13 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Used only for alarms
+    <dd>Used only for alarms
 based on percentiles. If you specify `ignore`, the alarm state will not
 change during periods with too few data points to be statistically significant.
 If you specify `evaluate` or omit this parameter, the alarm will always be
 evaluated and possibly change state no matter how many data points are available.
 The following values are supported: `ignore`, and `evaluate`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1052,8 +1052,8 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.
-{{% /md %}}</dd>
+    <dd>The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1061,8 +1061,8 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type">List[Topic>]</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1070,9 +1070,9 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name for this metric.
+    <dd>The name for this metric.
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1080,8 +1080,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquery">List[Metric<wbr>Alarm<wbr>Metric<wbr>Query]</a></span>
     </dt>
-    <dd>{{% md %}}Enables you to create an alarm based on a metric math expression. You may specify at most 20.
-{{% /md %}}</dd>
+    <dd>Enables you to create an alarm based on a metric math expression. You may specify at most 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1089,8 +1089,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The descriptive name for the alarm. This name must be unique within the user's AWS account
-{{% /md %}}</dd>
+    <dd>The descriptive name for the alarm. This name must be unique within the user's AWS account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1098,9 +1098,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
+    <dd>The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1108,8 +1108,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type">List[Topic>]</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1117,8 +1117,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The period in seconds over which the specified `stat` is applied.
-{{% /md %}}</dd>
+    <dd>The period in seconds over which the specified `stat` is applied.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1126,9 +1126,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The statistic to apply to the alarm's associated metric.
+    <dd>The statistic to apply to the alarm's associated metric.
 Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`, `Maximum`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1136,8 +1136,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1145,8 +1145,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
-{{% /md %}}</dd>
+    <dd>The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1154,8 +1154,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If this is an alarm based on an anomaly detection model, make this value match the ID of the ANOMALY_DETECTION_BAND function.
-{{% /md %}}</dd>
+    <dd>If this is an alarm based on an anomaly detection model, make this value match the ID of the ANOMALY_DETECTION_BAND function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1163,8 +1163,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sets how this alarm is to handle missing data points. The following values are supported: `missing`, `ignore`, `breaching` and `notBreaching`. Defaults to `missing`.
-{{% /md %}}</dd>
+    <dd>Sets how this alarm is to handle missing data points. The following values are supported: `missing`, `ignore`, `breaching` and `notBreaching`. Defaults to `missing`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1172,11 +1172,11 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unit for this metric.
-{{% /md %}}</dd>
+    <dd>The unit for this metric.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1190,7 +1190,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1199,8 +1199,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the cloudwatch metric alarm.
-{{% /md %}}</dd>
+    <dd>The ARN of the cloudwatch metric alarm.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1208,13 +1208,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1223,8 +1223,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the cloudwatch metric alarm.
-{{% /md %}}</dd>
+    <dd>The ARN of the cloudwatch metric alarm.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1232,13 +1232,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1247,8 +1247,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the cloudwatch metric alarm.
-{{% /md %}}</dd>
+    <dd>The ARN of the cloudwatch metric alarm.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1256,13 +1256,13 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1271,8 +1271,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the cloudwatch metric alarm.
-{{% /md %}}</dd>
+    <dd>The ARN of the cloudwatch metric alarm.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1280,10 +1280,10 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -1294,25 +1294,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing MetricAlarm Resource {#look-up}
 
 Get an existing MetricAlarm resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudwatch/#MetricAlarmState">MetricAlarmState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/aws/cloudwatch/#MetricAlarm">MetricAlarm</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>actions_enabled=None<span class="p">, </span>alarm_actions=None<span class="p">, </span>alarm_description=None<span class="p">, </span>arn=None<span class="p">, </span>comparison_operator=None<span class="p">, </span>datapoints_to_alarm=None<span class="p">, </span>dimensions=None<span class="p">, </span>evaluate_low_sample_count_percentiles=None<span class="p">, </span>evaluation_periods=None<span class="p">, </span>extended_statistic=None<span class="p">, </span>insufficient_data_actions=None<span class="p">, </span>metric_name=None<span class="p">, </span>metric_queries=None<span class="p">, </span>name=None<span class="p">, </span>namespace=None<span class="p">, </span>ok_actions=None<span class="p">, </span>period=None<span class="p">, </span>statistic=None<span class="p">, </span>tags=None<span class="p">, </span>threshold=None<span class="p">, </span>threshold_metric_id=None<span class="p">, </span>treat_missing_data=None<span class="p">, </span>unit=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetMetricAlarm<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#MetricAlarmState">MetricAlarmState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v2/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#MetricAlarm">MetricAlarm</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudWatch.MetricAlarm.html">MetricAlarm</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Aws/Pulumi.Aws.CloudWatch.MetricAlarmState.html">MetricAlarmState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1337,9 +1337,9 @@ Get an existing MetricAlarm resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -1352,36 +1352,9 @@ Get an existing MetricAlarm resource's state with the given name, ID, and option
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -1406,13 +1379,40 @@ Get an existing MetricAlarm resource's state with the given name, ID, and option
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1421,8 +1421,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether or not actions should be executed during any changes to the alarm's state. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Indicates whether or not actions should be executed during any changes to the alarm's state. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1430,8 +1430,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">List&lt;string&gt;</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1439,8 +1439,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The description for the alarm.
-{{% /md %}}</dd>
+    <dd>The description for the alarm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1448,8 +1448,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the cloudwatch metric alarm.
-{{% /md %}}</dd>
+    <dd>The ARN of the cloudwatch metric alarm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1457,8 +1457,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`. Additionally, the values  `LessThanLowerOrGreaterThanUpperThreshold`, `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used only for alarms based on anomaly detection models.
-{{% /md %}}</dd>
+    <dd>The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`. Additionally, the values  `LessThanLowerOrGreaterThanUpperThreshold`, `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used only for alarms based on anomaly detection models.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1466,8 +1466,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of datapoints that must be breaching to trigger the alarm.
-{{% /md %}}</dd>
+    <dd>The number of datapoints that must be breaching to trigger the alarm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1475,8 +1475,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+    <dd>The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1484,13 +1484,13 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Used only for alarms
+    <dd>Used only for alarms
 based on percentiles. If you specify `ignore`, the alarm state will not
 change during periods with too few data points to be statistically significant.
 If you specify `evaluate` or omit this parameter, the alarm will always be
 evaluated and possibly change state no matter how many data points are available.
 The following values are supported: `ignore`, and `evaluate`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1498,8 +1498,8 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of periods over which data is compared to the specified threshold.
-{{% /md %}}</dd>
+    <dd>The number of periods over which data is compared to the specified threshold.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1507,8 +1507,8 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.
-{{% /md %}}</dd>
+    <dd>The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1516,8 +1516,8 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type">List&lt;string&gt;</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1525,9 +1525,9 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for this metric.
+    <dd>The name for this metric.
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1535,8 +1535,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquery">List&lt;Metric<wbr>Alarm<wbr>Metric<wbr>Query<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Enables you to create an alarm based on a metric math expression. You may specify at most 20.
-{{% /md %}}</dd>
+    <dd>Enables you to create an alarm based on a metric math expression. You may specify at most 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1544,8 +1544,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The descriptive name for the alarm. This name must be unique within the user's AWS account
-{{% /md %}}</dd>
+    <dd>The descriptive name for the alarm. This name must be unique within the user's AWS account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1553,9 +1553,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
+    <dd>The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1563,8 +1563,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type">List&lt;string&gt;</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1572,8 +1572,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The period in seconds over which the specified `stat` is applied.
-{{% /md %}}</dd>
+    <dd>The period in seconds over which the specified `stat` is applied.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1581,9 +1581,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The statistic to apply to the alarm's associated metric.
+    <dd>The statistic to apply to the alarm's associated metric.
 Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`, `Maximum`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1591,8 +1591,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1600,8 +1600,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">double</a></span>
     </dt>
-    <dd>{{% md %}}The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
-{{% /md %}}</dd>
+    <dd>The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1609,8 +1609,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}If this is an alarm based on an anomaly detection model, make this value match the ID of the ANOMALY_DETECTION_BAND function.
-{{% /md %}}</dd>
+    <dd>If this is an alarm based on an anomaly detection model, make this value match the ID of the ANOMALY_DETECTION_BAND function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1618,8 +1618,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets how this alarm is to handle missing data points. The following values are supported: `missing`, `ignore`, `breaching` and `notBreaching`. Defaults to `missing`.
-{{% /md %}}</dd>
+    <dd>Sets how this alarm is to handle missing data points. The following values are supported: `missing`, `ignore`, `breaching` and `notBreaching`. Defaults to `missing`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1627,14 +1627,14 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unit for this metric.
-{{% /md %}}</dd>
+    <dd>The unit for this metric.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1643,8 +1643,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether or not actions should be executed during any changes to the alarm's state. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Indicates whether or not actions should be executed during any changes to the alarm's state. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1652,8 +1652,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">[]interface{}</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1661,8 +1661,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description for the alarm.
-{{% /md %}}</dd>
+    <dd>The description for the alarm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1670,8 +1670,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the cloudwatch metric alarm.
-{{% /md %}}</dd>
+    <dd>The ARN of the cloudwatch metric alarm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1679,8 +1679,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`. Additionally, the values  `LessThanLowerOrGreaterThanUpperThreshold`, `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used only for alarms based on anomaly detection models.
-{{% /md %}}</dd>
+    <dd>The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`. Additionally, the values  `LessThanLowerOrGreaterThanUpperThreshold`, `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used only for alarms based on anomaly detection models.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1688,8 +1688,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of datapoints that must be breaching to trigger the alarm.
-{{% /md %}}</dd>
+    <dd>The number of datapoints that must be breaching to trigger the alarm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1697,8 +1697,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+    <dd>The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1706,13 +1706,13 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used only for alarms
+    <dd>Used only for alarms
 based on percentiles. If you specify `ignore`, the alarm state will not
 change during periods with too few data points to be statistically significant.
 If you specify `evaluate` or omit this parameter, the alarm will always be
 evaluated and possibly change state no matter how many data points are available.
 The following values are supported: `ignore`, and `evaluate`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1720,8 +1720,8 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of periods over which data is compared to the specified threshold.
-{{% /md %}}</dd>
+    <dd>The number of periods over which data is compared to the specified threshold.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1729,8 +1729,8 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.
-{{% /md %}}</dd>
+    <dd>The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1738,8 +1738,8 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type">[]interface{}</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1747,9 +1747,9 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for this metric.
+    <dd>The name for this metric.
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1757,8 +1757,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquery">[]Metric<wbr>Alarm<wbr>Metric<wbr>Query</a></span>
     </dt>
-    <dd>{{% md %}}Enables you to create an alarm based on a metric math expression. You may specify at most 20.
-{{% /md %}}</dd>
+    <dd>Enables you to create an alarm based on a metric math expression. You may specify at most 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1766,8 +1766,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The descriptive name for the alarm. This name must be unique within the user's AWS account
-{{% /md %}}</dd>
+    <dd>The descriptive name for the alarm. This name must be unique within the user's AWS account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1775,9 +1775,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
+    <dd>The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1785,8 +1785,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type">[]interface{}</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1794,8 +1794,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The period in seconds over which the specified `stat` is applied.
-{{% /md %}}</dd>
+    <dd>The period in seconds over which the specified `stat` is applied.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1803,9 +1803,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The statistic to apply to the alarm's associated metric.
+    <dd>The statistic to apply to the alarm's associated metric.
 Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`, `Maximum`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1813,8 +1813,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1822,8 +1822,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#number">float64</a></span>
     </dt>
-    <dd>{{% md %}}The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
-{{% /md %}}</dd>
+    <dd>The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1831,8 +1831,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}If this is an alarm based on an anomaly detection model, make this value match the ID of the ANOMALY_DETECTION_BAND function.
-{{% /md %}}</dd>
+    <dd>If this is an alarm based on an anomaly detection model, make this value match the ID of the ANOMALY_DETECTION_BAND function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1840,8 +1840,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets how this alarm is to handle missing data points. The following values are supported: `missing`, `ignore`, `breaching` and `notBreaching`. Defaults to `missing`.
-{{% /md %}}</dd>
+    <dd>Sets how this alarm is to handle missing data points. The following values are supported: `missing`, `ignore`, `breaching` and `notBreaching`. Defaults to `missing`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1849,14 +1849,14 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unit for this metric.
-{{% /md %}}</dd>
+    <dd>The unit for this metric.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -1865,8 +1865,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether or not actions should be executed during any changes to the alarm's state. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Indicates whether or not actions should be executed during any changes to the alarm's state. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1874,8 +1874,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">string | Topic[]</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1883,8 +1883,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The description for the alarm.
-{{% /md %}}</dd>
+    <dd>The description for the alarm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1892,8 +1892,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the cloudwatch metric alarm.
-{{% /md %}}</dd>
+    <dd>The ARN of the cloudwatch metric alarm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1901,8 +1901,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`. Additionally, the values  `LessThanLowerOrGreaterThanUpperThreshold`, `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used only for alarms based on anomaly detection models.
-{{% /md %}}</dd>
+    <dd>The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`. Additionally, the values  `LessThanLowerOrGreaterThanUpperThreshold`, `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used only for alarms based on anomaly detection models.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1910,8 +1910,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of datapoints that must be breaching to trigger the alarm.
-{{% /md %}}</dd>
+    <dd>The number of datapoints that must be breaching to trigger the alarm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1919,8 +1919,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+    <dd>The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1928,13 +1928,13 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Used only for alarms
+    <dd>Used only for alarms
 based on percentiles. If you specify `ignore`, the alarm state will not
 change during periods with too few data points to be statistically significant.
 If you specify `evaluate` or omit this parameter, the alarm will always be
 evaluated and possibly change state no matter how many data points are available.
 The following values are supported: `ignore`, and `evaluate`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1942,8 +1942,8 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of periods over which data is compared to the specified threshold.
-{{% /md %}}</dd>
+    <dd>The number of periods over which data is compared to the specified threshold.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1951,8 +1951,8 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.
-{{% /md %}}</dd>
+    <dd>The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1960,8 +1960,8 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type">string | Topic[]</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1969,9 +1969,9 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for this metric.
+    <dd>The name for this metric.
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1979,8 +1979,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquery">Metric<wbr>Alarm<wbr>Metric<wbr>Query[]</a></span>
     </dt>
-    <dd>{{% md %}}Enables you to create an alarm based on a metric math expression. You may specify at most 20.
-{{% /md %}}</dd>
+    <dd>Enables you to create an alarm based on a metric math expression. You may specify at most 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1988,8 +1988,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The descriptive name for the alarm. This name must be unique within the user's AWS account
-{{% /md %}}</dd>
+    <dd>The descriptive name for the alarm. This name must be unique within the user's AWS account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -1997,9 +1997,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
+    <dd>The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2007,8 +2007,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type">string | Topic[]</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2016,8 +2016,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The period in seconds over which the specified `stat` is applied.
-{{% /md %}}</dd>
+    <dd>The period in seconds over which the specified `stat` is applied.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2025,9 +2025,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The statistic to apply to the alarm's associated metric.
+    <dd>The statistic to apply to the alarm's associated metric.
 Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`, `Maximum`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2035,8 +2035,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2044,8 +2044,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number">number</a></span>
     </dt>
-    <dd>{{% md %}}The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
-{{% /md %}}</dd>
+    <dd>The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2053,8 +2053,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}If this is an alarm based on an anomaly detection model, make this value match the ID of the ANOMALY_DETECTION_BAND function.
-{{% /md %}}</dd>
+    <dd>If this is an alarm based on an anomaly detection model, make this value match the ID of the ANOMALY_DETECTION_BAND function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2062,8 +2062,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Sets how this alarm is to handle missing data points. The following values are supported: `missing`, `ignore`, `breaching` and `notBreaching`. Defaults to `missing`.
-{{% /md %}}</dd>
+    <dd>Sets how this alarm is to handle missing data points. The following values are supported: `missing`, `ignore`, `breaching` and `notBreaching`. Defaults to `missing`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2071,14 +2071,14 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unit for this metric.
-{{% /md %}}</dd>
+    <dd>The unit for this metric.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2087,8 +2087,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether or not actions should be executed during any changes to the alarm's state. Defaults to `true`.
-{{% /md %}}</dd>
+    <dd>Indicates whether or not actions should be executed during any changes to the alarm's state. Defaults to `true`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2096,8 +2096,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">List[Topic>]</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2105,8 +2105,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The description for the alarm.
-{{% /md %}}</dd>
+    <dd>The description for the alarm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2114,8 +2114,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The ARN of the cloudwatch metric alarm.
-{{% /md %}}</dd>
+    <dd>The ARN of the cloudwatch metric alarm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2123,8 +2123,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`. Additionally, the values  `LessThanLowerOrGreaterThanUpperThreshold`, `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used only for alarms based on anomaly detection models.
-{{% /md %}}</dd>
+    <dd>The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`. Additionally, the values  `LessThanLowerOrGreaterThanUpperThreshold`, `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used only for alarms based on anomaly detection models.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2132,8 +2132,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of datapoints that must be breaching to trigger the alarm.
-{{% /md %}}</dd>
+    <dd>The number of datapoints that must be breaching to trigger the alarm.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2141,8 +2141,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+    <dd>The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2150,13 +2150,13 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Used only for alarms
+    <dd>Used only for alarms
 based on percentiles. If you specify `ignore`, the alarm state will not
 change during periods with too few data points to be statistically significant.
 If you specify `evaluate` or omit this parameter, the alarm will always be
 evaluated and possibly change state no matter how many data points are available.
 The following values are supported: `ignore`, and `evaluate`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2164,8 +2164,8 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of periods over which data is compared to the specified threshold.
-{{% /md %}}</dd>
+    <dd>The number of periods over which data is compared to the specified threshold.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2173,8 +2173,8 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.
-{{% /md %}}</dd>
+    <dd>The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2182,8 +2182,8 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type">List[Topic>]</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2191,9 +2191,9 @@ The following values are supported: `ignore`, and `evaluate`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name for this metric.
+    <dd>The name for this metric.
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2201,8 +2201,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquery">List[Metric<wbr>Alarm<wbr>Metric<wbr>Query]</a></span>
     </dt>
-    <dd>{{% md %}}Enables you to create an alarm based on a metric math expression. You may specify at most 20.
-{{% /md %}}</dd>
+    <dd>Enables you to create an alarm based on a metric math expression. You may specify at most 20.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2210,8 +2210,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The descriptive name for the alarm. This name must be unique within the user's AWS account
-{{% /md %}}</dd>
+    <dd>The descriptive name for the alarm. This name must be unique within the user's AWS account
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2219,9 +2219,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
+    <dd>The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2229,8 +2229,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type">List[Topic>]</span>
     </dt>
-    <dd>{{% md %}}The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
-{{% /md %}}</dd>
+    <dd>The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2238,8 +2238,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The period in seconds over which the specified `stat` is applied.
-{{% /md %}}</dd>
+    <dd>The period in seconds over which the specified `stat` is applied.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2247,9 +2247,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The statistic to apply to the alarm's associated metric.
+    <dd>The statistic to apply to the alarm's associated metric.
 Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`, `Maximum`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2257,8 +2257,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2266,8 +2266,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
-{{% /md %}}</dd>
+    <dd>The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2275,8 +2275,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}If this is an alarm based on an anomaly detection model, make this value match the ID of the ANOMALY_DETECTION_BAND function.
-{{% /md %}}</dd>
+    <dd>If this is an alarm based on an anomaly detection model, make this value match the ID of the ANOMALY_DETECTION_BAND function.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2284,8 +2284,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Sets how this alarm is to handle missing data points. The following values are supported: `missing`, `ignore`, `breaching` and `notBreaching`. Defaults to `missing`.
-{{% /md %}}</dd>
+    <dd>Sets how this alarm is to handle missing data points. The following values are supported: `missing`, `ignore`, `breaching` and `notBreaching`. Defaults to `missing`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2293,11 +2293,11 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unit for this metric.
-{{% /md %}}</dd>
+    <dd>The unit for this metric.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2312,18 +2312,18 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
 
 
 <h4 id="metricalarmmetricquery">Metric<wbr>Alarm<wbr>Metric<wbr>Query</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#MetricAlarmMetricQuery">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#MetricAlarmMetricQuery">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#MetricAlarmMetricQueryArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#MetricAlarmMetricQueryOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2332,8 +2332,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A short name used to tie this object to the results in the response. If you are performing math expressions on this set of data, this name represents that data and can serve as a variable in the mathematical expression. The valid characters are letters, numbers, and underscore. The first character must be a lowercase letter.
-{{% /md %}}</dd>
+    <dd>A short name used to tie this object to the results in the response. If you are performing math expressions on this set of data, this name represents that data and can serve as a variable in the mathematical expression. The valid characters are letters, numbers, and underscore. The first character must be a lowercase letter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2341,8 +2341,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The math expression to be performed on the returned data, if this object is performing a math expression. This expression can use the id of the other metrics to refer to those metrics, and can also use the id of other expressions to use the result of those expressions. For more information about metric math expressions, see Metric Math Syntax and Functions in the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/using-metric-math.html#metric-math-syntax).
-{{% /md %}}</dd>
+    <dd>The math expression to be performed on the returned data, if this object is performing a math expression. This expression can use the id of the other metrics to refer to those metrics, and can also use the id of other expressions to use the result of those expressions. For more information about metric math expressions, see Metric Math Syntax and Functions in the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/using-metric-math.html#metric-math-syntax).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2350,8 +2350,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}A human-readable label for this metric or expression. This is especially useful if this is an expression, so that you know what the value represents.
-{{% /md %}}</dd>
+    <dd>A human-readable label for this metric or expression. This is especially useful if this is an expression, so that you know what the value represents.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2359,8 +2359,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquerymetric">Metric<wbr>Alarm<wbr>Metric<wbr>Query<wbr>Metric<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}The metric to be returned, along with statistics, period, and units. Use this parameter only if this object is retrieving a metric and not performing a math expression on returned data.
-{{% /md %}}</dd>
+    <dd>The metric to be returned, along with statistics, period, and units. Use this parameter only if this object is retrieving a metric and not performing a math expression on returned data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2368,14 +2368,14 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specify exactly one `metric_query` to be `true` to use that `metric_query` result as the alarm.
-{{% /md %}}</dd>
+    <dd>Specify exactly one `metric_query` to be `true` to use that `metric_query` result as the alarm.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2384,8 +2384,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A short name used to tie this object to the results in the response. If you are performing math expressions on this set of data, this name represents that data and can serve as a variable in the mathematical expression. The valid characters are letters, numbers, and underscore. The first character must be a lowercase letter.
-{{% /md %}}</dd>
+    <dd>A short name used to tie this object to the results in the response. If you are performing math expressions on this set of data, this name represents that data and can serve as a variable in the mathematical expression. The valid characters are letters, numbers, and underscore. The first character must be a lowercase letter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2393,8 +2393,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The math expression to be performed on the returned data, if this object is performing a math expression. This expression can use the id of the other metrics to refer to those metrics, and can also use the id of other expressions to use the result of those expressions. For more information about metric math expressions, see Metric Math Syntax and Functions in the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/using-metric-math.html#metric-math-syntax).
-{{% /md %}}</dd>
+    <dd>The math expression to be performed on the returned data, if this object is performing a math expression. This expression can use the id of the other metrics to refer to those metrics, and can also use the id of other expressions to use the result of those expressions. For more information about metric math expressions, see Metric Math Syntax and Functions in the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/using-metric-math.html#metric-math-syntax).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2402,8 +2402,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}A human-readable label for this metric or expression. This is especially useful if this is an expression, so that you know what the value represents.
-{{% /md %}}</dd>
+    <dd>A human-readable label for this metric or expression. This is especially useful if this is an expression, so that you know what the value represents.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2411,8 +2411,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquerymetric">Metric<wbr>Alarm<wbr>Metric<wbr>Query<wbr>Metric</a></span>
     </dt>
-    <dd>{{% md %}}The metric to be returned, along with statistics, period, and units. Use this parameter only if this object is retrieving a metric and not performing a math expression on returned data.
-{{% /md %}}</dd>
+    <dd>The metric to be returned, along with statistics, period, and units. Use this parameter only if this object is retrieving a metric and not performing a math expression on returned data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2420,14 +2420,14 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specify exactly one `metric_query` to be `true` to use that `metric_query` result as the alarm.
-{{% /md %}}</dd>
+    <dd>Specify exactly one `metric_query` to be `true` to use that `metric_query` result as the alarm.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2436,8 +2436,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A short name used to tie this object to the results in the response. If you are performing math expressions on this set of data, this name represents that data and can serve as a variable in the mathematical expression. The valid characters are letters, numbers, and underscore. The first character must be a lowercase letter.
-{{% /md %}}</dd>
+    <dd>A short name used to tie this object to the results in the response. If you are performing math expressions on this set of data, this name represents that data and can serve as a variable in the mathematical expression. The valid characters are letters, numbers, and underscore. The first character must be a lowercase letter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2445,8 +2445,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The math expression to be performed on the returned data, if this object is performing a math expression. This expression can use the id of the other metrics to refer to those metrics, and can also use the id of other expressions to use the result of those expressions. For more information about metric math expressions, see Metric Math Syntax and Functions in the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/using-metric-math.html#metric-math-syntax).
-{{% /md %}}</dd>
+    <dd>The math expression to be performed on the returned data, if this object is performing a math expression. This expression can use the id of the other metrics to refer to those metrics, and can also use the id of other expressions to use the result of those expressions. For more information about metric math expressions, see Metric Math Syntax and Functions in the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/using-metric-math.html#metric-math-syntax).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2454,8 +2454,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}A human-readable label for this metric or expression. This is especially useful if this is an expression, so that you know what the value represents.
-{{% /md %}}</dd>
+    <dd>A human-readable label for this metric or expression. This is especially useful if this is an expression, so that you know what the value represents.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2463,8 +2463,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquerymetric">Metric<wbr>Alarm<wbr>Metric<wbr>Query<wbr>Metric</a></span>
     </dt>
-    <dd>{{% md %}}The metric to be returned, along with statistics, period, and units. Use this parameter only if this object is retrieving a metric and not performing a math expression on returned data.
-{{% /md %}}</dd>
+    <dd>The metric to be returned, along with statistics, period, and units. Use this parameter only if this object is retrieving a metric and not performing a math expression on returned data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2472,14 +2472,14 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Specify exactly one `metric_query` to be `true` to use that `metric_query` result as the alarm.
-{{% /md %}}</dd>
+    <dd>Specify exactly one `metric_query` to be `true` to use that `metric_query` result as the alarm.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2488,8 +2488,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A short name used to tie this object to the results in the response. If you are performing math expressions on this set of data, this name represents that data and can serve as a variable in the mathematical expression. The valid characters are letters, numbers, and underscore. The first character must be a lowercase letter.
-{{% /md %}}</dd>
+    <dd>A short name used to tie this object to the results in the response. If you are performing math expressions on this set of data, this name represents that data and can serve as a variable in the mathematical expression. The valid characters are letters, numbers, and underscore. The first character must be a lowercase letter.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2497,8 +2497,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The math expression to be performed on the returned data, if this object is performing a math expression. This expression can use the id of the other metrics to refer to those metrics, and can also use the id of other expressions to use the result of those expressions. For more information about metric math expressions, see Metric Math Syntax and Functions in the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/using-metric-math.html#metric-math-syntax).
-{{% /md %}}</dd>
+    <dd>The math expression to be performed on the returned data, if this object is performing a math expression. This expression can use the id of the other metrics to refer to those metrics, and can also use the id of other expressions to use the result of those expressions. For more information about metric math expressions, see Metric Math Syntax and Functions in the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/using-metric-math.html#metric-math-syntax).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2506,8 +2506,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}A human-readable label for this metric or expression. This is especially useful if this is an expression, so that you know what the value represents.
-{{% /md %}}</dd>
+    <dd>A human-readable label for this metric or expression. This is especially useful if this is an expression, so that you know what the value represents.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2515,8 +2515,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#metricalarmmetricquerymetric">Dict[Metric<wbr>Alarm<wbr>Metric<wbr>Query<wbr>Metric]</a></span>
     </dt>
-    <dd>{{% md %}}The metric to be returned, along with statistics, period, and units. Use this parameter only if this object is retrieving a metric and not performing a math expression on returned data.
-{{% /md %}}</dd>
+    <dd>The metric to be returned, along with statistics, period, and units. Use this parameter only if this object is retrieving a metric and not performing a math expression on returned data.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2524,29 +2524,29 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Specify exactly one `metric_query` to be `true` to use that `metric_query` result as the alarm.
-{{% /md %}}</dd>
+    <dd>Specify exactly one `metric_query` to be `true` to use that `metric_query` result as the alarm.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="metricalarmmetricquerymetric">Metric<wbr>Alarm<wbr>Metric<wbr>Query<wbr>Metric</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/input/#MetricAlarmMetricQueryMetric">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/aws/types/output/#MetricAlarmMetricQueryMetric">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#MetricAlarmMetricQueryMetricArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-aws/sdk/v2/go/aws/cloudwatch?tab=doc#MetricAlarmMetricQueryMetricOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2555,9 +2555,9 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for this metric.
+    <dd>The name for this metric.
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2565,8 +2565,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The period in seconds over which the specified `stat` is applied.
-{{% /md %}}</dd>
+    <dd>The period in seconds over which the specified `stat` is applied.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2574,9 +2574,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The statistic to apply to this metric.
+    <dd>The statistic to apply to this metric.
 Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`, `Maximum`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2584,8 +2584,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, object&gt;</span>
     </dt>
-    <dd>{{% md %}}The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+    <dd>The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2593,9 +2593,9 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
+    <dd>The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2603,14 +2603,14 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The unit for this metric.
-{{% /md %}}</dd>
+    <dd>The unit for this metric.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2619,9 +2619,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for this metric.
+    <dd>The name for this metric.
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2629,8 +2629,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The period in seconds over which the specified `stat` is applied.
-{{% /md %}}</dd>
+    <dd>The period in seconds over which the specified `stat` is applied.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2638,9 +2638,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The statistic to apply to this metric.
+    <dd>The statistic to apply to this metric.
 Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`, `Maximum`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2648,8 +2648,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">map[string]interface{}</span>
     </dt>
-    <dd>{{% md %}}The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+    <dd>The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2657,9 +2657,9 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
+    <dd>The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2667,14 +2667,14 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unit for this metric.
-{{% /md %}}</dd>
+    <dd>The unit for this metric.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2683,9 +2683,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name for this metric.
+    <dd>The name for this metric.
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2693,8 +2693,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The period in seconds over which the specified `stat` is applied.
-{{% /md %}}</dd>
+    <dd>The period in seconds over which the specified `stat` is applied.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2702,9 +2702,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The statistic to apply to this metric.
+    <dd>The statistic to apply to this metric.
 Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`, `Maximum`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2712,8 +2712,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: any}</span>
     </dt>
-    <dd>{{% md %}}The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+    <dd>The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2721,9 +2721,9 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
+    <dd>The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2731,14 +2731,14 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The unit for this metric.
-{{% /md %}}</dd>
+    <dd>The unit for this metric.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -2747,9 +2747,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name for this metric.
+    <dd>The name for this metric.
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2757,8 +2757,8 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The period in seconds over which the specified `stat` is applied.
-{{% /md %}}</dd>
+    <dd>The period in seconds over which the specified `stat` is applied.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -2766,9 +2766,9 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The statistic to apply to this metric.
+    <dd>The statistic to apply to this metric.
 Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`, `Maximum`
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2776,8 +2776,8 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, Any]</span>
     </dt>
-    <dd>{{% md %}}The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+    <dd>The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2785,9 +2785,9 @@ Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
+    <dd>The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
 See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2795,11 +2795,11 @@ See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/la
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The unit for this metric.
-{{% /md %}}</dd>
+    <dd>The unit for this metric.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 

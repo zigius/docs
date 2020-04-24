@@ -18,26 +18,26 @@ Manages an Azure Storage Account.
 
 
 ## Create a Account Resource {#create}
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">new </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/storage/#Account">Account</a></span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">args</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/storage/#AccountArgs">AccountArgs</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def </span><span class="nf">Account</span><span class="p">(resource_name, opts=None, </span>access_tier=None<span class="p">, </span>account_kind=None<span class="p">, </span>account_replication_type=None<span class="p">, </span>account_tier=None<span class="p">, </span>blob_properties=None<span class="p">, </span>custom_domain=None<span class="p">, </span>enable_https_traffic_only=None<span class="p">, </span>identity=None<span class="p">, </span>is_hns_enabled=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>network_rules=None<span class="p">, </span>queue_properties=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>static_website=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>NewAccount<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">args</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountArgs">AccountArgs</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#Account">Account</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Storage.Account.html">Account</a></span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Storage.AccountArgs.html">AccountArgs</a></span> <span class="nx">args<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
   
@@ -74,9 +74,9 @@ Manages an Azure Storage Account.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -94,9 +94,9 @@ Manages an Azure Storage Account.
     </dt>
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 
 <dl class="resources-properties">
   
@@ -143,9 +143,9 @@ Manages an Azure Storage Account.
 
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 
 <dl class="resources-properties">
   
@@ -182,7 +182,7 @@ Manages an Azure Storage Account.
 
 </dl>
 
-{{% /choosable %}}
+
 
 ## Account Resource Properties {#properties}
 
@@ -195,7 +195,7 @@ The Account resource accepts the following [input]({{< relref "/docs/intro/conce
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -204,8 +204,8 @@ The Account resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the type of replication to use for this storage account. Valid options are `LRS`, `GRS`, `RAGRS` and `ZRS`.
-{{% /md %}}</dd>
+    <dd>Defines the type of replication to use for this storage account. Valid options are `LRS`, `GRS`, `RAGRS` and `ZRS`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -213,8 +213,8 @@ The Account resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the Tier to use for this storage account. Valid options are `Standard` and `Premium`. For `FileStorage` accounts only `Premium` is valid. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Defines the Tier to use for this storage account. Valid options are `Standard` and `Premium`. For `FileStorage` accounts only `Premium` is valid. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -222,8 +222,8 @@ The Account resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -231,8 +231,8 @@ The Account resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the access tier for `BlobStorage`, `FileStorage` and `StorageV2` accounts. Valid options are `Hot` and `Cool`, defaults to `Hot`.
-{{% /md %}}</dd>
+    <dd>Defines the access tier for `BlobStorage`, `FileStorage` and `StorageV2` accounts. Valid options are `Hot` and `Cool`, defaults to `Hot`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -240,8 +240,8 @@ The Account resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the Kind of account. Valid options are `BlobStorage`, `BlockBlobStorage`, `FileStorage`, `Storage` and `StorageV2`. Changing this forces a new resource to be created. Defaults to `StorageV2`.
-{{% /md %}}</dd>
+    <dd>Defines the Kind of account. Valid options are `BlobStorage`, `BlockBlobStorage`, `FileStorage`, `Storage` and `StorageV2`. Changing this forces a new resource to be created. Defaults to `StorageV2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -249,8 +249,8 @@ The Account resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountblobproperties">Account<wbr>Blob<wbr>Properties<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `blob_properties` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `blob_properties` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -258,8 +258,8 @@ The Account resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountcustomdomain">Account<wbr>Custom<wbr>Domain<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `custom_domain` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `custom_domain` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -267,9 +267,9 @@ The Account resource accepts the following [input]({{< relref "/docs/intro/conce
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean flag which forces HTTPS if enabled, see [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
+    <dd>Boolean flag which forces HTTPS if enabled, see [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
 for more information. Defaults to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -277,8 +277,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountidentity">Account<wbr>Identity<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -286,8 +286,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Hierarchical Namespace enabled? This can be used with Azure Data Lake Storage Gen 2 ([see here for more information](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account/)). Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is Hierarchical Namespace enabled? This can be used with Azure Data Lake Storage Gen 2 ([see here for more information](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account/)). Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -295,8 +295,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -304,8 +304,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the storage account. Changing this forces a new resource to be created. This must be unique across the entire Azure service, not just within the resource group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the storage account. Changing this forces a new resource to be created. This must be unique across the entire Azure service, not just within the resource group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -313,8 +313,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountnetworkrules">Account<wbr>Network<wbr>Rules<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `network_rules` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `network_rules` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -322,8 +322,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueueproperties">Account<wbr>Queue<wbr>Properties<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `queue_properties` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `queue_properties` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -331,8 +331,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountstaticwebsite">Account<wbr>Static<wbr>Website<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `static_website` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `static_website` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -340,14 +340,14 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -356,8 +356,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the type of replication to use for this storage account. Valid options are `LRS`, `GRS`, `RAGRS` and `ZRS`.
-{{% /md %}}</dd>
+    <dd>Defines the type of replication to use for this storage account. Valid options are `LRS`, `GRS`, `RAGRS` and `ZRS`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -365,8 +365,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the Tier to use for this storage account. Valid options are `Standard` and `Premium`. For `FileStorage` accounts only `Premium` is valid. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Defines the Tier to use for this storage account. Valid options are `Standard` and `Premium`. For `FileStorage` accounts only `Premium` is valid. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -374,8 +374,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -383,8 +383,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the access tier for `BlobStorage`, `FileStorage` and `StorageV2` accounts. Valid options are `Hot` and `Cool`, defaults to `Hot`.
-{{% /md %}}</dd>
+    <dd>Defines the access tier for `BlobStorage`, `FileStorage` and `StorageV2` accounts. Valid options are `Hot` and `Cool`, defaults to `Hot`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -392,8 +392,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the Kind of account. Valid options are `BlobStorage`, `BlockBlobStorage`, `FileStorage`, `Storage` and `StorageV2`. Changing this forces a new resource to be created. Defaults to `StorageV2`.
-{{% /md %}}</dd>
+    <dd>Defines the Kind of account. Valid options are `BlobStorage`, `BlockBlobStorage`, `FileStorage`, `Storage` and `StorageV2`. Changing this forces a new resource to be created. Defaults to `StorageV2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -401,8 +401,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountblobproperties">Account<wbr>Blob<wbr>Properties</a></span>
     </dt>
-    <dd>{{% md %}}A `blob_properties` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `blob_properties` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -410,8 +410,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountcustomdomain">Account<wbr>Custom<wbr>Domain</a></span>
     </dt>
-    <dd>{{% md %}}A `custom_domain` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `custom_domain` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -419,9 +419,9 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean flag which forces HTTPS if enabled, see [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
+    <dd>Boolean flag which forces HTTPS if enabled, see [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
 for more information. Defaults to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -429,8 +429,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountidentity">Account<wbr>Identity</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -438,8 +438,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Hierarchical Namespace enabled? This can be used with Azure Data Lake Storage Gen 2 ([see here for more information](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account/)). Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is Hierarchical Namespace enabled? This can be used with Azure Data Lake Storage Gen 2 ([see here for more information](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account/)). Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -447,8 +447,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -456,8 +456,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the storage account. Changing this forces a new resource to be created. This must be unique across the entire Azure service, not just within the resource group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the storage account. Changing this forces a new resource to be created. This must be unique across the entire Azure service, not just within the resource group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -465,8 +465,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountnetworkrules">Account<wbr>Network<wbr>Rules<wbr>Type</a></span>
     </dt>
-    <dd>{{% md %}}A `network_rules` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `network_rules` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -474,8 +474,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueueproperties">Account<wbr>Queue<wbr>Properties</a></span>
     </dt>
-    <dd>{{% md %}}A `queue_properties` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `queue_properties` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -483,8 +483,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountstaticwebsite">Account<wbr>Static<wbr>Website</a></span>
     </dt>
-    <dd>{{% md %}}A `static_website` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `static_website` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -492,14 +492,14 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -508,8 +508,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the type of replication to use for this storage account. Valid options are `LRS`, `GRS`, `RAGRS` and `ZRS`.
-{{% /md %}}</dd>
+    <dd>Defines the type of replication to use for this storage account. Valid options are `LRS`, `GRS`, `RAGRS` and `ZRS`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -517,8 +517,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the Tier to use for this storage account. Valid options are `Standard` and `Premium`. For `FileStorage` accounts only `Premium` is valid. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Defines the Tier to use for this storage account. Valid options are `Standard` and `Premium`. For `FileStorage` accounts only `Premium` is valid. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -526,8 +526,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -535,8 +535,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the access tier for `BlobStorage`, `FileStorage` and `StorageV2` accounts. Valid options are `Hot` and `Cool`, defaults to `Hot`.
-{{% /md %}}</dd>
+    <dd>Defines the access tier for `BlobStorage`, `FileStorage` and `StorageV2` accounts. Valid options are `Hot` and `Cool`, defaults to `Hot`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -544,8 +544,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the Kind of account. Valid options are `BlobStorage`, `BlockBlobStorage`, `FileStorage`, `Storage` and `StorageV2`. Changing this forces a new resource to be created. Defaults to `StorageV2`.
-{{% /md %}}</dd>
+    <dd>Defines the Kind of account. Valid options are `BlobStorage`, `BlockBlobStorage`, `FileStorage`, `Storage` and `StorageV2`. Changing this forces a new resource to be created. Defaults to `StorageV2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -553,8 +553,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountblobproperties">Account<wbr>Blob<wbr>Properties</a></span>
     </dt>
-    <dd>{{% md %}}A `blob_properties` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `blob_properties` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -562,8 +562,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountcustomdomain">Account<wbr>Custom<wbr>Domain</a></span>
     </dt>
-    <dd>{{% md %}}A `custom_domain` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `custom_domain` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -571,9 +571,9 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean flag which forces HTTPS if enabled, see [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
+    <dd>Boolean flag which forces HTTPS if enabled, see [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
 for more information. Defaults to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -581,8 +581,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountidentity">Account<wbr>Identity</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -590,8 +590,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is Hierarchical Namespace enabled? This can be used with Azure Data Lake Storage Gen 2 ([see here for more information](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account/)). Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is Hierarchical Namespace enabled? This can be used with Azure Data Lake Storage Gen 2 ([see here for more information](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account/)). Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -599,8 +599,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -608,8 +608,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the storage account. Changing this forces a new resource to be created. This must be unique across the entire Azure service, not just within the resource group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the storage account. Changing this forces a new resource to be created. This must be unique across the entire Azure service, not just within the resource group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -617,8 +617,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountnetworkrules">Account<wbr>Network<wbr>Rules</a></span>
     </dt>
-    <dd>{{% md %}}A `network_rules` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `network_rules` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -626,8 +626,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueueproperties">Account<wbr>Queue<wbr>Properties</a></span>
     </dt>
-    <dd>{{% md %}}A `queue_properties` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `queue_properties` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -635,8 +635,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountstaticwebsite">Account<wbr>Static<wbr>Website</a></span>
     </dt>
-    <dd>{{% md %}}A `static_website` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `static_website` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -644,14 +644,14 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -660,8 +660,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Defines the type of replication to use for this storage account. Valid options are `LRS`, `GRS`, `RAGRS` and `ZRS`.
-{{% /md %}}</dd>
+    <dd>Defines the type of replication to use for this storage account. Valid options are `LRS`, `GRS`, `RAGRS` and `ZRS`.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -669,8 +669,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Defines the Tier to use for this storage account. Valid options are `Standard` and `Premium`. For `FileStorage` accounts only `Premium` is valid. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Defines the Tier to use for this storage account. Valid options are `Standard` and `Premium`. For `FileStorage` accounts only `Premium` is valid. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -678,8 +678,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -687,8 +687,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Defines the access tier for `BlobStorage`, `FileStorage` and `StorageV2` accounts. Valid options are `Hot` and `Cool`, defaults to `Hot`.
-{{% /md %}}</dd>
+    <dd>Defines the access tier for `BlobStorage`, `FileStorage` and `StorageV2` accounts. Valid options are `Hot` and `Cool`, defaults to `Hot`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -696,8 +696,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Defines the Kind of account. Valid options are `BlobStorage`, `BlockBlobStorage`, `FileStorage`, `Storage` and `StorageV2`. Changing this forces a new resource to be created. Defaults to `StorageV2`.
-{{% /md %}}</dd>
+    <dd>Defines the Kind of account. Valid options are `BlobStorage`, `BlockBlobStorage`, `FileStorage`, `Storage` and `StorageV2`. Changing this forces a new resource to be created. Defaults to `StorageV2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -705,8 +705,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountblobproperties">Dict[Account<wbr>Blob<wbr>Properties]</a></span>
     </dt>
-    <dd>{{% md %}}A `blob_properties` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `blob_properties` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -714,8 +714,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountcustomdomain">Dict[Account<wbr>Custom<wbr>Domain]</a></span>
     </dt>
-    <dd>{{% md %}}A `custom_domain` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `custom_domain` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -723,9 +723,9 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean flag which forces HTTPS if enabled, see [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
+    <dd>Boolean flag which forces HTTPS if enabled, see [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
 for more information. Defaults to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -733,8 +733,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountidentity">Dict[Account<wbr>Identity]</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -742,8 +742,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Hierarchical Namespace enabled? This can be used with Azure Data Lake Storage Gen 2 ([see here for more information](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account/)). Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is Hierarchical Namespace enabled? This can be used with Azure Data Lake Storage Gen 2 ([see here for more information](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account/)). Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -751,8 +751,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -760,8 +760,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the storage account. Changing this forces a new resource to be created. This must be unique across the entire Azure service, not just within the resource group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the storage account. Changing this forces a new resource to be created. This must be unique across the entire Azure service, not just within the resource group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -769,8 +769,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountnetworkrules">Dict[Account<wbr>Network<wbr>Rules]</a></span>
     </dt>
-    <dd>{{% md %}}A `network_rules` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `network_rules` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -778,8 +778,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueueproperties">Dict[Account<wbr>Queue<wbr>Properties]</a></span>
     </dt>
-    <dd>{{% md %}}A `queue_properties` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `queue_properties` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -787,8 +787,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountstaticwebsite">Dict[Account<wbr>Static<wbr>Website]</a></span>
     </dt>
-    <dd>{{% md %}}A `static_website` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `static_website` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -796,11 +796,11 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -814,7 +814,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -823,7 +823,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -831,8 +831,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary access key for the storage account.
-{{% /md %}}</dd>
+    <dd>The primary access key for the storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -840,8 +840,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary blob location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary blob location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -849,8 +849,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -858,8 +858,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -867,8 +867,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -876,8 +876,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -885,8 +885,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -894,8 +894,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -903,8 +903,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -912,8 +912,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary location of the storage account.
-{{% /md %}}</dd>
+    <dd>The primary location of the storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -921,8 +921,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -930,8 +930,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -939,8 +939,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -948,8 +948,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -957,8 +957,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -966,8 +966,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -975,8 +975,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary access key for the storage account.
-{{% /md %}}</dd>
+    <dd>The secondary access key for the storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -984,8 +984,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary blob location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary blob location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -993,8 +993,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1002,8 +1002,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1011,8 +1011,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1020,8 +1020,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1029,8 +1029,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1038,8 +1038,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1047,8 +1047,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1056,8 +1056,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary location of the storage account.
-{{% /md %}}</dd>
+    <dd>The secondary location of the storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1065,8 +1065,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1074,8 +1074,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1083,8 +1083,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1092,8 +1092,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1101,8 +1101,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1110,14 +1110,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the secondary location.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1126,7 +1126,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1134,8 +1134,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary access key for the storage account.
-{{% /md %}}</dd>
+    <dd>The primary access key for the storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1143,8 +1143,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary blob location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary blob location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1152,8 +1152,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1161,8 +1161,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1170,8 +1170,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1179,8 +1179,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1188,8 +1188,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1197,8 +1197,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1206,8 +1206,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1215,8 +1215,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary location of the storage account.
-{{% /md %}}</dd>
+    <dd>The primary location of the storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1224,8 +1224,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1233,8 +1233,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1242,8 +1242,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1251,8 +1251,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1260,8 +1260,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1269,8 +1269,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1278,8 +1278,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary access key for the storage account.
-{{% /md %}}</dd>
+    <dd>The secondary access key for the storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1287,8 +1287,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary blob location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary blob location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1296,8 +1296,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1305,8 +1305,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1314,8 +1314,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1323,8 +1323,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1332,8 +1332,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1341,8 +1341,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1350,8 +1350,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1359,8 +1359,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary location of the storage account.
-{{% /md %}}</dd>
+    <dd>The secondary location of the storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1368,8 +1368,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1377,8 +1377,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1386,8 +1386,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1395,8 +1395,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1404,8 +1404,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1413,14 +1413,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the secondary location.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1429,7 +1429,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1437,8 +1437,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary access key for the storage account.
-{{% /md %}}</dd>
+    <dd>The primary access key for the storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1446,8 +1446,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary blob location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary blob location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1455,8 +1455,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1464,8 +1464,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1473,8 +1473,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1482,8 +1482,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1491,8 +1491,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1500,8 +1500,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1509,8 +1509,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1518,8 +1518,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary location of the storage account.
-{{% /md %}}</dd>
+    <dd>The primary location of the storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1527,8 +1527,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1536,8 +1536,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1545,8 +1545,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1554,8 +1554,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1563,8 +1563,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1572,8 +1572,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1581,8 +1581,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary access key for the storage account.
-{{% /md %}}</dd>
+    <dd>The secondary access key for the storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1590,8 +1590,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary blob location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary blob location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1599,8 +1599,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1608,8 +1608,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1617,8 +1617,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1626,8 +1626,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1635,8 +1635,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1644,8 +1644,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1653,8 +1653,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1662,8 +1662,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary location of the storage account.
-{{% /md %}}</dd>
+    <dd>The secondary location of the storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1671,8 +1671,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1680,8 +1680,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1689,8 +1689,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1698,8 +1698,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1707,8 +1707,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1716,14 +1716,14 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the secondary location.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-"
@@ -1732,7 +1732,7 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The provider-assigned unique ID for this managed resource.{{% /md %}}</dd>
+    <dd>The provider-assigned unique ID for this managed resource.</dd>
 
     <dt class="property-"
             title="">
@@ -1740,8 +1740,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The primary access key for the storage account.
-{{% /md %}}</dd>
+    <dd>The primary access key for the storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1749,8 +1749,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary blob location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary blob location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1758,8 +1758,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1767,8 +1767,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1776,8 +1776,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1785,8 +1785,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1794,8 +1794,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1803,8 +1803,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1812,8 +1812,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1821,8 +1821,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The primary location of the storage account.
-{{% /md %}}</dd>
+    <dd>The primary location of the storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1830,8 +1830,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1839,8 +1839,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1848,8 +1848,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1857,8 +1857,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1866,8 +1866,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1875,8 +1875,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the primary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1884,8 +1884,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secondary access key for the storage account.
-{{% /md %}}</dd>
+    <dd>The secondary access key for the storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1893,8 +1893,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary blob location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary blob location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1902,8 +1902,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1911,8 +1911,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1920,8 +1920,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1929,8 +1929,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1938,8 +1938,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1947,8 +1947,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1956,8 +1956,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1965,8 +1965,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secondary location of the storage account.
-{{% /md %}}</dd>
+    <dd>The secondary location of the storage account.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1974,8 +1974,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1983,8 +1983,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -1992,8 +1992,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2001,8 +2001,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2010,8 +2010,8 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the secondary location.
+</dd>
 
     <dt class="property-"
             title="">
@@ -2019,11 +2019,11 @@ All [input](#inputs) properties are implicitly available as output properties. A
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the secondary location.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -2034,25 +2034,25 @@ All [input](#inputs) properties are implicitly available as output properties. A
 ## Look up an Existing Account Resource {#look-up}
 
 Get an existing Account resource's state with the given name, ID, and optional extra properties used to qualify the lookup.
-{{< chooser language "javascript,typescript,python,go,csharp" / >}}
 
-{{% choosable language nodejs %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-typescript" data-lang="typescript"><span class="k">public static </span><span class="nf">get</span><span class="p">(</span><span class="nx">name</span>: <span class="nx"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span><span class="p">, </span><span class="nx">id</span>: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#ID">Input&lt;ID&gt;</a></span><span class="p">, </span><span class="nx">state</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/storage/#AccountState">AccountState</a></span><span class="p">, </span><span class="nx">opts</span>?: <span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/pulumi/#CustomResourceOptions">CustomResourceOptions</a></span><span class="p">): </span><span class="nx"><a href="/docs/reference/pkg/nodejs/pulumi/azure/storage/#Account">Account</a></span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">static </span><span class="nf">get</span><span class="p">(resource_name, id, opts=None, </span>access_tier=None<span class="p">, </span>account_kind=None<span class="p">, </span>account_replication_type=None<span class="p">, </span>account_tier=None<span class="p">, </span>blob_properties=None<span class="p">, </span>custom_domain=None<span class="p">, </span>enable_https_traffic_only=None<span class="p">, </span>identity=None<span class="p">, </span>is_hns_enabled=None<span class="p">, </span>location=None<span class="p">, </span>name=None<span class="p">, </span>network_rules=None<span class="p">, </span>primary_access_key=None<span class="p">, </span>primary_blob_connection_string=None<span class="p">, </span>primary_blob_endpoint=None<span class="p">, </span>primary_blob_host=None<span class="p">, </span>primary_connection_string=None<span class="p">, </span>primary_dfs_endpoint=None<span class="p">, </span>primary_dfs_host=None<span class="p">, </span>primary_file_endpoint=None<span class="p">, </span>primary_file_host=None<span class="p">, </span>primary_location=None<span class="p">, </span>primary_queue_endpoint=None<span class="p">, </span>primary_queue_host=None<span class="p">, </span>primary_table_endpoint=None<span class="p">, </span>primary_table_host=None<span class="p">, </span>primary_web_endpoint=None<span class="p">, </span>primary_web_host=None<span class="p">, </span>queue_properties=None<span class="p">, </span>resource_group_name=None<span class="p">, </span>secondary_access_key=None<span class="p">, </span>secondary_blob_connection_string=None<span class="p">, </span>secondary_blob_endpoint=None<span class="p">, </span>secondary_blob_host=None<span class="p">, </span>secondary_connection_string=None<span class="p">, </span>secondary_dfs_endpoint=None<span class="p">, </span>secondary_dfs_host=None<span class="p">, </span>secondary_file_endpoint=None<span class="p">, </span>secondary_file_host=None<span class="p">, </span>secondary_location=None<span class="p">, </span>secondary_queue_endpoint=None<span class="p">, </span>secondary_queue_host=None<span class="p">, </span>secondary_table_endpoint=None<span class="p">, </span>secondary_table_host=None<span class="p">, </span>secondary_web_endpoint=None<span class="p">, </span>secondary_web_host=None<span class="p">, </span>static_website=None<span class="p">, </span>tags=None<span class="p">, __props__=None);</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-go" data-lang="go"><span class="k">func </span>GetAccount<span class="p">(</span><span class="nx">ctx</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#Context">Context</a></span><span class="p">, </span><span class="nx">name</span> <span class="nx"><a href="https://golang.org/pkg/builtin/#string">string</a></span><span class="p">, </span><span class="nx">id</span> <span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#IDInput">IDInput</a></span><span class="p">, </span><span class="nx">state</span> *<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountState">AccountState</a></span><span class="p">, </span><span class="nx">opts</span> ...<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi/sdk/v3/go/pulumi?tab=doc#ResourceOption">ResourceOption</a></span><span class="p">) (*<span class="nx"><a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#Account">Account</a></span>, error)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language csharp %}}
+
+
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="k">public static </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Storage.Account.html">Account</a></span><span class="nf"> Get</span><span class="p">(</span><span class="nx"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span> <span class="nx">name<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.Input.html">Input&lt;string&gt;</a></span> <span class="nx">id<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi.Azure/Pulumi.Azure.Storage.AccountState.html">AccountState</a></span>? <span class="nx">state<span class="p">, </span><span class="nx"><a href="/docs/reference/pkg/dotnet/Pulumi/Pulumi.CustomResourceOptions.html">CustomResourceOptions</a></span>? <span class="nx">opts = null<span class="p">)</span></code></pre></div>
-{{% /choosable %}}
 
-{{% choosable language nodejs %}}
+
+
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -2077,9 +2077,9 @@ Get an existing Account resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
         <span>resource_name</span>
@@ -2092,36 +2092,9 @@ Get an existing Account resource's state with the given name, ID, and optional e
     </dt>
     <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
 </dl>
-{{% /choosable %}}
 
-{{% choosable language go %}}
 
-<dl class="resources-properties">
-    <dt class="property-required" title="Required">
-        <span>name</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The unique name of the resulting resource.</dd>
-    <dt class="property-required" title="Required">
-        <span>id</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>state</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>Any extra arguments used during the lookup.</dd>
-    <dt class="property-optional" title="Optional">
-        <span>opts</span>
-        <span class="property-indicator"></span>
-    </dt>
-    <dd>A bag of options that control this resource's behavior.</dd>
-</dl>
 
-{{% /choosable %}}
-
-{{% choosable language csharp %}}
 
 <dl class="resources-properties">
     <dt class="property-required" title="Required">
@@ -2146,13 +2119,40 @@ Get an existing Account resource's state with the given name, ID, and optional e
     <dd>A bag of options that control this resource's behavior.</dd>
 </dl>
 
-{{% /choosable %}}
+
+
+
+
+<dl class="resources-properties">
+    <dt class="property-required" title="Required">
+        <span>name</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The unique name of the resulting resource.</dd>
+    <dt class="property-required" title="Required">
+        <span>id</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>The <em>unique</em> provider ID of the resource to lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>state</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>Any extra arguments used during the lookup.</dd>
+    <dt class="property-optional" title="Optional">
+        <span>opts</span>
+        <span class="property-indicator"></span>
+    </dt>
+    <dd>A bag of options that control this resource's behavior.</dd>
+</dl>
+
+
 
 The following state arguments are supported:
 
 
 
-{{% choosable language csharp %}}
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2161,8 +2161,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the access tier for `BlobStorage`, `FileStorage` and `StorageV2` accounts. Valid options are `Hot` and `Cool`, defaults to `Hot`.
-{{% /md %}}</dd>
+    <dd>Defines the access tier for `BlobStorage`, `FileStorage` and `StorageV2` accounts. Valid options are `Hot` and `Cool`, defaults to `Hot`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2170,8 +2170,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the Kind of account. Valid options are `BlobStorage`, `BlockBlobStorage`, `FileStorage`, `Storage` and `StorageV2`. Changing this forces a new resource to be created. Defaults to `StorageV2`.
-{{% /md %}}</dd>
+    <dd>Defines the Kind of account. Valid options are `BlobStorage`, `BlockBlobStorage`, `FileStorage`, `Storage` and `StorageV2`. Changing this forces a new resource to be created. Defaults to `StorageV2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2179,8 +2179,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the type of replication to use for this storage account. Valid options are `LRS`, `GRS`, `RAGRS` and `ZRS`.
-{{% /md %}}</dd>
+    <dd>Defines the type of replication to use for this storage account. Valid options are `LRS`, `GRS`, `RAGRS` and `ZRS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2188,8 +2188,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the Tier to use for this storage account. Valid options are `Standard` and `Premium`. For `FileStorage` accounts only `Premium` is valid. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Defines the Tier to use for this storage account. Valid options are `Standard` and `Premium`. For `FileStorage` accounts only `Premium` is valid. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2197,8 +2197,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountblobproperties">Account<wbr>Blob<wbr>Properties<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `blob_properties` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `blob_properties` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2206,8 +2206,8 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountcustomdomain">Account<wbr>Custom<wbr>Domain<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `custom_domain` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `custom_domain` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2215,9 +2215,9 @@ The following state arguments are supported:
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean flag which forces HTTPS if enabled, see [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
+    <dd>Boolean flag which forces HTTPS if enabled, see [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
 for more information. Defaults to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2225,8 +2225,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountidentity">Account<wbr>Identity<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2234,8 +2234,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Hierarchical Namespace enabled? This can be used with Azure Data Lake Storage Gen 2 ([see here for more information](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account/)). Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is Hierarchical Namespace enabled? This can be used with Azure Data Lake Storage Gen 2 ([see here for more information](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account/)). Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2243,8 +2243,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2252,8 +2252,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the storage account. Changing this forces a new resource to be created. This must be unique across the entire Azure service, not just within the resource group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the storage account. Changing this forces a new resource to be created. This must be unique across the entire Azure service, not just within the resource group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2261,8 +2261,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountnetworkrules">Account<wbr>Network<wbr>Rules<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `network_rules` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `network_rules` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2270,8 +2270,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary access key for the storage account.
-{{% /md %}}</dd>
+    <dd>The primary access key for the storage account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2279,8 +2279,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary blob location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary blob location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2288,8 +2288,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2297,8 +2297,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2306,8 +2306,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2315,8 +2315,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2324,8 +2324,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2333,8 +2333,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2342,8 +2342,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2351,8 +2351,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary location of the storage account.
-{{% /md %}}</dd>
+    <dd>The primary location of the storage account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2360,8 +2360,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2369,8 +2369,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2378,8 +2378,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2387,8 +2387,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2396,8 +2396,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2405,8 +2405,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2414,8 +2414,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueueproperties">Account<wbr>Queue<wbr>Properties<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `queue_properties` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `queue_properties` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2423,8 +2423,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2432,8 +2432,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary access key for the storage account.
-{{% /md %}}</dd>
+    <dd>The secondary access key for the storage account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2441,8 +2441,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary blob location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary blob location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2450,8 +2450,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2459,8 +2459,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2468,8 +2468,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2477,8 +2477,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2486,8 +2486,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2495,8 +2495,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2504,8 +2504,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2513,8 +2513,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary location of the storage account.
-{{% /md %}}</dd>
+    <dd>The secondary location of the storage account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2522,8 +2522,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2531,8 +2531,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2540,8 +2540,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2549,8 +2549,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2558,8 +2558,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2567,8 +2567,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2576,8 +2576,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountstaticwebsite">Account<wbr>Static<wbr>Website<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `static_website` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `static_website` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2585,14 +2585,14 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type">Dictionary&lt;string, string&gt;</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -2601,8 +2601,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the access tier for `BlobStorage`, `FileStorage` and `StorageV2` accounts. Valid options are `Hot` and `Cool`, defaults to `Hot`.
-{{% /md %}}</dd>
+    <dd>Defines the access tier for `BlobStorage`, `FileStorage` and `StorageV2` accounts. Valid options are `Hot` and `Cool`, defaults to `Hot`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2610,8 +2610,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the Kind of account. Valid options are `BlobStorage`, `BlockBlobStorage`, `FileStorage`, `Storage` and `StorageV2`. Changing this forces a new resource to be created. Defaults to `StorageV2`.
-{{% /md %}}</dd>
+    <dd>Defines the Kind of account. Valid options are `BlobStorage`, `BlockBlobStorage`, `FileStorage`, `Storage` and `StorageV2`. Changing this forces a new resource to be created. Defaults to `StorageV2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2619,8 +2619,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the type of replication to use for this storage account. Valid options are `LRS`, `GRS`, `RAGRS` and `ZRS`.
-{{% /md %}}</dd>
+    <dd>Defines the type of replication to use for this storage account. Valid options are `LRS`, `GRS`, `RAGRS` and `ZRS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2628,8 +2628,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the Tier to use for this storage account. Valid options are `Standard` and `Premium`. For `FileStorage` accounts only `Premium` is valid. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Defines the Tier to use for this storage account. Valid options are `Standard` and `Premium`. For `FileStorage` accounts only `Premium` is valid. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2637,8 +2637,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountblobproperties">Account<wbr>Blob<wbr>Properties</a></span>
     </dt>
-    <dd>{{% md %}}A `blob_properties` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `blob_properties` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2646,8 +2646,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountcustomdomain">Account<wbr>Custom<wbr>Domain</a></span>
     </dt>
-    <dd>{{% md %}}A `custom_domain` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `custom_domain` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2655,9 +2655,9 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean flag which forces HTTPS if enabled, see [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
+    <dd>Boolean flag which forces HTTPS if enabled, see [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
 for more information. Defaults to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2665,8 +2665,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountidentity">Account<wbr>Identity</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2674,8 +2674,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Hierarchical Namespace enabled? This can be used with Azure Data Lake Storage Gen 2 ([see here for more information](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account/)). Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is Hierarchical Namespace enabled? This can be used with Azure Data Lake Storage Gen 2 ([see here for more information](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account/)). Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2683,8 +2683,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2692,8 +2692,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the storage account. Changing this forces a new resource to be created. This must be unique across the entire Azure service, not just within the resource group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the storage account. Changing this forces a new resource to be created. This must be unique across the entire Azure service, not just within the resource group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2701,8 +2701,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountnetworkrules">Account<wbr>Network<wbr>Rules<wbr>Type</a></span>
     </dt>
-    <dd>{{% md %}}A `network_rules` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `network_rules` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2710,8 +2710,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary access key for the storage account.
-{{% /md %}}</dd>
+    <dd>The primary access key for the storage account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2719,8 +2719,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary blob location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary blob location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2728,8 +2728,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2737,8 +2737,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2746,8 +2746,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2755,8 +2755,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2764,8 +2764,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2773,8 +2773,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2782,8 +2782,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2791,8 +2791,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary location of the storage account.
-{{% /md %}}</dd>
+    <dd>The primary location of the storage account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2800,8 +2800,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2809,8 +2809,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2818,8 +2818,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2827,8 +2827,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2836,8 +2836,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2845,8 +2845,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2854,8 +2854,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueueproperties">Account<wbr>Queue<wbr>Properties</a></span>
     </dt>
-    <dd>{{% md %}}A `queue_properties` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `queue_properties` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2863,8 +2863,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2872,8 +2872,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary access key for the storage account.
-{{% /md %}}</dd>
+    <dd>The secondary access key for the storage account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2881,8 +2881,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary blob location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary blob location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2890,8 +2890,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2899,8 +2899,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2908,8 +2908,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2917,8 +2917,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2926,8 +2926,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2935,8 +2935,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2944,8 +2944,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2953,8 +2953,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary location of the storage account.
-{{% /md %}}</dd>
+    <dd>The secondary location of the storage account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2962,8 +2962,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2971,8 +2971,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2980,8 +2980,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2989,8 +2989,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -2998,8 +2998,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3007,8 +3007,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3016,8 +3016,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountstaticwebsite">Account<wbr>Static<wbr>Website</a></span>
     </dt>
-    <dd>{{% md %}}A `static_website` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `static_website` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3025,14 +3025,14 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type">map[string]string</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3041,8 +3041,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the access tier for `BlobStorage`, `FileStorage` and `StorageV2` accounts. Valid options are `Hot` and `Cool`, defaults to `Hot`.
-{{% /md %}}</dd>
+    <dd>Defines the access tier for `BlobStorage`, `FileStorage` and `StorageV2` accounts. Valid options are `Hot` and `Cool`, defaults to `Hot`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3050,8 +3050,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the Kind of account. Valid options are `BlobStorage`, `BlockBlobStorage`, `FileStorage`, `Storage` and `StorageV2`. Changing this forces a new resource to be created. Defaults to `StorageV2`.
-{{% /md %}}</dd>
+    <dd>Defines the Kind of account. Valid options are `BlobStorage`, `BlockBlobStorage`, `FileStorage`, `Storage` and `StorageV2`. Changing this forces a new resource to be created. Defaults to `StorageV2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3059,8 +3059,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the type of replication to use for this storage account. Valid options are `LRS`, `GRS`, `RAGRS` and `ZRS`.
-{{% /md %}}</dd>
+    <dd>Defines the type of replication to use for this storage account. Valid options are `LRS`, `GRS`, `RAGRS` and `ZRS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3068,8 +3068,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Defines the Tier to use for this storage account. Valid options are `Standard` and `Premium`. For `FileStorage` accounts only `Premium` is valid. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Defines the Tier to use for this storage account. Valid options are `Standard` and `Premium`. For `FileStorage` accounts only `Premium` is valid. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3077,8 +3077,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountblobproperties">Account<wbr>Blob<wbr>Properties</a></span>
     </dt>
-    <dd>{{% md %}}A `blob_properties` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `blob_properties` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3086,8 +3086,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountcustomdomain">Account<wbr>Custom<wbr>Domain</a></span>
     </dt>
-    <dd>{{% md %}}A `custom_domain` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `custom_domain` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3095,9 +3095,9 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Boolean flag which forces HTTPS if enabled, see [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
+    <dd>Boolean flag which forces HTTPS if enabled, see [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
 for more information. Defaults to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3105,8 +3105,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountidentity">Account<wbr>Identity</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3114,8 +3114,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Is Hierarchical Namespace enabled? This can be used with Azure Data Lake Storage Gen 2 ([see here for more information](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account/)). Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is Hierarchical Namespace enabled? This can be used with Azure Data Lake Storage Gen 2 ([see here for more information](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account/)). Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3123,8 +3123,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3132,8 +3132,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the storage account. Changing this forces a new resource to be created. This must be unique across the entire Azure service, not just within the resource group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the storage account. Changing this forces a new resource to be created. This must be unique across the entire Azure service, not just within the resource group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3141,8 +3141,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountnetworkrules">Account<wbr>Network<wbr>Rules</a></span>
     </dt>
-    <dd>{{% md %}}A `network_rules` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `network_rules` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3150,8 +3150,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary access key for the storage account.
-{{% /md %}}</dd>
+    <dd>The primary access key for the storage account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3159,8 +3159,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary blob location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary blob location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3168,8 +3168,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3177,8 +3177,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3186,8 +3186,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3195,8 +3195,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3204,8 +3204,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3213,8 +3213,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3222,8 +3222,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3231,8 +3231,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The primary location of the storage account.
-{{% /md %}}</dd>
+    <dd>The primary location of the storage account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3240,8 +3240,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3249,8 +3249,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3258,8 +3258,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3267,8 +3267,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3276,8 +3276,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3285,8 +3285,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3294,8 +3294,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueueproperties">Account<wbr>Queue<wbr>Properties</a></span>
     </dt>
-    <dd>{{% md %}}A `queue_properties` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `queue_properties` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3303,8 +3303,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3312,8 +3312,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary access key for the storage account.
-{{% /md %}}</dd>
+    <dd>The secondary access key for the storage account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3321,8 +3321,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary blob location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary blob location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3330,8 +3330,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3339,8 +3339,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3348,8 +3348,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3357,8 +3357,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3366,8 +3366,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3375,8 +3375,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3384,8 +3384,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3393,8 +3393,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The secondary location of the storage account.
-{{% /md %}}</dd>
+    <dd>The secondary location of the storage account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3402,8 +3402,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3411,8 +3411,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3420,8 +3420,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3429,8 +3429,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3438,8 +3438,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3447,8 +3447,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3456,8 +3456,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountstaticwebsite">Account<wbr>Static<wbr>Website</a></span>
     </dt>
-    <dd>{{% md %}}A `static_website` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `static_website` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3465,14 +3465,14 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type">{[key: string]: string}</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3481,8 +3481,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Defines the access tier for `BlobStorage`, `FileStorage` and `StorageV2` accounts. Valid options are `Hot` and `Cool`, defaults to `Hot`.
-{{% /md %}}</dd>
+    <dd>Defines the access tier for `BlobStorage`, `FileStorage` and `StorageV2` accounts. Valid options are `Hot` and `Cool`, defaults to `Hot`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3490,8 +3490,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Defines the Kind of account. Valid options are `BlobStorage`, `BlockBlobStorage`, `FileStorage`, `Storage` and `StorageV2`. Changing this forces a new resource to be created. Defaults to `StorageV2`.
-{{% /md %}}</dd>
+    <dd>Defines the Kind of account. Valid options are `BlobStorage`, `BlockBlobStorage`, `FileStorage`, `Storage` and `StorageV2`. Changing this forces a new resource to be created. Defaults to `StorageV2`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3499,8 +3499,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Defines the type of replication to use for this storage account. Valid options are `LRS`, `GRS`, `RAGRS` and `ZRS`.
-{{% /md %}}</dd>
+    <dd>Defines the type of replication to use for this storage account. Valid options are `LRS`, `GRS`, `RAGRS` and `ZRS`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3508,8 +3508,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Defines the Tier to use for this storage account. Valid options are `Standard` and `Premium`. For `FileStorage` accounts only `Premium` is valid. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Defines the Tier to use for this storage account. Valid options are `Standard` and `Premium`. For `FileStorage` accounts only `Premium` is valid. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3517,8 +3517,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountblobproperties">Dict[Account<wbr>Blob<wbr>Properties]</a></span>
     </dt>
-    <dd>{{% md %}}A `blob_properties` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `blob_properties` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3526,8 +3526,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountcustomdomain">Dict[Account<wbr>Custom<wbr>Domain]</a></span>
     </dt>
-    <dd>{{% md %}}A `custom_domain` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `custom_domain` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3535,9 +3535,9 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Boolean flag which forces HTTPS if enabled, see [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
+    <dd>Boolean flag which forces HTTPS if enabled, see [here](https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/)
 for more information. Defaults to `true`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3545,8 +3545,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountidentity">Dict[Account<wbr>Identity]</a></span>
     </dt>
-    <dd>{{% md %}}A `identity` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `identity` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3554,8 +3554,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Is Hierarchical Namespace enabled? This can be used with Azure Data Lake Storage Gen 2 ([see here for more information](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account/)). Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Is Hierarchical Namespace enabled? This can be used with Azure Data Lake Storage Gen 2 ([see here for more information](https://docs.microsoft.com/en-us/azure/storage/blobs/data-lake-storage-quickstart-create-account/)). Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3563,8 +3563,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>Specifies the supported Azure location where the resource exists. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3572,8 +3572,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the name of the storage account. Changing this forces a new resource to be created. This must be unique across the entire Azure service, not just within the resource group.
-{{% /md %}}</dd>
+    <dd>Specifies the name of the storage account. Changing this forces a new resource to be created. This must be unique across the entire Azure service, not just within the resource group.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3581,8 +3581,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountnetworkrules">Dict[Account<wbr>Network<wbr>Rules]</a></span>
     </dt>
-    <dd>{{% md %}}A `network_rules` block as documented below.
-{{% /md %}}</dd>
+    <dd>A `network_rules` block as documented below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3590,8 +3590,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The primary access key for the storage account.
-{{% /md %}}</dd>
+    <dd>The primary access key for the storage account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3599,8 +3599,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary blob location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary blob location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3608,8 +3608,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3617,8 +3617,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3626,8 +3626,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the primary location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3635,8 +3635,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3644,8 +3644,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3653,8 +3653,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3662,8 +3662,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3671,8 +3671,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The primary location of the storage account.
-{{% /md %}}</dd>
+    <dd>The primary location of the storage account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3680,8 +3680,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3689,8 +3689,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3698,8 +3698,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3707,8 +3707,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3716,8 +3716,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3725,8 +3725,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the primary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the primary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3734,8 +3734,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueueproperties">Dict[Account<wbr>Queue<wbr>Properties]</a></span>
     </dt>
-    <dd>{{% md %}}A `queue_properties` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `queue_properties` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3743,8 +3743,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.
-{{% /md %}}</dd>
+    <dd>The name of the resource group in which to create the storage account. Changing this forces a new resource to be created.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3752,8 +3752,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secondary access key for the storage account.
-{{% /md %}}</dd>
+    <dd>The secondary access key for the storage account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3761,8 +3761,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary blob location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary blob location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3770,8 +3770,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for blob storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3779,8 +3779,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for blob storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for blob storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3788,8 +3788,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The connection string associated with the secondary location.
-{{% /md %}}</dd>
+    <dd>The connection string associated with the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3797,8 +3797,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3806,8 +3806,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for DFS storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for DFS storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3815,8 +3815,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for file storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3824,8 +3824,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for file storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for file storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3833,8 +3833,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The secondary location of the storage account.
-{{% /md %}}</dd>
+    <dd>The secondary location of the storage account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3842,8 +3842,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for queue storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3851,8 +3851,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for queue storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for queue storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3860,8 +3860,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for table storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3869,8 +3869,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for table storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for table storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3878,8 +3878,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The endpoint URL for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The endpoint URL for web storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3887,8 +3887,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The hostname with port if applicable for web storage in the secondary location.
-{{% /md %}}</dd>
+    <dd>The hostname with port if applicable for web storage in the secondary location.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3896,8 +3896,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountstaticwebsite">Dict[Account<wbr>Static<wbr>Website]</a></span>
     </dt>
-    <dd>{{% md %}}A `static_website` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `static_website` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3905,11 +3905,11 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type">Dict[str, str]</span>
     </dt>
-    <dd>{{% md %}}A mapping of tags to assign to the resource.
-{{% /md %}}</dd>
+    <dd>A mapping of tags to assign to the resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
@@ -3924,18 +3924,18 @@ for more information. Defaults to `true`.
 
 
 <h4 id="accountblobproperties">Account<wbr>Blob<wbr>Properties</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#AccountBlobProperties">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#AccountBlobProperties">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountBlobPropertiesArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountBlobPropertiesOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3944,8 +3944,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountblobpropertiescorsrule">List&lt;Account<wbr>Blob<wbr>Properties<wbr>Cors<wbr>Rule<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `cors_rule` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `cors_rule` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3953,14 +3953,14 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountblobpropertiesdeleteretentionpolicy">Account<wbr>Blob<wbr>Properties<wbr>Delete<wbr>Retention<wbr>Policy<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `delete_retention_policy` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `delete_retention_policy` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3969,8 +3969,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountblobpropertiescorsrule">[]Account<wbr>Blob<wbr>Properties<wbr>Cors<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}A `cors_rule` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `cors_rule` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -3978,14 +3978,14 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountblobpropertiesdeleteretentionpolicy">Account<wbr>Blob<wbr>Properties<wbr>Delete<wbr>Retention<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}A `delete_retention_policy` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `delete_retention_policy` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -3994,8 +3994,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountblobpropertiescorsrule">Account<wbr>Blob<wbr>Properties<wbr>Cors<wbr>Rule[]</a></span>
     </dt>
-    <dd>{{% md %}}A `cors_rule` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `cors_rule` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4003,14 +4003,14 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountblobpropertiesdeleteretentionpolicy">Account<wbr>Blob<wbr>Properties<wbr>Delete<wbr>Retention<wbr>Policy</a></span>
     </dt>
-    <dd>{{% md %}}A `delete_retention_policy` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `delete_retention_policy` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4019,8 +4019,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountblobpropertiescorsrule">List[Account<wbr>Blob<wbr>Properties<wbr>Cors<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}A `cors_rule` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `cors_rule` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4028,29 +4028,29 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountblobpropertiesdeleteretentionpolicy">Dict[Account<wbr>Blob<wbr>Properties<wbr>Delete<wbr>Retention<wbr>Policy]</a></span>
     </dt>
-    <dd>{{% md %}}A `delete_retention_policy` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `delete_retention_policy` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="accountblobpropertiescorsrule">Account<wbr>Blob<wbr>Properties<wbr>Cors<wbr>Rule</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#AccountBlobPropertiesCorsRule">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#AccountBlobPropertiesCorsRule">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountBlobPropertiesCorsRuleArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountBlobPropertiesCorsRuleOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4059,8 +4059,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of headers that are allowed to be a part of the cross-origin request.
-{{% /md %}}</dd>
+    <dd>A list of headers that are allowed to be a part of the cross-origin request.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4068,9 +4068,9 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of http headers that are allowed to be executed by the origin. Valid options are
+    <dd>A list of http headers that are allowed to be executed by the origin. Valid options are
 `DELETE`, `GET`, `HEAD`, `MERGE`, `POST`, `OPTIONS` or `PUT`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4078,8 +4078,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of origin domains that will be allowed by CORS.
-{{% /md %}}</dd>
+    <dd>A list of origin domains that will be allowed by CORS.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4087,8 +4087,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of response headers that are exposed to CORS clients.
-{{% /md %}}</dd>
+    <dd>A list of response headers that are exposed to CORS clients.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4096,14 +4096,14 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds the client should cache a preflight response.
-{{% /md %}}</dd>
+    <dd>The number of seconds the client should cache a preflight response.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4112,8 +4112,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of headers that are allowed to be a part of the cross-origin request.
-{{% /md %}}</dd>
+    <dd>A list of headers that are allowed to be a part of the cross-origin request.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4121,9 +4121,9 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of http headers that are allowed to be executed by the origin. Valid options are
+    <dd>A list of http headers that are allowed to be executed by the origin. Valid options are
 `DELETE`, `GET`, `HEAD`, `MERGE`, `POST`, `OPTIONS` or `PUT`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4131,8 +4131,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of origin domains that will be allowed by CORS.
-{{% /md %}}</dd>
+    <dd>A list of origin domains that will be allowed by CORS.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4140,8 +4140,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of response headers that are exposed to CORS clients.
-{{% /md %}}</dd>
+    <dd>A list of response headers that are exposed to CORS clients.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4149,14 +4149,14 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds the client should cache a preflight response.
-{{% /md %}}</dd>
+    <dd>The number of seconds the client should cache a preflight response.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4165,8 +4165,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of headers that are allowed to be a part of the cross-origin request.
-{{% /md %}}</dd>
+    <dd>A list of headers that are allowed to be a part of the cross-origin request.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4174,9 +4174,9 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of http headers that are allowed to be executed by the origin. Valid options are
+    <dd>A list of http headers that are allowed to be executed by the origin. Valid options are
 `DELETE`, `GET`, `HEAD`, `MERGE`, `POST`, `OPTIONS` or `PUT`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4184,8 +4184,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of origin domains that will be allowed by CORS.
-{{% /md %}}</dd>
+    <dd>A list of origin domains that will be allowed by CORS.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4193,8 +4193,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of response headers that are exposed to CORS clients.
-{{% /md %}}</dd>
+    <dd>A list of response headers that are exposed to CORS clients.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4202,14 +4202,14 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds the client should cache a preflight response.
-{{% /md %}}</dd>
+    <dd>The number of seconds the client should cache a preflight response.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4218,8 +4218,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of headers that are allowed to be a part of the cross-origin request.
-{{% /md %}}</dd>
+    <dd>A list of headers that are allowed to be a part of the cross-origin request.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4227,9 +4227,9 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of http headers that are allowed to be executed by the origin. Valid options are
+    <dd>A list of http headers that are allowed to be executed by the origin. Valid options are
 `DELETE`, `GET`, `HEAD`, `MERGE`, `POST`, `OPTIONS` or `PUT`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4237,8 +4237,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of origin domains that will be allowed by CORS.
-{{% /md %}}</dd>
+    <dd>A list of origin domains that will be allowed by CORS.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4246,8 +4246,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of response headers that are exposed to CORS clients.
-{{% /md %}}</dd>
+    <dd>A list of response headers that are exposed to CORS clients.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -4255,29 +4255,29 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds the client should cache a preflight response.
-{{% /md %}}</dd>
+    <dd>The number of seconds the client should cache a preflight response.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="accountblobpropertiesdeleteretentionpolicy">Account<wbr>Blob<wbr>Properties<wbr>Delete<wbr>Retention<wbr>Policy</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#AccountBlobPropertiesDeleteRetentionPolicy">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#AccountBlobPropertiesDeleteRetentionPolicy">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountBlobPropertiesDeleteRetentionPolicyArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountBlobPropertiesDeleteRetentionPolicyOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4286,14 +4286,14 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days that the blob should be retained, between `1` and `365` days. Defaults to `7`.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days that the blob should be retained, between `1` and `365` days. Defaults to `7`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4302,14 +4302,14 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days that the blob should be retained, between `1` and `365` days. Defaults to `7`.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days that the blob should be retained, between `1` and `365` days. Defaults to `7`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4318,14 +4318,14 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days that the blob should be retained, between `1` and `365` days. Defaults to `7`.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days that the blob should be retained, between `1` and `365` days. Defaults to `7`.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4334,29 +4334,29 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days that the blob should be retained, between `1` and `365` days. Defaults to `7`.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days that the blob should be retained, between `1` and `365` days. Defaults to `7`.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="accountcustomdomain">Account<wbr>Custom<wbr>Domain</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#AccountCustomDomain">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#AccountCustomDomain">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountCustomDomainArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountCustomDomainOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4365,8 +4365,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Custom Domain Name to use for the Storage Account, which will be validated by Azure.
-{{% /md %}}</dd>
+    <dd>The Custom Domain Name to use for the Storage Account, which will be validated by Azure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4374,14 +4374,14 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Custom Domain Name be validated by using indirect CNAME validation?
-{{% /md %}}</dd>
+    <dd>Should the Custom Domain Name be validated by using indirect CNAME validation?
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4390,8 +4390,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Custom Domain Name to use for the Storage Account, which will be validated by Azure.
-{{% /md %}}</dd>
+    <dd>The Custom Domain Name to use for the Storage Account, which will be validated by Azure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4399,14 +4399,14 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Custom Domain Name be validated by using indirect CNAME validation?
-{{% /md %}}</dd>
+    <dd>Should the Custom Domain Name be validated by using indirect CNAME validation?
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4415,8 +4415,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Custom Domain Name to use for the Storage Account, which will be validated by Azure.
-{{% /md %}}</dd>
+    <dd>The Custom Domain Name to use for the Storage Account, which will be validated by Azure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4424,14 +4424,14 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Should the Custom Domain Name be validated by using indirect CNAME validation?
-{{% /md %}}</dd>
+    <dd>Should the Custom Domain Name be validated by using indirect CNAME validation?
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4440,8 +4440,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Custom Domain Name to use for the Storage Account, which will be validated by Azure.
-{{% /md %}}</dd>
+    <dd>The Custom Domain Name to use for the Storage Account, which will be validated by Azure.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4449,29 +4449,29 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Should the Custom Domain Name be validated by using indirect CNAME validation?
-{{% /md %}}</dd>
+    <dd>Should the Custom Domain Name be validated by using indirect CNAME validation?
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="accountidentity">Account<wbr>Identity</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#AccountIdentity">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#AccountIdentity">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountIdentityArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountIdentityOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4480,8 +4480,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the identity type of the Storage Account. At this time the only allowed value is `SystemAssigned`.
-{{% /md %}}</dd>
+    <dd>Specifies the identity type of the Storage Account. At this time the only allowed value is `SystemAssigned`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4489,8 +4489,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Principal ID for the Service Principal associated with the Identity of this Storage Account.
-{{% /md %}}</dd>
+    <dd>The Principal ID for the Service Principal associated with the Identity of this Storage Account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4498,14 +4498,14 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The Tenant ID for the Service Principal associated with the Identity of this Storage Account.
-{{% /md %}}</dd>
+    <dd>The Tenant ID for the Service Principal associated with the Identity of this Storage Account.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4514,8 +4514,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the identity type of the Storage Account. At this time the only allowed value is `SystemAssigned`.
-{{% /md %}}</dd>
+    <dd>Specifies the identity type of the Storage Account. At this time the only allowed value is `SystemAssigned`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4523,8 +4523,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Principal ID for the Service Principal associated with the Identity of this Storage Account.
-{{% /md %}}</dd>
+    <dd>The Principal ID for the Service Principal associated with the Identity of this Storage Account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4532,14 +4532,14 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Tenant ID for the Service Principal associated with the Identity of this Storage Account.
-{{% /md %}}</dd>
+    <dd>The Tenant ID for the Service Principal associated with the Identity of this Storage Account.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4548,8 +4548,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the identity type of the Storage Account. At this time the only allowed value is `SystemAssigned`.
-{{% /md %}}</dd>
+    <dd>Specifies the identity type of the Storage Account. At this time the only allowed value is `SystemAssigned`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4557,8 +4557,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Principal ID for the Service Principal associated with the Identity of this Storage Account.
-{{% /md %}}</dd>
+    <dd>The Principal ID for the Service Principal associated with the Identity of this Storage Account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4566,14 +4566,14 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The Tenant ID for the Service Principal associated with the Identity of this Storage Account.
-{{% /md %}}</dd>
+    <dd>The Tenant ID for the Service Principal associated with the Identity of this Storage Account.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4582,8 +4582,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the identity type of the Storage Account. At this time the only allowed value is `SystemAssigned`.
-{{% /md %}}</dd>
+    <dd>Specifies the identity type of the Storage Account. At this time the only allowed value is `SystemAssigned`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4591,8 +4591,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Principal ID for the Service Principal associated with the Identity of this Storage Account.
-{{% /md %}}</dd>
+    <dd>The Principal ID for the Service Principal associated with the Identity of this Storage Account.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4600,29 +4600,29 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The Tenant ID for the Service Principal associated with the Identity of this Storage Account.
-{{% /md %}}</dd>
+    <dd>The Tenant ID for the Service Principal associated with the Identity of this Storage Account.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="accountnetworkrules">Account<wbr>Network<wbr>Rules</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#AccountNetworkRules">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#AccountNetworkRules">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountNetworkRulesTypeArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountNetworkRulesTypeOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4631,8 +4631,8 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the default action of allow or deny when no other rules match. Valid options are `Deny` or `Allow`.
-{{% /md %}}</dd>
+    <dd>Specifies the default action of allow or deny when no other rules match. Valid options are `Deny` or `Allow`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4640,9 +4640,9 @@ for more information. Defaults to `true`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether traffic is bypassed for Logging/Metrics/AzureServices. Valid options are
+    <dd>Specifies whether traffic is bypassed for Logging/Metrics/AzureServices. Valid options are
 any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4650,8 +4650,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}List of public IP or IP ranges in CIDR Format. Only IPV4 addresses are allowed. Private IP address ranges (as defined in [RFC 1918](https://tools.ietf.org/html/rfc1918#section-3)) are not allowed.
-{{% /md %}}</dd>
+    <dd>List of public IP or IP ranges in CIDR Format. Only IPV4 addresses are allowed. Private IP address ranges (as defined in [RFC 1918](https://tools.ietf.org/html/rfc1918#section-3)) are not allowed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4659,14 +4659,14 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of resource ids for subnets.
-{{% /md %}}</dd>
+    <dd>A list of resource ids for subnets.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4675,8 +4675,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the default action of allow or deny when no other rules match. Valid options are `Deny` or `Allow`.
-{{% /md %}}</dd>
+    <dd>Specifies the default action of allow or deny when no other rules match. Valid options are `Deny` or `Allow`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4684,9 +4684,9 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether traffic is bypassed for Logging/Metrics/AzureServices. Valid options are
+    <dd>Specifies whether traffic is bypassed for Logging/Metrics/AzureServices. Valid options are
 any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4694,8 +4694,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}List of public IP or IP ranges in CIDR Format. Only IPV4 addresses are allowed. Private IP address ranges (as defined in [RFC 1918](https://tools.ietf.org/html/rfc1918#section-3)) are not allowed.
-{{% /md %}}</dd>
+    <dd>List of public IP or IP ranges in CIDR Format. Only IPV4 addresses are allowed. Private IP address ranges (as defined in [RFC 1918](https://tools.ietf.org/html/rfc1918#section-3)) are not allowed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4703,14 +4703,14 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of resource ids for subnets.
-{{% /md %}}</dd>
+    <dd>A list of resource ids for subnets.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4719,8 +4719,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the default action of allow or deny when no other rules match. Valid options are `Deny` or `Allow`.
-{{% /md %}}</dd>
+    <dd>Specifies the default action of allow or deny when no other rules match. Valid options are `Deny` or `Allow`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4728,9 +4728,9 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether traffic is bypassed for Logging/Metrics/AzureServices. Valid options are
+    <dd>Specifies whether traffic is bypassed for Logging/Metrics/AzureServices. Valid options are
 any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4738,8 +4738,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}List of public IP or IP ranges in CIDR Format. Only IPV4 addresses are allowed. Private IP address ranges (as defined in [RFC 1918](https://tools.ietf.org/html/rfc1918#section-3)) are not allowed.
-{{% /md %}}</dd>
+    <dd>List of public IP or IP ranges in CIDR Format. Only IPV4 addresses are allowed. Private IP address ranges (as defined in [RFC 1918](https://tools.ietf.org/html/rfc1918#section-3)) are not allowed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4747,14 +4747,14 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of resource ids for subnets.
-{{% /md %}}</dd>
+    <dd>A list of resource ids for subnets.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -4763,8 +4763,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the default action of allow or deny when no other rules match. Valid options are `Deny` or `Allow`.
-{{% /md %}}</dd>
+    <dd>Specifies the default action of allow or deny when no other rules match. Valid options are `Deny` or `Allow`.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4772,9 +4772,9 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}Specifies whether traffic is bypassed for Logging/Metrics/AzureServices. Valid options are
+    <dd>Specifies whether traffic is bypassed for Logging/Metrics/AzureServices. Valid options are
 any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4782,8 +4782,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}List of public IP or IP ranges in CIDR Format. Only IPV4 addresses are allowed. Private IP address ranges (as defined in [RFC 1918](https://tools.ietf.org/html/rfc1918#section-3)) are not allowed.
-{{% /md %}}</dd>
+    <dd>List of public IP or IP ranges in CIDR Format. Only IPV4 addresses are allowed. Private IP address ranges (as defined in [RFC 1918](https://tools.ietf.org/html/rfc1918#section-3)) are not allowed.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4791,29 +4791,29 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of resource ids for subnets.
-{{% /md %}}</dd>
+    <dd>A list of resource ids for subnets.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="accountqueueproperties">Account<wbr>Queue<wbr>Properties</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#AccountQueueProperties">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#AccountQueueProperties">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountQueuePropertiesArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountQueuePropertiesOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4822,8 +4822,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueuepropertiescorsrule">List&lt;Account<wbr>Queue<wbr>Properties<wbr>Cors<wbr>Rule<wbr>Args&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A `cors_rule` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cors_rule` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4831,8 +4831,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueuepropertieshourmetrics">Account<wbr>Queue<wbr>Properties<wbr>Hour<wbr>Metrics<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `hour_metrics` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `hour_metrics` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4840,8 +4840,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueuepropertieslogging">Account<wbr>Queue<wbr>Properties<wbr>Logging<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `logging` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `logging` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4849,14 +4849,14 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueuepropertiesminutemetrics">Account<wbr>Queue<wbr>Properties<wbr>Minute<wbr>Metrics<wbr>Args</a></span>
     </dt>
-    <dd>{{% md %}}A `minute_metrics` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `minute_metrics` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4865,8 +4865,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueuepropertiescorsrule">[]Account<wbr>Queue<wbr>Properties<wbr>Cors<wbr>Rule</a></span>
     </dt>
-    <dd>{{% md %}}A `cors_rule` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cors_rule` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4874,8 +4874,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueuepropertieshourmetrics">Account<wbr>Queue<wbr>Properties<wbr>Hour<wbr>Metrics</a></span>
     </dt>
-    <dd>{{% md %}}A `hour_metrics` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `hour_metrics` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4883,8 +4883,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueuepropertieslogging">Account<wbr>Queue<wbr>Properties<wbr>Logging</a></span>
     </dt>
-    <dd>{{% md %}}A `logging` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `logging` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4892,14 +4892,14 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueuepropertiesminutemetrics">Account<wbr>Queue<wbr>Properties<wbr>Minute<wbr>Metrics</a></span>
     </dt>
-    <dd>{{% md %}}A `minute_metrics` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `minute_metrics` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4908,8 +4908,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueuepropertiescorsrule">Account<wbr>Queue<wbr>Properties<wbr>Cors<wbr>Rule[]</a></span>
     </dt>
-    <dd>{{% md %}}A `cors_rule` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cors_rule` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4917,8 +4917,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueuepropertieshourmetrics">Account<wbr>Queue<wbr>Properties<wbr>Hour<wbr>Metrics</a></span>
     </dt>
-    <dd>{{% md %}}A `hour_metrics` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `hour_metrics` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4926,8 +4926,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueuepropertieslogging">Account<wbr>Queue<wbr>Properties<wbr>Logging</a></span>
     </dt>
-    <dd>{{% md %}}A `logging` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `logging` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4935,14 +4935,14 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueuepropertiesminutemetrics">Account<wbr>Queue<wbr>Properties<wbr>Minute<wbr>Metrics</a></span>
     </dt>
-    <dd>{{% md %}}A `minute_metrics` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `minute_metrics` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -4951,8 +4951,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueuepropertiescorsrule">List[Account<wbr>Queue<wbr>Properties<wbr>Cors<wbr>Rule]</a></span>
     </dt>
-    <dd>{{% md %}}A `cors_rule` block as defined above.
-{{% /md %}}</dd>
+    <dd>A `cors_rule` block as defined above.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4960,8 +4960,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueuepropertieshourmetrics">Dict[Account<wbr>Queue<wbr>Properties<wbr>Hour<wbr>Metrics]</a></span>
     </dt>
-    <dd>{{% md %}}A `hour_metrics` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `hour_metrics` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4969,8 +4969,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueuepropertieslogging">Dict[Account<wbr>Queue<wbr>Properties<wbr>Logging]</a></span>
     </dt>
-    <dd>{{% md %}}A `logging` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `logging` block as defined below.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -4978,29 +4978,29 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="#accountqueuepropertiesminutemetrics">Dict[Account<wbr>Queue<wbr>Properties<wbr>Minute<wbr>Metrics]</a></span>
     </dt>
-    <dd>{{% md %}}A `minute_metrics` block as defined below.
-{{% /md %}}</dd>
+    <dd>A `minute_metrics` block as defined below.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="accountqueuepropertiescorsrule">Account<wbr>Queue<wbr>Properties<wbr>Cors<wbr>Rule</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#AccountQueuePropertiesCorsRule">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#AccountQueuePropertiesCorsRule">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountQueuePropertiesCorsRuleArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountQueuePropertiesCorsRuleOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5009,8 +5009,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of headers that are allowed to be a part of the cross-origin request.
-{{% /md %}}</dd>
+    <dd>A list of headers that are allowed to be a part of the cross-origin request.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5018,9 +5018,9 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of http headers that are allowed to be executed by the origin. Valid options are
+    <dd>A list of http headers that are allowed to be executed by the origin. Valid options are
 `DELETE`, `GET`, `HEAD`, `MERGE`, `POST`, `OPTIONS` or `PUT`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5028,8 +5028,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of origin domains that will be allowed by CORS.
-{{% /md %}}</dd>
+    <dd>A list of origin domains that will be allowed by CORS.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5037,8 +5037,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">List&lt;string&gt;</a></span>
     </dt>
-    <dd>{{% md %}}A list of response headers that are exposed to CORS clients.
-{{% /md %}}</dd>
+    <dd>A list of response headers that are exposed to CORS clients.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5046,14 +5046,14 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds the client should cache a preflight response.
-{{% /md %}}</dd>
+    <dd>The number of seconds the client should cache a preflight response.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5062,8 +5062,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of headers that are allowed to be a part of the cross-origin request.
-{{% /md %}}</dd>
+    <dd>A list of headers that are allowed to be a part of the cross-origin request.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5071,9 +5071,9 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of http headers that are allowed to be executed by the origin. Valid options are
+    <dd>A list of http headers that are allowed to be executed by the origin. Valid options are
 `DELETE`, `GET`, `HEAD`, `MERGE`, `POST`, `OPTIONS` or `PUT`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5081,8 +5081,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of origin domains that will be allowed by CORS.
-{{% /md %}}</dd>
+    <dd>A list of origin domains that will be allowed by CORS.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5090,8 +5090,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">[]string</a></span>
     </dt>
-    <dd>{{% md %}}A list of response headers that are exposed to CORS clients.
-{{% /md %}}</dd>
+    <dd>A list of response headers that are exposed to CORS clients.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5099,14 +5099,14 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds the client should cache a preflight response.
-{{% /md %}}</dd>
+    <dd>The number of seconds the client should cache a preflight response.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5115,8 +5115,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of headers that are allowed to be a part of the cross-origin request.
-{{% /md %}}</dd>
+    <dd>A list of headers that are allowed to be a part of the cross-origin request.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5124,9 +5124,9 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of http headers that are allowed to be executed by the origin. Valid options are
+    <dd>A list of http headers that are allowed to be executed by the origin. Valid options are
 `DELETE`, `GET`, `HEAD`, `MERGE`, `POST`, `OPTIONS` or `PUT`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5134,8 +5134,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of origin domains that will be allowed by CORS.
-{{% /md %}}</dd>
+    <dd>A list of origin domains that will be allowed by CORS.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5143,8 +5143,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string[]</a></span>
     </dt>
-    <dd>{{% md %}}A list of response headers that are exposed to CORS clients.
-{{% /md %}}</dd>
+    <dd>A list of response headers that are exposed to CORS clients.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5152,14 +5152,14 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds the client should cache a preflight response.
-{{% /md %}}</dd>
+    <dd>The number of seconds the client should cache a preflight response.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5168,8 +5168,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of headers that are allowed to be a part of the cross-origin request.
-{{% /md %}}</dd>
+    <dd>A list of headers that are allowed to be a part of the cross-origin request.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5177,9 +5177,9 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of http headers that are allowed to be executed by the origin. Valid options are
+    <dd>A list of http headers that are allowed to be executed by the origin. Valid options are
 `DELETE`, `GET`, `HEAD`, `MERGE`, `POST`, `OPTIONS` or `PUT`.
-{{% /md %}}</dd>
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5187,8 +5187,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of origin domains that will be allowed by CORS.
-{{% /md %}}</dd>
+    <dd>A list of origin domains that will be allowed by CORS.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5196,8 +5196,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">List[str]</a></span>
     </dt>
-    <dd>{{% md %}}A list of response headers that are exposed to CORS clients.
-{{% /md %}}</dd>
+    <dd>A list of response headers that are exposed to CORS clients.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5205,29 +5205,29 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}The number of seconds the client should cache a preflight response.
-{{% /md %}}</dd>
+    <dd>The number of seconds the client should cache a preflight response.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="accountqueuepropertieshourmetrics">Account<wbr>Queue<wbr>Properties<wbr>Hour<wbr>Metrics</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#AccountQueuePropertiesHourMetrics">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#AccountQueuePropertiesHourMetrics">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountQueuePropertiesHourMetricsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountQueuePropertiesHourMetricsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5236,8 +5236,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether hour metrics are enabled for the Queue service. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether hour metrics are enabled for the Queue service. Changing this forces a new resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5245,8 +5245,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of storage analytics to configure. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>The version of storage analytics to configure. Changing this forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5254,8 +5254,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether metrics should generate summary statistics for called API operations.
-{{% /md %}}</dd>
+    <dd>Indicates whether metrics should generate summary statistics for called API operations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5263,14 +5263,14 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days that logs will be retained. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days that logs will be retained. Changing this forces a new resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5279,8 +5279,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether hour metrics are enabled for the Queue service. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether hour metrics are enabled for the Queue service. Changing this forces a new resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5288,8 +5288,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of storage analytics to configure. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>The version of storage analytics to configure. Changing this forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5297,8 +5297,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether metrics should generate summary statistics for called API operations.
-{{% /md %}}</dd>
+    <dd>Indicates whether metrics should generate summary statistics for called API operations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5306,14 +5306,14 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days that logs will be retained. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days that logs will be retained. Changing this forces a new resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5322,8 +5322,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether hour metrics are enabled for the Queue service. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether hour metrics are enabled for the Queue service. Changing this forces a new resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5331,8 +5331,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of storage analytics to configure. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>The version of storage analytics to configure. Changing this forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5340,8 +5340,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether metrics should generate summary statistics for called API operations.
-{{% /md %}}</dd>
+    <dd>Indicates whether metrics should generate summary statistics for called API operations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5349,14 +5349,14 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days that logs will be retained. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days that logs will be retained. Changing this forces a new resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5365,8 +5365,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether hour metrics are enabled for the Queue service. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether hour metrics are enabled for the Queue service. Changing this forces a new resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5374,8 +5374,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of storage analytics to configure. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>The version of storage analytics to configure. Changing this forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5383,8 +5383,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether metrics should generate summary statistics for called API operations.
-{{% /md %}}</dd>
+    <dd>Indicates whether metrics should generate summary statistics for called API operations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5392,29 +5392,29 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days that logs will be retained. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days that logs will be retained. Changing this forces a new resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="accountqueuepropertieslogging">Account<wbr>Queue<wbr>Properties<wbr>Logging</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#AccountQueuePropertiesLogging">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#AccountQueuePropertiesLogging">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountQueuePropertiesLoggingArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountQueuePropertiesLoggingOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5423,8 +5423,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether all delete requests should be logged. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether all delete requests should be logged. Changing this forces a new resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5432,8 +5432,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether all read requests should be logged. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether all read requests should be logged. Changing this forces a new resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5441,8 +5441,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of storage analytics to configure. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>The version of storage analytics to configure. Changing this forces a new resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5450,8 +5450,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether all write requests should be logged. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether all write requests should be logged. Changing this forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5459,14 +5459,14 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days that logs will be retained. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days that logs will be retained. Changing this forces a new resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5475,8 +5475,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether all delete requests should be logged. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether all delete requests should be logged. Changing this forces a new resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5484,8 +5484,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether all read requests should be logged. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether all read requests should be logged. Changing this forces a new resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5493,8 +5493,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of storage analytics to configure. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>The version of storage analytics to configure. Changing this forces a new resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5502,8 +5502,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether all write requests should be logged. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether all write requests should be logged. Changing this forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5511,14 +5511,14 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days that logs will be retained. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days that logs will be retained. Changing this forces a new resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5527,8 +5527,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether all delete requests should be logged. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether all delete requests should be logged. Changing this forces a new resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5536,8 +5536,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether all read requests should be logged. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether all read requests should be logged. Changing this forces a new resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5545,8 +5545,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of storage analytics to configure. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>The version of storage analytics to configure. Changing this forces a new resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5554,8 +5554,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether all write requests should be logged. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether all write requests should be logged. Changing this forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5563,14 +5563,14 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days that logs will be retained. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days that logs will be retained. Changing this forces a new resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5579,8 +5579,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether all delete requests should be logged. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether all delete requests should be logged. Changing this forces a new resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5588,8 +5588,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether all read requests should be logged. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether all read requests should be logged. Changing this forces a new resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5597,8 +5597,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of storage analytics to configure. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>The version of storage analytics to configure. Changing this forces a new resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5606,8 +5606,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether all write requests should be logged. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether all write requests should be logged. Changing this forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5615,29 +5615,29 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days that logs will be retained. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days that logs will be retained. Changing this forces a new resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="accountqueuepropertiesminutemetrics">Account<wbr>Queue<wbr>Properties<wbr>Minute<wbr>Metrics</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#AccountQueuePropertiesMinuteMetrics">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#AccountQueuePropertiesMinuteMetrics">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountQueuePropertiesMinuteMetricsArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountQueuePropertiesMinuteMetricsOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5646,8 +5646,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether minute metrics are enabled for the Queue service. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether minute metrics are enabled for the Queue service. Changing this forces a new resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5655,8 +5655,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of storage analytics to configure. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>The version of storage analytics to configure. Changing this forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5664,8 +5664,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether metrics should generate summary statistics for called API operations.
-{{% /md %}}</dd>
+    <dd>Indicates whether metrics should generate summary statistics for called API operations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5673,14 +5673,14 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days that logs will be retained. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days that logs will be retained. Changing this forces a new resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5689,8 +5689,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether minute metrics are enabled for the Queue service. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether minute metrics are enabled for the Queue service. Changing this forces a new resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5698,8 +5698,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of storage analytics to configure. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>The version of storage analytics to configure. Changing this forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5707,8 +5707,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#boolean">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether metrics should generate summary statistics for called API operations.
-{{% /md %}}</dd>
+    <dd>Indicates whether metrics should generate summary statistics for called API operations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5716,14 +5716,14 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#integer">int</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days that logs will be retained. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days that logs will be retained. Changing this forces a new resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5732,8 +5732,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether minute metrics are enabled for the Queue service. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether minute metrics are enabled for the Queue service. Changing this forces a new resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5741,8 +5741,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The version of storage analytics to configure. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>The version of storage analytics to configure. Changing this forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5750,8 +5750,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean">boolean</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether metrics should generate summary statistics for called API operations.
-{{% /md %}}</dd>
+    <dd>Indicates whether metrics should generate summary statistics for called API operations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5759,14 +5759,14 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/integer">number</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days that logs will be retained. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days that logs will be retained. Changing this forces a new resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-required"
@@ -5775,8 +5775,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether minute metrics are enabled for the Queue service. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Indicates whether minute metrics are enabled for the Queue service. Changing this forces a new resource.
+</dd>
 
     <dt class="property-required"
             title="Required">
@@ -5784,8 +5784,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The version of storage analytics to configure. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>The version of storage analytics to configure. Changing this forces a new resource.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5793,8 +5793,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">bool</a></span>
     </dt>
-    <dd>{{% md %}}Indicates whether metrics should generate summary statistics for called API operations.
-{{% /md %}}</dd>
+    <dd>Indicates whether metrics should generate summary statistics for called API operations.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5802,29 +5802,29 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">float</a></span>
     </dt>
-    <dd>{{% md %}}Specifies the number of days that logs will be retained. Changing this forces a new resource.
-{{% /md %}}</dd>
+    <dd>Specifies the number of days that logs will be retained. Changing this forces a new resource.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
 
 
 <h4 id="accountstaticwebsite">Account<wbr>Static<wbr>Website</h4>
-{{% choosable language nodejs %}}
+
 > See the <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/input/#AccountStaticWebsite">input</a> and <a href="/docs/reference/pkg/nodejs/pulumi/azure/types/output/#AccountStaticWebsite">output</a> API doc for this type.
-{{% /choosable %}}
 
-{{% choosable language go %}}
+
+
 > See the <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountStaticWebsiteArgs">input</a> and <a href="https://pkg.go.dev/github.com/pulumi/pulumi-azure/sdk/v3/go/azure/storage?tab=doc#AccountStaticWebsiteOutput">output</a> API doc for this type.
-{{% /choosable %}}
 
 
 
 
-{{% choosable language csharp %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5833,8 +5833,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The absolute path to a custom webpage that should be used when a request is made which does not correspond to an existing file.
-{{% /md %}}</dd>
+    <dd>The absolute path to a custom webpage that should be used when a request is made which does not correspond to an existing file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5842,14 +5842,14 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types">string</a></span>
     </dt>
-    <dd>{{% md %}}The webpage that Azure Storage serves for requests to the root of a website or any subfolder. For example, index.html. The value is case-sensitive.
-{{% /md %}}</dd>
+    <dd>The webpage that Azure Storage serves for requests to the root of a website or any subfolder. For example, index.html. The value is case-sensitive.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language go %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5858,8 +5858,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The absolute path to a custom webpage that should be used when a request is made which does not correspond to an existing file.
-{{% /md %}}</dd>
+    <dd>The absolute path to a custom webpage that should be used when a request is made which does not correspond to an existing file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5867,14 +5867,14 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://golang.org/pkg/builtin/#string">string</a></span>
     </dt>
-    <dd>{{% md %}}The webpage that Azure Storage serves for requests to the root of a website or any subfolder. For example, index.html. The value is case-sensitive.
-{{% /md %}}</dd>
+    <dd>The webpage that Azure Storage serves for requests to the root of a website or any subfolder. For example, index.html. The value is case-sensitive.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language nodejs %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5883,8 +5883,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The absolute path to a custom webpage that should be used when a request is made which does not correspond to an existing file.
-{{% /md %}}</dd>
+    <dd>The absolute path to a custom webpage that should be used when a request is made which does not correspond to an existing file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5892,14 +5892,14 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string">string</a></span>
     </dt>
-    <dd>{{% md %}}The webpage that Azure Storage serves for requests to the root of a website or any subfolder. For example, index.html. The value is case-sensitive.
-{{% /md %}}</dd>
+    <dd>The webpage that Azure Storage serves for requests to the root of a website or any subfolder. For example, index.html. The value is case-sensitive.
+</dd>
 
 </dl>
-{{% /choosable %}}
 
 
-{{% choosable language python %}}
+
+
 <dl class="resources-properties">
 
     <dt class="property-optional"
@@ -5908,8 +5908,8 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The absolute path to a custom webpage that should be used when a request is made which does not correspond to an existing file.
-{{% /md %}}</dd>
+    <dd>The absolute path to a custom webpage that should be used when a request is made which does not correspond to an existing file.
+</dd>
 
     <dt class="property-optional"
             title="Optional">
@@ -5917,11 +5917,11 @@ any combination of `Logging`, `Metrics`, `AzureServices`, or `None`.
         <span class="property-indicator"></span>
         <span class="property-type"><a href="https://docs.python.org/3/library/stdtypes.html">str</a></span>
     </dt>
-    <dd>{{% md %}}The webpage that Azure Storage serves for requests to the root of a website or any subfolder. For example, index.html. The value is case-sensitive.
-{{% /md %}}</dd>
+    <dd>The webpage that Azure Storage serves for requests to the root of a website or any subfolder. For example, index.html. The value is case-sensitive.
+</dd>
 
 </dl>
-{{% /choosable %}}
+
 
 
 
