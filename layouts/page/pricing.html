@@ -21,7 +21,20 @@
 {{ define "main" }}
     <section class="bg-purple-800 pt-12 text-white px-4 justify-center text-center" id="editions">
         <div class="container mx-auto lg:flex justify-center pb-4 hidden lg:block">
-            <div class="lg:w-3/4 pr-1">
+            <div class="lg:w-1/4 pr-1">
+                <div class="container" style="border-bottom: 2px solid #a48bb3">
+                    <p class="text-purple-200 text-sm font-bold">
+                        SELF-HOSTED
+                        <span class="tooltip">
+                            <span class="tooltip-text">
+                                Manage your own state using local or cloud based object store
+                            </span>
+                            <i class="w-8 fas fa-question-circle text-purple-500"></i>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="lg:w-3/4 pr-2">
                 <div class="container" style="border-bottom: 2px solid #a48bb3">
                     <p class="text-purple-200 text-sm font-bold">
                         CLOUD-HOSTED
@@ -62,6 +75,38 @@
             </div>
         </div>
         <div class="container mx-auto lg:flex justify-center">
+            <div class="bg-white rounded py-8 px-8 lg:mx-5 lg:w-1/4 lg:mr-3 mb-4 lg:mb-0" id="open-source">
+                <div class="text-center flex flex-col justify-between h-full">
+                    <div class="text-lg text-purple-500 font-bold">OPEN SOURCE</div>
+                    <div class="text-black font-display font-bold text-3xl">$0</div>
+                    <p class="text-sm text-gray-700">
+                        Infrastructure as code with a your own backend
+                    </p>
+                    <ul class="list-none mt-0 mb-auto mx-auto justify-center text-left text-sm text-gray-700 px-0">
+                        <li class="flex items-center">
+                            <i class="w-8 text-center fas fa-check-square text-blue-500"></i>
+                            <span class="flex-1">Any cloud and language</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="w-8 text-center fas fa-check-square text-blue-500"></i>
+                            <span class="flex-1">Your own State management</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="w-8 text-center fas fa-infinity text-blue-500"></i>
+                            <span class="flex-1">Unlimited deployments</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="w-8 text-center fas fa-check-square text-blue-500"></i>
+                            <span class="flex-1">Your own Secrets management</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="w-8 text-center fas fa-check-square text-blue-500"></i>
+                            <span class="flex-1">CI/CD integrations</span>
+                        </li>
+                    </ul>
+                    <a data-track="open-source" class="text-center btn btn-lg btn-blue mx-auto mt-8 py-4 px-6" href="{{ relref . "/docs/get-started" }}">Get Started</a>
+                </div>
+            </div>
             <div class="bg-white rounded py-8 px-8 lg:w-1/4 mb-4 lg:mb-0" id="community-edition">
                 <div class="text-center flex flex-col justify-between h-full">
                     <div class="text-lg text-purple-500 font-bold">COMMUNITY</div>
